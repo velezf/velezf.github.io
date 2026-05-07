@@ -1,0 +1,45 @@
+---
+title: "Reef SfM Workflow"
+description: "A detailed end-to-end workflow for processing underwater photos into 3D reef models using Structure-from-Motion photogrammetry."
+date: "2025-02-01"
+categories: [marine science, photogrammetry, workflow, 3D]
+image: ../images/reef-sfm.jpg
+---
+
+## Overview
+
+This project documents a complete SfM processing pipeline for coral reef surveys,
+from image acquisition underwater through to final 3D model outputs and quality
+assessment.
+
+## Workflow Steps
+
+### 1. Image Acquisition
+- Camera settings and housing recommendations
+- Dive survey protocols for optimal overlap
+- Lighting considerations for underwater photography
+
+### 2. Processing in Agisoft Metashape
+- Photo alignment and sparse point cloud
+- Dense point cloud generation
+- Mesh and orthomosaic export
+
+### 3. Quality Assessment
+- Ground control points (GCPs)
+- Error metrics and reprojection error
+- Visual inspection of model artifacts
+
+### 4. Outputs
+- Orthomosaic (2D georeferenced image)
+- Digital elevation model (DEM)
+- 3D mesh for structural complexity analysis
+
+## Tools Used
+
+- Agisoft Metashape
+- QGIS
+- Python (point cloud analysis)
+
+## Status
+
+🚧 *In progress — workflow documentation being developed.*

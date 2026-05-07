@@ -1,0 +1,29 @@
+---
+title: "SfM Photogrammetry for Marine Science"
+description: "An overview of Structure-from-Motion photogrammetry methods applied to coral reef and benthic habitat surveys."
+date: "2025-01-01"
+categories: [marine science, photogrammetry, 3D, GIS]
+image: ../images/sfm-marine.jpg
+---
+
+## Overview
+
+Structure-from-Motion (SfM) photogrammetry enables the creation of precise 3D 
+models from overlapping photographs. This page provides an overview of how SfM 
+methods can be applied to underwater survey data to map and monitor coral reefs 
+and benthic habitats.
+
+## Why SfM for Marine Science?
+
+Traditional survey methods struggle to capture the complex 3D structure of coral 
+reefs. SfM offers:
+
+- High-resolution 3D reconstructions from standard cameras
+- Quantitative measurements of structural complexity
+- Repeatable surveys for change detection over time
+- Low-cost relative to LiDAR or multibeam sonar
+
+## Related Projects
+
+- [Reef SfM Workflow](reef-sfm-workflow.qmd) — detailed processing pipeline
+- [Benthic Habitat Map](benthic-habitat-map.qmd) — GIS mapping outputs

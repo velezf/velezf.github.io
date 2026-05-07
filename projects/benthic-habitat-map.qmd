@@ -1,0 +1,40 @@
+---
+title: "Benthic Habitat Mapping"
+description: "GIS-based mapping and classification of benthic habitats using remote sensing and field survey data."
+date: "2025-03-01"
+categories: [GIS, marine science, mapping, remote sensing]
+image: ../images/benthic-map.jpg
+---
+
+## Overview
+
+Benthic habitat maps are essential tools for coral reef management and 
+conservation. This project explores methods for producing high-resolution 
+habitat maps by combining field survey data with remote sensing imagery.
+
+## Methods
+
+### Data Sources
+- Multispectral satellite imagery
+- Underwater photo transects
+- SfM-derived orthomosaics
+
+### Classification Approach
+- Object-based image analysis (OBIA)
+- Supervised classification using field validation points
+- Accuracy assessment with confusion matrices
+
+### GIS Processing
+- Coordinate reference system management
+- Raster and vector integration
+- Map layout and cartographic output
+
+## Tools Used
+
+- QGIS
+- Python (rasterio, geopandas, scikit-learn)
+- Google Earth Engine (planned)
+
+## Status
+
+🚧 *In progress — methods being developed.*

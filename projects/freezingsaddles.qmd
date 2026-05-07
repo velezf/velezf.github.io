@@ -1,0 +1,42 @@
+---
+title: "FreezingSaddles"
+description: "Analytics and visualization for a winter cycling challenge tracking mileage, leaderboards, and participation across teams."
+date: "2025-05-01"
+categories: [cycling, analytics, visualization, python]
+image: ../images/freezingsaddles.jpg
+---
+
+## Overview
+
+FreezingSaddles is a winter cycling challenge that encourages riders to log miles 
+during the coldest months of the year. This project covers the data pipeline, 
+leaderboard analytics, and visualizations built to support the challenge.
+
+## Features
+
+- Automated mileage ingestion from Strava and manual entries
+- Team and individual leaderboards
+- Interactive visualizations of ride data
+- Historical trend analysis across challenge years
+
+## Technical Stack
+
+- **Backend:** Python (Flask, pandas)
+- **Data:** Strava API, CSV ingestion
+- **Visualization:** Plotly, Matplotlib
+- **Deployment:** Docker, GitHub Actions
+
+## Highlights
+
+- Processed thousands of ride entries across multiple seasons
+- Built interactive leaderboard dashboards
+- Automated data pipeline reducing manual entry overhead
+
+## Links
+
+- [GitHub Repository](https://github.com/velezf/freezingsaddles)
+- [Live Site](https://velezf.github.io/freezingsaddles) *(if applicable)*
+
+## Status
+
+✅ *Active — updated each winter cycling season.*

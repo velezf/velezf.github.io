@@ -1,0 +1,46 @@
+---
+title: "Coral Bleaching Risk Notebook"
+description: "An exploratory data analysis notebook examining environmental drivers of coral bleaching risk using sea surface temperature and DHW data."
+date: "2025-04-01"
+categories: [marine science, data analysis, jupyter, python]
+image: ../images/bleaching-risk.jpg
+---
+
+## Overview
+
+Coral bleaching occurs when water temperatures exceed a threshold for an extended 
+period, measured in Degree Heating Weeks (DHW). This notebook explores publicly 
+available sea surface temperature (SST) and DHW data to identify patterns and 
+risk factors associated with bleaching events.
+
+## Data Sources
+
+- NOAA Coral Reef Watch SST and DHW products
+- ReefBase bleaching observation records
+- AIMS Long Term Monitoring Program data (planned)
+
+## Analysis
+
+### Exploratory Data Analysis
+- SST anomaly trends over time
+- DHW accumulation patterns by region
+- Correlation with reported bleaching events
+
+### Visualization
+- Time series plots of thermal stress
+- Spatial maps of bleaching risk
+- Interactive plots with Plotly
+
+## Tools Used
+
+- Python (pandas, xarray, matplotlib, plotly)
+- Jupyter Notebooks
+- NOAA Coral Reef Watch API
+
+## Status
+
+🚧 *In progress — data acquisition and EDA underway.*
+
+## Notebook
+
+*Jupyter notebook will be embedded here once complete.*

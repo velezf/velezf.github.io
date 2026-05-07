@@ -1,0 +1,29 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Francisco Velez | Data Science Portfolio"
+  description: "Data science, GIS, and marine science projects"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+      - href: projects.qmd
+        text: Projects
+  page-footer:
+    left: "© 2025 Francisco Velez"
+    right:
+      - icon: github
+        href: https://github.com/velezf
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    toc-depth: 3
+    code-fold: true
+    code-tools: true

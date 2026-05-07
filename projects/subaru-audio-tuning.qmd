@@ -1,0 +1,136 @@
+---
+title: "2016 Subaru Outback Stereo Build"
+description: "A technical writeup and reference guide for upgrading the factory Harman Kardon audio system in a 2016 Subaru Outback, including head unit replacement, amplifier integration, active front-stage tuning, subwoofer installation, and factory wiring quirks."
+date: "2026-05-07"
+categories: [hardware, audio, car-audio, Subaru, DIY, documentation]
+image: ../images/subaru-audio.jpg
+---
+
+## Overview
+
+This project documents the process of upgrading the factory Harman Kardon audio 
+system in a 2016 Subaru Outback into a much more capable, tunable aftermarket 
+system while retaining daily drivability and factory convenience features.
+
+The build centers around a Sony XAV-AX4000 head unit, Maestro integration, a 
+Kicker LX 1300.7 multi-channel amplifier, an active Morel front stage, rear fill, 
+and a JL Audio 10W6v3 subwoofer in a sealed enclosure.
+
+The goal was not just to make the system louder, but to build a clean, flexible, 
+well-documented setup with proper crossover points, gain structure, signal 
+routing, and enough tuning control to make the car sound genuinely excellent.
+
+## System Components
+
+### Source and Integration
+
+- Sony XAV-AX4000 head unit
+- Maestro integration for steering wheel controls and vehicle feature retention
+- Factory Harman Kardon amplifier removed from the audio signal path
+- Factory Subaru wiring retained where practical
+
+### Amplification
+
+- Kicker LX 1300.7 seven-channel amplifier
+- Active front-stage configuration
+- Rear door speakers on independent rear channels
+- Dedicated subwoofer channel for sealed JL Audio subwoofer
+
+### Speakers
+
+- Morel Tempo Ultra 602 MKII component speakers
+- Front tweeters run actively on AMP 1
+- Front door woofers run actively on AMP 2
+- Rear doors run as passive rear fill on AMP 3
+
+### Subwoofer
+
+- JL Audio 10W6v3-D4
+- Sealed custom enclosure
+- Tuned for clean, musical low-end support rather than maximum boom
+
+## Wiring and Signal Routing
+
+This build required working around several Subaru-specific quirks, especially 
+because the vehicle originally had the Harman Kardon factory system.
+
+### RCA Signal Routing
+
+The final RCA routing uses the Sony head unit outputs to feed the Kicker amp:
+
+- Front L/R RCA → AMP 1 input
+- Rear L/R RCA → AMP 3 input
+- Subwoofer RCA → SUB input
+
+The Kicker amp is configured so that AMP 1 feeds the tweeters and also supplies 
+signal to AMP 2 for the front door woofers. AMP 3 remains independent for rear 
+fill, preserving useful front/rear fader control from the head unit.
+
+### Factory Wiring
+
+- AHH-7881 adapter used to connect amplifier outputs into the factory speaker wiring
+- Adapter ordered with tinned ends for easier termination
+- Factory Harman Kardon amp bypassed
+- Subaru telematics/DCM bypass required to restore the factory tweeter path
+- Factory speaker wiring reused where practical to avoid unnecessary rewiring through the doors
+
+## Current Tuning Notes
+
+### Front Tweeters — AMP 1
+
+- High-pass filter: 3.2 kHz
+- Slope: 24 dB/octave
+- Filter type: Linkwitz-Riley
+
+### Front Door Woofers — AMP 2
+
+- High-pass filter: 60 Hz
+- Slope: 12 dB/octave
+- Low-pass filter: 3.2 kHz
+- Slope: 24 dB/octave
+- Filter type: Linkwitz-Riley
+
+### Rear Doors — AMP 3
+
+- High-pass filter: approximately 65 Hz
+- Slope: 12 dB/octave
+- Used primarily as rear fill
+
+### Subwoofer
+
+- Low-pass filter: 80 Hz
+- Slope: 24 dB/octave
+- Filter type: Linkwitz-Riley
+- Subwoofer high-pass filter set as low as possible on the amp, around 10 Hz
+
+## Lessons Learned
+
+- The factory amp and DSP need to be fully understood before replacing them
+- The telematics/DCM wiring can affect the tweeter path
+- Harness adapters save time, but the pinouts still need to be verified
+- Active front-stage tuning is worth the effort
+- Crossover slopes and gain structure matter as much as hardware selection
+- A good sealed 10-inch subwoofer is an excellent match for this wagon
+
+## Why Document This?
+
+There is plenty of Subaru audio information scattered across forums, product 
+manuals, wiring diagrams, and installer notes, but very little of it is presented 
+as a single coherent build path. This writeup captures the practical decisions, 
+mistakes, fixes, and tuning notes from a real build so that future me — or the 
+next person attempting a similar build — does not have to rediscover the same 
+details from scratch.
+
+## Current Status
+
+✅ Head unit installed  
+✅ Maestro integration working  
+✅ Factory Harman Kardon amp bypassed  
+✅ Kicker LX 1300.7 installed and configured  
+✅ Morel front components running active  
+✅ Rear fill operational  
+✅ JL Audio 10W6v3 sealed subwoofer installed  
+✅ Initial gain staging and crossover tuning complete  
+✅ System sounding excellent in daily use  
+
+🔧 *Next: under-seat amplifier cooling fan triggered by Sony remote turn-on lead.*

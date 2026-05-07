@@ -1,0 +1,46 @@
+---
+title: "LoRa RadioRocket"
+description: "Amateur radio telemetry system for mid and high power model rockets, combining APRS tracking and LoRa data transmission with a Raspberry Pi ground station."
+date: "2025-06-01"
+categories: [IoT, telemetry, LoRa, APRS, hardware, amateur radio]
+image: ../images/lora-radiorocket.jpg
+---
+
+## Overview
+
+RadioRocketV2 is an open-source amateur radio project integrating modern digital 
+radio systems into mid and high power model rocketry. This fork of the 
+[N3VEM RadioRocketV2](https://github.com/N3VEM/RadioRocketV2) project adds 
+updated documentation to make the build more accessible.
+
+## System Components
+
+### APRS Tracking
+A self-contained APRS beacon sled provides position tracking and mapping during 
+flight. Packets are received by any I-Gate within range and viewable on 
+[aprs.fi](https://aprs.fi). Can be built standalone without the rest of the system.
+
+### LoRa Telemetry
+The rocket transmits telemetry over 70cm LoRa, including sensor data, relay 
+messages, and command responses. LoRa's long range and low power make it ideal 
+for tracking rockets downrange.
+
+### Ground Station
+A portable ground station built around a single-board computer and LoRa Feather 
+module receives telemetry and APRS data, serving it via Node-RED and a networked 
+sound modem to any browser on the local network.
+
+## Hardware
+
+- Adafruit Feather with LoRa Radio (rocket-side)
+- SDRplay SDR dongle (APRS reception)
+- Raspberry Pi ground station
+- Custom wiring and project enclosure
+
+## Status
+
+✅ *Working prototype complete — documentation in progress.*
+
+## Links
+
+- [GitHub Repository](https://github.com/velezf/RadioRocketV2-documentation)

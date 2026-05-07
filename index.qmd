@@ -1,0 +1,33 @@
+---
+title: "Francisco Velez"
+subtitle: "Clinical Informaticist | Aspiring Marine Scientist | Data Analyst"
+about:
+  template: trestles
+  image: images/profile.jpg
+  links:
+    - icon: github
+      text: GitHub
+      href: https://github.com/velezf
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com/in/YOUR_PROFILE
+    - icon: envelope
+      text: Email
+      href: mailto:frank.velez@mail.nih.gov
+---
+
+## Welcome
+
+I’m a clinical informaticist working at the intersection of clinical research, data science, and primary data collection. My work focuses on building systems, workflows, and data platforms that support researchers across a wide range of scientific and operational needs. I’m currently expanding my scope into marine science, GIS, remote sensing, full-stack software development, and hardware engineering. Outside of work, I apply the same data and engineering mindset to cycling analytics, high-power rocketry, ham radio, Arduino-based systems, and embedded telemetry projects.
+
+## Research Interests
+
+- I'm actively developing expertise in marine data science, with a focus on coral reef monitoring and geospatial analysis
+- Coral reef monitoring and benthic habitat mapping
+- Structure-from-Motion photogrammetry for marine applications
+- Geospatial data visualization and analysis
+- IoT and radio telemetry systems
+
+## Recent Projects
+
+Check out my [Projects](projects.qmd) page for a full overview of my work.

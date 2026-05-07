@@ -1,0 +1,61 @@
+---
+title: "About Me"
+---
+
+## Background
+
+I'm a clinical informaticist and data systems professional based in the Washington, D.C. area, currently working at the National Institutes of Health. My work sits at the intersection of clinical research, data science, primary data collection, and research infrastructure.
+
+I work shoulder to shoulder with principal investigators, research teams, and operational stakeholders to understand scientific needs and translate them into usable systems, workflows, and data platforms. I also work with program and organizational leadership to shape enterprise data capabilities that support governance, interoperability, reproducibility, and long-term scientific value.
+
+My professional background includes clinical research informatics, data governance, cloud-based research platforms, REDCap operations, metadata workflows, and support for large-scale scientific data programs.
+
+I’m currently expanding my scope into marine science, GIS, remote sensing, Structure-from-Motion photogrammetry, full-stack software development, and hardware engineering. Long term, I’m interested in applying informatics, reproducible analysis, and geospatial tools to coral reef research and marine conservation at institutions such as Scripps Institution of Oceanography, Woods Hole Oceanographic Institution, Mote Marine Laboratory, NOAA, or similar research organizations.
+
+Outside of work, I apply the same data and engineering mindset to cycling analytics, high-power rocketry, ham radio, Arduino-based systems, and embedded radio telemetry projects.
+
+## Education
+
+- ** M.Sc. Health Care Administration Informatics, University of Maryland University College, Adelphi, MD - May 2016
+- ** B.Sc, Major Biology, Minor Chemistry, Minor Physics, Wilkes University, Wilkes-Barre, PA - May 2009
+
+## Experience
+
+- **National Institutes of Health / NHLBI** — Biomedical Informatics Project Manager, 05/2021–-Present
+  - Work directly with principal investigators, research teams, and scientific stakeholders to understand research needs and translate them into practical informatics solutions.
+  - Partner with program leadership and enterprise stakeholders to develop data platforms, governance models, and operational workflows that scale beyond individual studies.
+  - Support researcher-facing data systems, clinical research informatics workflows, and cloud-based scientific data platforms.
+  - Contribute to data governance, metadata, data release, interoperability, and operational workflows for large-scale biomedical research programs.
+  - Work across scientific, technical, and operational teams to bridge investigator needs, enterprise priorities, and sustainable platform design.
+
+## Skills
+
+- **Programming & Analysis:** Python, SQL, R, Jupyter notebooks
+- **Data Systems:** REDCap, research data platforms, metadata workflows, FAIR data practices, clinical research informatics
+- **GIS & Remote Sensing:** QGIS, geospatial analysis, benthic habitat mapping, remote sensing workflows
+- **Photogrammetry:** Structure-from-Motion workflows, Agisoft Metashape, large-area imaging concepts
+- **Software & DevOps:** Git, GitHub, Quarto, Docker, cloud workspaces, reproducible analysis workflows
+- **Hardware & Telemetry:** Arduino, LoRa radio, embedded systems, sensor telemetry, high-power rocketry instrumentation
+- **Domains:** Clinical research, biomedical informatics, marine science, coral reef conservation, geospatial analysis, cycling analytics
+
+## Currently Learning
+
+- GIS workflows for marine and coastal datasets
+- Benthic habitat classification and coral reef mapping methods
+- Structure-from-Motion photogrammetry for reef monitoring
+- Remote sensing applications for marine conservation
+- Full-stack web development for data-driven hobby and research tools
+- Embedded telemetry systems using microcontrollers, sensors, and LoRa radio
+
+## Projects & Interests
+
+- **Coral GIS & Marine Data:** Building a portfolio of geospatial and remote sensing projects focused on reef conservation.
+- **Photogrammetry:** Learning SfM workflows for reconstructing reef sites from overlapping image sets.
+- **Cycling Analytics:** Exploring data tools for cycling performance, fantasy cycling, and route analysis.
+- **Rocket Telemetry:** Building embedded radio telemetry systems for high-power rocketry using Arduino-compatible boards, barometric sensors, accelerometers, and LoRa radios.
+- **Ham Radio & Field Systems:** Experimenting with radio communications, portable systems, and telemetry workflows.
+
+## Contact
+
+- 📧 francisco.velez.v@gmail.com
+- 🐙 [github.com/velezf](https://github.com/velezf)
