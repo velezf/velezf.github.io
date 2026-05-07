@@ -1,0 +1,387 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Francisco Velez",
+    "section": "",
+    "text": "I’m a clinical informaticist working at the intersection of clinical research, data science, and primary data collection. My work focuses on building systems, workflows, and data platforms that support researchers across a wide range of scientific and operational needs. I’m currently expanding my scope into marine science, GIS, remote sensing, full-stack software development, and hardware engineering. Outside of work, I apply the same data and engineering mindset to cycling analytics, high-power rocketry, ham radio, Arduino-based systems, and embedded telemetry projects."
+  },
+  {
+    "objectID": "index.html#welcome",
+    "href": "index.html#welcome",
+    "title": "Francisco Velez",
+    "section": "",
+    "text": "I’m a clinical informaticist working at the intersection of clinical research, data science, and primary data collection. My work focuses on building systems, workflows, and data platforms that support researchers across a wide range of scientific and operational needs. I’m currently expanding my scope into marine science, GIS, remote sensing, full-stack software development, and hardware engineering. Outside of work, I apply the same data and engineering mindset to cycling analytics, high-power rocketry, ham radio, Arduino-based systems, and embedded telemetry projects."
+  },
+  {
+    "objectID": "index.html#research-interests",
+    "href": "index.html#research-interests",
+    "title": "Francisco Velez",
+    "section": "Research Interests",
+    "text": "Research Interests\n\nI’m actively developing expertise in marine data science, with a focus on coral reef monitoring and geospatial analysis\nCoral reef monitoring and benthic habitat mapping\nStructure-from-Motion photogrammetry for marine applications\nGeospatial data visualization and analysis\nIoT and radio telemetry systems"
+  },
+  {
+    "objectID": "index.html#recent-projects",
+    "href": "index.html#recent-projects",
+    "title": "Francisco Velez",
+    "section": "Recent Projects",
+    "text": "Recent Projects\nCheck out my Projects page for a full overview of my work."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "2016 Subaru Outback Stereo Build\n\n\n\nhardware\n\naudio\n\ncar-audio\n\nSubaru\n\nDIY\n\ndocumentation\n\n\n\nA technical writeup and reference guide for upgrading the factory Harman Kardon audio system in a 2016 Subaru Outback, including head unit replacement, amplifier…\n\n\n\nMay 7, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nLoRa RadioRocket\n\n\n\nIoT\n\ntelemetry\n\nLoRa\n\nAPRS\n\nhardware\n\namateur radio\n\n\n\nAmateur radio telemetry system for mid and high power model rockets, combining APRS tracking and LoRa data transmission with a Raspberry Pi ground station.\n\n\n\nJun 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nFreezingSaddles\n\n\n\ncycling\n\nanalytics\n\nvisualization\n\npython\n\n\n\nAnalytics and visualization for a winter cycling challenge tracking mileage, leaderboards, and participation across teams.\n\n\n\nMay 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nCoral Bleaching Risk Notebook\n\n\n\nmarine science\n\ndata analysis\n\njupyter\n\npython\n\n\n\nAn exploratory data analysis notebook examining environmental drivers of coral bleaching risk using sea surface temperature and DHW data.\n\n\n\nApr 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nBenthic Habitat Mapping\n\n\n\nGIS\n\nmarine science\n\nmapping\n\nremote sensing\n\n\n\nGIS-based mapping and classification of benthic habitats using remote sensing and field survey data.\n\n\n\nMar 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nReef SfM Workflow\n\n\n\nmarine science\n\nphotogrammetry\n\nworkflow\n\n3D\n\n\n\nA detailed end-to-end workflow for processing underwater photos into 3D reef models using Structure-from-Motion photogrammetry.\n\n\n\nFeb 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nSfM Photogrammetry for Marine Science\n\n\n\nmarine science\n\nphotogrammetry\n\n3D\n\nGIS\n\n\n\nAn overview of Structure-from-Motion photogrammetry methods applied to coral reef and benthic habitat surveys.\n\n\n\nJan 1, 2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/benthic-habitat-map.html",
+    "href": "projects/benthic-habitat-map.html",
+    "title": "Benthic Habitat Mapping",
+    "section": "",
+    "text": "Benthic habitat maps are essential tools for coral reef management and conservation. This project explores methods for producing high-resolution habitat maps by combining field survey data with remote sensing imagery."
+  },
+  {
+    "objectID": "projects/benthic-habitat-map.html#overview",
+    "href": "projects/benthic-habitat-map.html#overview",
+    "title": "Benthic Habitat Mapping",
+    "section": "",
+    "text": "Benthic habitat maps are essential tools for coral reef management and conservation. This project explores methods for producing high-resolution habitat maps by combining field survey data with remote sensing imagery."
+  },
+  {
+    "objectID": "projects/benthic-habitat-map.html#methods",
+    "href": "projects/benthic-habitat-map.html#methods",
+    "title": "Benthic Habitat Mapping",
+    "section": "Methods",
+    "text": "Methods\n\nData Sources\n\nMultispectral satellite imagery\nUnderwater photo transects\nSfM-derived orthomosaics\n\n\n\nClassification Approach\n\nObject-based image analysis (OBIA)\nSupervised classification using field validation points\nAccuracy assessment with confusion matrices\n\n\n\nGIS Processing\n\nCoordinate reference system management\nRaster and vector integration\nMap layout and cartographic output"
+  },
+  {
+    "objectID": "projects/benthic-habitat-map.html#tools-used",
+    "href": "projects/benthic-habitat-map.html#tools-used",
+    "title": "Benthic Habitat Mapping",
+    "section": "Tools Used",
+    "text": "Tools Used\n\nQGIS\nPython (rasterio, geopandas, scikit-learn)\nGoogle Earth Engine (planned)"
+  },
+  {
+    "objectID": "projects/benthic-habitat-map.html#status",
+    "href": "projects/benthic-habitat-map.html#status",
+    "title": "Benthic Habitat Mapping",
+    "section": "Status",
+    "text": "Status\n🚧 In progress — methods being developed."
+  },
+  {
+    "objectID": "projects/sfm-marine.html",
+    "href": "projects/sfm-marine.html",
+    "title": "SfM Photogrammetry for Marine Science",
+    "section": "",
+    "text": "Structure-from-Motion (SfM) photogrammetry enables the creation of precise 3D models from overlapping photographs. This page provides an overview of how SfM methods can be applied to underwater survey data to map and monitor coral reefs and benthic habitats."
+  },
+  {
+    "objectID": "projects/sfm-marine.html#overview",
+    "href": "projects/sfm-marine.html#overview",
+    "title": "SfM Photogrammetry for Marine Science",
+    "section": "",
+    "text": "Structure-from-Motion (SfM) photogrammetry enables the creation of precise 3D models from overlapping photographs. This page provides an overview of how SfM methods can be applied to underwater survey data to map and monitor coral reefs and benthic habitats."
+  },
+  {
+    "objectID": "projects/sfm-marine.html#why-sfm-for-marine-science",
+    "href": "projects/sfm-marine.html#why-sfm-for-marine-science",
+    "title": "SfM Photogrammetry for Marine Science",
+    "section": "Why SfM for Marine Science?",
+    "text": "Why SfM for Marine Science?\nTraditional survey methods struggle to capture the complex 3D structure of coral reefs. SfM offers:\n\nHigh-resolution 3D reconstructions from standard cameras\nQuantitative measurements of structural complexity\nRepeatable surveys for change detection over time\nLow-cost relative to LiDAR or multibeam sonar"
+  },
+  {
+    "objectID": "projects/sfm-marine.html#related-projects",
+    "href": "projects/sfm-marine.html#related-projects",
+    "title": "SfM Photogrammetry for Marine Science",
+    "section": "Related Projects",
+    "text": "Related Projects\n\nReef SfM Workflow — detailed processing pipeline\nBenthic Habitat Map — GIS mapping outputs"
+  },
+  {
+    "objectID": "projects/subaru-audio-tuning.html",
+    "href": "projects/subaru-audio-tuning.html",
+    "title": "2016 Subaru Outback Stereo Build",
+    "section": "",
+    "text": "This project documents the process of upgrading the factory Harman Kardon audio system in a 2016 Subaru Outback into a much more capable, tunable aftermarket system while retaining daily drivability and factory convenience features.\nThe build centers around a Sony XAV-AX4000 head unit, Maestro integration, a Kicker LX 1300.7 multi-channel amplifier, an active Morel front stage, rear fill, and a JL Audio 10W6v3 subwoofer in a sealed enclosure.\nThe goal was not just to make the system louder, but to build a clean, flexible, well-documented setup with proper crossover points, gain structure, signal routing, and enough tuning control to make the car sound genuinely excellent."
+  },
+  {
+    "objectID": "projects/subaru-audio-tuning.html#overview",
+    "href": "projects/subaru-audio-tuning.html#overview",
+    "title": "2016 Subaru Outback Stereo Build",
+    "section": "",
+    "text": "This project documents the process of upgrading the factory Harman Kardon audio system in a 2016 Subaru Outback into a much more capable, tunable aftermarket system while retaining daily drivability and factory convenience features.\nThe build centers around a Sony XAV-AX4000 head unit, Maestro integration, a Kicker LX 1300.7 multi-channel amplifier, an active Morel front stage, rear fill, and a JL Audio 10W6v3 subwoofer in a sealed enclosure.\nThe goal was not just to make the system louder, but to build a clean, flexible, well-documented setup with proper crossover points, gain structure, signal routing, and enough tuning control to make the car sound genuinely excellent."
+  },
+  {
+    "objectID": "projects/subaru-audio-tuning.html#system-components",
+    "href": "projects/subaru-audio-tuning.html#system-components",
+    "title": "2016 Subaru Outback Stereo Build",
+    "section": "System Components",
+    "text": "System Components\n\nSource and Integration\n\nSony XAV-AX4000 head unit\nMaestro integration for steering wheel controls and vehicle feature retention\nFactory Harman Kardon amplifier removed from the audio signal path\nFactory Subaru wiring retained where practical\n\n\n\nAmplification\n\nKicker LX 1300.7 seven-channel amplifier\nActive front-stage configuration\nRear door speakers on independent rear channels\nDedicated subwoofer channel for sealed JL Audio subwoofer\n\n\n\nSpeakers\n\nMorel Tempo Ultra 602 MKII component speakers\nFront tweeters run actively on AMP 1\nFront door woofers run actively on AMP 2\nRear doors run as passive rear fill on AMP 3\n\n\n\nSubwoofer\n\nJL Audio 10W6v3-D4\nSealed custom enclosure\nTuned for clean, musical low-end support rather than maximum boom"
+  },
+  {
+    "objectID": "projects/subaru-audio-tuning.html#wiring-and-signal-routing",
+    "href": "projects/subaru-audio-tuning.html#wiring-and-signal-routing",
+    "title": "2016 Subaru Outback Stereo Build",
+    "section": "Wiring and Signal Routing",
+    "text": "Wiring and Signal Routing\nThis build required working around several Subaru-specific quirks, especially because the vehicle originally had the Harman Kardon factory system.\n\nRCA Signal Routing\nThe final RCA routing uses the Sony head unit outputs to feed the Kicker amp:\n\nFront L/R RCA → AMP 1 input\nRear L/R RCA → AMP 3 input\nSubwoofer RCA → SUB input\n\nThe Kicker amp is configured so that AMP 1 feeds the tweeters and also supplies signal to AMP 2 for the front door woofers. AMP 3 remains independent for rear fill, preserving useful front/rear fader control from the head unit.\n\n\nFactory Wiring\n\nAHH-7881 adapter used to connect amplifier outputs into the factory speaker wiring\nAdapter ordered with tinned ends for easier termination\nFactory Harman Kardon amp bypassed\nSubaru telematics/DCM bypass required to restore the factory tweeter path\nFactory speaker wiring reused where practical to avoid unnecessary rewiring through the doors"
+  },
+  {
+    "objectID": "projects/subaru-audio-tuning.html#current-tuning-notes",
+    "href": "projects/subaru-audio-tuning.html#current-tuning-notes",
+    "title": "2016 Subaru Outback Stereo Build",
+    "section": "Current Tuning Notes",
+    "text": "Current Tuning Notes\n\nFront Tweeters — AMP 1\n\nHigh-pass filter: 3.2 kHz\nSlope: 24 dB/octave\nFilter type: Linkwitz-Riley\n\n\n\nFront Door Woofers — AMP 2\n\nHigh-pass filter: 60 Hz\nSlope: 12 dB/octave\nLow-pass filter: 3.2 kHz\nSlope: 24 dB/octave\nFilter type: Linkwitz-Riley\n\n\n\nRear Doors — AMP 3\n\nHigh-pass filter: approximately 65 Hz\nSlope: 12 dB/octave\nUsed primarily as rear fill\n\n\n\nSubwoofer\n\nLow-pass filter: 80 Hz\nSlope: 24 dB/octave\nFilter type: Linkwitz-Riley\nSubwoofer high-pass filter set as low as possible on the amp, around 10 Hz"
+  },
+  {
+    "objectID": "projects/subaru-audio-tuning.html#lessons-learned",
+    "href": "projects/subaru-audio-tuning.html#lessons-learned",
+    "title": "2016 Subaru Outback Stereo Build",
+    "section": "Lessons Learned",
+    "text": "Lessons Learned\n\nThe factory amp and DSP need to be fully understood before replacing them\nThe telematics/DCM wiring can affect the tweeter path\nHarness adapters save time, but the pinouts still need to be verified\nActive front-stage tuning is worth the effort\nCrossover slopes and gain structure matter as much as hardware selection\nA good sealed 10-inch subwoofer is an excellent match for this wagon"
+  },
+  {
+    "objectID": "projects/subaru-audio-tuning.html#why-document-this",
+    "href": "projects/subaru-audio-tuning.html#why-document-this",
+    "title": "2016 Subaru Outback Stereo Build",
+    "section": "Why Document This?",
+    "text": "Why Document This?\nThere is plenty of Subaru audio information scattered across forums, product manuals, wiring diagrams, and installer notes, but very little of it is presented as a single coherent build path. This writeup captures the practical decisions, mistakes, fixes, and tuning notes from a real build so that future me — or the next person attempting a similar build — does not have to rediscover the same details from scratch."
+  },
+  {
+    "objectID": "projects/subaru-audio-tuning.html#current-status",
+    "href": "projects/subaru-audio-tuning.html#current-status",
+    "title": "2016 Subaru Outback Stereo Build",
+    "section": "Current Status",
+    "text": "Current Status\n✅ Head unit installed\n✅ Maestro integration working\n✅ Factory Harman Kardon amp bypassed\n✅ Kicker LX 1300.7 installed and configured\n✅ Morel front components running active\n✅ Rear fill operational\n✅ JL Audio 10W6v3 sealed subwoofer installed\n✅ Initial gain staging and crossover tuning complete\n✅ System sounding excellent in daily use\n🔧 Next: under-seat amplifier cooling fan triggered by Sony remote turn-on lead."
+  },
+  {
+    "objectID": "projects/reef-sfm-workflow.html",
+    "href": "projects/reef-sfm-workflow.html",
+    "title": "Reef SfM Workflow",
+    "section": "",
+    "text": "This project documents a complete SfM processing pipeline for coral reef surveys, from image acquisition underwater through to final 3D model outputs and quality assessment."
+  },
+  {
+    "objectID": "projects/reef-sfm-workflow.html#overview",
+    "href": "projects/reef-sfm-workflow.html#overview",
+    "title": "Reef SfM Workflow",
+    "section": "",
+    "text": "This project documents a complete SfM processing pipeline for coral reef surveys, from image acquisition underwater through to final 3D model outputs and quality assessment."
+  },
+  {
+    "objectID": "projects/reef-sfm-workflow.html#workflow-steps",
+    "href": "projects/reef-sfm-workflow.html#workflow-steps",
+    "title": "Reef SfM Workflow",
+    "section": "Workflow Steps",
+    "text": "Workflow Steps\n\n1. Image Acquisition\n\nCamera settings and housing recommendations\nDive survey protocols for optimal overlap\nLighting considerations for underwater photography\n\n\n\n2. Processing in Agisoft Metashape\n\nPhoto alignment and sparse point cloud\nDense point cloud generation\nMesh and orthomosaic export\n\n\n\n3. Quality Assessment\n\nGround control points (GCPs)\nError metrics and reprojection error\nVisual inspection of model artifacts\n\n\n\n4. Outputs\n\nOrthomosaic (2D georeferenced image)\nDigital elevation model (DEM)\n3D mesh for structural complexity analysis"
+  },
+  {
+    "objectID": "projects/reef-sfm-workflow.html#tools-used",
+    "href": "projects/reef-sfm-workflow.html#tools-used",
+    "title": "Reef SfM Workflow",
+    "section": "Tools Used",
+    "text": "Tools Used\n\nAgisoft Metashape\nQGIS\nPython (point cloud analysis)"
+  },
+  {
+    "objectID": "projects/reef-sfm-workflow.html#status",
+    "href": "projects/reef-sfm-workflow.html#status",
+    "title": "Reef SfM Workflow",
+    "section": "Status",
+    "text": "Status\n🚧 In progress — workflow documentation being developed."
+  },
+  {
+    "objectID": "projects/lora-radiorocket.html",
+    "href": "projects/lora-radiorocket.html",
+    "title": "LoRa RadioRocket",
+    "section": "",
+    "text": "RadioRocketV2 is an open-source amateur radio project integrating modern digital radio systems into mid and high power model rocketry. This fork of the N3VEM RadioRocketV2 project adds updated documentation to make the build more accessible."
+  },
+  {
+    "objectID": "projects/lora-radiorocket.html#overview",
+    "href": "projects/lora-radiorocket.html#overview",
+    "title": "LoRa RadioRocket",
+    "section": "",
+    "text": "RadioRocketV2 is an open-source amateur radio project integrating modern digital radio systems into mid and high power model rocketry. This fork of the N3VEM RadioRocketV2 project adds updated documentation to make the build more accessible."
+  },
+  {
+    "objectID": "projects/lora-radiorocket.html#system-components",
+    "href": "projects/lora-radiorocket.html#system-components",
+    "title": "LoRa RadioRocket",
+    "section": "System Components",
+    "text": "System Components\n\nAPRS Tracking\nA self-contained APRS beacon sled provides position tracking and mapping during flight. Packets are received by any I-Gate within range and viewable on aprs.fi. Can be built standalone without the rest of the system.\n\n\nLoRa Telemetry\nThe rocket transmits telemetry over 70cm LoRa, including sensor data, relay messages, and command responses. LoRa’s long range and low power make it ideal for tracking rockets downrange.\n\n\nGround Station\nA portable ground station built around a single-board computer and LoRa Feather module receives telemetry and APRS data, serving it via Node-RED and a networked sound modem to any browser on the local network."
+  },
+  {
+    "objectID": "projects/lora-radiorocket.html#hardware",
+    "href": "projects/lora-radiorocket.html#hardware",
+    "title": "LoRa RadioRocket",
+    "section": "Hardware",
+    "text": "Hardware\n\nAdafruit Feather with LoRa Radio (rocket-side)\nSDRplay SDR dongle (APRS reception)\nRaspberry Pi ground station\nCustom wiring and project enclosure"
+  },
+  {
+    "objectID": "projects/lora-radiorocket.html#status",
+    "href": "projects/lora-radiorocket.html#status",
+    "title": "LoRa RadioRocket",
+    "section": "Status",
+    "text": "Status\n✅ Working prototype complete — documentation in progress."
+  },
+  {
+    "objectID": "projects/lora-radiorocket.html#links",
+    "href": "projects/lora-radiorocket.html#links",
+    "title": "LoRa RadioRocket",
+    "section": "Links",
+    "text": "Links\n\nGitHub Repository"
+  },
+  {
+    "objectID": "projects/freezingsaddles.html",
+    "href": "projects/freezingsaddles.html",
+    "title": "FreezingSaddles",
+    "section": "",
+    "text": "FreezingSaddles is a winter cycling challenge that encourages riders to log miles during the coldest months of the year. This project covers the data pipeline, leaderboard analytics, and visualizations built to support the challenge."
+  },
+  {
+    "objectID": "projects/freezingsaddles.html#overview",
+    "href": "projects/freezingsaddles.html#overview",
+    "title": "FreezingSaddles",
+    "section": "",
+    "text": "FreezingSaddles is a winter cycling challenge that encourages riders to log miles during the coldest months of the year. This project covers the data pipeline, leaderboard analytics, and visualizations built to support the challenge."
+  },
+  {
+    "objectID": "projects/freezingsaddles.html#features",
+    "href": "projects/freezingsaddles.html#features",
+    "title": "FreezingSaddles",
+    "section": "Features",
+    "text": "Features\n\nAutomated mileage ingestion from Strava and manual entries\nTeam and individual leaderboards\nInteractive visualizations of ride data\nHistorical trend analysis across challenge years"
+  },
+  {
+    "objectID": "projects/freezingsaddles.html#technical-stack",
+    "href": "projects/freezingsaddles.html#technical-stack",
+    "title": "FreezingSaddles",
+    "section": "Technical Stack",
+    "text": "Technical Stack\n\nBackend: Python (Flask, pandas)\nData: Strava API, CSV ingestion\nVisualization: Plotly, Matplotlib\nDeployment: Docker, GitHub Actions"
+  },
+  {
+    "objectID": "projects/freezingsaddles.html#highlights",
+    "href": "projects/freezingsaddles.html#highlights",
+    "title": "FreezingSaddles",
+    "section": "Highlights",
+    "text": "Highlights\n\nProcessed thousands of ride entries across multiple seasons\nBuilt interactive leaderboard dashboards\nAutomated data pipeline reducing manual entry overhead"
+  },
+  {
+    "objectID": "projects/freezingsaddles.html#links",
+    "href": "projects/freezingsaddles.html#links",
+    "title": "FreezingSaddles",
+    "section": "Links",
+    "text": "Links\n\nGitHub Repository\nLive Site (if applicable)"
+  },
+  {
+    "objectID": "projects/freezingsaddles.html#status",
+    "href": "projects/freezingsaddles.html#status",
+    "title": "FreezingSaddles",
+    "section": "Status",
+    "text": "Status\n✅ Active — updated each winter cycling season."
+  },
+  {
+    "objectID": "projects/bleaching-risk-notebook.html",
+    "href": "projects/bleaching-risk-notebook.html",
+    "title": "Coral Bleaching Risk Notebook",
+    "section": "",
+    "text": "Coral bleaching occurs when water temperatures exceed a threshold for an extended period, measured in Degree Heating Weeks (DHW). This notebook explores publicly available sea surface temperature (SST) and DHW data to identify patterns and risk factors associated with bleaching events."
+  },
+  {
+    "objectID": "projects/bleaching-risk-notebook.html#overview",
+    "href": "projects/bleaching-risk-notebook.html#overview",
+    "title": "Coral Bleaching Risk Notebook",
+    "section": "",
+    "text": "Coral bleaching occurs when water temperatures exceed a threshold for an extended period, measured in Degree Heating Weeks (DHW). This notebook explores publicly available sea surface temperature (SST) and DHW data to identify patterns and risk factors associated with bleaching events."
+  },
+  {
+    "objectID": "projects/bleaching-risk-notebook.html#data-sources",
+    "href": "projects/bleaching-risk-notebook.html#data-sources",
+    "title": "Coral Bleaching Risk Notebook",
+    "section": "Data Sources",
+    "text": "Data Sources\n\nNOAA Coral Reef Watch SST and DHW products\nReefBase bleaching observation records\nAIMS Long Term Monitoring Program data (planned)"
+  },
+  {
+    "objectID": "projects/bleaching-risk-notebook.html#analysis",
+    "href": "projects/bleaching-risk-notebook.html#analysis",
+    "title": "Coral Bleaching Risk Notebook",
+    "section": "Analysis",
+    "text": "Analysis\n\nExploratory Data Analysis\n\nSST anomaly trends over time\nDHW accumulation patterns by region\nCorrelation with reported bleaching events\n\n\n\nVisualization\n\nTime series plots of thermal stress\nSpatial maps of bleaching risk\nInteractive plots with Plotly"
+  },
+  {
+    "objectID": "projects/bleaching-risk-notebook.html#tools-used",
+    "href": "projects/bleaching-risk-notebook.html#tools-used",
+    "title": "Coral Bleaching Risk Notebook",
+    "section": "Tools Used",
+    "text": "Tools Used\n\nPython (pandas, xarray, matplotlib, plotly)\nJupyter Notebooks\nNOAA Coral Reef Watch API"
+  },
+  {
+    "objectID": "projects/bleaching-risk-notebook.html#status",
+    "href": "projects/bleaching-risk-notebook.html#status",
+    "title": "Coral Bleaching Risk Notebook",
+    "section": "Status",
+    "text": "Status\n🚧 In progress — data acquisition and EDA underway."
+  },
+  {
+    "objectID": "projects/bleaching-risk-notebook.html#notebook",
+    "href": "projects/bleaching-risk-notebook.html#notebook",
+    "title": "Coral Bleaching Risk Notebook",
+    "section": "Notebook",
+    "text": "Notebook\nJupyter notebook will be embedded here once complete."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
+    "section": "",
+    "text": "I’m a clinical informaticist and data systems professional based in the Washington, D.C. area, currently working at the National Institutes of Health. My work sits at the intersection of clinical research, data science, primary data collection, and research infrastructure.\nI work shoulder to shoulder with principal investigators, research teams, and operational stakeholders to understand scientific needs and translate them into usable systems, workflows, and data platforms. I also work with program and organizational leadership to shape enterprise data capabilities that support governance, interoperability, reproducibility, and long-term scientific value.\nMy professional background includes clinical research informatics, data governance, cloud-based research platforms, REDCap operations, metadata workflows, and support for large-scale scientific data programs.\nI’m currently expanding my scope into marine science, GIS, remote sensing, Structure-from-Motion photogrammetry, full-stack software development, and hardware engineering. Long term, I’m interested in applying informatics, reproducible analysis, and geospatial tools to coral reef research and marine conservation at institutions such as Scripps Institution of Oceanography, Woods Hole Oceanographic Institution, Mote Marine Laboratory, NOAA, or similar research organizations.\nOutside of work, I apply the same data and engineering mindset to cycling analytics, high-power rocketry, ham radio, Arduino-based systems, and embedded radio telemetry projects."
+  },
+  {
+    "objectID": "about.html#background",
+    "href": "about.html#background",
+    "title": "About Me",
+    "section": "",
+    "text": "I’m a clinical informaticist and data systems professional based in the Washington, D.C. area, currently working at the National Institutes of Health. My work sits at the intersection of clinical research, data science, primary data collection, and research infrastructure.\nI work shoulder to shoulder with principal investigators, research teams, and operational stakeholders to understand scientific needs and translate them into usable systems, workflows, and data platforms. I also work with program and organizational leadership to shape enterprise data capabilities that support governance, interoperability, reproducibility, and long-term scientific value.\nMy professional background includes clinical research informatics, data governance, cloud-based research platforms, REDCap operations, metadata workflows, and support for large-scale scientific data programs.\nI’m currently expanding my scope into marine science, GIS, remote sensing, Structure-from-Motion photogrammetry, full-stack software development, and hardware engineering. Long term, I’m interested in applying informatics, reproducible analysis, and geospatial tools to coral reef research and marine conservation at institutions such as Scripps Institution of Oceanography, Woods Hole Oceanographic Institution, Mote Marine Laboratory, NOAA, or similar research organizations.\nOutside of work, I apply the same data and engineering mindset to cycling analytics, high-power rocketry, ham radio, Arduino-based systems, and embedded radio telemetry projects."
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About Me",
+    "section": "Education",
+    "text": "Education\n\n** M.Sc. Health Care Administration Informatics, University of Maryland University College, Adelphi, MD - May 2016\n** B.Sc, Major Biology, Minor Chemistry, Minor Physics, Wilkes University, Wilkes-Barre, PA - May 2009"
+  },
+  {
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "About Me",
+    "section": "Experience",
+    "text": "Experience\n\nNational Institutes of Health / NHLBI — Biomedical Informatics Project Manager, 05/2021–-Present\n\nWork directly with principal investigators, research teams, and scientific stakeholders to understand research needs and translate them into practical informatics solutions.\nPartner with program leadership and enterprise stakeholders to develop data platforms, governance models, and operational workflows that scale beyond individual studies.\nSupport researcher-facing data systems, clinical research informatics workflows, and cloud-based scientific data platforms.\nContribute to data governance, metadata, data release, interoperability, and operational workflows for large-scale biomedical research programs.\nWork across scientific, technical, and operational teams to bridge investigator needs, enterprise priorities, and sustainable platform design."
+  },
+  {
+    "objectID": "about.html#skills",
+    "href": "about.html#skills",
+    "title": "About Me",
+    "section": "Skills",
+    "text": "Skills\n\nProgramming & Analysis: Python, SQL, R, Jupyter notebooks\nData Systems: REDCap, research data platforms, metadata workflows, FAIR data practices, clinical research informatics\nGIS & Remote Sensing: QGIS, geospatial analysis, benthic habitat mapping, remote sensing workflows\nPhotogrammetry: Structure-from-Motion workflows, Agisoft Metashape, large-area imaging concepts\nSoftware & DevOps: Git, GitHub, Quarto, Docker, cloud workspaces, reproducible analysis workflows\nHardware & Telemetry: Arduino, LoRa radio, embedded systems, sensor telemetry, high-power rocketry instrumentation\nDomains: Clinical research, biomedical informatics, marine science, coral reef conservation, geospatial analysis, cycling analytics"
+  },
+  {
+    "objectID": "about.html#currently-learning",
+    "href": "about.html#currently-learning",
+    "title": "About Me",
+    "section": "Currently Learning",
+    "text": "Currently Learning\n\nGIS workflows for marine and coastal datasets\nBenthic habitat classification and coral reef mapping methods\nStructure-from-Motion photogrammetry for reef monitoring\nRemote sensing applications for marine conservation\nFull-stack web development for data-driven hobby and research tools\nEmbedded telemetry systems using microcontrollers, sensors, and LoRa radio"
+  },
+  {
+    "objectID": "about.html#projects-interests",
+    "href": "about.html#projects-interests",
+    "title": "About Me",
+    "section": "Projects & Interests",
+    "text": "Projects & Interests\n\nCoral GIS & Marine Data: Building a portfolio of geospatial and remote sensing projects focused on reef conservation.\nPhotogrammetry: Learning SfM workflows for reconstructing reef sites from overlapping image sets.\nCycling Analytics: Exploring data tools for cycling performance, fantasy cycling, and route analysis.\nRocket Telemetry: Building embedded radio telemetry systems for high-power rocketry using Arduino-compatible boards, barometric sensors, accelerometers, and LoRa radios.\nHam Radio & Field Systems: Experimenting with radio communications, portable systems, and telemetry workflows."
+  },
+  {
+    "objectID": "about.html#contact",
+    "href": "about.html#contact",
+    "title": "About Me",
+    "section": "Contact",
+    "text": "Contact\n\n📧 francisco.velez.v@gmail.com\n🐙 github.com/velezf"
+  }
+]
