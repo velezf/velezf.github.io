@@ -1,6 +1,6 @@
 ---
 title: "Benthic Habitat Mapping"
-description: "GIS-based mapping and classification of benthic habitats using remote sensing and field survey data."
+description: "A planned GIS-based workflow for mapping and classifying benthic habitats using remote sensing and field survey data."
 date: "2025-03-01"
 categories: [GIS, marine science, mapping, remote sensing]
 image: ../images/benthic-map.jpg
@@ -8,33 +8,37 @@ image: ../images/benthic-map.jpg
 
 ## Overview
 
-Benthic habitat maps are essential tools for coral reef management and 
-conservation. This project explores methods for producing high-resolution 
-habitat maps by combining field survey data with remote sensing imagery.
+Benthic habitat maps are essential tools for coral reef management and conservation. This project outlines the methods I'm studying for producing high-resolution habitat maps by combining field survey data with remote sensing imagery. The workflow below is based on my research into established approaches in the field. I have not yet produced a habitat map from real data — that is the goal I'm working toward.
 
-## Methods
+**Status: 🚧 In progress — methods research and learning phase. Map production is planned future work.**
+
+## Why Benthic Mapping
+
+Understanding what lives on the seafloor — coral, seagrass, sand, rubble — is foundational to reef conservation and management. High-resolution benthic maps enable habitat change tracking over time, identification of bleaching or damage extent, prioritization of restoration and protection efforts, and integration with water quality and thermal stress data. I want to be able to produce and work with these maps as part of applied marine data science work.
+
+## Planned Methods
 
 ### Data Sources
-- Multispectral satellite imagery
-- Underwater photo transects
-- SfM-derived orthomosaics
+- Multispectral satellite imagery (e.g., Planet, Sentinel-2, WorldView)
+- Underwater photo transects for field validation
+- SfM-derived orthomosaics as high-resolution local inputs
 
 ### Classification Approach
-- Object-based image analysis (OBIA)
+- Object-based image analysis (OBIA) for reef-scale segmentation
 - Supervised classification using field validation points
-- Accuracy assessment with confusion matrices
+- Accuracy assessment with confusion matrices and kappa statistics
 
 ### GIS Processing
-- Coordinate reference system management
+- Coordinate reference system management and reprojection
 - Raster and vector integration
-- Map layout and cartographic output
+- Map layout and cartographic output in QGIS
 
-## Tools Used
+## Tools I'm Learning
 
-- QGIS
-- Python (rasterio, geopandas, scikit-learn)
-- Google Earth Engine (planned)
+- QGIS — primary GIS environment
+- Python (`rasterio`, `geopandas`, `scikit-learn`) — raster processing and classification
+- Google Earth Engine — cloud-scale remote sensing analysis (planned)
 
-## Status
+## Path Forward
 
-🚧 *In progress — methods being developed.*
+My near-term plan is to work through a classification exercise using a publicly available benthic dataset — likely from NOAA's National Coral Reef Monitoring Program or the Allen Coral Atlas — to produce a documented, reproducible mapping workflow before applying it to original survey data.

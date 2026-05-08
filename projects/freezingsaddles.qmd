@@ -8,9 +8,7 @@ image: ../images/freezingsaddles.jpg
 
 ## Overview
 
-FreezingSaddles is a winter cycling challenge that encourages riders to log miles 
-during the coldest months of the year. This project covers the data pipeline, 
-leaderboard analytics, and visualizations built to support the challenge.
+FreezingSaddles is a winter cycling challenge that encourages riders to log miles during the coldest months of the year. This project covers the data pipeline, leaderboard analytics, and visualizations built to support the challenge.
 
 ## Features
 
@@ -34,8 +32,8 @@ leaderboard analytics, and visualizations built to support the challenge.
 
 ## Links
 
-- [GitHub Repository](https://github.com/velezf/freezingsaddles)
-- [Live Site](https://velezf.github.io/freezingsaddles) *(if applicable)*
+- [FreezingSaddles](https://freezingsaddles.org) — main challenge site
+- [GitHub Organization](https://github.com/freezingsaddles) — source code and repos
 
 ## Status
 

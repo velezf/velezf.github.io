@@ -1,6 +1,6 @@
 ---
 title: "SfM Photogrammetry for Marine Science"
-description: "An overview of Structure-from-Motion photogrammetry methods applied to coral reef and benthic habitat surveys."
+description: "An overview of Structure-from-Motion photogrammetry methods applied to coral reef and benthic habitat surveys — and my plan to apply them."
 date: "2025-01-01"
 categories: [marine science, photogrammetry, 3D, GIS]
 image: ../images/sfm-marine.jpg
@@ -8,22 +8,35 @@ image: ../images/sfm-marine.jpg
 
 ## Overview
 
-Structure-from-Motion (SfM) photogrammetry enables the creation of precise 3D 
-models from overlapping photographs. This page provides an overview of how SfM 
-methods can be applied to underwater survey data to map and monitor coral reefs 
-and benthic habitats.
+Structure-from-Motion (SfM) photogrammetry enables the creation of precise 3D models from overlapping photographs. This page documents my study of how SfM methods are applied to underwater survey data to map and monitor coral reefs and benthic habitats — and outlines the work I plan to do as I build toward applying these techniques myself.
 
-## Why SfM for Marine Science?
+**Status: 🚧 In progress — this is active learning and future planned work, not a completed project.**
 
-Traditional survey methods struggle to capture the complex 3D structure of coral 
-reefs. SfM offers:
+## Why I'm Interested in SfM for Marine Science
+
+Traditional survey methods struggle to capture the complex 3D structure of coral reefs. SfM offers capabilities I want to develop:
 
 - High-resolution 3D reconstructions from standard cameras
 - Quantitative measurements of structural complexity
 - Repeatable surveys for change detection over time
-- Low-cost relative to LiDAR or multibeam sonar
+- Lower cost relative to LiDAR or multibeam sonar
+
+My goal is to build the technical depth to contribute to reef monitoring efforts using these methods, either as part of a research team or through independent projects.
+
+## What I'm Learning
+
+I'm working through the core concepts of SfM pipelines, including:
+
+- Image acquisition protocols for underwater surveys (overlap, lighting, camera settings)
+- Processing workflows in Agisoft Metashape
+- Quality assessment using ground control points and reprojection error
+- Output formats: orthomosaics, DEMs, and 3D meshes
+
+## Planned Work
+
+Once I have suitable underwater image sets to work with, I plan to document a complete end-to-end pipeline — from raw photos to validated 3D outputs — as a reproducible, open workflow. See the related projects below for where that work is heading.
 
 ## Related Projects
 
-- [Reef SfM Workflow](reef-sfm-workflow.qmd) — detailed processing pipeline
-- [Benthic Habitat Map](benthic-habitat-map.qmd) — GIS mapping outputs
+- [Reef SfM Workflow](reef-sfm-workflow.qmd) — the detailed processing pipeline I'm building toward
+- [Benthic Habitat Map](benthic-habitat-map.qmd) — GIS mapping outputs that will draw on SfM data

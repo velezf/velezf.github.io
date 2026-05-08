@@ -1,6 +1,6 @@
 ---
 title: "Reef SfM Workflow"
-description: "A detailed end-to-end workflow for processing underwater photos into 3D reef models using Structure-from-Motion photogrammetry."
+description: "A planned end-to-end workflow for processing underwater photos into 3D reef models using Structure-from-Motion photogrammetry."
 date: "2025-02-01"
 categories: [marine science, photogrammetry, workflow, 3D]
 image: ../images/reef-sfm.jpg
@@ -8,38 +8,44 @@ image: ../images/reef-sfm.jpg
 
 ## Overview
 
-This project documents a complete SfM processing pipeline for coral reef surveys,
-from image acquisition underwater through to final 3D model outputs and quality
-assessment.
+This project documents the SfM processing pipeline I'm building toward for coral reef surveys — from image acquisition underwater through to final 3D model outputs and quality assessment. The workflow structure below reflects my research into best practices from the literature and practitioner guides. I have not yet applied this pipeline to real reef survey data.
 
-## Workflow Steps
+**Status: 🚧 In progress — workflow design and learning phase. Application to real data is planned future work.**
+
+## Why This Workflow
+
+My goal is to be able to take a set of overlapping underwater photographs and produce validated, georeferenced 3D outputs that can support reef monitoring, structural complexity analysis, and change detection over time. Documenting the workflow in advance gives me a clear target to build toward and a reference to refine as I gain hands-on experience.
+
+## Planned Workflow Steps
 
 ### 1. Image Acquisition
-- Camera settings and housing recommendations
-- Dive survey protocols for optimal overlap
-- Lighting considerations for underwater photography
+- Camera settings and housing selection for underwater use
+- Dive survey protocols to achieve sufficient image overlap (typically 80–90%)
+- Lighting considerations: strobes vs. ambient, color correction for depth
+- Survey track planning for consistent coverage
 
 ### 2. Processing in Agisoft Metashape
-- Photo alignment and sparse point cloud
-- Dense point cloud generation
-- Mesh and orthomosaic export
+- Photo alignment and sparse point cloud generation
+- Dense point cloud generation (quality vs. processing time tradeoffs)
+- Mesh construction and texturing
+- Orthomosaic and DEM export
 
 ### 3. Quality Assessment
-- Ground control points (GCPs)
-- Error metrics and reprojection error
-- Visual inspection of model artifacts
+- Ground control points (GCPs) for georeferencing and scale
+- Reprojection error review and iterative alignment refinement
+- Visual inspection for model artifacts, holes, and misalignments
 
 ### 4. Outputs
-- Orthomosaic (2D georeferenced image)
-- Digital elevation model (DEM)
-- 3D mesh for structural complexity analysis
+- Orthomosaic (2D georeferenced image) for habitat classification
+- Digital elevation model (DEM) for rugosity and structural complexity analysis
+- 3D mesh for visual inspection and volumetric analysis
 
-## Tools Used
+## Tools I'm Learning
 
-- Agisoft Metashape
-- QGIS
-- Python (point cloud analysis)
+- Agisoft Metashape — primary SfM processing software
+- QGIS — for georeferenced output analysis and visualization
+- Python (`open3d`, `pdal`) — point cloud analysis and automation
 
-## Status
+## Path Forward
 
-🚧 *In progress — workflow documentation being developed.*
+Once I have access to suitable underwater image sets — either from open datasets, collaborators, or my own dives — I'll work through this pipeline, document the results, and update this page with real outputs and lessons learned.
