@@ -18,7 +18,7 @@
     "href": "index.html#research-interests",
     "title": "Francisco Velez",
     "section": "Research Interests",
-    "text": "Research Interests\n\nI’m actively developing expertise in marine data science, with a focus on coral reef monitoring and geospatial analysis\nCoral reef monitoring and benthic habitat mapping\nStructure-from-Motion photogrammetry for marine applications\nGeospatial data visualization and analysis\nIoT and radio telemetry systems"
+    "text": "Research Interests\n\nCoral reef monitoring and benthic habitat mapping\nStructure-from-Motion photogrammetry for marine applications\nGeospatial data visualization and analysis\nIoT and radio telemetry systems"
   },
   {
     "objectID": "index.html#recent-projects",
@@ -32,70 +32,91 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "2016 Subaru Outback Stereo Build\n\n\n\nhardware\n\naudio\n\ncar-audio\n\nSubaru\n\nDIY\n\ndocumentation\n\n\n\nA technical writeup and reference guide for upgrading the factory Harman Kardon audio system in a 2016 Subaru Outback, including head unit replacement, amplifier…\n\n\n\nMay 7, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nLoRa RadioRocket\n\n\n\nIoT\n\ntelemetry\n\nLoRa\n\nAPRS\n\nhardware\n\namateur radio\n\n\n\nAmateur radio telemetry system for mid and high power model rockets, combining APRS tracking and LoRa data transmission with a Raspberry Pi ground station.\n\n\n\nJun 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nFreezingSaddles\n\n\n\ncycling\n\nanalytics\n\nvisualization\n\npython\n\n\n\nAnalytics and visualization for a winter cycling challenge tracking mileage, leaderboards, and participation across teams.\n\n\n\nMay 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nCoral Bleaching Risk Notebook\n\n\n\nmarine science\n\ndata analysis\n\njupyter\n\npython\n\n\n\nAn exploratory data analysis notebook examining environmental drivers of coral bleaching risk using sea surface temperature and DHW data.\n\n\n\nApr 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nBenthic Habitat Mapping\n\n\n\nGIS\n\nmarine science\n\nmapping\n\nremote sensing\n\n\n\nGIS-based mapping and classification of benthic habitats using remote sensing and field survey data.\n\n\n\nMar 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nReef SfM Workflow\n\n\n\nmarine science\n\nphotogrammetry\n\nworkflow\n\n3D\n\n\n\nA detailed end-to-end workflow for processing underwater photos into 3D reef models using Structure-from-Motion photogrammetry.\n\n\n\nFeb 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nSfM Photogrammetry for Marine Science\n\n\n\nmarine science\n\nphotogrammetry\n\n3D\n\nGIS\n\n\n\nAn overview of Structure-from-Motion photogrammetry methods applied to coral reef and benthic habitat surveys.\n\n\n\nJan 1, 2025\n\n\n\n\n\n\nNo matching items"
+    "text": "2016 Subaru Outback Stereo Build\n\n\n\nhardware\n\naudio\n\ncar-audio\n\nSubaru\n\nDIY\n\ndocumentation\n\n\n\nA technical writeup and reference guide for upgrading the factory Harman Kardon audio system in a 2016 Subaru Outback, including head unit replacement, amplifier…\n\n\n\nMay 7, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nLoRa RadioRocket\n\n\n\nIoT\n\ntelemetry\n\nLoRa\n\nAPRS\n\nhardware\n\namateur radio\n\n\n\nAmateur radio telemetry system for mid and high power model rockets, combining APRS tracking and LoRa data transmission with a Raspberry Pi ground station.\n\n\n\nJun 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nFreezingSaddles\n\n\n\ncycling\n\nanalytics\n\nvisualization\n\npython\n\n\n\nAnalytics and visualization for a winter cycling challenge tracking mileage, leaderboards, and participation across teams.\n\n\n\nMay 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nCoral Bleaching Risk Notebook\n\n\n\nmarine science\n\ndata analysis\n\njupyter\n\npython\n\n\n\nA planned exploratory data analysis notebook examining environmental drivers of coral bleaching risk using sea surface temperature and DHW data.\n\n\n\nApr 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nBenthic Habitat Mapping\n\n\n\nGIS\n\nmarine science\n\nmapping\n\nremote sensing\n\n\n\nA planned GIS-based workflow for mapping and classifying benthic habitats using remote sensing and field survey data.\n\n\n\nMar 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nReef SfM Workflow\n\n\n\nmarine science\n\nphotogrammetry\n\nworkflow\n\n3D\n\n\n\nA planned end-to-end workflow for processing underwater photos into 3D reef models using Structure-from-Motion photogrammetry.\n\n\n\nFeb 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nSfM Photogrammetry for Marine Science\n\n\n\nmarine science\n\nphotogrammetry\n\n3D\n\nGIS\n\n\n\nAn overview of Structure-from-Motion photogrammetry methods applied to coral reef and benthic habitat surveys — and my plan to apply them.\n\n\n\nJan 1, 2025\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/benthic-habitat-map.html",
     "href": "projects/benthic-habitat-map.html",
     "title": "Benthic Habitat Mapping",
     "section": "",
-    "text": "Benthic habitat maps are essential tools for coral reef management and conservation. This project explores methods for producing high-resolution habitat maps by combining field survey data with remote sensing imagery."
+    "text": "Benthic habitat maps are essential tools for coral reef management and conservation. This project outlines the methods I’m studying for producing high-resolution habitat maps by combining field survey data with remote sensing imagery. The workflow below is based on my research into established approaches in the field. I have not yet produced a habitat map from real data — that is the goal I’m working toward.\nStatus: 🚧 In progress — methods research and learning phase. Map production is planned future work."
   },
   {
     "objectID": "projects/benthic-habitat-map.html#overview",
     "href": "projects/benthic-habitat-map.html#overview",
     "title": "Benthic Habitat Mapping",
     "section": "",
-    "text": "Benthic habitat maps are essential tools for coral reef management and conservation. This project explores methods for producing high-resolution habitat maps by combining field survey data with remote sensing imagery."
+    "text": "Benthic habitat maps are essential tools for coral reef management and conservation. This project outlines the methods I’m studying for producing high-resolution habitat maps by combining field survey data with remote sensing imagery. The workflow below is based on my research into established approaches in the field. I have not yet produced a habitat map from real data — that is the goal I’m working toward.\nStatus: 🚧 In progress — methods research and learning phase. Map production is planned future work."
   },
   {
-    "objectID": "projects/benthic-habitat-map.html#methods",
-    "href": "projects/benthic-habitat-map.html#methods",
+    "objectID": "projects/benthic-habitat-map.html#why-benthic-mapping",
+    "href": "projects/benthic-habitat-map.html#why-benthic-mapping",
     "title": "Benthic Habitat Mapping",
-    "section": "Methods",
-    "text": "Methods\n\nData Sources\n\nMultispectral satellite imagery\nUnderwater photo transects\nSfM-derived orthomosaics\n\n\n\nClassification Approach\n\nObject-based image analysis (OBIA)\nSupervised classification using field validation points\nAccuracy assessment with confusion matrices\n\n\n\nGIS Processing\n\nCoordinate reference system management\nRaster and vector integration\nMap layout and cartographic output"
+    "section": "Why Benthic Mapping",
+    "text": "Why Benthic Mapping\nUnderstanding what lives on the seafloor — coral, seagrass, sand, rubble — is foundational to reef conservation and management. High-resolution benthic maps enable habitat change tracking over time, identification of bleaching or damage extent, prioritization of restoration and protection efforts, and integration with water quality and thermal stress data. I want to be able to produce and work with these maps as part of applied marine data science work."
   },
   {
-    "objectID": "projects/benthic-habitat-map.html#tools-used",
-    "href": "projects/benthic-habitat-map.html#tools-used",
+    "objectID": "projects/benthic-habitat-map.html#planned-methods",
+    "href": "projects/benthic-habitat-map.html#planned-methods",
     "title": "Benthic Habitat Mapping",
-    "section": "Tools Used",
-    "text": "Tools Used\n\nQGIS\nPython (rasterio, geopandas, scikit-learn)\nGoogle Earth Engine (planned)"
+    "section": "Planned Methods",
+    "text": "Planned Methods\n\nData Sources\n\nMultispectral satellite imagery (e.g., Planet, Sentinel-2, WorldView)\nUnderwater photo transects for field validation\nSfM-derived orthomosaics as high-resolution local inputs\n\n\n\nClassification Approach\n\nObject-based image analysis (OBIA) for reef-scale segmentation\nSupervised classification using field validation points\nAccuracy assessment with confusion matrices and kappa statistics\n\n\n\nGIS Processing\n\nCoordinate reference system management and reprojection\nRaster and vector integration\nMap layout and cartographic output in QGIS"
   },
   {
-    "objectID": "projects/benthic-habitat-map.html#status",
-    "href": "projects/benthic-habitat-map.html#status",
+    "objectID": "projects/benthic-habitat-map.html#tools-im-learning",
+    "href": "projects/benthic-habitat-map.html#tools-im-learning",
     "title": "Benthic Habitat Mapping",
-    "section": "Status",
-    "text": "Status\n🚧 In progress — methods being developed."
+    "section": "Tools I’m Learning",
+    "text": "Tools I’m Learning\n\nQGIS — primary GIS environment\nPython (rasterio, geopandas, scikit-learn) — raster processing and classification\nGoogle Earth Engine — cloud-scale remote sensing analysis (planned)"
+  },
+  {
+    "objectID": "projects/benthic-habitat-map.html#path-forward",
+    "href": "projects/benthic-habitat-map.html#path-forward",
+    "title": "Benthic Habitat Mapping",
+    "section": "Path Forward",
+    "text": "Path Forward\nMy near-term plan is to work through a classification exercise using a publicly available benthic dataset — likely from NOAA’s National Coral Reef Monitoring Program or the Allen Coral Atlas — to produce a documented, reproducible mapping workflow before applying it to original survey data."
   },
   {
     "objectID": "projects/sfm-marine.html",
     "href": "projects/sfm-marine.html",
     "title": "SfM Photogrammetry for Marine Science",
     "section": "",
-    "text": "Structure-from-Motion (SfM) photogrammetry enables the creation of precise 3D models from overlapping photographs. This page provides an overview of how SfM methods can be applied to underwater survey data to map and monitor coral reefs and benthic habitats."
+    "text": "Structure-from-Motion (SfM) photogrammetry enables the creation of precise 3D models from overlapping photographs. This page documents my study of how SfM methods are applied to underwater survey data to map and monitor coral reefs and benthic habitats — and outlines the work I plan to do as I build toward applying these techniques myself.\nStatus: 🚧 In progress — this is active learning and future planned work, not a completed project."
   },
   {
     "objectID": "projects/sfm-marine.html#overview",
     "href": "projects/sfm-marine.html#overview",
     "title": "SfM Photogrammetry for Marine Science",
     "section": "",
-    "text": "Structure-from-Motion (SfM) photogrammetry enables the creation of precise 3D models from overlapping photographs. This page provides an overview of how SfM methods can be applied to underwater survey data to map and monitor coral reefs and benthic habitats."
+    "text": "Structure-from-Motion (SfM) photogrammetry enables the creation of precise 3D models from overlapping photographs. This page documents my study of how SfM methods are applied to underwater survey data to map and monitor coral reefs and benthic habitats — and outlines the work I plan to do as I build toward applying these techniques myself.\nStatus: 🚧 In progress — this is active learning and future planned work, not a completed project."
   },
   {
-    "objectID": "projects/sfm-marine.html#why-sfm-for-marine-science",
-    "href": "projects/sfm-marine.html#why-sfm-for-marine-science",
+    "objectID": "projects/sfm-marine.html#why-im-interested-in-sfm-for-marine-science",
+    "href": "projects/sfm-marine.html#why-im-interested-in-sfm-for-marine-science",
     "title": "SfM Photogrammetry for Marine Science",
-    "section": "Why SfM for Marine Science?",
-    "text": "Why SfM for Marine Science?\nTraditional survey methods struggle to capture the complex 3D structure of coral reefs. SfM offers:\n\nHigh-resolution 3D reconstructions from standard cameras\nQuantitative measurements of structural complexity\nRepeatable surveys for change detection over time\nLow-cost relative to LiDAR or multibeam sonar"
+    "section": "Why I’m Interested in SfM for Marine Science",
+    "text": "Why I’m Interested in SfM for Marine Science\nTraditional survey methods struggle to capture the complex 3D structure of coral reefs. SfM offers capabilities I want to develop:\n\nHigh-resolution 3D reconstructions from standard cameras\nQuantitative measurements of structural complexity\nRepeatable surveys for change detection over time\nLower cost relative to LiDAR or multibeam sonar\n\nMy goal is to build the technical depth to contribute to reef monitoring efforts using these methods, either as part of a research team or through independent projects."
+  },
+  {
+    "objectID": "projects/sfm-marine.html#what-im-learning",
+    "href": "projects/sfm-marine.html#what-im-learning",
+    "title": "SfM Photogrammetry for Marine Science",
+    "section": "What I’m Learning",
+    "text": "What I’m Learning\nI’m working through the core concepts of SfM pipelines, including:\n\nImage acquisition protocols for underwater surveys (overlap, lighting, camera settings)\nProcessing workflows in Agisoft Metashape\nQuality assessment using ground control points and reprojection error\nOutput formats: orthomosaics, DEMs, and 3D meshes"
+  },
+  {
+    "objectID": "projects/sfm-marine.html#planned-work",
+    "href": "projects/sfm-marine.html#planned-work",
+    "title": "SfM Photogrammetry for Marine Science",
+    "section": "Planned Work",
+    "text": "Planned Work\nOnce I have suitable underwater image sets to work with, I plan to document a complete end-to-end pipeline — from raw photos to validated 3D outputs — as a reproducible, open workflow. See the related projects below for where that work is heading."
   },
   {
     "objectID": "projects/sfm-marine.html#related-projects",
     "href": "projects/sfm-marine.html#related-projects",
     "title": "SfM Photogrammetry for Marine Science",
     "section": "Related Projects",
-    "text": "Related Projects\n\nReef SfM Workflow — detailed processing pipeline\nBenthic Habitat Map — GIS mapping outputs"
+    "text": "Related Projects\n\nReef SfM Workflow — the detailed processing pipeline I’m building toward\nBenthic Habitat Map — GIS mapping outputs that will draw on SfM data"
   },
   {
     "objectID": "projects/subaru-audio-tuning.html",
@@ -158,35 +179,42 @@
     "href": "projects/reef-sfm-workflow.html",
     "title": "Reef SfM Workflow",
     "section": "",
-    "text": "This project documents a complete SfM processing pipeline for coral reef surveys, from image acquisition underwater through to final 3D model outputs and quality assessment."
+    "text": "This project documents the SfM processing pipeline I’m building toward for coral reef surveys — from image acquisition underwater through to final 3D model outputs and quality assessment. The workflow structure below reflects my research into best practices from the literature and practitioner guides. I have not yet applied this pipeline to real reef survey data.\nStatus: 🚧 In progress — workflow design and learning phase. Application to real data is planned future work."
   },
   {
     "objectID": "projects/reef-sfm-workflow.html#overview",
     "href": "projects/reef-sfm-workflow.html#overview",
     "title": "Reef SfM Workflow",
     "section": "",
-    "text": "This project documents a complete SfM processing pipeline for coral reef surveys, from image acquisition underwater through to final 3D model outputs and quality assessment."
+    "text": "This project documents the SfM processing pipeline I’m building toward for coral reef surveys — from image acquisition underwater through to final 3D model outputs and quality assessment. The workflow structure below reflects my research into best practices from the literature and practitioner guides. I have not yet applied this pipeline to real reef survey data.\nStatus: 🚧 In progress — workflow design and learning phase. Application to real data is planned future work."
   },
   {
-    "objectID": "projects/reef-sfm-workflow.html#workflow-steps",
-    "href": "projects/reef-sfm-workflow.html#workflow-steps",
+    "objectID": "projects/reef-sfm-workflow.html#why-this-workflow",
+    "href": "projects/reef-sfm-workflow.html#why-this-workflow",
     "title": "Reef SfM Workflow",
-    "section": "Workflow Steps",
-    "text": "Workflow Steps\n\n1. Image Acquisition\n\nCamera settings and housing recommendations\nDive survey protocols for optimal overlap\nLighting considerations for underwater photography\n\n\n\n2. Processing in Agisoft Metashape\n\nPhoto alignment and sparse point cloud\nDense point cloud generation\nMesh and orthomosaic export\n\n\n\n3. Quality Assessment\n\nGround control points (GCPs)\nError metrics and reprojection error\nVisual inspection of model artifacts\n\n\n\n4. Outputs\n\nOrthomosaic (2D georeferenced image)\nDigital elevation model (DEM)\n3D mesh for structural complexity analysis"
+    "section": "Why This Workflow",
+    "text": "Why This Workflow\nMy goal is to be able to take a set of overlapping underwater photographs and produce validated, georeferenced 3D outputs that can support reef monitoring, structural complexity analysis, and change detection over time. Documenting the workflow in advance gives me a clear target to build toward and a reference to refine as I gain hands-on experience."
   },
   {
-    "objectID": "projects/reef-sfm-workflow.html#tools-used",
-    "href": "projects/reef-sfm-workflow.html#tools-used",
+    "objectID": "projects/reef-sfm-workflow.html#planned-workflow-steps",
+    "href": "projects/reef-sfm-workflow.html#planned-workflow-steps",
     "title": "Reef SfM Workflow",
-    "section": "Tools Used",
-    "text": "Tools Used\n\nAgisoft Metashape\nQGIS\nPython (point cloud analysis)"
+    "section": "Planned Workflow Steps",
+    "text": "Planned Workflow Steps\n\n1. Image Acquisition\n\nCamera settings and housing selection for underwater use\nDive survey protocols to achieve sufficient image overlap (typically 80–90%)\nLighting considerations: strobes vs. ambient, color correction for depth\nSurvey track planning for consistent coverage\n\n\n\n2. Processing in Agisoft Metashape\n\nPhoto alignment and sparse point cloud generation\nDense point cloud generation (quality vs. processing time tradeoffs)\nMesh construction and texturing\nOrthomosaic and DEM export\n\n\n\n3. Quality Assessment\n\nGround control points (GCPs) for georeferencing and scale\nReprojection error review and iterative alignment refinement\nVisual inspection for model artifacts, holes, and misalignments\n\n\n\n4. Outputs\n\nOrthomosaic (2D georeferenced image) for habitat classification\nDigital elevation model (DEM) for rugosity and structural complexity analysis\n3D mesh for visual inspection and volumetric analysis"
   },
   {
-    "objectID": "projects/reef-sfm-workflow.html#status",
-    "href": "projects/reef-sfm-workflow.html#status",
+    "objectID": "projects/reef-sfm-workflow.html#tools-im-learning",
+    "href": "projects/reef-sfm-workflow.html#tools-im-learning",
     "title": "Reef SfM Workflow",
-    "section": "Status",
-    "text": "Status\n🚧 In progress — workflow documentation being developed."
+    "section": "Tools I’m Learning",
+    "text": "Tools I’m Learning\n\nAgisoft Metashape — primary SfM processing software\nQGIS — for georeferenced output analysis and visualization\nPython (open3d, pdal) — point cloud analysis and automation"
+  },
+  {
+    "objectID": "projects/reef-sfm-workflow.html#path-forward",
+    "href": "projects/reef-sfm-workflow.html#path-forward",
+    "title": "Reef SfM Workflow",
+    "section": "Path Forward",
+    "text": "Path Forward\nOnce I have access to suitable underwater image sets — either from open datasets, collaborators, or my own dives — I’ll work through this pipeline, document the results, and update this page with real outputs and lessons learned."
   },
   {
     "objectID": "projects/lora-radiorocket.html",
@@ -270,7 +298,7 @@
     "href": "projects/freezingsaddles.html#links",
     "title": "FreezingSaddles",
     "section": "Links",
-    "text": "Links\n\nGitHub Repository\nLive Site (if applicable)"
+    "text": "Links\n\nFreezingSaddles — main challenge site\nGitHub Organization — source code and repos"
   },
   {
     "objectID": "projects/freezingsaddles.html#status",
@@ -284,49 +312,56 @@
     "href": "projects/bleaching-risk-notebook.html",
     "title": "Coral Bleaching Risk Notebook",
     "section": "",
-    "text": "Coral bleaching occurs when water temperatures exceed a threshold for an extended period, measured in Degree Heating Weeks (DHW). This notebook explores publicly available sea surface temperature (SST) and DHW data to identify patterns and risk factors associated with bleaching events."
+    "text": "Coral bleaching occurs when water temperatures exceed a thermal threshold for an extended period, measured in Degree Heating Weeks (DHW). This project is a planned Jupyter notebook that will explore publicly available sea surface temperature (SST) and DHW data to identify patterns and risk factors associated with bleaching events. The analytical structure below reflects my research into the data sources and methods I intend to use. The notebook itself is not yet complete.\nStatus: 🚧 In progress — data source research and notebook scaffolding underway. Analysis is planned future work."
   },
   {
     "objectID": "projects/bleaching-risk-notebook.html#overview",
     "href": "projects/bleaching-risk-notebook.html#overview",
     "title": "Coral Bleaching Risk Notebook",
     "section": "",
-    "text": "Coral bleaching occurs when water temperatures exceed a threshold for an extended period, measured in Degree Heating Weeks (DHW). This notebook explores publicly available sea surface temperature (SST) and DHW data to identify patterns and risk factors associated with bleaching events."
+    "text": "Coral bleaching occurs when water temperatures exceed a thermal threshold for an extended period, measured in Degree Heating Weeks (DHW). This project is a planned Jupyter notebook that will explore publicly available sea surface temperature (SST) and DHW data to identify patterns and risk factors associated with bleaching events. The analytical structure below reflects my research into the data sources and methods I intend to use. The notebook itself is not yet complete.\nStatus: 🚧 In progress — data source research and notebook scaffolding underway. Analysis is planned future work."
   },
   {
-    "objectID": "projects/bleaching-risk-notebook.html#data-sources",
-    "href": "projects/bleaching-risk-notebook.html#data-sources",
+    "objectID": "projects/bleaching-risk-notebook.html#why-this-analysis",
+    "href": "projects/bleaching-risk-notebook.html#why-this-analysis",
     "title": "Coral Bleaching Risk Notebook",
-    "section": "Data Sources",
-    "text": "Data Sources\n\nNOAA Coral Reef Watch SST and DHW products\nReefBase bleaching observation records\nAIMS Long Term Monitoring Program data (planned)"
+    "section": "Why This Analysis",
+    "text": "Why This Analysis\nThe 2024 global bleaching event — the fourth mass bleaching event on record — underscored how urgently the field needs accessible, reproducible tools for monitoring and communicating thermal stress risk. My goal with this notebook is to develop hands-on fluency with the key data products used in reef thermal stress monitoring, and to produce a clean, shareable analytical workflow that could serve as a building block for more applied work."
   },
   {
-    "objectID": "projects/bleaching-risk-notebook.html#analysis",
-    "href": "projects/bleaching-risk-notebook.html#analysis",
+    "objectID": "projects/bleaching-risk-notebook.html#planned-data-sources",
+    "href": "projects/bleaching-risk-notebook.html#planned-data-sources",
     "title": "Coral Bleaching Risk Notebook",
-    "section": "Analysis",
-    "text": "Analysis\n\nExploratory Data Analysis\n\nSST anomaly trends over time\nDHW accumulation patterns by region\nCorrelation with reported bleaching events\n\n\n\nVisualization\n\nTime series plots of thermal stress\nSpatial maps of bleaching risk\nInteractive plots with Plotly"
+    "section": "Planned Data Sources",
+    "text": "Planned Data Sources\n\nNOAA Coral Reef Watch — SST and DHW gridded products (the primary operational data for bleaching risk monitoring)\nReefBase — historical bleaching observation records for ground-truth comparison\nAIMS Long Term Monitoring Program — bleaching and condition data from the Great Barrier Reef (planned)"
   },
   {
-    "objectID": "projects/bleaching-risk-notebook.html#tools-used",
-    "href": "projects/bleaching-risk-notebook.html#tools-used",
+    "objectID": "projects/bleaching-risk-notebook.html#planned-analysis",
+    "href": "projects/bleaching-risk-notebook.html#planned-analysis",
     "title": "Coral Bleaching Risk Notebook",
-    "section": "Tools Used",
-    "text": "Tools Used\n\nPython (pandas, xarray, matplotlib, plotly)\nJupyter Notebooks\nNOAA Coral Reef Watch API"
+    "section": "Planned Analysis",
+    "text": "Planned Analysis\n\nExploratory Data Analysis\n\nSST anomaly trends over time at selected reef sites\nDHW accumulation patterns by ocean region and season\nCorrelation between DHW thresholds and reported bleaching observations\n\n\n\nVisualization\n\nTime series plots of thermal stress at specific reef locations\nSpatial maps of bleaching risk across a region of interest\nInteractive plots with Plotly for exploratory use"
   },
   {
-    "objectID": "projects/bleaching-risk-notebook.html#status",
-    "href": "projects/bleaching-risk-notebook.html#status",
+    "objectID": "projects/bleaching-risk-notebook.html#tools",
+    "href": "projects/bleaching-risk-notebook.html#tools",
     "title": "Coral Bleaching Risk Notebook",
-    "section": "Status",
-    "text": "Status\n🚧 In progress — data acquisition and EDA underway."
+    "section": "Tools",
+    "text": "Tools\n\nPython (pandas, xarray, matplotlib, plotly, cartopy)\nJupyter Notebooks\nNOAA Coral Reef Watch API and NetCDF data products"
+  },
+  {
+    "objectID": "projects/bleaching-risk-notebook.html#path-forward",
+    "href": "projects/bleaching-risk-notebook.html#path-forward",
+    "title": "Coral Bleaching Risk Notebook",
+    "section": "Path Forward",
+    "text": "Path Forward\nMy next step is to download a representative SST/DHW dataset from NOAA Coral Reef Watch, build the core data loading and visualization scaffolding, and publish an initial notebook — even if incomplete — so the work is in the open and iterable. The embedded notebook below will be updated as the analysis develops."
   },
   {
     "objectID": "projects/bleaching-risk-notebook.html#notebook",
     "href": "projects/bleaching-risk-notebook.html#notebook",
     "title": "Coral Bleaching Risk Notebook",
     "section": "Notebook",
-    "text": "Notebook\nJupyter notebook will be embedded here once complete."
+    "text": "Notebook\nJupyter notebook will be embedded here once the initial version is complete."
   },
   {
     "objectID": "about.html",
@@ -347,14 +382,14 @@
     "href": "about.html#education",
     "title": "About Me",
     "section": "Education",
-    "text": "Education\n\n** M.Sc. Health Care Administration Informatics, University of Maryland University College, Adelphi, MD - May 2016\n** B.Sc, Major Biology, Minor Chemistry, Minor Physics, Wilkes University, Wilkes-Barre, PA - May 2009"
+    "text": "Education\n\nM.Sc. Health Care Administration Informatics, University of Maryland University College, Adelphi, MD — May 2016\nB.Sc. Biology (Minor: Chemistry, Minor: Physics), Wilkes University, Wilkes-Barre, PA — May 2009"
   },
   {
     "objectID": "about.html#experience",
     "href": "about.html#experience",
     "title": "About Me",
     "section": "Experience",
-    "text": "Experience\n\nNational Institutes of Health / NHLBI — Biomedical Informatics Project Manager, 05/2021–-Present\n\nWork directly with principal investigators, research teams, and scientific stakeholders to understand research needs and translate them into practical informatics solutions.\nPartner with program leadership and enterprise stakeholders to develop data platforms, governance models, and operational workflows that scale beyond individual studies.\nSupport researcher-facing data systems, clinical research informatics workflows, and cloud-based scientific data platforms.\nContribute to data governance, metadata, data release, interoperability, and operational workflows for large-scale biomedical research programs.\nWork across scientific, technical, and operational teams to bridge investigator needs, enterprise priorities, and sustainable platform design."
+    "text": "Experience\n\nNational Institutes of Health / NHLBI — Biomedical Informatics Project Manager, 05/2021–Present\n\nWork directly with principal investigators, research teams, and scientific stakeholders to understand research needs and translate them into practical informatics solutions.\nPartner with program leadership and enterprise stakeholders to develop data platforms, governance models, and operational workflows that scale beyond individual studies.\nSupport researcher-facing data systems, clinical research informatics workflows, and cloud-based scientific data platforms.\nContribute to data governance, metadata, data release, interoperability, and operational workflows for large-scale biomedical research programs.\nWork across scientific, technical, and operational teams to bridge investigator needs, enterprise priorities, and sustainable platform design."
   },
   {
     "objectID": "about.html#skills",
@@ -382,6 +417,6 @@
     "href": "about.html#contact",
     "title": "About Me",
     "section": "Contact",
-    "text": "Contact\n\n📧 francisco.velez.v@gmail.com\n🐙 github.com/velezf"
+    "text": "Contact\n\n📧 francisco.velez.v@gmail.com\n🐙 github.com/velezf\n💼 linkedin.com/in/francisco-velez-86028315"
   }
 ]

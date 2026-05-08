@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="dcterms.date" content="2025-01-01">
-<meta name="description" content="An overview of Structure-from-Motion photogrammetry methods applied to coral reef and benthic habitat surveys.">
+<meta name="description" content="An overview of Structure-from-Motion photogrammetry methods applied to coral reef and benthic habitat surveys — and my plan to apply them.">
 
 <title>SfM Photogrammetry for Marine Science – Francisco Velez | Data Science Portfolio</title>
 <style>
@@ -158,7 +158,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#why-sfm-for-marine-science" id="toc-why-sfm-for-marine-science" class="nav-link" data-scroll-target="#why-sfm-for-marine-science">Why SfM for Marine Science?</a></li>
+  <li><a href="#why-im-interested-in-sfm-for-marine-science" id="toc-why-im-interested-in-sfm-for-marine-science" class="nav-link" data-scroll-target="#why-im-interested-in-sfm-for-marine-science">Why I’m Interested in SfM for Marine Science</a></li>
+  <li><a href="#what-im-learning" id="toc-what-im-learning" class="nav-link" data-scroll-target="#what-im-learning">What I’m Learning</a></li>
+  <li><a href="#planned-work" id="toc-planned-work" class="nav-link" data-scroll-target="#planned-work">Planned Work</a></li>
   <li><a href="#related-projects" id="toc-related-projects" class="nav-link" data-scroll-target="#related-projects">Related Projects</a></li>
   </ul>
 </nav>
@@ -179,7 +181,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <div>
   <div class="description">
-    An overview of Structure-from-Motion photogrammetry methods applied to coral reef and benthic habitat surveys.
+    An overview of Structure-from-Motion photogrammetry methods applied to coral reef and benthic habitat surveys — and my plan to apply them.
   </div>
 </div>
 
@@ -204,23 +206,39 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>Structure-from-Motion (SfM) photogrammetry enables the creation of precise 3D models from overlapping photographs. This page provides an overview of how SfM methods can be applied to underwater survey data to map and monitor coral reefs and benthic habitats.</p>
+<p>Structure-from-Motion (SfM) photogrammetry enables the creation of precise 3D models from overlapping photographs. This page documents my study of how SfM methods are applied to underwater survey data to map and monitor coral reefs and benthic habitats — and outlines the work I plan to do as I build toward applying these techniques myself.</p>
+<p><strong>Status: 🚧 In progress — this is active learning and future planned work, not a completed project.</strong></p>
 </section>
-<section id="why-sfm-for-marine-science" class="level2">
-<h2 class="anchored" data-anchor-id="why-sfm-for-marine-science">Why SfM for Marine Science?</h2>
-<p>Traditional survey methods struggle to capture the complex 3D structure of coral reefs. SfM offers:</p>
+<section id="why-im-interested-in-sfm-for-marine-science" class="level2">
+<h2 class="anchored" data-anchor-id="why-im-interested-in-sfm-for-marine-science">Why I’m Interested in SfM for Marine Science</h2>
+<p>Traditional survey methods struggle to capture the complex 3D structure of coral reefs. SfM offers capabilities I want to develop:</p>
 <ul>
 <li>High-resolution 3D reconstructions from standard cameras</li>
 <li>Quantitative measurements of structural complexity</li>
 <li>Repeatable surveys for change detection over time</li>
-<li>Low-cost relative to LiDAR or multibeam sonar</li>
+<li>Lower cost relative to LiDAR or multibeam sonar</li>
 </ul>
+<p>My goal is to build the technical depth to contribute to reef monitoring efforts using these methods, either as part of a research team or through independent projects.</p>
+</section>
+<section id="what-im-learning" class="level2">
+<h2 class="anchored" data-anchor-id="what-im-learning">What I’m Learning</h2>
+<p>I’m working through the core concepts of SfM pipelines, including:</p>
+<ul>
+<li>Image acquisition protocols for underwater surveys (overlap, lighting, camera settings)</li>
+<li>Processing workflows in Agisoft Metashape</li>
+<li>Quality assessment using ground control points and reprojection error</li>
+<li>Output formats: orthomosaics, DEMs, and 3D meshes</li>
+</ul>
+</section>
+<section id="planned-work" class="level2">
+<h2 class="anchored" data-anchor-id="planned-work">Planned Work</h2>
+<p>Once I have suitable underwater image sets to work with, I plan to document a complete end-to-end pipeline — from raw photos to validated 3D outputs — as a reproducible, open workflow. See the related projects below for where that work is heading.</p>
 </section>
 <section id="related-projects" class="level2">
 <h2 class="anchored" data-anchor-id="related-projects">Related Projects</h2>
 <ul>
-<li><a href="../projects/reef-sfm-workflow.html">Reef SfM Workflow</a> — detailed processing pipeline</li>
-<li><a href="../projects/benthic-habitat-map.html">Benthic Habitat Map</a> — GIS mapping outputs</li>
+<li><a href="../projects/reef-sfm-workflow.html">Reef SfM Workflow</a> — the detailed processing pipeline I’m building toward</li>
+<li><a href="../projects/benthic-habitat-map.html">Benthic Habitat Map</a> — GIS mapping outputs that will draw on SfM data</li>
 </ul>
 
 
@@ -682,7 +700,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "SfM Photogrammetry for Marine Science"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "An overview of Structure-from-Motion photogrammetry methods applied to coral reef and benthic habitat surveys."</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "An overview of Structure-from-Motion photogrammetry methods applied to coral reef and benthic habitat surveys — and my plan to apply them."</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "2025-01-01"</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span><span class="co"> [marine science, photogrammetry, 3D, GIS]</span></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="an">image:</span><span class="co"> ../images/sfm-marine.jpg</span></span>
@@ -690,25 +708,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">## Overview</span></span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>Structure-from-Motion (SfM) photogrammetry enables the creation of precise 3D </span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>models from overlapping photographs. This page provides an overview of how SfM </span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>methods can be applied to underwater survey data to map and monitor coral reefs </span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>and benthic habitats.</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="fu">## Why SfM for Marine Science?</span></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>Traditional survey methods struggle to capture the complex 3D structure of coral </span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>reefs. SfM offers:</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>High-resolution 3D reconstructions from standard cameras</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Quantitative measurements of structural complexity</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Repeatable surveys for change detection over time</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Low-cost relative to LiDAR or multibeam sonar</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>Structure-from-Motion (SfM) photogrammetry enables the creation of precise 3D models from overlapping photographs. This page documents my study of how SfM methods are applied to underwater survey data to map and monitor coral reefs and benthic habitats — and outlines the work I plan to do as I build toward applying these techniques myself.</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>**Status: 🚧 In progress — this is active learning and future planned work, not a completed project.**</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">## Why I'm Interested in SfM for Marine Science</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>Traditional survey methods struggle to capture the complex 3D structure of coral reefs. SfM offers capabilities I want to develop:</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>High-resolution 3D reconstructions from standard cameras</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Quantitative measurements of structural complexity</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Repeatable surveys for change detection over time</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Lower cost relative to LiDAR or multibeam sonar</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>My goal is to build the technical depth to contribute to reef monitoring efforts using these methods, either as part of a research team or through independent projects.</span>
 <span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="fu">## Related Projects</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="fu">## What I'm Learning</span></span>
 <span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Reef SfM Workflow</span><span class="co">](reef-sfm-workflow.qmd)</span> — detailed processing pipeline</span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Benthic Habitat Map</span><span class="co">](benthic-habitat-map.qmd)</span> — GIS mapping outputs</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>I'm working through the core concepts of SfM pipelines, including:</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Image acquisition protocols for underwater surveys (overlap, lighting, camera settings)</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Processing workflows in Agisoft Metashape</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Quality assessment using ground control points and reprojection error</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Output formats: orthomosaics, DEMs, and 3D meshes</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="fu">## Planned Work</span></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>Once I have suitable underwater image sets to work with, I plan to document a complete end-to-end pipeline — from raw photos to validated 3D outputs — as a reproducible, open workflow. See the related projects below for where that work is heading.</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="fu">## Related Projects</span></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Reef SfM Workflow</span><span class="co">](reef-sfm-workflow.qmd)</span> — the detailed processing pipeline I'm building toward</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Benthic Habitat Map</span><span class="co">](benthic-habitat-map.qmd)</span> — GIS mapping outputs that will draw on SfM data</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="dcterms.date" content="2025-02-01">
-<meta name="description" content="A detailed end-to-end workflow for processing underwater photos into 3D reef models using Structure-from-Motion photogrammetry.">
+<meta name="description" content="A planned end-to-end workflow for processing underwater photos into 3D reef models using Structure-from-Motion photogrammetry.">
 
 <title>Reef SfM Workflow – Francisco Velez | Data Science Portfolio</title>
 <style>
@@ -158,15 +158,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#workflow-steps" id="toc-workflow-steps" class="nav-link" data-scroll-target="#workflow-steps">Workflow Steps</a>
+  <li><a href="#why-this-workflow" id="toc-why-this-workflow" class="nav-link" data-scroll-target="#why-this-workflow">Why This Workflow</a></li>
+  <li><a href="#planned-workflow-steps" id="toc-planned-workflow-steps" class="nav-link" data-scroll-target="#planned-workflow-steps">Planned Workflow Steps</a>
   <ul class="collapse">
   <li><a href="#image-acquisition" id="toc-image-acquisition" class="nav-link" data-scroll-target="#image-acquisition">1. Image Acquisition</a></li>
   <li><a href="#processing-in-agisoft-metashape" id="toc-processing-in-agisoft-metashape" class="nav-link" data-scroll-target="#processing-in-agisoft-metashape">2. Processing in Agisoft Metashape</a></li>
   <li><a href="#quality-assessment" id="toc-quality-assessment" class="nav-link" data-scroll-target="#quality-assessment">3. Quality Assessment</a></li>
   <li><a href="#outputs" id="toc-outputs" class="nav-link" data-scroll-target="#outputs">4. Outputs</a></li>
   </ul></li>
-  <li><a href="#tools-used" id="toc-tools-used" class="nav-link" data-scroll-target="#tools-used">Tools Used</a></li>
-  <li><a href="#status" id="toc-status" class="nav-link" data-scroll-target="#status">Status</a></li>
+  <li><a href="#tools-im-learning" id="toc-tools-im-learning" class="nav-link" data-scroll-target="#tools-im-learning">Tools I’m Learning</a></li>
+  <li><a href="#path-forward" id="toc-path-forward" class="nav-link" data-scroll-target="#path-forward">Path Forward</a></li>
   </ul>
 </nav>
     </div>
@@ -186,7 +187,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <div>
   <div class="description">
-    A detailed end-to-end workflow for processing underwater photos into 3D reef models using Structure-from-Motion photogrammetry.
+    A planned end-to-end workflow for processing underwater photos into 3D reef models using Structure-from-Motion photogrammetry.
   </div>
 </div>
 
@@ -211,54 +212,61 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>This project documents a complete SfM processing pipeline for coral reef surveys, from image acquisition underwater through to final 3D model outputs and quality assessment.</p>
+<p>This project documents the SfM processing pipeline I’m building toward for coral reef surveys — from image acquisition underwater through to final 3D model outputs and quality assessment. The workflow structure below reflects my research into best practices from the literature and practitioner guides. I have not yet applied this pipeline to real reef survey data.</p>
+<p><strong>Status: 🚧 In progress — workflow design and learning phase. Application to real data is planned future work.</strong></p>
 </section>
-<section id="workflow-steps" class="level2">
-<h2 class="anchored" data-anchor-id="workflow-steps">Workflow Steps</h2>
+<section id="why-this-workflow" class="level2">
+<h2 class="anchored" data-anchor-id="why-this-workflow">Why This Workflow</h2>
+<p>My goal is to be able to take a set of overlapping underwater photographs and produce validated, georeferenced 3D outputs that can support reef monitoring, structural complexity analysis, and change detection over time. Documenting the workflow in advance gives me a clear target to build toward and a reference to refine as I gain hands-on experience.</p>
+</section>
+<section id="planned-workflow-steps" class="level2">
+<h2 class="anchored" data-anchor-id="planned-workflow-steps">Planned Workflow Steps</h2>
 <section id="image-acquisition" class="level3">
 <h3 class="anchored" data-anchor-id="image-acquisition">1. Image Acquisition</h3>
 <ul>
-<li>Camera settings and housing recommendations</li>
-<li>Dive survey protocols for optimal overlap</li>
-<li>Lighting considerations for underwater photography</li>
+<li>Camera settings and housing selection for underwater use</li>
+<li>Dive survey protocols to achieve sufficient image overlap (typically 80–90%)</li>
+<li>Lighting considerations: strobes vs.&nbsp;ambient, color correction for depth</li>
+<li>Survey track planning for consistent coverage</li>
 </ul>
 </section>
 <section id="processing-in-agisoft-metashape" class="level3">
 <h3 class="anchored" data-anchor-id="processing-in-agisoft-metashape">2. Processing in Agisoft Metashape</h3>
 <ul>
-<li>Photo alignment and sparse point cloud</li>
-<li>Dense point cloud generation</li>
-<li>Mesh and orthomosaic export</li>
+<li>Photo alignment and sparse point cloud generation</li>
+<li>Dense point cloud generation (quality vs.&nbsp;processing time tradeoffs)</li>
+<li>Mesh construction and texturing</li>
+<li>Orthomosaic and DEM export</li>
 </ul>
 </section>
 <section id="quality-assessment" class="level3">
 <h3 class="anchored" data-anchor-id="quality-assessment">3. Quality Assessment</h3>
 <ul>
-<li>Ground control points (GCPs)</li>
-<li>Error metrics and reprojection error</li>
-<li>Visual inspection of model artifacts</li>
+<li>Ground control points (GCPs) for georeferencing and scale</li>
+<li>Reprojection error review and iterative alignment refinement</li>
+<li>Visual inspection for model artifacts, holes, and misalignments</li>
 </ul>
 </section>
 <section id="outputs" class="level3">
 <h3 class="anchored" data-anchor-id="outputs">4. Outputs</h3>
 <ul>
-<li>Orthomosaic (2D georeferenced image)</li>
-<li>Digital elevation model (DEM)</li>
-<li>3D mesh for structural complexity analysis</li>
+<li>Orthomosaic (2D georeferenced image) for habitat classification</li>
+<li>Digital elevation model (DEM) for rugosity and structural complexity analysis</li>
+<li>3D mesh for visual inspection and volumetric analysis</li>
 </ul>
 </section>
 </section>
-<section id="tools-used" class="level2">
-<h2 class="anchored" data-anchor-id="tools-used">Tools Used</h2>
+<section id="tools-im-learning" class="level2">
+<h2 class="anchored" data-anchor-id="tools-im-learning">Tools I’m Learning</h2>
 <ul>
-<li>Agisoft Metashape</li>
-<li>QGIS</li>
-<li>Python (point cloud analysis)</li>
+<li>Agisoft Metashape — primary SfM processing software</li>
+<li>QGIS — for georeferenced output analysis and visualization</li>
+<li>Python (<code>open3d</code>, <code>pdal</code>) — point cloud analysis and automation</li>
 </ul>
 </section>
-<section id="status" class="level2">
-<h2 class="anchored" data-anchor-id="status">Status</h2>
-<p>🚧 <em>In progress — workflow documentation being developed.</em></p>
+<section id="path-forward" class="level2">
+<h2 class="anchored" data-anchor-id="path-forward">Path Forward</h2>
+<p>Once I have access to suitable underwater image sets — either from open datasets, collaborators, or my own dives — I’ll work through this pipeline, document the results, and update this page with real outputs and lessons learned.</p>
 
 
 <!-- -->
@@ -719,7 +727,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Reef SfM Workflow"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "A detailed end-to-end workflow for processing underwater photos into 3D reef models using Structure-from-Motion photogrammetry."</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "A planned end-to-end workflow for processing underwater photos into 3D reef models using Structure-from-Motion photogrammetry."</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "2025-02-01"</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span><span class="co"> [marine science, photogrammetry, workflow, 3D]</span></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="an">image:</span><span class="co"> ../images/reef-sfm.jpg</span></span>
@@ -727,41 +735,47 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">## Overview</span></span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>This project documents a complete SfM processing pipeline for coral reef surveys,</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>from image acquisition underwater through to final 3D model outputs and quality</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>assessment.</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>This project documents the SfM processing pipeline I'm building toward for coral reef surveys — from image acquisition underwater through to final 3D model outputs and quality assessment. The workflow structure below reflects my research into best practices from the literature and practitioner guides. I have not yet applied this pipeline to real reef survey data.</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>**Status: 🚧 In progress — workflow design and learning phase. Application to real data is planned future work.**</span>
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">## Workflow Steps</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">## Why This Workflow</span></span>
 <span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="fu">### 1. Image Acquisition</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Camera settings and housing recommendations</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Dive survey protocols for optimal overlap</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Lighting considerations for underwater photography</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="fu">### 2. Processing in Agisoft Metashape</span></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Photo alignment and sparse point cloud</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Dense point cloud generation</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Mesh and orthomosaic export</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>My goal is to be able to take a set of overlapping underwater photographs and produce validated, georeferenced 3D outputs that can support reef monitoring, structural complexity analysis, and change detection over time. Documenting the workflow in advance gives me a clear target to build toward and a reference to refine as I gain hands-on experience.</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="fu">## Planned Workflow Steps</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="fu">### 1. Image Acquisition</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Camera settings and housing selection for underwater use</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Dive survey protocols to achieve sufficient image overlap (typically 80–90%)</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Lighting considerations: strobes vs. ambient, color correction for depth</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Survey track planning for consistent coverage</span>
 <span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="fu">### 3. Quality Assessment</span></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Ground control points (GCPs)</span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Error metrics and reprojection error</span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Visual inspection of model artifacts</span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="fu">### 4. Outputs</span></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Orthomosaic (2D georeferenced image)</span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Digital elevation model (DEM)</span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>3D mesh for structural complexity analysis</span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="fu">## Tools Used</span></span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Agisoft Metashape</span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>QGIS</span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Python (point cloud analysis)</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="fu">### 2. Processing in Agisoft Metashape</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Photo alignment and sparse point cloud generation</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Dense point cloud generation (quality vs. processing time tradeoffs)</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Mesh construction and texturing</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Orthomosaic and DEM export</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="fu">### 3. Quality Assessment</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Ground control points (GCPs) for georeferencing and scale</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Reprojection error review and iterative alignment refinement</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Visual inspection for model artifacts, holes, and misalignments</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="fu">### 4. Outputs</span></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Orthomosaic (2D georeferenced image) for habitat classification</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Digital elevation model (DEM) for rugosity and structural complexity analysis</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>3D mesh for visual inspection and volumetric analysis</span>
 <span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="fu">## Status</span></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="fu">## Tools I'm Learning</span></span>
 <span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>🚧 *In progress — workflow documentation being developed.*</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Agisoft Metashape — primary SfM processing software</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>QGIS — for georeferenced output analysis and visualization</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Python (<span class="in">`open3d`</span>, <span class="in">`pdal`</span>) — point cloud analysis and automation</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="fu">## Path Forward</span></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>Once I have access to suitable underwater image sets — either from open datasets, collaborators, or my own dives — I'll work through this pipeline, document the results, and update this page with real outputs and lessons learned.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
