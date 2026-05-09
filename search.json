@@ -32,7 +32,7 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "2016 Subaru Outback Stereo Build\n\n\n\nhardware\n\naudio\n\ncar-audio\n\nSubaru\n\nDIY\n\ndocumentation\n\n\n\nA technical writeup and reference guide for upgrading the factory Harman Kardon audio system in a 2016 Subaru Outback, including head unit replacement, amplifier…\n\n\n\nMay 7, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nLoRa RadioRocket\n\n\n\nIoT\n\ntelemetry\n\nLoRa\n\nAPRS\n\nhardware\n\namateur radio\n\n\n\nAmateur radio telemetry system for mid and high power model rockets, combining APRS tracking and LoRa data transmission with a Raspberry Pi ground station.\n\n\n\nJun 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nFreezingSaddles\n\n\n\ncycling\n\nanalytics\n\nvisualization\n\npython\n\n\n\nAnalytics and visualization for a winter cycling challenge tracking mileage, leaderboards, and participation across teams.\n\n\n\nMay 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nCoral Bleaching Risk Notebook\n\n\n\nmarine science\n\ndata analysis\n\njupyter\n\npython\n\n\n\nA planned exploratory data analysis notebook examining environmental drivers of coral bleaching risk using sea surface temperature and DHW data.\n\n\n\nApr 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nBenthic Habitat Mapping\n\n\n\nGIS\n\nmarine science\n\nmapping\n\nremote sensing\n\n\n\nA planned GIS-based workflow for mapping and classifying benthic habitats using remote sensing and field survey data.\n\n\n\nMar 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nReef SfM Workflow\n\n\n\nmarine science\n\nphotogrammetry\n\nworkflow\n\n3D\n\n\n\nA planned end-to-end workflow for processing underwater photos into 3D reef models using Structure-from-Motion photogrammetry.\n\n\n\nFeb 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nSfM Photogrammetry for Marine Science\n\n\n\nmarine science\n\nphotogrammetry\n\n3D\n\nGIS\n\n\n\nAn overview of Structure-from-Motion photogrammetry methods applied to coral reef and benthic habitat surveys — and my plan to apply them.\n\n\n\nJan 1, 2025\n\n\n\n\n\n\nNo matching items"
+    "text": "2016 Subaru Outback Stereo Build\n\n\n\nhardware\n\naudio\n\ncar-audio\n\nSubaru\n\nDIY\n\ndocumentation\n\n\n\nA technical writeup and reference guide for upgrading the factory Harman Kardon audio system in a 2016 Subaru Outback, including head unit replacement, amplifier…\n\n\n\nMay 7, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nLoRa RadioRocket\n\n\n\nIoT\n\ntelemetry\n\nLoRa\n\nhardware\n\namateur radio\n\nArduino\n\n\n\nFeather M0 + LoRa telemetry system for mid-power model rocketry: trimmed-mean altitude calibration, launch/apogee detection, and 1 Hz ACK telemetry over 434 MHz.\n\n\n\nMay 9, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nFreezingSaddles\n\n\n\ncycling\n\nanalytics\n\nvisualization\n\npython\n\n\n\nAnalytics and visualization for a winter cycling challenge tracking mileage, leaderboards, and participation across teams.\n\n\n\nMay 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nCoral Bleaching Risk Notebook\n\n\n\nmarine science\n\ndata analysis\n\njupyter\n\npython\n\n\n\nA planned exploratory data analysis notebook examining environmental drivers of coral bleaching risk using sea surface temperature and DHW data.\n\n\n\nApr 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nBenthic Habitat Mapping\n\n\n\nGIS\n\nmarine science\n\nmapping\n\nremote sensing\n\n\n\nA planned GIS-based workflow for mapping and classifying benthic habitats using remote sensing and field survey data.\n\n\n\nMar 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nReef SfM Workflow\n\n\n\nmarine science\n\nphotogrammetry\n\nworkflow\n\n3D\n\n\n\nA planned end-to-end workflow for processing underwater photos into 3D reef models using Structure-from-Motion photogrammetry.\n\n\n\nFeb 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nSfM Photogrammetry for Marine Science\n\n\n\nmarine science\n\nphotogrammetry\n\n3D\n\nGIS\n\n\n\nAn overview of Structure-from-Motion photogrammetry methods applied to coral reef and benthic habitat surveys — and my plan to apply them.\n\n\n\nJan 1, 2025\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/benthic-habitat-map.html",
@@ -221,42 +221,49 @@
     "href": "projects/lora-radiorocket.html",
     "title": "LoRa RadioRocket",
     "section": "",
-    "text": "RadioRocketV2 is an open-source amateur radio project integrating modern digital radio systems into mid and high power model rocketry. This fork of the N3VEM RadioRocketV2 project adds updated documentation to make the build more accessible."
+    "text": "A ground-up rewrite of N3VEM’s RadioRocketV2 for the Adafruit Feather M0 + RFM95 platform. The rocket sled reads barometric altitude and high-G acceleration, detects launch and apogee autonomously, and streams 1 Hz telemetry packets to a matching Feather M0 ground station over 434 MHz LoRa.\nThe rocket is a PiercerMini — a mid-power airframe with the electronics bay housing the sled."
   },
   {
     "objectID": "projects/lora-radiorocket.html#overview",
     "href": "projects/lora-radiorocket.html#overview",
     "title": "LoRa RadioRocket",
     "section": "",
-    "text": "RadioRocketV2 is an open-source amateur radio project integrating modern digital radio systems into mid and high power model rocketry. This fork of the N3VEM RadioRocketV2 project adds updated documentation to make the build more accessible."
-  },
-  {
-    "objectID": "projects/lora-radiorocket.html#system-components",
-    "href": "projects/lora-radiorocket.html#system-components",
-    "title": "LoRa RadioRocket",
-    "section": "System Components",
-    "text": "System Components\n\nAPRS Tracking\nA self-contained APRS beacon sled provides position tracking and mapping during flight. Packets are received by any I-Gate within range and viewable on aprs.fi. Can be built standalone without the rest of the system.\n\n\nLoRa Telemetry\nThe rocket transmits telemetry over 70cm LoRa, including sensor data, relay messages, and command responses. LoRa’s long range and low power make it ideal for tracking rockets downrange.\n\n\nGround Station\nA portable ground station built around a single-board computer and LoRa Feather module receives telemetry and APRS data, serving it via Node-RED and a networked sound modem to any browser on the local network."
+    "text": "A ground-up rewrite of N3VEM’s RadioRocketV2 for the Adafruit Feather M0 + RFM95 platform. The rocket sled reads barometric altitude and high-G acceleration, detects launch and apogee autonomously, and streams 1 Hz telemetry packets to a matching Feather M0 ground station over 434 MHz LoRa.\nThe rocket is a PiercerMini — a mid-power airframe with the electronics bay housing the sled."
   },
   {
     "objectID": "projects/lora-radiorocket.html#hardware",
     "href": "projects/lora-radiorocket.html#hardware",
     "title": "LoRa RadioRocket",
     "section": "Hardware",
-    "text": "Hardware\n\nAdafruit Feather with LoRa Radio (rocket-side)\nSDRplay SDR dongle (APRS reception)\nRaspberry Pi ground station\nCustom wiring and project enclosure"
+    "text": "Hardware\n\nTX Sled (rocket)\n\n\n\nComponent\nPurpose\n\n\n\n\nAdafruit Feather M0 + RFM95 (434 MHz)\nMicrocontroller + LoRa radio\n\n\nAdafruit BMP390\nBarometric pressure / altitude\n\n\nAdafruit ADXL375\nHigh-G accelerometer (±200 g)\n\n\nLiPo battery\nPower\n\n\n\n\n\nRX Ground Station\n\n\n\nComponent\nPurpose\n\n\n\n\nAdafruit Feather M0 + RFM95 (434 MHz)\nLoRa receiver\n\n\nCustom blue acrylic enclosure\nWeatherproof housing"
+  },
+  {
+    "objectID": "projects/lora-radiorocket.html#firmware",
+    "href": "projects/lora-radiorocket.html#firmware",
+    "title": "LoRa RadioRocket",
+    "section": "Firmware",
+    "text": "Firmware\nKey features of the rewritten firmware:\n\nTrimmed-mean baseline calibration — discards outlier pressure readings at startup for a stable ground-level reference\nLaunch detection — triggers on sustained high-G acceleration threshold\nApogee detection — triggers on pressure reversal after ascent\n1 Hz telemetry with ACK — ground station acknowledges each packet; rocket retransmits on timeout"
+  },
+  {
+    "objectID": "projects/lora-radiorocket.html#build-photos",
+    "href": "projects/lora-radiorocket.html#build-photos",
+    "title": "LoRa RadioRocket",
+    "section": "Build Photos",
+    "text": "Build Photos\n\n\n\n\n\n\nTX sled — Feather M0 + BMP390 + ADXL375 in 3D-printed bracket\n\n\n\n\n\n\n\nElectronics bay\n\n\n\n\n\n\n\n\n\nPiercerMini — Radio Rocket Edition\n\n\n\n\n\n\n\nGround station interior — Feather M0 + RTL-SDR\n\n\n\n\n\n\n\n\n\n\n\nGround station rear panel\n\n\n\n\n\n\n\nAt the range"
   },
   {
     "objectID": "projects/lora-radiorocket.html#status",
     "href": "projects/lora-radiorocket.html#status",
     "title": "LoRa RadioRocket",
     "section": "Status",
-    "text": "Status\n✅ Working prototype complete — documentation in progress."
+    "text": "Status\n✅ Phase 1 complete — firmware tested, repo cleaned up, build documented."
   },
   {
     "objectID": "projects/lora-radiorocket.html#links",
     "href": "projects/lora-radiorocket.html#links",
     "title": "LoRa RadioRocket",
     "section": "Links",
-    "text": "Links\n\nGitHub Repository"
+    "text": "Links\n\nGitHub Repository\nTX Firmware\nRX Firmware"
   },
   {
     "objectID": "projects/freezingsaddles.html",

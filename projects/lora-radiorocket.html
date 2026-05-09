@@ -6,8 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-06-01">
-<meta name="description" content="Amateur radio telemetry system for mid and high power model rockets, combining APRS tracking and LoRa data transmission with a Raspberry Pi ground station.">
+<meta name="dcterms.date" content="2025-05-09">
+<meta name="description" content="Feather M0 + LoRa telemetry system for mid-power model rocketry: trimmed-mean altitude calibration, launch/apogee detection, and 1 Hz ACK telemetry over 434 MHz.">
 
 <title>LoRa RadioRocket – Francisco Velez | Data Science Portfolio</title>
 <style>
@@ -158,13 +158,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#system-components" id="toc-system-components" class="nav-link" data-scroll-target="#system-components">System Components</a>
+  <li><a href="#hardware" id="toc-hardware" class="nav-link" data-scroll-target="#hardware">Hardware</a>
   <ul class="collapse">
-  <li><a href="#aprs-tracking" id="toc-aprs-tracking" class="nav-link" data-scroll-target="#aprs-tracking">APRS Tracking</a></li>
-  <li><a href="#lora-telemetry" id="toc-lora-telemetry" class="nav-link" data-scroll-target="#lora-telemetry">LoRa Telemetry</a></li>
-  <li><a href="#ground-station" id="toc-ground-station" class="nav-link" data-scroll-target="#ground-station">Ground Station</a></li>
+  <li><a href="#tx-sled-rocket" id="toc-tx-sled-rocket" class="nav-link" data-scroll-target="#tx-sled-rocket">TX Sled (rocket)</a></li>
+  <li><a href="#rx-ground-station" id="toc-rx-ground-station" class="nav-link" data-scroll-target="#rx-ground-station">RX Ground Station</a></li>
   </ul></li>
-  <li><a href="#hardware" id="toc-hardware" class="nav-link" data-scroll-target="#hardware">Hardware</a></li>
+  <li><a href="#firmware" id="toc-firmware" class="nav-link" data-scroll-target="#firmware">Firmware</a></li>
+  <li><a href="#build-photos" id="toc-build-photos" class="nav-link" data-scroll-target="#build-photos">Build Photos</a></li>
   <li><a href="#status" id="toc-status" class="nav-link" data-scroll-target="#status">Status</a></li>
   <li><a href="#links" id="toc-links" class="nav-link" data-scroll-target="#links">Links</a></li>
   </ul>
@@ -180,15 +180,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div class="quarto-category">IoT</div>
     <div class="quarto-category">telemetry</div>
     <div class="quarto-category">LoRa</div>
-    <div class="quarto-category">APRS</div>
     <div class="quarto-category">hardware</div>
     <div class="quarto-category">amateur radio</div>
+    <div class="quarto-category">Arduino</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    Amateur radio telemetry system for mid and high power model rockets, combining APRS tracking and LoRa data transmission with a Raspberry Pi ground station.
+    Feather M0 + LoRa telemetry system for mid-power model rocketry: trimmed-mean altitude calibration, launch/apogee detection, and 1 Hz ACK telemetry over 434 MHz.
   </div>
 </div>
 
@@ -199,7 +199,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">June 1, 2025</p>
+      <p class="date">May 9, 2025</p>
     </div>
   </div>
   
@@ -213,40 +213,143 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>RadioRocketV2 is an open-source amateur radio project integrating modern digital radio systems into mid and high power model rocketry. This fork of the <a href="https://github.com/N3VEM/RadioRocketV2">N3VEM RadioRocketV2</a> project adds updated documentation to make the build more accessible.</p>
-</section>
-<section id="system-components" class="level2">
-<h2 class="anchored" data-anchor-id="system-components">System Components</h2>
-<section id="aprs-tracking" class="level3">
-<h3 class="anchored" data-anchor-id="aprs-tracking">APRS Tracking</h3>
-<p>A self-contained APRS beacon sled provides position tracking and mapping during flight. Packets are received by any I-Gate within range and viewable on <a href="https://aprs.fi">aprs.fi</a>. Can be built standalone without the rest of the system.</p>
-</section>
-<section id="lora-telemetry" class="level3">
-<h3 class="anchored" data-anchor-id="lora-telemetry">LoRa Telemetry</h3>
-<p>The rocket transmits telemetry over 70cm LoRa, including sensor data, relay messages, and command responses. LoRa’s long range and low power make it ideal for tracking rockets downrange.</p>
-</section>
-<section id="ground-station" class="level3">
-<h3 class="anchored" data-anchor-id="ground-station">Ground Station</h3>
-<p>A portable ground station built around a single-board computer and LoRa Feather module receives telemetry and APRS data, serving it via Node-RED and a networked sound modem to any browser on the local network.</p>
-</section>
+<p>A ground-up rewrite of <a href="https://github.com/N3VEM/RadioRocketV2">N3VEM’s RadioRocketV2</a> for the Adafruit Feather M0 + RFM95 platform. The rocket sled reads barometric altitude and high-G acceleration, detects launch and apogee autonomously, and streams 1 Hz telemetry packets to a matching Feather M0 ground station over 434 MHz LoRa.</p>
+<p>The rocket is a PiercerMini — a mid-power airframe with the electronics bay housing the sled.</p>
 </section>
 <section id="hardware" class="level2">
 <h2 class="anchored" data-anchor-id="hardware">Hardware</h2>
+<section id="tx-sled-rocket" class="level3">
+<h3 class="anchored" data-anchor-id="tx-sled-rocket">TX Sled (rocket)</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Component</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Adafruit Feather M0 + RFM95 (434 MHz)</td>
+<td>Microcontroller + LoRa radio</td>
+</tr>
+<tr class="even">
+<td>Adafruit BMP390</td>
+<td>Barometric pressure / altitude</td>
+</tr>
+<tr class="odd">
+<td>Adafruit ADXL375</td>
+<td>High-G accelerometer (±200 g)</td>
+</tr>
+<tr class="even">
+<td>LiPo battery</td>
+<td>Power</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="rx-ground-station" class="level3">
+<h3 class="anchored" data-anchor-id="rx-ground-station">RX Ground Station</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Component</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Adafruit Feather M0 + RFM95 (434 MHz)</td>
+<td>LoRa receiver</td>
+</tr>
+<tr class="even">
+<td>Custom blue acrylic enclosure</td>
+<td>Weatherproof housing</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="firmware" class="level2">
+<h2 class="anchored" data-anchor-id="firmware">Firmware</h2>
+<p>Key features of the rewritten firmware:</p>
 <ul>
-<li>Adafruit Feather with LoRa Radio (rocket-side)</li>
-<li>SDRplay SDR dongle (APRS reception)</li>
-<li>Raspberry Pi ground station</li>
-<li>Custom wiring and project enclosure</li>
+<li><strong>Trimmed-mean baseline calibration</strong> — discards outlier pressure readings at startup for a stable ground-level reference</li>
+<li><strong>Launch detection</strong> — triggers on sustained high-G acceleration threshold</li>
+<li><strong>Apogee detection</strong> — triggers on pressure reversal after ascent</li>
+<li><strong>1 Hz telemetry with ACK</strong> — ground station acknowledges each packet; rocket retransmits on timeout</li>
 </ul>
+</section>
+<section id="build-photos" class="level2">
+<h2 class="anchored" data-anchor-id="build-photos">Build Photos</h2>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://raw.githubusercontent.com/velezf/lora-rocket-telemetry/main/RocketLoRaTelemetry/Feather9x_TX/Tx_Sled/Sled.jpeg" class="img-fluid figure-img"></p>
+<figcaption>TX sled — Feather M0 + BMP390 + ADXL375 in 3D-printed bracket</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://raw.githubusercontent.com/velezf/lora-rocket-telemetry/main/RocketLoRaTelemetry/Feather9x_TX/Tx_Sled/Ebay.jpeg" class="img-fluid figure-img"></p>
+<figcaption>Electronics bay</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://raw.githubusercontent.com/velezf/lora-rocket-telemetry/main/RocketLoRaTelemetry/Feather9x_TX/Tx_Sled/Rocket.jpeg" class="img-fluid figure-img"></p>
+<figcaption>PiercerMini — Radio Rocket Edition</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://raw.githubusercontent.com/velezf/lora-rocket-telemetry/main/RocketLoRaTelemetry/Feather9x_RX/Rx_BaseStation/Basestationtop.jpeg" class="img-fluid figure-img"></p>
+<figcaption>Ground station interior — Feather M0 + RTL-SDR</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://raw.githubusercontent.com/velezf/lora-rocket-telemetry/main/RocketLoRaTelemetry/Feather9x_RX/Rx_BaseStation/Basestationrear.jpeg" class="img-fluid figure-img"></p>
+<figcaption>Ground station rear panel</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://raw.githubusercontent.com/velezf/lora-rocket-telemetry/main/RocketLoRaTelemetry/Feather9x_RX/Rx_BaseStation/RangeSetup.jpeg" class="img-fluid figure-img"></p>
+<figcaption>At the range</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="status" class="level2">
 <h2 class="anchored" data-anchor-id="status">Status</h2>
-<p>✅ <em>Working prototype complete — documentation in progress.</em></p>
+<p>✅ <em>Phase 1 complete — firmware tested, repo cleaned up, build documented.</em></p>
 </section>
 <section id="links" class="level2">
 <h2 class="anchored" data-anchor-id="links">Links</h2>
 <ul>
-<li><a href="https://github.com/velezf/RadioRocketV2-documentation">GitHub Repository</a></li>
+<li><a href="https://github.com/velezf/lora-rocket-telemetry">GitHub Repository</a></li>
+<li><a href="https://github.com/velezf/lora-rocket-telemetry/tree/main/RocketLoRaTelemetry/Feather9x_TX">TX Firmware</a></li>
+<li><a href="https://github.com/velezf/lora-rocket-telemetry/tree/main/RocketLoRaTelemetry/Feather9x_RX">RX Firmware</a></li>
 </ul>
 
 
@@ -708,50 +811,72 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "LoRa RadioRocket"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "Amateur radio telemetry system for mid and high power model rockets, combining APRS tracking and LoRa data transmission with a Raspberry Pi ground station."</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "2025-06-01"</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span><span class="co"> [IoT, telemetry, LoRa, APRS, hardware, amateur radio]</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "Feather M0 + LoRa telemetry system for mid-power model rocketry: trimmed-mean altitude calibration, launch/apogee detection, and 1 Hz ACK telemetry over 434 MHz."</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "2025-05-09"</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span><span class="co"> [IoT, telemetry, LoRa, hardware, amateur radio, Arduino]</span></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="an">image:</span><span class="co"> ../images/lora-radiorocket.jpg</span></span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">## Overview</span></span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>RadioRocketV2 is an open-source amateur radio project integrating modern digital </span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>radio systems into mid and high power model rocketry. This fork of the </span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">N3VEM RadioRocketV2</span><span class="co">](https://github.com/N3VEM/RadioRocketV2)</span> project adds </span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>updated documentation to make the build more accessible.</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="fu">## System Components</span></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="fu">### APRS Tracking</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>A self-contained APRS beacon sled provides position tracking and mapping during </span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>flight. Packets are received by any I-Gate within range and viewable on </span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">aprs.fi</span><span class="co">](https://aprs.fi)</span>. Can be built standalone without the rest of the system.</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="fu">### LoRa Telemetry</span></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>The rocket transmits telemetry over 70cm LoRa, including sensor data, relay </span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>messages, and command responses. LoRa's long range and low power make it ideal </span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>for tracking rockets downrange.</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>A ground-up rewrite of <span class="co">[</span><span class="ot">N3VEM's RadioRocketV2</span><span class="co">](https://github.com/N3VEM/RadioRocketV2)</span> for the Adafruit Feather M0 + RFM95 platform. The rocket sled reads barometric altitude and high-G acceleration, detects launch and apogee autonomously, and streams 1 Hz telemetry packets to a matching Feather M0 ground station over 434 MHz LoRa.</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>The rocket is a PiercerMini — a mid-power airframe with the electronics bay housing the sled.</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">## Hardware</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="fu">### TX Sled (rocket)</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Component <span class="pp">|</span> Purpose <span class="pp">|</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="pp">|-----------|---------|</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Adafruit Feather M0 + RFM95 (434 MHz) <span class="pp">|</span> Microcontroller + LoRa radio <span class="pp">|</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Adafruit BMP390 <span class="pp">|</span> Barometric pressure / altitude <span class="pp">|</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Adafruit ADXL375 <span class="pp">|</span> High-G accelerometer (±200 g) <span class="pp">|</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> LiPo battery <span class="pp">|</span> Power <span class="pp">|</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="fu">### RX Ground Station</span></span>
 <span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="fu">### Ground Station</span></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>A portable ground station built around a single-board computer and LoRa Feather </span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>module receives telemetry and APRS data, serving it via Node-RED and a networked </span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>sound modem to any browser on the local network.</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Component <span class="pp">|</span> Purpose <span class="pp">|</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="pp">|-----------|---------|</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Adafruit Feather M0 + RFM95 (434 MHz) <span class="pp">|</span> LoRa receiver <span class="pp">|</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Custom blue acrylic enclosure <span class="pp">|</span> Weatherproof housing <span class="pp">|</span></span>
 <span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="fu">## Hardware</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="fu">## Firmware</span></span>
 <span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Adafruit Feather with LoRa Radio (rocket-side)</span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>SDRplay SDR dongle (APRS reception)</span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Raspberry Pi ground station</span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Custom wiring and project enclosure</span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="fu">## Status</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>Key features of the rewritten firmware:</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Trimmed-mean baseline calibration** — discards outlier pressure readings at startup for a stable ground-level reference</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Launch detection** — triggers on sustained high-G acceleration threshold</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Apogee detection** — triggers on pressure reversal after ascent</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**1 Hz telemetry with ACK** — ground station acknowledges each packet; rocket retransmits on timeout</span>
 <span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>✅ *Working prototype complete — documentation in progress.*</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="fu">## Build Photos</span></span>
 <span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="fu">## Links</span></span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">GitHub Repository</span><span class="co">](https://github.com/velezf/RadioRocketV2-documentation)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>::: {layout-ncol=2}</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="al">![TX sled — Feather M0 + BMP390 + ADXL375 in 3D-printed bracket](https://raw.githubusercontent.com/velezf/lora-rocket-telemetry/main/RocketLoRaTelemetry/Feather9x_TX/Tx_Sled/Sled.jpeg)</span></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="al">![Electronics bay](https://raw.githubusercontent.com/velezf/lora-rocket-telemetry/main/RocketLoRaTelemetry/Feather9x_TX/Tx_Sled/Ebay.jpeg)</span></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="al">![PiercerMini — Radio Rocket Edition](https://raw.githubusercontent.com/velezf/lora-rocket-telemetry/main/RocketLoRaTelemetry/Feather9x_TX/Tx_Sled/Rocket.jpeg)</span></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="al">![Ground station interior — Feather M0 + RTL-SDR](https://raw.githubusercontent.com/velezf/lora-rocket-telemetry/main/RocketLoRaTelemetry/Feather9x_RX/Rx_BaseStation/Basestationtop.jpeg)</span></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>::: {layout-ncol=2}</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="al">![Ground station rear panel](https://raw.githubusercontent.com/velezf/lora-rocket-telemetry/main/RocketLoRaTelemetry/Feather9x_RX/Rx_BaseStation/Basestationrear.jpeg)</span></span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="al">![At the range](https://raw.githubusercontent.com/velezf/lora-rocket-telemetry/main/RocketLoRaTelemetry/Feather9x_RX/Rx_BaseStation/RangeSetup.jpeg)</span></span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a><span class="fu">## Status</span></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>✅ *Phase 1 complete — firmware tested, repo cleaned up, build documented.*</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a><span class="fu">## Links</span></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">GitHub Repository</span><span class="co">](https://github.com/velezf/lora-rocket-telemetry)</span></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">TX Firmware</span><span class="co">](https://github.com/velezf/lora-rocket-telemetry/tree/main/RocketLoRaTelemetry/Feather9x_TX)</span></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">RX Firmware</span><span class="co">](https://github.com/velezf/lora-rocket-telemetry/tree/main/RocketLoRaTelemetry/Feather9x_RX)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
