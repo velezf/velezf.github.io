@@ -25,10 +25,19 @@ The rocket is a PiercerMini — a mid-power airframe with the electronics bay ho
 
 ### RX Ground Station
 
+The ground station is a LePotato SBC built into a custom blue acrylic enclosure. It serves double duty: receiving LoRa telemetry from the rocket and acting as a portable APRS digipeater — because most mid-power launch sites are outside range of any APRS I-Gate or digipeater, this station brings the infrastructure to the field.
+
 | Component | Purpose |
 |-----------|---------|
-| Adafruit Feather M0 + RFM95 (434 MHz) | LoRa receiver |
-| Custom blue acrylic enclosure | Weatherproof housing |
+| Libre Computer LePotato SBC | Runs Linux, Direwolf, Node-RED |
+| RTL-SDR V4 dongle | APRS receive / digipeater (144.39 MHz) |
+| Adafruit Feather M0 + RFM95 (434 MHz) | LoRa telemetry receiver |
+| 12V → 5V DC-DC converter | Field power from vehicle or battery |
+| Custom blue acrylic enclosure | Houses all hardware |
+
+**Software stack:** Direwolf (software TNC + digipeater), Xastir (APRS mapping), Node-RED (telemetry dashboard), VNC (headless remote access).
+
+When the rocket eventually carries an APRS tracker (planned: QRPLabs LightAPRS 2.0), this station will digipeat its packets to the APRS network from the field.
 
 ## Firmware
 
@@ -97,7 +106,7 @@ Each 1 Hz telemetry packet bundles all of this into a compact string — current
 ::: {layout-ncol=2}
 ![Ground station rear panel — ethernet, USB, and power connectors](https://raw.githubusercontent.com/velezf/lora-rocket-telemetry/main/RocketLoRaTelemetry/Feather9x_RX/Rx_BaseStation/Basestationrear.jpeg)
 
-!["SCE to AUX" — the front panel switch is a replica of the Apollo 12 Emergency Detection System switch. On November 14, 1969, a lightning strike knocked out telemetry 36 seconds after launch. Flight controller John Aaron recognized the signature and called "SCE to AUX." Alan Bean found the switch on panel 8 and flipped it, restoring all telemetry and saving the mission. It felt like the right switch for a rocket telemetry ground station.](https://raw.githubusercontent.com/velezf/lora-rocket-telemetry/main/RocketLoRaTelemetry/Feather9x_RX/Rx_BaseStation/Basestationfront.jpeg)
+![SCE to AUX — the front panel switch is a replica of the Apollo 12 Emergency Detection System switch. On November 14, 1969, a lightning strike knocked out telemetry 36 seconds after launch. Flight controller John Aaron recognized the signature and called SCE to AUX. Alan Bean found the switch on panel 8 and flipped it, restoring all telemetry and saving the mission. It felt like the right switch for a rocket telemetry ground station.](https://raw.githubusercontent.com/velezf/lora-rocket-telemetry/main/RocketLoRaTelemetry/Feather9x_RX/Rx_BaseStation/Basestationfront.jpeg)
 :::
 
 ::: {layout-ncol=1}
