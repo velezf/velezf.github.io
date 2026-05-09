@@ -249,14 +249,14 @@
     "href": "projects/lora-radiorocket.html#build-photos",
     "title": "LoRa RadioRocket",
     "section": "Build Photos",
-    "text": "Build Photos\n\n\n\n\n\n\nTX sled — Feather M0 + BMP390 + ADXL375 in 3D-printed bracket\n\n\n\n\n\n\n\nElectronics bay\n\n\n\n\n\n\n\n\n\nPiercerMini — Radio Rocket Edition\n\n\n\n\n\n\n\nGround station interior — Feather M0 + RTL-SDR\n\n\n\n\n\n\n\n\n\n\n\nGround station rear panel\n\n\n\n\n\n\n\nAt the range"
+    "text": "Build Photos\n\n\n\n\n\n\nTX sled — Feather M0 + BMP390 + ADXL375 in 3D-printed bracket\n\n\n\n\n\n\n\nElectronics bay\n\n\n\n\n\n\n\n\n\nPiercerMini — Radio Rocket Edition\n\n\n\n\n\n\n\nGround station interior — Feather M0 + RTL-SDR + DC converter\n\n\n\n\n\n\n\n\n\n\n\nGround station rear panel — ethernet, USB, and power connectors\n\n\n\n\n\n\n\n“SCE to AUX” — the front panel switch is a replica of the Apollo 12 Emergency Detection System switch. On November 14, 1969, a lightning strike knocked out telemetry 36 seconds after launch. Flight controller John Aaron recognized the signature and called “SCE to AUX.” Alan Bean found the switch on panel 8 and flipped it, restoring all telemetry and saving the mission. It felt like the right switch for a rocket telemetry ground station.\n\n\n\n\n\n\n\n\n\n\n\nAt the range — ground station connected to laptop, PiercerMini on the table"
   },
   {
     "objectID": "projects/lora-radiorocket.html#status",
     "href": "projects/lora-radiorocket.html#status",
     "title": "LoRa RadioRocket",
     "section": "Status",
-    "text": "Status\n✅ Phase 1 complete — firmware tested, repo cleaned up, build documented."
+    "text": "Status\n✅ Flight tested — telemetry received successfully on first flight."
   },
   {
     "objectID": "projects/lora-radiorocket.html#links",

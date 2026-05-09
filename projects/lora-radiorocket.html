@@ -349,7 +349,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://raw.githubusercontent.com/velezf/lora-rocket-telemetry/main/RocketLoRaTelemetry/Feather9x_RX/Rx_BaseStation/Basestationtop.jpeg" class="img-fluid figure-img"></p>
-<figcaption>Ground station interior — Feather M0 + RTL-SDR</figcaption>
+<figcaption>Ground station interior — Feather M0 + RTL-SDR + DC converter</figcaption>
 </figure>
 </div>
 </div>
@@ -361,15 +361,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://raw.githubusercontent.com/velezf/lora-rocket-telemetry/main/RocketLoRaTelemetry/Feather9x_RX/Rx_BaseStation/Basestationrear.jpeg" class="img-fluid figure-img"></p>
-<figcaption>Ground station rear panel</figcaption>
+<figcaption>Ground station rear panel — ethernet, USB, and power connectors</figcaption>
 </figure>
 </div>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
+<p><img src="https://raw.githubusercontent.com/velezf/lora-rocket-telemetry/main/RocketLoRaTelemetry/Feather9x_RX/Rx_BaseStation/Basestationfront.jpeg" class="img-fluid figure-img"></p>
+<figcaption>“SCE to AUX” — the front panel switch is a replica of the Apollo 12 Emergency Detection System switch. On November 14, 1969, a lightning strike knocked out telemetry 36 seconds after launch. Flight controller John Aaron recognized the signature and called “SCE to AUX.” Alan Bean found the switch on panel 8 and flipped it, restoring all telemetry and saving the mission. It felt like the right switch for a rocket telemetry ground station.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="1">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
 <p><img src="https://raw.githubusercontent.com/velezf/lora-rocket-telemetry/main/RocketLoRaTelemetry/Feather9x_RX/Rx_BaseStation/RangeSetup.jpeg" class="img-fluid figure-img"></p>
-<figcaption>At the range</figcaption>
+<figcaption>At the range — ground station connected to laptop, PiercerMini on the table</figcaption>
 </figure>
 </div>
 </div>
@@ -378,7 +390,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="status" class="level2">
 <h2 class="anchored" data-anchor-id="status">Status</h2>
-<p>✅ <em>Phase 1 complete — firmware tested, repo cleaned up, build documented.</em></p>
+<p>✅ <em>Flight tested — telemetry received successfully on first flight.</em></p>
 </section>
 <section id="links" class="level2">
 <h2 class="anchored" data-anchor-id="links">Links</h2>
@@ -938,24 +950,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb4-91"><a href="#cb4-91" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-92"><a href="#cb4-92" aria-hidden="true" tabindex="-1"></a><span class="al">![PiercerMini — Radio Rocket Edition](https://raw.githubusercontent.com/velezf/lora-rocket-telemetry/main/RocketLoRaTelemetry/Feather9x_TX/Tx_Sled/Rocket.jpeg)</span></span>
 <span id="cb4-93"><a href="#cb4-93" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-94"><a href="#cb4-94" aria-hidden="true" tabindex="-1"></a><span class="al">![Ground station interior — Feather M0 + RTL-SDR](https://raw.githubusercontent.com/velezf/lora-rocket-telemetry/main/RocketLoRaTelemetry/Feather9x_RX/Rx_BaseStation/Basestationtop.jpeg)</span></span>
+<span id="cb4-94"><a href="#cb4-94" aria-hidden="true" tabindex="-1"></a><span class="al">![Ground station interior — Feather M0 + RTL-SDR + DC converter](https://raw.githubusercontent.com/velezf/lora-rocket-telemetry/main/RocketLoRaTelemetry/Feather9x_RX/Rx_BaseStation/Basestationtop.jpeg)</span></span>
 <span id="cb4-95"><a href="#cb4-95" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb4-96"><a href="#cb4-96" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-97"><a href="#cb4-97" aria-hidden="true" tabindex="-1"></a>::: {layout-ncol=2}</span>
-<span id="cb4-98"><a href="#cb4-98" aria-hidden="true" tabindex="-1"></a><span class="al">![Ground station rear panel](https://raw.githubusercontent.com/velezf/lora-rocket-telemetry/main/RocketLoRaTelemetry/Feather9x_RX/Rx_BaseStation/Basestationrear.jpeg)</span></span>
+<span id="cb4-98"><a href="#cb4-98" aria-hidden="true" tabindex="-1"></a><span class="al">![Ground station rear panel — ethernet, USB, and power connectors](https://raw.githubusercontent.com/velezf/lora-rocket-telemetry/main/RocketLoRaTelemetry/Feather9x_RX/Rx_BaseStation/Basestationrear.jpeg)</span></span>
 <span id="cb4-99"><a href="#cb4-99" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-100"><a href="#cb4-100" aria-hidden="true" tabindex="-1"></a><span class="al">![At the range](https://raw.githubusercontent.com/velezf/lora-rocket-telemetry/main/RocketLoRaTelemetry/Feather9x_RX/Rx_BaseStation/RangeSetup.jpeg)</span></span>
+<span id="cb4-100"><a href="#cb4-100" aria-hidden="true" tabindex="-1"></a><span class="al">!["SCE to AUX" — the front panel switch is a replica of the Apollo 12 Emergency Detection System switch. On November 14, 1969, a lightning strike knocked out telemetry 36 seconds after launch. Flight controller John Aaron recognized the signature and called "SCE to AUX." Alan Bean found the switch on panel 8 and flipped it, restoring all telemetry and saving the mission. It felt like the right switch for a rocket telemetry ground station.](https://raw.githubusercontent.com/velezf/lora-rocket-telemetry/main/RocketLoRaTelemetry/Feather9x_RX/Rx_BaseStation/Basestationfront.jpeg)</span></span>
 <span id="cb4-101"><a href="#cb4-101" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb4-102"><a href="#cb4-102" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-103"><a href="#cb4-103" aria-hidden="true" tabindex="-1"></a><span class="fu">## Status</span></span>
-<span id="cb4-104"><a href="#cb4-104" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-105"><a href="#cb4-105" aria-hidden="true" tabindex="-1"></a>✅ *Phase 1 complete — firmware tested, repo cleaned up, build documented.*</span>
+<span id="cb4-103"><a href="#cb4-103" aria-hidden="true" tabindex="-1"></a>::: {layout-ncol=1}</span>
+<span id="cb4-104"><a href="#cb4-104" aria-hidden="true" tabindex="-1"></a><span class="al">![At the range — ground station connected to laptop, PiercerMini on the table](https://raw.githubusercontent.com/velezf/lora-rocket-telemetry/main/RocketLoRaTelemetry/Feather9x_RX/Rx_BaseStation/RangeSetup.jpeg)</span></span>
+<span id="cb4-105"><a href="#cb4-105" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb4-106"><a href="#cb4-106" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-107"><a href="#cb4-107" aria-hidden="true" tabindex="-1"></a><span class="fu">## Links</span></span>
+<span id="cb4-107"><a href="#cb4-107" aria-hidden="true" tabindex="-1"></a><span class="fu">## Status</span></span>
 <span id="cb4-108"><a href="#cb4-108" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-109"><a href="#cb4-109" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">GitHub Repository</span><span class="co">](https://github.com/velezf/lora-rocket-telemetry)</span></span>
-<span id="cb4-110"><a href="#cb4-110" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">TX Firmware</span><span class="co">](https://github.com/velezf/lora-rocket-telemetry/tree/main/RocketLoRaTelemetry/Feather9x_TX)</span></span>
-<span id="cb4-111"><a href="#cb4-111" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">RX Firmware</span><span class="co">](https://github.com/velezf/lora-rocket-telemetry/tree/main/RocketLoRaTelemetry/Feather9x_RX)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb4-109"><a href="#cb4-109" aria-hidden="true" tabindex="-1"></a>✅ *Flight tested — telemetry received successfully on first flight.*</span>
+<span id="cb4-110"><a href="#cb4-110" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-111"><a href="#cb4-111" aria-hidden="true" tabindex="-1"></a><span class="fu">## Links</span></span>
+<span id="cb4-112"><a href="#cb4-112" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-113"><a href="#cb4-113" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">GitHub Repository</span><span class="co">](https://github.com/velezf/lora-rocket-telemetry)</span></span>
+<span id="cb4-114"><a href="#cb4-114" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">TX Firmware</span><span class="co">](https://github.com/velezf/lora-rocket-telemetry/tree/main/RocketLoRaTelemetry/Feather9x_TX)</span></span>
+<span id="cb4-115"><a href="#cb4-115" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">RX Firmware</span><span class="co">](https://github.com/velezf/lora-rocket-telemetry/tree/main/RocketLoRaTelemetry/Feather9x_RX)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
