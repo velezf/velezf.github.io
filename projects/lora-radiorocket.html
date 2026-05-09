@@ -161,7 +161,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#hardware" id="toc-hardware" class="nav-link" data-scroll-target="#hardware">Hardware</a>
   <ul class="collapse">
   <li><a href="#tx-sled-rocket" id="toc-tx-sled-rocket" class="nav-link" data-scroll-target="#tx-sled-rocket">TX Sled (rocket)</a></li>
-  <li><a href="#rx-ground-station" id="toc-rx-ground-station" class="nav-link" data-scroll-target="#rx-ground-station">RX Ground Station</a></li>
+  <li><a href="#rx-ground-station-aprs-digipeater-lora-receiver" id="toc-rx-ground-station-aprs-digipeater-lora-receiver" class="nav-link" data-scroll-target="#rx-ground-station-aprs-digipeater-lora-receiver">RX Ground Station (APRS Digipeater + LoRa Receiver)</a></li>
   </ul></li>
   <li><a href="#firmware" id="toc-firmware" class="nav-link" data-scroll-target="#firmware">Firmware</a>
   <ul class="collapse">
@@ -252,10 +252,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tbody>
 </table>
 </section>
-<section id="rx-ground-station" class="level3">
-<h3 class="anchored" data-anchor-id="rx-ground-station">RX Ground Station</h3>
+<section id="rx-ground-station-aprs-digipeater-lora-receiver" class="level3">
+<h3 class="anchored" data-anchor-id="rx-ground-station-aprs-digipeater-lora-receiver">RX Ground Station (APRS Digipeater + LoRa Receiver)</h3>
 <p>The ground station is a LePotato SBC built into a custom blue acrylic enclosure. It serves double duty: receiving LoRa telemetry from the rocket and acting as a portable APRS digipeater — because most mid-power launch sites are outside range of any APRS I-Gate or digipeater, this station brings the infrastructure to the field.</p>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 55%">
+<col style="width: 45%">
+</colgroup>
 <thead>
 <tr class="header">
 <th>Component</th>
@@ -265,11 +269,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <tbody>
 <tr class="odd">
 <td>Libre Computer LePotato SBC</td>
-<td>Runs Linux, Direwolf, Node-RED</td>
+<td>Runs Linux, Direwolf TNC, Node-RED dashboard</td>
 </tr>
 <tr class="even">
 <td>RTL-SDR V4 dongle</td>
-<td>APRS receive / digipeater (144.39 MHz)</td>
+<td>APRS receive + digipeater (144.39 MHz)</td>
 </tr>
 <tr class="odd">
 <td>Adafruit Feather M0 + RFM95 (434 MHz)</td>
@@ -897,14 +901,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Adafruit ADXL375 <span class="pp">|</span> High-G accelerometer (±200 g) <span class="pp">|</span></span>
 <span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> LiPo battery <span class="pp">|</span> Power <span class="pp">|</span></span>
 <span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a><span class="fu">### RX Ground Station</span></span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a><span class="fu">### RX Ground Station (APRS Digipeater + LoRa Receiver)</span></span>
 <span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>The ground station is a LePotato SBC built into a custom blue acrylic enclosure. It serves double duty: receiving LoRa telemetry from the rocket and acting as a portable APRS digipeater — because most mid-power launch sites are outside range of any APRS I-Gate or digipeater, this station brings the infrastructure to the field.</span>
 <span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Component <span class="pp">|</span> Purpose <span class="pp">|</span></span>
 <span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a><span class="pp">|-----------|---------|</span></span>
-<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Libre Computer LePotato SBC <span class="pp">|</span> Runs Linux, Direwolf, Node-RED <span class="pp">|</span></span>
-<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> RTL-SDR V4 dongle <span class="pp">|</span> APRS receive / digipeater (144.39 MHz) <span class="pp">|</span></span>
+<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Libre Computer LePotato SBC <span class="pp">|</span> Runs Linux, Direwolf TNC, Node-RED dashboard <span class="pp">|</span></span>
+<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> RTL-SDR V4 dongle <span class="pp">|</span> APRS receive + digipeater (144.39 MHz) <span class="pp">|</span></span>
 <span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Adafruit Feather M0 + RFM95 (434 MHz) <span class="pp">|</span> LoRa telemetry receiver <span class="pp">|</span></span>
 <span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 12V → 5V DC-DC converter <span class="pp">|</span> Field power from vehicle or battery <span class="pp">|</span></span>
 <span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Custom blue acrylic enclosure <span class="pp">|</span> Houses all hardware <span class="pp">|</span></span>
