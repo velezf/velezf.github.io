@@ -1,6 +1,6 @@
 ---
 title: "LoRa RadioRocket"
-description: "Feather M0 + LoRa telemetry system for mid-power model rocketry: altitude calibration, launch/apogee detection, and 1 Hz ACK telemetry over 434 MHz."
+description: "Real-time LoRa telemetry for mid- and high-power rocketry: 1 Hz altitude, acceleration, and flight state streamed live to a ground station over 434 MHz. NAR Level 1 certified; high-power deployment on an Apogee Zephyr in progress."
 date: "2025-05-09"
 categories: [IoT, telemetry, LoRa, hardware, amateur radio, Arduino]
 image: ../images/lora-radiorocket.jpg
@@ -8,9 +8,7 @@ image: ../images/lora-radiorocket.jpg
 
 ## Overview
 
-A ground-up rewrite of [N3VEM's RadioRocketV2](https://github.com/N3VEM/RadioRocketV2) for the Adafruit Feather M0 + RFM95 platform. The rocket sled reads barometric altitude and high-G acceleration, detects launch and apogee autonomously, and streams 1 Hz telemetry packets to a matching Feather M0 ground station over 434 MHz LoRa.
-
-The rocket is a PiercerMini — a mid-power airframe with the electronics bay housing the sled.
+A ground-up rewrite of [N3VEM's RadioRocketV2](https://github.com/N3VEM/RadioRocketV2) for the Adafruit Feather M0 + RFM95 platform. Unlike altimeters that store and dump data after recovery, this system streams altitude, G-force, and flight state to the ground in real time at 1 Hz — so you're watching the numbers the moment the rocket leaves the rail. Designed for both mid- and high-power launches; currently flight-tested on a PiercerMini, with high-power deployment planned for an Apogee Zephyr (nose cone e-bay already built).
 
 ## Hardware
 
@@ -115,7 +113,8 @@ Each 1 Hz telemetry packet bundles all of this into a compact string — current
 
 ## Status
 
-✅ *Flight tested — telemetry received successfully on first flight.*
+✅ *Flight tested — telemetry received successfully on first flight.*  
+🔧 *High-power deployment in progress — Apogee Zephyr nose cone e-bay built, NAR Level 1 certified.*
 
 ## Links
 
