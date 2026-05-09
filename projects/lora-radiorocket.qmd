@@ -23,14 +23,14 @@ The rocket is a PiercerMini — a mid-power airframe with the electronics bay ho
 | Adafruit ADXL375 | High-G accelerometer (±200 g) |
 | LiPo battery | Power |
 
-### RX Ground Station
+### RX Ground Station (APRS Digipeater + LoRa Receiver)
 
 The ground station is a LePotato SBC built into a custom blue acrylic enclosure. It serves double duty: receiving LoRa telemetry from the rocket and acting as a portable APRS digipeater — because most mid-power launch sites are outside range of any APRS I-Gate or digipeater, this station brings the infrastructure to the field.
 
 | Component | Purpose |
 |-----------|---------|
-| Libre Computer LePotato SBC | Runs Linux, Direwolf, Node-RED |
-| RTL-SDR V4 dongle | APRS receive / digipeater (144.39 MHz) |
+| Libre Computer LePotato SBC | Runs Linux, Direwolf TNC, Node-RED dashboard |
+| RTL-SDR V4 dongle | APRS receive + digipeater (144.39 MHz) |
 | Adafruit Feather M0 + RFM95 (434 MHz) | LoRa telemetry receiver |
 | 12V → 5V DC-DC converter | Field power from vehicle or battery |
 | Custom blue acrylic enclosure | Houses all hardware |
