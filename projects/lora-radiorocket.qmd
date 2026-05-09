@@ -1,46 +1,68 @@
 ---
 title: "LoRa RadioRocket"
-description: "Amateur radio telemetry system for mid and high power model rockets, combining APRS tracking and LoRa data transmission with a Raspberry Pi ground station."
-date: "2025-06-01"
-categories: [IoT, telemetry, LoRa, APRS, hardware, amateur radio]
+description: "Feather M0 + LoRa telemetry system for mid-power model rocketry: trimmed-mean altitude calibration, launch/apogee detection, and 1 Hz ACK telemetry over 434 MHz."
+date: "2025-05-09"
+categories: [IoT, telemetry, LoRa, hardware, amateur radio, Arduino]
 image: ../images/lora-radiorocket.jpg
 ---
 
 ## Overview
 
-RadioRocketV2 is an open-source amateur radio project integrating modern digital 
-radio systems into mid and high power model rocketry. This fork of the 
-[N3VEM RadioRocketV2](https://github.com/N3VEM/RadioRocketV2) project adds 
-updated documentation to make the build more accessible.
+A ground-up rewrite of [N3VEM's RadioRocketV2](https://github.com/N3VEM/RadioRocketV2) for the Adafruit Feather M0 + RFM95 platform. The rocket sled reads barometric altitude and high-G acceleration, detects launch and apogee autonomously, and streams 1 Hz telemetry packets to a matching Feather M0 ground station over 434 MHz LoRa.
 
-## System Components
-
-### APRS Tracking
-A self-contained APRS beacon sled provides position tracking and mapping during 
-flight. Packets are received by any I-Gate within range and viewable on 
-[aprs.fi](https://aprs.fi). Can be built standalone without the rest of the system.
-
-### LoRa Telemetry
-The rocket transmits telemetry over 70cm LoRa, including sensor data, relay 
-messages, and command responses. LoRa's long range and low power make it ideal 
-for tracking rockets downrange.
-
-### Ground Station
-A portable ground station built around a single-board computer and LoRa Feather 
-module receives telemetry and APRS data, serving it via Node-RED and a networked 
-sound modem to any browser on the local network.
+The rocket is a PiercerMini — a mid-power airframe with the electronics bay housing the sled.
 
 ## Hardware
 
-- Adafruit Feather with LoRa Radio (rocket-side)
-- SDRplay SDR dongle (APRS reception)
-- Raspberry Pi ground station
-- Custom wiring and project enclosure
+### TX Sled (rocket)
+
+| Component | Purpose |
+|-----------|---------|
+| Adafruit Feather M0 + RFM95 (434 MHz) | Microcontroller + LoRa radio |
+| Adafruit BMP390 | Barometric pressure / altitude |
+| Adafruit ADXL375 | High-G accelerometer (±200 g) |
+| LiPo battery | Power |
+
+### RX Ground Station
+
+| Component | Purpose |
+|-----------|---------|
+| Adafruit Feather M0 + RFM95 (434 MHz) | LoRa receiver |
+| Custom blue acrylic enclosure | Weatherproof housing |
+
+## Firmware
+
+Key features of the rewritten firmware:
+
+- **Trimmed-mean baseline calibration** — discards outlier pressure readings at startup for a stable ground-level reference
+- **Launch detection** — triggers on sustained high-G acceleration threshold
+- **Apogee detection** — triggers on pressure reversal after ascent
+- **1 Hz telemetry with ACK** — ground station acknowledges each packet; rocket retransmits on timeout
+
+## Build Photos
+
+::: {layout-ncol=2}
+![TX sled — Feather M0 + BMP390 + ADXL375 in 3D-printed bracket](https://raw.githubusercontent.com/velezf/lora-rocket-telemetry/main/RocketLoRaTelemetry/Feather9x_TX/Tx_Sled/Sled.jpeg)
+
+![Electronics bay](https://raw.githubusercontent.com/velezf/lora-rocket-telemetry/main/RocketLoRaTelemetry/Feather9x_TX/Tx_Sled/Ebay.jpeg)
+
+![PiercerMini — Radio Rocket Edition](https://raw.githubusercontent.com/velezf/lora-rocket-telemetry/main/RocketLoRaTelemetry/Feather9x_TX/Tx_Sled/Rocket.jpeg)
+
+![Ground station interior — Feather M0 + RTL-SDR](https://raw.githubusercontent.com/velezf/lora-rocket-telemetry/main/RocketLoRaTelemetry/Feather9x_RX/Rx_BaseStation/Basestationtop.jpeg)
+:::
+
+::: {layout-ncol=2}
+![Ground station rear panel](https://raw.githubusercontent.com/velezf/lora-rocket-telemetry/main/RocketLoRaTelemetry/Feather9x_RX/Rx_BaseStation/Basestationrear.jpeg)
+
+![At the range](https://raw.githubusercontent.com/velezf/lora-rocket-telemetry/main/RocketLoRaTelemetry/Feather9x_RX/Rx_BaseStation/RangeSetup.jpeg)
+:::
 
 ## Status
 
-✅ *Working prototype complete — documentation in progress.*
+✅ *Phase 1 complete — firmware tested, repo cleaned up, build documented.*
 
 ## Links
 
-- [GitHub Repository](https://github.com/velezf/RadioRocketV2-documentation)
+- [GitHub Repository](https://github.com/velezf/lora-rocket-telemetry)
+- [TX Firmware](https://github.com/velezf/lora-rocket-telemetry/tree/main/RocketLoRaTelemetry/Feather9x_TX)
+- [RX Firmware](https://github.com/velezf/lora-rocket-telemetry/tree/main/RocketLoRaTelemetry/Feather9x_RX)
