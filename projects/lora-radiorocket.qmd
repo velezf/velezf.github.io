@@ -91,18 +91,22 @@ Each 1 Hz telemetry packet bundles all of this into a compact string — current
 
 ![PiercerMini — Radio Rocket Edition](https://raw.githubusercontent.com/velezf/lora-rocket-telemetry/main/RocketLoRaTelemetry/Feather9x_TX/Tx_Sled/Rocket.jpeg)
 
-![Ground station interior — Feather M0 + RTL-SDR](https://raw.githubusercontent.com/velezf/lora-rocket-telemetry/main/RocketLoRaTelemetry/Feather9x_RX/Rx_BaseStation/Basestationtop.jpeg)
+![Ground station interior — Feather M0 + RTL-SDR + DC converter](https://raw.githubusercontent.com/velezf/lora-rocket-telemetry/main/RocketLoRaTelemetry/Feather9x_RX/Rx_BaseStation/Basestationtop.jpeg)
 :::
 
 ::: {layout-ncol=2}
-![Ground station rear panel](https://raw.githubusercontent.com/velezf/lora-rocket-telemetry/main/RocketLoRaTelemetry/Feather9x_RX/Rx_BaseStation/Basestationrear.jpeg)
+![Ground station rear panel — ethernet, USB, and power connectors](https://raw.githubusercontent.com/velezf/lora-rocket-telemetry/main/RocketLoRaTelemetry/Feather9x_RX/Rx_BaseStation/Basestationrear.jpeg)
 
-![At the range](https://raw.githubusercontent.com/velezf/lora-rocket-telemetry/main/RocketLoRaTelemetry/Feather9x_RX/Rx_BaseStation/RangeSetup.jpeg)
+!["SCE to AUX" — the front panel switch is a replica of the Apollo 12 Emergency Detection System switch. On November 14, 1969, a lightning strike knocked out telemetry 36 seconds after launch. Flight controller John Aaron recognized the signature and called "SCE to AUX." Alan Bean found the switch on panel 8 and flipped it, restoring all telemetry and saving the mission. It felt like the right switch for a rocket telemetry ground station.](https://raw.githubusercontent.com/velezf/lora-rocket-telemetry/main/RocketLoRaTelemetry/Feather9x_RX/Rx_BaseStation/Basestationfront.jpeg)
+:::
+
+::: {layout-ncol=1}
+![At the range — ground station connected to laptop, PiercerMini on the table](https://raw.githubusercontent.com/velezf/lora-rocket-telemetry/main/RocketLoRaTelemetry/Feather9x_RX/Rx_BaseStation/RangeSetup.jpeg)
 :::
 
 ## Status
 
-✅ *Phase 1 complete — firmware tested, repo cleaned up, build documented.*
+✅ *Flight tested — telemetry received successfully on first flight.*
 
 ## Links
 
