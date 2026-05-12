@@ -116,7 +116,8 @@ With those caveats clearly on the table, here is what this project actually does
 ## Study Sites
 
 Five reef systems spanning two ocean basins were selected to compare thermal
-stress patterns across different geographic and ecological contexts:
+stress patterns across different geographic and ecological contexts. They were
+selected as I've personally visited them multiple times over the years:
 
 | Site | Region | Latitude | Longitude |
 |------|--------|----------|-----------|
@@ -132,6 +133,7 @@ These sites were chosen to represent:
 - **The Mesoamerican Reef system**, the second-largest barrier reef in the world
 - **Contrasting bleaching histories** (Bonaire is known for relatively robust reef health)
 - **Inter-basin comparison** (Caribbean vs. Indo-Pacific thermal dynamics)
+- **Sites I've personally visited.
 
 ![Study site locations, colored by peak DHW over the most recent 5 years.
 Larger, darker markers indicate higher accumulated thermal stress.](figures/site_map_peak_dhw.png){#fig-map}
