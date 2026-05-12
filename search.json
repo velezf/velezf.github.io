@@ -1,122 +1,66 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Francisco Velez",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
     "section": "",
-    "text": "I’m a clinical informaticist working at the intersection of clinical research, data science, and primary data collection. My work focuses on building systems, workflows, and data platforms that support researchers across a wide range of scientific and operational needs. I’m currently expanding my scope into marine science, GIS, remote sensing, full-stack software development, and hardware engineering. Outside of work, I apply the same data and engineering mindset to cycling analytics, high-power rocketry, ham radio, Arduino-based systems, and embedded telemetry projects."
+    "text": "I’m a clinical informaticist and data systems professional based in the Washington, D.C. area, currently working at the National Institutes of Health. My work sits at the intersection of clinical research, data science, primary data collection, and research infrastructure.\nI work shoulder to shoulder with principal investigators, research teams, and operational stakeholders to understand scientific needs and translate them into usable systems, workflows, and data platforms. I also work with program and organizational leadership to shape enterprise data capabilities that support governance, interoperability, reproducibility, and long-term scientific value.\nMy professional background includes clinical research informatics, data governance, cloud-based research platforms, REDCap operations, metadata workflows, and support for large-scale scientific data programs.\nI’m currently expanding my scope into marine science, GIS, remote sensing, Structure-from-Motion photogrammetry, full-stack software development, and hardware engineering. Long term, I’m interested in applying informatics, reproducible analysis, and geospatial tools to coral reef research and marine conservation at institutions such as Scripps Institution of Oceanography, Woods Hole Oceanographic Institution, Mote Marine Laboratory, NOAA, or similar research organizations.\nOutside of work, I apply the same data and engineering mindset to cycling analytics, high-power rocketry, ham radio, Arduino-based systems, and embedded radio telemetry projects."
   },
   {
-    "objectID": "index.html#welcome",
-    "href": "index.html#welcome",
-    "title": "Francisco Velez",
+    "objectID": "about.html#background",
+    "href": "about.html#background",
+    "title": "About Me",
     "section": "",
-    "text": "I’m a clinical informaticist working at the intersection of clinical research, data science, and primary data collection. My work focuses on building systems, workflows, and data platforms that support researchers across a wide range of scientific and operational needs. I’m currently expanding my scope into marine science, GIS, remote sensing, full-stack software development, and hardware engineering. Outside of work, I apply the same data and engineering mindset to cycling analytics, high-power rocketry, ham radio, Arduino-based systems, and embedded telemetry projects."
+    "text": "I’m a clinical informaticist and data systems professional based in the Washington, D.C. area, currently working at the National Institutes of Health. My work sits at the intersection of clinical research, data science, primary data collection, and research infrastructure.\nI work shoulder to shoulder with principal investigators, research teams, and operational stakeholders to understand scientific needs and translate them into usable systems, workflows, and data platforms. I also work with program and organizational leadership to shape enterprise data capabilities that support governance, interoperability, reproducibility, and long-term scientific value.\nMy professional background includes clinical research informatics, data governance, cloud-based research platforms, REDCap operations, metadata workflows, and support for large-scale scientific data programs.\nI’m currently expanding my scope into marine science, GIS, remote sensing, Structure-from-Motion photogrammetry, full-stack software development, and hardware engineering. Long term, I’m interested in applying informatics, reproducible analysis, and geospatial tools to coral reef research and marine conservation at institutions such as Scripps Institution of Oceanography, Woods Hole Oceanographic Institution, Mote Marine Laboratory, NOAA, or similar research organizations.\nOutside of work, I apply the same data and engineering mindset to cycling analytics, high-power rocketry, ham radio, Arduino-based systems, and embedded radio telemetry projects."
   },
   {
-    "objectID": "index.html#research-interests",
-    "href": "index.html#research-interests",
-    "title": "Francisco Velez",
-    "section": "Research Interests",
-    "text": "Research Interests\n\nCoral reef monitoring and benthic habitat mapping\nStructure-from-Motion photogrammetry for marine applications\nGeospatial data visualization and analysis\nIoT and radio telemetry systems"
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About Me",
+    "section": "Education",
+    "text": "Education\n\nM.Sc. Health Care Administration Informatics, University of Maryland University College, Adelphi, MD — May 2016\nB.Sc. Biology (Minor: Chemistry, Minor: Physics), Wilkes University, Wilkes-Barre, PA — May 2009"
   },
   {
-    "objectID": "index.html#recent-projects",
-    "href": "index.html#recent-projects",
-    "title": "Francisco Velez",
-    "section": "Recent Projects",
-    "text": "Recent Projects\nCheck out my Projects page for a full overview of my work."
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "About Me",
+    "section": "Experience",
+    "text": "Experience\n\nNational Institutes of Health / NHLBI — Biomedical Informatics Project Manager, 05/2021–Present\n\nWork directly with principal investigators, research teams, and scientific stakeholders to understand research needs and translate them into practical informatics solutions.\nPartner with program leadership and enterprise stakeholders to develop data platforms, governance models, and operational workflows that scale beyond individual studies.\nSupport researcher-facing data systems, clinical research informatics workflows, and cloud-based scientific data platforms.\nContribute to data governance, metadata, data release, interoperability, and operational workflows for large-scale biomedical research programs.\nWork across scientific, technical, and operational teams to bridge investigator needs, enterprise priorities, and sustainable platform design."
+  },
+  {
+    "objectID": "about.html#skills",
+    "href": "about.html#skills",
+    "title": "About Me",
+    "section": "Skills",
+    "text": "Skills\n\nProgramming & Analysis: Python, SQL, R, Jupyter notebooks\nData Systems: REDCap, research data platforms, metadata workflows, FAIR data practices, clinical research informatics\nGIS & Remote Sensing: QGIS, geospatial analysis, benthic habitat mapping, remote sensing workflows\nPhotogrammetry: Structure-from-Motion workflows, Agisoft Metashape, large-area imaging concepts\nSoftware & DevOps: Git, GitHub, Quarto, Docker, cloud workspaces, reproducible analysis workflows\nHardware & Telemetry: Arduino, LoRa radio, embedded systems, sensor telemetry, high-power rocketry instrumentation\nDomains: Clinical research, biomedical informatics, marine science, coral reef conservation, geospatial analysis, cycling analytics"
+  },
+  {
+    "objectID": "about.html#currently-learning",
+    "href": "about.html#currently-learning",
+    "title": "About Me",
+    "section": "Currently Learning",
+    "text": "Currently Learning\n\nGIS workflows for marine and coastal datasets\nBenthic habitat classification and coral reef mapping methods\nStructure-from-Motion photogrammetry for reef monitoring\nRemote sensing applications for marine conservation\nFull-stack web development for data-driven hobby and research tools\nEmbedded telemetry systems using microcontrollers, sensors, and LoRa radio"
+  },
+  {
+    "objectID": "about.html#projects-interests",
+    "href": "about.html#projects-interests",
+    "title": "About Me",
+    "section": "Projects & Interests",
+    "text": "Projects & Interests\n\nCoral GIS & Marine Data: Building a portfolio of geospatial and remote sensing projects focused on reef conservation.\nPhotogrammetry: Learning SfM workflows for reconstructing reef sites from overlapping image sets.\nCycling Analytics: Exploring data tools for cycling performance, fantasy cycling, and route analysis.\nRocket Telemetry: Building embedded radio telemetry systems for high-power rocketry using Arduino-compatible boards, barometric sensors, accelerometers, and LoRa radios.\nHam Radio & Field Systems: Experimenting with radio communications, portable systems, and telemetry workflows."
+  },
+  {
+    "objectID": "about.html#contact",
+    "href": "about.html#contact",
+    "title": "About Me",
+    "section": "Contact",
+    "text": "Contact\n\n📧 francisco.velez.v@gmail.com\n🐙 github.com/velezf\n💼 linkedin.com/in/francisco-velez-86028315"
   },
   {
     "objectID": "projects.html",
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "2016 Subaru Outback Stereo Build\n\n\n\nhardware\n\naudio\n\ncar-audio\n\nSubaru\n\nDIY\n\ndocumentation\n\n\n\nA technical writeup and reference guide for upgrading the factory Harman Kardon audio system in a 2016 Subaru Outback, including head unit replacement, amplifier…\n\n\n\nMay 7, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nLoRa RadioRocket\n\n\n\nIoT\n\ntelemetry\n\nLoRa\n\nhardware\n\namateur radio\n\nArduino\n\n\n\nReal-time LoRa telemetry for mid- and high-power rocketry: 1 Hz altitude, acceleration, and flight state streamed live to a ground station over 434 MHz. NAR Level 1…\n\n\n\nMay 9, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nFreezingSaddles\n\n\n\ncycling\n\nanalytics\n\nvisualization\n\npython\n\n\n\nAnalytics and visualization for a winter cycling challenge tracking mileage, leaderboards, and participation across teams.\n\n\n\nMay 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nCoral Bleaching Risk Notebook\n\n\n\nmarine science\n\ndata analysis\n\njupyter\n\npython\n\n\n\nA planned exploratory data analysis notebook examining environmental drivers of coral bleaching risk using sea surface temperature and DHW data.\n\n\n\nApr 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nBenthic Habitat Mapping\n\n\n\nGIS\n\nmarine science\n\nmapping\n\nremote sensing\n\n\n\nA planned GIS-based workflow for mapping and classifying benthic habitats using remote sensing and field survey data.\n\n\n\nMar 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nReef SfM Workflow\n\n\n\nmarine science\n\nphotogrammetry\n\nworkflow\n\n3D\n\n\n\nA planned end-to-end workflow for processing underwater photos into 3D reef models using Structure-from-Motion photogrammetry.\n\n\n\nFeb 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nSfM Photogrammetry for Marine Science\n\n\n\nmarine science\n\nphotogrammetry\n\n3D\n\nGIS\n\n\n\nAn overview of Structure-from-Motion photogrammetry methods applied to coral reef and benthic habitat surveys — and my plan to apply them.\n\n\n\nJan 1, 2025\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "projects/benthic-habitat-map.html",
-    "href": "projects/benthic-habitat-map.html",
-    "title": "Benthic Habitat Mapping",
-    "section": "",
-    "text": "Benthic habitat maps are essential tools for coral reef management and conservation. This project outlines the methods I’m studying for producing high-resolution habitat maps by combining field survey data with remote sensing imagery. The workflow below is based on my research into established approaches in the field. I have not yet produced a habitat map from real data — that is the goal I’m working toward.\nStatus: 🚧 In progress — methods research and learning phase. Map production is planned future work."
-  },
-  {
-    "objectID": "projects/benthic-habitat-map.html#overview",
-    "href": "projects/benthic-habitat-map.html#overview",
-    "title": "Benthic Habitat Mapping",
-    "section": "",
-    "text": "Benthic habitat maps are essential tools for coral reef management and conservation. This project outlines the methods I’m studying for producing high-resolution habitat maps by combining field survey data with remote sensing imagery. The workflow below is based on my research into established approaches in the field. I have not yet produced a habitat map from real data — that is the goal I’m working toward.\nStatus: 🚧 In progress — methods research and learning phase. Map production is planned future work."
-  },
-  {
-    "objectID": "projects/benthic-habitat-map.html#why-benthic-mapping",
-    "href": "projects/benthic-habitat-map.html#why-benthic-mapping",
-    "title": "Benthic Habitat Mapping",
-    "section": "Why Benthic Mapping",
-    "text": "Why Benthic Mapping\nUnderstanding what lives on the seafloor — coral, seagrass, sand, rubble — is foundational to reef conservation and management. High-resolution benthic maps enable habitat change tracking over time, identification of bleaching or damage extent, prioritization of restoration and protection efforts, and integration with water quality and thermal stress data. I want to be able to produce and work with these maps as part of applied marine data science work."
-  },
-  {
-    "objectID": "projects/benthic-habitat-map.html#planned-methods",
-    "href": "projects/benthic-habitat-map.html#planned-methods",
-    "title": "Benthic Habitat Mapping",
-    "section": "Planned Methods",
-    "text": "Planned Methods\n\nData Sources\n\nMultispectral satellite imagery (e.g., Planet, Sentinel-2, WorldView)\nUnderwater photo transects for field validation\nSfM-derived orthomosaics as high-resolution local inputs\n\n\n\nClassification Approach\n\nObject-based image analysis (OBIA) for reef-scale segmentation\nSupervised classification using field validation points\nAccuracy assessment with confusion matrices and kappa statistics\n\n\n\nGIS Processing\n\nCoordinate reference system management and reprojection\nRaster and vector integration\nMap layout and cartographic output in QGIS"
-  },
-  {
-    "objectID": "projects/benthic-habitat-map.html#tools-im-learning",
-    "href": "projects/benthic-habitat-map.html#tools-im-learning",
-    "title": "Benthic Habitat Mapping",
-    "section": "Tools I’m Learning",
-    "text": "Tools I’m Learning\n\nQGIS — primary GIS environment\nPython (rasterio, geopandas, scikit-learn) — raster processing and classification\nGoogle Earth Engine — cloud-scale remote sensing analysis (planned)"
-  },
-  {
-    "objectID": "projects/benthic-habitat-map.html#path-forward",
-    "href": "projects/benthic-habitat-map.html#path-forward",
-    "title": "Benthic Habitat Mapping",
-    "section": "Path Forward",
-    "text": "Path Forward\nMy near-term plan is to work through a classification exercise using a publicly available benthic dataset — likely from NOAA’s National Coral Reef Monitoring Program or the Allen Coral Atlas — to produce a documented, reproducible mapping workflow before applying it to original survey data."
-  },
-  {
-    "objectID": "projects/sfm-marine.html",
-    "href": "projects/sfm-marine.html",
-    "title": "SfM Photogrammetry for Marine Science",
-    "section": "",
-    "text": "Structure-from-Motion (SfM) photogrammetry enables the creation of precise 3D models from overlapping photographs. This page documents my study of how SfM methods are applied to underwater survey data to map and monitor coral reefs and benthic habitats — and outlines the work I plan to do as I build toward applying these techniques myself.\nStatus: 🚧 In progress — this is active learning and future planned work, not a completed project."
-  },
-  {
-    "objectID": "projects/sfm-marine.html#overview",
-    "href": "projects/sfm-marine.html#overview",
-    "title": "SfM Photogrammetry for Marine Science",
-    "section": "",
-    "text": "Structure-from-Motion (SfM) photogrammetry enables the creation of precise 3D models from overlapping photographs. This page documents my study of how SfM methods are applied to underwater survey data to map and monitor coral reefs and benthic habitats — and outlines the work I plan to do as I build toward applying these techniques myself.\nStatus: 🚧 In progress — this is active learning and future planned work, not a completed project."
-  },
-  {
-    "objectID": "projects/sfm-marine.html#why-im-interested-in-sfm-for-marine-science",
-    "href": "projects/sfm-marine.html#why-im-interested-in-sfm-for-marine-science",
-    "title": "SfM Photogrammetry for Marine Science",
-    "section": "Why I’m Interested in SfM for Marine Science",
-    "text": "Why I’m Interested in SfM for Marine Science\nTraditional survey methods struggle to capture the complex 3D structure of coral reefs. SfM offers capabilities I want to develop:\n\nHigh-resolution 3D reconstructions from standard cameras\nQuantitative measurements of structural complexity\nRepeatable surveys for change detection over time\nLower cost relative to LiDAR or multibeam sonar\n\nMy goal is to build the technical depth to contribute to reef monitoring efforts using these methods, either as part of a research team or through independent projects."
-  },
-  {
-    "objectID": "projects/sfm-marine.html#what-im-learning",
-    "href": "projects/sfm-marine.html#what-im-learning",
-    "title": "SfM Photogrammetry for Marine Science",
-    "section": "What I’m Learning",
-    "text": "What I’m Learning\nI’m working through the core concepts of SfM pipelines, including:\n\nImage acquisition protocols for underwater surveys (overlap, lighting, camera settings)\nProcessing workflows in Agisoft Metashape\nQuality assessment using ground control points and reprojection error\nOutput formats: orthomosaics, DEMs, and 3D meshes"
-  },
-  {
-    "objectID": "projects/sfm-marine.html#planned-work",
-    "href": "projects/sfm-marine.html#planned-work",
-    "title": "SfM Photogrammetry for Marine Science",
-    "section": "Planned Work",
-    "text": "Planned Work\nOnce I have suitable underwater image sets to work with, I plan to document a complete end-to-end pipeline — from raw photos to validated 3D outputs — as a reproducible, open workflow. See the related projects below for where that work is heading."
-  },
-  {
-    "objectID": "projects/sfm-marine.html#related-projects",
-    "href": "projects/sfm-marine.html#related-projects",
-    "title": "SfM Photogrammetry for Marine Science",
-    "section": "Related Projects",
-    "text": "Related Projects\n\nReef SfM Workflow — the detailed processing pipeline I’m building toward\nBenthic Habitat Map — GIS mapping outputs that will draw on SfM data"
+    "text": "2016 Subaru Outback Stereo Build\n\n\n\nhardware\n\naudio\n\ncar-audio\n\nSubaru\n\nDIY\n\ndocumentation\n\n\n\nA technical writeup and reference guide for upgrading the factory Harman Kardon audio system in a 2016 Subaru Outback, including head unit replacement, amplifier…\n\n\n\nMay 7, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nLoRa RadioRocket\n\n\n\nIoT\n\ntelemetry\n\nLoRa\n\nAPRS\n\nhardware\n\namateur radio\n\n\n\nAmateur radio telemetry system for mid and high power model rockets, combining APRS tracking and LoRa data transmission with a Raspberry Pi ground station.\n\n\n\nJun 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nFreezingSaddles\n\n\n\ncycling\n\nanalytics\n\nvisualization\n\npython\n\n\n\nAnalytics and visualization for a winter cycling challenge tracking mileage, leaderboards, and participation across teams.\n\n\n\nMay 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nCoral Bleaching Risk Notebook\n\n\n\nmarine science\n\ndata analysis\n\njupyter\n\npython\n\n\n\nA planned exploratory data analysis notebook examining environmental drivers of coral bleaching risk using sea surface temperature and DHW data.\n\n\n\nApr 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nBenthic Habitat Mapping\n\n\n\nGIS\n\nmarine science\n\nmapping\n\nremote sensing\n\n\n\nA planned GIS-based workflow for mapping and classifying benthic habitats using remote sensing and field survey data.\n\n\n\nMar 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nReef SfM Workflow\n\n\n\nmarine science\n\nphotogrammetry\n\nworkflow\n\n3D\n\n\n\nA planned end-to-end workflow for processing underwater photos into 3D reef models using Structure-from-Motion photogrammetry.\n\n\n\nFeb 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nSfM Photogrammetry for Marine Science\n\n\n\nmarine science\n\nphotogrammetry\n\n3D\n\nGIS\n\n\n\nAn overview of Structure-from-Motion photogrammetry methods applied to coral reef and benthic habitat surveys — and my plan to apply them.\n\n\n\nJan 1, 2025\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/subaru-audio-tuning.html",
@@ -217,102 +161,46 @@
     "text": "Path Forward\nOnce I have access to suitable underwater image sets — either from open datasets, collaborators, or my own dives — I’ll work through this pipeline, document the results, and update this page with real outputs and lessons learned."
   },
   {
-    "objectID": "projects/lora-radiorocket.html",
-    "href": "projects/lora-radiorocket.html",
-    "title": "LoRa RadioRocket",
+    "objectID": "projects/benthic-habitat-map.html",
+    "href": "projects/benthic-habitat-map.html",
+    "title": "Benthic Habitat Mapping",
     "section": "",
-    "text": "A ground-up rewrite of N3VEM’s RadioRocketV2 for the Adafruit Feather M0 + RFM95 platform. Unlike altimeters that store and dump data after recovery, this system streams altitude, G-force, and flight state to the ground in real time at 1 Hz — so you’re watching the numbers the moment the rocket leaves the rail. Designed for both mid- and high-power launches; currently flight-tested on a PiercerMini, with high-power deployment planned for an Apogee Zephyr (nose cone e-bay already built)."
+    "text": "Benthic habitat maps are essential tools for coral reef management and conservation. This project outlines the methods I’m studying for producing high-resolution habitat maps by combining field survey data with remote sensing imagery. The workflow below is based on my research into established approaches in the field. I have not yet produced a habitat map from real data — that is the goal I’m working toward.\nStatus: 🚧 In progress — methods research and learning phase. Map production is planned future work."
   },
   {
-    "objectID": "projects/lora-radiorocket.html#overview",
-    "href": "projects/lora-radiorocket.html#overview",
-    "title": "LoRa RadioRocket",
+    "objectID": "projects/benthic-habitat-map.html#overview",
+    "href": "projects/benthic-habitat-map.html#overview",
+    "title": "Benthic Habitat Mapping",
     "section": "",
-    "text": "A ground-up rewrite of N3VEM’s RadioRocketV2 for the Adafruit Feather M0 + RFM95 platform. Unlike altimeters that store and dump data after recovery, this system streams altitude, G-force, and flight state to the ground in real time at 1 Hz — so you’re watching the numbers the moment the rocket leaves the rail. Designed for both mid- and high-power launches; currently flight-tested on a PiercerMini, with high-power deployment planned for an Apogee Zephyr (nose cone e-bay already built)."
+    "text": "Benthic habitat maps are essential tools for coral reef management and conservation. This project outlines the methods I’m studying for producing high-resolution habitat maps by combining field survey data with remote sensing imagery. The workflow below is based on my research into established approaches in the field. I have not yet produced a habitat map from real data — that is the goal I’m working toward.\nStatus: 🚧 In progress — methods research and learning phase. Map production is planned future work."
   },
   {
-    "objectID": "projects/lora-radiorocket.html#hardware",
-    "href": "projects/lora-radiorocket.html#hardware",
-    "title": "LoRa RadioRocket",
-    "section": "Hardware",
-    "text": "Hardware\n\nTX Sled (rocket)\n\n\n\nComponent\nPurpose\n\n\n\n\nAdafruit Feather M0 + RFM95 (434 MHz)\nMicrocontroller + LoRa radio\n\n\nAdafruit BMP390\nBarometric pressure / altitude\n\n\nAdafruit ADXL375\nHigh-G accelerometer (±200 g)\n\n\nLiPo battery\nPower\n\n\n\n\n\nRX Ground Station (APRS Digipeater + LoRa Receiver)\nThe ground station is a LePotato SBC built into a custom blue acrylic enclosure. It serves double duty: receiving LoRa telemetry from the rocket and acting as a portable APRS digipeater — because most mid-power launch sites are outside range of any APRS I-Gate or digipeater, this station brings the infrastructure to the field.\n\n\n\n\n\n\n\nComponent\nPurpose\n\n\n\n\nLibre Computer LePotato SBC\nRuns Linux, Direwolf TNC, Node-RED dashboard\n\n\nRTL-SDR V4 dongle\nAPRS receive + digipeater (144.39 MHz)\n\n\nAdafruit Feather M0 + RFM95 (434 MHz)\nLoRa telemetry receiver\n\n\n12V → 5V DC-DC converter\nField power from vehicle or battery\n\n\nCustom blue acrylic enclosure\nHouses all hardware\n\n\n\nSoftware stack: Direwolf (software TNC + digipeater), Xastir (APRS mapping), Node-RED (telemetry dashboard), VNC (headless remote access).\nWhen the rocket eventually carries an APRS tracker (planned: QRPLabs LightAPRS 2.0), this station will digipeat its packets to the APRS network from the field."
+    "objectID": "projects/benthic-habitat-map.html#why-benthic-mapping",
+    "href": "projects/benthic-habitat-map.html#why-benthic-mapping",
+    "title": "Benthic Habitat Mapping",
+    "section": "Why Benthic Mapping",
+    "text": "Why Benthic Mapping\nUnderstanding what lives on the seafloor — coral, seagrass, sand, rubble — is foundational to reef conservation and management. High-resolution benthic maps enable habitat change tracking over time, identification of bleaching or damage extent, prioritization of restoration and protection efforts, and integration with water quality and thermal stress data. I want to be able to produce and work with these maps as part of applied marine data science work."
   },
   {
-    "objectID": "projects/lora-radiorocket.html#firmware",
-    "href": "projects/lora-radiorocket.html#firmware",
-    "title": "LoRa RadioRocket",
-    "section": "Firmware",
-    "text": "Firmware\nThree algorithms do the interesting work:\n\n1. Ground pressure calibration\nAt boot, the sled takes 50 pressure readings over ~2.5 seconds and averages them to establish a stable ground-level reference. Everything else — altitude, apogee — is computed relative to this baseline.\n// Calibrate ground pressure\nfloat sum = 0;\nfor (int i = 0; i &lt; 50; i++) {\n  bmp.performReading();\n  sum += bmp.pressure / 100.0;\n  delay(50);\n}\ngroundPressure = sum / 50.0;\nA simple average works well on a calm pad. A future improvement would be a trimmed mean — discarding the top and bottom few samples — to handle sensor noise spikes at power-on.\n\n\n2. Launch detection\nRather than checking a single axis, launch is detected from the vector magnitude across all three accelerometer axes. This makes detection robust regardless of how the sled is oriented in the airframe.\nfloat g = sqrt(event.acceleration.x * event.acceleration.x +\n               event.acceleration.y * event.acceleration.y +\n               event.acceleration.z * event.acceleration.z) / 9.80665;\n\nif (!inFlight && g &gt; launchThresholdG) {\n  inFlight = true;\n  launchTime = now;\n}\n\n\n3. Apogee detection\nApogee is detected purely from barometric altitude — no additional sensors needed. The firmware tracks the running maximum altitude and flags descent the moment altitude stops climbing.\nif (altitudeFt &gt; maxAltitudeFt) {\n  maxAltitudeFt = altitudeFt;\n  descending = false;  // still ascending\n} else {\n  descending = true;   // apogee passed\n}\nif (g &gt; peakG) peakG = g;  // update peak G\nEach 1 Hz telemetry packet bundles all of this into a compact string — current altitude, max altitude, live G, peak G, temperature, battery voltage, and flight state — and waits up to 300 ms for an ACK from the ground station before continuing."
+    "objectID": "projects/benthic-habitat-map.html#planned-methods",
+    "href": "projects/benthic-habitat-map.html#planned-methods",
+    "title": "Benthic Habitat Mapping",
+    "section": "Planned Methods",
+    "text": "Planned Methods\n\nData Sources\n\nMultispectral satellite imagery (e.g., Planet, Sentinel-2, WorldView)\nUnderwater photo transects for field validation\nSfM-derived orthomosaics as high-resolution local inputs\n\n\n\nClassification Approach\n\nObject-based image analysis (OBIA) for reef-scale segmentation\nSupervised classification using field validation points\nAccuracy assessment with confusion matrices and kappa statistics\n\n\n\nGIS Processing\n\nCoordinate reference system management and reprojection\nRaster and vector integration\nMap layout and cartographic output in QGIS"
   },
   {
-    "objectID": "projects/lora-radiorocket.html#build-photos",
-    "href": "projects/lora-radiorocket.html#build-photos",
-    "title": "LoRa RadioRocket",
-    "section": "Build Photos",
-    "text": "Build Photos\n\n\n\n\n\n\nTX sled — Feather M0 + BMP390 + ADXL375 in 3D-printed bracket\n\n\n\n\n\n\n\nElectronics bay\n\n\n\n\n\n\n\n\n\nPiercerMini — Radio Rocket Edition\n\n\n\n\n\n\n\nGround station interior — Feather M0 + RTL-SDR + DC converter\n\n\n\n\n\n\n\n\n\n\n\nGround station rear panel — ethernet, USB, and power connectors\n\n\n\n\n\n\n\nSCE to AUX — the front panel switch is a replica of the Apollo 12 Emergency Detection System switch. On November 14, 1969, a lightning strike knocked out telemetry 36 seconds after launch. Flight controller John Aaron recognized the signature and called SCE to AUX. Alan Bean found the switch on panel 8 and flipped it, restoring all telemetry and saving the mission. It felt like the right switch for a rocket telemetry ground station.\n\n\n\n\n\n\n\n\n\n\n\nAt the range — ground station connected to laptop, PiercerMini on the table"
+    "objectID": "projects/benthic-habitat-map.html#tools-im-learning",
+    "href": "projects/benthic-habitat-map.html#tools-im-learning",
+    "title": "Benthic Habitat Mapping",
+    "section": "Tools I’m Learning",
+    "text": "Tools I’m Learning\n\nQGIS — primary GIS environment\nPython (rasterio, geopandas, scikit-learn) — raster processing and classification\nGoogle Earth Engine — cloud-scale remote sensing analysis (planned)"
   },
   {
-    "objectID": "projects/lora-radiorocket.html#status",
-    "href": "projects/lora-radiorocket.html#status",
-    "title": "LoRa RadioRocket",
-    "section": "Status",
-    "text": "Status\n✅ Flight tested — telemetry received successfully on first flight.\n🔧 High-power deployment in progress — Apogee Zephyr nose cone e-bay built, NAR Level 1 certified."
-  },
-  {
-    "objectID": "projects/lora-radiorocket.html#links",
-    "href": "projects/lora-radiorocket.html#links",
-    "title": "LoRa RadioRocket",
-    "section": "Links",
-    "text": "Links\n\nGitHub Repository\nTX Firmware\nRX Firmware"
-  },
-  {
-    "objectID": "projects/freezingsaddles.html",
-    "href": "projects/freezingsaddles.html",
-    "title": "FreezingSaddles",
-    "section": "",
-    "text": "FreezingSaddles is a winter cycling challenge that encourages riders to log miles during the coldest months of the year. This project covers the data pipeline, leaderboard analytics, and visualizations built to support the challenge."
-  },
-  {
-    "objectID": "projects/freezingsaddles.html#overview",
-    "href": "projects/freezingsaddles.html#overview",
-    "title": "FreezingSaddles",
-    "section": "",
-    "text": "FreezingSaddles is a winter cycling challenge that encourages riders to log miles during the coldest months of the year. This project covers the data pipeline, leaderboard analytics, and visualizations built to support the challenge."
-  },
-  {
-    "objectID": "projects/freezingsaddles.html#features",
-    "href": "projects/freezingsaddles.html#features",
-    "title": "FreezingSaddles",
-    "section": "Features",
-    "text": "Features\n\nAutomated mileage ingestion from Strava and manual entries\nTeam and individual leaderboards\nInteractive visualizations of ride data\nHistorical trend analysis across challenge years"
-  },
-  {
-    "objectID": "projects/freezingsaddles.html#technical-stack",
-    "href": "projects/freezingsaddles.html#technical-stack",
-    "title": "FreezingSaddles",
-    "section": "Technical Stack",
-    "text": "Technical Stack\n\nBackend: Python (Flask, pandas)\nData: Strava API, CSV ingestion\nVisualization: Plotly, Matplotlib\nDeployment: Docker, GitHub Actions"
-  },
-  {
-    "objectID": "projects/freezingsaddles.html#highlights",
-    "href": "projects/freezingsaddles.html#highlights",
-    "title": "FreezingSaddles",
-    "section": "Highlights",
-    "text": "Highlights\n\nProcessed thousands of ride entries across multiple seasons\nBuilt interactive leaderboard dashboards\nAutomated data pipeline reducing manual entry overhead"
-  },
-  {
-    "objectID": "projects/freezingsaddles.html#links",
-    "href": "projects/freezingsaddles.html#links",
-    "title": "FreezingSaddles",
-    "section": "Links",
-    "text": "Links\n\nFreezingSaddles — main challenge site\nGitHub Organization — source code and repos"
-  },
-  {
-    "objectID": "projects/freezingsaddles.html#status",
-    "href": "projects/freezingsaddles.html#status",
-    "title": "FreezingSaddles",
-    "section": "Status",
-    "text": "Status\n✅ Active — updated each winter cycling season."
+    "objectID": "projects/benthic-habitat-map.html#path-forward",
+    "href": "projects/benthic-habitat-map.html#path-forward",
+    "title": "Benthic Habitat Mapping",
+    "section": "Path Forward",
+    "text": "Path Forward\nMy near-term plan is to work through a classification exercise using a publicly available benthic dataset — likely from NOAA’s National Coral Reef Monitoring Program or the Allen Coral Atlas — to produce a documented, reproducible mapping workflow before applying it to original survey data."
   },
   {
     "objectID": "projects/bleaching-risk-notebook.html",
@@ -371,59 +259,164 @@
     "text": "Notebook\nJupyter notebook will be embedded here once the initial version is complete."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About Me",
+    "objectID": "projects/sfm-marine.html",
+    "href": "projects/sfm-marine.html",
+    "title": "SfM Photogrammetry for Marine Science",
     "section": "",
-    "text": "I’m a clinical informaticist and data systems professional based in the Washington, D.C. area, currently working at the National Institutes of Health. My work sits at the intersection of clinical research, data science, primary data collection, and research infrastructure.\nI work shoulder to shoulder with principal investigators, research teams, and operational stakeholders to understand scientific needs and translate them into usable systems, workflows, and data platforms. I also work with program and organizational leadership to shape enterprise data capabilities that support governance, interoperability, reproducibility, and long-term scientific value.\nMy professional background includes clinical research informatics, data governance, cloud-based research platforms, REDCap operations, metadata workflows, and support for large-scale scientific data programs.\nI’m currently expanding my scope into marine science, GIS, remote sensing, Structure-from-Motion photogrammetry, full-stack software development, and hardware engineering. Long term, I’m interested in applying informatics, reproducible analysis, and geospatial tools to coral reef research and marine conservation at institutions such as Scripps Institution of Oceanography, Woods Hole Oceanographic Institution, Mote Marine Laboratory, NOAA, or similar research organizations.\nOutside of work, I apply the same data and engineering mindset to cycling analytics, high-power rocketry, ham radio, Arduino-based systems, and embedded radio telemetry projects."
+    "text": "Structure-from-Motion (SfM) photogrammetry enables the creation of precise 3D models from overlapping photographs. This page documents my study of how SfM methods are applied to underwater survey data to map and monitor coral reefs and benthic habitats — and outlines the work I plan to do as I build toward applying these techniques myself.\nStatus: 🚧 In progress — this is active learning and future planned work, not a completed project."
   },
   {
-    "objectID": "about.html#background",
-    "href": "about.html#background",
-    "title": "About Me",
+    "objectID": "projects/sfm-marine.html#overview",
+    "href": "projects/sfm-marine.html#overview",
+    "title": "SfM Photogrammetry for Marine Science",
     "section": "",
-    "text": "I’m a clinical informaticist and data systems professional based in the Washington, D.C. area, currently working at the National Institutes of Health. My work sits at the intersection of clinical research, data science, primary data collection, and research infrastructure.\nI work shoulder to shoulder with principal investigators, research teams, and operational stakeholders to understand scientific needs and translate them into usable systems, workflows, and data platforms. I also work with program and organizational leadership to shape enterprise data capabilities that support governance, interoperability, reproducibility, and long-term scientific value.\nMy professional background includes clinical research informatics, data governance, cloud-based research platforms, REDCap operations, metadata workflows, and support for large-scale scientific data programs.\nI’m currently expanding my scope into marine science, GIS, remote sensing, Structure-from-Motion photogrammetry, full-stack software development, and hardware engineering. Long term, I’m interested in applying informatics, reproducible analysis, and geospatial tools to coral reef research and marine conservation at institutions such as Scripps Institution of Oceanography, Woods Hole Oceanographic Institution, Mote Marine Laboratory, NOAA, or similar research organizations.\nOutside of work, I apply the same data and engineering mindset to cycling analytics, high-power rocketry, ham radio, Arduino-based systems, and embedded radio telemetry projects."
+    "text": "Structure-from-Motion (SfM) photogrammetry enables the creation of precise 3D models from overlapping photographs. This page documents my study of how SfM methods are applied to underwater survey data to map and monitor coral reefs and benthic habitats — and outlines the work I plan to do as I build toward applying these techniques myself.\nStatus: 🚧 In progress — this is active learning and future planned work, not a completed project."
   },
   {
-    "objectID": "about.html#education",
-    "href": "about.html#education",
-    "title": "About Me",
-    "section": "Education",
-    "text": "Education\n\nM.Sc. Health Care Administration Informatics, University of Maryland University College, Adelphi, MD — May 2016\nB.Sc. Biology (Minor: Chemistry, Minor: Physics), Wilkes University, Wilkes-Barre, PA — May 2009"
+    "objectID": "projects/sfm-marine.html#why-im-interested-in-sfm-for-marine-science",
+    "href": "projects/sfm-marine.html#why-im-interested-in-sfm-for-marine-science",
+    "title": "SfM Photogrammetry for Marine Science",
+    "section": "Why I’m Interested in SfM for Marine Science",
+    "text": "Why I’m Interested in SfM for Marine Science\nTraditional survey methods struggle to capture the complex 3D structure of coral reefs. SfM offers capabilities I want to develop:\n\nHigh-resolution 3D reconstructions from standard cameras\nQuantitative measurements of structural complexity\nRepeatable surveys for change detection over time\nLower cost relative to LiDAR or multibeam sonar\n\nMy goal is to build the technical depth to contribute to reef monitoring efforts using these methods, either as part of a research team or through independent projects."
   },
   {
-    "objectID": "about.html#experience",
-    "href": "about.html#experience",
-    "title": "About Me",
-    "section": "Experience",
-    "text": "Experience\n\nNational Institutes of Health / NHLBI — Biomedical Informatics Project Manager, 05/2021–Present\n\nWork directly with principal investigators, research teams, and scientific stakeholders to understand research needs and translate them into practical informatics solutions.\nPartner with program leadership and enterprise stakeholders to develop data platforms, governance models, and operational workflows that scale beyond individual studies.\nSupport researcher-facing data systems, clinical research informatics workflows, and cloud-based scientific data platforms.\nContribute to data governance, metadata, data release, interoperability, and operational workflows for large-scale biomedical research programs.\nWork across scientific, technical, and operational teams to bridge investigator needs, enterprise priorities, and sustainable platform design."
+    "objectID": "projects/sfm-marine.html#what-im-learning",
+    "href": "projects/sfm-marine.html#what-im-learning",
+    "title": "SfM Photogrammetry for Marine Science",
+    "section": "What I’m Learning",
+    "text": "What I’m Learning\nI’m working through the core concepts of SfM pipelines, including:\n\nImage acquisition protocols for underwater surveys (overlap, lighting, camera settings)\nProcessing workflows in Agisoft Metashape\nQuality assessment using ground control points and reprojection error\nOutput formats: orthomosaics, DEMs, and 3D meshes"
   },
   {
-    "objectID": "about.html#skills",
-    "href": "about.html#skills",
-    "title": "About Me",
-    "section": "Skills",
-    "text": "Skills\n\nProgramming & Analysis: Python, SQL, R, Jupyter notebooks\nData Systems: REDCap, research data platforms, metadata workflows, FAIR data practices, clinical research informatics\nGIS & Remote Sensing: QGIS, geospatial analysis, benthic habitat mapping, remote sensing workflows\nPhotogrammetry: Structure-from-Motion workflows, Agisoft Metashape, large-area imaging concepts\nSoftware & DevOps: Git, GitHub, Quarto, Docker, cloud workspaces, reproducible analysis workflows\nHardware & Telemetry: Arduino, LoRa radio, embedded systems, sensor telemetry, high-power rocketry instrumentation\nDomains: Clinical research, biomedical informatics, marine science, coral reef conservation, geospatial analysis, cycling analytics"
+    "objectID": "projects/sfm-marine.html#planned-work",
+    "href": "projects/sfm-marine.html#planned-work",
+    "title": "SfM Photogrammetry for Marine Science",
+    "section": "Planned Work",
+    "text": "Planned Work\nOnce I have suitable underwater image sets to work with, I plan to document a complete end-to-end pipeline — from raw photos to validated 3D outputs — as a reproducible, open workflow. See the related projects below for where that work is heading."
   },
   {
-    "objectID": "about.html#currently-learning",
-    "href": "about.html#currently-learning",
-    "title": "About Me",
-    "section": "Currently Learning",
-    "text": "Currently Learning\n\nGIS workflows for marine and coastal datasets\nBenthic habitat classification and coral reef mapping methods\nStructure-from-Motion photogrammetry for reef monitoring\nRemote sensing applications for marine conservation\nFull-stack web development for data-driven hobby and research tools\nEmbedded telemetry systems using microcontrollers, sensors, and LoRa radio"
+    "objectID": "projects/sfm-marine.html#related-projects",
+    "href": "projects/sfm-marine.html#related-projects",
+    "title": "SfM Photogrammetry for Marine Science",
+    "section": "Related Projects",
+    "text": "Related Projects\n\nReef SfM Workflow — the detailed processing pipeline I’m building toward\nBenthic Habitat Map — GIS mapping outputs that will draw on SfM data"
   },
   {
-    "objectID": "about.html#projects-interests",
-    "href": "about.html#projects-interests",
-    "title": "About Me",
-    "section": "Projects & Interests",
-    "text": "Projects & Interests\n\nCoral GIS & Marine Data: Building a portfolio of geospatial and remote sensing projects focused on reef conservation.\nPhotogrammetry: Learning SfM workflows for reconstructing reef sites from overlapping image sets.\nCycling Analytics: Exploring data tools for cycling performance, fantasy cycling, and route analysis.\nRocket Telemetry: Building embedded radio telemetry systems for high-power rocketry using Arduino-compatible boards, barometric sensors, accelerometers, and LoRa radios.\nHam Radio & Field Systems: Experimenting with radio communications, portable systems, and telemetry workflows."
+    "objectID": "projects/freezingsaddles.html",
+    "href": "projects/freezingsaddles.html",
+    "title": "FreezingSaddles",
+    "section": "",
+    "text": "FreezingSaddles is a winter cycling challenge that encourages riders to log miles during the coldest months of the year. This project covers the data pipeline, leaderboard analytics, and visualizations built to support the challenge."
   },
   {
-    "objectID": "about.html#contact",
-    "href": "about.html#contact",
-    "title": "About Me",
-    "section": "Contact",
-    "text": "Contact\n\n📧 francisco.velez.v@gmail.com\n🐙 github.com/velezf\n💼 linkedin.com/in/francisco-velez-86028315"
+    "objectID": "projects/freezingsaddles.html#overview",
+    "href": "projects/freezingsaddles.html#overview",
+    "title": "FreezingSaddles",
+    "section": "",
+    "text": "FreezingSaddles is a winter cycling challenge that encourages riders to log miles during the coldest months of the year. This project covers the data pipeline, leaderboard analytics, and visualizations built to support the challenge."
+  },
+  {
+    "objectID": "projects/freezingsaddles.html#features",
+    "href": "projects/freezingsaddles.html#features",
+    "title": "FreezingSaddles",
+    "section": "Features",
+    "text": "Features\n\nAutomated mileage ingestion from Strava and manual entries\nTeam and individual leaderboards\nInteractive visualizations of ride data\nHistorical trend analysis across challenge years"
+  },
+  {
+    "objectID": "projects/freezingsaddles.html#technical-stack",
+    "href": "projects/freezingsaddles.html#technical-stack",
+    "title": "FreezingSaddles",
+    "section": "Technical Stack",
+    "text": "Technical Stack\n\nBackend: Python (Flask, pandas)\nData: Strava API, CSV ingestion\nVisualization: Plotly, Matplotlib\nDeployment: Docker, GitHub Actions"
+  },
+  {
+    "objectID": "projects/freezingsaddles.html#highlights",
+    "href": "projects/freezingsaddles.html#highlights",
+    "title": "FreezingSaddles",
+    "section": "Highlights",
+    "text": "Highlights\n\nProcessed thousands of ride entries across multiple seasons\nBuilt interactive leaderboard dashboards\nAutomated data pipeline reducing manual entry overhead"
+  },
+  {
+    "objectID": "projects/freezingsaddles.html#links",
+    "href": "projects/freezingsaddles.html#links",
+    "title": "FreezingSaddles",
+    "section": "Links",
+    "text": "Links\n\nFreezingSaddles — main challenge site\nGitHub Organization — source code and repos"
+  },
+  {
+    "objectID": "projects/freezingsaddles.html#status",
+    "href": "projects/freezingsaddles.html#status",
+    "title": "FreezingSaddles",
+    "section": "Status",
+    "text": "Status\n✅ Active — updated each winter cycling season."
+  },
+  {
+    "objectID": "projects/lora-radiorocket.html",
+    "href": "projects/lora-radiorocket.html",
+    "title": "LoRa RadioRocket",
+    "section": "",
+    "text": "RadioRocketV2 is an open-source amateur radio project integrating modern digital radio systems into mid and high power model rocketry. This fork of the N3VEM RadioRocketV2 project adds updated documentation to make the build more accessible."
+  },
+  {
+    "objectID": "projects/lora-radiorocket.html#overview",
+    "href": "projects/lora-radiorocket.html#overview",
+    "title": "LoRa RadioRocket",
+    "section": "",
+    "text": "RadioRocketV2 is an open-source amateur radio project integrating modern digital radio systems into mid and high power model rocketry. This fork of the N3VEM RadioRocketV2 project adds updated documentation to make the build more accessible."
+  },
+  {
+    "objectID": "projects/lora-radiorocket.html#system-components",
+    "href": "projects/lora-radiorocket.html#system-components",
+    "title": "LoRa RadioRocket",
+    "section": "System Components",
+    "text": "System Components\n\nAPRS Tracking\nA self-contained APRS beacon sled provides position tracking and mapping during flight. Packets are received by any I-Gate within range and viewable on aprs.fi. Can be built standalone without the rest of the system.\n\n\nLoRa Telemetry\nThe rocket transmits telemetry over 70cm LoRa, including sensor data, relay messages, and command responses. LoRa’s long range and low power make it ideal for tracking rockets downrange.\n\n\nGround Station\nA portable ground station built around a single-board computer and LoRa Feather module receives telemetry and APRS data, serving it via Node-RED and a networked sound modem to any browser on the local network."
+  },
+  {
+    "objectID": "projects/lora-radiorocket.html#hardware",
+    "href": "projects/lora-radiorocket.html#hardware",
+    "title": "LoRa RadioRocket",
+    "section": "Hardware",
+    "text": "Hardware\n\nAdafruit Feather with LoRa Radio (rocket-side)\nSDRplay SDR dongle (APRS reception)\nRaspberry Pi ground station\nCustom wiring and project enclosure"
+  },
+  {
+    "objectID": "projects/lora-radiorocket.html#status",
+    "href": "projects/lora-radiorocket.html#status",
+    "title": "LoRa RadioRocket",
+    "section": "Status",
+    "text": "Status\n✅ Working prototype complete — documentation in progress."
+  },
+  {
+    "objectID": "projects/lora-radiorocket.html#links",
+    "href": "projects/lora-radiorocket.html#links",
+    "title": "LoRa RadioRocket",
+    "section": "Links",
+    "text": "Links\n\nGitHub Repository"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Francisco Velez",
+    "section": "",
+    "text": "I’m a clinical informaticist working at the intersection of clinical research, data science, and primary data collection. My work focuses on building systems, workflows, and data platforms that support researchers across a wide range of scientific and operational needs. I’m currently expanding my scope into marine science, GIS, remote sensing, full-stack software development, and hardware engineering. Outside of work, I apply the same data and engineering mindset to cycling analytics, high-power rocketry, ham radio, Arduino-based systems, and embedded telemetry projects."
+  },
+  {
+    "objectID": "index.html#welcome",
+    "href": "index.html#welcome",
+    "title": "Francisco Velez",
+    "section": "",
+    "text": "I’m a clinical informaticist working at the intersection of clinical research, data science, and primary data collection. My work focuses on building systems, workflows, and data platforms that support researchers across a wide range of scientific and operational needs. I’m currently expanding my scope into marine science, GIS, remote sensing, full-stack software development, and hardware engineering. Outside of work, I apply the same data and engineering mindset to cycling analytics, high-power rocketry, ham radio, Arduino-based systems, and embedded telemetry projects."
+  },
+  {
+    "objectID": "index.html#research-interests",
+    "href": "index.html#research-interests",
+    "title": "Francisco Velez",
+    "section": "Research Interests",
+    "text": "Research Interests\n\nCoral reef monitoring and benthic habitat mapping\nStructure-from-Motion photogrammetry for marine applications\nGeospatial data visualization and analysis\nIoT and radio telemetry systems"
+  },
+  {
+    "objectID": "index.html#recent-projects",
+    "href": "index.html#recent-projects",
+    "title": "Francisco Velez",
+    "section": "Recent Projects",
+    "text": "Recent Projects\nCheck out my Projects page for a full overview of my work."
   }
 ]
