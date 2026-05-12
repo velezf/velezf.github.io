@@ -6,7 +6,13 @@ description: |
 author: "Frank Velez"
 date: "2026-05-12"
 date-format: "MMMM D, YYYY"
-image: figures/site_map_peak_dhw.png
+categories:
+  - Marine Science
+  - Remote Sensing
+  - Environmental Data Science
+  - Python
+  - Reproducible Research
+image: ../images/bleaching-risk.jpg
 toc: true
 toc-depth: 3
 toc-title: "On this page"
@@ -17,8 +23,6 @@ fig-cap-location: bottom
 citation:
   url: https://velezf.github.io/projects/bleaching-risk-notebook
 bibliography: references.bib
-categories: [marine science, data analysis, jupyter, python]
-image: ../images/bleaching-risk.jpg
 ---
 
 ```{python}
@@ -207,6 +211,7 @@ first retrieval to support reproducibility in offline contexts.
 
 ### Analysis Pipeline
 
+<<<<<<< HEAD
 1. **Fetch** — live HTTP request to CRW Virtual Station API per site  
 2. **Cache** — store raw CSVs in `data/raw/` (regenerated on `force_refresh=True`)  
 3. **Explore** — inspect date ranges, missing values, summary statistics  
@@ -215,6 +220,16 @@ first retrieval to support reproducibility in offline contexts.
 
 Full reproducible code is available in
 [`coral_bleaching_dhw_analysis.ipynb`](https://github.com/yourusername/coral-bleaching-dhw/blob/main/coral_bleaching_dhw_analysis.ipynb).
+=======
+1. **Fetch** — live HTTP request to CRW Virtual Station API per site
+2. **Cache** — store raw CSVs in `data/raw/` (regenerated on `force_refresh=True`)
+3. **Explore** — inspect date ranges, missing values, summary statistics
+4. **Visualize** — DHW time series, alert level distributions, annual peak heatmap
+5. **Map** — site locations colored by recent peak DHW
+
+Full reproducible code is available in
+[`coral_bleaching_dhw_analysis.ipynb`](https://github.com/velezf/coral-bleaching-dhw/blob/main/coral_bleaching_dhw_analysis.ipynb).
+>>>>>>> 59c9e29 (Replace bleaching risk notebook with full DHW analysis)
 
 ---
 
@@ -353,5 +368,9 @@ to reproduce all figures. Data is fetched live from NOAA CRW on first run and
 cached locally. See `README.md` for environment setup instructions.
 :::
 
+<<<<<<< HEAD
 [View on GitHub](https://github.com/yourusername/coral-bleaching-dhw){.btn .btn-outline-primary}
+=======
+[View on GitHub](https://github.com/velezf/coral-bleaching-dhw){.btn .btn-outline-primary}
+>>>>>>> 59c9e29 (Replace bleaching risk notebook with full DHW analysis)
 [NOAA Coral Reef Watch](https://coralreefwatch.noaa.gov/){.btn .btn-outline-secondary}
