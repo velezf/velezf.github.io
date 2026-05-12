@@ -3,7 +3,7 @@ title: "Exploring Coral Bleaching Risk Using NOAA Coral Reef Watch DHW Data"
 description: |
   A reproducible analysis of satellite-derived thermal stress metrics across five
   reef systems, using NOAA Coral Reef Watch Degree Heating Weeks (DHW) data.
-author: "[Your Name]"
+author: "Frank Velez"
 date: "2026-05-12"
 date-format: "MMMM D, YYYY"
 categories:
@@ -21,7 +21,7 @@ code-fold: true
 code-summary: "Show code"
 fig-cap-location: bottom
 citation:
-  url: https://yourdomain.github.io/projects/coral-bleaching-dhw
+  url: https://velezf.github.io/projects/bleaching-risk-notebook
 bibliography: references.bib
 categories: [marine science, data analysis, jupyter, python]
 image: ../images/bleaching-risk.jpg
