@@ -1,66 +1,122 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About Me",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Francisco Velez",
     "section": "",
-    "text": "I’m a clinical informaticist and data systems professional based in the Washington, D.C. area, currently working at the National Institutes of Health. My work sits at the intersection of clinical research, data science, primary data collection, and research infrastructure.\nI work shoulder to shoulder with principal investigators, research teams, and operational stakeholders to understand scientific needs and translate them into usable systems, workflows, and data platforms. I also work with program and organizational leadership to shape enterprise data capabilities that support governance, interoperability, reproducibility, and long-term scientific value.\nMy professional background includes clinical research informatics, data governance, cloud-based research platforms, REDCap operations, metadata workflows, and support for large-scale scientific data programs.\nI’m currently expanding my scope into marine science, GIS, remote sensing, Structure-from-Motion photogrammetry, full-stack software development, and hardware engineering. Long term, I’m interested in applying informatics, reproducible analysis, and geospatial tools to coral reef research and marine conservation at institutions such as Scripps Institution of Oceanography, Woods Hole Oceanographic Institution, Mote Marine Laboratory, NOAA, or similar research organizations.\nOutside of work, I apply the same data and engineering mindset to cycling analytics, high-power rocketry, ham radio, Arduino-based systems, and embedded radio telemetry projects."
+    "text": "I’m a clinical informaticist working at the intersection of clinical research, data science, and primary data collection. My work focuses on building systems, workflows, and data platforms that support researchers across a wide range of scientific and operational needs. I’m currently expanding my scope into marine science, GIS, remote sensing, full-stack software development, and hardware engineering. Outside of work, I apply the same data and engineering mindset to cycling analytics, high-power rocketry, ham radio, Arduino-based systems, and embedded telemetry projects."
   },
   {
-    "objectID": "about.html#background",
-    "href": "about.html#background",
-    "title": "About Me",
+    "objectID": "index.html#welcome",
+    "href": "index.html#welcome",
+    "title": "Francisco Velez",
     "section": "",
-    "text": "I’m a clinical informaticist and data systems professional based in the Washington, D.C. area, currently working at the National Institutes of Health. My work sits at the intersection of clinical research, data science, primary data collection, and research infrastructure.\nI work shoulder to shoulder with principal investigators, research teams, and operational stakeholders to understand scientific needs and translate them into usable systems, workflows, and data platforms. I also work with program and organizational leadership to shape enterprise data capabilities that support governance, interoperability, reproducibility, and long-term scientific value.\nMy professional background includes clinical research informatics, data governance, cloud-based research platforms, REDCap operations, metadata workflows, and support for large-scale scientific data programs.\nI’m currently expanding my scope into marine science, GIS, remote sensing, Structure-from-Motion photogrammetry, full-stack software development, and hardware engineering. Long term, I’m interested in applying informatics, reproducible analysis, and geospatial tools to coral reef research and marine conservation at institutions such as Scripps Institution of Oceanography, Woods Hole Oceanographic Institution, Mote Marine Laboratory, NOAA, or similar research organizations.\nOutside of work, I apply the same data and engineering mindset to cycling analytics, high-power rocketry, ham radio, Arduino-based systems, and embedded radio telemetry projects."
+    "text": "I’m a clinical informaticist working at the intersection of clinical research, data science, and primary data collection. My work focuses on building systems, workflows, and data platforms that support researchers across a wide range of scientific and operational needs. I’m currently expanding my scope into marine science, GIS, remote sensing, full-stack software development, and hardware engineering. Outside of work, I apply the same data and engineering mindset to cycling analytics, high-power rocketry, ham radio, Arduino-based systems, and embedded telemetry projects."
   },
   {
-    "objectID": "about.html#education",
-    "href": "about.html#education",
-    "title": "About Me",
-    "section": "Education",
-    "text": "Education\n\nM.Sc. Health Care Administration Informatics, University of Maryland University College, Adelphi, MD — May 2016\nB.Sc. Biology (Minor: Chemistry, Minor: Physics), Wilkes University, Wilkes-Barre, PA — May 2009"
+    "objectID": "index.html#research-interests",
+    "href": "index.html#research-interests",
+    "title": "Francisco Velez",
+    "section": "Research Interests",
+    "text": "Research Interests\n\nCoral reef monitoring and benthic habitat mapping\nStructure-from-Motion photogrammetry for marine applications\nGeospatial data visualization and analysis\nIoT and radio telemetry systems"
   },
   {
-    "objectID": "about.html#experience",
-    "href": "about.html#experience",
-    "title": "About Me",
-    "section": "Experience",
-    "text": "Experience\n\nNational Institutes of Health / NHLBI — Biomedical Informatics Project Manager, 05/2021–Present\n\nWork directly with principal investigators, research teams, and scientific stakeholders to understand research needs and translate them into practical informatics solutions.\nPartner with program leadership and enterprise stakeholders to develop data platforms, governance models, and operational workflows that scale beyond individual studies.\nSupport researcher-facing data systems, clinical research informatics workflows, and cloud-based scientific data platforms.\nContribute to data governance, metadata, data release, interoperability, and operational workflows for large-scale biomedical research programs.\nWork across scientific, technical, and operational teams to bridge investigator needs, enterprise priorities, and sustainable platform design."
-  },
-  {
-    "objectID": "about.html#skills",
-    "href": "about.html#skills",
-    "title": "About Me",
-    "section": "Skills",
-    "text": "Skills\n\nProgramming & Analysis: Python, SQL, R, Jupyter notebooks\nData Systems: REDCap, research data platforms, metadata workflows, FAIR data practices, clinical research informatics\nGIS & Remote Sensing: QGIS, geospatial analysis, benthic habitat mapping, remote sensing workflows\nPhotogrammetry: Structure-from-Motion workflows, Agisoft Metashape, large-area imaging concepts\nSoftware & DevOps: Git, GitHub, Quarto, Docker, cloud workspaces, reproducible analysis workflows\nHardware & Telemetry: Arduino, LoRa radio, embedded systems, sensor telemetry, high-power rocketry instrumentation\nDomains: Clinical research, biomedical informatics, marine science, coral reef conservation, geospatial analysis, cycling analytics"
-  },
-  {
-    "objectID": "about.html#currently-learning",
-    "href": "about.html#currently-learning",
-    "title": "About Me",
-    "section": "Currently Learning",
-    "text": "Currently Learning\n\nGIS workflows for marine and coastal datasets\nBenthic habitat classification and coral reef mapping methods\nStructure-from-Motion photogrammetry for reef monitoring\nRemote sensing applications for marine conservation\nFull-stack web development for data-driven hobby and research tools\nEmbedded telemetry systems using microcontrollers, sensors, and LoRa radio"
-  },
-  {
-    "objectID": "about.html#projects-interests",
-    "href": "about.html#projects-interests",
-    "title": "About Me",
-    "section": "Projects & Interests",
-    "text": "Projects & Interests\n\nCoral GIS & Marine Data: Building a portfolio of geospatial and remote sensing projects focused on reef conservation.\nPhotogrammetry: Learning SfM workflows for reconstructing reef sites from overlapping image sets.\nCycling Analytics: Exploring data tools for cycling performance, fantasy cycling, and route analysis.\nRocket Telemetry: Building embedded radio telemetry systems for high-power rocketry using Arduino-compatible boards, barometric sensors, accelerometers, and LoRa radios.\nHam Radio & Field Systems: Experimenting with radio communications, portable systems, and telemetry workflows."
-  },
-  {
-    "objectID": "about.html#contact",
-    "href": "about.html#contact",
-    "title": "About Me",
-    "section": "Contact",
-    "text": "Contact\n\n📧 francisco.velez.v@gmail.com\n🐙 github.com/velezf\n💼 linkedin.com/in/francisco-velez-86028315"
+    "objectID": "index.html#recent-projects",
+    "href": "index.html#recent-projects",
+    "title": "Francisco Velez",
+    "section": "Recent Projects",
+    "text": "Recent Projects\nCheck out my Projects page for a full overview of my work."
   },
   {
     "objectID": "projects.html",
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "2016 Subaru Outback Stereo Build\n\n\n\nhardware\n\naudio\n\ncar-audio\n\nSubaru\n\nDIY\n\ndocumentation\n\n\n\nA technical writeup and reference guide for upgrading the factory Harman Kardon audio system in a 2016 Subaru Outback, including head unit replacement, amplifier…\n\n\n\nMay 7, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nLoRa RadioRocket\n\n\n\nIoT\n\ntelemetry\n\nLoRa\n\nAPRS\n\nhardware\n\namateur radio\n\n\n\nAmateur radio telemetry system for mid and high power model rockets, combining APRS tracking and LoRa data transmission with a Raspberry Pi ground station.\n\n\n\nJun 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nFreezingSaddles\n\n\n\ncycling\n\nanalytics\n\nvisualization\n\npython\n\n\n\nAnalytics and visualization for a winter cycling challenge tracking mileage, leaderboards, and participation across teams.\n\n\n\nMay 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nCoral Bleaching Risk Notebook\n\n\n\nmarine science\n\ndata analysis\n\njupyter\n\npython\n\n\n\nA planned exploratory data analysis notebook examining environmental drivers of coral bleaching risk using sea surface temperature and DHW data.\n\n\n\nApr 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nBenthic Habitat Mapping\n\n\n\nGIS\n\nmarine science\n\nmapping\n\nremote sensing\n\n\n\nA planned GIS-based workflow for mapping and classifying benthic habitats using remote sensing and field survey data.\n\n\n\nMar 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nReef SfM Workflow\n\n\n\nmarine science\n\nphotogrammetry\n\nworkflow\n\n3D\n\n\n\nA planned end-to-end workflow for processing underwater photos into 3D reef models using Structure-from-Motion photogrammetry.\n\n\n\nFeb 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nSfM Photogrammetry for Marine Science\n\n\n\nmarine science\n\nphotogrammetry\n\n3D\n\nGIS\n\n\n\nAn overview of Structure-from-Motion photogrammetry methods applied to coral reef and benthic habitat surveys — and my plan to apply them.\n\n\n\nJan 1, 2025\n\n\n\n\n\n\nNo matching items"
+    "text": "Exploring Coral Bleaching Risk Using NOAA Coral Reef Watch DHW Data\n\n\n\nMarine Science\n\nRemote Sensing\n\nEnvironmental Data Science\n\nPython\n\nReproducible Research\n\n\n\nA reproducible analysis of satellite-derived thermal stress metrics across five reef systems, using NOAA Coral Reef Watch Degree Heating Weeks (DHW) data.\n\n\n\nMay 12, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\n2016 Subaru Outback Stereo Build\n\n\n\nhardware\n\naudio\n\ncar-audio\n\nSubaru\n\nDIY\n\ndocumentation\n\n\n\nA technical writeup and reference guide for upgrading the factory Harman Kardon audio system in a 2016 Subaru Outback, including head unit replacement, amplifier…\n\n\n\nMay 7, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nLoRa RadioRocket\n\n\n\nIoT\n\ntelemetry\n\nLoRa\n\nhardware\n\namateur radio\n\nArduino\n\n\n\nReal-time LoRa telemetry for mid- and high-power rocketry: 1 Hz altitude, acceleration, and flight state streamed live to a ground station over 434 MHz. NAR Level 1…\n\n\n\nMay 9, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nFreezingSaddles\n\n\n\ncycling\n\nanalytics\n\nvisualization\n\npython\n\n\n\nAnalytics and visualization for a winter cycling challenge tracking mileage, leaderboards, and participation across teams.\n\n\n\nMay 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nBenthic Habitat Mapping\n\n\n\nGIS\n\nmarine science\n\nmapping\n\nremote sensing\n\n\n\nA planned GIS-based workflow for mapping and classifying benthic habitats using remote sensing and field survey data.\n\n\n\nMar 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nReef SfM Workflow\n\n\n\nmarine science\n\nphotogrammetry\n\nworkflow\n\n3D\n\n\n\nA planned end-to-end workflow for processing underwater photos into 3D reef models using Structure-from-Motion photogrammetry.\n\n\n\nFeb 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nSfM Photogrammetry for Marine Science\n\n\n\nmarine science\n\nphotogrammetry\n\n3D\n\nGIS\n\n\n\nAn overview of Structure-from-Motion photogrammetry methods applied to coral reef and benthic habitat surveys — and my plan to apply them.\n\n\n\nJan 1, 2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/benthic-habitat-map.html",
+    "href": "projects/benthic-habitat-map.html",
+    "title": "Benthic Habitat Mapping",
+    "section": "",
+    "text": "Benthic habitat maps are essential tools for coral reef management and conservation. This project outlines the methods I’m studying for producing high-resolution habitat maps by combining field survey data with remote sensing imagery. The workflow below is based on my research into established approaches in the field. I have not yet produced a habitat map from real data — that is the goal I’m working toward.\nStatus: 🚧 In progress — methods research and learning phase. Map production is planned future work."
+  },
+  {
+    "objectID": "projects/benthic-habitat-map.html#overview",
+    "href": "projects/benthic-habitat-map.html#overview",
+    "title": "Benthic Habitat Mapping",
+    "section": "",
+    "text": "Benthic habitat maps are essential tools for coral reef management and conservation. This project outlines the methods I’m studying for producing high-resolution habitat maps by combining field survey data with remote sensing imagery. The workflow below is based on my research into established approaches in the field. I have not yet produced a habitat map from real data — that is the goal I’m working toward.\nStatus: 🚧 In progress — methods research and learning phase. Map production is planned future work."
+  },
+  {
+    "objectID": "projects/benthic-habitat-map.html#why-benthic-mapping",
+    "href": "projects/benthic-habitat-map.html#why-benthic-mapping",
+    "title": "Benthic Habitat Mapping",
+    "section": "Why Benthic Mapping",
+    "text": "Why Benthic Mapping\nUnderstanding what lives on the seafloor — coral, seagrass, sand, rubble — is foundational to reef conservation and management. High-resolution benthic maps enable habitat change tracking over time, identification of bleaching or damage extent, prioritization of restoration and protection efforts, and integration with water quality and thermal stress data. I want to be able to produce and work with these maps as part of applied marine data science work."
+  },
+  {
+    "objectID": "projects/benthic-habitat-map.html#planned-methods",
+    "href": "projects/benthic-habitat-map.html#planned-methods",
+    "title": "Benthic Habitat Mapping",
+    "section": "Planned Methods",
+    "text": "Planned Methods\n\nData Sources\n\nMultispectral satellite imagery (e.g., Planet, Sentinel-2, WorldView)\nUnderwater photo transects for field validation\nSfM-derived orthomosaics as high-resolution local inputs\n\n\n\nClassification Approach\n\nObject-based image analysis (OBIA) for reef-scale segmentation\nSupervised classification using field validation points\nAccuracy assessment with confusion matrices and kappa statistics\n\n\n\nGIS Processing\n\nCoordinate reference system management and reprojection\nRaster and vector integration\nMap layout and cartographic output in QGIS"
+  },
+  {
+    "objectID": "projects/benthic-habitat-map.html#tools-im-learning",
+    "href": "projects/benthic-habitat-map.html#tools-im-learning",
+    "title": "Benthic Habitat Mapping",
+    "section": "Tools I’m Learning",
+    "text": "Tools I’m Learning\n\nQGIS — primary GIS environment\nPython (rasterio, geopandas, scikit-learn) — raster processing and classification\nGoogle Earth Engine — cloud-scale remote sensing analysis (planned)"
+  },
+  {
+    "objectID": "projects/benthic-habitat-map.html#path-forward",
+    "href": "projects/benthic-habitat-map.html#path-forward",
+    "title": "Benthic Habitat Mapping",
+    "section": "Path Forward",
+    "text": "Path Forward\nMy near-term plan is to work through a classification exercise using a publicly available benthic dataset — likely from NOAA’s National Coral Reef Monitoring Program or the Allen Coral Atlas — to produce a documented, reproducible mapping workflow before applying it to original survey data."
+  },
+  {
+    "objectID": "projects/sfm-marine.html",
+    "href": "projects/sfm-marine.html",
+    "title": "SfM Photogrammetry for Marine Science",
+    "section": "",
+    "text": "Structure-from-Motion (SfM) photogrammetry enables the creation of precise 3D models from overlapping photographs. This page documents my study of how SfM methods are applied to underwater survey data to map and monitor coral reefs and benthic habitats — and outlines the work I plan to do as I build toward applying these techniques myself.\nStatus: 🚧 In progress — this is active learning and future planned work, not a completed project."
+  },
+  {
+    "objectID": "projects/sfm-marine.html#overview",
+    "href": "projects/sfm-marine.html#overview",
+    "title": "SfM Photogrammetry for Marine Science",
+    "section": "",
+    "text": "Structure-from-Motion (SfM) photogrammetry enables the creation of precise 3D models from overlapping photographs. This page documents my study of how SfM methods are applied to underwater survey data to map and monitor coral reefs and benthic habitats — and outlines the work I plan to do as I build toward applying these techniques myself.\nStatus: 🚧 In progress — this is active learning and future planned work, not a completed project."
+  },
+  {
+    "objectID": "projects/sfm-marine.html#why-im-interested-in-sfm-for-marine-science",
+    "href": "projects/sfm-marine.html#why-im-interested-in-sfm-for-marine-science",
+    "title": "SfM Photogrammetry for Marine Science",
+    "section": "Why I’m Interested in SfM for Marine Science",
+    "text": "Why I’m Interested in SfM for Marine Science\nTraditional survey methods struggle to capture the complex 3D structure of coral reefs. SfM offers capabilities I want to develop:\n\nHigh-resolution 3D reconstructions from standard cameras\nQuantitative measurements of structural complexity\nRepeatable surveys for change detection over time\nLower cost relative to LiDAR or multibeam sonar\n\nMy goal is to build the technical depth to contribute to reef monitoring efforts using these methods, either as part of a research team or through independent projects."
+  },
+  {
+    "objectID": "projects/sfm-marine.html#what-im-learning",
+    "href": "projects/sfm-marine.html#what-im-learning",
+    "title": "SfM Photogrammetry for Marine Science",
+    "section": "What I’m Learning",
+    "text": "What I’m Learning\nI’m working through the core concepts of SfM pipelines, including:\n\nImage acquisition protocols for underwater surveys (overlap, lighting, camera settings)\nProcessing workflows in Agisoft Metashape\nQuality assessment using ground control points and reprojection error\nOutput formats: orthomosaics, DEMs, and 3D meshes"
+  },
+  {
+    "objectID": "projects/sfm-marine.html#planned-work",
+    "href": "projects/sfm-marine.html#planned-work",
+    "title": "SfM Photogrammetry for Marine Science",
+    "section": "Planned Work",
+    "text": "Planned Work\nOnce I have suitable underwater image sets to work with, I plan to document a complete end-to-end pipeline — from raw photos to validated 3D outputs — as a reproducible, open workflow. See the related projects below for where that work is heading."
+  },
+  {
+    "objectID": "projects/sfm-marine.html#related-projects",
+    "href": "projects/sfm-marine.html#related-projects",
+    "title": "SfM Photogrammetry for Marine Science",
+    "section": "Related Projects",
+    "text": "Related Projects\n\nReef SfM Workflow — the detailed processing pipeline I’m building toward\nBenthic Habitat Map — GIS mapping outputs that will draw on SfM data"
   },
   {
     "objectID": "projects/subaru-audio-tuning.html",
@@ -161,144 +217,53 @@
     "text": "Path Forward\nOnce I have access to suitable underwater image sets — either from open datasets, collaborators, or my own dives — I’ll work through this pipeline, document the results, and update this page with real outputs and lessons learned."
   },
   {
-    "objectID": "projects/benthic-habitat-map.html",
-    "href": "projects/benthic-habitat-map.html",
-    "title": "Benthic Habitat Mapping",
+    "objectID": "projects/lora-radiorocket.html",
+    "href": "projects/lora-radiorocket.html",
+    "title": "LoRa RadioRocket",
     "section": "",
-    "text": "Benthic habitat maps are essential tools for coral reef management and conservation. This project outlines the methods I’m studying for producing high-resolution habitat maps by combining field survey data with remote sensing imagery. The workflow below is based on my research into established approaches in the field. I have not yet produced a habitat map from real data — that is the goal I’m working toward.\nStatus: 🚧 In progress — methods research and learning phase. Map production is planned future work."
+    "text": "A ground-up rewrite of N3VEM’s RadioRocketV2 for the Adafruit Feather M0 + RFM95 platform. Unlike altimeters that store and dump data after recovery, this system streams altitude, G-force, and flight state to the ground in real time at 1 Hz — so you’re watching the numbers the moment the rocket leaves the rail. Designed for both mid- and high-power launches; currently flight-tested on a PiercerMini, with high-power deployment planned for an Apogee Zephyr (nose cone e-bay already built)."
   },
   {
-    "objectID": "projects/benthic-habitat-map.html#overview",
-    "href": "projects/benthic-habitat-map.html#overview",
-    "title": "Benthic Habitat Mapping",
+    "objectID": "projects/lora-radiorocket.html#overview",
+    "href": "projects/lora-radiorocket.html#overview",
+    "title": "LoRa RadioRocket",
     "section": "",
-    "text": "Benthic habitat maps are essential tools for coral reef management and conservation. This project outlines the methods I’m studying for producing high-resolution habitat maps by combining field survey data with remote sensing imagery. The workflow below is based on my research into established approaches in the field. I have not yet produced a habitat map from real data — that is the goal I’m working toward.\nStatus: 🚧 In progress — methods research and learning phase. Map production is planned future work."
+    "text": "A ground-up rewrite of N3VEM’s RadioRocketV2 for the Adafruit Feather M0 + RFM95 platform. Unlike altimeters that store and dump data after recovery, this system streams altitude, G-force, and flight state to the ground in real time at 1 Hz — so you’re watching the numbers the moment the rocket leaves the rail. Designed for both mid- and high-power launches; currently flight-tested on a PiercerMini, with high-power deployment planned for an Apogee Zephyr (nose cone e-bay already built)."
   },
   {
-    "objectID": "projects/benthic-habitat-map.html#why-benthic-mapping",
-    "href": "projects/benthic-habitat-map.html#why-benthic-mapping",
-    "title": "Benthic Habitat Mapping",
-    "section": "Why Benthic Mapping",
-    "text": "Why Benthic Mapping\nUnderstanding what lives on the seafloor — coral, seagrass, sand, rubble — is foundational to reef conservation and management. High-resolution benthic maps enable habitat change tracking over time, identification of bleaching or damage extent, prioritization of restoration and protection efforts, and integration with water quality and thermal stress data. I want to be able to produce and work with these maps as part of applied marine data science work."
+    "objectID": "projects/lora-radiorocket.html#hardware",
+    "href": "projects/lora-radiorocket.html#hardware",
+    "title": "LoRa RadioRocket",
+    "section": "Hardware",
+    "text": "Hardware\n\nTX Sled (rocket)\n\n\n\nComponent\nPurpose\n\n\n\n\nAdafruit Feather M0 + RFM95 (434 MHz)\nMicrocontroller + LoRa radio\n\n\nAdafruit BMP390\nBarometric pressure / altitude\n\n\nAdafruit ADXL375\nHigh-G accelerometer (±200 g)\n\n\nLiPo battery\nPower\n\n\n\n\n\nRX Ground Station (APRS Digipeater + LoRa Receiver)\nThe ground station is a LePotato SBC built into a custom blue acrylic enclosure. It serves double duty: receiving LoRa telemetry from the rocket and acting as a portable APRS digipeater — because most mid-power launch sites are outside range of any APRS I-Gate or digipeater, this station brings the infrastructure to the field.\n\n\n\n\n\n\n\nComponent\nPurpose\n\n\n\n\nLibre Computer LePotato SBC\nRuns Linux, Direwolf TNC, Node-RED dashboard\n\n\nRTL-SDR V4 dongle\nAPRS receive + digipeater (144.39 MHz)\n\n\nAdafruit Feather M0 + RFM95 (434 MHz)\nLoRa telemetry receiver\n\n\n12V → 5V DC-DC converter\nField power from vehicle or battery\n\n\nCustom blue acrylic enclosure\nHouses all hardware\n\n\n\nSoftware stack: Direwolf (software TNC + digipeater), Xastir (APRS mapping), Node-RED (telemetry dashboard), VNC (headless remote access).\nWhen the rocket eventually carries an APRS tracker (planned: QRPLabs LightAPRS 2.0), this station will digipeat its packets to the APRS network from the field."
   },
   {
-    "objectID": "projects/benthic-habitat-map.html#planned-methods",
-    "href": "projects/benthic-habitat-map.html#planned-methods",
-    "title": "Benthic Habitat Mapping",
-    "section": "Planned Methods",
-    "text": "Planned Methods\n\nData Sources\n\nMultispectral satellite imagery (e.g., Planet, Sentinel-2, WorldView)\nUnderwater photo transects for field validation\nSfM-derived orthomosaics as high-resolution local inputs\n\n\n\nClassification Approach\n\nObject-based image analysis (OBIA) for reef-scale segmentation\nSupervised classification using field validation points\nAccuracy assessment with confusion matrices and kappa statistics\n\n\n\nGIS Processing\n\nCoordinate reference system management and reprojection\nRaster and vector integration\nMap layout and cartographic output in QGIS"
+    "objectID": "projects/lora-radiorocket.html#firmware",
+    "href": "projects/lora-radiorocket.html#firmware",
+    "title": "LoRa RadioRocket",
+    "section": "Firmware",
+    "text": "Firmware\nThree algorithms do the interesting work:\n\n1. Ground pressure calibration\nAt boot, the sled takes 50 pressure readings over ~2.5 seconds and averages them to establish a stable ground-level reference. Everything else — altitude, apogee — is computed relative to this baseline.\n// Calibrate ground pressure\nfloat sum = 0;\nfor (int i = 0; i &lt; 50; i++) {\n  bmp.performReading();\n  sum += bmp.pressure / 100.0;\n  delay(50);\n}\ngroundPressure = sum / 50.0;\nA simple average works well on a calm pad. A future improvement would be a trimmed mean — discarding the top and bottom few samples — to handle sensor noise spikes at power-on.\n\n\n2. Launch detection\nRather than checking a single axis, launch is detected from the vector magnitude across all three accelerometer axes. This makes detection robust regardless of how the sled is oriented in the airframe.\nfloat g = sqrt(event.acceleration.x * event.acceleration.x +\n               event.acceleration.y * event.acceleration.y +\n               event.acceleration.z * event.acceleration.z) / 9.80665;\n\nif (!inFlight && g &gt; launchThresholdG) {\n  inFlight = true;\n  launchTime = now;\n}\n\n\n3. Apogee detection\nApogee is detected purely from barometric altitude — no additional sensors needed. The firmware tracks the running maximum altitude and flags descent the moment altitude stops climbing.\nif (altitudeFt &gt; maxAltitudeFt) {\n  maxAltitudeFt = altitudeFt;\n  descending = false;  // still ascending\n} else {\n  descending = true;   // apogee passed\n}\nif (g &gt; peakG) peakG = g;  // update peak G\nEach 1 Hz telemetry packet bundles all of this into a compact string — current altitude, max altitude, live G, peak G, temperature, battery voltage, and flight state — and waits up to 300 ms for an ACK from the ground station before continuing."
   },
   {
-    "objectID": "projects/benthic-habitat-map.html#tools-im-learning",
-    "href": "projects/benthic-habitat-map.html#tools-im-learning",
-    "title": "Benthic Habitat Mapping",
-    "section": "Tools I’m Learning",
-    "text": "Tools I’m Learning\n\nQGIS — primary GIS environment\nPython (rasterio, geopandas, scikit-learn) — raster processing and classification\nGoogle Earth Engine — cloud-scale remote sensing analysis (planned)"
+    "objectID": "projects/lora-radiorocket.html#build-photos",
+    "href": "projects/lora-radiorocket.html#build-photos",
+    "title": "LoRa RadioRocket",
+    "section": "Build Photos",
+    "text": "Build Photos\n\n\n\n\n\n\nTX sled — Feather M0 + BMP390 + ADXL375 in 3D-printed bracket\n\n\n\n\n\n\n\nElectronics bay\n\n\n\n\n\n\n\n\n\nPiercerMini — Radio Rocket Edition\n\n\n\n\n\n\n\nGround station interior — Feather M0 + RTL-SDR + DC converter\n\n\n\n\n\n\n\n\n\n\n\nGround station rear panel — ethernet, USB, and power connectors\n\n\n\n\n\n\n\nSCE to AUX — the front panel switch is a replica of the Apollo 12 Emergency Detection System switch. On November 14, 1969, a lightning strike knocked out telemetry 36 seconds after launch. Flight controller John Aaron recognized the signature and called SCE to AUX. Alan Bean found the switch on panel 8 and flipped it, restoring all telemetry and saving the mission. It felt like the right switch for a rocket telemetry ground station.\n\n\n\n\n\n\n\n\n\n\n\nAt the range — ground station connected to laptop, PiercerMini on the table"
   },
   {
-    "objectID": "projects/benthic-habitat-map.html#path-forward",
-    "href": "projects/benthic-habitat-map.html#path-forward",
-    "title": "Benthic Habitat Mapping",
-    "section": "Path Forward",
-    "text": "Path Forward\nMy near-term plan is to work through a classification exercise using a publicly available benthic dataset — likely from NOAA’s National Coral Reef Monitoring Program or the Allen Coral Atlas — to produce a documented, reproducible mapping workflow before applying it to original survey data."
+    "objectID": "projects/lora-radiorocket.html#status",
+    "href": "projects/lora-radiorocket.html#status",
+    "title": "LoRa RadioRocket",
+    "section": "Status",
+    "text": "Status\n✅ Flight tested — telemetry received successfully on first flight.\n🔧 High-power deployment in progress — Apogee Zephyr nose cone e-bay built, NAR Level 1 certified."
   },
   {
-    "objectID": "projects/bleaching-risk-notebook.html",
-    "href": "projects/bleaching-risk-notebook.html",
-    "title": "Coral Bleaching Risk Notebook",
-    "section": "",
-    "text": "Coral bleaching occurs when water temperatures exceed a thermal threshold for an extended period, measured in Degree Heating Weeks (DHW). This project is a planned Jupyter notebook that will explore publicly available sea surface temperature (SST) and DHW data to identify patterns and risk factors associated with bleaching events. The analytical structure below reflects my research into the data sources and methods I intend to use. The notebook itself is not yet complete.\nStatus: 🚧 In progress — data source research and notebook scaffolding underway. Analysis is planned future work."
-  },
-  {
-    "objectID": "projects/bleaching-risk-notebook.html#overview",
-    "href": "projects/bleaching-risk-notebook.html#overview",
-    "title": "Coral Bleaching Risk Notebook",
-    "section": "",
-    "text": "Coral bleaching occurs when water temperatures exceed a thermal threshold for an extended period, measured in Degree Heating Weeks (DHW). This project is a planned Jupyter notebook that will explore publicly available sea surface temperature (SST) and DHW data to identify patterns and risk factors associated with bleaching events. The analytical structure below reflects my research into the data sources and methods I intend to use. The notebook itself is not yet complete.\nStatus: 🚧 In progress — data source research and notebook scaffolding underway. Analysis is planned future work."
-  },
-  {
-    "objectID": "projects/bleaching-risk-notebook.html#why-this-analysis",
-    "href": "projects/bleaching-risk-notebook.html#why-this-analysis",
-    "title": "Coral Bleaching Risk Notebook",
-    "section": "Why This Analysis",
-    "text": "Why This Analysis\nThe 2024 global bleaching event — the fourth mass bleaching event on record — underscored how urgently the field needs accessible, reproducible tools for monitoring and communicating thermal stress risk. My goal with this notebook is to develop hands-on fluency with the key data products used in reef thermal stress monitoring, and to produce a clean, shareable analytical workflow that could serve as a building block for more applied work."
-  },
-  {
-    "objectID": "projects/bleaching-risk-notebook.html#planned-data-sources",
-    "href": "projects/bleaching-risk-notebook.html#planned-data-sources",
-    "title": "Coral Bleaching Risk Notebook",
-    "section": "Planned Data Sources",
-    "text": "Planned Data Sources\n\nNOAA Coral Reef Watch — SST and DHW gridded products (the primary operational data for bleaching risk monitoring)\nReefBase — historical bleaching observation records for ground-truth comparison\nAIMS Long Term Monitoring Program — bleaching and condition data from the Great Barrier Reef (planned)"
-  },
-  {
-    "objectID": "projects/bleaching-risk-notebook.html#planned-analysis",
-    "href": "projects/bleaching-risk-notebook.html#planned-analysis",
-    "title": "Coral Bleaching Risk Notebook",
-    "section": "Planned Analysis",
-    "text": "Planned Analysis\n\nExploratory Data Analysis\n\nSST anomaly trends over time at selected reef sites\nDHW accumulation patterns by ocean region and season\nCorrelation between DHW thresholds and reported bleaching observations\n\n\n\nVisualization\n\nTime series plots of thermal stress at specific reef locations\nSpatial maps of bleaching risk across a region of interest\nInteractive plots with Plotly for exploratory use"
-  },
-  {
-    "objectID": "projects/bleaching-risk-notebook.html#tools",
-    "href": "projects/bleaching-risk-notebook.html#tools",
-    "title": "Coral Bleaching Risk Notebook",
-    "section": "Tools",
-    "text": "Tools\n\nPython (pandas, xarray, matplotlib, plotly, cartopy)\nJupyter Notebooks\nNOAA Coral Reef Watch API and NetCDF data products"
-  },
-  {
-    "objectID": "projects/bleaching-risk-notebook.html#path-forward",
-    "href": "projects/bleaching-risk-notebook.html#path-forward",
-    "title": "Coral Bleaching Risk Notebook",
-    "section": "Path Forward",
-    "text": "Path Forward\nMy next step is to download a representative SST/DHW dataset from NOAA Coral Reef Watch, build the core data loading and visualization scaffolding, and publish an initial notebook — even if incomplete — so the work is in the open and iterable. The embedded notebook below will be updated as the analysis develops."
-  },
-  {
-    "objectID": "projects/bleaching-risk-notebook.html#notebook",
-    "href": "projects/bleaching-risk-notebook.html#notebook",
-    "title": "Coral Bleaching Risk Notebook",
-    "section": "Notebook",
-    "text": "Notebook\nJupyter notebook will be embedded here once the initial version is complete."
-  },
-  {
-    "objectID": "projects/sfm-marine.html",
-    "href": "projects/sfm-marine.html",
-    "title": "SfM Photogrammetry for Marine Science",
-    "section": "",
-    "text": "Structure-from-Motion (SfM) photogrammetry enables the creation of precise 3D models from overlapping photographs. This page documents my study of how SfM methods are applied to underwater survey data to map and monitor coral reefs and benthic habitats — and outlines the work I plan to do as I build toward applying these techniques myself.\nStatus: 🚧 In progress — this is active learning and future planned work, not a completed project."
-  },
-  {
-    "objectID": "projects/sfm-marine.html#overview",
-    "href": "projects/sfm-marine.html#overview",
-    "title": "SfM Photogrammetry for Marine Science",
-    "section": "",
-    "text": "Structure-from-Motion (SfM) photogrammetry enables the creation of precise 3D models from overlapping photographs. This page documents my study of how SfM methods are applied to underwater survey data to map and monitor coral reefs and benthic habitats — and outlines the work I plan to do as I build toward applying these techniques myself.\nStatus: 🚧 In progress — this is active learning and future planned work, not a completed project."
-  },
-  {
-    "objectID": "projects/sfm-marine.html#why-im-interested-in-sfm-for-marine-science",
-    "href": "projects/sfm-marine.html#why-im-interested-in-sfm-for-marine-science",
-    "title": "SfM Photogrammetry for Marine Science",
-    "section": "Why I’m Interested in SfM for Marine Science",
-    "text": "Why I’m Interested in SfM for Marine Science\nTraditional survey methods struggle to capture the complex 3D structure of coral reefs. SfM offers capabilities I want to develop:\n\nHigh-resolution 3D reconstructions from standard cameras\nQuantitative measurements of structural complexity\nRepeatable surveys for change detection over time\nLower cost relative to LiDAR or multibeam sonar\n\nMy goal is to build the technical depth to contribute to reef monitoring efforts using these methods, either as part of a research team or through independent projects."
-  },
-  {
-    "objectID": "projects/sfm-marine.html#what-im-learning",
-    "href": "projects/sfm-marine.html#what-im-learning",
-    "title": "SfM Photogrammetry for Marine Science",
-    "section": "What I’m Learning",
-    "text": "What I’m Learning\nI’m working through the core concepts of SfM pipelines, including:\n\nImage acquisition protocols for underwater surveys (overlap, lighting, camera settings)\nProcessing workflows in Agisoft Metashape\nQuality assessment using ground control points and reprojection error\nOutput formats: orthomosaics, DEMs, and 3D meshes"
-  },
-  {
-    "objectID": "projects/sfm-marine.html#planned-work",
-    "href": "projects/sfm-marine.html#planned-work",
-    "title": "SfM Photogrammetry for Marine Science",
-    "section": "Planned Work",
-    "text": "Planned Work\nOnce I have suitable underwater image sets to work with, I plan to document a complete end-to-end pipeline — from raw photos to validated 3D outputs — as a reproducible, open workflow. See the related projects below for where that work is heading."
-  },
-  {
-    "objectID": "projects/sfm-marine.html#related-projects",
-    "href": "projects/sfm-marine.html#related-projects",
-    "title": "SfM Photogrammetry for Marine Science",
-    "section": "Related Projects",
-    "text": "Related Projects\n\nReef SfM Workflow — the detailed processing pipeline I’m building toward\nBenthic Habitat Map — GIS mapping outputs that will draw on SfM data"
+    "objectID": "projects/lora-radiorocket.html#links",
+    "href": "projects/lora-radiorocket.html#links",
+    "title": "LoRa RadioRocket",
+    "section": "Links",
+    "text": "Links\n\nGitHub Repository\nTX Firmware\nRX Firmware"
   },
   {
     "objectID": "projects/freezingsaddles.html",
@@ -350,73 +315,136 @@
     "text": "Status\n✅ Active — updated each winter cycling season."
   },
   {
-    "objectID": "projects/lora-radiorocket.html",
-    "href": "projects/lora-radiorocket.html",
-    "title": "LoRa RadioRocket",
+    "objectID": "projects/bleaching-risk-notebook.html",
+    "href": "projects/bleaching-risk-notebook.html",
+    "title": "Exploring Coral Bleaching Risk Using NOAA Coral Reef Watch DHW Data",
     "section": "",
-    "text": "RadioRocketV2 is an open-source amateur radio project integrating modern digital radio systems into mid and high power model rocketry. This fork of the N3VEM RadioRocketV2 project adds updated documentation to make the build more accessible."
+    "text": "When I started looking for a dataset to anchor this first marine science project, I had a simple question: what data actually gets used by the people trying to protect coral reefs in the real world? That question led me directly to NOAA’s Coral Reef Watch (CRW) program and their Degree Heating Weeks (DHW) product — and then to the paper that describes exactly how it’s built: Skirving et al. (2020), CoralTemp and the Coral Reef Watch Coral Bleaching Heat Stress Product Suite Version 3.1 (Skirving et al. 2020).\nReading that paper changed how I thought about this project.\n\n\n\n\n\n\nData source: NOAA Coral Reef Watch Version 3.1 Daily 5km Satellite Coral Bleaching Heat Stress Product Suite. Updated daily. coralreefwatch.noaa.gov\n\n\n\n\n\nMy first instinct was to pull raw SST data — it’s widely available from multiple sources including NOAA OISST, NASA MODIS, and the Copernicus Marine Service. But raw SST alone doesn’t tell you whether a coral is stressed. A reading of 29°C means something very different on the Great Barrier Reef versus Bonaire. What matters isn’t the absolute temperature — it’s how that temperature compares to what the corals at that location have adapted to over their lifetimes.\nThat realization pushed me toward NOAA CRW’s derived product suite, where that comparison is already built in — and rigorously validated against decades of field bleaching observations worldwide.\n\n\n\nThe entire CRW product suite rests on a climatological baseline: a set of long-term average SST values for every location on Earth, for every month of the year. This is not a trivial thing to build correctly. As Skirving et al. (2020) describe, CRW spent years grappling with a fundamental problem — the satellite SST data used to build the climatology came from different sensors and processing pipelines than the near-real-time data used to calculate the anomalies. That mismatch introduced systematic biases, particularly at the high temperatures most relevant to bleaching.\nThe development of CoralTemp — a single, continuous daily SST record spanning 1985 to the present, built by carefully blending three different satellite products — was specifically designed to solve this problem. For the first time, CRW could compute the climatology and the daily anomalies from the same underlying dataset. The Monthly Mean (MM) climatology was derived from this record across 1985–2012, and the Maximum Monthly Mean (MMM) — the warmest month at each location — became the critical threshold from which the HotSpot and DHW products are derived.\nI want to be transparent about why this matters for this project: I am not independently validating the baseline. I am trusting that NOAA CRW’s 25-year investment in getting this right is sound — which is supported by the peer-reviewed literature and by the fact that these products are the global standard used by reef managers worldwide. But understanding that the baseline exists, how it was constructed, and what its assumptions are is essential context for interpreting everything downstream. The DHW values we analyze are only as meaningful as the MMM they’re derived from.\n\n\n\nOne more thing worth acknowledging upfront: the Virtual Station data used in this analysis represents a single 5×5 km satellite pixel per reef location. Real reef systems are far more heterogeneous than that. Temperatures vary with depth, local current patterns, reef orientation, and bathymetry — a coral colony in a deep channel experiences very different conditions than one on a shallow exposed crest, even within the same reef system.\nThis means the DHW values we analyze are best understood as a reef-wide surface thermal stress index — a strong and validated predictor of bleaching risk at the population level, but not a precise measurement of conditions at any specific location. This is the same limitation the entire global reef monitoring community works with, and it doesn’t undermine the analysis. It just means we should be careful about over-interpreting site-level differences that might reflect local thermal refugia or exposure patterns rather than true differences in bleaching pressure.\nWith those caveats clearly on the table, here is what this project actually does."
   },
   {
-    "objectID": "projects/lora-radiorocket.html#overview",
-    "href": "projects/lora-radiorocket.html#overview",
-    "title": "LoRa RadioRocket",
+    "objectID": "projects/bleaching-risk-notebook.html#overview",
+    "href": "projects/bleaching-risk-notebook.html#overview",
+    "title": "Exploring Coral Bleaching Risk Using NOAA Coral Reef Watch DHW Data",
     "section": "",
-    "text": "RadioRocketV2 is an open-source amateur radio project integrating modern digital radio systems into mid and high power model rocketry. This fork of the N3VEM RadioRocketV2 project adds updated documentation to make the build more accessible."
+    "text": "When I started looking for a dataset to anchor this first marine science project, I had a simple question: what data actually gets used by the people trying to protect coral reefs in the real world? That question led me directly to NOAA’s Coral Reef Watch (CRW) program and their Degree Heating Weeks (DHW) product — and then to the paper that describes exactly how it’s built: Skirving et al. (2020), CoralTemp and the Coral Reef Watch Coral Bleaching Heat Stress Product Suite Version 3.1 (Skirving et al. 2020).\nReading that paper changed how I thought about this project.\n\n\n\n\n\n\nData source: NOAA Coral Reef Watch Version 3.1 Daily 5km Satellite Coral Bleaching Heat Stress Product Suite. Updated daily. coralreefwatch.noaa.gov\n\n\n\n\n\nMy first instinct was to pull raw SST data — it’s widely available from multiple sources including NOAA OISST, NASA MODIS, and the Copernicus Marine Service. But raw SST alone doesn’t tell you whether a coral is stressed. A reading of 29°C means something very different on the Great Barrier Reef versus Bonaire. What matters isn’t the absolute temperature — it’s how that temperature compares to what the corals at that location have adapted to over their lifetimes.\nThat realization pushed me toward NOAA CRW’s derived product suite, where that comparison is already built in — and rigorously validated against decades of field bleaching observations worldwide.\n\n\n\nThe entire CRW product suite rests on a climatological baseline: a set of long-term average SST values for every location on Earth, for every month of the year. This is not a trivial thing to build correctly. As Skirving et al. (2020) describe, CRW spent years grappling with a fundamental problem — the satellite SST data used to build the climatology came from different sensors and processing pipelines than the near-real-time data used to calculate the anomalies. That mismatch introduced systematic biases, particularly at the high temperatures most relevant to bleaching.\nThe development of CoralTemp — a single, continuous daily SST record spanning 1985 to the present, built by carefully blending three different satellite products — was specifically designed to solve this problem. For the first time, CRW could compute the climatology and the daily anomalies from the same underlying dataset. The Monthly Mean (MM) climatology was derived from this record across 1985–2012, and the Maximum Monthly Mean (MMM) — the warmest month at each location — became the critical threshold from which the HotSpot and DHW products are derived.\nI want to be transparent about why this matters for this project: I am not independently validating the baseline. I am trusting that NOAA CRW’s 25-year investment in getting this right is sound — which is supported by the peer-reviewed literature and by the fact that these products are the global standard used by reef managers worldwide. But understanding that the baseline exists, how it was constructed, and what its assumptions are is essential context for interpreting everything downstream. The DHW values we analyze are only as meaningful as the MMM they’re derived from.\n\n\n\nOne more thing worth acknowledging upfront: the Virtual Station data used in this analysis represents a single 5×5 km satellite pixel per reef location. Real reef systems are far more heterogeneous than that. Temperatures vary with depth, local current patterns, reef orientation, and bathymetry — a coral colony in a deep channel experiences very different conditions than one on a shallow exposed crest, even within the same reef system.\nThis means the DHW values we analyze are best understood as a reef-wide surface thermal stress index — a strong and validated predictor of bleaching risk at the population level, but not a precise measurement of conditions at any specific location. This is the same limitation the entire global reef monitoring community works with, and it doesn’t undermine the analysis. It just means we should be careful about over-interpreting site-level differences that might reflect local thermal refugia or exposure patterns rather than true differences in bleaching pressure.\nWith those caveats clearly on the table, here is what this project actually does."
   },
   {
-    "objectID": "projects/lora-radiorocket.html#system-components",
-    "href": "projects/lora-radiorocket.html#system-components",
-    "title": "LoRa RadioRocket",
-    "section": "System Components",
-    "text": "System Components\n\nAPRS Tracking\nA self-contained APRS beacon sled provides position tracking and mapping during flight. Packets are received by any I-Gate within range and viewable on aprs.fi. Can be built standalone without the rest of the system.\n\n\nLoRa Telemetry\nThe rocket transmits telemetry over 70cm LoRa, including sensor data, relay messages, and command responses. LoRa’s long range and low power make it ideal for tracking rockets downrange.\n\n\nGround Station\nA portable ground station built around a single-board computer and LoRa Feather module receives telemetry and APRS data, serving it via Node-RED and a networked sound modem to any browser on the local network."
+    "objectID": "projects/bleaching-risk-notebook.html#study-sites",
+    "href": "projects/bleaching-risk-notebook.html#study-sites",
+    "title": "Exploring Coral Bleaching Risk Using NOAA Coral Reef Watch DHW Data",
+    "section": "Study Sites",
+    "text": "Study Sites\nFive reef systems spanning two ocean basins were selected to compare thermal stress patterns across different geographic and ecological contexts:\n\n\n\n\n\n\n\n\n\nSite\nRegion\nLatitude\nLongitude\n\n\n\n\nFlorida Keys, USA\nCaribbean/Atlantic\n24.55°N\n81.50°W\n\n\nGrand Cayman\nCaribbean\n19.30°N\n81.38°W\n\n\nRoatán, Honduras\nCaribbean (Mesoamerican Reef)\n16.32°N\n86.55°W\n\n\nBonaire\nSouthern Caribbean\n12.15°N\n68.28°W\n\n\nGreat Barrier Reef (Cairns sector)\nIndo-Pacific\n16.92°S\n145.77°E\n\n\n\nThese sites were chosen to represent:\n\nHigh-profile, well-documented bleaching events (Florida Keys 2023, GBR 2016/2022)\nThe Mesoamerican Reef system, the second-largest barrier reef in the world\nContrasting bleaching histories (Bonaire is known for relatively robust reef health)\nInter-basin comparison (Caribbean vs. Indo-Pacific thermal dynamics)\n\n\n\n\n\n\n\nFigure 1: Study site locations, colored by peak DHW over the most recent 5 years. Larger, darker markers indicate higher accumulated thermal stress."
   },
   {
-    "objectID": "projects/lora-radiorocket.html#hardware",
-    "href": "projects/lora-radiorocket.html#hardware",
-    "title": "LoRa RadioRocket",
-    "section": "Hardware",
-    "text": "Hardware\n\nAdafruit Feather with LoRa Radio (rocket-side)\nSDRplay SDR dongle (APRS reception)\nRaspberry Pi ground station\nCustom wiring and project enclosure"
+    "objectID": "projects/bleaching-risk-notebook.html#science-background",
+    "href": "projects/bleaching-risk-notebook.html#science-background",
+    "title": "Exploring Coral Bleaching Risk Using NOAA Coral Reef Watch DHW Data",
+    "section": "Science Background",
+    "text": "Science Background\n\nSea Surface Temperature Anomaly\nEvery ocean location has a long-term average temperature for each time of year, derived from decades of satellite records. The SST anomaly measures the departure of today’s temperature from that historical average:\n\\[\\text{SST Anomaly} = \\text{SST} - \\text{Daily SST Climatology}\\]\nA positive anomaly means the ocean is warmer than usual for that season. This metric provides broad context for ocean warming but is not on its own a reliable predictor of coral bleaching, because corals in different locations are adapted to different baseline temperatures.\n\n\nCoral Bleaching HotSpot\nThe HotSpot product is calibrated specifically to coral biology. It measures how far the current temperature exceeds the warmest month that corals at that location have historically experienced — a threshold called the Maximum Monthly Mean (MMM):\n\\[\\text{HotSpot} = \\text{SST} - \\text{MMM SST Climatology}, \\quad \\text{HotSpot} \\geq 0\\]\nA HotSpot ≥ 1°C indicates active thermal stress. The MMM baseline varies by location, so this metric captures relative stress rather than absolute temperature — making it comparable across sites with very different ambient ocean temperatures (Skirving et al. 2020).\n\n\nDegree Heating Weeks (DHW)\nA single warm day can stress corals, but corals are resilient to brief exposures. What causes bleaching is sustained thermal stress accumulating over weeks. Degree Heating Weeks integrate the HotSpot values (when ≥ 1°C) over a moving 12-week window:\n\\[\\text{DHW} = \\frac{\\sum_{d=0}^{83} \\max(\\text{HotSpot}_d - 0, 0) \\cdot \\mathbf{1}[\\text{HotSpot}_d \\geq 1]}{7}\\]\nUnits are °C-weeks. Think of DHW as a “heat debt” that builds up as hot conditions persist — analogous to the accumulated dose concept in clinical pharmacology or radiation biology.\nTwo key thresholds, established through satellite monitoring and field validation (Liu et al. 2013):\n\n\n\n\n\n\n\n\nDHW Value\nAlert Level\nBiological Expectation\n\n\n\n\n&lt; 4 °C-weeks\nWatch / Warning\nThermal stress present; monitoring needed\n\n\n≥ 4 °C-weeks\nAlert Level 1\nBleaching likely\n\n\n≥ 8 °C-weeks\nAlert Level 2\nSevere bleaching; significant mortality likely"
   },
   {
-    "objectID": "projects/lora-radiorocket.html#status",
-    "href": "projects/lora-radiorocket.html#status",
-    "title": "LoRa RadioRocket",
-    "section": "Status",
-    "text": "Status\n✅ Working prototype complete — documentation in progress."
+    "objectID": "projects/bleaching-risk-notebook.html#data-methods",
+    "href": "projects/bleaching-risk-notebook.html#data-methods",
+    "title": "Exploring Coral Bleaching Risk Using NOAA Coral Reef Watch DHW Data",
+    "section": "Data & Methods",
+    "text": "Data & Methods\n\nData Acquisition\nData were fetched programmatically from the NOAA CRW Virtual Station feed, which provides pre-extracted point time series for named reef stations. This approach delivers the same underlying 5km CoralTemp satellite product without requiring manual processing of global NetCDF raster files — making the analysis lightweight, reproducible, and easily updated.\nCRW_BASE_URL = \"https://coralreefwatch.noaa.gov/vs/data/{station_id}.csv\"\nEach station CSV includes daily or twice-weekly records of SST, SST Anomaly, HotSpot, DHW, and Bleaching Alert Level (0–4). Data were cached locally after first retrieval to support reproducibility in offline contexts.\n\n\nAnalysis Pipeline\n&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD 1. Fetch — live HTTP request to CRW Virtual Station API per site\n2. Cache — store raw CSVs in data/raw/ (regenerated on force_refresh=True)\n3. Explore — inspect date ranges, missing values, summary statistics\n4. Visualize — DHW time series, alert level distributions, annual peak heatmap\n5. Map — site locations colored by recent peak DHW\nFull reproducible code is available in coral_bleaching_dhw_analysis.ipynb. ======= 1. Fetch — live HTTP request to CRW Virtual Station API per site 2. Cache — store raw CSVs in data/raw/ (regenerated on force_refresh=True) 3. Explore — inspect date ranges, missing values, summary statistics 4. Visualize — DHW time series, alert level distributions, annual peak heatmap 5. Map — site locations colored by recent peak DHW\nFull reproducible code is available in coral_bleaching_dhw_analysis.ipynb. &gt;&gt;&gt;&gt;&gt;&gt;&gt; 59c9e29 (Replace bleaching risk notebook with full DHW analysis)"
   },
   {
-    "objectID": "projects/lora-radiorocket.html#links",
-    "href": "projects/lora-radiorocket.html#links",
-    "title": "LoRa RadioRocket",
-    "section": "Links",
-    "text": "Links\n\nGitHub Repository"
+    "objectID": "projects/bleaching-risk-notebook.html#results",
+    "href": "projects/bleaching-risk-notebook.html#results",
+    "title": "Exploring Coral Bleaching Risk Using NOAA Coral Reef Watch DHW Data",
+    "section": "Results",
+    "text": "Results\n\nDHW Time Series\nThe figure below shows Degree Heating Week time series for all five reef sites since 2010. Horizontal dashed lines mark the Alert Level 1 (4 °C-weeks) and Alert Level 2 (8 °C-weeks) thresholds.\n\n\n\n\n\n\nFigure 2: DHW time series for all five reef sites (2010–present). Dashed orange line: Alert Level 1 (bleaching likely). Dashed red line: Alert Level 2 (mortality likely). Data: NOAA CRW Version 3.1.\n\n\n\nKey observations:\n\nFlorida Keys shows dramatically elevated DHW values in 2023, consistent with the record-breaking marine heat wave that drove mass bleaching across the region.\nGreat Barrier Reef shows repeated exceedance of the Alert Level 2 threshold, particularly in 2016 and 2022, corresponding to well-documented mass bleaching events.\nBonaire generally shows lower DHW values than the other Caribbean sites, consistent with its relatively deep thermocline and upwelling influence.\n\n\n\nBleaching Alert Level Distribution\nThe chart below shows the percentage of observation days each site spent at each Bleaching Alert Level across the full data record.\n\n\n\n\n\n\nFigure 3: Distribution of NOAA CRW Bleaching Alert Levels across the full observation period for each site. Colors follow the CRW standard palette.\n\n\n\n\n\nAnnual Peak DHW Heatmap\nThe heatmap below summarizes peak annual DHW by site and year, allowing direct visual comparison of bleaching risk across time.\n\n\n\n\n\n\nFigure 4: Annual peak DHW by reef site and year. Values ≥ 4 indicate bleaching-level thermal stress; values ≥ 8 indicate risk of significant coral mortality. Data: NOAA CRW Version 3.1.\n\n\n\nNotable patterns:\n\n2016 stands out as a global stress year, with elevated DHW at both the GBR and Caribbean sites.\n2023–2024 saw the most extreme values at the Florida Keys, reflecting the fourth global mass bleaching event (officially confirmed by NOAA and ICRS).\nYear-to-year variability is high, driven partly by ENSO cycles — El Niño years tend to drive elevated SSTs across the tropics."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Francisco Velez",
+    "objectID": "projects/bleaching-risk-notebook.html#interpretation-limitations",
+    "href": "projects/bleaching-risk-notebook.html#interpretation-limitations",
+    "title": "Exploring Coral Bleaching Risk Using NOAA Coral Reef Watch DHW Data",
+    "section": "Interpretation & Limitations",
+    "text": "Interpretation & Limitations\n\nWhat this analysis shows\nThis analysis demonstrates the utility of satellite thermal monitoring for tracking bleaching risk across geographically distributed reef systems. The DHW metric — developed and validated by NOAA CRW scientists over more than 20 years — provides a biologically grounded, globally consistent index of accumulated thermal stress that has been correlated with field observations of bleaching onset and severity.\n\n\nLimitations to note\n\nPoint data: CRW Virtual Station data represent a single 5×5 km pixel per site. Actual reef conditions vary at finer spatial scales due to bathymetry, currents, and local upwelling.\nNo in situ validation: This analysis does not include field bleaching surveys or coral cover data. DHW is a risk indicator, not a direct measurement of bleaching.\nAlert thresholds are global: The 4 and 8 °C-week thresholds are population- level averages. Some coral communities (e.g., those in warmer back-reef environments) may have higher thermal tolerance, while others may bleach at lower DHW values."
+  },
+  {
+    "objectID": "projects/bleaching-risk-notebook.html#future-directions",
+    "href": "projects/bleaching-risk-notebook.html#future-directions",
+    "title": "Exploring Coral Bleaching Risk Using NOAA Coral Reef Watch DHW Data",
+    "section": "Future Directions",
+    "text": "Future Directions\nThis MVP analysis establishes the data pipeline and visualization framework. Planned extensions include:\n\nSpatial raster analysis — process global CRW NetCDF files via ERDDAP to produce regional DHW maps\nBleaching observation integration — overlay NOAA CoRIS or Reef Check field survey data to validate satellite signals\nENSO correlation — correlate DHW peaks with Niño 3.4 SST anomaly index\nTrend analysis — fit linear or Bayesian trend models to annual peak DHW to quantify warming trajectories at each site"
+  },
+  {
+    "objectID": "projects/bleaching-risk-notebook.html#technical-details",
+    "href": "projects/bleaching-risk-notebook.html#technical-details",
+    "title": "Exploring Coral Bleaching Risk Using NOAA Coral Reef Watch DHW Data",
+    "section": "Technical Details",
+    "text": "Technical Details\n\n\n\n\n\n\n\nItem\nDetail\n\n\n\n\nLanguage\nPython 3.11\n\n\nKey packages\npandas, numpy, matplotlib, seaborn, requests, cartopy, folium\n\n\nData format\nCSV (CRW Virtual Station)\n\n\nNotebook\nJupyter (.ipynb)\n\n\nPortfolio framework\nQuarto\n\n\nVersion control\nGit / GitHub"
+  },
+  {
+    "objectID": "projects/bleaching-risk-notebook.html#references",
+    "href": "projects/bleaching-risk-notebook.html#references",
+    "title": "Exploring Coral Bleaching Risk Using NOAA Coral Reef Watch DHW Data",
+    "section": "References",
+    "text": "References\n\n\nLiu, Gang, Jacqueline L. Rauenzahn, Scott F. Heron, et al. 2013. NOAA Coral Reef Watch 50 Km Satellite Sea Surface Temperature-Based Decision Support System for Coral Bleaching Management. NESDIS 143. NOAA/NESDIS.\n\n\nSkirving, William, Benjamin Marsh, Jacqueline De La Cour, et al. 2020. “CoralTemp and the Coral Reef Watch Coral Bleaching Heat Stress Product Suite Version 3.1.” Remote Sensing 12 (23): 3856. https://doi.org/10.3390/rs12233856.\n\n\nData citation:\n\nNOAA Coral Reef Watch (CRW). 2000, updated daily. NOAA Coral Reef Watch Version 3.1 Daily 5km Satellite Coral Bleaching Heat Stress Monitoring Product Suite; CoralTemp and Coral Bleaching Heat Stress. College Park, Maryland, USA: NOAA/NESDIS. Accessed [DATE] at https://coralreefwatch.noaa.gov/"
+  },
+  {
+    "objectID": "projects/bleaching-risk-notebook.html#about-this-project",
+    "href": "projects/bleaching-risk-notebook.html#about-this-project",
+    "title": "Exploring Coral Bleaching Risk Using NOAA Coral Reef Watch DHW Data",
+    "section": "About This Project",
+    "text": "About This Project\nThis project is part of a portfolio in marine environmental data science, developed to demonstrate reproducible analysis workflows applied to real-world reef conservation data. The full code, data pipeline, and environment specification are available on GitHub.\n\n\n\n\n\n\nTipReproducibility\n\n\n\nClone the repository and run jupyter notebook coral_bleaching_dhw_analysis.ipynb to reproduce all figures. Data is fetched live from NOAA CRW on first run and cached locally. See README.md for environment setup instructions.\n\n\n&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD View on GitHub ======= View on GitHub &gt;&gt;&gt;&gt;&gt;&gt;&gt; 59c9e29 (Replace bleaching risk notebook with full DHW analysis) NOAA Coral Reef Watch"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
     "section": "",
-    "text": "I’m a clinical informaticist working at the intersection of clinical research, data science, and primary data collection. My work focuses on building systems, workflows, and data platforms that support researchers across a wide range of scientific and operational needs. I’m currently expanding my scope into marine science, GIS, remote sensing, full-stack software development, and hardware engineering. Outside of work, I apply the same data and engineering mindset to cycling analytics, high-power rocketry, ham radio, Arduino-based systems, and embedded telemetry projects."
+    "text": "I’m a clinical informaticist and data systems professional based in the Washington, D.C. area, currently working at the National Institutes of Health. My work sits at the intersection of clinical research, data science, primary data collection, and research infrastructure.\nI work shoulder to shoulder with principal investigators, research teams, and operational stakeholders to understand scientific needs and translate them into usable systems, workflows, and data platforms. I also work with program and organizational leadership to shape enterprise data capabilities that support governance, interoperability, reproducibility, and long-term scientific value.\nMy professional background includes clinical research informatics, data governance, cloud-based research platforms, REDCap operations, metadata workflows, and support for large-scale scientific data programs.\nI’m currently expanding my scope into marine science, GIS, remote sensing, Structure-from-Motion photogrammetry, full-stack software development, and hardware engineering. Long term, I’m interested in applying informatics, reproducible analysis, and geospatial tools to coral reef research and marine conservation at institutions such as Scripps Institution of Oceanography, Woods Hole Oceanographic Institution, Mote Marine Laboratory, NOAA, or similar research organizations.\nOutside of work, I apply the same data and engineering mindset to cycling analytics, high-power rocketry, ham radio, Arduino-based systems, and embedded radio telemetry projects."
   },
   {
-    "objectID": "index.html#welcome",
-    "href": "index.html#welcome",
-    "title": "Francisco Velez",
+    "objectID": "about.html#background",
+    "href": "about.html#background",
+    "title": "About Me",
     "section": "",
-    "text": "I’m a clinical informaticist working at the intersection of clinical research, data science, and primary data collection. My work focuses on building systems, workflows, and data platforms that support researchers across a wide range of scientific and operational needs. I’m currently expanding my scope into marine science, GIS, remote sensing, full-stack software development, and hardware engineering. Outside of work, I apply the same data and engineering mindset to cycling analytics, high-power rocketry, ham radio, Arduino-based systems, and embedded telemetry projects."
+    "text": "I’m a clinical informaticist and data systems professional based in the Washington, D.C. area, currently working at the National Institutes of Health. My work sits at the intersection of clinical research, data science, primary data collection, and research infrastructure.\nI work shoulder to shoulder with principal investigators, research teams, and operational stakeholders to understand scientific needs and translate them into usable systems, workflows, and data platforms. I also work with program and organizational leadership to shape enterprise data capabilities that support governance, interoperability, reproducibility, and long-term scientific value.\nMy professional background includes clinical research informatics, data governance, cloud-based research platforms, REDCap operations, metadata workflows, and support for large-scale scientific data programs.\nI’m currently expanding my scope into marine science, GIS, remote sensing, Structure-from-Motion photogrammetry, full-stack software development, and hardware engineering. Long term, I’m interested in applying informatics, reproducible analysis, and geospatial tools to coral reef research and marine conservation at institutions such as Scripps Institution of Oceanography, Woods Hole Oceanographic Institution, Mote Marine Laboratory, NOAA, or similar research organizations.\nOutside of work, I apply the same data and engineering mindset to cycling analytics, high-power rocketry, ham radio, Arduino-based systems, and embedded radio telemetry projects."
   },
   {
-    "objectID": "index.html#research-interests",
-    "href": "index.html#research-interests",
-    "title": "Francisco Velez",
-    "section": "Research Interests",
-    "text": "Research Interests\n\nCoral reef monitoring and benthic habitat mapping\nStructure-from-Motion photogrammetry for marine applications\nGeospatial data visualization and analysis\nIoT and radio telemetry systems"
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About Me",
+    "section": "Education",
+    "text": "Education\n\nM.Sc. Health Care Administration Informatics, University of Maryland University College, Adelphi, MD — May 2016\nB.Sc. Biology (Minor: Chemistry, Minor: Physics), Wilkes University, Wilkes-Barre, PA — May 2009"
   },
   {
-    "objectID": "index.html#recent-projects",
-    "href": "index.html#recent-projects",
-    "title": "Francisco Velez",
-    "section": "Recent Projects",
-    "text": "Recent Projects\nCheck out my Projects page for a full overview of my work."
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "About Me",
+    "section": "Experience",
+    "text": "Experience\n\nNational Institutes of Health / NHLBI — Biomedical Informatics Project Manager, 05/2021–Present\n\nWork directly with principal investigators, research teams, and scientific stakeholders to understand research needs and translate them into practical informatics solutions.\nPartner with program leadership and enterprise stakeholders to develop data platforms, governance models, and operational workflows that scale beyond individual studies.\nSupport researcher-facing data systems, clinical research informatics workflows, and cloud-based scientific data platforms.\nContribute to data governance, metadata, data release, interoperability, and operational workflows for large-scale biomedical research programs.\nWork across scientific, technical, and operational teams to bridge investigator needs, enterprise priorities, and sustainable platform design."
+  },
+  {
+    "objectID": "about.html#skills",
+    "href": "about.html#skills",
+    "title": "About Me",
+    "section": "Skills",
+    "text": "Skills\n\nProgramming & Analysis: Python, SQL, R, Jupyter notebooks\nData Systems: REDCap, research data platforms, metadata workflows, FAIR data practices, clinical research informatics\nGIS & Remote Sensing: QGIS, geospatial analysis, benthic habitat mapping, remote sensing workflows\nPhotogrammetry: Structure-from-Motion workflows, Agisoft Metashape, large-area imaging concepts\nSoftware & DevOps: Git, GitHub, Quarto, Docker, cloud workspaces, reproducible analysis workflows\nHardware & Telemetry: Arduino, LoRa radio, embedded systems, sensor telemetry, high-power rocketry instrumentation\nDomains: Clinical research, biomedical informatics, marine science, coral reef conservation, geospatial analysis, cycling analytics"
+  },
+  {
+    "objectID": "about.html#currently-learning",
+    "href": "about.html#currently-learning",
+    "title": "About Me",
+    "section": "Currently Learning",
+    "text": "Currently Learning\n\nGIS workflows for marine and coastal datasets\nBenthic habitat classification and coral reef mapping methods\nStructure-from-Motion photogrammetry for reef monitoring\nRemote sensing applications for marine conservation\nFull-stack web development for data-driven hobby and research tools\nEmbedded telemetry systems using microcontrollers, sensors, and LoRa radio"
+  },
+  {
+    "objectID": "about.html#projects-interests",
+    "href": "about.html#projects-interests",
+    "title": "About Me",
+    "section": "Projects & Interests",
+    "text": "Projects & Interests\n\nCoral GIS & Marine Data: Building a portfolio of geospatial and remote sensing projects focused on reef conservation.\nPhotogrammetry: Learning SfM workflows for reconstructing reef sites from overlapping image sets.\nCycling Analytics: Exploring data tools for cycling performance, fantasy cycling, and route analysis.\nRocket Telemetry: Building embedded radio telemetry systems for high-power rocketry using Arduino-compatible boards, barometric sensors, accelerometers, and LoRa radios.\nHam Radio & Field Systems: Experimenting with radio communications, portable systems, and telemetry workflows."
+  },
+  {
+    "objectID": "about.html#contact",
+    "href": "about.html#contact",
+    "title": "About Me",
+    "section": "Contact",
+    "text": "Contact\n\n📧 francisco.velez.v@gmail.com\n🐙 github.com/velezf\n💼 linkedin.com/in/francisco-velez-86028315"
   }
 ]
