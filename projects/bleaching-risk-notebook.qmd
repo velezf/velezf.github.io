@@ -6,12 +6,6 @@ description: |
 author: "Frank Velez"
 date: "2026-05-12"
 date-format: "MMMM D, YYYY"
-categories:
-  - Marine Science
-  - Remote Sensing
-  - Environmental Data Science
-  - Python
-  - Reproducible Research
 image: figures/site_map_peak_dhw.png
 toc: true
 toc-depth: 3
