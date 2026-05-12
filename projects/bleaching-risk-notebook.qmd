@@ -95,10 +95,10 @@ they're derived from.
 
 One more thing worth acknowledging upfront: the Virtual Station data used in this
 analysis represents a single 5×5 km satellite pixel per reef location. Real reef
-systems are far more heterogeneous than that. Temperatures vary with depth, local
+systems are likely far more heterogeneous than that. I suspect temperatures vary with depth, local
 current patterns, reef orientation, and bathymetry — a coral colony in a deep
 channel experiences very different conditions than one on a shallow exposed crest,
-even within the same reef system.
+even within the same reef system. I know this from my own hobby coral husbandry experiences.
 
 This means the DHW values we analyze are best understood as a **reef-wide surface
 thermal stress index** — a strong and validated predictor of bleaching risk at the
