@@ -3,8 +3,8 @@ title: "Exploring Coral Bleaching Risk Using NOAA Coral Reef Watch DHW Data"
 description: |
   A reproducible analysis of satellite-derived thermal stress metrics across five
   reef systems, using NOAA Coral Reef Watch Degree Heating Weeks (DHW) data.
-author: "Renatus Velez"
-date: today
+author: "Frank Velez"
+date: "2026-05-12"
 date-format: "MMMM D, YYYY"
 categories:
   - Marine Science
@@ -12,7 +12,7 @@ categories:
   - Environmental Data Science
   - Python
   - Reproducible Research
-image: figures/dhw_timeseries_all_sites.png
+image: ../images/bleaching-risk.jpg
 toc: true
 toc-depth: 3
 toc-title: "On this page"
@@ -23,11 +23,14 @@ fig-cap-location: bottom
 citation:
   url: https://velezf.github.io/projects/bleaching-risk-notebook
 bibliography: references.bib
+execute:
+  freeze: true
+  warning: false
+  message: false
 ---
 
 ```{python}
 #| echo: false
-#| message: false
 import warnings
 warnings.filterwarnings("ignore")
 ```
@@ -256,40 +259,19 @@ https://coralreefwatch.noaa.gov/product/vs/data/{station_id}.txt
 Each file opens with an unstructured metadata header containing station-level
 information — including the **Averaged Maximum Monthly Mean (MMM)** temperature,
 which we extract programmatically and carry through the analysis as the
-location-specific bleaching threshold baseline. The data table begins at line 21
-with columns `YYYY MM DD SST_MIN SST_MAX SST@90th_HS SSTA@90th_HS 90th_HS>0
-DHW_from_90th_HS>1 BAA_7day_max`.
+location-specific bleaching threshold baseline.
 
 ::: {.callout-note appearance="simple"}
-**A note on the file format:** We inspected the raw file before writing the parser
-rather than assuming a format. The header uses plain text labels rather than `#`
-comment markers, the date is split across three columns (`YYYY`, `MM`, `DD`), and
-the column names reflect the updated v3.1 product suite. Getting this right
-required reading the actual file first — a step worth documenting for anyone
-reproducing this analysis.
+**A note on the file format:** The NOAA CRW Virtual Station files are not simple
+CSVs. The header uses plain text labels rather than `#` comment markers, the date
+is split across three columns (`YYYY`, `MM`, `DD`), and the column names reflect
+the updated v3.1 product suite. We inspected the raw file before writing the parser
+rather than assuming a format — a step worth documenting for anyone reproducing
+this analysis.
 :::
 
-Data were cached locally after first retrieval to support reproducibility in
-offline contexts. To force a fresh download, set `force_refresh=True` in the
-fetch call.
-
-### MMM Baseline Values
-
-The MMM values extracted from the file headers reveal the location-specific
-thermal baselines immediately — before a single chart is plotted:
-
-| Site | MMM (°C) |
-|------|----------|
-| Florida Keys | 29.63 |
-| Cayman Islands | 29.39 |
-| Honduras (Bay Islands) | 28.87 |
-| GBR Central | 28.34 |
-| ABC Islands (Bonaire) | 28.02 |
-
-This is the MMM doing exactly what Skirving et al. (2020) described — capturing
-location-specific thermal tolerance rather than absolute temperature. A raw SST
-reading of 29°C represents no stress at all in the Florida Keys, but would already
-be pushing past the bleaching threshold on the GBR.
+Data are cached locally after first retrieval. To force a fresh download, set
+`force_refresh=True` in the fetch call.
 
 ### Analysis Pipeline
 
@@ -299,12 +281,178 @@ be pushing past the bleaching threshold on the GBR.
 4. **Visualize** — DHW time series, alert level distributions, annual peak heatmap
 5. **Interpret** — narrative analysis of key bleaching events
 
-Full reproducible code is available in
-[`coral_bleaching_dhw_analysis.ipynb`](https://github.com/velezf/coral-bleaching-dhw/blob/main/coral_bleaching_dhw_analysis.ipynb).
-
 ---
 
 ## Results
+
+```{python}
+#| label: setup
+#| code-summary: "Setup: imports, directories, thresholds"
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import requests
+import os
+from io import StringIO
+
+# Paths relative to projects/ directory where this .qmd lives
+CACHE_DIR = "data/raw"
+FIG_DIR   = "figures"
+os.makedirs(CACHE_DIR, exist_ok=True)
+os.makedirs(FIG_DIR,   exist_ok=True)
+
+# Bleaching thresholds (Skirving et al. 2020, Liu et al. 2013)
+DHW_WARNING = 4   # Alert Level 1: Bleaching Likely
+DHW_SEVERE  = 8   # Alert Level 2: Mortality Likely
+```
+
+```{python}
+#| label: sites
+#| code-summary: "Study site definitions and verified NOAA CRW station IDs"
+
+SITES = {
+    "Florida Keys": {
+        "station_id": "florida_keys",
+        "lat": 24.55,
+        "lon": -81.50,
+        "ocean": "Caribbean/Atlantic",
+    },
+    "Cayman Islands": {
+        "station_id": "cayman_islands",
+        "lat": 19.30,
+        "lon": -81.38,
+        "ocean": "Caribbean",
+    },
+    "Honduras (Bay Islands)": {
+        "station_id": "honduras",
+        "lat": 16.32,
+        "lon": -86.55,
+        "ocean": "Caribbean",
+    },
+    "ABC Islands (Bonaire)": {
+        "station_id": "abc_islands",
+        "lat": 12.15,
+        "lon": -68.28,
+        "ocean": "Caribbean",
+    },
+    "GBR Central": {
+        "station_id": "gbr_central",
+        "lat": -18.00,
+        "lon": 147.00,
+        "ocean": "Indo-Pacific",
+    },
+}
+
+for name, cfg in SITES.items():
+    print(f"✓ {name:30} | station: {cfg['station_id']}")
+```
+
+```{python}
+#| label: fetch
+#| code-summary: "Fetch and parse NOAA CRW Virtual Station data"
+
+CRW_BASE_URL = "https://coralreefwatch.noaa.gov/product/vs/data/{station_id}.txt"
+
+def parse_crw_header(lines):
+    """Extract metadata from the CRW file header block."""
+    meta = {}
+    for i, line in enumerate(lines):
+        line_stripped = line.strip()
+        if line_stripped == "Averaged Maximum Monthly Mean:":
+            meta["mmm"] = float(lines[i + 1].strip())
+        if line_stripped == "Name:":
+            meta["name"] = lines[i + 1].strip()
+        if line_stripped.startswith("YYYY MM DD"):
+            meta["data_start_line"] = i
+            break
+    return meta
+
+def fetch_crw_station(site_name, station_id, force_refresh=False):
+    cache_path = os.path.join(CACHE_DIR, f"{station_id}.txt")
+
+    if not force_refresh and os.path.exists(cache_path):
+        print(f"  ✓ Loaded from cache: {site_name}")
+        with open(cache_path, "r") as f:
+            raw_lines = f.readlines()
+    else:
+        url = CRW_BASE_URL.format(station_id=station_id)
+        print(f"  ↓ Fetching live: {site_name}")
+        resp = requests.get(url, timeout=30)
+        resp.raise_for_status()
+        raw_lines = resp.text.splitlines(keepends=True)
+        with open(cache_path, "w") as f:
+            f.writelines(raw_lines)
+
+    meta = parse_crw_header(raw_lines)
+    data_start = meta["data_start_line"]
+
+    data_text = "".join(raw_lines[data_start:])
+    df = pd.read_csv(
+        StringIO(data_text),
+        sep=r"\s+",
+        na_values=["-999", "-9999", "-99.0000"],
+    )
+
+    df["date"] = pd.to_datetime(
+        df["YYYY"].astype(str) + "-" +
+        df["MM"].astype(str).str.zfill(2) + "-" +
+        df["DD"].astype(str).str.zfill(2)
+    )
+
+    df.rename(columns={
+        "SST@90th_HS":        "sst",
+        "SSTA@90th_HS":       "sst_anomaly",
+        "90th_HS>0":          "hotspot",
+        "DHW_from_90th_HS>1": "dhw",
+        "BAA_7day_max":       "alert",
+    }, inplace=True)
+
+    df["site"] = site_name
+    df["mmm"]  = meta.get("mmm", None)
+
+    keep = ["date", "sst", "sst_anomaly", "hotspot", "dhw", "alert", "site", "mmm"]
+    df = df[[c for c in keep if c in df.columns]]
+    df.sort_values("date", inplace=True)
+    df.reset_index(drop=True, inplace=True)
+
+    print(f"    ✓ {len(df):,} rows | "
+          f"{df['date'].min().date()} → {df['date'].max().date()} | "
+          f"MMM: {meta.get('mmm')}°C")
+    return df
+
+
+print("Fetching NOAA CRW Virtual Station data...\n")
+all_data = {}
+for site_name, cfg in SITES.items():
+    df = fetch_crw_station(site_name, cfg["station_id"])
+    all_data[site_name] = df
+
+print(f"\n✓ Done. {len(all_data)} sites loaded.")
+```
+
+### MMM Baseline Values
+
+The MMM values extracted from the file headers reveal the location-specific
+thermal baselines — before a single chart is plotted:
+
+```{python}
+#| label: mmm-table
+#| code-summary: "MMM baseline values per site"
+
+mmm_rows = [
+    {"Site": name, "MMM (°C)": df["mmm"].iloc[0]}
+    for name, df in all_data.items()
+]
+mmm_df = pd.DataFrame(mmm_rows).sort_values("MMM (°C)", ascending=False)
+mmm_df["MMM (°C)"] = mmm_df["MMM (°C)"].map("{:.2f}".format)
+print(mmm_df.to_string(index=False))
+```
+
+This is the MMM doing exactly what Skirving et al. (2020) described — capturing
+location-specific thermal tolerance rather than absolute temperature. A raw SST
+reading of 29°C represents no stress at all in the Florida Keys, but would already
+be pushing past the bleaching threshold on the GBR.
 
 ### DHW Time Series
 
@@ -313,9 +461,54 @@ from 2000 to present. Horizontal dashed lines mark the Alert Level 1 (4 °C-week
 and Alert Level 2 (8 °C-weeks) thresholds. Each panel also shows the site's MMM
 baseline temperature.
 
-![DHW time series for all five reef sites (2000–present). Dashed lines mark
-bleaching alert thresholds. MMM values shown in panel titles.
-Data: NOAA CRW Version 3.1.](figures/dhw_timeseries_all_sites.png){#fig-timeseries}
+```{python}
+#| label: fig-timeseries
+#| fig-cap: "DHW time series for all five reef sites (2000–present). Dashed lines mark bleaching alert thresholds. MMM values shown in panel titles. Data: NOAA CRW Version 3.1."
+#| code-summary: "DHW time series — all five sites"
+
+fig, axes = plt.subplots(
+    nrows=len(all_data), ncols=1,
+    figsize=(14, 3.2 * len(all_data)),
+    sharex=False
+)
+
+colors = ["#0077b6", "#00b4d8", "#48cae4", "#90e0ef", "#e07a5f"]
+
+for ax, (site, df), color in zip(axes, all_data.items(), colors):
+    mask = df["date"] >= "2000-01-01"
+    plot_df = df[mask].copy()
+
+    ax.fill_between(plot_df["date"], plot_df["dhw"],
+                    alpha=0.25, color=color)
+    ax.plot(plot_df["date"], plot_df["dhw"],
+            color=color, lw=1.0, label="DHW")
+
+    ax.axhline(DHW_WARNING, color="#f4a261", ls="--", lw=1.2,
+               label=f"Alert L1 ({DHW_WARNING} °C-wks)")
+    ax.axhline(DHW_SEVERE, color="#e63946", ls="--", lw=1.2,
+               label=f"Alert L2 ({DHW_SEVERE} °C-wks)")
+
+    ax.set_title(
+        f"{site}  |  MMM: {df['mmm'].iloc[0]:.2f}°C",
+        fontsize=11, fontweight="bold", loc="left"
+    )
+    ax.set_ylabel("DHW (°C-weeks)", fontsize=9)
+    ax.set_ylim(bottom=0)
+    ax.legend(fontsize=7, loc="upper left", framealpha=0.7)
+    ax.grid(axis="y", alpha=0.25)
+    ax.spines[["top", "right"]].set_visible(False)
+
+axes[-1].set_xlabel("Date", fontsize=10)
+fig.suptitle(
+    "NOAA CRW Degree Heating Weeks by Reef Site (2000–present)\n"
+    "Data: NOAA Coral Reef Watch Version 3.1",
+    fontsize=13, fontweight="bold", y=1.01
+)
+plt.tight_layout()
+plt.savefig(os.path.join(FIG_DIR, "dhw_timeseries_all_sites.png"),
+            dpi=150, bbox_inches="tight")
+plt.show()
+```
 
 Key observations:
 
@@ -380,9 +573,9 @@ Planned extensions include:
 |------|--------|
 | Language | Python 3.11 |
 | Environment | uv / venv |
-| Key packages | `pandas`, `numpy`, `matplotlib`, `requests`, `jupyter` |
+| Key packages | `pandas`, `numpy`, `matplotlib`, `requests` |
 | Data format | Plain text (NOAA CRW Virtual Station `.txt`) |
-| Notebook | Jupyter (`.ipynb`) |
+| Execution | Quarto (`freeze: true`) |
 | Portfolio framework | Quarto |
 | Version control | Git / GitHub |
 
@@ -412,10 +605,14 @@ specification are available on GitHub.
 
 ::: {.callout-tip}
 ## Reproducibility
-Clone the repository and run `jupyter notebook coral_bleaching_dhw_analysis.ipynb`
-to reproduce all figures. Data is fetched live from NOAA CRW on first run and
-cached locally in `data/raw/`. See `README.md` for environment setup.
+This page renders live from embedded Python — data is fetched from NOAA CRW,
+parsed, and plotted on every render unless frozen. Outputs are frozen and
+committed to the repository via `freeze: true`. To re-execute from scratch,
+delete `_freeze/projects/bleaching-risk-notebook/` from the portfolio site repo
+and re-render. The `uv` environment is fully specified in the
+[coral-bleaching-dhw](https://github.com/velezf/coral-bleaching-dhw)
+repository's `requirements.txt`.
 :::
 
-[View on GitHub](https://github.com/velezf/coral-bleaching-dhw){.btn .btn-outline-primary}
+[View source repo](https://github.com/velezf/coral-bleaching-dhw){.btn .btn-outline-primary}
 [NOAA Coral Reef Watch](https://coralreefwatch.noaa.gov/){.btn .btn-outline-secondary}
