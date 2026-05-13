@@ -3,6 +3,8 @@ name: Publish to GitHub Pages
 on:
   push:
     branches: [main]
+  schedule:
+    - cron: '0 6 * * *'
   workflow_dispatch:
 
 permissions:
@@ -28,6 +30,11 @@ jobs:
 
       - name: Install Python dependencies
         run: pip install jupyter nbformat pandas numpy matplotlib seaborn requests
+
+      - name: Register Jupyter kernel
+        run: |
+          pip install ipykernel
+          python -m ipykernel install --user --name el-nino-2026 --display-name "Python (el-nino-2026)"
 
       - name: Render Quarto site
         run: quarto render
