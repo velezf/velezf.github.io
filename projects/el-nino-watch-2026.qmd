@@ -1,25 +1,39 @@
 ---
 title: "2026 Super El Niño Watch: Live Thermal Stress Monitoring"
-subtitle: "Tracking coral bleaching risk across seven reef sites during the 2026 Super El Niño period"
+description: |
+  Live thermal stress monitoring across seven reef sites during the 2026
+  Super El Niño period, using NOAA Coral Reef Watch DHW data. Updated daily
+  via GitHub Actions cron at 06:00 UTC.
 author: "Frank Velez"
 date: today
 date-format: "MMMM D, YYYY — HH:mm UTC"
-categories: [coral reefs, NOAA CRW, DHW, El Niño, live monitoring]
+categories:
+  - Marine Science
+  - Remote Sensing
+  - Environmental Data Science
+  - Python
+  - Live Monitoring
+  - El Niño
 image: ../images/el-nino-watch-preview.png
-description: "Live thermal stress monitoring across seven reef sites during the 2026 Super El Niño period, using NOAA Coral Reef Watch DHW data. Updated daily."
-freeze: false
+toc: true
+toc-depth: 3
+toc-title: "On this page"
+number-sections: false
+code-fold: true
+code-summary: "Show code"
+fig-cap-location: bottom
+citation:
+  url: https://velezf.github.io/projects/el-nino-watch-2026
+bibliography: references.bib
 execute:
-  echo: fenced
+  freeze: false
   warning: false
   message: false
 jupyter: el-nino-2026
 format:
   html:
-    toc: true
-    toc-depth: 3
-    code-fold: true
-    code-tools: true
     theme: cosmo
+    code-tools: true
 ---
 
 ```{python}
@@ -948,5 +962,10 @@ portfolio site root. The environment is fully specified in
 [NOAA Coral Reef Watch](https://coralreefwatch.noaa.gov/){.btn .btn-outline-secondary}
 
 ***
+
+## References
+
+::: {#refs}
+:::
 
 *Page last rendered: `{python} fetch_stamp`. Data fetched live from NOAA CRW — values update with each site deployment. This page is part of a portfolio project at [velezf.github.io](https://velezf.github.io); it is not an official NOAA product.*
