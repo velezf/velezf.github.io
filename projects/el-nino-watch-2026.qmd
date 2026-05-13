@@ -920,5 +920,33 @@ Contact information is on the About page.
 - [NOAA CPC ENSO advisory](https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/index.shtml)
 
 ---
+## About This Project
+
+This project is part of a portfolio in marine environmental data science,
+developed to demonstrate reproducible analysis workflows applied to real-world
+reef conservation data. It is the second in a series — the first project
+covered historical bleaching risk analysis using the same NOAA CRW data
+source. The full code, data pipeline, and environment specification are
+available on GitHub.
+
+::: {.callout-tip}
+## Reproducibility
+
+This page renders live from embedded Python — data is fetched fresh from
+NOAA CRW on every render. Unlike the first project, this page uses
+`freeze: false`, meaning it re-executes on every deployment rather than
+serving cached outputs. It is triggered daily at 06:00 UTC via GitHub
+Actions cron. To run locally, clone the analysis repo, activate the
+`el-nino-2026` virtual environment, and run `quarto render` from the
+portfolio site root. The environment is fully specified in
+[el-nino-watch-2026](https://github.com/velezf/el-nino-watch-2026)'s
+`requirements.txt`.
+:::
+
+[View analysis repo](https://github.com/velezf/el-nino-watch-2026){.btn .btn-outline-primary}
+[First project: Historical bleaching analysis](bleaching-risk-notebook.html){.btn .btn-outline-secondary}
+[NOAA Coral Reef Watch](https://coralreefwatch.noaa.gov/){.btn .btn-outline-secondary}
+
+---
 
 *Page last rendered: `{python} fetch_stamp`. Data fetched live from NOAA CRW — values update with each site deployment. This page is part of a portfolio project at [velezf.github.io](https://velezf.github.io); it is not an official NOAA product.*
