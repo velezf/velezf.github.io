@@ -163,7 +163,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#study-sites" id="toc-study-sites" class="nav-link" data-scroll-target="#study-sites">Study sites</a></li>
   <li><a href="#a-note-on-the-data-pipeline" id="toc-a-note-on-the-data-pipeline" class="nav-link" data-scroll-target="#a-note-on-the-data-pipeline">A note on the data pipeline</a></li>
-  <li><a href="#quick-status-2026-05-13-1727-utc" id="toc-quick-status-2026-05-13-1727-utc" class="nav-link" data-scroll-target="#quick-status-2026-05-13-1727-utc">Quick status — 2026-05-13 17:27 UTC</a></li>
+  <li><a href="#quick-status-2026-05-13-1805-utc" id="toc-quick-status-2026-05-13-1805-utc" class="nav-link" data-scroll-target="#quick-status-2026-05-13-1805-utc">Quick status — 2026-05-13 18:05 UTC</a></li>
   <li><a href="#dhw-time-series" id="toc-dhw-time-series" class="nav-link" data-scroll-target="#dhw-time-series">2026 DHW time series</a></li>
   <li><a href="#latest-sst-anomaly-by-site" id="toc-latest-sst-anomaly-by-site" class="nav-link" data-scroll-target="#latest-sst-anomaly-by-site">Latest SST anomaly by site</a></li>
   <li><a href="#el-niño-progression-and-reef-thermal-stress" id="toc-el-niño-progression-and-reef-thermal-stress" class="nav-link" data-scroll-target="#el-niño-progression-and-reef-thermal-stress">El Niño progression and reef thermal stress</a></li>
@@ -221,7 +221,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<div id="078e8ec4" class="cell" data-execution_count="1">
+<div id="cdb86d2d" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
@@ -564,7 +564,7 @@ YYYY MM DD SST_MIN SST_MAX SST@90th_HS SSTA@90th_HS 90th_HS&gt;0 DHW_from_90th_H
 <p>This parser is carried over directly from the first project with two small changes: the cache now stores the raw <code>.txt</code> file rather than a parsed CSV (preserving the original header and MMM value across sessions), and the <code>sst_anomaly</code> column alias from the bleaching project is shortened to <code>sst_anom</code> here for consistency with the status table and plot code.</p>
 <p>Output directories are anchored to the project root rather than using bare relative paths, so the cache and figure outputs from this project stay isolated from the bleaching project even if both kernels are running simultaneously.</p>
 <hr>
-<div id="f20f0d1d" class="cell" data-execution_count="2">
+<div id="a964a34b" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
@@ -573,9 +573,9 @@ YYYY MM DD SST_MIN SST_MAX SST@90th_HS SSTA@90th_HS 90th_HS&gt;0 DHW_from_90th_H
 </details>
 </div>
 </section>
-<section id="quick-status-2026-05-13-1727-utc" class="level2">
-<h2 class="anchored" data-anchor-id="quick-status-2026-05-13-1727-utc">Quick status — 2026-05-13 17:27 UTC</h2>
-<div id="0365f46a" class="cell" data-execution_count="3">
+<section id="quick-status-2026-05-13-1805-utc" class="level2">
+<h2 class="anchored" data-anchor-id="quick-status-2026-05-13-1805-utc">Quick status — 2026-05-13 18:05 UTC</h2>
+<div id="ef1b5114" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
@@ -598,7 +598,7 @@ YYYY MM DD SST_MIN SST_MAX SST@90th_HS SSTA@90th_HS 90th_HS&gt;0 DHW_from_90th_H
 <span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
-<div id="8e0d9b15" class="cell" data-execution_count="4">
+<div id="2ddbbe21" class="cell" data-execution_count="4">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
@@ -658,13 +658,13 @@ YYYY MM DD SST_MIN SST_MAX SST@90th_HS SSTA@90th_HS 90th_HS&gt;0 DHW_from_90th_H
 </details>
 <div class="cell-output cell-output-display" data-execution_count="4">
 <style type="text/css">
-#T_7a71a_row0_col0, #T_7a71a_row1_col0, #T_7a71a_row2_col0, #T_7a71a_row3_col0, #T_7a71a_row4_col0, #T_7a71a_row5_col0, #T_7a71a_row6_col0 {
+#T_545e6_row0_col0, #T_545e6_row1_col0, #T_545e6_row2_col0, #T_545e6_row3_col0, #T_545e6_row4_col0, #T_545e6_row5_col0, #T_545e6_row6_col0 {
   font-weight: bold;
 }
-#T_7a71a_row0_col1, #T_7a71a_row0_col2, #T_7a71a_row0_col3, #T_7a71a_row0_col4, #T_7a71a_row0_col5, #T_7a71a_row1_col1, #T_7a71a_row1_col2, #T_7a71a_row1_col3, #T_7a71a_row1_col4, #T_7a71a_row1_col5, #T_7a71a_row2_col1, #T_7a71a_row2_col2, #T_7a71a_row2_col3, #T_7a71a_row2_col4, #T_7a71a_row2_col5, #T_7a71a_row3_col1, #T_7a71a_row3_col2, #T_7a71a_row3_col3, #T_7a71a_row3_col4, #T_7a71a_row3_col5, #T_7a71a_row4_col1, #T_7a71a_row4_col2, #T_7a71a_row4_col3, #T_7a71a_row4_col4, #T_7a71a_row4_col5, #T_7a71a_row5_col1, #T_7a71a_row5_col2, #T_7a71a_row5_col3, #T_7a71a_row5_col4, #T_7a71a_row5_col5, #T_7a71a_row6_col1, #T_7a71a_row6_col2, #T_7a71a_row6_col3, #T_7a71a_row6_col4, #T_7a71a_row6_col5 {
+#T_545e6_row0_col1, #T_545e6_row0_col2, #T_545e6_row0_col3, #T_545e6_row0_col4, #T_545e6_row0_col5, #T_545e6_row1_col1, #T_545e6_row1_col2, #T_545e6_row1_col3, #T_545e6_row1_col4, #T_545e6_row1_col5, #T_545e6_row2_col1, #T_545e6_row2_col2, #T_545e6_row2_col3, #T_545e6_row2_col4, #T_545e6_row2_col5, #T_545e6_row3_col1, #T_545e6_row3_col2, #T_545e6_row3_col3, #T_545e6_row3_col4, #T_545e6_row3_col5, #T_545e6_row4_col1, #T_545e6_row4_col2, #T_545e6_row4_col3, #T_545e6_row4_col4, #T_545e6_row4_col5, #T_545e6_row5_col1, #T_545e6_row5_col2, #T_545e6_row5_col3, #T_545e6_row5_col4, #T_545e6_row5_col5, #T_545e6_row6_col1, #T_545e6_row6_col2, #T_545e6_row6_col3, #T_545e6_row6_col4, #T_545e6_row6_col5 {
   text-align: center;
 }
-#T_7a71a_row0_col6, #T_7a71a_row1_col6, #T_7a71a_row2_col6, #T_7a71a_row3_col6, #T_7a71a_row4_col6, #T_7a71a_row5_col6, #T_7a71a_row6_col6 {
+#T_545e6_row0_col6, #T_545e6_row1_col6, #T_545e6_row2_col6, #T_545e6_row3_col6, #T_545e6_row4_col6, #T_545e6_row5_col6, #T_545e6_row6_col6 {
   background-color: #FFF9C4;
   color: #F57F17;
   text-align: center;
@@ -672,81 +672,81 @@ YYYY MM DD SST_MIN SST_MAX SST@90th_HS SSTA@90th_HS 90th_HS&gt;0 DHW_from_90th_H
 }
 </style>
 
-<table id="T_7a71a" class="caption-top table table-sm table-striped small">
+<table id="T_545e6" class="caption-top table table-sm table-striped small">
 <thead>
 <tr class="header">
-<th id="T_7a71a_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">Site</th>
-<th id="T_7a71a_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">Ocean basin</th>
-<th id="T_7a71a_level0_col2" class="col_heading level0 col2" data-quarto-table-cell-role="th">Latest date</th>
-<th id="T_7a71a_level0_col3" class="col_heading level0 col3" data-quarto-table-cell-role="th">SST (°C)</th>
-<th id="T_7a71a_level0_col4" class="col_heading level0 col4" data-quarto-table-cell-role="th">SST anomaly (°C)</th>
-<th id="T_7a71a_level0_col5" class="col_heading level0 col5" data-quarto-table-cell-role="th">DHW (°C-wk)</th>
-<th id="T_7a71a_level0_col6" class="col_heading level0 col6" data-quarto-table-cell-role="th">Alert level</th>
+<th id="T_545e6_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">Site</th>
+<th id="T_545e6_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">Ocean basin</th>
+<th id="T_545e6_level0_col2" class="col_heading level0 col2" data-quarto-table-cell-role="th">Latest date</th>
+<th id="T_545e6_level0_col3" class="col_heading level0 col3" data-quarto-table-cell-role="th">SST (°C)</th>
+<th id="T_545e6_level0_col4" class="col_heading level0 col4" data-quarto-table-cell-role="th">SST anomaly (°C)</th>
+<th id="T_545e6_level0_col5" class="col_heading level0 col5" data-quarto-table-cell-role="th">DHW (°C-wk)</th>
+<th id="T_545e6_level0_col6" class="col_heading level0 col6" data-quarto-table-cell-role="th">Alert level</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td id="T_7a71a_row0_col0" class="data row0 col0">Florida Keys</td>
-<td id="T_7a71a_row0_col1" class="data row0 col1">Caribbean/Atlantic</td>
-<td id="T_7a71a_row0_col2" class="data row0 col2">2026-05-11</td>
-<td id="T_7a71a_row0_col3" class="data row0 col3">29.54</td>
-<td id="T_7a71a_row0_col4" class="data row0 col4">+3.11</td>
-<td id="T_7a71a_row0_col5" class="data row0 col5">0.0</td>
-<td id="T_7a71a_row0_col6" class="data row0 col6">Bleaching Watch</td>
+<td id="T_545e6_row0_col0" class="data row0 col0">Florida Keys</td>
+<td id="T_545e6_row0_col1" class="data row0 col1">Caribbean/Atlantic</td>
+<td id="T_545e6_row0_col2" class="data row0 col2">2026-05-11</td>
+<td id="T_545e6_row0_col3" class="data row0 col3">29.54</td>
+<td id="T_545e6_row0_col4" class="data row0 col4">+3.11</td>
+<td id="T_545e6_row0_col5" class="data row0 col5">0.0</td>
+<td id="T_545e6_row0_col6" class="data row0 col6">Bleaching Watch</td>
 </tr>
 <tr class="even">
-<td id="T_7a71a_row1_col0" class="data row1 col0">Cayman Islands</td>
-<td id="T_7a71a_row1_col1" class="data row1 col1">Caribbean</td>
-<td id="T_7a71a_row1_col2" class="data row1 col2">2026-05-11</td>
-<td id="T_7a71a_row1_col3" class="data row1 col3">28.81</td>
-<td id="T_7a71a_row1_col4" class="data row1 col4">+1.20</td>
-<td id="T_7a71a_row1_col5" class="data row1 col5">0.0</td>
-<td id="T_7a71a_row1_col6" class="data row1 col6">Bleaching Watch</td>
+<td id="T_545e6_row1_col0" class="data row1 col0">Cayman Islands</td>
+<td id="T_545e6_row1_col1" class="data row1 col1">Caribbean</td>
+<td id="T_545e6_row1_col2" class="data row1 col2">2026-05-11</td>
+<td id="T_545e6_row1_col3" class="data row1 col3">28.81</td>
+<td id="T_545e6_row1_col4" class="data row1 col4">+1.20</td>
+<td id="T_545e6_row1_col5" class="data row1 col5">0.0</td>
+<td id="T_545e6_row1_col6" class="data row1 col6">Bleaching Watch</td>
 </tr>
 <tr class="odd">
-<td id="T_7a71a_row2_col0" class="data row2 col0">Honduras (Bay Islands)</td>
-<td id="T_7a71a_row2_col1" class="data row2 col1">Caribbean</td>
-<td id="T_7a71a_row2_col2" class="data row2 col2">2026-05-11</td>
-<td id="T_7a71a_row2_col3" class="data row2 col3">29.27</td>
-<td id="T_7a71a_row2_col4" class="data row2 col4">+1.42</td>
-<td id="T_7a71a_row2_col5" class="data row2 col5">0.0</td>
-<td id="T_7a71a_row2_col6" class="data row2 col6">Bleaching Watch</td>
+<td id="T_545e6_row2_col0" class="data row2 col0">Honduras (Bay Islands)</td>
+<td id="T_545e6_row2_col1" class="data row2 col1">Caribbean</td>
+<td id="T_545e6_row2_col2" class="data row2 col2">2026-05-11</td>
+<td id="T_545e6_row2_col3" class="data row2 col3">29.27</td>
+<td id="T_545e6_row2_col4" class="data row2 col4">+1.42</td>
+<td id="T_545e6_row2_col5" class="data row2 col5">0.0</td>
+<td id="T_545e6_row2_col6" class="data row2 col6">Bleaching Watch</td>
 </tr>
 <tr class="even">
-<td id="T_7a71a_row3_col0" class="data row3 col0">ABC Islands (Bonaire)</td>
-<td id="T_7a71a_row3_col1" class="data row3 col1">Caribbean</td>
-<td id="T_7a71a_row3_col2" class="data row3 col2">2026-05-11</td>
-<td id="T_7a71a_row3_col3" class="data row3 col3">27.45</td>
-<td id="T_7a71a_row3_col4" class="data row3 col4">+1.00</td>
-<td id="T_7a71a_row3_col5" class="data row3 col5">0.0</td>
-<td id="T_7a71a_row3_col6" class="data row3 col6">Bleaching Watch</td>
+<td id="T_545e6_row3_col0" class="data row3 col0">ABC Islands (Bonaire)</td>
+<td id="T_545e6_row3_col1" class="data row3 col1">Caribbean</td>
+<td id="T_545e6_row3_col2" class="data row3 col2">2026-05-11</td>
+<td id="T_545e6_row3_col3" class="data row3 col3">27.45</td>
+<td id="T_545e6_row3_col4" class="data row3 col4">+1.00</td>
+<td id="T_545e6_row3_col5" class="data row3 col5">0.0</td>
+<td id="T_545e6_row3_col6" class="data row3 col6">Bleaching Watch</td>
 </tr>
 <tr class="odd">
-<td id="T_7a71a_row4_col0" class="data row4 col0">Great Barrier Reef (Central)</td>
-<td id="T_7a71a_row4_col1" class="data row4 col1">Indo-Pacific</td>
-<td id="T_7a71a_row4_col2" class="data row4 col2">2026-05-11</td>
-<td id="T_7a71a_row4_col3" class="data row4 col3">25.88</td>
-<td id="T_7a71a_row4_col4" class="data row4 col4">+0.56</td>
-<td id="T_7a71a_row4_col5" class="data row4 col5">1.1</td>
-<td id="T_7a71a_row4_col6" class="data row4 col6">Bleaching Watch</td>
+<td id="T_545e6_row4_col0" class="data row4 col0">Great Barrier Reef (Central)</td>
+<td id="T_545e6_row4_col1" class="data row4 col1">Indo-Pacific</td>
+<td id="T_545e6_row4_col2" class="data row4 col2">2026-05-11</td>
+<td id="T_545e6_row4_col3" class="data row4 col3">25.88</td>
+<td id="T_545e6_row4_col4" class="data row4 col4">+0.56</td>
+<td id="T_545e6_row4_col5" class="data row4 col5">1.1</td>
+<td id="T_545e6_row4_col6" class="data row4 col6">Bleaching Watch</td>
 </tr>
 <tr class="even">
-<td id="T_7a71a_row5_col0" class="data row5 col0">Palau</td>
-<td id="T_7a71a_row5_col1" class="data row5 col1">Indo-Pacific</td>
-<td id="T_7a71a_row5_col2" class="data row5 col2">2026-05-11</td>
-<td id="T_7a71a_row5_col3" class="data row5 col3">30.12</td>
-<td id="T_7a71a_row5_col4" class="data row5 col4">+0.97</td>
-<td id="T_7a71a_row5_col5" class="data row5 col5">0.0</td>
-<td id="T_7a71a_row5_col6" class="data row5 col6">Bleaching Watch</td>
+<td id="T_545e6_row5_col0" class="data row5 col0">Palau</td>
+<td id="T_545e6_row5_col1" class="data row5 col1">Indo-Pacific</td>
+<td id="T_545e6_row5_col2" class="data row5 col2">2026-05-11</td>
+<td id="T_545e6_row5_col3" class="data row5 col3">30.12</td>
+<td id="T_545e6_row5_col4" class="data row5 col4">+0.97</td>
+<td id="T_545e6_row5_col5" class="data row5 col5">0.0</td>
+<td id="T_545e6_row5_col6" class="data row5 col6">Bleaching Watch</td>
 </tr>
 <tr class="odd">
-<td id="T_7a71a_row6_col0" class="data row6 col0">West Papua (Raja Ampat)</td>
-<td id="T_7a71a_row6_col1" class="data row6 col1">Indo-Pacific</td>
-<td id="T_7a71a_row6_col2" class="data row6 col2">2026-05-11</td>
-<td id="T_7a71a_row6_col3" class="data row6 col3">30.48</td>
-<td id="T_7a71a_row6_col4" class="data row6 col4">+1.42</td>
-<td id="T_7a71a_row6_col5" class="data row6 col5">1.1</td>
-<td id="T_7a71a_row6_col6" class="data row6 col6">Bleaching Watch</td>
+<td id="T_545e6_row6_col0" class="data row6 col0">West Papua (Raja Ampat)</td>
+<td id="T_545e6_row6_col1" class="data row6 col1">Indo-Pacific</td>
+<td id="T_545e6_row6_col2" class="data row6 col2">2026-05-11</td>
+<td id="T_545e6_row6_col3" class="data row6 col3">30.48</td>
+<td id="T_545e6_row6_col4" class="data row6 col4">+1.42</td>
+<td id="T_545e6_row6_col5" class="data row6 col5">1.1</td>
+<td id="T_545e6_row6_col6" class="data row6 col6">Bleaching Watch</td>
 </tr>
 </tbody>
 </table>
@@ -757,7 +757,7 @@ YYYY MM DD SST_MIN SST_MAX SST@90th_HS SSTA@90th_HS 90th_HS&gt;0 DHW_from_90th_H
 </section>
 <section id="dhw-time-series" class="level2">
 <h2 class="anchored" data-anchor-id="dhw-time-series">2026 DHW time series</h2>
-<div id="a3fe8a83" class="cell" data-execution_count="5">
+<div id="57bd4fae" class="cell" data-execution_count="5">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
@@ -845,7 +845,7 @@ YYYY MM DD SST_MIN SST_MAX SST@90th_HS SSTA@90th_HS 90th_HS&gt;0 DHW_from_90th_H
 </section>
 <section id="latest-sst-anomaly-by-site" class="level2">
 <h2 class="anchored" data-anchor-id="latest-sst-anomaly-by-site">Latest SST anomaly by site</h2>
-<div id="5f631173" class="cell" data-execution_count="6">
+<div id="f8349f9c" class="cell" data-execution_count="6">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
@@ -873,33 +873,28 @@ YYYY MM DD SST_MIN SST_MAX SST@90th_HS SSTA@90th_HS 90th_HS&gt;0 DHW_from_90th_H
 <span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>    bars <span class="op">=</span> ax.barh(latest_df[<span class="st">"site"</span>], latest_df[<span class="st">"sst_anom"</span>],</span>
 <span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>                   color<span class="op">=</span>colors, edgecolor<span class="op">=</span><span class="st">"white"</span>, linewidth<span class="op">=</span><span class="fl">0.5</span>)</span>
 <span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a>    ax.axvline(<span class="dv">0</span>, color<span class="op">=</span><span class="st">"black"</span>, linewidth<span class="op">=</span><span class="fl">0.8</span>, linestyle<span class="op">=</span><span class="st">"-"</span>)</span>
-<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>    ax.axvline(<span class="dv">1</span>, color<span class="op">=</span><span class="st">"#FF7043"</span>, linewidth<span class="op">=</span><span class="fl">0.8</span>, linestyle<span class="op">=</span><span class="st">"--"</span>,</span>
-<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>               label<span class="op">=</span><span class="st">"Bleaching threshold (+1°C above MMM)"</span>)</span>
-<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> bar, val <span class="kw">in</span> <span class="bu">zip</span>(bars, latest_df[<span class="st">"sst_anom"</span>]):</span>
-<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a>        offset <span class="op">=</span> <span class="fl">0.03</span> <span class="cf">if</span> val <span class="op">&gt;=</span> <span class="dv">0</span> <span class="cf">else</span> <span class="op">-</span><span class="fl">0.03</span></span>
-<span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a>        ha <span class="op">=</span> <span class="st">"left"</span> <span class="cf">if</span> val <span class="op">&gt;=</span> <span class="dv">0</span> <span class="cf">else</span> <span class="st">"right"</span></span>
-<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a>        ax.text(val <span class="op">+</span> offset, bar.get_y() <span class="op">+</span> bar.get_height() <span class="op">/</span> <span class="dv">2</span>,</span>
-<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a>                <span class="ss">f"</span><span class="sc">{</span>val<span class="sc">:+.2f}</span><span class="ss">°C"</span>, va<span class="op">=</span><span class="st">"center"</span>, ha<span class="op">=</span>ha, fontsize<span class="op">=</span><span class="fl">8.5</span>)</span>
-<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a>    ax.set_xlabel(<span class="st">"SST Anomaly (°C)"</span>, fontsize<span class="op">=</span><span class="dv">10</span>)</span>
-<span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a>    ax.set_title(<span class="ss">f"Latest SST Anomaly by Site — </span><span class="sc">{</span>fetch_stamp<span class="sc">}</span><span class="ch">\n</span><span class="ss">"</span></span>
-<span id="cb7-38"><a href="#cb7-38" aria-hidden="true" tabindex="-1"></a>                 <span class="ss">f"NOAA Coral Reef Watch v3.1"</span>,</span>
-<span id="cb7-39"><a href="#cb7-39" aria-hidden="true" tabindex="-1"></a>                 fontsize<span class="op">=</span><span class="dv">11</span>)</span>
-<span id="cb7-40"><a href="#cb7-40" aria-hidden="true" tabindex="-1"></a>    ax.legend(fontsize<span class="op">=</span><span class="dv">9</span>, loc<span class="op">=</span><span class="st">"lower right"</span>)</span>
-<span id="cb7-41"><a href="#cb7-41" aria-hidden="true" tabindex="-1"></a>    ax.grid(axis<span class="op">=</span><span class="st">"x"</span>, linestyle<span class="op">=</span><span class="st">":"</span>, alpha<span class="op">=</span><span class="fl">0.4</span>)</span>
-<span id="cb7-42"><a href="#cb7-42" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-43"><a href="#cb7-43" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> label <span class="kw">in</span> ax.get_yticklabels():</span>
-<span id="cb7-44"><a href="#cb7-44" aria-hidden="true" tabindex="-1"></a>        name <span class="op">=</span> label.get_text()</span>
-<span id="cb7-45"><a href="#cb7-45" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> name <span class="kw">in</span> STATIONS:</span>
-<span id="cb7-46"><a href="#cb7-46" aria-hidden="true" tabindex="-1"></a>            ocean <span class="op">=</span> STATIONS[name][<span class="st">"ocean"</span>]</span>
-<span id="cb7-47"><a href="#cb7-47" aria-hidden="true" tabindex="-1"></a>            label.set_color(<span class="st">"#1B5E20"</span> <span class="cf">if</span> <span class="st">"Indo"</span> <span class="kw">in</span> ocean <span class="cf">else</span> <span class="st">"#0D47A1"</span>)</span>
-<span id="cb7-48"><a href="#cb7-48" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-49"><a href="#cb7-49" aria-hidden="true" tabindex="-1"></a>    plt.tight_layout()</span>
-<span id="cb7-50"><a href="#cb7-50" aria-hidden="true" tabindex="-1"></a>    plt.savefig(OUTPUT_DIR <span class="op">/</span> <span class="st">"sst_anom_bar_2026.png"</span>, dpi<span class="op">=</span><span class="dv">150</span>, bbox_inches<span class="op">=</span><span class="st">"tight"</span>)</span>
-<span id="cb7-51"><a href="#cb7-51" aria-hidden="true" tabindex="-1"></a>    plt.show()</span>
-<span id="cb7-52"><a href="#cb7-52" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> bar, val <span class="kw">in</span> <span class="bu">zip</span>(bars, latest_df[<span class="st">"sst_anom"</span>]):</span>
+<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>        offset <span class="op">=</span> <span class="fl">0.03</span> <span class="cf">if</span> val <span class="op">&gt;=</span> <span class="dv">0</span> <span class="cf">else</span> <span class="op">-</span><span class="fl">0.03</span></span>
+<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>        ha <span class="op">=</span> <span class="st">"left"</span> <span class="cf">if</span> val <span class="op">&gt;=</span> <span class="dv">0</span> <span class="cf">else</span> <span class="st">"right"</span></span>
+<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a>        ax.text(val <span class="op">+</span> offset, bar.get_y() <span class="op">+</span> bar.get_height() <span class="op">/</span> <span class="dv">2</span>,</span>
+<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a>                <span class="ss">f"</span><span class="sc">{</span>val<span class="sc">:+.2f}</span><span class="ss">°C"</span>, va<span class="op">=</span><span class="st">"center"</span>, ha<span class="op">=</span>ha, fontsize<span class="op">=</span><span class="fl">8.5</span>)</span>
+<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a>    ax.set_xlabel(<span class="st">"SST Anomaly (°C)"</span>, fontsize<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a>    ax.set_title(<span class="ss">f"Latest SST Anomaly by Site — </span><span class="sc">{</span>fetch_stamp<span class="sc">}</span><span class="ch">\n</span><span class="ss">"</span></span>
+<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a>                 <span class="ss">f"NOAA Coral Reef Watch v3.1"</span>,</span>
+<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a>                 fontsize<span class="op">=</span><span class="dv">11</span>)</span>
+<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a>    ax.grid(axis<span class="op">=</span><span class="st">"x"</span>, linestyle<span class="op">=</span><span class="st">":"</span>, alpha<span class="op">=</span><span class="fl">0.4</span>)</span>
+<span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-38"><a href="#cb7-38" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> label <span class="kw">in</span> ax.get_yticklabels():</span>
+<span id="cb7-39"><a href="#cb7-39" aria-hidden="true" tabindex="-1"></a>        name <span class="op">=</span> label.get_text()</span>
+<span id="cb7-40"><a href="#cb7-40" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> name <span class="kw">in</span> STATIONS:</span>
+<span id="cb7-41"><a href="#cb7-41" aria-hidden="true" tabindex="-1"></a>            ocean <span class="op">=</span> STATIONS[name][<span class="st">"ocean"</span>]</span>
+<span id="cb7-42"><a href="#cb7-42" aria-hidden="true" tabindex="-1"></a>            label.set_color(<span class="st">"#1B5E20"</span> <span class="cf">if</span> <span class="st">"Indo"</span> <span class="kw">in</span> ocean <span class="cf">else</span> <span class="st">"#0D47A1"</span>)</span>
+<span id="cb7-43"><a href="#cb7-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-44"><a href="#cb7-44" aria-hidden="true" tabindex="-1"></a>    plt.tight_layout()</span>
+<span id="cb7-45"><a href="#cb7-45" aria-hidden="true" tabindex="-1"></a>    plt.savefig(OUTPUT_DIR <span class="op">/</span> <span class="st">"sst_anom_bar_2026.png"</span>, dpi<span class="op">=</span><span class="dv">150</span>, bbox_inches<span class="op">=</span><span class="st">"tight"</span>)</span>
+<span id="cb7-46"><a href="#cb7-46" aria-hidden="true" tabindex="-1"></a>    plt.show()</span>
+<span id="cb7-47"><a href="#cb7-47" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-display">
 <div>
@@ -929,7 +924,7 @@ YYYY MM DD SST_MIN SST_MAX SST@90th_HS SSTA@90th_HS 90th_HS&gt;0 DHW_from_90th_H
 <p>This came up at dinner. She’s right. This is a monitoring dashboard, not a causal study, and the chart below should be read as a visual sanity check against a known climate driver — not as evidence of a causal relationship. A rigorous treatment is on the list for a future version of this project.</p>
 <p>One more honest note: I started this project because I dive these reefs and care about what happens to them. The Florida Keys anomaly, West Papua already carrying DHW, all seven sites at Bleaching Watch before summer even starts in the Northern Hemisphere — I know what that pattern looked like in 2023 and 2016. I’m prepared for some serious heartbreak this summer. I hope I’m wrong.</p>
 <p>One data note worth flagging: the ONI is published with a lag of one to two months by NOAA’s Climate Prediction Center. The most recent bar in the chart below may not reflect current conditions. For the most current ENSO status, NOAA CPC publishes weekly updates at <a href="https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/index.shtml" class="uri">https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/index.shtml</a>. This lag also explains why the ONI bars may end earlier than the DHW lines — the CRW v3.1 Virtual Station data is updated daily, making it considerably more current than the ONI’s monthly publication schedule.</p>
-<div id="c6099b73" class="cell" data-execution_count="7">
+<div id="2df1f844" class="cell" data-execution_count="7">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
@@ -1093,7 +1088,7 @@ YYYY MM DD SST_MIN SST_MAX SST@90th_HS SSTA@90th_HS 90th_HS&gt;0 DHW_from_90th_H
 <li><a href="https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/index.shtml">NOAA CPC ENSO advisory</a></li>
 </ul>
 <hr>
-<p><em>Page last rendered: 2026-05-13 17:27 UTC. Data fetched live from NOAA CRW — values update with each site deployment. This page is part of a portfolio project at <a href="https://velezf.github.io">velezf.github.io</a>; it is not an official NOAA product.</em></p>
+<p><em>Page last rendered: 2026-05-13 18:05 UTC. Data fetched live from NOAA CRW — values update with each site deployment. This page is part of a portfolio project at <a href="https://velezf.github.io">velezf.github.io</a>; it is not an official NOAA product.</em></p>
 
 
 <!-- -->
@@ -2103,384 +2098,379 @@ YYYY MM DD SST_MIN SST_MAX SST@90th_HS SSTA@90th_HS 90th_HS&gt;0 DHW_from_90th_H
 <span id="cb9-561"><a href="#cb9-561" aria-hidden="true" tabindex="-1"></a>    bars <span class="op">=</span> ax.barh(latest_df[<span class="st">"site"</span>], latest_df[<span class="st">"sst_anom"</span>],</span>
 <span id="cb9-562"><a href="#cb9-562" aria-hidden="true" tabindex="-1"></a>                   color<span class="op">=</span>colors, edgecolor<span class="op">=</span><span class="st">"white"</span>, linewidth<span class="op">=</span><span class="fl">0.5</span>)</span>
 <span id="cb9-563"><a href="#cb9-563" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-564"><a href="#cb9-564" aria-hidden="true" tabindex="-1"></a>    ax.axvline(<span class="dv">0</span>, color<span class="op">=</span><span class="st">"black"</span>, linewidth<span class="op">=</span><span class="fl">0.8</span>, linestyle<span class="op">=</span><span class="st">"-"</span>)</span>
-<span id="cb9-565"><a href="#cb9-565" aria-hidden="true" tabindex="-1"></a>    ax.axvline(<span class="dv">1</span>, color<span class="op">=</span><span class="st">"#FF7043"</span>, linewidth<span class="op">=</span><span class="fl">0.8</span>, linestyle<span class="op">=</span><span class="st">"--"</span>,</span>
-<span id="cb9-566"><a href="#cb9-566" aria-hidden="true" tabindex="-1"></a>               label<span class="op">=</span><span class="st">"Bleaching threshold (+1°C above MMM)"</span>)</span>
-<span id="cb9-567"><a href="#cb9-567" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-568"><a href="#cb9-568" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> bar, val <span class="kw">in</span> <span class="bu">zip</span>(bars, latest_df[<span class="st">"sst_anom"</span>]):</span>
-<span id="cb9-569"><a href="#cb9-569" aria-hidden="true" tabindex="-1"></a>        offset <span class="op">=</span> <span class="fl">0.03</span> <span class="cf">if</span> val <span class="op">&gt;=</span> <span class="dv">0</span> <span class="cf">else</span> <span class="op">-</span><span class="fl">0.03</span></span>
-<span id="cb9-570"><a href="#cb9-570" aria-hidden="true" tabindex="-1"></a>        ha <span class="op">=</span> <span class="st">"left"</span> <span class="cf">if</span> val <span class="op">&gt;=</span> <span class="dv">0</span> <span class="cf">else</span> <span class="st">"right"</span></span>
-<span id="cb9-571"><a href="#cb9-571" aria-hidden="true" tabindex="-1"></a>        ax.text(val <span class="op">+</span> offset, bar.get_y() <span class="op">+</span> bar.get_height() <span class="op">/</span> <span class="dv">2</span>,</span>
-<span id="cb9-572"><a href="#cb9-572" aria-hidden="true" tabindex="-1"></a>                <span class="ss">f"</span><span class="sc">{</span>val<span class="sc">:+.2f}</span><span class="ss">°C"</span>, va<span class="op">=</span><span class="st">"center"</span>, ha<span class="op">=</span>ha, fontsize<span class="op">=</span><span class="fl">8.5</span>)</span>
-<span id="cb9-573"><a href="#cb9-573" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-574"><a href="#cb9-574" aria-hidden="true" tabindex="-1"></a>    ax.set_xlabel(<span class="st">"SST Anomaly (°C)"</span>, fontsize<span class="op">=</span><span class="dv">10</span>)</span>
-<span id="cb9-575"><a href="#cb9-575" aria-hidden="true" tabindex="-1"></a>    ax.set_title(<span class="ss">f"Latest SST Anomaly by Site — </span><span class="sc">{</span>fetch_stamp<span class="sc">}</span><span class="ch">\n</span><span class="ss">"</span></span>
-<span id="cb9-576"><a href="#cb9-576" aria-hidden="true" tabindex="-1"></a>                 <span class="ss">f"NOAA Coral Reef Watch v3.1"</span>,</span>
-<span id="cb9-577"><a href="#cb9-577" aria-hidden="true" tabindex="-1"></a>                 fontsize<span class="op">=</span><span class="dv">11</span>)</span>
-<span id="cb9-578"><a href="#cb9-578" aria-hidden="true" tabindex="-1"></a>    ax.legend(fontsize<span class="op">=</span><span class="dv">9</span>, loc<span class="op">=</span><span class="st">"lower right"</span>)</span>
-<span id="cb9-579"><a href="#cb9-579" aria-hidden="true" tabindex="-1"></a>    ax.grid(axis<span class="op">=</span><span class="st">"x"</span>, linestyle<span class="op">=</span><span class="st">":"</span>, alpha<span class="op">=</span><span class="fl">0.4</span>)</span>
-<span id="cb9-580"><a href="#cb9-580" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-581"><a href="#cb9-581" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> label <span class="kw">in</span> ax.get_yticklabels():</span>
-<span id="cb9-582"><a href="#cb9-582" aria-hidden="true" tabindex="-1"></a>        name <span class="op">=</span> label.get_text()</span>
-<span id="cb9-583"><a href="#cb9-583" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> name <span class="kw">in</span> STATIONS:</span>
-<span id="cb9-584"><a href="#cb9-584" aria-hidden="true" tabindex="-1"></a>            ocean <span class="op">=</span> STATIONS[name][<span class="st">"ocean"</span>]</span>
-<span id="cb9-585"><a href="#cb9-585" aria-hidden="true" tabindex="-1"></a>            label.set_color(<span class="st">"#1B5E20"</span> <span class="cf">if</span> <span class="st">"Indo"</span> <span class="kw">in</span> ocean <span class="cf">else</span> <span class="st">"#0D47A1"</span>)</span>
+<span id="cb9-564"><a href="#cb9-564" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> bar, val <span class="kw">in</span> <span class="bu">zip</span>(bars, latest_df[<span class="st">"sst_anom"</span>]):</span>
+<span id="cb9-565"><a href="#cb9-565" aria-hidden="true" tabindex="-1"></a>        offset <span class="op">=</span> <span class="fl">0.03</span> <span class="cf">if</span> val <span class="op">&gt;=</span> <span class="dv">0</span> <span class="cf">else</span> <span class="op">-</span><span class="fl">0.03</span></span>
+<span id="cb9-566"><a href="#cb9-566" aria-hidden="true" tabindex="-1"></a>        ha <span class="op">=</span> <span class="st">"left"</span> <span class="cf">if</span> val <span class="op">&gt;=</span> <span class="dv">0</span> <span class="cf">else</span> <span class="st">"right"</span></span>
+<span id="cb9-567"><a href="#cb9-567" aria-hidden="true" tabindex="-1"></a>        ax.text(val <span class="op">+</span> offset, bar.get_y() <span class="op">+</span> bar.get_height() <span class="op">/</span> <span class="dv">2</span>,</span>
+<span id="cb9-568"><a href="#cb9-568" aria-hidden="true" tabindex="-1"></a>                <span class="ss">f"</span><span class="sc">{</span>val<span class="sc">:+.2f}</span><span class="ss">°C"</span>, va<span class="op">=</span><span class="st">"center"</span>, ha<span class="op">=</span>ha, fontsize<span class="op">=</span><span class="fl">8.5</span>)</span>
+<span id="cb9-569"><a href="#cb9-569" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-570"><a href="#cb9-570" aria-hidden="true" tabindex="-1"></a>    ax.set_xlabel(<span class="st">"SST Anomaly (°C)"</span>, fontsize<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb9-571"><a href="#cb9-571" aria-hidden="true" tabindex="-1"></a>    ax.set_title(<span class="ss">f"Latest SST Anomaly by Site — </span><span class="sc">{</span>fetch_stamp<span class="sc">}</span><span class="ch">\n</span><span class="ss">"</span></span>
+<span id="cb9-572"><a href="#cb9-572" aria-hidden="true" tabindex="-1"></a>                 <span class="ss">f"NOAA Coral Reef Watch v3.1"</span>,</span>
+<span id="cb9-573"><a href="#cb9-573" aria-hidden="true" tabindex="-1"></a>                 fontsize<span class="op">=</span><span class="dv">11</span>)</span>
+<span id="cb9-574"><a href="#cb9-574" aria-hidden="true" tabindex="-1"></a>    ax.grid(axis<span class="op">=</span><span class="st">"x"</span>, linestyle<span class="op">=</span><span class="st">":"</span>, alpha<span class="op">=</span><span class="fl">0.4</span>)</span>
+<span id="cb9-575"><a href="#cb9-575" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-576"><a href="#cb9-576" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> label <span class="kw">in</span> ax.get_yticklabels():</span>
+<span id="cb9-577"><a href="#cb9-577" aria-hidden="true" tabindex="-1"></a>        name <span class="op">=</span> label.get_text()</span>
+<span id="cb9-578"><a href="#cb9-578" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> name <span class="kw">in</span> STATIONS:</span>
+<span id="cb9-579"><a href="#cb9-579" aria-hidden="true" tabindex="-1"></a>            ocean <span class="op">=</span> STATIONS[name][<span class="st">"ocean"</span>]</span>
+<span id="cb9-580"><a href="#cb9-580" aria-hidden="true" tabindex="-1"></a>            label.set_color(<span class="st">"#1B5E20"</span> <span class="cf">if</span> <span class="st">"Indo"</span> <span class="kw">in</span> ocean <span class="cf">else</span> <span class="st">"#0D47A1"</span>)</span>
+<span id="cb9-581"><a href="#cb9-581" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-582"><a href="#cb9-582" aria-hidden="true" tabindex="-1"></a>    plt.tight_layout()</span>
+<span id="cb9-583"><a href="#cb9-583" aria-hidden="true" tabindex="-1"></a>    plt.savefig(OUTPUT_DIR <span class="op">/</span> <span class="st">"sst_anom_bar_2026.png"</span>, dpi<span class="op">=</span><span class="dv">150</span>, bbox_inches<span class="op">=</span><span class="st">"tight"</span>)</span>
+<span id="cb9-584"><a href="#cb9-584" aria-hidden="true" tabindex="-1"></a>    plt.show()</span>
+<span id="cb9-585"><a href="#cb9-585" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb9-586"><a href="#cb9-586" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-587"><a href="#cb9-587" aria-hidden="true" tabindex="-1"></a>    plt.tight_layout()</span>
-<span id="cb9-588"><a href="#cb9-588" aria-hidden="true" tabindex="-1"></a>    plt.savefig(OUTPUT_DIR <span class="op">/</span> <span class="st">"sst_anom_bar_2026.png"</span>, dpi<span class="op">=</span><span class="dv">150</span>, bbox_inches<span class="op">=</span><span class="st">"tight"</span>)</span>
-<span id="cb9-589"><a href="#cb9-589" aria-hidden="true" tabindex="-1"></a>    plt.show()</span>
-<span id="cb9-590"><a href="#cb9-590" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb9-591"><a href="#cb9-591" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-592"><a href="#cb9-592" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb9-593"><a href="#cb9-593" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-594"><a href="#cb9-594" aria-hidden="true" tabindex="-1"></a><span class="fu">## El Niño progression and reef thermal stress</span></span>
-<span id="cb9-595"><a href="#cb9-595" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-596"><a href="#cb9-596" aria-hidden="true" tabindex="-1"></a>The anomalies in the chart above are not random variation — this project is</span>
-<span id="cb9-597"><a href="#cb9-597" aria-hidden="true" tabindex="-1"></a>called "2026 Super El Nino Watch" for a reason. The working hypothesis from</span>
-<span id="cb9-598"><a href="#cb9-598" aria-hidden="true" tabindex="-1"></a>the start has been that an active or developing El Nino event is driving</span>
-<span id="cb9-599"><a href="#cb9-599" aria-hidden="true" tabindex="-1"></a>elevated SSTs across our monitoring sites. What we haven't done yet is show</span>
-<span id="cb9-600"><a href="#cb9-600" aria-hidden="true" tabindex="-1"></a>that directly.</span>
-<span id="cb9-601"><a href="#cb9-601" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-602"><a href="#cb9-602" aria-hidden="true" tabindex="-1"></a>It's worth being explicit about this: starting with a hypothesis and then</span>
-<span id="cb9-603"><a href="#cb9-603" aria-hidden="true" tabindex="-1"></a>looking for supporting evidence is not the same as falsifying it. The honest</span>
-<span id="cb9-604"><a href="#cb9-604" aria-hidden="true" tabindex="-1"></a>next step is to bring in an independent measure of El Nino progression and ask</span>
-<span id="cb9-605"><a href="#cb9-605" aria-hidden="true" tabindex="-1"></a>whether the pattern we're seeing at the reefs actually tracks it — and whether</span>
-<span id="cb9-606"><a href="#cb9-606" aria-hidden="true" tabindex="-1"></a>it doesn't track it anywhere, which would be equally informative.</span>
-<span id="cb9-607"><a href="#cb9-607" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-608"><a href="#cb9-608" aria-hidden="true" tabindex="-1"></a>This is where the Oceanic Nino Index (ONI) comes in. The ONI is NOAA's</span>
-<span id="cb9-609"><a href="#cb9-609" aria-hidden="true" tabindex="-1"></a>official metric for declaring and tracking El Nino and La Nina events. It</span>
-<span id="cb9-610"><a href="#cb9-610" aria-hidden="true" tabindex="-1"></a>measures SST anomalies in the Nino 3.4 region — a patch of the central</span>
-<span id="cb9-611"><a href="#cb9-611" aria-hidden="true" tabindex="-1"></a>equatorial Pacific that acts as the primary engine of ENSO variability. When</span>
-<span id="cb9-612"><a href="#cb9-612" aria-hidden="true" tabindex="-1"></a>the ONI stays at or above +0.5°C for five consecutive overlapping 3-month</span>
-<span id="cb9-613"><a href="#cb9-613" aria-hidden="true" tabindex="-1"></a>periods, NOAA officially declares an El Nino. I'm pretty sure I learned this</span>
-<span id="cb9-614"><a href="#cb9-614" aria-hidden="true" tabindex="-1"></a>in high school earth science — but I checked.</span>
-<span id="cb9-615"><a href="#cb9-615" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-616"><a href="#cb9-616" aria-hidden="true" tabindex="-1"></a>To be clear: the physical mechanism linking El Nino to coral bleaching is not</span>
-<span id="cb9-617"><a href="#cb9-617" aria-hidden="true" tabindex="-1"></a>in question, and I want to be honest about how I know that — I am not a marine</span>
-<span id="cb9-618"><a href="#cb9-618" aria-hidden="true" tabindex="-1"></a>scientist. It just seemed like a no-brainer from the data, so I did a</span>
-<span id="cb9-619"><a href="#cb9-619" aria-hidden="true" tabindex="-1"></a>literature search and read some abstracts. It turns out the causal chain is</span>
-<span id="cb9-620"><a href="#cb9-620" aria-hidden="true" tabindex="-1"></a>well established and has been for decades.</span>
-<span id="cb9-621"><a href="#cb9-621" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-622"><a href="#cb9-622" aria-hidden="true" tabindex="-1"></a>The 1998 global bleaching event, which killed an estimated 16% of the world's</span>
-<span id="cb9-623"><a href="#cb9-623" aria-hidden="true" tabindex="-1"></a>coral reefs, coincided with one of the strongest El Nino events on record. The</span>
-<span id="cb9-624"><a href="#cb9-624" aria-hidden="true" tabindex="-1"></a>mechanism is documented: El Nino suppresses equatorial upwelling, reduces</span>
-<span id="cb9-625"><a href="#cb9-625" aria-hidden="true" tabindex="-1"></a>cloud cover, and drives anomalously warm surface waters across the Indo-Pacific</span>
-<span id="cb9-626"><a href="#cb9-626" aria-hidden="true" tabindex="-1"></a>warm pool, creating conditions for prolonged thermal stress to accumulate into</span>
-<span id="cb9-627"><a href="#cb9-627" aria-hidden="true" tabindex="-1"></a>dangerous DHW values. Hoegh-Guldberg (1999) formalized much of this.</span>
-<span id="cb9-628"><a href="#cb9-628" aria-hidden="true" tabindex="-1"></a>Hughes et al. (2017, 2018) documented it in devastating detail for the Great</span>
-<span id="cb9-629"><a href="#cb9-629" aria-hidden="true" tabindex="-1"></a>Barrier Reef during the 2016 event — back-to-back mass bleaching on a scale</span>
-<span id="cb9-630"><a href="#cb9-630" aria-hidden="true" tabindex="-1"></a>that had no historical precedent. The Caribbean connection is less direct</span>
-<span id="cb9-631"><a href="#cb9-631" aria-hidden="true" tabindex="-1"></a>mechanistically but is also documented; Eakin et al. (2010) covers the 2005</span>
-<span id="cb9-632"><a href="#cb9-632" aria-hidden="true" tabindex="-1"></a>Caribbean bleaching event, which was the worst on record at the time.</span>
-<span id="cb9-633"><a href="#cb9-633" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-634"><a href="#cb9-634" aria-hidden="true" tabindex="-1"></a>I'll be transparent about the limitation here: correlation between ONI and</span>
-<span id="cb9-635"><a href="#cb9-635" aria-hidden="true" tabindex="-1"></a>DHW by basin is suggestive at best. I'm married to an economist, and I would</span>
-<span id="cb9-636"><a href="#cb9-636" aria-hidden="true" tabindex="-1"></a>be remiss if I didn't address the correlation-causation issue at hand.</span>
+<span id="cb9-587"><a href="#cb9-587" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb9-588"><a href="#cb9-588" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-589"><a href="#cb9-589" aria-hidden="true" tabindex="-1"></a><span class="fu">## El Niño progression and reef thermal stress</span></span>
+<span id="cb9-590"><a href="#cb9-590" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-591"><a href="#cb9-591" aria-hidden="true" tabindex="-1"></a>The anomalies in the chart above are not random variation — this project is</span>
+<span id="cb9-592"><a href="#cb9-592" aria-hidden="true" tabindex="-1"></a>called "2026 Super El Nino Watch" for a reason. The working hypothesis from</span>
+<span id="cb9-593"><a href="#cb9-593" aria-hidden="true" tabindex="-1"></a>the start has been that an active or developing El Nino event is driving</span>
+<span id="cb9-594"><a href="#cb9-594" aria-hidden="true" tabindex="-1"></a>elevated SSTs across our monitoring sites. What we haven't done yet is show</span>
+<span id="cb9-595"><a href="#cb9-595" aria-hidden="true" tabindex="-1"></a>that directly.</span>
+<span id="cb9-596"><a href="#cb9-596" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-597"><a href="#cb9-597" aria-hidden="true" tabindex="-1"></a>It's worth being explicit about this: starting with a hypothesis and then</span>
+<span id="cb9-598"><a href="#cb9-598" aria-hidden="true" tabindex="-1"></a>looking for supporting evidence is not the same as falsifying it. The honest</span>
+<span id="cb9-599"><a href="#cb9-599" aria-hidden="true" tabindex="-1"></a>next step is to bring in an independent measure of El Nino progression and ask</span>
+<span id="cb9-600"><a href="#cb9-600" aria-hidden="true" tabindex="-1"></a>whether the pattern we're seeing at the reefs actually tracks it — and whether</span>
+<span id="cb9-601"><a href="#cb9-601" aria-hidden="true" tabindex="-1"></a>it doesn't track it anywhere, which would be equally informative.</span>
+<span id="cb9-602"><a href="#cb9-602" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-603"><a href="#cb9-603" aria-hidden="true" tabindex="-1"></a>This is where the Oceanic Nino Index (ONI) comes in. The ONI is NOAA's</span>
+<span id="cb9-604"><a href="#cb9-604" aria-hidden="true" tabindex="-1"></a>official metric for declaring and tracking El Nino and La Nina events. It</span>
+<span id="cb9-605"><a href="#cb9-605" aria-hidden="true" tabindex="-1"></a>measures SST anomalies in the Nino 3.4 region — a patch of the central</span>
+<span id="cb9-606"><a href="#cb9-606" aria-hidden="true" tabindex="-1"></a>equatorial Pacific that acts as the primary engine of ENSO variability. When</span>
+<span id="cb9-607"><a href="#cb9-607" aria-hidden="true" tabindex="-1"></a>the ONI stays at or above +0.5°C for five consecutive overlapping 3-month</span>
+<span id="cb9-608"><a href="#cb9-608" aria-hidden="true" tabindex="-1"></a>periods, NOAA officially declares an El Nino. I'm pretty sure I learned this</span>
+<span id="cb9-609"><a href="#cb9-609" aria-hidden="true" tabindex="-1"></a>in high school earth science — but I checked.</span>
+<span id="cb9-610"><a href="#cb9-610" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-611"><a href="#cb9-611" aria-hidden="true" tabindex="-1"></a>To be clear: the physical mechanism linking El Nino to coral bleaching is not</span>
+<span id="cb9-612"><a href="#cb9-612" aria-hidden="true" tabindex="-1"></a>in question, and I want to be honest about how I know that — I am not a marine</span>
+<span id="cb9-613"><a href="#cb9-613" aria-hidden="true" tabindex="-1"></a>scientist. It just seemed like a no-brainer from the data, so I did a</span>
+<span id="cb9-614"><a href="#cb9-614" aria-hidden="true" tabindex="-1"></a>literature search and read some abstracts. It turns out the causal chain is</span>
+<span id="cb9-615"><a href="#cb9-615" aria-hidden="true" tabindex="-1"></a>well established and has been for decades.</span>
+<span id="cb9-616"><a href="#cb9-616" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-617"><a href="#cb9-617" aria-hidden="true" tabindex="-1"></a>The 1998 global bleaching event, which killed an estimated 16% of the world's</span>
+<span id="cb9-618"><a href="#cb9-618" aria-hidden="true" tabindex="-1"></a>coral reefs, coincided with one of the strongest El Nino events on record. The</span>
+<span id="cb9-619"><a href="#cb9-619" aria-hidden="true" tabindex="-1"></a>mechanism is documented: El Nino suppresses equatorial upwelling, reduces</span>
+<span id="cb9-620"><a href="#cb9-620" aria-hidden="true" tabindex="-1"></a>cloud cover, and drives anomalously warm surface waters across the Indo-Pacific</span>
+<span id="cb9-621"><a href="#cb9-621" aria-hidden="true" tabindex="-1"></a>warm pool, creating conditions for prolonged thermal stress to accumulate into</span>
+<span id="cb9-622"><a href="#cb9-622" aria-hidden="true" tabindex="-1"></a>dangerous DHW values. Hoegh-Guldberg (1999) formalized much of this.</span>
+<span id="cb9-623"><a href="#cb9-623" aria-hidden="true" tabindex="-1"></a>Hughes et al. (2017, 2018) documented it in devastating detail for the Great</span>
+<span id="cb9-624"><a href="#cb9-624" aria-hidden="true" tabindex="-1"></a>Barrier Reef during the 2016 event — back-to-back mass bleaching on a scale</span>
+<span id="cb9-625"><a href="#cb9-625" aria-hidden="true" tabindex="-1"></a>that had no historical precedent. The Caribbean connection is less direct</span>
+<span id="cb9-626"><a href="#cb9-626" aria-hidden="true" tabindex="-1"></a>mechanistically but is also documented; Eakin et al. (2010) covers the 2005</span>
+<span id="cb9-627"><a href="#cb9-627" aria-hidden="true" tabindex="-1"></a>Caribbean bleaching event, which was the worst on record at the time.</span>
+<span id="cb9-628"><a href="#cb9-628" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-629"><a href="#cb9-629" aria-hidden="true" tabindex="-1"></a>I'll be transparent about the limitation here: correlation between ONI and</span>
+<span id="cb9-630"><a href="#cb9-630" aria-hidden="true" tabindex="-1"></a>DHW by basin is suggestive at best. I'm married to an economist, and I would</span>
+<span id="cb9-631"><a href="#cb9-631" aria-hidden="true" tabindex="-1"></a>be remiss if I didn't address the correlation-causation issue at hand.</span>
+<span id="cb9-632"><a href="#cb9-632" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-633"><a href="#cb9-633" aria-hidden="true" tabindex="-1"></a>She would probably start by pointing out that what we have here is a</span>
+<span id="cb9-634"><a href="#cb9-634" aria-hidden="true" tabindex="-1"></a>two-variable time series plot with no controls, no lag structure, and a sample</span>
+<span id="cb9-635"><a href="#cb9-635" aria-hidden="true" tabindex="-1"></a>size of one El Nino event. That's not a finding — that's a hypothesis. To do</span>
+<span id="cb9-636"><a href="#cb9-636" aria-hidden="true" tabindex="-1"></a>this properly she'd suggest something along the lines of:</span>
 <span id="cb9-637"><a href="#cb9-637" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-638"><a href="#cb9-638" aria-hidden="true" tabindex="-1"></a>She would probably start by pointing out that what we have here is a</span>
-<span id="cb9-639"><a href="#cb9-639" aria-hidden="true" tabindex="-1"></a>two-variable time series plot with no controls, no lag structure, and a sample</span>
-<span id="cb9-640"><a href="#cb9-640" aria-hidden="true" tabindex="-1"></a>size of one El Nino event. That's not a finding — that's a hypothesis. To do</span>
-<span id="cb9-641"><a href="#cb9-641" aria-hidden="true" tabindex="-1"></a>this properly she'd suggest something along the lines of:</span>
-<span id="cb9-642"><a href="#cb9-642" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-643"><a href="#cb9-643" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Distributed lag models** — the effect of ONI on reef SST anomalies isn't</span>
-<span id="cb9-644"><a href="#cb9-644" aria-hidden="true" tabindex="-1"></a>  instantaneous; it propagates over weeks to months depending on the basin.</span>
-<span id="cb9-645"><a href="#cb9-645" aria-hidden="true" tabindex="-1"></a>  A proper analysis would test a range of lags (4, 8, 12 weeks) and report</span>
-<span id="cb9-646"><a href="#cb9-646" aria-hidden="true" tabindex="-1"></a>  which lag structure best fits the data at each site.</span>
-<span id="cb9-647"><a href="#cb9-647" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Basin-separated regressions** — ENSO affects each basin through different</span>
-<span id="cb9-648"><a href="#cb9-648" aria-hidden="true" tabindex="-1"></a>  mechanisms and on different timescales. She'd run them separately.</span>
-<span id="cb9-649"><a href="#cb9-649" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Robustness checks** — does the correlation hold if you drop the Florida</span>
-<span id="cb9-650"><a href="#cb9-650" aria-hidden="true" tabindex="-1"></a>  Keys outlier? Does it hold across previous El Nino years in the historical</span>
-<span id="cb9-651"><a href="#cb9-651" aria-hidden="true" tabindex="-1"></a>  record? If the relationship falls apart when you remove one site or one</span>
-<span id="cb9-652"><a href="#cb9-652" aria-hidden="true" tabindex="-1"></a>  year, it isn't robust.</span>
-<span id="cb9-653"><a href="#cb9-653" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Granger causality** — does ONI actually help predict future DHW values,</span>
-<span id="cb9-654"><a href="#cb9-654" aria-hidden="true" tabindex="-1"></a>  or are they just moving together for unrelated reasons? A Granger test</span>
-<span id="cb9-655"><a href="#cb9-655" aria-hidden="true" tabindex="-1"></a>  wouldn't establish physical causation but would at least tell us whether</span>
-<span id="cb9-656"><a href="#cb9-656" aria-hidden="true" tabindex="-1"></a>  the ONI signal has predictive value for reef stress.</span>
+<span id="cb9-638"><a href="#cb9-638" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Distributed lag models** — the effect of ONI on reef SST anomalies isn't</span>
+<span id="cb9-639"><a href="#cb9-639" aria-hidden="true" tabindex="-1"></a>  instantaneous; it propagates over weeks to months depending on the basin.</span>
+<span id="cb9-640"><a href="#cb9-640" aria-hidden="true" tabindex="-1"></a>  A proper analysis would test a range of lags (4, 8, 12 weeks) and report</span>
+<span id="cb9-641"><a href="#cb9-641" aria-hidden="true" tabindex="-1"></a>  which lag structure best fits the data at each site.</span>
+<span id="cb9-642"><a href="#cb9-642" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Basin-separated regressions** — ENSO affects each basin through different</span>
+<span id="cb9-643"><a href="#cb9-643" aria-hidden="true" tabindex="-1"></a>  mechanisms and on different timescales. She'd run them separately.</span>
+<span id="cb9-644"><a href="#cb9-644" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Robustness checks** — does the correlation hold if you drop the Florida</span>
+<span id="cb9-645"><a href="#cb9-645" aria-hidden="true" tabindex="-1"></a>  Keys outlier? Does it hold across previous El Nino years in the historical</span>
+<span id="cb9-646"><a href="#cb9-646" aria-hidden="true" tabindex="-1"></a>  record? If the relationship falls apart when you remove one site or one</span>
+<span id="cb9-647"><a href="#cb9-647" aria-hidden="true" tabindex="-1"></a>  year, it isn't robust.</span>
+<span id="cb9-648"><a href="#cb9-648" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Granger causality** — does ONI actually help predict future DHW values,</span>
+<span id="cb9-649"><a href="#cb9-649" aria-hidden="true" tabindex="-1"></a>  or are they just moving together for unrelated reasons? A Granger test</span>
+<span id="cb9-650"><a href="#cb9-650" aria-hidden="true" tabindex="-1"></a>  wouldn't establish physical causation but would at least tell us whether</span>
+<span id="cb9-651"><a href="#cb9-651" aria-hidden="true" tabindex="-1"></a>  the ONI signal has predictive value for reef stress.</span>
+<span id="cb9-652"><a href="#cb9-652" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-653"><a href="#cb9-653" aria-hidden="true" tabindex="-1"></a>This came up at dinner. She's right. This is a monitoring dashboard, not a</span>
+<span id="cb9-654"><a href="#cb9-654" aria-hidden="true" tabindex="-1"></a>causal study, and the chart below should be read as a visual sanity check</span>
+<span id="cb9-655"><a href="#cb9-655" aria-hidden="true" tabindex="-1"></a>against a known climate driver — not as evidence of a causal relationship.</span>
+<span id="cb9-656"><a href="#cb9-656" aria-hidden="true" tabindex="-1"></a>A rigorous treatment is on the list for a future version of this project.</span>
 <span id="cb9-657"><a href="#cb9-657" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-658"><a href="#cb9-658" aria-hidden="true" tabindex="-1"></a>This came up at dinner. She's right. This is a monitoring dashboard, not a</span>
-<span id="cb9-659"><a href="#cb9-659" aria-hidden="true" tabindex="-1"></a>causal study, and the chart below should be read as a visual sanity check</span>
-<span id="cb9-660"><a href="#cb9-660" aria-hidden="true" tabindex="-1"></a>against a known climate driver — not as evidence of a causal relationship.</span>
-<span id="cb9-661"><a href="#cb9-661" aria-hidden="true" tabindex="-1"></a>A rigorous treatment is on the list for a future version of this project.</span>
-<span id="cb9-662"><a href="#cb9-662" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-663"><a href="#cb9-663" aria-hidden="true" tabindex="-1"></a>One more honest note: I started this project because I dive these reefs and</span>
-<span id="cb9-664"><a href="#cb9-664" aria-hidden="true" tabindex="-1"></a>care about what happens to them. The Florida Keys anomaly, West Papua already</span>
-<span id="cb9-665"><a href="#cb9-665" aria-hidden="true" tabindex="-1"></a>carrying DHW, all seven sites at Bleaching Watch before summer even starts in</span>
-<span id="cb9-666"><a href="#cb9-666" aria-hidden="true" tabindex="-1"></a>the Northern Hemisphere — I know what that pattern looked like in 2023 and</span>
-<span id="cb9-667"><a href="#cb9-667" aria-hidden="true" tabindex="-1"></a><span class="ss">2016. </span>I'm prepared for some serious heartbreak this summer. I hope I'm wrong.</span>
-<span id="cb9-668"><a href="#cb9-668" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-669"><a href="#cb9-669" aria-hidden="true" tabindex="-1"></a>One data note worth flagging: the ONI is published with a lag of one to two</span>
-<span id="cb9-670"><a href="#cb9-670" aria-hidden="true" tabindex="-1"></a>months by NOAA's Climate Prediction Center. The most recent bar in the chart</span>
-<span id="cb9-671"><a href="#cb9-671" aria-hidden="true" tabindex="-1"></a>below may not reflect current conditions. For the most current ENSO status,</span>
-<span id="cb9-672"><a href="#cb9-672" aria-hidden="true" tabindex="-1"></a>NOAA CPC publishes weekly updates at</span>
-<span id="cb9-673"><a href="#cb9-673" aria-hidden="true" tabindex="-1"></a><span class="ot">&lt;https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/index.shtml&gt;</span>.</span>
-<span id="cb9-674"><a href="#cb9-674" aria-hidden="true" tabindex="-1"></a>This lag also explains why the ONI bars may end earlier than the DHW lines —</span>
-<span id="cb9-675"><a href="#cb9-675" aria-hidden="true" tabindex="-1"></a>the CRW v3.1 Virtual Station data is updated daily, making it considerably</span>
-<span id="cb9-676"><a href="#cb9-676" aria-hidden="true" tabindex="-1"></a>more current than the ONI's monthly publication schedule.</span>
-<span id="cb9-677"><a href="#cb9-677" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-680"><a href="#cb9-680" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb9-681"><a href="#cb9-681" aria-hidden="true" tabindex="-1"></a><span class="co"># =============================================================================</span></span>
-<span id="cb9-682"><a href="#cb9-682" aria-hidden="true" tabindex="-1"></a><span class="co"># Cell 8 -- ONI vs basin-mean DHW</span></span>
-<span id="cb9-683"><a href="#cb9-683" aria-hidden="true" tabindex="-1"></a><span class="co"># =============================================================================</span></span>
-<span id="cb9-684"><a href="#cb9-684" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-685"><a href="#cb9-685" aria-hidden="true" tabindex="-1"></a><span class="co"># Fetch ONI</span></span>
-<span id="cb9-686"><a href="#cb9-686" aria-hidden="true" tabindex="-1"></a>oni_df   <span class="op">=</span> fetch_oni()</span>
-<span id="cb9-687"><a href="#cb9-687" aria-hidden="true" tabindex="-1"></a>oni_2026 <span class="op">=</span> oni_df[oni_df[<span class="st">"date"</span>].dt.year <span class="op">==</span> <span class="dv">2026</span>].copy()</span>
-<span id="cb9-688"><a href="#cb9-688" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="bu">len</span>(oni_2026) <span class="op">==</span> <span class="dv">0</span>:</span>
-<span id="cb9-689"><a href="#cb9-689" aria-hidden="true" tabindex="-1"></a>    oni_2026 <span class="op">=</span> oni_df.tail(<span class="dv">12</span>).copy()</span>
-<span id="cb9-690"><a href="#cb9-690" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-691"><a href="#cb9-691" aria-hidden="true" tabindex="-1"></a><span class="co"># Basin-separated mean DHW</span></span>
-<span id="cb9-692"><a href="#cb9-692" aria-hidden="true" tabindex="-1"></a>caribbean_sites   <span class="op">=</span> [n <span class="cf">for</span> n, cfg <span class="kw">in</span> STATIONS.items() <span class="cf">if</span> <span class="st">"Caribbean"</span> <span class="kw">in</span> cfg[<span class="st">"ocean"</span>]]</span>
-<span id="cb9-693"><a href="#cb9-693" aria-hidden="true" tabindex="-1"></a>indopacific_sites <span class="op">=</span> [n <span class="cf">for</span> n, cfg <span class="kw">in</span> STATIONS.items() <span class="cf">if</span> <span class="st">"Indo-Pacific"</span> <span class="kw">in</span> cfg[<span class="st">"ocean"</span>]]</span>
-<span id="cb9-694"><a href="#cb9-694" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-695"><a href="#cb9-695" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> basin_mean_dhw(site_list):</span>
-<span id="cb9-696"><a href="#cb9-696" aria-hidden="true" tabindex="-1"></a>    frames <span class="op">=</span> [site_data[n] <span class="cf">for</span> n <span class="kw">in</span> site_list <span class="cf">if</span> n <span class="kw">in</span> site_data]</span>
-<span id="cb9-697"><a href="#cb9-697" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">not</span> frames:</span>
-<span id="cb9-698"><a href="#cb9-698" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> pd.DataFrame(columns<span class="op">=</span>[<span class="st">"date"</span>, <span class="st">"mean_dhw"</span>])</span>
-<span id="cb9-699"><a href="#cb9-699" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> (</span>
-<span id="cb9-700"><a href="#cb9-700" aria-hidden="true" tabindex="-1"></a>        pd.concat(frames)</span>
-<span id="cb9-701"><a href="#cb9-701" aria-hidden="true" tabindex="-1"></a>        .groupby(<span class="st">"date"</span>)[<span class="st">"dhw"</span>]</span>
-<span id="cb9-702"><a href="#cb9-702" aria-hidden="true" tabindex="-1"></a>        .mean()</span>
-<span id="cb9-703"><a href="#cb9-703" aria-hidden="true" tabindex="-1"></a>        .reset_index()</span>
-<span id="cb9-704"><a href="#cb9-704" aria-hidden="true" tabindex="-1"></a>        .rename(columns<span class="op">=</span>{<span class="st">"dhw"</span>: <span class="st">"mean_dhw"</span>})</span>
-<span id="cb9-705"><a href="#cb9-705" aria-hidden="true" tabindex="-1"></a>        .loc[<span class="kw">lambda</span> d: d[<span class="st">"date"</span>].dt.year <span class="op">==</span> <span class="dv">2026</span>]</span>
-<span id="cb9-706"><a href="#cb9-706" aria-hidden="true" tabindex="-1"></a>        .copy()</span>
-<span id="cb9-707"><a href="#cb9-707" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb9-708"><a href="#cb9-708" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-709"><a href="#cb9-709" aria-hidden="true" tabindex="-1"></a>caribbean_dhw   <span class="op">=</span> basin_mean_dhw(caribbean_sites)</span>
-<span id="cb9-710"><a href="#cb9-710" aria-hidden="true" tabindex="-1"></a>indopacific_dhw <span class="op">=</span> basin_mean_dhw(indopacific_sites)</span>
-<span id="cb9-711"><a href="#cb9-711" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-712"><a href="#cb9-712" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot</span></span>
-<span id="cb9-713"><a href="#cb9-713" aria-hidden="true" tabindex="-1"></a>fig, ax1 <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">5</span>))</span>
-<span id="cb9-714"><a href="#cb9-714" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-715"><a href="#cb9-715" aria-hidden="true" tabindex="-1"></a>bar_colors <span class="op">=</span> [<span class="st">"#EF5350"</span> <span class="cf">if</span> v <span class="op">&gt;=</span> <span class="dv">0</span> <span class="cf">else</span> <span class="st">"#42A5F5"</span> <span class="cf">for</span> v <span class="kw">in</span> oni_2026[<span class="st">"oni"</span>]]</span>
-<span id="cb9-716"><a href="#cb9-716" aria-hidden="true" tabindex="-1"></a>ax1.bar(oni_2026[<span class="st">"date"</span>], oni_2026[<span class="st">"oni"</span>], width<span class="op">=</span><span class="dv">25</span>,</span>
-<span id="cb9-717"><a href="#cb9-717" aria-hidden="true" tabindex="-1"></a>        color<span class="op">=</span>bar_colors, alpha<span class="op">=</span><span class="fl">0.6</span>, zorder<span class="op">=</span><span class="dv">2</span>, label<span class="op">=</span><span class="st">"ONI (deg C)"</span>)</span>
-<span id="cb9-718"><a href="#cb9-718" aria-hidden="true" tabindex="-1"></a>ax1.axhline(<span class="dv">0</span>,    color<span class="op">=</span><span class="st">"black"</span>,   linewidth<span class="op">=</span><span class="fl">0.8</span>, linestyle<span class="op">=</span><span class="st">"-"</span>)</span>
-<span id="cb9-719"><a href="#cb9-719" aria-hidden="true" tabindex="-1"></a>ax1.axhline(<span class="fl">0.5</span>,  color<span class="op">=</span><span class="st">"#FF7043"</span>, linewidth<span class="op">=</span><span class="fl">0.8</span>, linestyle<span class="op">=</span><span class="st">"--"</span>,</span>
-<span id="cb9-720"><a href="#cb9-720" aria-hidden="true" tabindex="-1"></a>            label<span class="op">=</span><span class="st">"El Nino threshold (+0.5 deg C)"</span>)</span>
-<span id="cb9-721"><a href="#cb9-721" aria-hidden="true" tabindex="-1"></a>ax1.axhline(<span class="fl">1.5</span>,  color<span class="op">=</span><span class="st">"#B71C1C"</span>, linewidth<span class="op">=</span><span class="fl">0.8</span>, linestyle<span class="op">=</span><span class="st">":"</span>,</span>
-<span id="cb9-722"><a href="#cb9-722" aria-hidden="true" tabindex="-1"></a>            label<span class="op">=</span><span class="st">"Strong El Nino (+1.5 deg C)"</span>)</span>
-<span id="cb9-723"><a href="#cb9-723" aria-hidden="true" tabindex="-1"></a>ax1.axhline(<span class="op">-</span><span class="fl">0.5</span>, color<span class="op">=</span><span class="st">"#1565C0"</span>, linewidth<span class="op">=</span><span class="fl">0.8</span>, linestyle<span class="op">=</span><span class="st">"--"</span>,</span>
-<span id="cb9-724"><a href="#cb9-724" aria-hidden="true" tabindex="-1"></a>            label<span class="op">=</span><span class="st">"La Nina threshold (-0.5 deg C)"</span>)</span>
-<span id="cb9-725"><a href="#cb9-725" aria-hidden="true" tabindex="-1"></a>ax1.set_ylabel(<span class="st">"Oceanic Nino Index (deg C)"</span>, fontsize<span class="op">=</span><span class="dv">10</span>, color<span class="op">=</span><span class="st">"#424242"</span>)</span>
-<span id="cb9-726"><a href="#cb9-726" aria-hidden="true" tabindex="-1"></a>ax1.tick_params(axis<span class="op">=</span><span class="st">"y"</span>, labelcolor<span class="op">=</span><span class="st">"#424242"</span>)</span>
-<span id="cb9-727"><a href="#cb9-727" aria-hidden="true" tabindex="-1"></a>ax1.set_ylim(<span class="op">-</span><span class="fl">2.5</span>, <span class="fl">3.5</span>)</span>
-<span id="cb9-728"><a href="#cb9-728" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-729"><a href="#cb9-729" aria-hidden="true" tabindex="-1"></a>ax2 <span class="op">=</span> ax1.twinx()</span>
-<span id="cb9-730"><a href="#cb9-730" aria-hidden="true" tabindex="-1"></a>ax2.plot(caribbean_dhw[<span class="st">"date"</span>], caribbean_dhw[<span class="st">"mean_dhw"</span>],</span>
-<span id="cb9-731"><a href="#cb9-731" aria-hidden="true" tabindex="-1"></a>         color<span class="op">=</span><span class="st">"#0D47A1"</span>, linewidth<span class="op">=</span><span class="fl">2.2</span>, zorder<span class="op">=</span><span class="dv">3</span>,</span>
-<span id="cb9-732"><a href="#cb9-732" aria-hidden="true" tabindex="-1"></a>         label<span class="op">=</span><span class="st">"Mean DHW -- Caribbean sites (deg C-wk)"</span>)</span>
-<span id="cb9-733"><a href="#cb9-733" aria-hidden="true" tabindex="-1"></a>ax2.fill_between(caribbean_dhw[<span class="st">"date"</span>], caribbean_dhw[<span class="st">"mean_dhw"</span>],</span>
-<span id="cb9-734"><a href="#cb9-734" aria-hidden="true" tabindex="-1"></a>                 alpha<span class="op">=</span><span class="fl">0.12</span>, color<span class="op">=</span><span class="st">"#0D47A1"</span>)</span>
-<span id="cb9-735"><a href="#cb9-735" aria-hidden="true" tabindex="-1"></a>ax2.plot(indopacific_dhw[<span class="st">"date"</span>], indopacific_dhw[<span class="st">"mean_dhw"</span>],</span>
-<span id="cb9-736"><a href="#cb9-736" aria-hidden="true" tabindex="-1"></a>         color<span class="op">=</span><span class="st">"#1B5E20"</span>, linewidth<span class="op">=</span><span class="fl">2.2</span>, zorder<span class="op">=</span><span class="dv">3</span>,</span>
-<span id="cb9-737"><a href="#cb9-737" aria-hidden="true" tabindex="-1"></a>         label<span class="op">=</span><span class="st">"Mean DHW -- Indo-Pacific sites (deg C-wk)"</span>)</span>
-<span id="cb9-738"><a href="#cb9-738" aria-hidden="true" tabindex="-1"></a>ax2.fill_between(indopacific_dhw[<span class="st">"date"</span>], indopacific_dhw[<span class="st">"mean_dhw"</span>],</span>
-<span id="cb9-739"><a href="#cb9-739" aria-hidden="true" tabindex="-1"></a>                 alpha<span class="op">=</span><span class="fl">0.12</span>, color<span class="op">=</span><span class="st">"#1B5E20"</span>)</span>
-<span id="cb9-740"><a href="#cb9-740" aria-hidden="true" tabindex="-1"></a>ax2.set_ylabel(<span class="st">"Mean DHW by basin (deg C-wk)"</span>, fontsize<span class="op">=</span><span class="dv">10</span>, color<span class="op">=</span><span class="st">"#424242"</span>)</span>
-<span id="cb9-741"><a href="#cb9-741" aria-hidden="true" tabindex="-1"></a>ax2.tick_params(axis<span class="op">=</span><span class="st">"y"</span>, labelcolor<span class="op">=</span><span class="st">"#424242"</span>)</span>
-<span id="cb9-742"><a href="#cb9-742" aria-hidden="true" tabindex="-1"></a>ax2.set_ylim(<span class="dv">0</span>, <span class="bu">max</span>(</span>
-<span id="cb9-743"><a href="#cb9-743" aria-hidden="true" tabindex="-1"></a>    caribbean_dhw[<span class="st">"mean_dhw"</span>].<span class="bu">max</span>() <span class="cf">if</span> <span class="bu">len</span>(caribbean_dhw) <span class="op">&gt;</span> <span class="dv">0</span> <span class="cf">else</span> <span class="dv">0</span>,</span>
-<span id="cb9-744"><a href="#cb9-744" aria-hidden="true" tabindex="-1"></a>    indopacific_dhw[<span class="st">"mean_dhw"</span>].<span class="bu">max</span>() <span class="cf">if</span> <span class="bu">len</span>(indopacific_dhw) <span class="op">&gt;</span> <span class="dv">0</span> <span class="cf">else</span> <span class="dv">0</span></span>
-<span id="cb9-745"><a href="#cb9-745" aria-hidden="true" tabindex="-1"></a>) <span class="op">*</span> <span class="fl">2.2</span> <span class="kw">or</span> <span class="dv">8</span>)</span>
+<span id="cb9-658"><a href="#cb9-658" aria-hidden="true" tabindex="-1"></a>One more honest note: I started this project because I dive these reefs and</span>
+<span id="cb9-659"><a href="#cb9-659" aria-hidden="true" tabindex="-1"></a>care about what happens to them. The Florida Keys anomaly, West Papua already</span>
+<span id="cb9-660"><a href="#cb9-660" aria-hidden="true" tabindex="-1"></a>carrying DHW, all seven sites at Bleaching Watch before summer even starts in</span>
+<span id="cb9-661"><a href="#cb9-661" aria-hidden="true" tabindex="-1"></a>the Northern Hemisphere — I know what that pattern looked like in 2023 and</span>
+<span id="cb9-662"><a href="#cb9-662" aria-hidden="true" tabindex="-1"></a><span class="ss">2016. </span>I'm prepared for some serious heartbreak this summer. I hope I'm wrong.</span>
+<span id="cb9-663"><a href="#cb9-663" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-664"><a href="#cb9-664" aria-hidden="true" tabindex="-1"></a>One data note worth flagging: the ONI is published with a lag of one to two</span>
+<span id="cb9-665"><a href="#cb9-665" aria-hidden="true" tabindex="-1"></a>months by NOAA's Climate Prediction Center. The most recent bar in the chart</span>
+<span id="cb9-666"><a href="#cb9-666" aria-hidden="true" tabindex="-1"></a>below may not reflect current conditions. For the most current ENSO status,</span>
+<span id="cb9-667"><a href="#cb9-667" aria-hidden="true" tabindex="-1"></a>NOAA CPC publishes weekly updates at</span>
+<span id="cb9-668"><a href="#cb9-668" aria-hidden="true" tabindex="-1"></a><span class="ot">&lt;https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/index.shtml&gt;</span>.</span>
+<span id="cb9-669"><a href="#cb9-669" aria-hidden="true" tabindex="-1"></a>This lag also explains why the ONI bars may end earlier than the DHW lines —</span>
+<span id="cb9-670"><a href="#cb9-670" aria-hidden="true" tabindex="-1"></a>the CRW v3.1 Virtual Station data is updated daily, making it considerably</span>
+<span id="cb9-671"><a href="#cb9-671" aria-hidden="true" tabindex="-1"></a>more current than the ONI's monthly publication schedule.</span>
+<span id="cb9-672"><a href="#cb9-672" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-675"><a href="#cb9-675" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb9-676"><a href="#cb9-676" aria-hidden="true" tabindex="-1"></a><span class="co"># =============================================================================</span></span>
+<span id="cb9-677"><a href="#cb9-677" aria-hidden="true" tabindex="-1"></a><span class="co"># Cell 8 -- ONI vs basin-mean DHW</span></span>
+<span id="cb9-678"><a href="#cb9-678" aria-hidden="true" tabindex="-1"></a><span class="co"># =============================================================================</span></span>
+<span id="cb9-679"><a href="#cb9-679" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-680"><a href="#cb9-680" aria-hidden="true" tabindex="-1"></a><span class="co"># Fetch ONI</span></span>
+<span id="cb9-681"><a href="#cb9-681" aria-hidden="true" tabindex="-1"></a>oni_df   <span class="op">=</span> fetch_oni()</span>
+<span id="cb9-682"><a href="#cb9-682" aria-hidden="true" tabindex="-1"></a>oni_2026 <span class="op">=</span> oni_df[oni_df[<span class="st">"date"</span>].dt.year <span class="op">==</span> <span class="dv">2026</span>].copy()</span>
+<span id="cb9-683"><a href="#cb9-683" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="bu">len</span>(oni_2026) <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb9-684"><a href="#cb9-684" aria-hidden="true" tabindex="-1"></a>    oni_2026 <span class="op">=</span> oni_df.tail(<span class="dv">12</span>).copy()</span>
+<span id="cb9-685"><a href="#cb9-685" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-686"><a href="#cb9-686" aria-hidden="true" tabindex="-1"></a><span class="co"># Basin-separated mean DHW</span></span>
+<span id="cb9-687"><a href="#cb9-687" aria-hidden="true" tabindex="-1"></a>caribbean_sites   <span class="op">=</span> [n <span class="cf">for</span> n, cfg <span class="kw">in</span> STATIONS.items() <span class="cf">if</span> <span class="st">"Caribbean"</span> <span class="kw">in</span> cfg[<span class="st">"ocean"</span>]]</span>
+<span id="cb9-688"><a href="#cb9-688" aria-hidden="true" tabindex="-1"></a>indopacific_sites <span class="op">=</span> [n <span class="cf">for</span> n, cfg <span class="kw">in</span> STATIONS.items() <span class="cf">if</span> <span class="st">"Indo-Pacific"</span> <span class="kw">in</span> cfg[<span class="st">"ocean"</span>]]</span>
+<span id="cb9-689"><a href="#cb9-689" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-690"><a href="#cb9-690" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> basin_mean_dhw(site_list):</span>
+<span id="cb9-691"><a href="#cb9-691" aria-hidden="true" tabindex="-1"></a>    frames <span class="op">=</span> [site_data[n] <span class="cf">for</span> n <span class="kw">in</span> site_list <span class="cf">if</span> n <span class="kw">in</span> site_data]</span>
+<span id="cb9-692"><a href="#cb9-692" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">not</span> frames:</span>
+<span id="cb9-693"><a href="#cb9-693" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> pd.DataFrame(columns<span class="op">=</span>[<span class="st">"date"</span>, <span class="st">"mean_dhw"</span>])</span>
+<span id="cb9-694"><a href="#cb9-694" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> (</span>
+<span id="cb9-695"><a href="#cb9-695" aria-hidden="true" tabindex="-1"></a>        pd.concat(frames)</span>
+<span id="cb9-696"><a href="#cb9-696" aria-hidden="true" tabindex="-1"></a>        .groupby(<span class="st">"date"</span>)[<span class="st">"dhw"</span>]</span>
+<span id="cb9-697"><a href="#cb9-697" aria-hidden="true" tabindex="-1"></a>        .mean()</span>
+<span id="cb9-698"><a href="#cb9-698" aria-hidden="true" tabindex="-1"></a>        .reset_index()</span>
+<span id="cb9-699"><a href="#cb9-699" aria-hidden="true" tabindex="-1"></a>        .rename(columns<span class="op">=</span>{<span class="st">"dhw"</span>: <span class="st">"mean_dhw"</span>})</span>
+<span id="cb9-700"><a href="#cb9-700" aria-hidden="true" tabindex="-1"></a>        .loc[<span class="kw">lambda</span> d: d[<span class="st">"date"</span>].dt.year <span class="op">==</span> <span class="dv">2026</span>]</span>
+<span id="cb9-701"><a href="#cb9-701" aria-hidden="true" tabindex="-1"></a>        .copy()</span>
+<span id="cb9-702"><a href="#cb9-702" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb9-703"><a href="#cb9-703" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-704"><a href="#cb9-704" aria-hidden="true" tabindex="-1"></a>caribbean_dhw   <span class="op">=</span> basin_mean_dhw(caribbean_sites)</span>
+<span id="cb9-705"><a href="#cb9-705" aria-hidden="true" tabindex="-1"></a>indopacific_dhw <span class="op">=</span> basin_mean_dhw(indopacific_sites)</span>
+<span id="cb9-706"><a href="#cb9-706" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-707"><a href="#cb9-707" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot</span></span>
+<span id="cb9-708"><a href="#cb9-708" aria-hidden="true" tabindex="-1"></a>fig, ax1 <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">5</span>))</span>
+<span id="cb9-709"><a href="#cb9-709" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-710"><a href="#cb9-710" aria-hidden="true" tabindex="-1"></a>bar_colors <span class="op">=</span> [<span class="st">"#EF5350"</span> <span class="cf">if</span> v <span class="op">&gt;=</span> <span class="dv">0</span> <span class="cf">else</span> <span class="st">"#42A5F5"</span> <span class="cf">for</span> v <span class="kw">in</span> oni_2026[<span class="st">"oni"</span>]]</span>
+<span id="cb9-711"><a href="#cb9-711" aria-hidden="true" tabindex="-1"></a>ax1.bar(oni_2026[<span class="st">"date"</span>], oni_2026[<span class="st">"oni"</span>], width<span class="op">=</span><span class="dv">25</span>,</span>
+<span id="cb9-712"><a href="#cb9-712" aria-hidden="true" tabindex="-1"></a>        color<span class="op">=</span>bar_colors, alpha<span class="op">=</span><span class="fl">0.6</span>, zorder<span class="op">=</span><span class="dv">2</span>, label<span class="op">=</span><span class="st">"ONI (deg C)"</span>)</span>
+<span id="cb9-713"><a href="#cb9-713" aria-hidden="true" tabindex="-1"></a>ax1.axhline(<span class="dv">0</span>,    color<span class="op">=</span><span class="st">"black"</span>,   linewidth<span class="op">=</span><span class="fl">0.8</span>, linestyle<span class="op">=</span><span class="st">"-"</span>)</span>
+<span id="cb9-714"><a href="#cb9-714" aria-hidden="true" tabindex="-1"></a>ax1.axhline(<span class="fl">0.5</span>,  color<span class="op">=</span><span class="st">"#FF7043"</span>, linewidth<span class="op">=</span><span class="fl">0.8</span>, linestyle<span class="op">=</span><span class="st">"--"</span>,</span>
+<span id="cb9-715"><a href="#cb9-715" aria-hidden="true" tabindex="-1"></a>            label<span class="op">=</span><span class="st">"El Nino threshold (+0.5 deg C)"</span>)</span>
+<span id="cb9-716"><a href="#cb9-716" aria-hidden="true" tabindex="-1"></a>ax1.axhline(<span class="fl">1.5</span>,  color<span class="op">=</span><span class="st">"#B71C1C"</span>, linewidth<span class="op">=</span><span class="fl">0.8</span>, linestyle<span class="op">=</span><span class="st">":"</span>,</span>
+<span id="cb9-717"><a href="#cb9-717" aria-hidden="true" tabindex="-1"></a>            label<span class="op">=</span><span class="st">"Strong El Nino (+1.5 deg C)"</span>)</span>
+<span id="cb9-718"><a href="#cb9-718" aria-hidden="true" tabindex="-1"></a>ax1.axhline(<span class="op">-</span><span class="fl">0.5</span>, color<span class="op">=</span><span class="st">"#1565C0"</span>, linewidth<span class="op">=</span><span class="fl">0.8</span>, linestyle<span class="op">=</span><span class="st">"--"</span>,</span>
+<span id="cb9-719"><a href="#cb9-719" aria-hidden="true" tabindex="-1"></a>            label<span class="op">=</span><span class="st">"La Nina threshold (-0.5 deg C)"</span>)</span>
+<span id="cb9-720"><a href="#cb9-720" aria-hidden="true" tabindex="-1"></a>ax1.set_ylabel(<span class="st">"Oceanic Nino Index (deg C)"</span>, fontsize<span class="op">=</span><span class="dv">10</span>, color<span class="op">=</span><span class="st">"#424242"</span>)</span>
+<span id="cb9-721"><a href="#cb9-721" aria-hidden="true" tabindex="-1"></a>ax1.tick_params(axis<span class="op">=</span><span class="st">"y"</span>, labelcolor<span class="op">=</span><span class="st">"#424242"</span>)</span>
+<span id="cb9-722"><a href="#cb9-722" aria-hidden="true" tabindex="-1"></a>ax1.set_ylim(<span class="op">-</span><span class="fl">2.5</span>, <span class="fl">3.5</span>)</span>
+<span id="cb9-723"><a href="#cb9-723" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-724"><a href="#cb9-724" aria-hidden="true" tabindex="-1"></a>ax2 <span class="op">=</span> ax1.twinx()</span>
+<span id="cb9-725"><a href="#cb9-725" aria-hidden="true" tabindex="-1"></a>ax2.plot(caribbean_dhw[<span class="st">"date"</span>], caribbean_dhw[<span class="st">"mean_dhw"</span>],</span>
+<span id="cb9-726"><a href="#cb9-726" aria-hidden="true" tabindex="-1"></a>         color<span class="op">=</span><span class="st">"#0D47A1"</span>, linewidth<span class="op">=</span><span class="fl">2.2</span>, zorder<span class="op">=</span><span class="dv">3</span>,</span>
+<span id="cb9-727"><a href="#cb9-727" aria-hidden="true" tabindex="-1"></a>         label<span class="op">=</span><span class="st">"Mean DHW -- Caribbean sites (deg C-wk)"</span>)</span>
+<span id="cb9-728"><a href="#cb9-728" aria-hidden="true" tabindex="-1"></a>ax2.fill_between(caribbean_dhw[<span class="st">"date"</span>], caribbean_dhw[<span class="st">"mean_dhw"</span>],</span>
+<span id="cb9-729"><a href="#cb9-729" aria-hidden="true" tabindex="-1"></a>                 alpha<span class="op">=</span><span class="fl">0.12</span>, color<span class="op">=</span><span class="st">"#0D47A1"</span>)</span>
+<span id="cb9-730"><a href="#cb9-730" aria-hidden="true" tabindex="-1"></a>ax2.plot(indopacific_dhw[<span class="st">"date"</span>], indopacific_dhw[<span class="st">"mean_dhw"</span>],</span>
+<span id="cb9-731"><a href="#cb9-731" aria-hidden="true" tabindex="-1"></a>         color<span class="op">=</span><span class="st">"#1B5E20"</span>, linewidth<span class="op">=</span><span class="fl">2.2</span>, zorder<span class="op">=</span><span class="dv">3</span>,</span>
+<span id="cb9-732"><a href="#cb9-732" aria-hidden="true" tabindex="-1"></a>         label<span class="op">=</span><span class="st">"Mean DHW -- Indo-Pacific sites (deg C-wk)"</span>)</span>
+<span id="cb9-733"><a href="#cb9-733" aria-hidden="true" tabindex="-1"></a>ax2.fill_between(indopacific_dhw[<span class="st">"date"</span>], indopacific_dhw[<span class="st">"mean_dhw"</span>],</span>
+<span id="cb9-734"><a href="#cb9-734" aria-hidden="true" tabindex="-1"></a>                 alpha<span class="op">=</span><span class="fl">0.12</span>, color<span class="op">=</span><span class="st">"#1B5E20"</span>)</span>
+<span id="cb9-735"><a href="#cb9-735" aria-hidden="true" tabindex="-1"></a>ax2.set_ylabel(<span class="st">"Mean DHW by basin (deg C-wk)"</span>, fontsize<span class="op">=</span><span class="dv">10</span>, color<span class="op">=</span><span class="st">"#424242"</span>)</span>
+<span id="cb9-736"><a href="#cb9-736" aria-hidden="true" tabindex="-1"></a>ax2.tick_params(axis<span class="op">=</span><span class="st">"y"</span>, labelcolor<span class="op">=</span><span class="st">"#424242"</span>)</span>
+<span id="cb9-737"><a href="#cb9-737" aria-hidden="true" tabindex="-1"></a>ax2.set_ylim(<span class="dv">0</span>, <span class="bu">max</span>(</span>
+<span id="cb9-738"><a href="#cb9-738" aria-hidden="true" tabindex="-1"></a>    caribbean_dhw[<span class="st">"mean_dhw"</span>].<span class="bu">max</span>() <span class="cf">if</span> <span class="bu">len</span>(caribbean_dhw) <span class="op">&gt;</span> <span class="dv">0</span> <span class="cf">else</span> <span class="dv">0</span>,</span>
+<span id="cb9-739"><a href="#cb9-739" aria-hidden="true" tabindex="-1"></a>    indopacific_dhw[<span class="st">"mean_dhw"</span>].<span class="bu">max</span>() <span class="cf">if</span> <span class="bu">len</span>(indopacific_dhw) <span class="op">&gt;</span> <span class="dv">0</span> <span class="cf">else</span> <span class="dv">0</span></span>
+<span id="cb9-740"><a href="#cb9-740" aria-hidden="true" tabindex="-1"></a>) <span class="op">*</span> <span class="fl">2.2</span> <span class="kw">or</span> <span class="dv">8</span>)</span>
+<span id="cb9-741"><a href="#cb9-741" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-742"><a href="#cb9-742" aria-hidden="true" tabindex="-1"></a>lines1, labels1 <span class="op">=</span> ax1.get_legend_handles_labels()</span>
+<span id="cb9-743"><a href="#cb9-743" aria-hidden="true" tabindex="-1"></a>lines2, labels2 <span class="op">=</span> ax2.get_legend_handles_labels()</span>
+<span id="cb9-744"><a href="#cb9-744" aria-hidden="true" tabindex="-1"></a>ax1.legend(lines1 <span class="op">+</span> lines2, labels1 <span class="op">+</span> labels2,</span>
+<span id="cb9-745"><a href="#cb9-745" aria-hidden="true" tabindex="-1"></a>           loc<span class="op">=</span><span class="st">"upper left"</span>, fontsize<span class="op">=</span><span class="fl">8.5</span>, framealpha<span class="op">=</span><span class="fl">0.9</span>)</span>
 <span id="cb9-746"><a href="#cb9-746" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-747"><a href="#cb9-747" aria-hidden="true" tabindex="-1"></a>lines1, labels1 <span class="op">=</span> ax1.get_legend_handles_labels()</span>
-<span id="cb9-748"><a href="#cb9-748" aria-hidden="true" tabindex="-1"></a>lines2, labels2 <span class="op">=</span> ax2.get_legend_handles_labels()</span>
-<span id="cb9-749"><a href="#cb9-749" aria-hidden="true" tabindex="-1"></a>ax1.legend(lines1 <span class="op">+</span> lines2, labels1 <span class="op">+</span> labels2,</span>
-<span id="cb9-750"><a href="#cb9-750" aria-hidden="true" tabindex="-1"></a>           loc<span class="op">=</span><span class="st">"upper left"</span>, fontsize<span class="op">=</span><span class="fl">8.5</span>, framealpha<span class="op">=</span><span class="fl">0.9</span>)</span>
-<span id="cb9-751"><a href="#cb9-751" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-752"><a href="#cb9-752" aria-hidden="true" tabindex="-1"></a>ax1.set_xlabel(<span class="st">""</span>)</span>
-<span id="cb9-753"><a href="#cb9-753" aria-hidden="true" tabindex="-1"></a>ax1.tick_params(axis<span class="op">=</span><span class="st">"x"</span>, labelsize<span class="op">=</span><span class="dv">8</span>, rotation<span class="op">=</span><span class="dv">30</span>)</span>
-<span id="cb9-754"><a href="#cb9-754" aria-hidden="true" tabindex="-1"></a>fig.suptitle(</span>
-<span id="cb9-755"><a href="#cb9-755" aria-hidden="true" tabindex="-1"></a>    <span class="ss">f"Oceanic Nino Index vs. Mean Reef DHW by Basin -- 2026 YTD</span><span class="ch">\n</span><span class="ss">"</span></span>
-<span id="cb9-756"><a href="#cb9-756" aria-hidden="true" tabindex="-1"></a>    <span class="ss">f"ONI source: NOAA Climate Prediction Center  |  "</span></span>
-<span id="cb9-757"><a href="#cb9-757" aria-hidden="true" tabindex="-1"></a>    <span class="ss">f"DHW: NOAA Coral Reef Watch v3.1  |  as of </span><span class="sc">{</span>fetch_stamp<span class="sc">}</span><span class="ss">"</span>,</span>
-<span id="cb9-758"><a href="#cb9-758" aria-hidden="true" tabindex="-1"></a>    fontsize<span class="op">=</span><span class="dv">10</span></span>
-<span id="cb9-759"><a href="#cb9-759" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb9-760"><a href="#cb9-760" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
-<span id="cb9-761"><a href="#cb9-761" aria-hidden="true" tabindex="-1"></a>plt.savefig(OUTPUT_DIR <span class="op">/</span> <span class="st">"oni_vs_dhw_2026.png"</span>, dpi<span class="op">=</span><span class="dv">150</span>, bbox_inches<span class="op">=</span><span class="st">"tight"</span>)</span>
-<span id="cb9-762"><a href="#cb9-762" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
-<span id="cb9-763"><a href="#cb9-763" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb9-764"><a href="#cb9-764" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-765"><a href="#cb9-765" aria-hidden="true" tabindex="-1"></a>The chart above is worth reading carefully. The Indo-Pacific DHW peak in</span>
-<span id="cb9-766"><a href="#cb9-766" aria-hidden="true" tabindex="-1"></a>January-February reflects the Southern Hemisphere summer ending at GBR Central</span>
-<span id="cb9-767"><a href="#cb9-767" aria-hidden="true" tabindex="-1"></a>and West Papua — not a response to El Nino onset. The ONI transition from</span>
-<span id="cb9-768"><a href="#cb9-768" aria-hidden="true" tabindex="-1"></a>negative to positive in March-April is the signal to watch. If that positive</span>
-<span id="cb9-769"><a href="#cb9-769" aria-hidden="true" tabindex="-1"></a>ONI value holds and strengthens through Northern Hemisphere summer, the</span>
-<span id="cb9-770"><a href="#cb9-770" aria-hidden="true" tabindex="-1"></a>Caribbean sites — currently at DHW zero but with anomalies already well above</span>
-<span id="cb9-771"><a href="#cb9-771" aria-hidden="true" tabindex="-1"></a>the bleaching threshold — are the ones most at risk for rapid stress</span>
-<span id="cb9-772"><a href="#cb9-772" aria-hidden="true" tabindex="-1"></a>accumulation. Check back in July.</span>
-<span id="cb9-773"><a href="#cb9-773" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-774"><a href="#cb9-774" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb9-775"><a href="#cb9-775" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-776"><a href="#cb9-776" aria-hidden="true" tabindex="-1"></a><span class="fu">## Interpretation &amp; limitations</span></span>
-<span id="cb9-777"><a href="#cb9-777" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-778"><a href="#cb9-778" aria-hidden="true" tabindex="-1"></a>The data as of mid-2026 tells a consistent story: every reef system in</span>
-<span id="cb9-779"><a href="#cb9-779" aria-hidden="true" tabindex="-1"></a>this analysis is already running above its historical thermal baseline, and</span>
-<span id="cb9-780"><a href="#cb9-780" aria-hidden="true" tabindex="-1"></a>two Indo-Pacific sites are carrying residual heat stress from a Southern</span>
-<span id="cb9-781"><a href="#cb9-781" aria-hidden="true" tabindex="-1"></a>Hemisphere summer that just ended. The ONI has crossed into positive</span>
-<span id="cb9-782"><a href="#cb9-782" aria-hidden="true" tabindex="-1"></a>territory. Northern Hemisphere bleaching season has not yet begun.</span>
-<span id="cb9-783"><a href="#cb9-783" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-784"><a href="#cb9-784" aria-hidden="true" tabindex="-1"></a>That combination — anomalies already elevated, ONI turning positive, DHW</span>
-<span id="cb9-785"><a href="#cb9-785" aria-hidden="true" tabindex="-1"></a>near zero but primed — is consistent with the early-season setup observed</span>
-<span id="cb9-786"><a href="#cb9-786" aria-hidden="true" tabindex="-1"></a>before the 2015-2016 and 2023 bleaching events. Whether it follows the same</span>
-<span id="cb9-787"><a href="#cb9-787" aria-hidden="true" tabindex="-1"></a>trajectory depends on how the ONI evolves over the next 60-90 days and</span>
-<span id="cb9-788"><a href="#cb9-788" aria-hidden="true" tabindex="-1"></a>whether atmospheric conditions allow that heat to accumulate at the reef</span>
-<span id="cb9-789"><a href="#cb9-789" aria-hidden="true" tabindex="-1"></a>surface rather than being mixed away.</span>
-<span id="cb9-790"><a href="#cb9-790" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-791"><a href="#cb9-791" aria-hidden="true" tabindex="-1"></a>A few honest limitations to keep in mind when reading this page:</span>
+<span id="cb9-747"><a href="#cb9-747" aria-hidden="true" tabindex="-1"></a>ax1.set_xlabel(<span class="st">""</span>)</span>
+<span id="cb9-748"><a href="#cb9-748" aria-hidden="true" tabindex="-1"></a>ax1.tick_params(axis<span class="op">=</span><span class="st">"x"</span>, labelsize<span class="op">=</span><span class="dv">8</span>, rotation<span class="op">=</span><span class="dv">30</span>)</span>
+<span id="cb9-749"><a href="#cb9-749" aria-hidden="true" tabindex="-1"></a>fig.suptitle(</span>
+<span id="cb9-750"><a href="#cb9-750" aria-hidden="true" tabindex="-1"></a>    <span class="ss">f"Oceanic Nino Index vs. Mean Reef DHW by Basin -- 2026 YTD</span><span class="ch">\n</span><span class="ss">"</span></span>
+<span id="cb9-751"><a href="#cb9-751" aria-hidden="true" tabindex="-1"></a>    <span class="ss">f"ONI source: NOAA Climate Prediction Center  |  "</span></span>
+<span id="cb9-752"><a href="#cb9-752" aria-hidden="true" tabindex="-1"></a>    <span class="ss">f"DHW: NOAA Coral Reef Watch v3.1  |  as of </span><span class="sc">{</span>fetch_stamp<span class="sc">}</span><span class="ss">"</span>,</span>
+<span id="cb9-753"><a href="#cb9-753" aria-hidden="true" tabindex="-1"></a>    fontsize<span class="op">=</span><span class="dv">10</span></span>
+<span id="cb9-754"><a href="#cb9-754" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb9-755"><a href="#cb9-755" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb9-756"><a href="#cb9-756" aria-hidden="true" tabindex="-1"></a>plt.savefig(OUTPUT_DIR <span class="op">/</span> <span class="st">"oni_vs_dhw_2026.png"</span>, dpi<span class="op">=</span><span class="dv">150</span>, bbox_inches<span class="op">=</span><span class="st">"tight"</span>)</span>
+<span id="cb9-757"><a href="#cb9-757" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb9-758"><a href="#cb9-758" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb9-759"><a href="#cb9-759" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-760"><a href="#cb9-760" aria-hidden="true" tabindex="-1"></a>The chart above is worth reading carefully. The Indo-Pacific DHW peak in</span>
+<span id="cb9-761"><a href="#cb9-761" aria-hidden="true" tabindex="-1"></a>January-February reflects the Southern Hemisphere summer ending at GBR Central</span>
+<span id="cb9-762"><a href="#cb9-762" aria-hidden="true" tabindex="-1"></a>and West Papua — not a response to El Nino onset. The ONI transition from</span>
+<span id="cb9-763"><a href="#cb9-763" aria-hidden="true" tabindex="-1"></a>negative to positive in March-April is the signal to watch. If that positive</span>
+<span id="cb9-764"><a href="#cb9-764" aria-hidden="true" tabindex="-1"></a>ONI value holds and strengthens through Northern Hemisphere summer, the</span>
+<span id="cb9-765"><a href="#cb9-765" aria-hidden="true" tabindex="-1"></a>Caribbean sites — currently at DHW zero but with anomalies already well above</span>
+<span id="cb9-766"><a href="#cb9-766" aria-hidden="true" tabindex="-1"></a>the bleaching threshold — are the ones most at risk for rapid stress</span>
+<span id="cb9-767"><a href="#cb9-767" aria-hidden="true" tabindex="-1"></a>accumulation. Check back in July.</span>
+<span id="cb9-768"><a href="#cb9-768" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-769"><a href="#cb9-769" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb9-770"><a href="#cb9-770" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-771"><a href="#cb9-771" aria-hidden="true" tabindex="-1"></a><span class="fu">## Interpretation &amp; limitations</span></span>
+<span id="cb9-772"><a href="#cb9-772" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-773"><a href="#cb9-773" aria-hidden="true" tabindex="-1"></a>The data as of mid-2026 tells a consistent story: every reef system in</span>
+<span id="cb9-774"><a href="#cb9-774" aria-hidden="true" tabindex="-1"></a>this analysis is already running above its historical thermal baseline, and</span>
+<span id="cb9-775"><a href="#cb9-775" aria-hidden="true" tabindex="-1"></a>two Indo-Pacific sites are carrying residual heat stress from a Southern</span>
+<span id="cb9-776"><a href="#cb9-776" aria-hidden="true" tabindex="-1"></a>Hemisphere summer that just ended. The ONI has crossed into positive</span>
+<span id="cb9-777"><a href="#cb9-777" aria-hidden="true" tabindex="-1"></a>territory. Northern Hemisphere bleaching season has not yet begun.</span>
+<span id="cb9-778"><a href="#cb9-778" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-779"><a href="#cb9-779" aria-hidden="true" tabindex="-1"></a>That combination — anomalies already elevated, ONI turning positive, DHW</span>
+<span id="cb9-780"><a href="#cb9-780" aria-hidden="true" tabindex="-1"></a>near zero but primed — is consistent with the early-season setup observed</span>
+<span id="cb9-781"><a href="#cb9-781" aria-hidden="true" tabindex="-1"></a>before the 2015-2016 and 2023 bleaching events. Whether it follows the same</span>
+<span id="cb9-782"><a href="#cb9-782" aria-hidden="true" tabindex="-1"></a>trajectory depends on how the ONI evolves over the next 60-90 days and</span>
+<span id="cb9-783"><a href="#cb9-783" aria-hidden="true" tabindex="-1"></a>whether atmospheric conditions allow that heat to accumulate at the reef</span>
+<span id="cb9-784"><a href="#cb9-784" aria-hidden="true" tabindex="-1"></a>surface rather than being mixed away.</span>
+<span id="cb9-785"><a href="#cb9-785" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-786"><a href="#cb9-786" aria-hidden="true" tabindex="-1"></a>A few honest limitations to keep in mind when reading this page:</span>
+<span id="cb9-787"><a href="#cb9-787" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-788"><a href="#cb9-788" aria-hidden="true" tabindex="-1"></a>**Spatial resolution.** The CRW v3.1 Virtual Station data is derived from a</span>
+<span id="cb9-789"><a href="#cb9-789" aria-hidden="true" tabindex="-1"></a>5 km satellite product. That is a significant improvement over the legacy</span>
+<span id="cb9-790"><a href="#cb9-790" aria-hidden="true" tabindex="-1"></a>50 km product, but it is still a regional average. Conditions at a specific</span>
+<span id="cb9-791"><a href="#cb9-791" aria-hidden="true" tabindex="-1"></a>reef within that pixel may differ meaningfully from what the satellite measures.</span>
 <span id="cb9-792"><a href="#cb9-792" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-793"><a href="#cb9-793" aria-hidden="true" tabindex="-1"></a>**Spatial resolution.** The CRW v3.1 Virtual Station data is derived from a</span>
-<span id="cb9-794"><a href="#cb9-794" aria-hidden="true" tabindex="-1"></a>5 km satellite product. That is a significant improvement over the legacy</span>
-<span id="cb9-795"><a href="#cb9-795" aria-hidden="true" tabindex="-1"></a>50 km product, but it is still a regional average. Conditions at a specific</span>
-<span id="cb9-796"><a href="#cb9-796" aria-hidden="true" tabindex="-1"></a>reef within that pixel may differ meaningfully from what the satellite measures.</span>
-<span id="cb9-797"><a href="#cb9-797" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-798"><a href="#cb9-798" aria-hidden="true" tabindex="-1"></a>**Single pixel per site.** Each site in this analysis is represented by one</span>
-<span id="cb9-799"><a href="#cb9-799" aria-hidden="true" tabindex="-1"></a>Virtual Station — one pixel. The Great Barrier Reef alone spans 2,300 km.</span>
-<span id="cb9-800"><a href="#cb9-800" aria-hidden="true" tabindex="-1"></a>GBR Central is a reasonable representative but it is not the whole reef.</span>
-<span id="cb9-801"><a href="#cb9-801" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-802"><a href="#cb9-802" aria-hidden="true" tabindex="-1"></a>**SST is not the whole story.** DHW measures surface thermal stress. It does</span>
-<span id="cb9-803"><a href="#cb9-803" aria-hidden="true" tabindex="-1"></a>not capture light intensity, water clarity, local acidification, prior</span>
-<span id="cb9-804"><a href="#cb9-804" aria-hidden="true" tabindex="-1"></a>bleaching history, or the adaptive capacity of individual coral populations.</span>
-<span id="cb9-805"><a href="#cb9-805" aria-hidden="true" tabindex="-1"></a>Two reefs with identical DHW values can have very different bleaching</span>
-<span id="cb9-806"><a href="#cb9-806" aria-hidden="true" tabindex="-1"></a>outcomes depending on their ecological condition and thermal history.</span>
-<span id="cb9-807"><a href="#cb9-807" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-808"><a href="#cb9-808" aria-hidden="true" tabindex="-1"></a>**This is not a forecast.** Nothing in this notebook predicts what will</span>
-<span id="cb9-809"><a href="#cb9-809" aria-hidden="true" tabindex="-1"></a>happen. It describes current conditions and flags patterns that, based on</span>
-<span id="cb9-810"><a href="#cb9-810" aria-hidden="true" tabindex="-1"></a>historical precedent, warrant attention.</span>
+<span id="cb9-793"><a href="#cb9-793" aria-hidden="true" tabindex="-1"></a>**Single pixel per site.** Each site in this analysis is represented by one</span>
+<span id="cb9-794"><a href="#cb9-794" aria-hidden="true" tabindex="-1"></a>Virtual Station — one pixel. The Great Barrier Reef alone spans 2,300 km.</span>
+<span id="cb9-795"><a href="#cb9-795" aria-hidden="true" tabindex="-1"></a>GBR Central is a reasonable representative but it is not the whole reef.</span>
+<span id="cb9-796"><a href="#cb9-796" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-797"><a href="#cb9-797" aria-hidden="true" tabindex="-1"></a>**SST is not the whole story.** DHW measures surface thermal stress. It does</span>
+<span id="cb9-798"><a href="#cb9-798" aria-hidden="true" tabindex="-1"></a>not capture light intensity, water clarity, local acidification, prior</span>
+<span id="cb9-799"><a href="#cb9-799" aria-hidden="true" tabindex="-1"></a>bleaching history, or the adaptive capacity of individual coral populations.</span>
+<span id="cb9-800"><a href="#cb9-800" aria-hidden="true" tabindex="-1"></a>Two reefs with identical DHW values can have very different bleaching</span>
+<span id="cb9-801"><a href="#cb9-801" aria-hidden="true" tabindex="-1"></a>outcomes depending on their ecological condition and thermal history.</span>
+<span id="cb9-802"><a href="#cb9-802" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-803"><a href="#cb9-803" aria-hidden="true" tabindex="-1"></a>**This is not a forecast.** Nothing in this notebook predicts what will</span>
+<span id="cb9-804"><a href="#cb9-804" aria-hidden="true" tabindex="-1"></a>happen. It describes current conditions and flags patterns that, based on</span>
+<span id="cb9-805"><a href="#cb9-805" aria-hidden="true" tabindex="-1"></a>historical precedent, warrant attention.</span>
+<span id="cb9-806"><a href="#cb9-806" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-807"><a href="#cb9-807" aria-hidden="true" tabindex="-1"></a>**The ONI correlation is suggestive, not causal** at the site level. See the</span>
+<span id="cb9-808"><a href="#cb9-808" aria-hidden="true" tabindex="-1"></a>El Nino section above for the full treatment of this limitation.</span>
+<span id="cb9-809"><a href="#cb9-809" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-810"><a href="#cb9-810" aria-hidden="true" tabindex="-1"></a>---</span>
 <span id="cb9-811"><a href="#cb9-811" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-812"><a href="#cb9-812" aria-hidden="true" tabindex="-1"></a>**The ONI correlation is suggestive, not causal** at the site level. See the</span>
-<span id="cb9-813"><a href="#cb9-813" aria-hidden="true" tabindex="-1"></a>El Nino section above for the full treatment of this limitation.</span>
-<span id="cb9-814"><a href="#cb9-814" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-815"><a href="#cb9-815" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb9-816"><a href="#cb9-816" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-817"><a href="#cb9-817" aria-hidden="true" tabindex="-1"></a><span class="fu">## Future directions</span></span>
-<span id="cb9-818"><a href="#cb9-818" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-819"><a href="#cb9-819" aria-hidden="true" tabindex="-1"></a>Building this notebook taught me something I did not fully anticipate going</span>
-<span id="cb9-820"><a href="#cb9-820" aria-hidden="true" tabindex="-1"></a>in. At some point while I was wrangling the CRW parser, figuring out why</span>
-<span id="cb9-821"><a href="#cb9-821" aria-hidden="true" tabindex="-1"></a>the GBR station ID was wrong, and trying to decide whether to pool Caribbean</span>
-<span id="cb9-822"><a href="#cb9-822" aria-hidden="true" tabindex="-1"></a>and Indo-Pacific DHW into the same mean — I realized this is just a data</span>
-<span id="cb9-823"><a href="#cb9-823" aria-hidden="true" tabindex="-1"></a>integration problem. Different sources, different schemas, different update</span>
-<span id="cb9-824"><a href="#cb9-824" aria-hidden="true" tabindex="-1"></a>frequencies, different levels of trust. You have to decide what to join on,</span>
-<span id="cb9-825"><a href="#cb9-825" aria-hidden="true" tabindex="-1"></a>how to handle missing data, and what the right unit of analysis is.</span>
-<span id="cb9-826"><a href="#cb9-826" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-827"><a href="#cb9-827" aria-hidden="true" tabindex="-1"></a>That is my day job. I work in biomedical and clinical research informatics.</span>
-<span id="cb9-828"><a href="#cb9-828" aria-hidden="true" tabindex="-1"></a>I do this with HL7 messages and FHIR resources and clinical trial datasets.</span>
-<span id="cb9-829"><a href="#cb9-829" aria-hidden="true" tabindex="-1"></a>It turns out the problem is not unique to healthcare — a reef manager trying</span>
-<span id="cb9-830"><a href="#cb9-830" aria-hidden="true" tabindex="-1"></a>to assess bleaching risk at a site they are responsible for is facing exactly</span>
-<span id="cb9-831"><a href="#cb9-831" aria-hidden="true" tabindex="-1"></a>the same challenge, just with satellite products instead of EHR extracts.</span>
+<span id="cb9-812"><a href="#cb9-812" aria-hidden="true" tabindex="-1"></a><span class="fu">## Future directions</span></span>
+<span id="cb9-813"><a href="#cb9-813" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-814"><a href="#cb9-814" aria-hidden="true" tabindex="-1"></a>Building this notebook taught me something I did not fully anticipate going</span>
+<span id="cb9-815"><a href="#cb9-815" aria-hidden="true" tabindex="-1"></a>in. At some point while I was wrangling the CRW parser, figuring out why</span>
+<span id="cb9-816"><a href="#cb9-816" aria-hidden="true" tabindex="-1"></a>the GBR station ID was wrong, and trying to decide whether to pool Caribbean</span>
+<span id="cb9-817"><a href="#cb9-817" aria-hidden="true" tabindex="-1"></a>and Indo-Pacific DHW into the same mean — I realized this is just a data</span>
+<span id="cb9-818"><a href="#cb9-818" aria-hidden="true" tabindex="-1"></a>integration problem. Different sources, different schemas, different update</span>
+<span id="cb9-819"><a href="#cb9-819" aria-hidden="true" tabindex="-1"></a>frequencies, different levels of trust. You have to decide what to join on,</span>
+<span id="cb9-820"><a href="#cb9-820" aria-hidden="true" tabindex="-1"></a>how to handle missing data, and what the right unit of analysis is.</span>
+<span id="cb9-821"><a href="#cb9-821" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-822"><a href="#cb9-822" aria-hidden="true" tabindex="-1"></a>That is my day job. I work in biomedical and clinical research informatics.</span>
+<span id="cb9-823"><a href="#cb9-823" aria-hidden="true" tabindex="-1"></a>I do this with HL7 messages and FHIR resources and clinical trial datasets.</span>
+<span id="cb9-824"><a href="#cb9-824" aria-hidden="true" tabindex="-1"></a>It turns out the problem is not unique to healthcare — a reef manager trying</span>
+<span id="cb9-825"><a href="#cb9-825" aria-hidden="true" tabindex="-1"></a>to assess bleaching risk at a site they are responsible for is facing exactly</span>
+<span id="cb9-826"><a href="#cb9-826" aria-hidden="true" tabindex="-1"></a>the same challenge, just with satellite products instead of EHR extracts.</span>
+<span id="cb9-827"><a href="#cb9-827" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-828"><a href="#cb9-828" aria-hidden="true" tabindex="-1"></a>That realization is what makes the following feel less like a wish list and</span>
+<span id="cb9-829"><a href="#cb9-829" aria-hidden="true" tabindex="-1"></a>more like a natural next project.</span>
+<span id="cb9-830"><a href="#cb9-830" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-831"><a href="#cb9-831" aria-hidden="true" tabindex="-1"></a>**Toward a multi-factor bleaching risk score:**</span>
 <span id="cb9-832"><a href="#cb9-832" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-833"><a href="#cb9-833" aria-hidden="true" tabindex="-1"></a>That realization is what makes the following feel less like a wish list and</span>
-<span id="cb9-834"><a href="#cb9-834" aria-hidden="true" tabindex="-1"></a>more like a natural next project.</span>
-<span id="cb9-835"><a href="#cb9-835" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-836"><a href="#cb9-836" aria-hidden="true" tabindex="-1"></a>**Toward a multi-factor bleaching risk score:**</span>
-<span id="cb9-837"><a href="#cb9-837" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-838"><a href="#cb9-838" aria-hidden="true" tabindex="-1"></a>A composite bleaching risk score that goes beyond DHW is not a new idea.</span>
-<span id="cb9-839"><a href="#cb9-839" aria-hidden="true" tabindex="-1"></a>NOAA CRW already publishes an experimental Four-Month Coral Bleaching</span>
-<span id="cb9-840"><a href="#cb9-840" aria-hidden="true" tabindex="-1"></a>Outlook (Liu et al., 2018), updated weekly, which forecasts the probability</span>
-<span id="cb9-841"><a href="#cb9-841" aria-hidden="true" tabindex="-1"></a>of bleaching-level heat stress using SST projections from NOAA's Climate</span>
-<span id="cb9-842"><a href="#cb9-842" aria-hidden="true" tabindex="-1"></a>Forecast System Version 2 (CFSv2) ensemble. It is the closest published</span>
-<span id="cb9-843"><a href="#cb9-843" aria-hidden="true" tabindex="-1"></a>analog to what I am describing here — but it is still purely thermal.</span>
-<span id="cb9-844"><a href="#cb9-844" aria-hidden="true" tabindex="-1"></a>It does not incorporate light stress, water quality, acidification, or</span>
-<span id="cb9-845"><a href="#cb9-845" aria-hidden="true" tabindex="-1"></a>ecological condition.</span>
-<span id="cb9-846"><a href="#cb9-846" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-847"><a href="#cb9-847" aria-hidden="true" tabindex="-1"></a>There is also published work on taxon-specific Bleaching Response Indices</span>
-<span id="cb9-848"><a href="#cb9-848" aria-hidden="true" tabindex="-1"></a>that standardize susceptibility across coral species (Marshall &amp; Baird,</span>
-<span id="cb9-849"><a href="#cb9-849" aria-hidden="true" tabindex="-1"></a>2000), and peer-reviewed evidence that bleaching predictions improve</span>
-<span id="cb9-850"><a href="#cb9-850" aria-hidden="true" tabindex="-1"></a>substantially when interannual SST variability and coral thermal history</span>
-<span id="cb9-851"><a href="#cb9-851" aria-hidden="true" tabindex="-1"></a>are included alongside raw DHW values (Thompson &amp; Dolman, 2010).</span>
-<span id="cb9-852"><a href="#cb9-852" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-853"><a href="#cb9-853" aria-hidden="true" tabindex="-1"></a>The gap this future direction targets is integrating those additional</span>
-<span id="cb9-854"><a href="#cb9-854" aria-hidden="true" tabindex="-1"></a>stressors into a site-level risk score that a reef manager could actually</span>
-<span id="cb9-855"><a href="#cb9-855" aria-hidden="true" tabindex="-1"></a>act on. The data streams that would need to come together:</span>
-<span id="cb9-856"><a href="#cb9-856" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-857"><a href="#cb9-857" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Photosynthetically active radiation (PAR)** — light intensity at the</span>
-<span id="cb9-858"><a href="#cb9-858" aria-hidden="true" tabindex="-1"></a>  reef surface compounds thermal stress significantly. NOAA CRW publishes</span>
-<span id="cb9-859"><a href="#cb9-859" aria-hidden="true" tabindex="-1"></a>  a satellite-derived PAR product that could be integrated directly into</span>
-<span id="cb9-860"><a href="#cb9-860" aria-hidden="true" tabindex="-1"></a>  the existing pipeline.</span>
-<span id="cb9-861"><a href="#cb9-861" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Water clarity and turbidity** — MODIS and VIIRS ocean color products</span>
-<span id="cb9-862"><a href="#cb9-862" aria-hidden="true" tabindex="-1"></a>  provide estimates of chlorophyll concentration and diffuse attenuation</span>
-<span id="cb9-863"><a href="#cb9-863" aria-hidden="true" tabindex="-1"></a>  coefficient (Kd490), which serve as proxies for water clarity.</span>
-<span id="cb9-864"><a href="#cb9-864" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Ocean acidification** — NOAA's Ocean Acidification Program publishes</span>
-<span id="cb9-865"><a href="#cb9-865" aria-hidden="true" tabindex="-1"></a>  aragonite saturation state estimates for tropical reef regions. Corals</span>
-<span id="cb9-866"><a href="#cb9-866" aria-hidden="true" tabindex="-1"></a>  under chronic acidification stress have reduced capacity to recover from</span>
-<span id="cb9-867"><a href="#cb9-867" aria-hidden="true" tabindex="-1"></a>  bleaching events, making acidification a risk multiplier rather than an</span>
-<span id="cb9-868"><a href="#cb9-868" aria-hidden="true" tabindex="-1"></a>  independent stressor.</span>
-<span id="cb9-869"><a href="#cb9-869" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Prior bleaching history** — the NOAA CoRIS and ReefBase databases</span>
-<span id="cb9-870"><a href="#cb9-870" aria-hidden="true" tabindex="-1"></a>  contain georeferenced bleaching observation records that could be used</span>
-<span id="cb9-871"><a href="#cb9-871" aria-hidden="true" tabindex="-1"></a>  to construct a site-level bleaching history index.</span>
-<span id="cb9-872"><a href="#cb9-872" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Thermal history and adaptive capacity** — there is growing evidence</span>
-<span id="cb9-873"><a href="#cb9-873" aria-hidden="true" tabindex="-1"></a>  that corals with prior exposure to variable thermal environments develop</span>
-<span id="cb9-874"><a href="#cb9-874" aria-hidden="true" tabindex="-1"></a>  greater heat tolerance. A rough proxy could be derived from the CoralTemp</span>
-<span id="cb9-875"><a href="#cb9-875" aria-hidden="true" tabindex="-1"></a>  historical record: reefs with high interannual SST variability over the</span>
-<span id="cb9-876"><a href="#cb9-876" aria-hidden="true" tabindex="-1"></a>  past two decades may harbor more thermally tolerant populations. This is</span>
-<span id="cb9-877"><a href="#cb9-877" aria-hidden="true" tabindex="-1"></a>  contested in the literature but tractable from data we already have.</span>
-<span id="cb9-878"><a href="#cb9-878" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**DHW trajectory** — the rate of DHW accumulation over the past two to</span>
-<span id="cb9-879"><a href="#cb9-879" aria-hidden="true" tabindex="-1"></a>  four weeks. A reef at 3 DHW-wk and climbing fast is at higher near-term</span>
-<span id="cb9-880"><a href="#cb9-880" aria-hidden="true" tabindex="-1"></a>  risk than a reef at 3 DHW-wk that has been stable for three weeks.</span>
-<span id="cb9-881"><a href="#cb9-881" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**In-water validation** — integrating citizen science reports from</span>
-<span id="cb9-882"><a href="#cb9-882" aria-hidden="true" tabindex="-1"></a>  CoralWatch, Reef Check, and NOAA's National Coral Reef Monitoring Program</span>
-<span id="cb9-883"><a href="#cb9-883" aria-hidden="true" tabindex="-1"></a>  would substantially improve ecological validity.</span>
-<span id="cb9-884"><a href="#cb9-884" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-885"><a href="#cb9-885" aria-hidden="true" tabindex="-1"></a>From a data engineering standpoint this is a familiar problem: each of</span>
-<span id="cb9-886"><a href="#cb9-886" aria-hidden="true" tabindex="-1"></a>these sources has a different spatial resolution, a different update</span>
-<span id="cb9-887"><a href="#cb9-887" aria-hidden="true" tabindex="-1"></a>frequency, a different file format, and a different level of provenance</span>
-<span id="cb9-888"><a href="#cb9-888" aria-hidden="true" tabindex="-1"></a>documentation. Making them interoperable at the site level is exactly the</span>
-<span id="cb9-889"><a href="#cb9-889" aria-hidden="true" tabindex="-1"></a>kind of pipeline work this project is already doing in miniature — and</span>
-<span id="cb9-890"><a href="#cb9-890" aria-hidden="true" tabindex="-1"></a>exactly the kind of problem my background in clinical data integration is</span>
-<span id="cb9-891"><a href="#cb9-891" aria-hidden="true" tabindex="-1"></a>well suited to.</span>
-<span id="cb9-892"><a href="#cb9-892" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-893"><a href="#cb9-893" aria-hidden="true" tabindex="-1"></a>**Other near-term directions:**</span>
-<span id="cb9-894"><a href="#cb9-894" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-895"><a href="#cb9-895" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Add historical DHW context — overlay 2026 YTD against the same period</span>
-<span id="cb9-896"><a href="#cb9-896" aria-hidden="true" tabindex="-1"></a>  in 2015, 2016, and 2023 for each site</span>
-<span id="cb9-897"><a href="#cb9-897" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Basin-separated ONI regression with lag testing</span>
-<span id="cb9-898"><a href="#cb9-898" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Integrate NOAA's CFS-based Bleaching Outlook probabilities as a third</span>
-<span id="cb9-899"><a href="#cb9-899" aria-hidden="true" tabindex="-1"></a>  data source alongside the ONI and DHW</span>
-<span id="cb9-900"><a href="#cb9-900" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Expand to additional Indo-Pacific sites, particularly in the Coral Triangle</span>
-<span id="cb9-901"><a href="#cb9-901" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-902"><a href="#cb9-902" aria-hidden="true" tabindex="-1"></a>**A personal note:** I built this project to learn, to practice working</span>
-<span id="cb9-903"><a href="#cb9-903" aria-hidden="true" tabindex="-1"></a>with real environmental data pipelines, and because I dive these reefs and</span>
-<span id="cb9-904"><a href="#cb9-904" aria-hidden="true" tabindex="-1"></a>care about what happens to them. If you are a reef scientist, conservation</span>
-<span id="cb9-905"><a href="#cb9-905" aria-hidden="true" tabindex="-1"></a>organization, or research program working in any of these regions and find</span>
-<span id="cb9-906"><a href="#cb9-906" aria-hidden="true" tabindex="-1"></a>this work interesting or useful, I would genuinely welcome the conversation.</span>
-<span id="cb9-907"><a href="#cb9-907" aria-hidden="true" tabindex="-1"></a>Contact information is on the About page.</span>
-<span id="cb9-908"><a href="#cb9-908" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-909"><a href="#cb9-909" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb9-910"><a href="#cb9-910" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-911"><a href="#cb9-911" aria-hidden="true" tabindex="-1"></a><span class="fu">## References</span></span>
-<span id="cb9-912"><a href="#cb9-912" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-913"><a href="#cb9-913" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Skirving, W., et al. (2020).** CoralTemp and the Coral Reef Watch Coral Bleaching Heat Stress Product Suite Version 3.1. *Remote Sensing*, 12(23), 3856. <span class="ot">&lt;https://doi.org/10.3390/rs12233856&gt;</span></span>
-<span id="cb9-914"><a href="#cb9-914" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-915"><a href="#cb9-915" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Liu, G., et al. (2013).** NOAA Coral Reef Watch's Decision Support System for Coral Bleaching Management. NOAA Technical Report NESDIS 143. <span class="ot">&lt;https://coralreefwatch.noaa.gov/satellite/publications/NESDIS_143.pdf&gt;</span></span>
-<span id="cb9-916"><a href="#cb9-916" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-917"><a href="#cb9-917" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Liu, G., et al. (2018).** Predicting heat stress to inform reef management: NOAA Coral Reef Watch's 4-month coral bleaching outlook. *Frontiers in Marine Science*, 5, 57. <span class="ot">&lt;https://doi.org/10.3389/fmars.2018.00057&gt;</span></span>
-<span id="cb9-918"><a href="#cb9-918" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-919"><a href="#cb9-919" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Hoegh-Guldberg, O. (1999).** Climate change, coral bleaching and the future of the world's coral reefs. *Marine and Freshwater Research*, 50(8), 839–866.</span>
-<span id="cb9-920"><a href="#cb9-920" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-921"><a href="#cb9-921" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Hughes, T.P., et al. (2017).** Global warming and recurrent mass bleaching of corals. *Nature*, 543, 373–377.</span>
-<span id="cb9-922"><a href="#cb9-922" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-923"><a href="#cb9-923" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Hughes, T.P., et al. (2018).** Global warming transforms coral reef assemblages. *Nature*, 556, 492–496.</span>
-<span id="cb9-924"><a href="#cb9-924" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-925"><a href="#cb9-925" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Eakin, C.M., et al. (2010).** Caribbean corals in crisis: record thermal stress, bleaching, and mortality in 2005. *PLOS ONE*, 5(11), e13969.</span>
-<span id="cb9-926"><a href="#cb9-926" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-927"><a href="#cb9-927" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Marshall, P.A. &amp; Baird, A.H. (2000).** Bleaching of corals on the Great Barrier Reef: differential susceptibilities among taxa. *Coral Reefs*, 19, 155–163.</span>
-<span id="cb9-928"><a href="#cb9-928" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-929"><a href="#cb9-929" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**NOAA Climate Prediction Center.** Oceanic Nino Index. <span class="ot">&lt;https://www.cpc.ncep.noaa.gov/data/indices/oni.ascii.txt&gt;</span></span>
-<span id="cb9-930"><a href="#cb9-930" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-931"><a href="#cb9-931" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**NOAA (2024).** NOAA confirms 4th global coral bleaching event. <span class="ot">&lt;https://www.noaa.gov/news/noaa-confirms-4th-global-coral-bleaching-event&gt;</span></span>
-<span id="cb9-932"><a href="#cb9-932" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-933"><a href="#cb9-933" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb9-934"><a href="#cb9-934" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-935"><a href="#cb9-935" aria-hidden="true" tabindex="-1"></a><span class="fu">## See also</span></span>
-<span id="cb9-936"><a href="#cb9-936" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-937"><a href="#cb9-937" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Project 1: Historical coral bleaching risk analysis using NOAA CRW DHW data</span><span class="co">](bleaching-risk-notebook.html)</span></span>
-<span id="cb9-938"><a href="#cb9-938" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">NOAA CRW live monitoring portal</span><span class="co">](https://coralreefwatch.noaa.gov/product/vs/index.php)</span></span>
-<span id="cb9-939"><a href="#cb9-939" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">NOAA CPC ENSO advisory</span><span class="co">](https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/index.shtml)</span></span>
-<span id="cb9-940"><a href="#cb9-940" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-941"><a href="#cb9-941" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb9-942"><a href="#cb9-942" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-943"><a href="#cb9-943" aria-hidden="true" tabindex="-1"></a>*Page last rendered: `{python} fetch_stamp`. Data fetched live from NOAA CRW — values update with each site deployment. This page is part of a portfolio project at [velezf.github.io](https://velezf.github.io); it is not an official NOAA product.*</span>
+<span id="cb9-833"><a href="#cb9-833" aria-hidden="true" tabindex="-1"></a>A composite bleaching risk score that goes beyond DHW is not a new idea.</span>
+<span id="cb9-834"><a href="#cb9-834" aria-hidden="true" tabindex="-1"></a>NOAA CRW already publishes an experimental Four-Month Coral Bleaching</span>
+<span id="cb9-835"><a href="#cb9-835" aria-hidden="true" tabindex="-1"></a>Outlook (Liu et al., 2018), updated weekly, which forecasts the probability</span>
+<span id="cb9-836"><a href="#cb9-836" aria-hidden="true" tabindex="-1"></a>of bleaching-level heat stress using SST projections from NOAA's Climate</span>
+<span id="cb9-837"><a href="#cb9-837" aria-hidden="true" tabindex="-1"></a>Forecast System Version 2 (CFSv2) ensemble. It is the closest published</span>
+<span id="cb9-838"><a href="#cb9-838" aria-hidden="true" tabindex="-1"></a>analog to what I am describing here — but it is still purely thermal.</span>
+<span id="cb9-839"><a href="#cb9-839" aria-hidden="true" tabindex="-1"></a>It does not incorporate light stress, water quality, acidification, or</span>
+<span id="cb9-840"><a href="#cb9-840" aria-hidden="true" tabindex="-1"></a>ecological condition.</span>
+<span id="cb9-841"><a href="#cb9-841" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-842"><a href="#cb9-842" aria-hidden="true" tabindex="-1"></a>There is also published work on taxon-specific Bleaching Response Indices</span>
+<span id="cb9-843"><a href="#cb9-843" aria-hidden="true" tabindex="-1"></a>that standardize susceptibility across coral species (Marshall &amp; Baird,</span>
+<span id="cb9-844"><a href="#cb9-844" aria-hidden="true" tabindex="-1"></a>2000), and peer-reviewed evidence that bleaching predictions improve</span>
+<span id="cb9-845"><a href="#cb9-845" aria-hidden="true" tabindex="-1"></a>substantially when interannual SST variability and coral thermal history</span>
+<span id="cb9-846"><a href="#cb9-846" aria-hidden="true" tabindex="-1"></a>are included alongside raw DHW values (Thompson &amp; Dolman, 2010).</span>
+<span id="cb9-847"><a href="#cb9-847" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-848"><a href="#cb9-848" aria-hidden="true" tabindex="-1"></a>The gap this future direction targets is integrating those additional</span>
+<span id="cb9-849"><a href="#cb9-849" aria-hidden="true" tabindex="-1"></a>stressors into a site-level risk score that a reef manager could actually</span>
+<span id="cb9-850"><a href="#cb9-850" aria-hidden="true" tabindex="-1"></a>act on. The data streams that would need to come together:</span>
+<span id="cb9-851"><a href="#cb9-851" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-852"><a href="#cb9-852" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Photosynthetically active radiation (PAR)** — light intensity at the</span>
+<span id="cb9-853"><a href="#cb9-853" aria-hidden="true" tabindex="-1"></a>  reef surface compounds thermal stress significantly. NOAA CRW publishes</span>
+<span id="cb9-854"><a href="#cb9-854" aria-hidden="true" tabindex="-1"></a>  a satellite-derived PAR product that could be integrated directly into</span>
+<span id="cb9-855"><a href="#cb9-855" aria-hidden="true" tabindex="-1"></a>  the existing pipeline.</span>
+<span id="cb9-856"><a href="#cb9-856" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Water clarity and turbidity** — MODIS and VIIRS ocean color products</span>
+<span id="cb9-857"><a href="#cb9-857" aria-hidden="true" tabindex="-1"></a>  provide estimates of chlorophyll concentration and diffuse attenuation</span>
+<span id="cb9-858"><a href="#cb9-858" aria-hidden="true" tabindex="-1"></a>  coefficient (Kd490), which serve as proxies for water clarity.</span>
+<span id="cb9-859"><a href="#cb9-859" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Ocean acidification** — NOAA's Ocean Acidification Program publishes</span>
+<span id="cb9-860"><a href="#cb9-860" aria-hidden="true" tabindex="-1"></a>  aragonite saturation state estimates for tropical reef regions. Corals</span>
+<span id="cb9-861"><a href="#cb9-861" aria-hidden="true" tabindex="-1"></a>  under chronic acidification stress have reduced capacity to recover from</span>
+<span id="cb9-862"><a href="#cb9-862" aria-hidden="true" tabindex="-1"></a>  bleaching events, making acidification a risk multiplier rather than an</span>
+<span id="cb9-863"><a href="#cb9-863" aria-hidden="true" tabindex="-1"></a>  independent stressor.</span>
+<span id="cb9-864"><a href="#cb9-864" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Prior bleaching history** — the NOAA CoRIS and ReefBase databases</span>
+<span id="cb9-865"><a href="#cb9-865" aria-hidden="true" tabindex="-1"></a>  contain georeferenced bleaching observation records that could be used</span>
+<span id="cb9-866"><a href="#cb9-866" aria-hidden="true" tabindex="-1"></a>  to construct a site-level bleaching history index.</span>
+<span id="cb9-867"><a href="#cb9-867" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Thermal history and adaptive capacity** — there is growing evidence</span>
+<span id="cb9-868"><a href="#cb9-868" aria-hidden="true" tabindex="-1"></a>  that corals with prior exposure to variable thermal environments develop</span>
+<span id="cb9-869"><a href="#cb9-869" aria-hidden="true" tabindex="-1"></a>  greater heat tolerance. A rough proxy could be derived from the CoralTemp</span>
+<span id="cb9-870"><a href="#cb9-870" aria-hidden="true" tabindex="-1"></a>  historical record: reefs with high interannual SST variability over the</span>
+<span id="cb9-871"><a href="#cb9-871" aria-hidden="true" tabindex="-1"></a>  past two decades may harbor more thermally tolerant populations. This is</span>
+<span id="cb9-872"><a href="#cb9-872" aria-hidden="true" tabindex="-1"></a>  contested in the literature but tractable from data we already have.</span>
+<span id="cb9-873"><a href="#cb9-873" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**DHW trajectory** — the rate of DHW accumulation over the past two to</span>
+<span id="cb9-874"><a href="#cb9-874" aria-hidden="true" tabindex="-1"></a>  four weeks. A reef at 3 DHW-wk and climbing fast is at higher near-term</span>
+<span id="cb9-875"><a href="#cb9-875" aria-hidden="true" tabindex="-1"></a>  risk than a reef at 3 DHW-wk that has been stable for three weeks.</span>
+<span id="cb9-876"><a href="#cb9-876" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**In-water validation** — integrating citizen science reports from</span>
+<span id="cb9-877"><a href="#cb9-877" aria-hidden="true" tabindex="-1"></a>  CoralWatch, Reef Check, and NOAA's National Coral Reef Monitoring Program</span>
+<span id="cb9-878"><a href="#cb9-878" aria-hidden="true" tabindex="-1"></a>  would substantially improve ecological validity.</span>
+<span id="cb9-879"><a href="#cb9-879" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-880"><a href="#cb9-880" aria-hidden="true" tabindex="-1"></a>From a data engineering standpoint this is a familiar problem: each of</span>
+<span id="cb9-881"><a href="#cb9-881" aria-hidden="true" tabindex="-1"></a>these sources has a different spatial resolution, a different update</span>
+<span id="cb9-882"><a href="#cb9-882" aria-hidden="true" tabindex="-1"></a>frequency, a different file format, and a different level of provenance</span>
+<span id="cb9-883"><a href="#cb9-883" aria-hidden="true" tabindex="-1"></a>documentation. Making them interoperable at the site level is exactly the</span>
+<span id="cb9-884"><a href="#cb9-884" aria-hidden="true" tabindex="-1"></a>kind of pipeline work this project is already doing in miniature — and</span>
+<span id="cb9-885"><a href="#cb9-885" aria-hidden="true" tabindex="-1"></a>exactly the kind of problem my background in clinical data integration is</span>
+<span id="cb9-886"><a href="#cb9-886" aria-hidden="true" tabindex="-1"></a>well suited to.</span>
+<span id="cb9-887"><a href="#cb9-887" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-888"><a href="#cb9-888" aria-hidden="true" tabindex="-1"></a>**Other near-term directions:**</span>
+<span id="cb9-889"><a href="#cb9-889" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-890"><a href="#cb9-890" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Add historical DHW context — overlay 2026 YTD against the same period</span>
+<span id="cb9-891"><a href="#cb9-891" aria-hidden="true" tabindex="-1"></a>  in 2015, 2016, and 2023 for each site</span>
+<span id="cb9-892"><a href="#cb9-892" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Basin-separated ONI regression with lag testing</span>
+<span id="cb9-893"><a href="#cb9-893" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Integrate NOAA's CFS-based Bleaching Outlook probabilities as a third</span>
+<span id="cb9-894"><a href="#cb9-894" aria-hidden="true" tabindex="-1"></a>  data source alongside the ONI and DHW</span>
+<span id="cb9-895"><a href="#cb9-895" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Expand to additional Indo-Pacific sites, particularly in the Coral Triangle</span>
+<span id="cb9-896"><a href="#cb9-896" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-897"><a href="#cb9-897" aria-hidden="true" tabindex="-1"></a>**A personal note:** I built this project to learn, to practice working</span>
+<span id="cb9-898"><a href="#cb9-898" aria-hidden="true" tabindex="-1"></a>with real environmental data pipelines, and because I dive these reefs and</span>
+<span id="cb9-899"><a href="#cb9-899" aria-hidden="true" tabindex="-1"></a>care about what happens to them. If you are a reef scientist, conservation</span>
+<span id="cb9-900"><a href="#cb9-900" aria-hidden="true" tabindex="-1"></a>organization, or research program working in any of these regions and find</span>
+<span id="cb9-901"><a href="#cb9-901" aria-hidden="true" tabindex="-1"></a>this work interesting or useful, I would genuinely welcome the conversation.</span>
+<span id="cb9-902"><a href="#cb9-902" aria-hidden="true" tabindex="-1"></a>Contact information is on the About page.</span>
+<span id="cb9-903"><a href="#cb9-903" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-904"><a href="#cb9-904" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb9-905"><a href="#cb9-905" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-906"><a href="#cb9-906" aria-hidden="true" tabindex="-1"></a><span class="fu">## References</span></span>
+<span id="cb9-907"><a href="#cb9-907" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-908"><a href="#cb9-908" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Skirving, W., et al. (2020).** CoralTemp and the Coral Reef Watch Coral Bleaching Heat Stress Product Suite Version 3.1. *Remote Sensing*, 12(23), 3856. <span class="ot">&lt;https://doi.org/10.3390/rs12233856&gt;</span></span>
+<span id="cb9-909"><a href="#cb9-909" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-910"><a href="#cb9-910" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Liu, G., et al. (2013).** NOAA Coral Reef Watch's Decision Support System for Coral Bleaching Management. NOAA Technical Report NESDIS 143. <span class="ot">&lt;https://coralreefwatch.noaa.gov/satellite/publications/NESDIS_143.pdf&gt;</span></span>
+<span id="cb9-911"><a href="#cb9-911" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-912"><a href="#cb9-912" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Liu, G., et al. (2018).** Predicting heat stress to inform reef management: NOAA Coral Reef Watch's 4-month coral bleaching outlook. *Frontiers in Marine Science*, 5, 57. <span class="ot">&lt;https://doi.org/10.3389/fmars.2018.00057&gt;</span></span>
+<span id="cb9-913"><a href="#cb9-913" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-914"><a href="#cb9-914" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Hoegh-Guldberg, O. (1999).** Climate change, coral bleaching and the future of the world's coral reefs. *Marine and Freshwater Research*, 50(8), 839–866.</span>
+<span id="cb9-915"><a href="#cb9-915" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-916"><a href="#cb9-916" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Hughes, T.P., et al. (2017).** Global warming and recurrent mass bleaching of corals. *Nature*, 543, 373–377.</span>
+<span id="cb9-917"><a href="#cb9-917" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-918"><a href="#cb9-918" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Hughes, T.P., et al. (2018).** Global warming transforms coral reef assemblages. *Nature*, 556, 492–496.</span>
+<span id="cb9-919"><a href="#cb9-919" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-920"><a href="#cb9-920" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Eakin, C.M., et al. (2010).** Caribbean corals in crisis: record thermal stress, bleaching, and mortality in 2005. *PLOS ONE*, 5(11), e13969.</span>
+<span id="cb9-921"><a href="#cb9-921" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-922"><a href="#cb9-922" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Marshall, P.A. &amp; Baird, A.H. (2000).** Bleaching of corals on the Great Barrier Reef: differential susceptibilities among taxa. *Coral Reefs*, 19, 155–163.</span>
+<span id="cb9-923"><a href="#cb9-923" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-924"><a href="#cb9-924" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**NOAA Climate Prediction Center.** Oceanic Nino Index. <span class="ot">&lt;https://www.cpc.ncep.noaa.gov/data/indices/oni.ascii.txt&gt;</span></span>
+<span id="cb9-925"><a href="#cb9-925" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-926"><a href="#cb9-926" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**NOAA (2024).** NOAA confirms 4th global coral bleaching event. <span class="ot">&lt;https://www.noaa.gov/news/noaa-confirms-4th-global-coral-bleaching-event&gt;</span></span>
+<span id="cb9-927"><a href="#cb9-927" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-928"><a href="#cb9-928" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb9-929"><a href="#cb9-929" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-930"><a href="#cb9-930" aria-hidden="true" tabindex="-1"></a><span class="fu">## See also</span></span>
+<span id="cb9-931"><a href="#cb9-931" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-932"><a href="#cb9-932" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Project 1: Historical coral bleaching risk analysis using NOAA CRW DHW data</span><span class="co">](bleaching-risk-notebook.html)</span></span>
+<span id="cb9-933"><a href="#cb9-933" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">NOAA CRW live monitoring portal</span><span class="co">](https://coralreefwatch.noaa.gov/product/vs/index.php)</span></span>
+<span id="cb9-934"><a href="#cb9-934" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">NOAA CPC ENSO advisory</span><span class="co">](https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/index.shtml)</span></span>
+<span id="cb9-935"><a href="#cb9-935" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-936"><a href="#cb9-936" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb9-937"><a href="#cb9-937" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-938"><a href="#cb9-938" aria-hidden="true" tabindex="-1"></a>*Page last rendered: `{python} fetch_stamp`. Data fetched live from NOAA CRW — values update with each site deployment. This page is part of a portfolio project at [velezf.github.io](https://velezf.github.io); it is not an official NOAA product.*</span>
 </code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
