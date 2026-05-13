@@ -37,7 +37,8 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 
 # -- Output directories -------------------------------------------------------
-PROJECT_ROOT = pathlib.Path("/Users/renatus/code/el-nino-watch-2026")
+_local = pathlib.Path("/Users/renatus/code/el-nino-watch-2026")
+PROJECT_ROOT = _local if _local.exists() else pathlib.Path(__file__).parent if "__file__" in dir() else pathlib.Path().resolve()
 CACHE_DIR    = PROJECT_ROOT / "data" / "raw"
 OUTPUT_DIR   = PROJECT_ROOT / "data" / "processed"
 os.makedirs(CACHE_DIR,  exist_ok=True)
