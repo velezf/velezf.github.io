@@ -263,8 +263,8 @@ This page re-executes via daily GitHub Actions cron at 06:00 UTC. Data are fetch
 
 ## Study sites
 
-This project monitors **seven reef sites** across two ocean basins — five Caribbean/Atlantic
-sites from the original bleaching project, plus two Indo-Pacific sites added to capture
+This project monitors **seven reef sites** across two ocean basins — four Caribbean/Atlantic 
+and one Indo-Pacific site from the original bleaching project, plus two Indo-Pacific sites added to better capture
 the western Pacific warm pool, which historically leads global bleaching events during
 El Nino years.
 
