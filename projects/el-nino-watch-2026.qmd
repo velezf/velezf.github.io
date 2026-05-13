@@ -919,7 +919,7 @@ Contact information is on the About page.
 - [NOAA CRW live monitoring portal](https://coralreefwatch.noaa.gov/product/vs/index.php)
 - [NOAA CPC ENSO advisory](https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/index.shtml)
 
----
+***
 ## About This Project
 
 This project is part of a portfolio in marine environmental data science,
