@@ -947,6 +947,6 @@ portfolio site root. The environment is fully specified in
 [First project: Historical bleaching analysis](bleaching-risk-notebook.html){.btn .btn-outline-secondary}
 [NOAA Coral Reef Watch](https://coralreefwatch.noaa.gov/){.btn .btn-outline-secondary}
 
----
+***
 
 *Page last rendered: `{python} fetch_stamp`. Data fetched live from NOAA CRW — values update with each site deployment. This page is part of a portfolio project at [velezf.github.io](https://velezf.github.io); it is not an official NOAA product.*
