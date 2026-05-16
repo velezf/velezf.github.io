@@ -96,27 +96,27 @@ decisions in this document, organized into four loose clusters.
 
 ### 1. NOAA Coral Reef Watch and the temperature-only baseline
 
-The default baseline against which everything else is compared is the CRW operational
-suite — HotSpot, DHW, Bleaching Alert Area — built on the CoralTemp SST record and the
-Maximum Monthly Mean climatology [@skirving2020; @liu2014]. These products are the
-global standard and they work. @heron2016 published the canonical 5km validation,
-demonstrating that the 5km products substantially outperform the legacy 50km heritage
-products against in-water bleaching surveys.
+The baseline I keep running into is the CRW operational suite — HotSpot, DHW, Bleaching
+Alert Area — built on the CoralTemp SST record and the Maximum Monthly Mean climatology
+[@skirving2020; @liu2014]. These products appear to be the global standard and from what
+I can tell reading the literature, they work. @heron2016 published what I take to be the
+definitive 5km validation, demonstrating that the 5km products substantially outperform
+the legacy 50km heritage products against in-water bleaching surveys.
 
-What is less widely appreciated is that CRW already operates experimental products that
-go beyond temperature alone. The Light Stress Damage (LSD) product suite explicitly
-combines temperature and light into a single stress index based on the photoinhibition
-mechanism [@skirving2018]. CRW also publishes an experimental Four-Month Coral
-Bleaching Outlook — updated weekly, forecasting the probability of bleaching-level heat
-stress using SST projections from NOAA's CFSv2 ensemble [@liu2018]. The CRW Thermal
-History product suite provides pre-aggregated annual thermal metrics per pixel back to
-1985. A reasonable question at this point is: if NOAA is already publishing multi-factor
-experimental products, what is the point of building my own? The answer is that CRW's products are designed for global
-operational monitoring — daily maps, management alerts. What I am building is different:
-a regression-based, site-and-survey-level risk score with the dependent variable rooted
-in published bleaching outcome datasets and the independent variables combined at the
-analysis site level. That is a different artifact than a global daily map, aimed at a
-different question.
+Something I hadn't expected to find when I started reading is that CRW already operates
+experimental products that go beyond temperature alone. The Light Stress Damage (LSD)
+product suite combines temperature and light into a single stress index based on the
+photoinhibition mechanism [@skirving2018]. CRW also publishes an experimental Four-Month
+Coral Bleaching Outlook — updated weekly, forecasting the probability of bleaching-level
+heat stress using SST projections from NOAA's CFSv2 ensemble [@liu2018]. The CRW
+Thermal History product suite provides pre-aggregated annual thermal metrics per pixel
+back to 1985. A reasonable question at this point is: if NOAA is already publishing
+multi-factor experimental products, what is the point of building my own? The answer is
+that CRW's products are designed for global operational monitoring — daily maps,
+management alerts. What I am building is different: a regression-based, site-and-survey-
+level risk score with the dependent variable rooted in published bleaching outcome
+datasets and the independent variables combined at the analysis site level. That is a
+different artifact than a global daily map, aimed at a different question.
 
 ### 2. The in-situ statistical models
 
@@ -125,11 +125,11 @@ satellite side. This is the cluster I have returned to most often.
 
 @safaie2018 fit ordinal logistic regression models to 81 bleaching events across five
 major reef regions using 20 in-situ environmental variables and 7 remotely sensed SST
-metrics — 10,367 model permutations in total. The finding is now well known:
-high-frequency temperature variability is the single most predictive covariate, and it
-has a *mitigating* effect. A 1°C increase in daily temperature range reduces the odds of
-more severe bleaching by a factor of 33. That result directly shapes how I am thinking
-about the thermal variability predictor in this project.
+metrics — 10,367 model permutations in total. The result I keep seeing cited everywhere
+I look: high-frequency temperature variability is the single most predictive covariate,
+and it has a *mitigating* effect. A 1°C increase in daily temperature range reduces the
+odds of more severe bleaching by a factor of 33. That result directly shapes how I am
+thinking about the thermal variability predictor in this project.
 
 @sully2020 used a Bayesian model on 8,797 Reef Check surveys across 81 countries and
 found that Kd490 values in a specific moderate turbidity range are associated with
@@ -150,9 +150,11 @@ cross-validated ordinal random forest to 2,643 bleaching outcomes on the Great B
 Reef across the 2016, 2017, and 2020 events. @kiefer2025 used gradient-boosted random
 forests to forecast heat stress onset on Florida's Coral Reef. Both studies used SHAP
 values — a method for decomposing a model's predictions into per-variable contributions
-— to make their black-box models interpretable after the fact. I understand the appeal,
-but I am not starting there. ML methods are tools I want to earn the right to use after
-there is a working regression baseline that can be explained from first principles.
+— to make their black-box models interpretable after the fact. I understand the appeal, but I am not starting there. ML methods are tools I want to
+earn the right to use after there is a working regression baseline I can actually explain
+from first principles. The spatial cross-validation approach in @cheung2025 is also
+something I need to understand better before I try to implement it — it is on the reading
+list before the implementation notebook gets written.
 
 ### 4. Thermal adaptation — the part I find most interesting
 
@@ -164,12 +166,13 @@ stable habitats, and that transplanted colonies acquired the same tolerance in l
 two years. @lachs2023 estimated a roughly 0.1°C per decade emergent increase in thermal
 tolerance in remote Pacific reef assemblages.
 
-The mechanism is genuinely contested. The candidates are: selection pressure eliminating
-thermally sensitive genotypes over successive bleaching events; acclimatization across
-the entire coral holobiont — the coral animal plus its Symbiodiniaceae symbionts plus
-the bacteria, archaea, and other microorganisms that live in and on the coral tissue as
-an integrated system; or community-level shifts toward thermally tolerant symbiont clades
-like *Durusdinium* [@palaciocastro2023]. As a reef keeper the holobiont framing clicked
+The mechanism is genuinely contested, and I want to be honest that I am still learning
+it. The candidates are: selection pressure eliminating thermally sensitive genotypes over
+successive bleaching events; acclimatization across the entire coral holobiont — the
+coral animal plus its Symbiodiniaceae symbionts plus the bacteria, archaea, and other
+microorganisms that live in and on the coral tissue as an integrated system; or
+community-level shifts toward thermally tolerant symbiont clades like *Durusdinium*
+[@palaciocastro2023]. As a reef keeper the holobiont framing clicked
 for me when I thought about it this way: the bleaching you see when a tank runs too warm
 is the coral expelling its symbionts — the animal and the algae separating under stress.
 The holobiont is the whole system under normal conditions. Whether a reef can adapt
@@ -395,17 +398,23 @@ def compute_thermal_history_features(df_full, df_pre_survey):
 
 ### Predictor 3 — Photosynthetically Available Radiation (PAR)
 
-**Mechanism:** Light and heat work together to damage coral in a way that is more than
-additive. The biological pathway runs through the zooxanthellae — the symbiotic algae
-living in coral tissue. Under heat stress, the algae's photosynthetic machinery
-(specifically Photosystem II) starts breaking down faster than it can repair itself, and
-the byproduct is reactive oxygen species that damage the coral tissue and ultimately
-trigger expulsion of the symbionts — which is bleaching [@warner1999]. The key point for
+**Mechanism:** From what I understand reading the literature, light and heat work
+together to damage coral in a way that is more than additive. The biological pathway, as
+I understand it from @warner1999 and @skirving2018, runs through the zooxanthellae —
+the symbiotic algae living in coral tissue. Under heat stress, the algae's photosynthetic
+machinery (specifically Photosystem II) starts breaking down faster than it can repair
+itself, and the byproduct is reactive oxygen species that damage the coral tissue and
+ultimately trigger expulsion of the symbionts — which is bleaching. The key point for
 this project is that high light accelerates that process. A coral under moderate heat
 stress and high light may bleach when the same coral under the same heat stress but
-lower light would not. NOAA CRW built their experimental Light Stress Damage product on
-exactly this biology [@skirving2018] — which is the strongest published evidence that
-PAR belongs in the model.
+lower light would not.
+
+I'll be honest that the photochemistry here is at the edge of what I can follow in
+detail. What I am confident about is the practical implication: light exposure is a
+modulating factor on thermal stress, there are published satellite products available,
+and there is precedent in the multi-factor bleaching literature. NOAA CRW building an
+experimental Light Stress Damage product on exactly this biology [@skirving2018] is what
+convinced me PAR belongs in this model.
 
 **Data source:**
 
@@ -480,8 +489,8 @@ reefs sit in this protective window, with 30% of those concentrated in the Coral
 Triangle.
 
 The practical implication for this model is that Kd490 cannot be fit as a linear
-predictor — a straight line would miss the protective middle entirely. I plan to fit it
-as a quadratic polynomial term, following the published precedent.
+predictor — a straight line would miss the protective middle entirely. @sully2020 fit it
+as a non-linear term, so I am following their lead on the quadratic specification.
 
 **Data source:** NASA Aqua MODIS Level-3 Standard Mapped Image Kd490, 4km resolution,
 2002–present. Accessible via the NOAA CoastWatch ERDDAP endpoint as
@@ -551,10 +560,11 @@ scientific formalization of exactly the water chemistry I was already managing b
 
 **Mechanism:** Aragonite is the form of calcium carbonate that corals use to build their
 skeletons. The saturation state (Ω~ar~) measures how favorable or corrosive the
-surrounding seawater chemistry is for that mineral — values above 3 are generally
-considered good for coral calcification, values between 2 and 3 are stressful, and
-values below 1 mean the water is actively dissolving aragonite [@hoeghguldberg2007].
-This is the standard chemical index for ocean acidification stress on reefs.
+surrounding seawater chemistry is for that mineral — from what I can tell reading
+[@hoeghguldberg2007], values above 3 are generally considered good for coral
+calcification, values between 2 and 3 are stressful, and values below 1 mean the water
+is actively dissolving aragonite. This appears to be the standard chemical index for
+ocean acidification stress on reefs.
 
 The mechanism here is distinct from the thermal and light pathways in Predictors 1–4.
 Aragonite saturation is not an acute bleaching trigger — it is a chronic background
@@ -576,12 +586,13 @@ series.
 
 **The resolution problem:** A 1° grid cell at 25°N is roughly 100km × 110km. The DHW
 pixel is 5km × 5km. The bleaching survey is conducted at a specific reef that might be a
-few hundred meters across. Joining a value computed at 100km scale to an outcome
-observed at sub-1km spatial precision introduces attenuation bias — the regression
-coefficient on Ω~ar~ will be attenuated toward zero relative to its true effect,
-because the large-scale measurement averages over spatial variation the model cannot
-see. The honest expectation is that the Ω~ar~ coefficient will be underestimated, not
-that it will be zero.
+few hundred meters across. I am joining a value computed at 100km scale to an outcome
+observed at sub-1km spatial precision. My wife — a PhD economist with serious
+econometric chops — flagged this as a textbook attenuation bias setup: the large-scale
+measurement averages over spatial variation the model cannot see, which pulls the
+coefficient toward zero relative to its true effect. The expectation going in is that the
+Ω~ar~ coefficient will be underestimated, not that it will be zero. That is a meaningful
+distinction when interpreting results.
 
 ```{python}
 #| eval: false
@@ -625,7 +636,9 @@ def assign_aragonite(site_lat, site_lon, omega_ar_grid):
 ### Predictor 6 — Prior Bleaching History
 
 **The contested science:** This is the predictor where the literature is most genuinely
-divided, and where the debate is interesting rather than just confusing.
+divided, and where my undergraduate background in evolutionary biology — I went to a
+school with a strong evo-bio program, though I leaned molecular — gives me enough
+footing to find the debate interesting rather than just confusing.
 
 The two competing hypotheses cut in opposite directions.
 
@@ -916,12 +929,15 @@ print(summary(fit_zi))
 
 **Modeling notes:**
 
-The dispersion component specification — how variance scales with the mean in the beta
-regression — warrants diagnostic review against the real data before any coefficients
-are reported publicly. An economist co-reviewer is already in the loop on this and on
-the attenuation bias question for the Ω~ar~ predictor. Whether to use the standard
-`betareg` fit or the `glmmTMB` zero-inflated version is a decision I cannot make until
-the real data is in hand and I can see how many exact zeros are in the Caribbean subset.
+I have an unfair advantage on the econometrics side of this: my wife is a PhD economist
+with serious econometric chops, and she has already flagged two things that warrant
+expert review before any coefficients get reported publicly. The first is the dispersion
+component specification — how variance scales with the mean in a beta regression is not
+obvious and the diagnostic plots for this are not something I fully know how to read yet.
+The second is the attenuation bias problem in the aragonite predictor, described above.
+I plan to put that relationship to work. Whether to use the standard `betareg` fit or
+the `glmmTMB` zero-inflated version is a decision I cannot make until the real data is
+in hand and I can see how many exact zeros are in the Caribbean subset.
 
 ---
 
@@ -1018,9 +1034,9 @@ regimes. That is itself a finding worth reporting, not a failure of the model.
 **Level 3 — In-water external validation.**
 For each high-predicted-risk site-season in the test set, query CoralWatch, Reef Check,
 and AGRRA for any bleaching observation within a 25km / 4-week spatiotemporal window
-around the predicted event. @heron2016 used the same 25km / 4-week defaults for the
-canonical CRW 5km validation, which makes this directly comparable to the published
-validation literature.
+around the predicted event. @heron2016 used the same 25km / 4-week defaults for the CRW
+5km validation — which makes this approach directly comparable to at least that published
+benchmark, whatever else it turns out to be comparable to.
 
 This is the strongest validation available — predictions checked against truly
 independent ground truth. It is also the noisiest: a missed bleaching event in the
