@@ -1,129 +1,192 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About Me",
+    "objectID": "projects/subaru-audio-tuning.html",
+    "href": "projects/subaru-audio-tuning.html",
+    "title": "2016 Subaru Outback Stereo Build",
     "section": "",
-    "text": "I’m a clinical informaticist and data systems professional based in the Washington, D.C. area, currently working at the National Institutes of Health. My work sits at the intersection of clinical research, data science, primary data collection, and research infrastructure.\nI work shoulder to shoulder with principal investigators, research teams, and operational stakeholders to understand scientific needs and translate them into usable systems, workflows, and data platforms. I also work with program and organizational leadership to shape enterprise data capabilities that support governance, interoperability, reproducibility, and long-term scientific value.\nMy professional background includes clinical research informatics, data governance, cloud-based research platforms, REDCap operations, metadata workflows, and support for large-scale scientific data programs.\nI’m currently expanding my scope into marine science, GIS, remote sensing, Structure-from-Motion photogrammetry, full-stack software development, and hardware engineering. Long term, I’m interested in applying informatics, reproducible analysis, and geospatial tools to coral reef research and marine conservation at institutions such as Scripps Institution of Oceanography, Woods Hole Oceanographic Institution, Mote Marine Laboratory, NOAA, or similar research organizations.\nOutside of work, I apply the same data and engineering mindset to cycling analytics, high-power rocketry, ham radio, Arduino-based systems, and embedded radio telemetry projects."
+    "text": "This project documents the process of upgrading the factory Harman Kardon audio system in a 2016 Subaru Outback into a much more capable, tunable aftermarket system while retaining daily drivability and factory convenience features.\nThe build centers around a Sony XAV-AX4000 head unit, Maestro integration, a Kicker LX 1300.7 multi-channel amplifier, an active Morel front stage, rear fill, and a JL Audio 10W6v3 subwoofer in a sealed enclosure.\nThe goal was not just to make the system louder, but to build a clean, flexible, well-documented setup with proper crossover points, gain structure, signal routing, and enough tuning control to make the car sound genuinely excellent."
   },
   {
-    "objectID": "about.html#background",
-    "href": "about.html#background",
-    "title": "About Me",
+    "objectID": "projects/subaru-audio-tuning.html#overview",
+    "href": "projects/subaru-audio-tuning.html#overview",
+    "title": "2016 Subaru Outback Stereo Build",
     "section": "",
-    "text": "I’m a clinical informaticist and data systems professional based in the Washington, D.C. area, currently working at the National Institutes of Health. My work sits at the intersection of clinical research, data science, primary data collection, and research infrastructure.\nI work shoulder to shoulder with principal investigators, research teams, and operational stakeholders to understand scientific needs and translate them into usable systems, workflows, and data platforms. I also work with program and organizational leadership to shape enterprise data capabilities that support governance, interoperability, reproducibility, and long-term scientific value.\nMy professional background includes clinical research informatics, data governance, cloud-based research platforms, REDCap operations, metadata workflows, and support for large-scale scientific data programs.\nI’m currently expanding my scope into marine science, GIS, remote sensing, Structure-from-Motion photogrammetry, full-stack software development, and hardware engineering. Long term, I’m interested in applying informatics, reproducible analysis, and geospatial tools to coral reef research and marine conservation at institutions such as Scripps Institution of Oceanography, Woods Hole Oceanographic Institution, Mote Marine Laboratory, NOAA, or similar research organizations.\nOutside of work, I apply the same data and engineering mindset to cycling analytics, high-power rocketry, ham radio, Arduino-based systems, and embedded radio telemetry projects."
+    "text": "This project documents the process of upgrading the factory Harman Kardon audio system in a 2016 Subaru Outback into a much more capable, tunable aftermarket system while retaining daily drivability and factory convenience features.\nThe build centers around a Sony XAV-AX4000 head unit, Maestro integration, a Kicker LX 1300.7 multi-channel amplifier, an active Morel front stage, rear fill, and a JL Audio 10W6v3 subwoofer in a sealed enclosure.\nThe goal was not just to make the system louder, but to build a clean, flexible, well-documented setup with proper crossover points, gain structure, signal routing, and enough tuning control to make the car sound genuinely excellent."
   },
   {
-    "objectID": "about.html#education",
-    "href": "about.html#education",
-    "title": "About Me",
-    "section": "Education",
-    "text": "Education\n\nM.Sc. Health Care Administration Informatics, University of Maryland University College, Adelphi, MD — May 2016\nB.Sc. Biology (Minor: Chemistry, Minor: Physics), Wilkes University, Wilkes-Barre, PA — May 2009"
+    "objectID": "projects/subaru-audio-tuning.html#system-components",
+    "href": "projects/subaru-audio-tuning.html#system-components",
+    "title": "2016 Subaru Outback Stereo Build",
+    "section": "System Components",
+    "text": "System Components\n\nSource and Integration\n\nSony XAV-AX4000 head unit\nMaestro integration for steering wheel controls and vehicle feature retention\nFactory Harman Kardon amplifier removed from the audio signal path\nFactory Subaru wiring retained where practical\n\n\n\nAmplification\n\nKicker LX 1300.7 seven-channel amplifier\nActive front-stage configuration\nRear door speakers on independent rear channels\nDedicated subwoofer channel for sealed JL Audio subwoofer\n\n\n\nSpeakers\n\nMorel Tempo Ultra 602 MKII component speakers\nFront tweeters run actively on AMP 1\nFront door woofers run actively on AMP 2\nRear doors run as passive rear fill on AMP 3\n\n\n\nSubwoofer\n\nJL Audio 10W6v3-D4\nSealed custom enclosure\nTuned for clean, musical low-end support rather than maximum boom"
   },
   {
-    "objectID": "about.html#experience",
-    "href": "about.html#experience",
-    "title": "About Me",
-    "section": "Experience",
-    "text": "Experience\n\nNational Institutes of Health / NHLBI — Biomedical Informatics Project Manager, 05/2021–Present\n\nWork directly with principal investigators, research teams, and scientific stakeholders to understand research needs and translate them into practical informatics solutions.\nPartner with program leadership and enterprise stakeholders to develop data platforms, governance models, and operational workflows that scale beyond individual studies.\nSupport researcher-facing data systems, clinical research informatics workflows, and cloud-based scientific data platforms.\nContribute to data governance, metadata, data release, interoperability, and operational workflows for large-scale biomedical research programs.\nWork across scientific, technical, and operational teams to bridge investigator needs, enterprise priorities, and sustainable platform design."
+    "objectID": "projects/subaru-audio-tuning.html#wiring-and-signal-routing",
+    "href": "projects/subaru-audio-tuning.html#wiring-and-signal-routing",
+    "title": "2016 Subaru Outback Stereo Build",
+    "section": "Wiring and Signal Routing",
+    "text": "Wiring and Signal Routing\nThis build required working around several Subaru-specific quirks, especially because the vehicle originally had the Harman Kardon factory system.\n\nRCA Signal Routing\nThe final RCA routing uses the Sony head unit outputs to feed the Kicker amp:\n\nFront L/R RCA → AMP 1 input\nRear L/R RCA → AMP 3 input\nSubwoofer RCA → SUB input\n\nThe Kicker amp is configured so that AMP 1 feeds the tweeters and also supplies signal to AMP 2 for the front door woofers. AMP 3 remains independent for rear fill, preserving useful front/rear fader control from the head unit.\n\n\nFactory Wiring\n\nAHH-7881 adapter used to connect amplifier outputs into the factory speaker wiring\nAdapter ordered with tinned ends for easier termination\nFactory Harman Kardon amp bypassed\nSubaru telematics/DCM bypass required to restore the factory tweeter path\nFactory speaker wiring reused where practical to avoid unnecessary rewiring through the doors"
   },
   {
-    "objectID": "about.html#skills",
-    "href": "about.html#skills",
-    "title": "About Me",
-    "section": "Skills",
-    "text": "Skills\n\nProgramming & Analysis: Python, SQL, R, Jupyter notebooks\nData Systems: REDCap, research data platforms, metadata workflows, FAIR data practices, clinical research informatics\nGIS & Remote Sensing: QGIS, geospatial analysis, benthic habitat mapping, remote sensing workflows\nPhotogrammetry: Structure-from-Motion workflows, Agisoft Metashape, large-area imaging concepts\nSoftware & DevOps: Git, GitHub, Quarto, Docker, cloud workspaces, reproducible analysis workflows\nHardware & Telemetry: Arduino, LoRa radio, embedded systems, sensor telemetry, high-power rocketry instrumentation\nDomains: Clinical research, biomedical informatics, marine science, coral reef conservation, geospatial analysis, cycling analytics"
+    "objectID": "projects/subaru-audio-tuning.html#current-tuning-notes",
+    "href": "projects/subaru-audio-tuning.html#current-tuning-notes",
+    "title": "2016 Subaru Outback Stereo Build",
+    "section": "Current Tuning Notes",
+    "text": "Current Tuning Notes\n\nFront Tweeters — AMP 1\n\nHigh-pass filter: 3.2 kHz\nSlope: 24 dB/octave\nFilter type: Linkwitz-Riley\n\n\n\nFront Door Woofers — AMP 2\n\nHigh-pass filter: 60 Hz\nSlope: 12 dB/octave\nLow-pass filter: 3.2 kHz\nSlope: 24 dB/octave\nFilter type: Linkwitz-Riley\n\n\n\nRear Doors — AMP 3\n\nHigh-pass filter: approximately 65 Hz\nSlope: 12 dB/octave\nUsed primarily as rear fill\n\n\n\nSubwoofer\n\nLow-pass filter: 80 Hz\nSlope: 24 dB/octave\nFilter type: Linkwitz-Riley\nSubwoofer high-pass filter set as low as possible on the amp, around 10 Hz"
   },
   {
-    "objectID": "about.html#currently-learning",
-    "href": "about.html#currently-learning",
-    "title": "About Me",
-    "section": "Currently Learning",
-    "text": "Currently Learning\n\nGIS workflows for marine and coastal datasets\nBenthic habitat classification and coral reef mapping methods\nStructure-from-Motion photogrammetry for reef monitoring\nRemote sensing applications for marine conservation\nFull-stack web development for data-driven hobby and research tools\nEmbedded telemetry systems using microcontrollers, sensors, and LoRa radio"
+    "objectID": "projects/subaru-audio-tuning.html#lessons-learned",
+    "href": "projects/subaru-audio-tuning.html#lessons-learned",
+    "title": "2016 Subaru Outback Stereo Build",
+    "section": "Lessons Learned",
+    "text": "Lessons Learned\n\nThe factory amp and DSP need to be fully understood before replacing them\nThe telematics/DCM wiring can affect the tweeter path\nHarness adapters save time, but the pinouts still need to be verified\nActive front-stage tuning is worth the effort\nCrossover slopes and gain structure matter as much as hardware selection\nA good sealed 10-inch subwoofer is an excellent match for this wagon"
   },
   {
-    "objectID": "about.html#projects-interests",
-    "href": "about.html#projects-interests",
-    "title": "About Me",
-    "section": "Projects & Interests",
-    "text": "Projects & Interests\n\nCoral GIS & Marine Data: Building a portfolio of geospatial and remote sensing projects focused on reef conservation.\nPhotogrammetry: Learning SfM workflows for reconstructing reef sites from overlapping image sets.\nCycling Analytics: Exploring data tools for cycling performance, fantasy cycling, and route analysis.\nRocket Telemetry: Building embedded radio telemetry systems for high-power rocketry using Arduino-compatible boards, barometric sensors, accelerometers, and LoRa radios.\nHam Radio & Field Systems: Experimenting with radio communications, portable systems, and telemetry workflows."
+    "objectID": "projects/subaru-audio-tuning.html#why-document-this",
+    "href": "projects/subaru-audio-tuning.html#why-document-this",
+    "title": "2016 Subaru Outback Stereo Build",
+    "section": "Why Document This?",
+    "text": "Why Document This?\nThere is plenty of Subaru audio information scattered across forums, product manuals, wiring diagrams, and installer notes, but very little of it is presented as a single coherent build path. This writeup captures the practical decisions, mistakes, fixes, and tuning notes from a real build so that future me — or the next person attempting a similar build — does not have to rediscover the same details from scratch."
   },
   {
-    "objectID": "about.html#contact",
-    "href": "about.html#contact",
-    "title": "About Me",
-    "section": "Contact",
-    "text": "Contact\n\n📧 francisco.velez.v@gmail.com\n🐙 github.com/velezf\n💼 linkedin.com/in/francisco-velez-86028315"
+    "objectID": "projects/subaru-audio-tuning.html#current-status",
+    "href": "projects/subaru-audio-tuning.html#current-status",
+    "title": "2016 Subaru Outback Stereo Build",
+    "section": "Current Status",
+    "text": "Current Status\n✅ Head unit installed\n✅ Maestro integration working\n✅ Factory Harman Kardon amp bypassed\n✅ Kicker LX 1300.7 installed and configured\n✅ Morel front components running active\n✅ Rear fill operational\n✅ JL Audio 10W6v3 sealed subwoofer installed\n✅ Initial gain staging and crossover tuning complete\n✅ System sounding excellent in daily use\n🔧 Next: under-seat amplifier cooling fan triggered by Sony remote turn-on lead."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Francisco Velez",
+    "objectID": "projects/lora-radiorocket.html",
+    "href": "projects/lora-radiorocket.html",
+    "title": "LoRa RadioRocket",
     "section": "",
-    "text": "I’m a clinical informaticist working at the intersection of clinical research, data science, and primary data collection. My work focuses on building systems, workflows, and data platforms that support researchers across a wide range of scientific and operational needs. I’m currently expanding my scope into marine science, GIS, remote sensing, full-stack software development, and hardware engineering. Outside of work, I apply the same data and engineering mindset to cycling analytics, high-power rocketry, ham radio, Arduino-based systems, and embedded telemetry projects."
+    "text": "A ground-up rewrite of N3VEM’s RadioRocketV2 for the Adafruit Feather M0 + RFM95 platform. Unlike altimeters that store and dump data after recovery, this system streams altitude, G-force, and flight state to the ground in real time at 1 Hz — so you’re watching the numbers the moment the rocket leaves the rail. Designed for both mid- and high-power launches; currently flight-tested on a PiercerMini, with high-power deployment planned for an Apogee Zephyr (nose cone e-bay already built)."
   },
   {
-    "objectID": "index.html#welcome",
-    "href": "index.html#welcome",
-    "title": "Francisco Velez",
+    "objectID": "projects/lora-radiorocket.html#overview",
+    "href": "projects/lora-radiorocket.html#overview",
+    "title": "LoRa RadioRocket",
     "section": "",
-    "text": "I’m a clinical informaticist working at the intersection of clinical research, data science, and primary data collection. My work focuses on building systems, workflows, and data platforms that support researchers across a wide range of scientific and operational needs. I’m currently expanding my scope into marine science, GIS, remote sensing, full-stack software development, and hardware engineering. Outside of work, I apply the same data and engineering mindset to cycling analytics, high-power rocketry, ham radio, Arduino-based systems, and embedded telemetry projects."
+    "text": "A ground-up rewrite of N3VEM’s RadioRocketV2 for the Adafruit Feather M0 + RFM95 platform. Unlike altimeters that store and dump data after recovery, this system streams altitude, G-force, and flight state to the ground in real time at 1 Hz — so you’re watching the numbers the moment the rocket leaves the rail. Designed for both mid- and high-power launches; currently flight-tested on a PiercerMini, with high-power deployment planned for an Apogee Zephyr (nose cone e-bay already built)."
   },
   {
-    "objectID": "index.html#research-interests",
-    "href": "index.html#research-interests",
-    "title": "Francisco Velez",
-    "section": "Research Interests",
-    "text": "Research Interests\n\nCoral reef monitoring and benthic habitat mapping\nStructure-from-Motion photogrammetry for marine applications\nGeospatial data visualization and analysis\nIoT and radio telemetry systems"
+    "objectID": "projects/lora-radiorocket.html#hardware",
+    "href": "projects/lora-radiorocket.html#hardware",
+    "title": "LoRa RadioRocket",
+    "section": "Hardware",
+    "text": "Hardware\n\nTX Sled (rocket)\n\n\n\nComponent\nPurpose\n\n\n\n\nAdafruit Feather M0 + RFM95 (434 MHz)\nMicrocontroller + LoRa radio\n\n\nAdafruit BMP390\nBarometric pressure / altitude\n\n\nAdafruit ADXL375\nHigh-G accelerometer (±200 g)\n\n\nLiPo battery\nPower\n\n\n\n\n\nRX Ground Station (APRS Digipeater + LoRa Receiver)\nThe ground station is a LePotato SBC built into a custom blue acrylic enclosure. It serves double duty: receiving LoRa telemetry from the rocket and acting as a portable APRS digipeater — because most mid-power launch sites are outside range of any APRS I-Gate or digipeater, this station brings the infrastructure to the field.\n\n\n\n\n\n\n\nComponent\nPurpose\n\n\n\n\nLibre Computer LePotato SBC\nRuns Linux, Direwolf TNC, Node-RED dashboard\n\n\nRTL-SDR V4 dongle\nAPRS receive + digipeater (144.39 MHz)\n\n\nAdafruit Feather M0 + RFM95 (434 MHz)\nLoRa telemetry receiver\n\n\n12V → 5V DC-DC converter\nField power from vehicle or battery\n\n\nCustom blue acrylic enclosure\nHouses all hardware\n\n\n\nSoftware stack: Direwolf (software TNC + digipeater), Xastir (APRS mapping), Node-RED (telemetry dashboard), VNC (headless remote access).\nWhen the rocket eventually carries an APRS tracker (planned: QRPLabs LightAPRS 2.0), this station will digipeat its packets to the APRS network from the field."
   },
   {
-    "objectID": "index.html#recent-projects",
-    "href": "index.html#recent-projects",
-    "title": "Francisco Velez",
-    "section": "Recent Projects",
-    "text": "Recent Projects\nCheck out my Projects page for a full overview of my work."
+    "objectID": "projects/lora-radiorocket.html#firmware",
+    "href": "projects/lora-radiorocket.html#firmware",
+    "title": "LoRa RadioRocket",
+    "section": "Firmware",
+    "text": "Firmware\nThree algorithms do the interesting work:\n\n1. Ground pressure calibration\nAt boot, the sled takes 50 pressure readings over ~2.5 seconds and averages them to establish a stable ground-level reference. Everything else — altitude, apogee — is computed relative to this baseline.\n// Calibrate ground pressure\nfloat sum = 0;\nfor (int i = 0; i &lt; 50; i++) {\n  bmp.performReading();\n  sum += bmp.pressure / 100.0;\n  delay(50);\n}\ngroundPressure = sum / 50.0;\nA simple average works well on a calm pad. A future improvement would be a trimmed mean — discarding the top and bottom few samples — to handle sensor noise spikes at power-on.\n\n\n2. Launch detection\nRather than checking a single axis, launch is detected from the vector magnitude across all three accelerometer axes. This makes detection robust regardless of how the sled is oriented in the airframe.\nfloat g = sqrt(event.acceleration.x * event.acceleration.x +\n               event.acceleration.y * event.acceleration.y +\n               event.acceleration.z * event.acceleration.z) / 9.80665;\n\nif (!inFlight && g &gt; launchThresholdG) {\n  inFlight = true;\n  launchTime = now;\n}\n\n\n3. Apogee detection\nApogee is detected purely from barometric altitude — no additional sensors needed. The firmware tracks the running maximum altitude and flags descent the moment altitude stops climbing.\nif (altitudeFt &gt; maxAltitudeFt) {\n  maxAltitudeFt = altitudeFt;\n  descending = false;  // still ascending\n} else {\n  descending = true;   // apogee passed\n}\nif (g &gt; peakG) peakG = g;  // update peak G\nEach 1 Hz telemetry packet bundles all of this into a compact string — current altitude, max altitude, live G, peak G, temperature, battery voltage, and flight state — and waits up to 300 ms for an ACK from the ground station before continuing."
   },
   {
-    "objectID": "projects/reef-sfm-workflow.html",
-    "href": "projects/reef-sfm-workflow.html",
-    "title": "Reef SfM Workflow",
+    "objectID": "projects/lora-radiorocket.html#build-photos",
+    "href": "projects/lora-radiorocket.html#build-photos",
+    "title": "LoRa RadioRocket",
+    "section": "Build Photos",
+    "text": "Build Photos\n\n\n\n\n\n\nTX sled — Feather M0 + BMP390 + ADXL375 in 3D-printed bracket\n\n\n\n\n\n\n\nElectronics bay\n\n\n\n\n\n\n\n\n\nPiercerMini — Radio Rocket Edition\n\n\n\n\n\n\n\nGround station interior — Feather M0 + RTL-SDR + DC converter\n\n\n\n\n\n\n\n\n\n\n\nGround station rear panel — ethernet, USB, and power connectors\n\n\n\n\n\n\n\nSCE to AUX — the front panel switch is a replica of the Apollo 12 Emergency Detection System switch. On November 14, 1969, a lightning strike knocked out telemetry 36 seconds after launch. Flight controller John Aaron recognized the signature and called SCE to AUX. Alan Bean found the switch on panel 8 and flipped it, restoring all telemetry and saving the mission. It felt like the right switch for a rocket telemetry ground station.\n\n\n\n\n\n\n\n\n\n\n\nAt the range — ground station connected to laptop, PiercerMini on the table"
+  },
+  {
+    "objectID": "projects/lora-radiorocket.html#status",
+    "href": "projects/lora-radiorocket.html#status",
+    "title": "LoRa RadioRocket",
+    "section": "Status",
+    "text": "Status\n✅ Flight tested — telemetry received successfully on first flight.\n🔧 High-power deployment in progress — Apogee Zephyr nose cone e-bay built, NAR Level 1 certified."
+  },
+  {
+    "objectID": "projects/lora-radiorocket.html#links",
+    "href": "projects/lora-radiorocket.html#links",
+    "title": "LoRa RadioRocket",
+    "section": "Links",
+    "text": "Links\n\nGitHub Repository\nTX Firmware\nRX Firmware"
+  },
+  {
+    "objectID": "projects/benthic-habitat-map.html",
+    "href": "projects/benthic-habitat-map.html",
+    "title": "Benthic Habitat Mapping",
     "section": "",
-    "text": "This project documents the SfM processing pipeline I’m building toward for coral reef surveys — from image acquisition underwater through to final 3D model outputs and quality assessment. The workflow structure below reflects my research into best practices from the literature and practitioner guides. I have not yet applied this pipeline to real reef survey data.\nStatus: 🚧 In progress — workflow design and learning phase. Application to real data is planned future work."
+    "text": "Benthic habitat maps are essential tools for coral reef management and conservation. This project outlines the methods I’m studying for producing high-resolution habitat maps by combining field survey data with remote sensing imagery. The workflow below is based on my research into established approaches in the field. I have not yet produced a habitat map from real data — that is the goal I’m working toward.\nStatus: 🚧 In progress — methods research and learning phase. Map production is planned future work."
   },
   {
-    "objectID": "projects/reef-sfm-workflow.html#overview",
-    "href": "projects/reef-sfm-workflow.html#overview",
-    "title": "Reef SfM Workflow",
+    "objectID": "projects/benthic-habitat-map.html#overview",
+    "href": "projects/benthic-habitat-map.html#overview",
+    "title": "Benthic Habitat Mapping",
     "section": "",
-    "text": "This project documents the SfM processing pipeline I’m building toward for coral reef surveys — from image acquisition underwater through to final 3D model outputs and quality assessment. The workflow structure below reflects my research into best practices from the literature and practitioner guides. I have not yet applied this pipeline to real reef survey data.\nStatus: 🚧 In progress — workflow design and learning phase. Application to real data is planned future work."
+    "text": "Benthic habitat maps are essential tools for coral reef management and conservation. This project outlines the methods I’m studying for producing high-resolution habitat maps by combining field survey data with remote sensing imagery. The workflow below is based on my research into established approaches in the field. I have not yet produced a habitat map from real data — that is the goal I’m working toward.\nStatus: 🚧 In progress — methods research and learning phase. Map production is planned future work."
   },
   {
-    "objectID": "projects/reef-sfm-workflow.html#why-this-workflow",
-    "href": "projects/reef-sfm-workflow.html#why-this-workflow",
-    "title": "Reef SfM Workflow",
-    "section": "Why This Workflow",
-    "text": "Why This Workflow\nMy goal is to be able to take a set of overlapping underwater photographs and produce validated, georeferenced 3D outputs that can support reef monitoring, structural complexity analysis, and change detection over time. Documenting the workflow in advance gives me a clear target to build toward and a reference to refine as I gain hands-on experience."
+    "objectID": "projects/benthic-habitat-map.html#why-benthic-mapping",
+    "href": "projects/benthic-habitat-map.html#why-benthic-mapping",
+    "title": "Benthic Habitat Mapping",
+    "section": "Why Benthic Mapping",
+    "text": "Why Benthic Mapping\nUnderstanding what lives on the seafloor — coral, seagrass, sand, rubble — is foundational to reef conservation and management. High-resolution benthic maps enable habitat change tracking over time, identification of bleaching or damage extent, prioritization of restoration and protection efforts, and integration with water quality and thermal stress data. I want to be able to produce and work with these maps as part of applied marine data science work."
   },
   {
-    "objectID": "projects/reef-sfm-workflow.html#planned-workflow-steps",
-    "href": "projects/reef-sfm-workflow.html#planned-workflow-steps",
-    "title": "Reef SfM Workflow",
-    "section": "Planned Workflow Steps",
-    "text": "Planned Workflow Steps\n\n1. Image Acquisition\n\nCamera settings and housing selection for underwater use\nDive survey protocols to achieve sufficient image overlap (typically 80–90%)\nLighting considerations: strobes vs. ambient, color correction for depth\nSurvey track planning for consistent coverage\n\n\n\n2. Processing in Agisoft Metashape\n\nPhoto alignment and sparse point cloud generation\nDense point cloud generation (quality vs. processing time tradeoffs)\nMesh construction and texturing\nOrthomosaic and DEM export\n\n\n\n3. Quality Assessment\n\nGround control points (GCPs) for georeferencing and scale\nReprojection error review and iterative alignment refinement\nVisual inspection for model artifacts, holes, and misalignments\n\n\n\n4. Outputs\n\nOrthomosaic (2D georeferenced image) for habitat classification\nDigital elevation model (DEM) for rugosity and structural complexity analysis\n3D mesh for visual inspection and volumetric analysis"
+    "objectID": "projects/benthic-habitat-map.html#planned-methods",
+    "href": "projects/benthic-habitat-map.html#planned-methods",
+    "title": "Benthic Habitat Mapping",
+    "section": "Planned Methods",
+    "text": "Planned Methods\n\nData Sources\n\nMultispectral satellite imagery (e.g., Planet, Sentinel-2, WorldView)\nUnderwater photo transects for field validation\nSfM-derived orthomosaics as high-resolution local inputs\n\n\n\nClassification Approach\n\nObject-based image analysis (OBIA) for reef-scale segmentation\nSupervised classification using field validation points\nAccuracy assessment with confusion matrices and kappa statistics\n\n\n\nGIS Processing\n\nCoordinate reference system management and reprojection\nRaster and vector integration\nMap layout and cartographic output in QGIS"
   },
   {
-    "objectID": "projects/reef-sfm-workflow.html#tools-im-learning",
-    "href": "projects/reef-sfm-workflow.html#tools-im-learning",
-    "title": "Reef SfM Workflow",
+    "objectID": "projects/benthic-habitat-map.html#tools-im-learning",
+    "href": "projects/benthic-habitat-map.html#tools-im-learning",
+    "title": "Benthic Habitat Mapping",
     "section": "Tools I’m Learning",
-    "text": "Tools I’m Learning\n\nAgisoft Metashape — primary SfM processing software\nQGIS — for georeferenced output analysis and visualization\nPython (open3d, pdal) — point cloud analysis and automation"
+    "text": "Tools I’m Learning\n\nQGIS — primary GIS environment\nPython (rasterio, geopandas, scikit-learn) — raster processing and classification\nGoogle Earth Engine — cloud-scale remote sensing analysis (planned)"
   },
   {
-    "objectID": "projects/reef-sfm-workflow.html#path-forward",
-    "href": "projects/reef-sfm-workflow.html#path-forward",
-    "title": "Reef SfM Workflow",
+    "objectID": "projects/benthic-habitat-map.html#path-forward",
+    "href": "projects/benthic-habitat-map.html#path-forward",
+    "title": "Benthic Habitat Mapping",
     "section": "Path Forward",
-    "text": "Path Forward\nOnce I have access to suitable underwater image sets — either from open datasets, collaborators, or my own dives — I’ll work through this pipeline, document the results, and update this page with real outputs and lessons learned."
+    "text": "Path Forward\nMy near-term plan is to work through a classification exercise using a publicly available benthic dataset — likely from NOAA’s National Coral Reef Monitoring Program or the Allen Coral Atlas — to produce a documented, reproducible mapping workflow before applying it to original survey data."
+  },
+  {
+    "objectID": "projects/sfm-marine.html",
+    "href": "projects/sfm-marine.html",
+    "title": "SfM Photogrammetry for Marine Science",
+    "section": "",
+    "text": "Structure-from-Motion (SfM) photogrammetry enables the creation of precise 3D models from overlapping photographs. This page documents my study of how SfM methods are applied to underwater survey data to map and monitor coral reefs and benthic habitats — and outlines the work I plan to do as I build toward applying these techniques myself.\nStatus: 🚧 In progress — this is active learning and future planned work, not a completed project."
+  },
+  {
+    "objectID": "projects/sfm-marine.html#overview",
+    "href": "projects/sfm-marine.html#overview",
+    "title": "SfM Photogrammetry for Marine Science",
+    "section": "",
+    "text": "Structure-from-Motion (SfM) photogrammetry enables the creation of precise 3D models from overlapping photographs. This page documents my study of how SfM methods are applied to underwater survey data to map and monitor coral reefs and benthic habitats — and outlines the work I plan to do as I build toward applying these techniques myself.\nStatus: 🚧 In progress — this is active learning and future planned work, not a completed project."
+  },
+  {
+    "objectID": "projects/sfm-marine.html#why-im-interested-in-sfm-for-marine-science",
+    "href": "projects/sfm-marine.html#why-im-interested-in-sfm-for-marine-science",
+    "title": "SfM Photogrammetry for Marine Science",
+    "section": "Why I’m Interested in SfM for Marine Science",
+    "text": "Why I’m Interested in SfM for Marine Science\nTraditional survey methods struggle to capture the complex 3D structure of coral reefs. SfM offers capabilities I want to develop:\n\nHigh-resolution 3D reconstructions from standard cameras\nQuantitative measurements of structural complexity\nRepeatable surveys for change detection over time\nLower cost relative to LiDAR or multibeam sonar\n\nMy goal is to build the technical depth to contribute to reef monitoring efforts using these methods, either as part of a research team or through independent projects."
+  },
+  {
+    "objectID": "projects/sfm-marine.html#what-im-learning",
+    "href": "projects/sfm-marine.html#what-im-learning",
+    "title": "SfM Photogrammetry for Marine Science",
+    "section": "What I’m Learning",
+    "text": "What I’m Learning\nI’m working through the core concepts of SfM pipelines, including:\n\nImage acquisition protocols for underwater surveys (overlap, lighting, camera settings)\nProcessing workflows in Agisoft Metashape\nQuality assessment using ground control points and reprojection error\nOutput formats: orthomosaics, DEMs, and 3D meshes"
+  },
+  {
+    "objectID": "projects/sfm-marine.html#planned-work",
+    "href": "projects/sfm-marine.html#planned-work",
+    "title": "SfM Photogrammetry for Marine Science",
+    "section": "Planned Work",
+    "text": "Planned Work\nOnce I have suitable underwater image sets to work with, I plan to document a complete end-to-end pipeline — from raw photos to validated 3D outputs — as a reproducible, open workflow. See the related projects below for where that work is heading."
+  },
+  {
+    "objectID": "projects/sfm-marine.html#related-projects",
+    "href": "projects/sfm-marine.html#related-projects",
+    "title": "SfM Photogrammetry for Marine Science",
+    "section": "Related Projects",
+    "text": "Related Projects\n\nReef SfM Workflow — the detailed processing pipeline I’m building toward\nBenthic Habitat Map — GIS mapping outputs that will draw on SfM data"
   },
   {
     "objectID": "projects/multi-factor-bleaching-risk-score.html",
@@ -210,102 +273,186 @@
     "text": "References\n\n\nBuuren, S. van, and K. Groothuis-Oudshoorn. 2011. “mice: Multivariate Imputation by Chained Equations in R.” Journal of Statistical Software 45 (3): 1–67. https://doi.org/10.18637/jss.v045.i03.\n\n\nCheung, M. W. M. et al. 2025. “Moving Beyond Temperature Metrics in Coral Bleaching Prediction Using Interpretable Machine Learning.” Global Ecology and Biogeography, ahead of print. https://doi.org/10.1111/geb.70105.\n\n\nDonovan, M. K., D. E. Burkepile, C. Kratochwill, et al. 2021. “Local Conditions Magnify Coral Loss After Marine Heatwaves.” Science 372 (6545): 977–80. https://doi.org/10.1126/science.abd9464.\n\n\nFabricius, K. E., C. Langdon, S. Uthicke, et al. 2014. “Losers and Winners in Coral Reefs Acclimatized to Elevated Carbon Dioxide Concentrations.” Nature Climate Change 1: 165–69. https://doi.org/10.1038/nclimate1122.\n\n\nFerrari, S. L. P., and F. Cribari-Neto. 2004. “Beta Regression for Modelling Rates and Proportions.” Journal of Applied Statistics 31 (7): 799–815. https://doi.org/10.1080/0266476042000214501.\n\n\nGrottoli, A. G., M. E. Warner, S. J. Levas, et al. 2014. “The Cumulative Impact of Annual Coral Bleaching Can Turn Some Coral Species Winners into Losers.” Global Change Biology 20 (12): 3823–33. https://doi.org/10.1111/gcb.12658.\n\n\nHeron, S. F., L. Johnston, G. Liu, et al. 2016. “Validation of Reef-Scale Thermal Stress Satellite Products for Coral Bleaching Monitoring.” Remote Sensing 8 (1): 59. https://doi.org/10.3390/rs8010059.\n\n\nHoegh-Guldberg, O., P. J. Mumby, A. J. Hooten, et al. 2007. “Coral Reefs Under Rapid Climate Change and Ocean Acidification.” Science 318 (5857): 1737–42. https://doi.org/10.1126/science.1152509.\n\n\nHughes, Terry P., James T. Kerry, Mariana Álvarez-Noriega, et al. 2017. “Global Warming and Recurrent Mass Bleaching of Corals.” Nature 543: 373–77. https://doi.org/10.1038/nature21707.\n\n\nHughes, Terry P., James T. Kerry, Andrew H. Baird, et al. 2018. “Global Warming Transforms Coral Reef Assemblages.” Nature 556: 492–96. https://doi.org/10.1038/s41586-018-0041-2.\n\n\nJiang, L.-Q., R. A. Feely, B. R. Carter, D. J. Greeley, D. K. Gledhill, and K. M. Arzayus. 2015. “Climatological Distribution of Aragonite Saturation State in the Global Oceans.” Global Biogeochemical Cycles 29 (10): 1656–73. https://doi.org/10.1002/2015GB005198.\n\n\nKiefer, M. C. et al. 2025. “An Explainable Machine Learning Prediction System for Early Warning of Heat Stress on Florida’s Coral Reef.” Environmental Research Communications, ahead of print. https://doi.org/10.1088/2515-7620/ae2570.\n\n\nLachs, L., S. D. Donner, P. J. Mumby, et al. 2023. “Emergent Increase in Coral Thermal Tolerance Reduces Mass Bleaching Under Climate Change.” Nature Communications 14: 4939. https://doi.org/10.1038/s41467-023-40601-6.\n\n\nLiu, Gang, Scott F. Heron, C. Mark Eakin, et al. 2018. “Predicting Heat Stress to Inform Reef Management: NOAA Coral Reef Watch’s 4-Month Coral Bleaching Outlook.” Frontiers in Marine Science 5: 57. https://doi.org/10.3389/fmars.2018.00057.\n\n\nLiu, G., S. F. Heron, C. M. Eakin, et al. 2014. “Reef-Scale Thermal Stress Monitoring of Coral Ecosystems: New 5-Km Global Products from NOAA Coral Reef Watch.” Remote Sensing 6 (11): 11579–606. https://doi.org/10.3390/rs61111579.\n\n\nLoya, Y., K. Sakai, K. Yamazato, Y. Nakano, H. Sambali, and R. van Woesik. 2001. “Coral Bleaching: The Winners and the Losers.” Ecology Letters 4 (2): 122–31. https://doi.org/10.1046/j.1461-0248.2001.00203.x.\n\n\nMellin, C., T. P. Hughes, M. S. Pratchett, S. F. Heron, et al. 2025. “CoralBleachRisk—Global Projections of Coral Bleaching Risk in the 21st Century.” Global Ecology and Biogeography, ahead of print. https://doi.org/10.1111/geb.13955.\n\n\nMuñiz-Castillo, A. I., A. Rivera-Sosa, M. McField, et al. 2024. “Underlying Drivers of Coral Reef Vulnerability to Bleaching in the Mesoamerican Reef.” Communications Biology 7: 1452. https://doi.org/10.1038/s42003-024-07128-y.\n\n\nPalacio-Castro, A. M., T. B. Smith, V. Brandtneris, et al. 2023. “Increased Dominance of Heat-Tolerant Symbionts Creates Resilient Coral Reefs in Near-Term Ocean Warming.” Proceedings of the National Academy of Sciences 120 (7): e2202388120. https://doi.org/10.1073/pnas.2202388120.\n\n\nPalumbi, S. R., D. J. Barshis, N. Traylor-Knowles, and R. A. Bay. 2014. “Mechanisms of Reef Coral Resistance to Future Climate Change.” Science 344 (6186): 895–98. https://doi.org/10.1126/science.1251336.\n\n\nSafaie, A., N. J. Silbiger, T. R. McClanahan, et al. 2018. “High Frequency Temperature Variability Reduces the Risk of Coral Bleaching.” Nature Communications 9: 1671. https://doi.org/10.1038/s41467-018-04074-2.\n\n\nSkirving, W., S. Enríquez, J. D. Hedley, et al. 2018. “Remote Sensing of Coral Bleaching Using Temperature and Light: Progress Towards an Operational Algorithm.” Remote Sensing 10 (1): 18. https://doi.org/10.3390/rs10010018.\n\n\nSkirving, William, Benjamin Marsh, Jacqueline De La Cour, et al. 2020. “CoralTemp and the Coral Reef Watch Coral Bleaching Heat Stress Product Suite Version 3.1.” Remote Sensing 12 (23): 3856. https://doi.org/10.3390/rs12233856.\n\n\nSmithson, M., and J. Verkuilen. 2006. “A Better Lemon Squeezer? Maximum-Likelihood Regression with Beta-Distributed Dependent Variables.” Psychological Methods 11 (1): 54–71. https://doi.org/10.1037/1082-989X.11.1.54.\n\n\nSully, S., D. E. Burkepile, M. K. Donovan, G. Hodgson, and R. van Woesik. 2019. “A Global Analysis of Coral Bleaching over the Past Two Decades.” Nature Communications 10: 1264. https://doi.org/10.1038/s41467-019-09238-2.\n\n\nSully, S., and R. van Woesik. 2020. “Turbid Reefs Moderate Coral Bleaching Under Climate-Related Temperature Stress.” Global Change Biology 26 (3): 1367–73. https://doi.org/10.1111/gcb.14948.\n\n\nWarner, M. E., W. K. Fitt, and G. W. Schmidt. 1999. “Damage to Photosystem II in Symbiotic Dinoflagellates: A Determinant of Coral Bleaching.” Proceedings of the National Academy of Sciences 96 (14): 8007–12. https://doi.org/10.1073/pnas.96.14.8007.\n\n\nWoesik, R. van, and C. Kratochwill. 2022. “A Global Coral-Bleaching Database, 1980–2020.” Scientific Data 9: 20. https://doi.org/10.1038/s41597-022-01121-y.\n\n\n\nData citations:\n\nNOAA Coral Reef Watch (CRW). 2000, updated daily. NOAA Coral Reef Watch Version 3.1 Daily 5km Satellite Coral Bleaching Heat Stress Monitoring Product Suite; CoralTemp and Coral Bleaching Heat Stress. College Park, Maryland, USA: NOAA/NESDIS. Accessed May 2026 at https://coralreefwatch.noaa.gov/\n\n\nvan Woesik, R. and Kratochwill, C. 2022. Global coral-bleaching database, 1980–2020. BCO-DMO. https://doi.org/10.26008/1912/bco-dmo.880797.1\n\n\nThis page is part of a portfolio project at velezf.github.io. It is not an official NOAA product."
   },
   {
-    "objectID": "projects/benthic-habitat-map.html",
-    "href": "projects/benthic-habitat-map.html",
-    "title": "Benthic Habitat Mapping",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Francisco Velez",
     "section": "",
-    "text": "Benthic habitat maps are essential tools for coral reef management and conservation. This project outlines the methods I’m studying for producing high-resolution habitat maps by combining field survey data with remote sensing imagery. The workflow below is based on my research into established approaches in the field. I have not yet produced a habitat map from real data — that is the goal I’m working toward.\nStatus: 🚧 In progress — methods research and learning phase. Map production is planned future work."
+    "text": "I’m a clinical informaticist working at the intersection of clinical research, data science, and primary data collection. My work focuses on building systems, workflows, and data platforms that support researchers across a wide range of scientific and operational needs. I’m currently expanding my scope into marine science, GIS, remote sensing, full-stack software development, and hardware engineering. Outside of work, I apply the same data and engineering mindset to cycling analytics, high-power rocketry, ham radio, Arduino-based systems, and embedded telemetry projects."
   },
   {
-    "objectID": "projects/benthic-habitat-map.html#overview",
-    "href": "projects/benthic-habitat-map.html#overview",
-    "title": "Benthic Habitat Mapping",
+    "objectID": "index.html#welcome",
+    "href": "index.html#welcome",
+    "title": "Francisco Velez",
     "section": "",
-    "text": "Benthic habitat maps are essential tools for coral reef management and conservation. This project outlines the methods I’m studying for producing high-resolution habitat maps by combining field survey data with remote sensing imagery. The workflow below is based on my research into established approaches in the field. I have not yet produced a habitat map from real data — that is the goal I’m working toward.\nStatus: 🚧 In progress — methods research and learning phase. Map production is planned future work."
+    "text": "I’m a clinical informaticist working at the intersection of clinical research, data science, and primary data collection. My work focuses on building systems, workflows, and data platforms that support researchers across a wide range of scientific and operational needs. I’m currently expanding my scope into marine science, GIS, remote sensing, full-stack software development, and hardware engineering. Outside of work, I apply the same data and engineering mindset to cycling analytics, high-power rocketry, ham radio, Arduino-based systems, and embedded telemetry projects."
   },
   {
-    "objectID": "projects/benthic-habitat-map.html#why-benthic-mapping",
-    "href": "projects/benthic-habitat-map.html#why-benthic-mapping",
-    "title": "Benthic Habitat Mapping",
-    "section": "Why Benthic Mapping",
-    "text": "Why Benthic Mapping\nUnderstanding what lives on the seafloor — coral, seagrass, sand, rubble — is foundational to reef conservation and management. High-resolution benthic maps enable habitat change tracking over time, identification of bleaching or damage extent, prioritization of restoration and protection efforts, and integration with water quality and thermal stress data. I want to be able to produce and work with these maps as part of applied marine data science work."
+    "objectID": "index.html#research-interests",
+    "href": "index.html#research-interests",
+    "title": "Francisco Velez",
+    "section": "Research Interests",
+    "text": "Research Interests\n\nCoral reef monitoring and benthic habitat mapping\nStructure-from-Motion photogrammetry for marine applications\nGeospatial data visualization and analysis\nIoT and radio telemetry systems"
   },
   {
-    "objectID": "projects/benthic-habitat-map.html#planned-methods",
-    "href": "projects/benthic-habitat-map.html#planned-methods",
-    "title": "Benthic Habitat Mapping",
-    "section": "Planned Methods",
-    "text": "Planned Methods\n\nData Sources\n\nMultispectral satellite imagery (e.g., Planet, Sentinel-2, WorldView)\nUnderwater photo transects for field validation\nSfM-derived orthomosaics as high-resolution local inputs\n\n\n\nClassification Approach\n\nObject-based image analysis (OBIA) for reef-scale segmentation\nSupervised classification using field validation points\nAccuracy assessment with confusion matrices and kappa statistics\n\n\n\nGIS Processing\n\nCoordinate reference system management and reprojection\nRaster and vector integration\nMap layout and cartographic output in QGIS"
+    "objectID": "index.html#recent-projects",
+    "href": "index.html#recent-projects",
+    "title": "Francisco Velez",
+    "section": "Recent Projects",
+    "text": "Recent Projects\nCheck out my Projects page for a full overview of my work."
   },
   {
-    "objectID": "projects/benthic-habitat-map.html#tools-im-learning",
-    "href": "projects/benthic-habitat-map.html#tools-im-learning",
-    "title": "Benthic Habitat Mapping",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
+    "section": "",
+    "text": "I’m a clinical informaticist and data systems professional based in the Washington, D.C. area, currently working at the National Institutes of Health. My work sits at the intersection of clinical research, data science, primary data collection, and research infrastructure.\nI work shoulder to shoulder with principal investigators, research teams, and operational stakeholders to understand scientific needs and translate them into usable systems, workflows, and data platforms. I also work with program and organizational leadership to shape enterprise data capabilities that support governance, interoperability, reproducibility, and long-term scientific value.\nMy professional background includes clinical research informatics, data governance, cloud-based research platforms, REDCap operations, metadata workflows, and support for large-scale scientific data programs.\nI’m currently expanding my scope into marine science, GIS, remote sensing, Structure-from-Motion photogrammetry, full-stack software development, and hardware engineering. Long term, I’m interested in applying informatics, reproducible analysis, and geospatial tools to coral reef research and marine conservation at institutions such as Scripps Institution of Oceanography, Woods Hole Oceanographic Institution, Mote Marine Laboratory, NOAA, or similar research organizations.\nOutside of work, I apply the same data and engineering mindset to cycling analytics, high-power rocketry, ham radio, Arduino-based systems, and embedded radio telemetry projects."
+  },
+  {
+    "objectID": "about.html#background",
+    "href": "about.html#background",
+    "title": "About Me",
+    "section": "",
+    "text": "I’m a clinical informaticist and data systems professional based in the Washington, D.C. area, currently working at the National Institutes of Health. My work sits at the intersection of clinical research, data science, primary data collection, and research infrastructure.\nI work shoulder to shoulder with principal investigators, research teams, and operational stakeholders to understand scientific needs and translate them into usable systems, workflows, and data platforms. I also work with program and organizational leadership to shape enterprise data capabilities that support governance, interoperability, reproducibility, and long-term scientific value.\nMy professional background includes clinical research informatics, data governance, cloud-based research platforms, REDCap operations, metadata workflows, and support for large-scale scientific data programs.\nI’m currently expanding my scope into marine science, GIS, remote sensing, Structure-from-Motion photogrammetry, full-stack software development, and hardware engineering. Long term, I’m interested in applying informatics, reproducible analysis, and geospatial tools to coral reef research and marine conservation at institutions such as Scripps Institution of Oceanography, Woods Hole Oceanographic Institution, Mote Marine Laboratory, NOAA, or similar research organizations.\nOutside of work, I apply the same data and engineering mindset to cycling analytics, high-power rocketry, ham radio, Arduino-based systems, and embedded radio telemetry projects."
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About Me",
+    "section": "Education",
+    "text": "Education\n\nM.Sc. Health Care Administration Informatics, University of Maryland University College, Adelphi, MD — May 2016\nB.Sc. Biology (Minor: Chemistry, Minor: Physics), Wilkes University, Wilkes-Barre, PA — May 2009"
+  },
+  {
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "About Me",
+    "section": "Experience",
+    "text": "Experience\n\nNational Institutes of Health / NHLBI — Biomedical Informatics Project Manager, 05/2021–Present\n\nWork directly with principal investigators, research teams, and scientific stakeholders to understand research needs and translate them into practical informatics solutions.\nPartner with program leadership and enterprise stakeholders to develop data platforms, governance models, and operational workflows that scale beyond individual studies.\nSupport researcher-facing data systems, clinical research informatics workflows, and cloud-based scientific data platforms.\nContribute to data governance, metadata, data release, interoperability, and operational workflows for large-scale biomedical research programs.\nWork across scientific, technical, and operational teams to bridge investigator needs, enterprise priorities, and sustainable platform design."
+  },
+  {
+    "objectID": "about.html#skills",
+    "href": "about.html#skills",
+    "title": "About Me",
+    "section": "Skills",
+    "text": "Skills\n\nProgramming & Analysis: Python, SQL, R, Jupyter notebooks\nData Systems: REDCap, research data platforms, metadata workflows, FAIR data practices, clinical research informatics\nGIS & Remote Sensing: QGIS, geospatial analysis, benthic habitat mapping, remote sensing workflows\nPhotogrammetry: Structure-from-Motion workflows, Agisoft Metashape, large-area imaging concepts\nSoftware & DevOps: Git, GitHub, Quarto, Docker, cloud workspaces, reproducible analysis workflows\nHardware & Telemetry: Arduino, LoRa radio, embedded systems, sensor telemetry, high-power rocketry instrumentation\nDomains: Clinical research, biomedical informatics, marine science, coral reef conservation, geospatial analysis, cycling analytics"
+  },
+  {
+    "objectID": "about.html#currently-learning",
+    "href": "about.html#currently-learning",
+    "title": "About Me",
+    "section": "Currently Learning",
+    "text": "Currently Learning\n\nGIS workflows for marine and coastal datasets\nBenthic habitat classification and coral reef mapping methods\nStructure-from-Motion photogrammetry for reef monitoring\nRemote sensing applications for marine conservation\nFull-stack web development for data-driven hobby and research tools\nEmbedded telemetry systems using microcontrollers, sensors, and LoRa radio"
+  },
+  {
+    "objectID": "about.html#projects-interests",
+    "href": "about.html#projects-interests",
+    "title": "About Me",
+    "section": "Projects & Interests",
+    "text": "Projects & Interests\n\nCoral GIS & Marine Data: Building a portfolio of geospatial and remote sensing projects focused on reef conservation.\nPhotogrammetry: Learning SfM workflows for reconstructing reef sites from overlapping image sets.\nCycling Analytics: Exploring data tools for cycling performance, fantasy cycling, and route analysis.\nRocket Telemetry: Building embedded radio telemetry systems for high-power rocketry using Arduino-compatible boards, barometric sensors, accelerometers, and LoRa radios.\nHam Radio & Field Systems: Experimenting with radio communications, portable systems, and telemetry workflows."
+  },
+  {
+    "objectID": "about.html#contact",
+    "href": "about.html#contact",
+    "title": "About Me",
+    "section": "Contact",
+    "text": "Contact\n\n📧 francisco.velez.v@gmail.com\n🐙 github.com/velezf\n💼 linkedin.com/in/francisco-velez-86028315"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "2026 Super El Niño Watch: Live Thermal Stress Monitoring\n\n\n\nMarine Science\n\nRemote Sensing\n\nEnvironmental Data Science\n\nPython\n\nLive Monitoring\n\nEl Niño\n\n\n\nLive thermal stress monitoring across seven reef sites during the 2026 Super El Niño period, using NOAA Coral Reef Watch DHW data. Updated daily via GitHub Actions cron at…\n\n\n\nMay 28, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nToward a Multi-Factor Coral Bleaching Risk Score\n\n\n\nMarine Science\n\nEnvironmental Data Science\n\nR\n\nPython\n\nReef Conservation\n\n\n\nA design document for a regression-based, multi-factor coral bleaching risk score — integrating thermal stress, light, turbidity, ocean acidification, and bleaching…\n\n\n\nMay 16, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nExploring Coral Bleaching Risk Using NOAA Coral Reef Watch DHW Data\n\n\n\nMarine Science\n\nRemote Sensing\n\nEnvironmental Data Science\n\nPython\n\nReproducible Research\n\n\n\nA reproducible analysis of satellite-derived thermal stress metrics across five reef systems, using NOAA Coral Reef Watch Degree Heating Weeks (DHW) data.\n\n\n\nMay 12, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\n2016 Subaru Outback Stereo Build\n\n\n\nhardware\n\naudio\n\ncar-audio\n\nSubaru\n\nDIY\n\ndocumentation\n\n\n\nA technical writeup and reference guide for upgrading the factory Harman Kardon audio system in a 2016 Subaru Outback, including head unit replacement, amplifier…\n\n\n\nMay 7, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nLoRa RadioRocket\n\n\n\nIoT\n\ntelemetry\n\nLoRa\n\nhardware\n\namateur radio\n\nArduino\n\n\n\nReal-time LoRa telemetry for mid- and high-power rocketry: 1 Hz altitude, acceleration, and flight state streamed live to a ground station over 434 MHz. NAR Level 1…\n\n\n\nMay 9, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nFreezingSaddles\n\n\n\ncycling\n\nanalytics\n\nvisualization\n\npython\n\n\n\nAnalytics and visualization for a winter cycling challenge tracking mileage, leaderboards, and participation across teams.\n\n\n\nMay 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nBenthic Habitat Mapping\n\n\n\nGIS\n\nmarine science\n\nmapping\n\nremote sensing\n\n\n\nA planned GIS-based workflow for mapping and classifying benthic habitats using remote sensing and field survey data.\n\n\n\nMar 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nReef SfM Workflow\n\n\n\nmarine science\n\nphotogrammetry\n\nworkflow\n\n3D\n\n\n\nA planned end-to-end workflow for processing underwater photos into 3D reef models using Structure-from-Motion photogrammetry.\n\n\n\nFeb 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nSfM Photogrammetry for Marine Science\n\n\n\nmarine science\n\nphotogrammetry\n\n3D\n\nGIS\n\n\n\nAn overview of Structure-from-Motion photogrammetry methods applied to coral reef and benthic habitat surveys — and my plan to apply them.\n\n\n\nJan 1, 2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/freezingsaddles.html",
+    "href": "projects/freezingsaddles.html",
+    "title": "FreezingSaddles",
+    "section": "",
+    "text": "FreezingSaddles is a winter cycling challenge that encourages riders to log miles during the coldest months of the year. This project covers the data pipeline, leaderboard analytics, and visualizations built to support the challenge."
+  },
+  {
+    "objectID": "projects/freezingsaddles.html#overview",
+    "href": "projects/freezingsaddles.html#overview",
+    "title": "FreezingSaddles",
+    "section": "",
+    "text": "FreezingSaddles is a winter cycling challenge that encourages riders to log miles during the coldest months of the year. This project covers the data pipeline, leaderboard analytics, and visualizations built to support the challenge."
+  },
+  {
+    "objectID": "projects/freezingsaddles.html#features",
+    "href": "projects/freezingsaddles.html#features",
+    "title": "FreezingSaddles",
+    "section": "Features",
+    "text": "Features\n\nAutomated mileage ingestion from Strava and manual entries\nTeam and individual leaderboards\nInteractive visualizations of ride data\nHistorical trend analysis across challenge years"
+  },
+  {
+    "objectID": "projects/freezingsaddles.html#technical-stack",
+    "href": "projects/freezingsaddles.html#technical-stack",
+    "title": "FreezingSaddles",
+    "section": "Technical Stack",
+    "text": "Technical Stack\n\nBackend: Python (Flask, pandas)\nData: Strava API, CSV ingestion\nVisualization: Plotly, Matplotlib\nDeployment: Docker, GitHub Actions"
+  },
+  {
+    "objectID": "projects/freezingsaddles.html#highlights",
+    "href": "projects/freezingsaddles.html#highlights",
+    "title": "FreezingSaddles",
+    "section": "Highlights",
+    "text": "Highlights\n\nProcessed thousands of ride entries across multiple seasons\nBuilt interactive leaderboard dashboards\nAutomated data pipeline reducing manual entry overhead"
+  },
+  {
+    "objectID": "projects/freezingsaddles.html#links",
+    "href": "projects/freezingsaddles.html#links",
+    "title": "FreezingSaddles",
+    "section": "Links",
+    "text": "Links\n\nFreezingSaddles — main challenge site\nGitHub Organization — source code and repos"
+  },
+  {
+    "objectID": "projects/freezingsaddles.html#status",
+    "href": "projects/freezingsaddles.html#status",
+    "title": "FreezingSaddles",
+    "section": "Status",
+    "text": "Status\n✅ Active — updated each winter cycling season."
+  },
+  {
+    "objectID": "projects/reef-sfm-workflow.html",
+    "href": "projects/reef-sfm-workflow.html",
+    "title": "Reef SfM Workflow",
+    "section": "",
+    "text": "This project documents the SfM processing pipeline I’m building toward for coral reef surveys — from image acquisition underwater through to final 3D model outputs and quality assessment. The workflow structure below reflects my research into best practices from the literature and practitioner guides. I have not yet applied this pipeline to real reef survey data.\nStatus: 🚧 In progress — workflow design and learning phase. Application to real data is planned future work."
+  },
+  {
+    "objectID": "projects/reef-sfm-workflow.html#overview",
+    "href": "projects/reef-sfm-workflow.html#overview",
+    "title": "Reef SfM Workflow",
+    "section": "",
+    "text": "This project documents the SfM processing pipeline I’m building toward for coral reef surveys — from image acquisition underwater through to final 3D model outputs and quality assessment. The workflow structure below reflects my research into best practices from the literature and practitioner guides. I have not yet applied this pipeline to real reef survey data.\nStatus: 🚧 In progress — workflow design and learning phase. Application to real data is planned future work."
+  },
+  {
+    "objectID": "projects/reef-sfm-workflow.html#why-this-workflow",
+    "href": "projects/reef-sfm-workflow.html#why-this-workflow",
+    "title": "Reef SfM Workflow",
+    "section": "Why This Workflow",
+    "text": "Why This Workflow\nMy goal is to be able to take a set of overlapping underwater photographs and produce validated, georeferenced 3D outputs that can support reef monitoring, structural complexity analysis, and change detection over time. Documenting the workflow in advance gives me a clear target to build toward and a reference to refine as I gain hands-on experience."
+  },
+  {
+    "objectID": "projects/reef-sfm-workflow.html#planned-workflow-steps",
+    "href": "projects/reef-sfm-workflow.html#planned-workflow-steps",
+    "title": "Reef SfM Workflow",
+    "section": "Planned Workflow Steps",
+    "text": "Planned Workflow Steps\n\n1. Image Acquisition\n\nCamera settings and housing selection for underwater use\nDive survey protocols to achieve sufficient image overlap (typically 80–90%)\nLighting considerations: strobes vs. ambient, color correction for depth\nSurvey track planning for consistent coverage\n\n\n\n2. Processing in Agisoft Metashape\n\nPhoto alignment and sparse point cloud generation\nDense point cloud generation (quality vs. processing time tradeoffs)\nMesh construction and texturing\nOrthomosaic and DEM export\n\n\n\n3. Quality Assessment\n\nGround control points (GCPs) for georeferencing and scale\nReprojection error review and iterative alignment refinement\nVisual inspection for model artifacts, holes, and misalignments\n\n\n\n4. Outputs\n\nOrthomosaic (2D georeferenced image) for habitat classification\nDigital elevation model (DEM) for rugosity and structural complexity analysis\n3D mesh for visual inspection and volumetric analysis"
+  },
+  {
+    "objectID": "projects/reef-sfm-workflow.html#tools-im-learning",
+    "href": "projects/reef-sfm-workflow.html#tools-im-learning",
+    "title": "Reef SfM Workflow",
     "section": "Tools I’m Learning",
-    "text": "Tools I’m Learning\n\nQGIS — primary GIS environment\nPython (rasterio, geopandas, scikit-learn) — raster processing and classification\nGoogle Earth Engine — cloud-scale remote sensing analysis (planned)"
+    "text": "Tools I’m Learning\n\nAgisoft Metashape — primary SfM processing software\nQGIS — for georeferenced output analysis and visualization\nPython (open3d, pdal) — point cloud analysis and automation"
   },
   {
-    "objectID": "projects/benthic-habitat-map.html#path-forward",
-    "href": "projects/benthic-habitat-map.html#path-forward",
-    "title": "Benthic Habitat Mapping",
+    "objectID": "projects/reef-sfm-workflow.html#path-forward",
+    "href": "projects/reef-sfm-workflow.html#path-forward",
+    "title": "Reef SfM Workflow",
     "section": "Path Forward",
-    "text": "Path Forward\nMy near-term plan is to work through a classification exercise using a publicly available benthic dataset — likely from NOAA’s National Coral Reef Monitoring Program or the Allen Coral Atlas — to produce a documented, reproducible mapping workflow before applying it to original survey data."
-  },
-  {
-    "objectID": "projects/subaru-audio-tuning.html",
-    "href": "projects/subaru-audio-tuning.html",
-    "title": "2016 Subaru Outback Stereo Build",
-    "section": "",
-    "text": "This project documents the process of upgrading the factory Harman Kardon audio system in a 2016 Subaru Outback into a much more capable, tunable aftermarket system while retaining daily drivability and factory convenience features.\nThe build centers around a Sony XAV-AX4000 head unit, Maestro integration, a Kicker LX 1300.7 multi-channel amplifier, an active Morel front stage, rear fill, and a JL Audio 10W6v3 subwoofer in a sealed enclosure.\nThe goal was not just to make the system louder, but to build a clean, flexible, well-documented setup with proper crossover points, gain structure, signal routing, and enough tuning control to make the car sound genuinely excellent."
-  },
-  {
-    "objectID": "projects/subaru-audio-tuning.html#overview",
-    "href": "projects/subaru-audio-tuning.html#overview",
-    "title": "2016 Subaru Outback Stereo Build",
-    "section": "",
-    "text": "This project documents the process of upgrading the factory Harman Kardon audio system in a 2016 Subaru Outback into a much more capable, tunable aftermarket system while retaining daily drivability and factory convenience features.\nThe build centers around a Sony XAV-AX4000 head unit, Maestro integration, a Kicker LX 1300.7 multi-channel amplifier, an active Morel front stage, rear fill, and a JL Audio 10W6v3 subwoofer in a sealed enclosure.\nThe goal was not just to make the system louder, but to build a clean, flexible, well-documented setup with proper crossover points, gain structure, signal routing, and enough tuning control to make the car sound genuinely excellent."
-  },
-  {
-    "objectID": "projects/subaru-audio-tuning.html#system-components",
-    "href": "projects/subaru-audio-tuning.html#system-components",
-    "title": "2016 Subaru Outback Stereo Build",
-    "section": "System Components",
-    "text": "System Components\n\nSource and Integration\n\nSony XAV-AX4000 head unit\nMaestro integration for steering wheel controls and vehicle feature retention\nFactory Harman Kardon amplifier removed from the audio signal path\nFactory Subaru wiring retained where practical\n\n\n\nAmplification\n\nKicker LX 1300.7 seven-channel amplifier\nActive front-stage configuration\nRear door speakers on independent rear channels\nDedicated subwoofer channel for sealed JL Audio subwoofer\n\n\n\nSpeakers\n\nMorel Tempo Ultra 602 MKII component speakers\nFront tweeters run actively on AMP 1\nFront door woofers run actively on AMP 2\nRear doors run as passive rear fill on AMP 3\n\n\n\nSubwoofer\n\nJL Audio 10W6v3-D4\nSealed custom enclosure\nTuned for clean, musical low-end support rather than maximum boom"
-  },
-  {
-    "objectID": "projects/subaru-audio-tuning.html#wiring-and-signal-routing",
-    "href": "projects/subaru-audio-tuning.html#wiring-and-signal-routing",
-    "title": "2016 Subaru Outback Stereo Build",
-    "section": "Wiring and Signal Routing",
-    "text": "Wiring and Signal Routing\nThis build required working around several Subaru-specific quirks, especially because the vehicle originally had the Harman Kardon factory system.\n\nRCA Signal Routing\nThe final RCA routing uses the Sony head unit outputs to feed the Kicker amp:\n\nFront L/R RCA → AMP 1 input\nRear L/R RCA → AMP 3 input\nSubwoofer RCA → SUB input\n\nThe Kicker amp is configured so that AMP 1 feeds the tweeters and also supplies signal to AMP 2 for the front door woofers. AMP 3 remains independent for rear fill, preserving useful front/rear fader control from the head unit.\n\n\nFactory Wiring\n\nAHH-7881 adapter used to connect amplifier outputs into the factory speaker wiring\nAdapter ordered with tinned ends for easier termination\nFactory Harman Kardon amp bypassed\nSubaru telematics/DCM bypass required to restore the factory tweeter path\nFactory speaker wiring reused where practical to avoid unnecessary rewiring through the doors"
-  },
-  {
-    "objectID": "projects/subaru-audio-tuning.html#current-tuning-notes",
-    "href": "projects/subaru-audio-tuning.html#current-tuning-notes",
-    "title": "2016 Subaru Outback Stereo Build",
-    "section": "Current Tuning Notes",
-    "text": "Current Tuning Notes\n\nFront Tweeters — AMP 1\n\nHigh-pass filter: 3.2 kHz\nSlope: 24 dB/octave\nFilter type: Linkwitz-Riley\n\n\n\nFront Door Woofers — AMP 2\n\nHigh-pass filter: 60 Hz\nSlope: 12 dB/octave\nLow-pass filter: 3.2 kHz\nSlope: 24 dB/octave\nFilter type: Linkwitz-Riley\n\n\n\nRear Doors — AMP 3\n\nHigh-pass filter: approximately 65 Hz\nSlope: 12 dB/octave\nUsed primarily as rear fill\n\n\n\nSubwoofer\n\nLow-pass filter: 80 Hz\nSlope: 24 dB/octave\nFilter type: Linkwitz-Riley\nSubwoofer high-pass filter set as low as possible on the amp, around 10 Hz"
-  },
-  {
-    "objectID": "projects/subaru-audio-tuning.html#lessons-learned",
-    "href": "projects/subaru-audio-tuning.html#lessons-learned",
-    "title": "2016 Subaru Outback Stereo Build",
-    "section": "Lessons Learned",
-    "text": "Lessons Learned\n\nThe factory amp and DSP need to be fully understood before replacing them\nThe telematics/DCM wiring can affect the tweeter path\nHarness adapters save time, but the pinouts still need to be verified\nActive front-stage tuning is worth the effort\nCrossover slopes and gain structure matter as much as hardware selection\nA good sealed 10-inch subwoofer is an excellent match for this wagon"
-  },
-  {
-    "objectID": "projects/subaru-audio-tuning.html#why-document-this",
-    "href": "projects/subaru-audio-tuning.html#why-document-this",
-    "title": "2016 Subaru Outback Stereo Build",
-    "section": "Why Document This?",
-    "text": "Why Document This?\nThere is plenty of Subaru audio information scattered across forums, product manuals, wiring diagrams, and installer notes, but very little of it is presented as a single coherent build path. This writeup captures the practical decisions, mistakes, fixes, and tuning notes from a real build so that future me — or the next person attempting a similar build — does not have to rediscover the same details from scratch."
-  },
-  {
-    "objectID": "projects/subaru-audio-tuning.html#current-status",
-    "href": "projects/subaru-audio-tuning.html#current-status",
-    "title": "2016 Subaru Outback Stereo Build",
-    "section": "Current Status",
-    "text": "Current Status\n✅ Head unit installed\n✅ Maestro integration working\n✅ Factory Harman Kardon amp bypassed\n✅ Kicker LX 1300.7 installed and configured\n✅ Morel front components running active\n✅ Rear fill operational\n✅ JL Audio 10W6v3 sealed subwoofer installed\n✅ Initial gain staging and crossover tuning complete\n✅ System sounding excellent in daily use\n🔧 Next: under-seat amplifier cooling fan triggered by Sony remote turn-on lead."
+    "text": "Path Forward\nOnce I have access to suitable underwater image sets — either from open datasets, collaborators, or my own dives — I’ll work through this pipeline, document the results, and update this page with real outputs and lessons learned."
   },
   {
     "objectID": "projects/el-nino-watch-2026.html",
@@ -336,11 +483,11 @@
     "text": "A note on the data pipeline\nThe first project deliberately kept implementation details in the background — the focus there was on the science, and a long digression on file parsing would have broken that flow. But since this project extends the same pipeline to a live monitoring context, it feels like the right moment to pull back the curtain a bit.\nOne of the more satisfying parts of building this project was writing a parser for NOAA CRW’s Virtual Station file format — and I’ll be honest: this was Claude’s contribution more than mine. My background is in structured clinical data — HL7 messages, FHIR resources, JSON pipelines — where the schema is always explicit, the delimiter is never ambiguous, and a malformed record throws a validation error before it ever reaches your code. The CRW format is a different animal entirely.\nThe files are plain-text, with a free-form prose header that looks like this:\nName:\nFlorida Keys\n...\nAveraged Maximum Monthly Mean:\n28.36\n...\nYYYY MM DD SST_MIN SST_MAX SST@90th_HS SSTA@90th_HS 90th_HS&gt;0 DHW_from_90th_HS&gt;1 BAA_7day_max\n2000 12 25  27.01   27.45   27.12        -1.24         0.00      0.00               0\nNo # comment markers. No separator line between header and data. Column names with @, &gt;, and % characters that pandas will misread without explicit handling. The MMM value — the thermal baseline that the entire alert system is built on — is sitting two lines below a plain-text label, with no key-value structure to anchor it.\nparse_crw_header() handles this by scanning the raw lines one at a time, looking for two sentinel strings: \"Averaged Maximum Monthly Mean:\" tells it the next line is the MMM float, and \"YYYY MM DD\" marks the exact line where the data table begins. That line index gets passed to pd.read_csv() via StringIO, so pandas never sees the header at all — it reads only the structured portion of the file.\nThe date column requires one more fix. The data table stores date as three separate integer columns — YYYY, MM, DD — which is common in older scientific datasets. The safest reconstruction is string concatenation with str.zfill(2) to zero-pad single-digit months and days before passing to pd.to_datetime(). Skipping the zero-padding produces silent failures on dates like January 5th (2026-1-5 parses inconsistently across pandas versions; 2026-01-05 does not).\nFinally, fetch_crw_station() renames the v3.1 column names — DHW_from_90th_HS&gt;1, SSTA@90th_HS, BAA_7day_max — to readable aliases (dhw, sst_anom, alert) and carries the MMM value through as a site-level column, so every row in the output DataFrame knows its own thermal baseline. That makes the alert classification logic in dhw_to_alert() self-contained and easy to audit.\nThis parser is carried over directly from the first project with two small changes: the cache now stores the raw .txt file rather than a parsed CSV (preserving the original header and MMM value across sessions), and the sst_anomaly column alias from the bleaching project is shortened to sst_anom here for consistency with the status table and plot code.\nOutput directories are anchored to the project root rather than using bare relative paths, so the cache and figure outputs from this project stay isolated from the bleaching project even if both kernels are running simultaneously.\n\n\n\nShow code\nfetch_stamp = datetime.now(timezone.utc).strftime(\"%Y-%m-%d %H:%M UTC\")"
   },
   {
-    "objectID": "projects/el-nino-watch-2026.html#quick-status-2026-05-27-1007-utc",
-    "href": "projects/el-nino-watch-2026.html#quick-status-2026-05-27-1007-utc",
+    "objectID": "projects/el-nino-watch-2026.html#quick-status-2026-05-28-1016-utc",
+    "href": "projects/el-nino-watch-2026.html#quick-status-2026-05-28-1016-utc",
     "title": "2026 Super El Niño Watch: Live Thermal Stress Monitoring",
-    "section": "Quick status — 2026-05-27 10:07 UTC",
-    "text": "Quick status — 2026-05-27 10:07 UTC\n\n\nShow code\n# =============================================================================\n# Cell 4 -- Fetch 2026 YTD data for all seven sites\n# =============================================================================\n\nsite_data   = {}\nsite_errors = []\n\nfor name, cfg in STATIONS.items():\n    try:\n        df = fetch_2026_ytd(name, cfg[\"station_id\"])\n        if df is not None and len(df) &gt; 0:\n            site_data[name] = df\n        else:\n            site_errors.append(name)\n    except Exception:\n        site_errors.append(name)\n\n\n\n\nShow code\n# =============================================================================\n# Cell 5 -- Current thermal stress status table\n# =============================================================================\nrows = []\nfor name, df in site_data.items():\n    last = df.iloc[-1]\n    alert = dhw_to_alert(last[\"dhw\"])\n    rows.append({\n        \"Site\":              name,\n        \"Ocean basin\":       STATIONS[name][\"ocean\"],\n        \"Latest date\":       last[\"date\"].strftime(\"%Y-%m-%d\"),\n        \"SST (°C)\":          f\"{last['sst']:.2f}\"       if pd.notna(last[\"sst\"])      else \"—\",\n        \"SST anomaly (°C)\":  f\"{last['sst_anom']:+.2f}\" if pd.notna(last[\"sst_anom\"]) else \"—\",\n        \"DHW (°C-wk)\":       f\"{last['dhw']:.1f}\"       if pd.notna(last[\"dhw\"])      else \"—\",\n        \"Alert level\":       alert,\n    })\n\nfor name in site_errors:\n    rows.append({\n        \"Site\":             name,\n        \"Ocean basin\":      STATIONS[name][\"ocean\"],\n        \"Latest date\":      \"—\",\n        \"SST (°C)\":         \"—\",\n        \"SST anomaly (°C)\": \"—\",\n        \"DHW (°C-wk)\":      \"—\",\n        \"Alert level\":      \"Data unavailable\",\n    })\n\nstatus_df = pd.DataFrame(rows)\n\ndef color_alert(val):\n    color_map = {\n        \"No Stress\":         \"background-color: #BBDEFB; color: #0D47A1\",\n        \"Bleaching Watch\":   \"background-color: #FFF9C4; color: #F57F17\",\n        \"Bleaching Warning\": \"background-color: #FFE0B2; color: #E65100\",\n        \"Alert Level 1\":     \"background-color: #FFCDD2; color: #B71C1C\",\n        \"Alert Level 2\":     \"background-color: #E1BEE7; color: #4A148C\",\n        \"Alert Level 3\":     \"background-color: #880E4F; color: #FFFFFF\",\n        \"Alert Level 4\":     \"background-color: #4A0000; color: #FFFFFF\",\n        \"Alert Level 5\":     \"background-color: #000000; color: #FFFFFF\",\n        \"Data unavailable\":  \"background-color: #EEEEEE; color: #757575\",\n    }\n    return color_map.get(val, \"\")\n\nstyled = (\n    status_df.style\n    .map(color_alert, subset=[\"Alert level\"])\n    .set_properties(**{\"text-align\": \"center\"}, subset=status_df.columns[1:])\n    .set_properties(**{\"font-weight\": \"bold\"}, subset=[\"Site\", \"Alert level\"])\n    .hide(axis=\"index\")\n)\nstyled\n\n\n\n\n\n\n\nSite\nOcean basin\nLatest date\nSST (°C)\nSST anomaly (°C)\nDHW (°C-wk)\nAlert level\n\n\n\n\nFlorida Keys\nCaribbean/Atlantic\n2026-05-25\n29.00\n+1.89\n0.0\nBleaching Watch\n\n\nCayman Islands\nCaribbean\n2026-05-25\n29.35\n+1.47\n0.0\nBleaching Watch\n\n\nHonduras (Bay Islands)\nCaribbean\n2026-05-25\n29.20\n+0.93\n0.0\nBleaching Watch\n\n\nABC Islands (Bonaire)\nCaribbean\n2026-05-25\n27.38\n+0.69\n0.0\nBleaching Watch\n\n\nGreat Barrier Reef (Central)\nIndo-Pacific\n2026-05-25\n25.37\n+0.44\n0.0\nBleaching Watch\n\n\nPalau\nIndo-Pacific\n2026-05-25\n29.97\n+0.73\n2.1\nBleaching Watch\n\n\nWest Papua (Raja Ampat)\nIndo-Pacific\n2026-05-25\n30.50\n+1.43\n1.7\nBleaching Watch\n\n\n\n\n\nHow to read this table: DHW (Degree Heating Weeks) accumulates thermal stress over a rolling 84-day window. The NOAA CRW 5-level alert system (expanded December 2023): Watch &lt; 4, Warning &lt; 8, Alert Level 1 &lt; 12, Alert Level 2 &lt; 16, Alert Level 3 &lt; 20, Alert Level 4 &lt; 24, Alert Level 5 &gt;= 24 °C-weeks. Values above 8 °C-weeks are strongly associated with mass bleaching; values above 16 represent conditions with limited historical precedent at most sites."
+    "section": "Quick status — 2026-05-28 10:16 UTC",
+    "text": "Quick status — 2026-05-28 10:16 UTC\n\n\nShow code\n# =============================================================================\n# Cell 4 -- Fetch 2026 YTD data for all seven sites\n# =============================================================================\n\nsite_data   = {}\nsite_errors = []\n\nfor name, cfg in STATIONS.items():\n    try:\n        df = fetch_2026_ytd(name, cfg[\"station_id\"])\n        if df is not None and len(df) &gt; 0:\n            site_data[name] = df\n        else:\n            site_errors.append(name)\n    except Exception:\n        site_errors.append(name)\n\n\n\n\nShow code\n# =============================================================================\n# Cell 5 -- Current thermal stress status table\n# =============================================================================\nrows = []\nfor name, df in site_data.items():\n    last = df.iloc[-1]\n    alert = dhw_to_alert(last[\"dhw\"])\n    rows.append({\n        \"Site\":              name,\n        \"Ocean basin\":       STATIONS[name][\"ocean\"],\n        \"Latest date\":       last[\"date\"].strftime(\"%Y-%m-%d\"),\n        \"SST (°C)\":          f\"{last['sst']:.2f}\"       if pd.notna(last[\"sst\"])      else \"—\",\n        \"SST anomaly (°C)\":  f\"{last['sst_anom']:+.2f}\" if pd.notna(last[\"sst_anom\"]) else \"—\",\n        \"DHW (°C-wk)\":       f\"{last['dhw']:.1f}\"       if pd.notna(last[\"dhw\"])      else \"—\",\n        \"Alert level\":       alert,\n    })\n\nfor name in site_errors:\n    rows.append({\n        \"Site\":             name,\n        \"Ocean basin\":      STATIONS[name][\"ocean\"],\n        \"Latest date\":      \"—\",\n        \"SST (°C)\":         \"—\",\n        \"SST anomaly (°C)\": \"—\",\n        \"DHW (°C-wk)\":      \"—\",\n        \"Alert level\":      \"Data unavailable\",\n    })\n\nstatus_df = pd.DataFrame(rows)\n\ndef color_alert(val):\n    color_map = {\n        \"No Stress\":         \"background-color: #BBDEFB; color: #0D47A1\",\n        \"Bleaching Watch\":   \"background-color: #FFF9C4; color: #F57F17\",\n        \"Bleaching Warning\": \"background-color: #FFE0B2; color: #E65100\",\n        \"Alert Level 1\":     \"background-color: #FFCDD2; color: #B71C1C\",\n        \"Alert Level 2\":     \"background-color: #E1BEE7; color: #4A148C\",\n        \"Alert Level 3\":     \"background-color: #880E4F; color: #FFFFFF\",\n        \"Alert Level 4\":     \"background-color: #4A0000; color: #FFFFFF\",\n        \"Alert Level 5\":     \"background-color: #000000; color: #FFFFFF\",\n        \"Data unavailable\":  \"background-color: #EEEEEE; color: #757575\",\n    }\n    return color_map.get(val, \"\")\n\nstyled = (\n    status_df.style\n    .map(color_alert, subset=[\"Alert level\"])\n    .set_properties(**{\"text-align\": \"center\"}, subset=status_df.columns[1:])\n    .set_properties(**{\"font-weight\": \"bold\"}, subset=[\"Site\", \"Alert level\"])\n    .hide(axis=\"index\")\n)\nstyled\n\n\n\n\n\n\n\nSite\nOcean basin\nLatest date\nSST (°C)\nSST anomaly (°C)\nDHW (°C-wk)\nAlert level\n\n\n\n\nFlorida Keys\nCaribbean/Atlantic\n2026-05-26\n28.74\n+1.63\n0.0\nBleaching Watch\n\n\nCayman Islands\nCaribbean\n2026-05-26\n29.26\n+1.37\n0.0\nBleaching Watch\n\n\nHonduras (Bay Islands)\nCaribbean\n2026-05-26\n29.12\n+0.99\n0.0\nBleaching Watch\n\n\nABC Islands (Bonaire)\nCaribbean\n2026-05-26\n27.23\n+0.69\n0.0\nBleaching Watch\n\n\nGreat Barrier Reef (Central)\nIndo-Pacific\n2026-05-26\n25.32\n+0.43\n0.0\nBleaching Watch\n\n\nPalau\nIndo-Pacific\n2026-05-26\n29.77\n+0.54\n2.1\nBleaching Watch\n\n\nWest Papua (Raja Ampat)\nIndo-Pacific\n2026-05-26\n30.25\n+1.28\n1.7\nBleaching Watch\n\n\n\n\n\nHow to read this table: DHW (Degree Heating Weeks) accumulates thermal stress over a rolling 84-day window. The NOAA CRW 5-level alert system (expanded December 2023): Watch &lt; 4, Warning &lt; 8, Alert Level 1 &lt; 12, Alert Level 2 &lt; 16, Alert Level 3 &lt; 20, Alert Level 4 &lt; 24, Alert Level 5 &gt;= 24 °C-weeks. Values above 8 °C-weeks are strongly associated with mass bleaching; values above 16 represent conditions with limited historical precedent at most sites."
   },
   {
     "objectID": "projects/el-nino-watch-2026.html#dhw-time-series",
@@ -403,7 +550,7 @@
     "href": "projects/el-nino-watch-2026.html#references-1",
     "title": "2026 Super El Niño Watch: Live Thermal Stress Monitoring",
     "section": "References",
-    "text": "References\n\n\n\nPage last rendered: 2026-05-27 10:07 UTC. Data fetched live from NOAA CRW — values update with each site deployment. This page is part of a portfolio project at velezf.github.io; it is not an official NOAA product."
+    "text": "References\n\n\n\nPage last rendered: 2026-05-28 10:16 UTC. Data fetched live from NOAA CRW — values update with each site deployment. This page is part of a portfolio project at velezf.github.io; it is not an official NOAA product."
   },
   {
     "objectID": "projects/bleaching-risk-notebook.html",
@@ -488,152 +635,5 @@
     "title": "Exploring Coral Bleaching Risk Using NOAA Coral Reef Watch DHW Data",
     "section": "About This Project",
     "text": "About This Project\nThis project is part of a portfolio in marine environmental data science, developed to demonstrate reproducible analysis workflows applied to real-world reef conservation data. The full code, data pipeline, and environment specification are available on GitHub.\n\n\n\n\n\n\nTipReproducibility\n\n\n\nThis page renders live from embedded Python — data is fetched from NOAA CRW, parsed, and plotted on every render unless frozen. Outputs are frozen and committed to the repository via freeze: true. To re-execute from scratch, delete _freeze/projects/bleaching-risk-notebook/ from the portfolio site repo and re-render. The uv environment is fully specified in the coral-bleaching-dhw repository’s requirements.txt.\n\n\nView source repo NOAA Coral Reef Watch"
-  },
-  {
-    "objectID": "projects/freezingsaddles.html",
-    "href": "projects/freezingsaddles.html",
-    "title": "FreezingSaddles",
-    "section": "",
-    "text": "FreezingSaddles is a winter cycling challenge that encourages riders to log miles during the coldest months of the year. This project covers the data pipeline, leaderboard analytics, and visualizations built to support the challenge."
-  },
-  {
-    "objectID": "projects/freezingsaddles.html#overview",
-    "href": "projects/freezingsaddles.html#overview",
-    "title": "FreezingSaddles",
-    "section": "",
-    "text": "FreezingSaddles is a winter cycling challenge that encourages riders to log miles during the coldest months of the year. This project covers the data pipeline, leaderboard analytics, and visualizations built to support the challenge."
-  },
-  {
-    "objectID": "projects/freezingsaddles.html#features",
-    "href": "projects/freezingsaddles.html#features",
-    "title": "FreezingSaddles",
-    "section": "Features",
-    "text": "Features\n\nAutomated mileage ingestion from Strava and manual entries\nTeam and individual leaderboards\nInteractive visualizations of ride data\nHistorical trend analysis across challenge years"
-  },
-  {
-    "objectID": "projects/freezingsaddles.html#technical-stack",
-    "href": "projects/freezingsaddles.html#technical-stack",
-    "title": "FreezingSaddles",
-    "section": "Technical Stack",
-    "text": "Technical Stack\n\nBackend: Python (Flask, pandas)\nData: Strava API, CSV ingestion\nVisualization: Plotly, Matplotlib\nDeployment: Docker, GitHub Actions"
-  },
-  {
-    "objectID": "projects/freezingsaddles.html#highlights",
-    "href": "projects/freezingsaddles.html#highlights",
-    "title": "FreezingSaddles",
-    "section": "Highlights",
-    "text": "Highlights\n\nProcessed thousands of ride entries across multiple seasons\nBuilt interactive leaderboard dashboards\nAutomated data pipeline reducing manual entry overhead"
-  },
-  {
-    "objectID": "projects/freezingsaddles.html#links",
-    "href": "projects/freezingsaddles.html#links",
-    "title": "FreezingSaddles",
-    "section": "Links",
-    "text": "Links\n\nFreezingSaddles — main challenge site\nGitHub Organization — source code and repos"
-  },
-  {
-    "objectID": "projects/freezingsaddles.html#status",
-    "href": "projects/freezingsaddles.html#status",
-    "title": "FreezingSaddles",
-    "section": "Status",
-    "text": "Status\n✅ Active — updated each winter cycling season."
-  },
-  {
-    "objectID": "projects/sfm-marine.html",
-    "href": "projects/sfm-marine.html",
-    "title": "SfM Photogrammetry for Marine Science",
-    "section": "",
-    "text": "Structure-from-Motion (SfM) photogrammetry enables the creation of precise 3D models from overlapping photographs. This page documents my study of how SfM methods are applied to underwater survey data to map and monitor coral reefs and benthic habitats — and outlines the work I plan to do as I build toward applying these techniques myself.\nStatus: 🚧 In progress — this is active learning and future planned work, not a completed project."
-  },
-  {
-    "objectID": "projects/sfm-marine.html#overview",
-    "href": "projects/sfm-marine.html#overview",
-    "title": "SfM Photogrammetry for Marine Science",
-    "section": "",
-    "text": "Structure-from-Motion (SfM) photogrammetry enables the creation of precise 3D models from overlapping photographs. This page documents my study of how SfM methods are applied to underwater survey data to map and monitor coral reefs and benthic habitats — and outlines the work I plan to do as I build toward applying these techniques myself.\nStatus: 🚧 In progress — this is active learning and future planned work, not a completed project."
-  },
-  {
-    "objectID": "projects/sfm-marine.html#why-im-interested-in-sfm-for-marine-science",
-    "href": "projects/sfm-marine.html#why-im-interested-in-sfm-for-marine-science",
-    "title": "SfM Photogrammetry for Marine Science",
-    "section": "Why I’m Interested in SfM for Marine Science",
-    "text": "Why I’m Interested in SfM for Marine Science\nTraditional survey methods struggle to capture the complex 3D structure of coral reefs. SfM offers capabilities I want to develop:\n\nHigh-resolution 3D reconstructions from standard cameras\nQuantitative measurements of structural complexity\nRepeatable surveys for change detection over time\nLower cost relative to LiDAR or multibeam sonar\n\nMy goal is to build the technical depth to contribute to reef monitoring efforts using these methods, either as part of a research team or through independent projects."
-  },
-  {
-    "objectID": "projects/sfm-marine.html#what-im-learning",
-    "href": "projects/sfm-marine.html#what-im-learning",
-    "title": "SfM Photogrammetry for Marine Science",
-    "section": "What I’m Learning",
-    "text": "What I’m Learning\nI’m working through the core concepts of SfM pipelines, including:\n\nImage acquisition protocols for underwater surveys (overlap, lighting, camera settings)\nProcessing workflows in Agisoft Metashape\nQuality assessment using ground control points and reprojection error\nOutput formats: orthomosaics, DEMs, and 3D meshes"
-  },
-  {
-    "objectID": "projects/sfm-marine.html#planned-work",
-    "href": "projects/sfm-marine.html#planned-work",
-    "title": "SfM Photogrammetry for Marine Science",
-    "section": "Planned Work",
-    "text": "Planned Work\nOnce I have suitable underwater image sets to work with, I plan to document a complete end-to-end pipeline — from raw photos to validated 3D outputs — as a reproducible, open workflow. See the related projects below for where that work is heading."
-  },
-  {
-    "objectID": "projects/sfm-marine.html#related-projects",
-    "href": "projects/sfm-marine.html#related-projects",
-    "title": "SfM Photogrammetry for Marine Science",
-    "section": "Related Projects",
-    "text": "Related Projects\n\nReef SfM Workflow — the detailed processing pipeline I’m building toward\nBenthic Habitat Map — GIS mapping outputs that will draw on SfM data"
-  },
-  {
-    "objectID": "projects/lora-radiorocket.html",
-    "href": "projects/lora-radiorocket.html",
-    "title": "LoRa RadioRocket",
-    "section": "",
-    "text": "A ground-up rewrite of N3VEM’s RadioRocketV2 for the Adafruit Feather M0 + RFM95 platform. Unlike altimeters that store and dump data after recovery, this system streams altitude, G-force, and flight state to the ground in real time at 1 Hz — so you’re watching the numbers the moment the rocket leaves the rail. Designed for both mid- and high-power launches; currently flight-tested on a PiercerMini, with high-power deployment planned for an Apogee Zephyr (nose cone e-bay already built)."
-  },
-  {
-    "objectID": "projects/lora-radiorocket.html#overview",
-    "href": "projects/lora-radiorocket.html#overview",
-    "title": "LoRa RadioRocket",
-    "section": "",
-    "text": "A ground-up rewrite of N3VEM’s RadioRocketV2 for the Adafruit Feather M0 + RFM95 platform. Unlike altimeters that store and dump data after recovery, this system streams altitude, G-force, and flight state to the ground in real time at 1 Hz — so you’re watching the numbers the moment the rocket leaves the rail. Designed for both mid- and high-power launches; currently flight-tested on a PiercerMini, with high-power deployment planned for an Apogee Zephyr (nose cone e-bay already built)."
-  },
-  {
-    "objectID": "projects/lora-radiorocket.html#hardware",
-    "href": "projects/lora-radiorocket.html#hardware",
-    "title": "LoRa RadioRocket",
-    "section": "Hardware",
-    "text": "Hardware\n\nTX Sled (rocket)\n\n\n\nComponent\nPurpose\n\n\n\n\nAdafruit Feather M0 + RFM95 (434 MHz)\nMicrocontroller + LoRa radio\n\n\nAdafruit BMP390\nBarometric pressure / altitude\n\n\nAdafruit ADXL375\nHigh-G accelerometer (±200 g)\n\n\nLiPo battery\nPower\n\n\n\n\n\nRX Ground Station (APRS Digipeater + LoRa Receiver)\nThe ground station is a LePotato SBC built into a custom blue acrylic enclosure. It serves double duty: receiving LoRa telemetry from the rocket and acting as a portable APRS digipeater — because most mid-power launch sites are outside range of any APRS I-Gate or digipeater, this station brings the infrastructure to the field.\n\n\n\n\n\n\n\nComponent\nPurpose\n\n\n\n\nLibre Computer LePotato SBC\nRuns Linux, Direwolf TNC, Node-RED dashboard\n\n\nRTL-SDR V4 dongle\nAPRS receive + digipeater (144.39 MHz)\n\n\nAdafruit Feather M0 + RFM95 (434 MHz)\nLoRa telemetry receiver\n\n\n12V → 5V DC-DC converter\nField power from vehicle or battery\n\n\nCustom blue acrylic enclosure\nHouses all hardware\n\n\n\nSoftware stack: Direwolf (software TNC + digipeater), Xastir (APRS mapping), Node-RED (telemetry dashboard), VNC (headless remote access).\nWhen the rocket eventually carries an APRS tracker (planned: QRPLabs LightAPRS 2.0), this station will digipeat its packets to the APRS network from the field."
-  },
-  {
-    "objectID": "projects/lora-radiorocket.html#firmware",
-    "href": "projects/lora-radiorocket.html#firmware",
-    "title": "LoRa RadioRocket",
-    "section": "Firmware",
-    "text": "Firmware\nThree algorithms do the interesting work:\n\n1. Ground pressure calibration\nAt boot, the sled takes 50 pressure readings over ~2.5 seconds and averages them to establish a stable ground-level reference. Everything else — altitude, apogee — is computed relative to this baseline.\n// Calibrate ground pressure\nfloat sum = 0;\nfor (int i = 0; i &lt; 50; i++) {\n  bmp.performReading();\n  sum += bmp.pressure / 100.0;\n  delay(50);\n}\ngroundPressure = sum / 50.0;\nA simple average works well on a calm pad. A future improvement would be a trimmed mean — discarding the top and bottom few samples — to handle sensor noise spikes at power-on.\n\n\n2. Launch detection\nRather than checking a single axis, launch is detected from the vector magnitude across all three accelerometer axes. This makes detection robust regardless of how the sled is oriented in the airframe.\nfloat g = sqrt(event.acceleration.x * event.acceleration.x +\n               event.acceleration.y * event.acceleration.y +\n               event.acceleration.z * event.acceleration.z) / 9.80665;\n\nif (!inFlight && g &gt; launchThresholdG) {\n  inFlight = true;\n  launchTime = now;\n}\n\n\n3. Apogee detection\nApogee is detected purely from barometric altitude — no additional sensors needed. The firmware tracks the running maximum altitude and flags descent the moment altitude stops climbing.\nif (altitudeFt &gt; maxAltitudeFt) {\n  maxAltitudeFt = altitudeFt;\n  descending = false;  // still ascending\n} else {\n  descending = true;   // apogee passed\n}\nif (g &gt; peakG) peakG = g;  // update peak G\nEach 1 Hz telemetry packet bundles all of this into a compact string — current altitude, max altitude, live G, peak G, temperature, battery voltage, and flight state — and waits up to 300 ms for an ACK from the ground station before continuing."
-  },
-  {
-    "objectID": "projects/lora-radiorocket.html#build-photos",
-    "href": "projects/lora-radiorocket.html#build-photos",
-    "title": "LoRa RadioRocket",
-    "section": "Build Photos",
-    "text": "Build Photos\n\n\n\n\n\n\nTX sled — Feather M0 + BMP390 + ADXL375 in 3D-printed bracket\n\n\n\n\n\n\n\nElectronics bay\n\n\n\n\n\n\n\n\n\nPiercerMini — Radio Rocket Edition\n\n\n\n\n\n\n\nGround station interior — Feather M0 + RTL-SDR + DC converter\n\n\n\n\n\n\n\n\n\n\n\nGround station rear panel — ethernet, USB, and power connectors\n\n\n\n\n\n\n\nSCE to AUX — the front panel switch is a replica of the Apollo 12 Emergency Detection System switch. On November 14, 1969, a lightning strike knocked out telemetry 36 seconds after launch. Flight controller John Aaron recognized the signature and called SCE to AUX. Alan Bean found the switch on panel 8 and flipped it, restoring all telemetry and saving the mission. It felt like the right switch for a rocket telemetry ground station.\n\n\n\n\n\n\n\n\n\n\n\nAt the range — ground station connected to laptop, PiercerMini on the table"
-  },
-  {
-    "objectID": "projects/lora-radiorocket.html#status",
-    "href": "projects/lora-radiorocket.html#status",
-    "title": "LoRa RadioRocket",
-    "section": "Status",
-    "text": "Status\n✅ Flight tested — telemetry received successfully on first flight.\n🔧 High-power deployment in progress — Apogee Zephyr nose cone e-bay built, NAR Level 1 certified."
-  },
-  {
-    "objectID": "projects/lora-radiorocket.html#links",
-    "href": "projects/lora-radiorocket.html#links",
-    "title": "LoRa RadioRocket",
-    "section": "Links",
-    "text": "Links\n\nGitHub Repository\nTX Firmware\nRX Firmware"
-  },
-  {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
-    "section": "",
-    "text": "2026 Super El Niño Watch: Live Thermal Stress Monitoring\n\n\n\nMarine Science\n\nRemote Sensing\n\nEnvironmental Data Science\n\nPython\n\nLive Monitoring\n\nEl Niño\n\n\n\nLive thermal stress monitoring across seven reef sites during the 2026 Super El Niño period, using NOAA Coral Reef Watch DHW data. Updated daily via GitHub Actions cron at…\n\n\n\nMay 27, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nToward a Multi-Factor Coral Bleaching Risk Score\n\n\n\nMarine Science\n\nEnvironmental Data Science\n\nR\n\nPython\n\nReef Conservation\n\n\n\nA design document for a regression-based, multi-factor coral bleaching risk score — integrating thermal stress, light, turbidity, ocean acidification, and bleaching…\n\n\n\nMay 16, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nExploring Coral Bleaching Risk Using NOAA Coral Reef Watch DHW Data\n\n\n\nMarine Science\n\nRemote Sensing\n\nEnvironmental Data Science\n\nPython\n\nReproducible Research\n\n\n\nA reproducible analysis of satellite-derived thermal stress metrics across five reef systems, using NOAA Coral Reef Watch Degree Heating Weeks (DHW) data.\n\n\n\nMay 12, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\n2016 Subaru Outback Stereo Build\n\n\n\nhardware\n\naudio\n\ncar-audio\n\nSubaru\n\nDIY\n\ndocumentation\n\n\n\nA technical writeup and reference guide for upgrading the factory Harman Kardon audio system in a 2016 Subaru Outback, including head unit replacement, amplifier…\n\n\n\nMay 7, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nLoRa RadioRocket\n\n\n\nIoT\n\ntelemetry\n\nLoRa\n\nhardware\n\namateur radio\n\nArduino\n\n\n\nReal-time LoRa telemetry for mid- and high-power rocketry: 1 Hz altitude, acceleration, and flight state streamed live to a ground station over 434 MHz. NAR Level 1…\n\n\n\nMay 9, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nFreezingSaddles\n\n\n\ncycling\n\nanalytics\n\nvisualization\n\npython\n\n\n\nAnalytics and visualization for a winter cycling challenge tracking mileage, leaderboards, and participation across teams.\n\n\n\nMay 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nBenthic Habitat Mapping\n\n\n\nGIS\n\nmarine science\n\nmapping\n\nremote sensing\n\n\n\nA planned GIS-based workflow for mapping and classifying benthic habitats using remote sensing and field survey data.\n\n\n\nMar 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nReef SfM Workflow\n\n\n\nmarine science\n\nphotogrammetry\n\nworkflow\n\n3D\n\n\n\nA planned end-to-end workflow for processing underwater photos into 3D reef models using Structure-from-Motion photogrammetry.\n\n\n\nFeb 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nSfM Photogrammetry for Marine Science\n\n\n\nmarine science\n\nphotogrammetry\n\n3D\n\nGIS\n\n\n\nAn overview of Structure-from-Motion photogrammetry methods applied to coral reef and benthic habitat surveys — and my plan to apply them.\n\n\n\nJan 1, 2025\n\n\n\n\n\n\nNo matching items"
   }
 ]
