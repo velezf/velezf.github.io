@@ -950,11 +950,12 @@ This page renders live from embedded Python — data is fetched fresh from
 NOAA CRW on every render. Unlike the first project, this page uses
 `freeze: false`, meaning it re-executes on every deployment rather than
 serving cached outputs. It is triggered daily at 06:00 UTC via GitHub
-Actions cron. To run locally, clone the analysis repo, activate the
-`el-nino-2026` virtual environment, and run `quarto render` from the
-portfolio site root. The environment is fully specified in
-[el-nino-watch-2026](https://github.com/velezf/el-nino-watch-2026)'s
-`requirements.txt`.
+Actions cron. To run locally, clone the
+[el-nino-watch-2026](https://github.com/velezf/el-nino-watch-2026)
+analysis repo, run `uv sync` (requires uv, Python 3.11) to restore the
+environment, register the `el-nino-2026` kernel, and run `quarto render`
+from the portfolio site root. The environment is fully specified via uv
+in `pyproject.toml` and `uv.lock`.
 :::
 
 [View analysis repo](https://github.com/velezf/el-nino-watch-2026){.btn .btn-outline-primary}
