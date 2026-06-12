@@ -182,7 +182,7 @@ div.csl-indent {
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#study-sites" id="toc-study-sites" class="nav-link" data-scroll-target="#study-sites">Study sites</a></li>
   <li><a href="#a-note-on-the-data-pipeline" id="toc-a-note-on-the-data-pipeline" class="nav-link" data-scroll-target="#a-note-on-the-data-pipeline">A note on the data pipeline</a></li>
-  <li><a href="#quick-status-2026-06-11-1049-utc" id="toc-quick-status-2026-06-11-1049-utc" class="nav-link" data-scroll-target="#quick-status-2026-06-11-1049-utc">Quick status — 2026-06-11 10:49 UTC</a></li>
+  <li><a href="#quick-status-2026-06-12-1024-utc" id="toc-quick-status-2026-06-12-1024-utc" class="nav-link" data-scroll-target="#quick-status-2026-06-12-1024-utc">Quick status — 2026-06-12 10:24 UTC</a></li>
   <li><a href="#dhw-time-series" id="toc-dhw-time-series" class="nav-link" data-scroll-target="#dhw-time-series">2026 DHW time series</a></li>
   <li><a href="#sst-anomaly-time-series" id="toc-sst-anomaly-time-series" class="nav-link" data-scroll-target="#sst-anomaly-time-series">2026 SST anomaly time series</a></li>
   <li><a href="#latest-sst-anomaly-by-site" id="toc-latest-sst-anomaly-by-site" class="nav-link" data-scroll-target="#latest-sst-anomaly-by-site">Latest SST anomaly by site</a></li>
@@ -231,7 +231,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">June 11, 2026 — 00:00 UTC</p>
+      <p class="date">June 12, 2026 — 00:00 UTC</p>
     </div>
   </div>
   
@@ -243,7 +243,7 @@ div.csl-indent {
 </header>
 
 
-<div id="b14cc946" class="cell" data-execution_count="1">
+<div id="d14416fb" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Show code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># =============================================================================</span></span>
@@ -630,16 +630,16 @@ YYYY MM DD SST_MIN SST_MAX SST@90th_HS SSTA@90th_HS 90th_HS&gt;0 DHW_from_90th_H
 <p>This parser is carried over directly from the first project with two small changes: the cache now stores the raw <code>.txt</code> file rather than a parsed CSV (preserving the original header and MMM value across sessions), and the <code>sst_anomaly</code> column alias from the bleaching project is shortened to <code>sst_anom</code> here for consistency with the status table and plot code.</p>
 <p>Output directories are anchored to the project root rather than using bare relative paths, so the cache and figure outputs from this project stay isolated from the bleaching project even if both kernels are running simultaneously.</p>
 <hr>
-<div id="7cbd511f" class="cell" data-execution_count="2">
+<div id="8de80698" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Show code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>fetch_stamp <span class="op">=</span> datetime.now(timezone.utc).strftime(<span class="st">"%Y-%m-</span><span class="sc">%d</span><span class="st"> %H:%M UTC"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
 </section>
-<section id="quick-status-2026-06-11-1049-utc" class="level2">
-<h2 class="anchored" data-anchor-id="quick-status-2026-06-11-1049-utc">Quick status — 2026-06-11 10:49 UTC</h2>
-<div id="f1882cac" class="cell" data-execution_count="3">
+<section id="quick-status-2026-06-12-1024-utc" class="level2">
+<h2 class="anchored" data-anchor-id="quick-status-2026-06-12-1024-utc">Quick status — 2026-06-12 10:24 UTC</h2>
+<div id="d4bf1bdd" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Show code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># =============================================================================</span></span>
@@ -660,7 +660,7 @@ YYYY MM DD SST_MIN SST_MAX SST@90th_HS SSTA@90th_HS 90th_HS&gt;0 DHW_from_90th_H
 <span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>        site_errors.append(name)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
-<div id="d3797573" class="cell" data-execution_count="4">
+<div id="f0c70a69" class="cell" data-execution_count="4">
 <details class="code-fold">
 <summary>Show code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># =============================================================================</span></span>
@@ -718,19 +718,19 @@ YYYY MM DD SST_MIN SST_MAX SST@90th_HS SSTA@90th_HS 90th_HS&gt;0 DHW_from_90th_H
 </details>
 <div class="cell-output cell-output-display" data-execution_count="4">
 <style type="text/css">
-#T_54384_row0_col0, #T_54384_row1_col0, #T_54384_row2_col0, #T_54384_row3_col0, #T_54384_row4_col0, #T_54384_row5_col0, #T_54384_row6_col0 {
+#T_d8267_row0_col0, #T_d8267_row1_col0, #T_d8267_row2_col0, #T_d8267_row3_col0, #T_d8267_row4_col0, #T_d8267_row5_col0, #T_d8267_row6_col0 {
   font-weight: bold;
 }
-#T_54384_row0_col1, #T_54384_row0_col2, #T_54384_row0_col3, #T_54384_row0_col4, #T_54384_row0_col5, #T_54384_row1_col1, #T_54384_row1_col2, #T_54384_row1_col3, #T_54384_row1_col4, #T_54384_row1_col5, #T_54384_row2_col1, #T_54384_row2_col2, #T_54384_row2_col3, #T_54384_row2_col4, #T_54384_row2_col5, #T_54384_row3_col1, #T_54384_row3_col2, #T_54384_row3_col3, #T_54384_row3_col4, #T_54384_row3_col5, #T_54384_row4_col1, #T_54384_row4_col2, #T_54384_row4_col3, #T_54384_row4_col4, #T_54384_row4_col5, #T_54384_row5_col1, #T_54384_row5_col2, #T_54384_row5_col3, #T_54384_row5_col4, #T_54384_row5_col5, #T_54384_row6_col1, #T_54384_row6_col2, #T_54384_row6_col3, #T_54384_row6_col4, #T_54384_row6_col5 {
+#T_d8267_row0_col1, #T_d8267_row0_col2, #T_d8267_row0_col3, #T_d8267_row0_col4, #T_d8267_row0_col5, #T_d8267_row1_col1, #T_d8267_row1_col2, #T_d8267_row1_col3, #T_d8267_row1_col4, #T_d8267_row1_col5, #T_d8267_row2_col1, #T_d8267_row2_col2, #T_d8267_row2_col3, #T_d8267_row2_col4, #T_d8267_row2_col5, #T_d8267_row3_col1, #T_d8267_row3_col2, #T_d8267_row3_col3, #T_d8267_row3_col4, #T_d8267_row3_col5, #T_d8267_row4_col1, #T_d8267_row4_col2, #T_d8267_row4_col3, #T_d8267_row4_col4, #T_d8267_row4_col5, #T_d8267_row5_col1, #T_d8267_row5_col2, #T_d8267_row5_col3, #T_d8267_row5_col4, #T_d8267_row5_col5, #T_d8267_row6_col1, #T_d8267_row6_col2, #T_d8267_row6_col3, #T_d8267_row6_col4, #T_d8267_row6_col5 {
   text-align: center;
 }
-#T_54384_row0_col6, #T_54384_row1_col6, #T_54384_row3_col6, #T_54384_row4_col6 {
+#T_d8267_row0_col6, #T_d8267_row3_col6, #T_d8267_row4_col6 {
   background-color: #BBDEFB;
   color: #0D47A1;
   text-align: center;
   font-weight: bold;
 }
-#T_54384_row2_col6, #T_54384_row5_col6, #T_54384_row6_col6 {
+#T_d8267_row1_col6, #T_d8267_row2_col6, #T_d8267_row5_col6, #T_d8267_row6_col6 {
   background-color: #FFF9C4;
   color: #F57F17;
   text-align: center;
@@ -738,81 +738,81 @@ YYYY MM DD SST_MIN SST_MAX SST@90th_HS SSTA@90th_HS 90th_HS&gt;0 DHW_from_90th_H
 }
 </style>
 
-<table id="T_54384" class="caption-top table table-sm table-striped small">
+<table id="T_d8267" class="caption-top table table-sm table-striped small">
 <thead>
 <tr class="header">
-<th id="T_54384_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">Site</th>
-<th id="T_54384_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">Ocean basin</th>
-<th id="T_54384_level0_col2" class="col_heading level0 col2" data-quarto-table-cell-role="th">Latest date</th>
-<th id="T_54384_level0_col3" class="col_heading level0 col3" data-quarto-table-cell-role="th">SST (°C)</th>
-<th id="T_54384_level0_col4" class="col_heading level0 col4" data-quarto-table-cell-role="th">SST anomaly (°C)</th>
-<th id="T_54384_level0_col5" class="col_heading level0 col5" data-quarto-table-cell-role="th">DHW (°C-wk)</th>
-<th id="T_54384_level0_col6" class="col_heading level0 col6" data-quarto-table-cell-role="th">Alert level</th>
+<th id="T_d8267_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">Site</th>
+<th id="T_d8267_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">Ocean basin</th>
+<th id="T_d8267_level0_col2" class="col_heading level0 col2" data-quarto-table-cell-role="th">Latest date</th>
+<th id="T_d8267_level0_col3" class="col_heading level0 col3" data-quarto-table-cell-role="th">SST (°C)</th>
+<th id="T_d8267_level0_col4" class="col_heading level0 col4" data-quarto-table-cell-role="th">SST anomaly (°C)</th>
+<th id="T_d8267_level0_col5" class="col_heading level0 col5" data-quarto-table-cell-role="th">DHW (°C-wk)</th>
+<th id="T_d8267_level0_col6" class="col_heading level0 col6" data-quarto-table-cell-role="th">Alert level</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td id="T_54384_row0_col0" class="data row0 col0">Florida Keys</td>
-<td id="T_54384_row0_col1" class="data row0 col1">Caribbean/Atlantic</td>
-<td id="T_54384_row0_col2" class="data row0 col2">2026-06-09</td>
-<td id="T_54384_row0_col3" class="data row0 col3">28.96</td>
-<td id="T_54384_row0_col4" class="data row0 col4">+0.86</td>
-<td id="T_54384_row0_col5" class="data row0 col5">0.0</td>
-<td id="T_54384_row0_col6" class="data row0 col6">No Stress</td>
+<td id="T_d8267_row0_col0" class="data row0 col0">Florida Keys</td>
+<td id="T_d8267_row0_col1" class="data row0 col1">Caribbean/Atlantic</td>
+<td id="T_d8267_row0_col2" class="data row0 col2">2026-06-10</td>
+<td id="T_d8267_row0_col3" class="data row0 col3">29.11</td>
+<td id="T_d8267_row0_col4" class="data row0 col4">+1.07</td>
+<td id="T_d8267_row0_col5" class="data row0 col5">0.0</td>
+<td id="T_d8267_row0_col6" class="data row0 col6">No Stress</td>
 </tr>
 <tr class="even">
-<td id="T_54384_row1_col0" class="data row1 col0">Cayman Islands</td>
-<td id="T_54384_row1_col1" class="data row1 col1">Caribbean</td>
-<td id="T_54384_row1_col2" class="data row1 col2">2026-06-09</td>
-<td id="T_54384_row1_col3" class="data row1 col3">29.24</td>
-<td id="T_54384_row1_col4" class="data row1 col4">+1.10</td>
-<td id="T_54384_row1_col5" class="data row1 col5">0.0</td>
-<td id="T_54384_row1_col6" class="data row1 col6">No Stress</td>
+<td id="T_d8267_row1_col0" class="data row1 col0">Cayman Islands</td>
+<td id="T_d8267_row1_col1" class="data row1 col1">Caribbean</td>
+<td id="T_d8267_row1_col2" class="data row1 col2">2026-06-10</td>
+<td id="T_d8267_row1_col3" class="data row1 col3">29.39</td>
+<td id="T_d8267_row1_col4" class="data row1 col4">+1.23</td>
+<td id="T_d8267_row1_col5" class="data row1 col5">0.0</td>
+<td id="T_d8267_row1_col6" class="data row1 col6">Bleaching Watch</td>
 </tr>
 <tr class="odd">
-<td id="T_54384_row2_col0" class="data row2 col0">Honduras (Bay Islands)</td>
-<td id="T_54384_row2_col1" class="data row2 col1">Caribbean</td>
-<td id="T_54384_row2_col2" class="data row2 col2">2026-06-09</td>
-<td id="T_54384_row2_col3" class="data row2 col3">30.09</td>
-<td id="T_54384_row2_col4" class="data row2 col4">+1.81</td>
-<td id="T_54384_row2_col5" class="data row2 col5">0.1</td>
-<td id="T_54384_row2_col6" class="data row2 col6">Bleaching Watch</td>
+<td id="T_d8267_row2_col0" class="data row2 col0">Honduras (Bay Islands)</td>
+<td id="T_d8267_row2_col1" class="data row2 col1">Caribbean</td>
+<td id="T_d8267_row2_col2" class="data row2 col2">2026-06-10</td>
+<td id="T_d8267_row2_col3" class="data row2 col3">29.94</td>
+<td id="T_d8267_row2_col4" class="data row2 col4">+1.64</td>
+<td id="T_d8267_row2_col5" class="data row2 col5">0.1</td>
+<td id="T_d8267_row2_col6" class="data row2 col6">Bleaching Watch</td>
 </tr>
 <tr class="even">
-<td id="T_54384_row3_col0" class="data row3 col0">ABC Islands (Bonaire)</td>
-<td id="T_54384_row3_col1" class="data row3 col1">Caribbean</td>
-<td id="T_54384_row3_col2" class="data row3 col2">2026-06-09</td>
-<td id="T_54384_row3_col3" class="data row3 col3">27.10</td>
-<td id="T_54384_row3_col4" class="data row3 col4">+0.15</td>
-<td id="T_54384_row3_col5" class="data row3 col5">0.0</td>
-<td id="T_54384_row3_col6" class="data row3 col6">No Stress</td>
+<td id="T_d8267_row3_col0" class="data row3 col0">ABC Islands (Bonaire)</td>
+<td id="T_d8267_row3_col1" class="data row3 col1">Caribbean</td>
+<td id="T_d8267_row3_col2" class="data row3 col2">2026-06-10</td>
+<td id="T_d8267_row3_col3" class="data row3 col3">27.00</td>
+<td id="T_d8267_row3_col4" class="data row3 col4">+0.29</td>
+<td id="T_d8267_row3_col5" class="data row3 col5">0.0</td>
+<td id="T_d8267_row3_col6" class="data row3 col6">No Stress</td>
 </tr>
 <tr class="odd">
-<td id="T_54384_row4_col0" class="data row4 col0">Great Barrier Reef (Central)</td>
-<td id="T_54384_row4_col1" class="data row4 col1">Indo-Pacific</td>
-<td id="T_54384_row4_col2" class="data row4 col2">2026-06-09</td>
-<td id="T_54384_row4_col3" class="data row4 col3">24.91</td>
-<td id="T_54384_row4_col4" class="data row4 col4">+0.56</td>
-<td id="T_54384_row4_col5" class="data row4 col5">0.0</td>
-<td id="T_54384_row4_col6" class="data row4 col6">No Stress</td>
+<td id="T_d8267_row4_col0" class="data row4 col0">Great Barrier Reef (Central)</td>
+<td id="T_d8267_row4_col1" class="data row4 col1">Indo-Pacific</td>
+<td id="T_d8267_row4_col2" class="data row4 col2">2026-06-10</td>
+<td id="T_d8267_row4_col3" class="data row4 col3">24.91</td>
+<td id="T_d8267_row4_col4" class="data row4 col4">+0.64</td>
+<td id="T_d8267_row4_col5" class="data row4 col5">0.0</td>
+<td id="T_d8267_row4_col6" class="data row4 col6">No Stress</td>
 </tr>
 <tr class="even">
-<td id="T_54384_row5_col0" class="data row5 col0">Palau</td>
-<td id="T_54384_row5_col1" class="data row5 col1">Indo-Pacific</td>
-<td id="T_54384_row5_col2" class="data row5 col2">2026-06-09</td>
-<td id="T_54384_row5_col3" class="data row5 col3">30.11</td>
-<td id="T_54384_row5_col4" class="data row5 col4">+0.89</td>
-<td id="T_54384_row5_col5" class="data row5 col5">2.1</td>
-<td id="T_54384_row5_col6" class="data row5 col6">Bleaching Watch</td>
+<td id="T_d8267_row5_col0" class="data row5 col0">Palau</td>
+<td id="T_d8267_row5_col1" class="data row5 col1">Indo-Pacific</td>
+<td id="T_d8267_row5_col2" class="data row5 col2">2026-06-10</td>
+<td id="T_d8267_row5_col3" class="data row5 col3">30.36</td>
+<td id="T_d8267_row5_col4" class="data row5 col4">+1.15</td>
+<td id="T_d8267_row5_col5" class="data row5 col5">2.3</td>
+<td id="T_d8267_row5_col6" class="data row5 col6">Bleaching Watch</td>
 </tr>
 <tr class="odd">
-<td id="T_54384_row6_col0" class="data row6 col0">West Papua (Raja Ampat)</td>
-<td id="T_54384_row6_col1" class="data row6 col1">Indo-Pacific</td>
-<td id="T_54384_row6_col2" class="data row6 col2">2026-06-09</td>
-<td id="T_54384_row6_col3" class="data row6 col3">30.33</td>
-<td id="T_54384_row6_col4" class="data row6 col4">+1.57</td>
-<td id="T_54384_row6_col5" class="data row6 col5">2.0</td>
-<td id="T_54384_row6_col6" class="data row6 col6">Bleaching Watch</td>
+<td id="T_d8267_row6_col0" class="data row6 col0">West Papua (Raja Ampat)</td>
+<td id="T_d8267_row6_col1" class="data row6 col1">Indo-Pacific</td>
+<td id="T_d8267_row6_col2" class="data row6 col2">2026-06-10</td>
+<td id="T_d8267_row6_col3" class="data row6 col3">30.28</td>
+<td id="T_d8267_row6_col4" class="data row6 col4">+1.53</td>
+<td id="T_d8267_row6_col5" class="data row6 col5">2.0</td>
+<td id="T_d8267_row6_col6" class="data row6 col6">Bleaching Watch</td>
 </tr>
 </tbody>
 </table>
@@ -823,7 +823,7 @@ YYYY MM DD SST_MIN SST_MAX SST@90th_HS SSTA@90th_HS 90th_HS&gt;0 DHW_from_90th_H
 </section>
 <section id="dhw-time-series" class="level2">
 <h2 class="anchored" data-anchor-id="dhw-time-series">2026 DHW time series</h2>
-<div id="7a83c345" class="cell" data-execution_count="5">
+<div id="2f704264" class="cell" data-execution_count="5">
 <details class="code-fold">
 <summary>Show code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># =============================================================================</span></span>
@@ -910,7 +910,7 @@ YYYY MM DD SST_MIN SST_MAX SST@90th_HS SSTA@90th_HS 90th_HS&gt;0 DHW_from_90th_H
 <section id="sst-anomaly-time-series" class="level2">
 <h2 class="anchored" data-anchor-id="sst-anomaly-time-series">2026 SST anomaly time series</h2>
 <p>DHW measures accumulated heat stress and stays near zero until SST sustains more than 1°C above the site’s bleaching baseline — it is a lagging indicator. SST anomaly is the departure from the long-term average and responds immediately to warming, making it a leading indicator that shows heat building earlier in the season.</p>
-<div id="29bfc8d7" class="cell" data-execution_count="6">
+<div id="e73f1087" class="cell" data-execution_count="6">
 <details class="code-fold">
 <summary>Show code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># =============================================================================</span></span>
@@ -969,7 +969,7 @@ YYYY MM DD SST_MIN SST_MAX SST@90th_HS SSTA@90th_HS 90th_HS&gt;0 DHW_from_90th_H
 </section>
 <section id="latest-sst-anomaly-by-site" class="level2">
 <h2 class="anchored" data-anchor-id="latest-sst-anomaly-by-site">Latest SST anomaly by site</h2>
-<div id="c16db68c" class="cell" data-execution_count="7">
+<div id="e904b078" class="cell" data-execution_count="7">
 <details class="code-fold">
 <summary>Show code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># =============================================================================</span></span>
@@ -1021,7 +1021,7 @@ YYYY MM DD SST_MIN SST_MAX SST@90th_HS SSTA@90th_HS 90th_HS&gt;0 DHW_from_90th_H
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="el-nino-watch-2026_files/figure-html/cell-8-output-1.png" width="949" height="468" class="figure-img"></p>
+<p><img src="el-nino-watch-2026_files/figure-html/cell-8-output-1.png" width="965" height="470" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -1046,7 +1046,7 @@ YYYY MM DD SST_MIN SST_MAX SST@90th_HS SSTA@90th_HS 90th_HS&gt;0 DHW_from_90th_H
 <p>This came up at dinner. She’s right. This is a monitoring dashboard, not a causal study, and the chart below should be read as a visual sanity check against a known climate driver — not as evidence of a causal relationship. A rigorous treatment is on the list for a future version of this project.</p>
 <p>One more honest note: I started this project because I dive these reefs and care about what happens to them. The Florida Keys anomaly, West Papua already carrying DHW, all seven sites at Bleaching Watch before summer even starts in the Northern Hemisphere — I know what that pattern looked like in 2023 and 2016. I’m prepared for some serious heartbreak this summer. I hope I’m wrong.</p>
 <p>One data note worth flagging: the ONI is published with a lag of one to two months by NOAA’s Climate Prediction Center. The most recent bar in the chart below may not reflect current conditions. For the most current ENSO status, NOAA CPC publishes weekly updates at <a href="https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/index.shtml" class="uri">https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/index.shtml</a>. This lag also explains why the ONI bars may end earlier than the DHW lines — the CRW v3.1 Virtual Station data is updated daily, making it considerably more current than the ONI’s monthly publication schedule.</p>
-<div id="bbc7829d" class="cell" data-execution_count="8">
+<div id="5d0621b7" class="cell" data-execution_count="8">
 <details class="code-fold">
 <summary>Show code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># =============================================================================</span></span>
@@ -1155,7 +1155,7 @@ YYYY MM DD SST_MIN SST_MAX SST@90th_HS SSTA@90th_HS 90th_HS&gt;0 DHW_from_90th_H
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="el-nino-watch-2026_files/figure-html/cell-9-output-1.png" width="1142" height="475" class="figure-img"></p>
+<p><img src="el-nino-watch-2026_files/figure-html/cell-9-output-1.png" width="1143" height="474" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -1253,7 +1253,7 @@ YYYY MM DD SST_MIN SST_MAX SST@90th_HS SSTA@90th_HS 90th_HS&gt;0 DHW_from_90th_H
 <div id="refs" role="list">
 
 </div>
-<p><em>Page last rendered: 2026-06-11 10:49 UTC. Data fetched live from NOAA CRW — values update with each site deployment. This page is part of a portfolio project at <a href="https://velezf.github.io">velezf.github.io</a>; it is not an official NOAA product.</em></p>
+<p><em>Page last rendered: 2026-06-12 10:24 UTC. Data fetched live from NOAA CRW — values update with each site deployment. This page is part of a portfolio project at <a href="https://velezf.github.io">velezf.github.io</a>; it is not an official NOAA product.</em></p>
 
 
 <!-- -->
@@ -1264,13 +1264,13 @@ YYYY MM DD SST_MIN SST_MAX SST@90th_HS SSTA@90th_HS 90th_HS&gt;0 DHW_from_90th_H
   author = {Velez, Frank},
   title = {2026 {Super} {El} {Niño} {Watch:} {Live} {Thermal} {Stress}
     {Monitoring}},
-  date = {2026-06-11},
+  date = {2026-06-12},
   url = {https://velezf.github.io/projects/el-nino-watch-2026},
   langid = {en}
 }
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-velez2026" class="csl-entry quarto-appendix-citeas" role="listitem">
 Velez, Frank. 2026. <span>“2026 Super El Niño Watch: Live Thermal Stress
-Monitoring.”</span> June 11. <a href="https://velezf.github.io/projects/el-nino-watch-2026">https://velezf.github.io/projects/el-nino-watch-2026</a>.
+Monitoring.”</span> June 12. <a href="https://velezf.github.io/projects/el-nino-watch-2026">https://velezf.github.io/projects/el-nino-watch-2026</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
