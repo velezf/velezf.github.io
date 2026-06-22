@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Frank Velez">
+<meta name="dcterms.date" content="2026-06-22">
+
+<title>A provenance layer for coral-reef Structure-from-Motion – Francisco Velez | Data Science Portfolio</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-bba5ebae505b5c03f3f0d8040a416a6b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Francisco Velez | Data Science Portfolio</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../projects.html"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#why-this-project" id="toc-why-this-project" class="nav-link" data-scroll-target="#why-this-project">Why this project</a></li>
+  <li><a href="#what-i-did" id="toc-what-i-did" class="nav-link" data-scroll-target="#what-i-did">What I did</a></li>
+  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a></li>
+  <li><a href="#the-arc-nine-sessions" id="toc-the-arc-nine-sessions" class="nav-link" data-scroll-target="#the-arc-nine-sessions">The arc — nine sessions</a>
+  <ul class="collapse">
+  <li><a href="#session-12-infrastructure" id="toc-session-12-infrastructure" class="nav-link" data-scroll-target="#session-12-infrastructure">Session 1–2: Infrastructure</a></li>
+  <li><a href="#session-3-bootstrap-and-activation" id="toc-session-3-bootstrap-and-activation" class="nav-link" data-scroll-target="#session-3-bootstrap-and-activation">Session 3: Bootstrap and activation</a></li>
+  <li><a href="#session-4-data-acquisition-and-an-unexpected-finding" id="toc-session-4-data-acquisition-and-an-unexpected-finding" class="nav-link" data-scroll-target="#session-4-data-acquisition-and-an-unexpected-finding">Session 4: Data acquisition and an unexpected finding</a></li>
+  <li><a href="#session-5-t3-dress-rehearsal-a-24-tilt-i-couldnt-see" id="toc-session-5-t3-dress-rehearsal-a-24-tilt-i-couldnt-see" class="nav-link" data-scroll-target="#session-5-t3-dress-rehearsal-a-24-tilt-i-couldnt-see">Session 5: T3 dress rehearsal, a 24° tilt I couldn’t see</a></li>
+  <li><a href="#session-6-building-the-provenance-layer-and-learning-what-one-published-metric-depended-on" id="toc-session-6-building-the-provenance-layer-and-learning-what-one-published-metric-depended-on" class="nav-link" data-scroll-target="#session-6-building-the-provenance-layer-and-learning-what-one-published-metric-depended-on">Session 6: Building the provenance layer, and learning what one published metric depended on</a></li>
+  <li><a href="#session-7-figures" id="toc-session-7-figures" class="nav-link" data-scroll-target="#session-7-figures">Session 7: Figures</a></li>
+  </ul></li>
+  <li><a href="#the-figures" id="toc-the-figures" class="nav-link" data-scroll-target="#the-figures">The figures</a>
+  <ul class="collapse">
+  <li><a href="#figure-1-orientation-convention" id="toc-figure-1-orientation-convention" class="nav-link" data-scroll-target="#figure-1-orientation-convention">Figure 1 — orientation convention</a></li>
+  <li><a href="#figure-2-reconciliation" id="toc-figure-2-reconciliation" class="nav-link" data-scroll-target="#figure-2-reconciliation">Figure 2 — reconciliation</a></li>
+  </ul></li>
+  <li><a href="#the-reconciliation" id="toc-the-reconciliation" class="nav-link" data-scroll-target="#the-reconciliation">The reconciliation</a></li>
+  <li><a href="#qc-record" id="toc-qc-record" class="nav-link" data-scroll-target="#qc-record">QC record</a></li>
+  <li><a href="#what-i-took-away" id="toc-what-i-took-away" class="nav-link" data-scroll-target="#what-i-took-away">What I took away</a></li>
+  <li><a href="#whats-open" id="toc-whats-open" class="nav-link" data-scroll-target="#whats-open">What’s open</a></li>
+  <li><a href="#technical-details" id="toc-technical-details" class="nav-link" data-scroll-target="#technical-details">Technical details</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  <li><a href="#about-this-project" id="toc-about-this-project" class="nav-link" data-scroll-target="#about-this-project">About this project</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title">A provenance layer for coral-reef Structure-from-Motion</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<p class="subtitle lead">Reproducing the Toth et al.&nbsp;(2025) restoration-monitoring pipeline on an Eastern Dry Rocks transect — and instrumenting it the way a regulated data domain would.</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">Marine Science</div>
+    <div class="quarto-category">Photogrammetry</div>
+    <div class="quarto-category">Structure-from-Motion</div>
+    <div class="quarto-category">Data Provenance</div>
+    <div class="quarto-category">Reproducibility</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Frank Velez </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">June 22, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>The U.S. Geological Survey and Mote Marine Laboratory have built one of the most operationally mature Structure-from-Motion (SfM) monitoring efforts on the Florida reef tract: diver-collected imagery, a documented Agisoft Metashape workflow, and published topographic-complexity metrics tied to coral-restoration outcomes <span class="citation" data-cites="toth2025 combs2021">(<a href="#ref-toth2025" role="doc-biblioref">Toth, Johnson, E. O. Lyons, et al. 2025</a>; <a href="#ref-combs2021" role="doc-biblioref">Combs et al. 2021</a>)</span>. This project reproduces that pipeline on a single Eastern Dry Rocks belt transect (<code>EDR_T1_R2</code>) from the open imagery release <span class="citation" data-cites="johnson2025">(<a href="#ref-johnson2025" role="doc-biblioref">Johnson et al. 2025</a>)</span>, and wraps it in something the published workflow does not formalize: a provenance, QC, and metric-reconciliation layer that records every processing decision, validates outputs against the published quality targets, and reconciles the reconstructed complexity metrics against the published reference values <span class="citation" data-cites="toth2025data">(<a href="#ref-toth2025data" role="doc-biblioref">Toth, Johnson, E. Lyons, et al. 2025</a>)</span> — under a strict firewall that keeps those reference values out of the pipeline.</p>
+<p>The most useful result is not a number that matched. It is a number that didn’t, and what recovering it revealed about where reproducibility actually lives.</p>
+<hr>
+</section>
+<section id="why-this-project" class="level2">
+<h2 class="anchored" data-anchor-id="why-this-project">Why this project</h2>
+<p>When I started looking for a project to anchor my transition into marine science, I had a simple question: where is the actual operational work happening on coral restoration in the United States, and what data and methods are the people doing that work using? I’m coming from fifteen years in clinical research informatics — comfortable with Python, biomedical data engineering, cloud workflows, and the kind of data discipline that NIH-funded studies demand — but I am genuinely new to marine science. I wanted to learn the field by doing real work in it, not by reading about it from a distance.</p>
+<p>The question led me to Mote Marine Laboratory, then to their published collaboration with the USGS St.&nbsp;Petersburg Coastal and Marine Science Center, and then to the paper that changed how I thought about the project: Toth et al.&nbsp;(2025), <em>Coral restoration can drive rapid increases in reef-accretion potential</em> <span class="citation" data-cites="toth2025">(<a href="#ref-toth2025" role="doc-biblioref">Toth, Johnson, E. O. Lyons, et al. 2025</a>)</span>. That argument — that SfM-derived structural complexity is a more fundamental measure of restoration success than conventional monitoring — is a governance argument before it is a photogrammetry argument. If SfM becomes monitoring infrastructure, every product has to be traceable to the imagery and settings that produced it, every quality gate has to be explicit rather than tacit, and every comparison across sites or seasons has to be defensible to someone who wasn’t in the room when the model was built.</p>
+<p>I noticed, reading the papers carefully, the gap between <em>reproducible in principle</em> and <em>reproducible in practice</em>. The pipeline produces orthomosaics, digital elevation models, dense point clouds, and metrics like rugosity and fractal dimension from underwater image sets. But the operational data management around it is not formalized: no automated intake validation, processing parameters living in a brittle HTML report, quality targets stated in prose rather than checked programmatically, metric comparison something you’d script by hand every time.</p>
+<p>I am new to marine science. I am not new to the question of what data infrastructure a serious research program needs. The gap I was seeing is the kind of thing I can genuinely contribute to.</p>
+<p>I chose Eastern Dry Rocks: the smallest offshore site, the cleanest data case, and a reef I’ve visited. Christ of the Abyss sits at the edge of it.</p>
+<hr>
+</section>
+<section id="what-i-did" class="level2">
+<h2 class="anchored" data-anchor-id="what-i-did">What I did</h2>
+<ul>
+<li>Reproduced the documented Metashape pipeline end-to-end on <code>EDR_T1_R2</code> — alignment, bundle adjustment, scaling, error reduction, orientation, dense reconstruction, confidence filtering, and digital surface model (DSM) — from the raw imagery in P1WHKTRD <span class="citation" data-cites="johnson2025">(<a href="#ref-johnson2025" role="doc-biblioref">Johnson et al. 2025</a>)</span>, using the settings published in the Electronic Supplementary Material <span class="citation" data-cites="toth2025">(<a href="#ref-toth2025" role="doc-biblioref">Toth, Johnson, E. O. Lyons, et al. 2025</a>)</span>.</li>
+<li>Built <code>reef_sfm_provenance</code>, a tested Python package that captures a run manifest, validates it against the published quality targets, and reconciles the reconstructed metrics against the published reference products.</li>
+<li>Reconciled three structural-complexity metrics — mean elevation, rugosity, and vector ruggedness — against the published values for the same transect, with a hard firewall preventing those reference values from influencing the reconstruction.</li>
+<li>Recovered, forensically, a processing decision that one published metric depended on but that no record stated — and used it as the worked example for why the provenance layer is the point.</li>
+</ul>
+<hr>
+</section>
+<section id="methods" class="level2">
+<h2 class="anchored" data-anchor-id="methods">Methods</h2>
+<p><strong>Methodological lineage.</strong> The reconstruction follows the protocol established by Combs et al.&nbsp;(2021) <span class="citation" data-cites="combs2021">(<a href="#ref-combs2021" role="doc-biblioref">Combs et al. 2021</a>)</span> and operationalized for these sites by Toth et al.&nbsp;(2025) <span class="citation" data-cites="toth2025">(<a href="#ref-toth2025" role="doc-biblioref">Toth, Johnson, E. O. Lyons, et al. 2025</a>)</span>: 10 × 2 m belt transects imaged with a downward-facing Canon PowerShot S120 at 1–2 m altitude in a double-lawnmower pattern, with 3–4 coded 25 cm scale-bar targets per transect. All Metashape parameters are taken from ESM Table S2 <span class="citation" data-cites="toth2025">(<a href="#ref-toth2025" role="doc-biblioref">Toth, Johnson, E. O. Lyons, et al. 2025</a>)</span> — alignment at High accuracy, key-point limit 60,000, tie-point limit 0; error reduction via the USGS automated script <span class="citation" data-cites="logan2022">(<a href="#ref-logan2022" role="doc-biblioref">Logan et al. 2022</a>)</span> with reconstruction-uncertainty, projection-accuracy, and reprojection-error thresholds in the published bands; dense reconstruction at High quality with mild depth filtering; DSM at 1 cm from the confidence-filtered point cloud. A Pacific NCRMP SfM SOP <span class="citation" data-cites="torrespulliza2024">(<a href="#ref-torrespulliza2024" role="doc-biblioref"><span class="nocase">Torres-Pulliza et al.</span> 2024</a>)</span> was consulted during early scoping as a parameter cross-reference but is not the methodological basis.</p>
+<p><strong>Data sources and the firewall.</strong> Two USGS data releases are involved, and the distinction between them is load-bearing:</p>
+<ul>
+<li><strong>P1WHKTRD</strong> <span class="citation" data-cites="johnson2025">(<a href="#ref-johnson2025" role="doc-biblioref">Johnson et al. 2025</a>)</span> — the raw diver imagery (CC0). This is the <em>only</em> input to the pipeline.</li>
+<li><strong>P13HMEON</strong> <span class="citation" data-cites="toth2025data">(<a href="#ref-toth2025data" role="doc-biblioref">Toth, Johnson, E. Lyons, et al. 2025</a>)</span> — the published SfM products and topographic-complexity measurements. These are used <strong>exclusively</strong> as comparison targets in the reconciliation step. They never inform alignment, leveling, tuning, or any pipeline decision.</li>
+</ul>
+<p>That firewall is enforced in code, not just by convention. It exists because a reproduction that quietly tunes toward the published answer reproduces nothing. Keeping the reference values out is what made a divergence a signal rather than an artifact of leakage — and, as it turned out, what made the headline finding interpretable.</p>
+<p><strong>Compute.</strong> Reconstruction ran on an AWS EC2 g6.4xlarge (NVIDIA L4) instance under Agisoft Metashape Professional 2.3.1, reproducing a workflow originally documented on Metashape v2.0. The provenance package and all authoring are local (macOS, <code>uv</code>, Python 3.12).</p>
+<hr>
+</section>
+<section id="the-arc-nine-sessions" class="level2">
+<h2 class="anchored" data-anchor-id="the-arc-nine-sessions">The arc — nine sessions</h2>
+<p>This project ran as nine focused work sessions over six weeks. The sessions are condensed here; the full lab-notebook record — dead ends, wrong turns, and all — lives in the <a href="https://github.com/velezf/reef-sfm-mote-keys">project notebook on GitHub</a>.</p>
+<section id="session-12-infrastructure" class="level3">
+<h3 class="anchored" data-anchor-id="session-12-infrastructure">Session 1–2: Infrastructure</h3>
+<p>Sessions 1 and 2 were deliberately mechanical: scaffold the repository, provision the AWS workstation, and end up with a stable compute environment before touching any data.</p>
+<p>The AWS piece had its own operational puzzle: new AWS accounts start with a GPU vCPU quota of zero, which is not documented prominently anywhere. The quota increase for <code>g6</code> instances took three days of support-case back-and-forth. Once resolved, the license-stability question was more technically interesting. Agisoft Metashape Professional’s node-locked license fingerprints against hardware identifiers — primarily the MAC address of a network interface. AWS’s stop/start model creates a specific risk: if the underlying physical host changes silently, the primary ENI can get a new MAC and break the license fingerprint. The mitigation was a secondary ENI attached at device-index 1, whose MAC lives with the ENI object rather than the instance or the physical host. <code>start-instance.sh</code> verifies the MAC on every resume and bails loudly if it has changed, before Metashape ever runs.</p>
+<p>The 30-day Metashape trial started at 2026-05-27 00:13:14 UTC. Everything compute-bound had to finish by June 27.</p>
+</section>
+<section id="session-3-bootstrap-and-activation" class="level3">
+<h3 class="anchored" data-anchor-id="session-3-bootstrap-and-activation">Session 3: Bootstrap and activation</h3>
+<p>The full software layer on top of the AWS infrastructure — Python 3.12 via <code>uv</code>, QGIS LTR, Amazon DCV 2025.0 for GUI access, Metashape Professional 2.3.1 — was a resumable bash orchestrator with thirteen idempotent step functions. It mostly worked on first run, but DCV was its own four-hour lesson across two evenings: a missing IAM role that blocked DCV’s license retrieval, a documentation note buried in the admin guide saying LightDM isn’t supported with DCV on Ubuntu 20.x+, and the discovery that DCV doesn’t start its own X server — it attaches to one the display manager provides. Each of these was fixable once identified. None of them were in any tutorial I’d found.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>The Metashape Python module isn’t where you expect it.</strong> The supported invocation is <code>metashape.sh -r script.py</code>, which runs your script inside Metashape’s own Python runtime. This is separate from any <code>uv</code>-managed environment and became ADR-0005 for the project.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="session-4-data-acquisition-and-an-unexpected-finding" class="level3">
+<h3 class="anchored" data-anchor-id="session-4-data-acquisition-and-an-unexpected-finding">Session 4: Data acquisition and an unexpected finding</h3>
+<p>Session 4 was supposed to be straightforward: download the EasternDryRocks imagery from USGS data release P1WHKTRD, validate it, produce an intake QC report. It turned into the longest single session of the project.</p>
+<p>The acquisition itself was the easy part: 3,271 TIFFs from EasternDryRocks, 53.22 GiB on disk. The validation is where things got interesting.</p>
+<p>I’d assumed the on-disk TIFFs would carry standard EXIF — exposure time, aperture, ISO, focal length, capture timestamp. They don’t. USGS distributes the files as Photoshop 24.6 re-encodes of the original CR2 RAW captures; Photoshop’s TIFF export strips the entire Exif sub-IFD. Every file in the dataset is missing <code>ExposureTime</code>, <code>FNumber</code>, <code>ISOSpeedRatings</code>, <code>FocalLength</code>, and <code>DateTimeOriginal</code> by design.</p>
+<p>This is methodologically irrelevant for SfM — the workflow uses bundle adjustment with coded scale-bar targets, not EXIF priors — but it broke every assumption my validator had been written against. And it pointed at something larger.</p>
+<p>I’ve spent fifteen years in biomedical informatics watching the same reproducibility problem play out across genomics, imaging, proteomics, structural biology: a method paper gets published with a prose-described preprocessing step — <em>“images were converted to TIFF using Adobe Photoshop”</em> — someone tries to reproduce the work three years later, the Photoshop version has changed, the EXIF structure is different, the comparison between old and new data silently drifts. The biomedical informatics community has largely solved this through executable, version-pinned, structurally-described workflows: CWL, WDL, Nextflow, Snakemake. When a 2018 GATK variant-calling workflow ships as a WDL file, you can run it in 2026 and get bit-identical outputs. That work took roughly fifteen years of community effort and is now the expected norm in serious computational biology.</p>
+<p>The metadata-loss finding I surfaced in Session 4 is a specific instance of the general pattern marine SfM hasn’t yet closed. Photoshop 24.6 strips the Exif sub-IFD; some future Photoshop version may strip differently. The capture timestamps that survive in the IDS CSV are there because USGS maintains a separate database — if that database schema changes between releases, downstream code breaks silently. None of these are problems for <em>this</em> dataset in isolation. All of them are problems for <em>comparing this dataset to a future version of itself</em>, which is the actual scientific question restoration monitoring is trying to answer.</p>
+<p>The structured <code>metadata_lineage</code> section in the QC report — four-layer characterization of what Photoshop preserves and what it strips, machine-readable and schema-versioned — is what that capture looks like for one specific link in the chain. The validator iteration wasn’t a detour; it was the project earning its premise.</p>
+</section>
+<section id="session-5-t3-dress-rehearsal-a-24-tilt-i-couldnt-see" class="level3">
+<h3 class="anchored" data-anchor-id="session-5-t3-dress-rehearsal-a-24-tilt-i-couldnt-see">Session 5: T3 dress rehearsal, a 24° tilt I couldn’t see</h3>
+<p>Session 5 was the core SfM processing work. I ran T8 imagery first as a smoke test to validate the headless confidence-filtering implementation (ESM Step 13 — classifying low-confidence dense-cloud points as noise — has no direct Python API equivalent; the approach required working through the API documentation rather than forum examples). Then T3 as the dress rehearsal: first scaled run, first contact with real reef geometry at production scale.</p>
+<p>The day-1 T3 leveling came out tilted 24.26° off nadir. Not subtly — a quarter-turn of roll. I hadn’t caught it because there was nothing for the eye to catch: the AlignmentHelper hardcodes roll to zero, I hadn’t enabled Zero-pitch, and the roll quietly inherited from the bounding-box orientation I’d set by hand. The tool renders a leveled-looking model. Through the GUI, the error was structurally invisible — I could have stared at that orientation for an hour and approved it every time.</p>
+<p>The fix was an independent marker-plane re-level — fitting a robust, outlier-rejecting plane to the markers, sending its normal to Z, solving roll and pitch from the data instead of from my hand on the box. I validated the result against downloaded P13HMEON reference DEMs — as a gate only, never a leveling input. The reference tells me whether I’m right; it never gets to tell me what the answer is.</p>
+<p>AOI placement surfaced a related problem: the markers that give the correct level plane sit about 0.5 m off the actual reef band and about 2° askew to it. Using the same fiducials for both leveling and AOI framing quietly cost me coverage — from ~48% to ~97% when I switched the AOI to a footprint-derived frame. <strong>Markers level the plane; the data footprint frames the AOI.</strong> Don’t let one reference do two jobs.</p>
+<p>The real lesson wasn’t the technique. The dangerous errors are the ones the tool hides from the eye. And the part that doesn’t depend on skill at all is reproducibility: the same plane fit, the same gate, the same answer on every transect, with a record to prove it ran. That’s the value that scales, and a careful hand doesn’t.</p>
+<p>T1 production followed T3 and brought its own surprises: a Z-window built on an assumption of uniform slope that a trough-to-crest reef profile violated, clipping a 10 m transect to 2.58 m before the surface-anchored correction. And two gate failures I left red — <code>total_tilt</code> at 8.71° against a 6° threshold sized for the 24° mis-level incident, not for genuinely tilted reef-wall cross-slope; <code>orientation_plus_x</code> at 135° versus the +X convention. A valid product is not a green gate. Re-leveling a correctly-leveled transect would have been falsifying the record to make it look tidy.</p>
+</section>
+<section id="session-6-building-the-provenance-layer-and-learning-what-one-published-metric-depended-on" class="level3">
+<h3 class="anchored" data-anchor-id="session-6-building-the-provenance-layer-and-learning-what-one-published-metric-depended-on">Session 6: Building the provenance layer, and learning what one published metric depended on</h3>
+<p>Session 6 was the largest single arc of the project, and it ended in a place I hadn’t anticipated.</p>
+<p><strong>Building the layer.</strong> <code>reef_sfm_provenance</code> is a real package — typed, tested (427 tests), usable from the command line. It has four components: an intake validator that catalogs every input image with SHA-256; a processing manifest that captures input/output hashes and every parameter and software version; a QC validator with three-state semantics (pass / fail / <strong>not-evaluable</strong> — never collapsing the third into a pass); and a reconciliation module that computes rugosity, vector ruggedness (VRM), and standardized mean elevation per the formulas in Toth et al.&nbsp;2025.</p>
+<p>Before pointing the metrics at my reconstruction, I ran them on the <em>published</em> DSMs and compared to the <em>published</em> table values. Rugosity reproduced to under 0.3%. VRM read about +14% high against MultiscaleDTM — a Sappington-vs-MultiscaleDTM implementation offset, characterized and recorded. The instrument was validated before I trusted any reading.</p>
+<p><strong>The wrong target.</strong> Here is a basic thing I got wrong because I’d only read about the data, not handled it. I’d been treating “EDR_T1” as a transect I could match one-to-one against a published row. It isn’t — it’s a <em>subsite</em> of nine separate published transects. My original reconstruction was a 10×1 m center-cut from a merged area survey spanning roughly three times the relief of any single published belt. Fixing this required reconstructing a single <em>published</em> transect — R2, about 272 images — end to end. It’s the only comparison that means anything, and it added real time and compute.</p>
+<p><strong>The first reconcile.</strong> Three numbers. Rugosity: −3.3%, stable and frame-robust. VRM: −24%, consistent with the sparse-coverage fidelity finding and the known implementation offset. Mean elevation: <strong>+144%</strong>. As a newcomer, that gap was uncomfortable. The firewall discipline meant I had to find out <em>why</em> honestly, without nudging anything toward the published value.</p>
+<p><strong>Chasing the gap.</strong> The code was sound — verified against published DSMs. The footprint was exactly 10×1 m at the raster level. So it was orientation. I measured the actual attitude of all four published EDR DSMs and the pattern was unmistakable: the along-axis is 0.14–0.23° in every one (leveled), while the cross-axis stays at 0.88–1.38° (intact). That asymmetry is the signature of the AlignmentHelper’s <strong>Zero-pitch</strong> option, which levels the along-transect midline to horizontal and leaves the cross-slope alone.</p>
+<p>Zero-pitch is off by default. The published methods text cites the AlignmentHelper without saying it was switched on. I could only recover that it had been by measuring the published products and reading the leveling back out of them. To an experienced SfM analyst, enabling Zero-pitch may be completely routine — the obvious thing to do — and the people who processed this data made that call. I’m not claiming a deficiency in their work. I’m saying that as a newcomer running this for the first time, a processing choice that moves a metric by a factor of more than two was invisible to me in the documentation and only recoverable from the artifact. That is precisely the distance, in clinical data, between an exclusion criterion an analyst “just knows” and one that’s encoded, versioned, and auditable. Seeing it here, in a reef DSM, was the moment the whole project clicked.</p>
+<p>I reproduced Zero-pitch on my own chunk — along-only convention, matching the published products — and the gap fell from <strong>+144% to +32%</strong>. A yaw artifact in the leveling rotation had widened my belt from 1.0 m to 1.18 m; re-clipping to a true 10×1 m brought mean elevation to <strong>+27.7%</strong>. Raw relief: 0.666 m against the published 0.670 m — a clean surface match that, with rugosity and VRM, gives three independent confirmations the surface itself is right. What remains is isolated to one axis.</p>
+<p><strong>The cross-axis surprise.</strong> My cross-axis sits at 6.39° against the published ~1°. Reasoning it through, I expected leveling to the marker plane to be the more principled choice and to pull the cross-axis toward the published value — the markers are fixed objects surveyed into the reef, and a diver swimming a 10 m transect is an unstable reference for “up.” The data said the opposite. Marker-plane leveling made everything worse: mean elevation to +55.4%, cross-axis to 12.15°.</p>
+<p>The reason is the sharper finding: the markers are nearly <strong>collinear</strong> — a spread ratio of 0.00085, sitting almost on a line down the transect. They pin the along-axis and the scale beautifully but carry essentially no cross or vertical information. A plane fit through points on a line is constrained in one dimension and free in the other two. My own pipeline already knew this — there’s a collinear guard in the leveling code that detects exactly this pattern and falls back to camera-nadir. I had to bypass my own guard to run the experiment, and bypassing it produced precisely the regression the guard exists to prevent.</p>
+<p>So the honest conclusion is not “my cross-slope is the real reef” and not “my cross-slope is an artifact I can fix.” It’s that the cross-axis reference is <strong>unanchorable from this dataset’s survey controls</strong> — not for me, and not for the published pipeline either, whose ~1° can’t have come from the markers any more than mine could.</p>
+<p><strong>The audit catching me.</strong> The last thing I built in Session 6 was a captured-threshold audit that walks every quality gate in my own pipeline and asks three questions of the <em>record</em>, not the result: Did the gate write down the threshold it judged against? Did it write down the value it actually measured? And can you tell those two apart, or is the record just echoing its own threshold back at itself?</p>
+<p>The audit found three gaps on its first run, all mine. Two were thresholds that lived in the pipeline code but never reached the captured record — a co-registration tolerance and a footprint bound a reviewer would have to take on faith. The third was a marker-coherence gate whose “observed” value was just its own threshold copied back. It passed, but carried no information — it couldn’t tell a clean result from a marginal one.</p>
+<p>Then it flagged check 7, and this is the part I least want to gloss. Check 7 is an orientation gate — a guard meant to catch a model that’s been silently flipped. On the area survey it passes. On the single transect it fails, and I’d long ago waved that failure off in my notes as a “benign convention mismatch — no product flip, don’t touch it.” When the audit made me justify that, I reached for the easy move: mark it <em>characterized</em> — understood, accepted — and let the dashboard go green.</p>
+<p>Two things stopped me. The tool’s part: I’d built the audit so an exemption needs a written rationale, but I’d only enforced that a rationale is <em>present</em>, not that it’s <em>sufficient</em> — and the note I was about to attach described what the gate is, not why its failure was acceptable. The rest was going to disk. When I looked for the actual basis of “no product flip,” there wasn’t one: no recorded orientation values, no geometric argument, no visual check. I didn’t characterize it away. I captured the gate’s expected value so the record can defend its verdict, and I left the failure <em>visible</em> — an honest, unaccepted failure, with the orientation question written down as an open item. The audit reads “conformant” now, but only on the axis it measures: the record is complete and honest. The gate still shows red.</p>
+<p>Keeping those two apart — is the record defensible, versus did the check pass — is the whole point. Collapsing them is exactly how a failing safety check earns a green badge it didn’t earn.</p>
+</section>
+<section id="session-7-figures" class="level3">
+<h3 class="anchored" data-anchor-id="session-7-figures">Session 7: Figures</h3>
+<p>Session 7 was originally planned as a QGIS annotation session for benthic cover. By the time I got there, two things had changed: the reconciliation unit had narrowed to the single EDR_T1_R2 transect (which has no ortho on disk), and working through the cover question convinced me to scope it out.</p>
+<p>The published cover numbers are CoralNet point-counts: ten 1×1 m images per transect, 150 points each, every point identified by eye — ~1,500 expert benthic classifications per transect. The obvious QGIS shortcut is to trace polygons and take area fractions, but area-fraction is a different estimator than point-count, so it would diverge from the published number rather than approximate it. And the number’s credibility would rest entirely on a first-time identification of staghorn versus dead colony versus CCA versus turf-on-substrate, across 1,500 points. That is coral-ecology craft outside my background and outside this project’s thesis. I scoped cover out and moved automated benthic classification to its own effort — a classifier-validation problem that reuses the QC/agreement architecture built here, honestly framable despite the coral-ID gap because the contribution is the validation harness, not the biology.</p>
+<p>What remained was scripted raster visualization and a results chart, both reproducible in Python, both landing directly in this notebook as regenerable artifacts. Two figures.</p>
+<hr>
+</section>
+</section>
+<section id="the-figures" class="level2">
+<h2 class="anchored" data-anchor-id="the-figures">The figures</h2>
+<section id="figure-1-orientation-convention" class="level3">
+<h3 class="anchored" data-anchor-id="figure-1-orientation-convention">Figure 1 — orientation convention</h3>
+<p>Same transect, two leveling conventions. The along-axis tilt difference is the cause of the mean-elevation gap.</p>
+<div id="fig-orientation" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-orientation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="fig1_orientation_convention.png" class="img-fluid quarto-figure quarto-figure-center figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-orientation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Camera-nadir DSM (left, along-axis tilt ≈ +4.38°) versus Zero-pitch DSM (right, ≈ +0.17°), with along-axis mean-elevation profiles overlaid. The leveling decision the published methods text never names is visible in the profile overlay.
+</figcaption>
+</figure>
+</div>
+<p>The figure deliberately does not claim cross-axis agreement. My reconstruction’s 6.39° cross-axis against the published ~1° is unresolved and annotated as an open item — survey-unanchorable from available data. The +27.7% mean-elevation gap reflects both the unresolved cross-axis convention and any residual along-axis offset after zero-pitch. I did not let a clean-looking panel imply agreement that doesn’t exist.</p>
+</section>
+<section id="figure-2-reconciliation" class="level3">
+<h3 class="anchored" data-anchor-id="figure-2-reconciliation">Figure 2 — reconciliation</h3>
+<p>Canonical values versus published (Toth et al.&nbsp;2025 ESM Table S2 <span class="citation" data-cites="toth2025">(<a href="#ref-toth2025" role="doc-biblioref">Toth, Johnson, E. O. Lyons, et al. 2025</a>)</span>), per metric, with reproduction status.</p>
+<div id="fig-reconciliation" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-reconciliation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="fig2_reconciliation.png" class="img-fluid quarto-figure quarto-figure-center figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-reconciliation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Reconciliation of three structural-complexity metrics against published values. Published values enter only through the pre-firewalled reconciliation report — the P13HMEON CSV is never opened by the figure layer.
+</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>On the y-axis.</strong> Both panels use a non-zero y-axis (watermarked “y-axis not from 0”). These are tightly clustered ratios; a zero baseline would flatten every difference to invisibility. The watermark is the honest way to handle a truncated axis.</p>
+</div>
+</div>
+</div>
+<hr>
+</section>
+</section>
+<section id="the-reconciliation" class="level2">
+<h2 class="anchored" data-anchor-id="the-reconciliation">The reconciliation</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Metric</th>
+<th>Mine</th>
+<th>Published</th>
+<th>Δ%</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Mean Elevation (standardized, m)</td>
+<td>0.3090</td>
+<td>0.2420</td>
+<td>+27.7%</td>
+<td>Characterized — survey-unanchorable cross-axis convention</td>
+</tr>
+<tr class="even">
+<td>Rugosity</td>
+<td>1.3720</td>
+<td>1.4150</td>
+<td>−3.0%</td>
+<td><strong>Reproduced</strong> — stable across leveling passes</td>
+</tr>
+<tr class="odd">
+<td>VRM (5×5 focal)</td>
+<td>0.0650</td>
+<td>0.0760</td>
+<td>−14.1%</td>
+<td>Characterized — Python impl bias (+13% vs MultiscaleDTM)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>The headline: rugosity reproduces</strong> (−3.0%, stable across the camera-nadir → zero-pitch passes — frame-robust, as expected). Mean elevation is characterized, not reproduced — the +27.7% gap traces to the unresolved cross-axis orientation convention, not to a code or footprint error. VRM is characterized — the −14.1% versus published is consistent with the known Python-implementation offset, a different comparison than the published delta but the same underlying offset. Both the mean elevation and VRM characterizations are documented decision records in the repository.</p>
+<p>One result anchors everything: <strong>run against the published DSMs directly, the same metric code reproduces the published values to within 0.1%.</strong> The measurement code is correct. Whatever the table shows reflects the reconstructed <em>surface</em> and the <em>frame</em> it sits in — not the math.</p>
+<hr>
+</section>
+<section id="qc-record" class="level2">
+<h2 class="anchored" data-anchor-id="qc-record">QC record</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Check</th>
+<th>Published target</th>
+<th>Observed</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Images registered</td>
+<td>≥ 90% of input</td>
+<td>131/270 (48.2%)</td>
+<td>FAIL — corpus geometry ceiling (characterized)</td>
+</tr>
+<tr class="even">
+<td>Reprojection error (post error-reduction)</td>
+<td>RMSE 0.27–0.52 px</td>
+<td>0.1397 px</td>
+<td>PASS</td>
+</tr>
+<tr class="odd">
+<td>Scale-bar error</td>
+<td>sub-millimetre</td>
+<td>±4.4 mm (±1.76%)</td>
+<td>FAIL — underwater geometry, no GCPs (characterized)</td>
+</tr>
+<tr class="even">
+<td>Markers gate A — parity</td>
+<td>All coded IDs detected</td>
+<td>GUI correction applied</td>
+<td>PASS after correction</td>
+</tr>
+<tr class="odd">
+<td>Markers gate B — coherence</td>
+<td>All residuals &lt; 2.0 px</td>
+<td>All &lt; 2.0 px ceiling</td>
+<td>PASS</td>
+</tr>
+<tr class="even">
+<td>Markers gate C — consistency</td>
+<td>Inter-bar ratio &lt; 1.25</td>
+<td>1.034</td>
+<td>PASS</td>
+</tr>
+<tr class="odd">
+<td>Markers gate D — sufficiency</td>
+<td>≥ 3 validated bars</td>
+<td>3 bars validated</td>
+<td>PASS</td>
+</tr>
+<tr class="even">
+<td>AOI coverage</td>
+<td>≥ 95%</td>
+<td>93.7%</td>
+<td>BYPASSED — out-and-back trajectory</td>
+</tr>
+<tr class="odd">
+<td>Belt geometry (GATE#6)</td>
+<td>Single-pass belt</td>
+<td>Out-and-back</td>
+<td>BYPASSED — documented exception</td>
+</tr>
+<tr class="even">
+<td>Artifact integrity</td>
+<td>All outputs re-hashed</td>
+<td>25/25 sha256 OK</td>
+<td>PASS</td>
+</tr>
+</tbody>
+</table>
+<p>The two FAIL entries are both characterized and non-disqualifying. Registration at 48.2% reflects the out-and-back corpus geometry: 131 cameras aligned at any quality threshold — the ceiling is in the imagery overlap pattern, not the software settings. Scale-bar residual at ±4.4 mm against a 1 mm published target is consistent with underwater imaging geometry and the absence of ground control points. Neither invalidates the reconstruction; both are in the record.</p>
+<hr>
+</section>
+<section id="what-i-took-away" class="level2">
+<h2 class="anchored" data-anchor-id="what-i-took-away">What I took away</h2>
+<p><strong>The provenance gap is real, and it shows up in a specific way.</strong> Three times across these sessions I was confident about something in this domain and wrong: the 7.977° criterion (conflating along-axis and marker-plane tilt), the assumption that Zero-pitch was off by default, the expectation that marker-plane leveling would fix the cross-axis. Each time, a verification check caught it before it became a result. Reading about reproducibility, I understood in the abstract that verification matters. Running the pipeline myself, being wrong three times and getting caught, made it concrete.</p>
+<p><strong>The dangerous errors are the ones the tool hides from the eye.</strong> The AlignmentHelper didn’t lie — it just wasn’t solving roll, and rendered a leveled-looking result anyway. Through the GUI, a 24° mis-level was structurally invisible. On this class of error, no eye has earned the right to overrule the data fit and the gate.</p>
+<p><strong>The most useful result is the finding that didn’t match.</strong> Zero-pitch is off by default. The published methods text cites the AlignmentHelper without saying it was switched on. A newcomer following the documentation literally would reproduce neither the leveling decision nor the metric it governs. That’s not a criticism of the original work — it’s an observation about where the field’s documentation norms haven’t kept up with its science. An experienced analyst would have known; I recovered it forensically. The difference between “the analyst knew to do it” and “the decision is encoded and auditable” is the whole of data governance, and watching it show up in a coral-reef DSM was the most personally satisfying part of the work.</p>
+<p><strong>The audit catching me was the most useful lesson.</strong> The reconciliation arc taught me this by making me the victim of choices other people never wrote down. The audit arc taught me the same thing from the other side, by catching me about to make one of my own and bury it. That second version was more useful, because the temptation was mine.</p>
+<hr>
+</section>
+<section id="whats-open" class="level2">
+<h2 class="anchored" data-anchor-id="whats-open">What’s open</h2>
+<ul>
+<li><strong>Cross-axis orientation unverified.</strong> The T1_R2 orientation gate (check 7) shows a captured FAILURE. The physical basis for “no product flip” has no recorded verification. This is documented as a blocker in the project’s decision records with explicit verification steps.</li>
+<li><strong>Marker 25–26 label basis pending.</strong> The physical-to-label correspondence for the far-end target pair is unconfirmed. Positions are accurate (projection residuals &lt; 2 px); a label swap between 25 and 26 would not affect the plane fit or scale. Open item.</li>
+<li><strong>Full-area T1 DEM hang unresolved.</strong> <code>buildDem</code> hangs on the 487M-point area-survey cloud in Metashape 2.3.1 — three confirmed runs. The transect DEM (10×1 m) is DEM-sourced per ESM Step 15; the full-area visual ortho was built point-cloud-direct as a documented exception.</li>
+</ul>
+<hr>
+</section>
+<section id="technical-details" class="level2">
+<h2 class="anchored" data-anchor-id="technical-details">Technical details</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Language</td>
+<td>Python 3.12</td>
+</tr>
+<tr class="even">
+<td>Environment</td>
+<td><code>uv</code></td>
+</tr>
+<tr class="odd">
+<td>SfM software</td>
+<td>Agisoft Metashape Professional 2.3.1</td>
+</tr>
+<tr class="even">
+<td>Compute</td>
+<td>AWS EC2 g6.4xlarge, NVIDIA L4</td>
+</tr>
+<tr class="odd">
+<td>Key packages</td>
+<td><code>rasterio</code>, <code>numpy</code>, <code>matplotlib</code>, <code>pydantic</code>, <code>pytest</code></td>
+</tr>
+<tr class="even">
+<td>Test suite</td>
+<td>427 tests passing</td>
+</tr>
+<tr class="odd">
+<td>Version control</td>
+<td>Git / GitHub</td>
+</tr>
+<tr class="even">
+<td>Portfolio framework</td>
+<td>Quarto</td>
+</tr>
+<tr class="odd">
+<td>Provenance package</td>
+<td><code>reef_sfm_provenance</code> (typed, CLI entry points)</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-combs2021" class="csl-entry" role="listitem">
+Combs, Ian R., Michael S. Studivan, Ryan J. Eckert, and Joshua D. Voss. 2021. <span>“Quantifying Impacts of Stony Coral Tissue Loss Disease on Corals in Southeast Florida Through Surveys and <span>3D</span> Photogrammetry.”</span> <em>PLOS ONE</em> 16 (8): e0252593. <a href="https://doi.org/10.1371/journal.pone.0252593">https://doi.org/10.1371/journal.pone.0252593</a>.
+</div>
+<div id="ref-johnson2025" class="csl-entry" role="listitem">
+Johnson, Selena A., Lauren T. Toth, Connor M. Jenkins, and Erin A. Lyons. 2025. <em>Diver-Based Structure-from-Motion Imagery from Coral Reef Restoration Surveys in the Lower <span>Florida</span> <span>Keys</span>: <span>July</span> 2022 and <span>July</span> 2023</em>. U.S. Geological Survey data release. <a href="https://doi.org/10.5066/P1WHKTRD">https://doi.org/10.5066/P1WHKTRD</a>.
+</div>
+<div id="ref-logan2022" class="csl-entry" role="listitem">
+Logan, Joshua B., Phillipe A. Wernette, and Andrew C. Ritchie. 2022. <em>Agisoft <span>Metashape</span>/<span>Photoscan</span> Automated Image Alignment and Error Reduction Version 2.0</em>. U.S. Geological Survey software release. <a href="https://doi.org/10.5066/P9DGS5B9">https://doi.org/10.5066/P9DGS5B9</a>.
+</div>
+<div id="ref-torrespulliza2024" class="csl-entry" role="listitem">
+<span class="nocase">Torres-Pulliza, Damaris et al.</span> 2024. <em><span>NCRMP</span> Structure-from-Motion Standard Operating Procedure</em>. NOAA Pacific Islands Fisheries Science Center. <a href="https://doi.org/10.25923/cydj-z260">https://doi.org/10.25923/cydj-z260</a>.
+</div>
+<div id="ref-toth2025data" class="csl-entry" role="listitem">
+Toth, Lauren T., Selena A. Johnson, Erin Lyons, et al. 2025. <em>Carbonate Budgets, Structure-from-Motion Products, and Topographic Complexity Measurements from Restored and Non-Restored Areas of Coral Reefs in the Lower <span>Florida</span> <span>Keys</span></em>. U.S. Geological Survey data release. <a href="https://doi.org/10.5066/P13HMEON">https://doi.org/10.5066/P13HMEON</a>.
+</div>
+<div id="ref-toth2025" class="csl-entry" role="listitem">
+Toth, Lauren T., Selena A. Johnson, Erin O. Lyons, et al. 2025. <span>“Coral Restoration Can Drive Rapid Increases in Reef Accretion Potential.”</span> <em>Scientific Reports</em> 15: 28353. <a href="https://doi.org/10.1038/s41598-025-04818-3">https://doi.org/10.1038/s41598-025-04818-3</a>.
+</div>
+</div>
+<hr>
+</section>
+<section id="about-this-project" class="level2">
+<h2 class="anchored" data-anchor-id="about-this-project">About this project</h2>
+<p>This project is part of a portfolio in marine environmental data science, built to demonstrate reproducible analysis workflows applied to real-world reef conservation data. The full code, test suite, decision records, and environment specification are available on GitHub.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Reproducibility
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>All figures are static outputs committed to the repository — generated from DSMs and a pre-firewalled reconciliation report, reproducible from a fresh clone of the source repo. The provenance package includes a <code>capture_audit</code> module that verifies the completeness of every quality gate’s recorded evidence.</p>
+</div>
+</div>
+<p><a href="https://github.com/velezf/reef-sfm-mote-keys" class="btn btn-outline-primary">View source repo</a> <a href="https://doi.org/10.5066/P1WHKTRD" class="btn btn-outline-secondary">USGS imagery release (P1WHKTRD)</a></p>
+
+
+<!-- -->
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{velez2026,
+  author = {Velez, Frank},
+  title = {A Provenance Layer for Coral-Reef {Structure-from-Motion}},
+  date = {2026-06-22},
+  url = {https://velezf.github.io/projects/reef-sfm-mote-keys},
+  langid = {en}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-velez2026" class="csl-entry quarto-appendix-citeas" role="listitem">
+Velez, Frank. 2026. <span>“A Provenance Layer for Coral-Reef
+Structure-from-Motion.”</span> June 22. <a href="https://velezf.github.io/projects/reef-sfm-mote-keys">https://velezf.github.io/projects/reef-sfm-mote-keys</a>.
+</div></div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+    const viewSource = window.document.getElementById('quarto-view-source') ||
+                       window.document.getElementById('quarto-code-tools-source');
+    if (viewSource) {
+      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+      viewSource.addEventListener("click", function(e) {
+        if (sourceUrl) {
+          // rstudio viewer pane
+          if (/\bcapabilities=\b/.test(window.location)) {
+            window.open(sourceUrl);
+          } else {
+            window.location.href = sourceUrl;
+          }
+        } else {
+          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+          modal.show();
+        }
+        return false;
+      });
+    }
+    function toggleCodeHandler(show) {
+      return function(e) {
+        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+        for (let i=0; i<detailsSrc.length; i++) {
+          const details = detailsSrc[i].parentElement;
+          if (show) {
+            details.open = true;
+          } else {
+            details.removeAttribute("open");
+          }
+        }
+        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+        const fromCls = show ? "hidden" : "unhidden";
+        const toCls = show ? "unhidden" : "hidden";
+        for (let i=0; i<cellCodeDivs.length; i++) {
+          const codeDiv = cellCodeDivs[i];
+          if (codeDiv.classList.contains(fromCls)) {
+            codeDiv.classList.remove(fromCls);
+            codeDiv.classList.add(toCls);
+          } 
+        }
+        return false;
+      }
+    }
+    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+    if (hideAllCode) {
+      hideAllCode.addEventListener("click", toggleCodeHandler(false));
+    }
+    const showAllCode = window.document.getElementById("quarto-show-all-code");
+    if (showAllCode) {
+      showAllCode.addEventListener("click", toggleCodeHandler(true));
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "A provenance layer for coral-reef Structure-from-Motion"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "Reproducing the Toth et al. (2025) restoration-monitoring pipeline on an Eastern Dry Rocks transect — and instrumenting it the way a regulated data domain would."</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Frank Velez"</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "2026-06-22"</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="an">date-format:</span><span class="co"> "MMMM D, YYYY"</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">  - Marine Science</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">  - Photogrammetry</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">  - Structure-from-Motion</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">  - Data Provenance</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">  - Reproducibility</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="an">image:</span><span class="co"> ../images/reef-sfm-mote-keys.jpg</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="an">toc:</span><span class="co"> true</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="an">toc-depth:</span><span class="co"> 3</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="an">toc-title:</span><span class="co"> "On this page"</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="an">number-sections:</span><span class="co"> false</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="an">code-fold:</span><span class="co"> true</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="an">code-summary:</span><span class="co"> "Show code"</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="an">fig-cap-location:</span><span class="co"> bottom</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="an">citation:</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="co">  url: https://velezf.github.io/projects/reef-sfm-mote-keys</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="an">bibliography:</span><span class="co"> references.bib</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="an">execute:</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="co">  freeze: true</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="co">  warning: false</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="co">  message: false</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="fu">## Overview</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>The U.S. Geological Survey and Mote Marine Laboratory have built one of the most operationally mature Structure-from-Motion (SfM) monitoring efforts on the Florida reef tract: diver-collected imagery, a documented Agisoft Metashape workflow, and published topographic-complexity metrics tied to coral-restoration outcomes <span class="co">[</span><span class="ot">@toth2025; @combs2021</span><span class="co">]</span>. This project reproduces that pipeline on a single Eastern Dry Rocks belt transect (<span class="in">`EDR_T1_R2`</span>) from the open imagery release <span class="co">[</span><span class="ot">@johnson2025</span><span class="co">]</span>, and wraps it in something the published workflow does not formalize: a provenance, QC, and metric-reconciliation layer that records every processing decision, validates outputs against the published quality targets, and reconciles the reconstructed complexity metrics against the published reference values <span class="co">[</span><span class="ot">@toth2025data</span><span class="co">]</span> — under a strict firewall that keeps those reference values out of the pipeline.</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>The most useful result is not a number that matched. It is a number that didn't, and what recovering it revealed about where reproducibility actually lives.</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="fu">## Why this project</span></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>When I started looking for a project to anchor my transition into marine science, I had a simple question: where is the actual operational work happening on coral restoration in the United States, and what data and methods are the people doing that work using? I'm coming from fifteen years in clinical research informatics — comfortable with Python, biomedical data engineering, cloud workflows, and the kind of data discipline that NIH-funded studies demand — but I am genuinely new to marine science. I wanted to learn the field by doing real work in it, not by reading about it from a distance.</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>The question led me to Mote Marine Laboratory, then to their published collaboration with the USGS St. Petersburg Coastal and Marine Science Center, and then to the paper that changed how I thought about the project: Toth et al. (2025), *Coral restoration can drive rapid increases in reef-accretion potential* <span class="co">[</span><span class="ot">@toth2025</span><span class="co">]</span>. That argument — that SfM-derived structural complexity is a more fundamental measure of restoration success than conventional monitoring — is a governance argument before it is a photogrammetry argument. If SfM becomes monitoring infrastructure, every product has to be traceable to the imagery and settings that produced it, every quality gate has to be explicit rather than tacit, and every comparison across sites or seasons has to be defensible to someone who wasn't in the room when the model was built.</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>I noticed, reading the papers carefully, the gap between *reproducible in principle* and *reproducible in practice*. The pipeline produces orthomosaics, digital elevation models, dense point clouds, and metrics like rugosity and fractal dimension from underwater image sets. But the operational data management around it is not formalized: no automated intake validation, processing parameters living in a brittle HTML report, quality targets stated in prose rather than checked programmatically, metric comparison something you'd script by hand every time.</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>I am new to marine science. I am not new to the question of what data infrastructure a serious research program needs. The gap I was seeing is the kind of thing I can genuinely contribute to.</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>I chose Eastern Dry Rocks: the smallest offshore site, the cleanest data case, and a reef I've visited. Christ of the Abyss sits at the edge of it.</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="fu">## What I did</span></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Reproduced the documented Metashape pipeline end-to-end on <span class="in">`EDR_T1_R2`</span> — alignment, bundle adjustment, scaling, error reduction, orientation, dense reconstruction, confidence filtering, and digital surface model (DSM) — from the raw imagery in P1WHKTRD <span class="co">[</span><span class="ot">@johnson2025</span><span class="co">]</span>, using the settings published in the Electronic Supplementary Material <span class="co">[</span><span class="ot">@toth2025</span><span class="co">]</span>.</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Built <span class="in">`reef_sfm_provenance`</span>, a tested Python package that captures a run manifest, validates it against the published quality targets, and reconciles the reconstructed metrics against the published reference products.</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Reconciled three structural-complexity metrics — mean elevation, rugosity, and vector ruggedness — against the published values for the same transect, with a hard firewall preventing those reference values from influencing the reconstruction.</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Recovered, forensically, a processing decision that one published metric depended on but that no record stated — and used it as the worked example for why the provenance layer is the point.</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="fu">## Methods</span></span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>**Methodological lineage.** The reconstruction follows the protocol established by Combs et al. (2021) <span class="co">[</span><span class="ot">@combs2021</span><span class="co">]</span> and operationalized for these sites by Toth et al. (2025) <span class="co">[</span><span class="ot">@toth2025</span><span class="co">]</span>: 10 × 2 m belt transects imaged with a downward-facing Canon PowerShot S120 at 1–2 m altitude in a double-lawnmower pattern, with 3–4 coded 25 cm scale-bar targets per transect. All Metashape parameters are taken from ESM Table S2 <span class="co">[</span><span class="ot">@toth2025</span><span class="co">]</span> — alignment at High accuracy, key-point limit 60,000, tie-point limit 0; error reduction via the USGS automated script <span class="co">[</span><span class="ot">@logan2022</span><span class="co">]</span> with reconstruction-uncertainty, projection-accuracy, and reprojection-error thresholds in the published bands; dense reconstruction at High quality with mild depth filtering; DSM at 1 cm from the confidence-filtered point cloud. A Pacific NCRMP SfM SOP <span class="co">[</span><span class="ot">@torrespulliza2024</span><span class="co">]</span> was consulted during early scoping as a parameter cross-reference but is not the methodological basis.</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>**Data sources and the firewall.** Two USGS data releases are involved, and the distinction between them is load-bearing:</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**P1WHKTRD** <span class="co">[</span><span class="ot">@johnson2025</span><span class="co">]</span> — the raw diver imagery (CC0). This is the *only* input to the pipeline.</span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**P13HMEON** [@toth2025data] — the published SfM products and topographic-complexity measurements. These are used **exclusively** as comparison targets in the reconciliation step. They never inform alignment, leveling, tuning, or any pipeline decision.</span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>That firewall is enforced in code, not just by convention. It exists because a reproduction that quietly tunes toward the published answer reproduces nothing. Keeping the reference values out is what made a divergence a signal rather than an artifact of leakage — and, as it turned out, what made the headline finding interpretable.</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>**Compute.** Reconstruction ran on an AWS EC2 g6.4xlarge (NVIDIA L4) instance under Agisoft Metashape Professional 2.3.1, reproducing a workflow originally documented on Metashape v2.0. The provenance package and all authoring are local (macOS, <span class="in">`uv`</span>, Python 3.12).</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a><span class="fu">## The arc — nine sessions</span></span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>This project ran as nine focused work sessions over six weeks. The sessions are condensed here; the full lab-notebook record — dead ends, wrong turns, and all — lives in the <span class="co">[</span><span class="ot">project notebook on GitHub</span><span class="co">](https://github.com/velezf/reef-sfm-mote-keys)</span>.</span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a><span class="fu">### Session 1–2: Infrastructure</span></span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>Sessions 1 and 2 were deliberately mechanical: scaffold the repository, provision the AWS workstation, and end up with a stable compute environment before touching any data.</span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a>The AWS piece had its own operational puzzle: new AWS accounts start with a GPU vCPU quota of zero, which is not documented prominently anywhere. The quota increase for <span class="in">`g6`</span> instances took three days of support-case back-and-forth. Once resolved, the license-stability question was more technically interesting. Agisoft Metashape Professional's node-locked license fingerprints against hardware identifiers — primarily the MAC address of a network interface. AWS's stop/start model creates a specific risk: if the underlying physical host changes silently, the primary ENI can get a new MAC and break the license fingerprint. The mitigation was a secondary ENI attached at device-index 1, whose MAC lives with the ENI object rather than the instance or the physical host. <span class="in">`start-instance.sh`</span> verifies the MAC on every resume and bails loudly if it has changed, before Metashape ever runs.</span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>The 30-day Metashape trial started at 2026-05-27 00<span class="sc">:13:</span>14 UTC. Everything compute-bound had to finish by June 27.</span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a><span class="fu">### Session 3: Bootstrap and activation</span></span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a>The full software layer on top of the AWS infrastructure — Python 3.12 via <span class="in">`uv`</span>, QGIS LTR, Amazon DCV 2025.0 for GUI access, Metashape Professional 2.3.1 — was a resumable bash orchestrator with thirteen idempotent step functions. It mostly worked on first run, but DCV was its own four-hour lesson across two evenings: a missing IAM role that blocked DCV's license retrieval, a documentation note buried in the admin guide saying LightDM isn't supported with DCV on Ubuntu 20.x+, and the discovery that DCV doesn't start its own X server — it attaches to one the display manager provides. Each of these was fixable once identified. None of them were in any tutorial I'd found.</span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="simple"}</span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a>**The Metashape Python module isn't where you expect it.** The supported invocation is <span class="in">`metashape.sh -r script.py`</span>, which runs your script inside Metashape's own Python runtime. This is separate from any <span class="in">`uv`</span>-managed environment and became ADR-0005 for the project.</span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a><span class="fu">### Session 4: Data acquisition and an unexpected finding</span></span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a>Session 4 was supposed to be straightforward: download the EasternDryRocks imagery from USGS data release P1WHKTRD, validate it, produce an intake QC report. It turned into the longest single session of the project.</span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a>The acquisition itself was the easy part: 3,271 TIFFs from EasternDryRocks, 53.22 GiB on disk. The validation is where things got interesting.</span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a>I'd assumed the on-disk TIFFs would carry standard EXIF — exposure time, aperture, ISO, focal length, capture timestamp. They don't. USGS distributes the files as Photoshop 24.6 re-encodes of the original CR2 RAW captures; Photoshop's TIFF export strips the entire Exif sub-IFD. Every file in the dataset is missing <span class="in">`ExposureTime`</span>, <span class="in">`FNumber`</span>, <span class="in">`ISOSpeedRatings`</span>, <span class="in">`FocalLength`</span>, and <span class="in">`DateTimeOriginal`</span> by design.</span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a>This is methodologically irrelevant for SfM — the workflow uses bundle adjustment with coded scale-bar targets, not EXIF priors — but it broke every assumption my validator had been written against. And it pointed at something larger.</span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a>I've spent fifteen years in biomedical informatics watching the same reproducibility problem play out across genomics, imaging, proteomics, structural biology: a method paper gets published with a prose-described preprocessing step — *"images were converted to TIFF using Adobe Photoshop"* — someone tries to reproduce the work three years later, the Photoshop version has changed, the EXIF structure is different, the comparison between old and new data silently drifts. The biomedical informatics community has largely solved this through executable, version-pinned, structurally-described workflows: CWL, WDL, Nextflow, Snakemake. When a 2018 GATK variant-calling workflow ships as a WDL file, you can run it in 2026 and get bit-identical outputs. That work took roughly fifteen years of community effort and is now the expected norm in serious computational biology.</span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a>The metadata-loss finding I surfaced in Session 4 is a specific instance of the general pattern marine SfM hasn't yet closed. Photoshop 24.6 strips the Exif sub-IFD; some future Photoshop version may strip differently. The capture timestamps that survive in the IDS CSV are there because USGS maintains a separate database — if that database schema changes between releases, downstream code breaks silently. None of these are problems for *this* dataset in isolation. All of them are problems for *comparing this dataset to a future version of itself*, which is the actual scientific question restoration monitoring is trying to answer.</span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a>The structured <span class="in">`metadata_lineage`</span> section in the QC report — four-layer characterization of what Photoshop preserves and what it strips, machine-readable and schema-versioned — is what that capture looks like for one specific link in the chain. The validator iteration wasn't a detour; it was the project earning its premise.</span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a><span class="fu">### Session 5: T3 dress rehearsal, a 24° tilt I couldn't see</span></span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a>Session 5 was the core SfM processing work. I ran T8 imagery first as a smoke test to validate the headless confidence-filtering implementation (ESM Step 13 — classifying low-confidence dense-cloud points as noise — has no direct Python API equivalent; the approach required working through the API documentation rather than forum examples). Then T3 as the dress rehearsal: first scaled run, first contact with real reef geometry at production scale.</span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a>The day-1 T3 leveling came out tilted 24.26° off nadir. Not subtly — a quarter-turn of roll. I hadn't caught it because there was nothing for the eye to catch: the AlignmentHelper hardcodes roll to zero, I hadn't enabled Zero-pitch, and the roll quietly inherited from the bounding-box orientation I'd set by hand. The tool renders a leveled-looking model. Through the GUI, the error was structurally invisible — I could have stared at that orientation for an hour and approved it every time.</span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a>The fix was an independent marker-plane re-level — fitting a robust, outlier-rejecting plane to the markers, sending its normal to Z, solving roll and pitch from the data instead of from my hand on the box. I validated the result against downloaded P13HMEON reference DEMs — as a gate only, never a leveling input. The reference tells me whether I'm right; it never gets to tell me what the answer is.</span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a>AOI placement surfaced a related problem: the markers that give the correct level plane sit about 0.5 m off the actual reef band and about 2° askew to it. Using the same fiducials for both leveling and AOI framing quietly cost me coverage — from ~48% to ~97% when I switched the AOI to a footprint-derived frame. **Markers level the plane; the data footprint frames the AOI.** Don't let one reference do two jobs.</span>
+<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a>The real lesson wasn't the technique. The dangerous errors are the ones the tool hides from the eye. And the part that doesn't depend on skill at all is reproducibility: the same plane fit, the same gate, the same answer on every transect, with a record to prove it ran. That's the value that scales, and a careful hand doesn't.</span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a>T1 production followed T3 and brought its own surprises: a Z-window built on an assumption of uniform slope that a trough-to-crest reef profile violated, clipping a 10 m transect to 2.58 m before the surface-anchored correction. And two gate failures I left red — <span class="in">`total_tilt`</span> at 8.71° against a 6° threshold sized for the 24° mis-level incident, not for genuinely tilted reef-wall cross-slope; <span class="in">`orientation_plus_x`</span> at 135° versus the +X convention. A valid product is not a green gate. Re-leveling a correctly-leveled transect would have been falsifying the record to make it look tidy.</span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a><span class="fu">### Session 6: Building the provenance layer, and learning what one published metric depended on</span></span>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a>Session 6 was the largest single arc of the project, and it ended in a place I hadn't anticipated.</span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a>**Building the layer.** `reef_sfm_provenance` is a real package — typed, tested (427 tests), usable from the command line. It has four components: an intake validator that catalogs every input image with SHA-256; a processing manifest that captures input/output hashes and every parameter and software version; a QC validator with three-state semantics (pass / fail / **not-evaluable** — never collapsing the third into a pass); and a reconciliation module that computes rugosity, vector ruggedness (VRM), and standardized mean elevation per the formulas in Toth et al. 2025.</span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a>Before pointing the metrics at my reconstruction, I ran them on the *published* DSMs and compared to the *published* table values. Rugosity reproduced to under 0.3%. VRM read about +14% high against MultiscaleDTM — a Sappington-vs-MultiscaleDTM implementation offset, characterized and recorded. The instrument was validated before I trusted any reading.</span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a>**The wrong target.** Here is a basic thing I got wrong because I'd only read about the data, not handled it. I'd been treating "EDR_T1" as a transect I could match one-to-one against a published row. It isn't — it's a *subsite* of nine separate published transects. My original reconstruction was a 10×1 m center-cut from a merged area survey spanning roughly three times the relief of any single published belt. Fixing this required reconstructing a single *published* transect — R2, about 272 images — end to end. It's the only comparison that means anything, and it added real time and compute.</span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a>**The first reconcile.** Three numbers. Rugosity: −3.3%, stable and frame-robust. VRM: −24%, consistent with the sparse-coverage fidelity finding and the known implementation offset. Mean elevation: **+144%**. As a newcomer, that gap was uncomfortable. The firewall discipline meant I had to find out *why* honestly, without nudging anything toward the published value.</span>
+<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a>**Chasing the gap.** The code was sound — verified against published DSMs. The footprint was exactly 10×1 m at the raster level. So it was orientation. I measured the actual attitude of all four published EDR DSMs and the pattern was unmistakable: the along-axis is 0.14–0.23° in every one (leveled), while the cross-axis stays at 0.88–1.38° (intact). That asymmetry is the signature of the AlignmentHelper's **Zero-pitch** option, which levels the along-transect midline to horizontal and leaves the cross-slope alone.</span>
+<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a>Zero-pitch is off by default. The published methods text cites the AlignmentHelper without saying it was switched on. I could only recover that it had been by measuring the published products and reading the leveling back out of them. To an experienced SfM analyst, enabling Zero-pitch may be completely routine — the obvious thing to do — and the people who processed this data made that call. I'm not claiming a deficiency in their work. I'm saying that as a newcomer running this for the first time, a processing choice that moves a metric by a factor of more than two was invisible to me in the documentation and only recoverable from the artifact. That is precisely the distance, in clinical data, between an exclusion criterion an analyst "just knows" and one that's encoded, versioned, and auditable. Seeing it here, in a reef DSM, was the moment the whole project clicked.</span>
+<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a>I reproduced Zero-pitch on my own chunk — along-only convention, matching the published products — and the gap fell from **+144% to +32%**. A yaw artifact in the leveling rotation had widened my belt from 1.0 m to 1.18 m; re-clipping to a true 10×1 m brought mean elevation to **+27.7%**. Raw relief: 0.666 m against the published 0.670 m — a clean surface match that, with rugosity and VRM, gives three independent confirmations the surface itself is right. What remains is isolated to one axis.</span>
+<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a>**The cross-axis surprise.** My cross-axis sits at 6.39° against the published ~1°. Reasoning it through, I expected leveling to the marker plane to be the more principled choice and to pull the cross-axis toward the published value — the markers are fixed objects surveyed into the reef, and a diver swimming a 10 m transect is an unstable reference for "up." The data said the opposite. Marker-plane leveling made everything worse: mean elevation to +55.4%, cross-axis to 12.15°.</span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a>The reason is the sharper finding: the markers are nearly **collinear** — a spread ratio of 0.00085, sitting almost on a line down the transect. They pin the along-axis and the scale beautifully but carry essentially no cross or vertical information. A plane fit through points on a line is constrained in one dimension and free in the other two. My own pipeline already knew this — there's a collinear guard in the leveling code that detects exactly this pattern and falls back to camera-nadir. I had to bypass my own guard to run the experiment, and bypassing it produced precisely the regression the guard exists to prevent.</span>
+<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a>So the honest conclusion is not "my cross-slope is the real reef" and not "my cross-slope is an artifact I can fix." It's that the cross-axis reference is **unanchorable from this dataset's survey controls** — not for me, and not for the published pipeline either, whose ~1° can't have come from the markers any more than mine could.</span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a>**The audit catching me.** The last thing I built in Session 6 was a captured-threshold audit that walks every quality gate in my own pipeline and asks three questions of the *record*, not the result: Did the gate write down the threshold it judged against? Did it write down the value it actually measured? And can you tell those two apart, or is the record just echoing its own threshold back at itself?</span>
+<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a>The audit found three gaps on its first run, all mine. Two were thresholds that lived in the pipeline code but never reached the captured record — a co-registration tolerance and a footprint bound a reviewer would have to take on faith. The third was a marker-coherence gate whose "observed" value was just its own threshold copied back. It passed, but carried no information — it couldn't tell a clean result from a marginal one.</span>
+<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a>Then it flagged check 7, and this is the part I least want to gloss. Check 7 is an orientation gate — a guard meant to catch a model that's been silently flipped. On the area survey it passes. On the single transect it fails, and I'd long ago waved that failure off in my notes as a "benign convention mismatch — no product flip, don't touch it." When the audit made me justify that, I reached for the easy move: mark it *characterized* — understood, accepted — and let the dashboard go green.</span>
+<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a>Two things stopped me. The tool's part: I'd built the audit so an exemption needs a written rationale, but I'd only enforced that a rationale is *present*, not that it's *sufficient* — and the note I was about to attach described what the gate is, not why its failure was acceptable. The rest was going to disk. When I looked for the actual basis of "no product flip," there wasn't one: no recorded orientation values, no geometric argument, no visual check. I didn't characterize it away. I captured the gate's expected value so the record can defend its verdict, and I left the failure *visible* — an honest, unaccepted failure, with the orientation question written down as an open item. The audit reads "conformant" now, but only on the axis it measures: the record is complete and honest. The gate still shows red.</span>
+<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a>Keeping those two apart — is the record defensible, versus did the check pass — is the whole point. Collapsing them is exactly how a failing safety check earns a green badge it didn't earn.</span>
+<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a><span class="fu">### Session 7: Figures</span></span>
+<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a>Session 7 was originally planned as a QGIS annotation session for benthic cover. By the time I got there, two things had changed: the reconciliation unit had narrowed to the single EDR_T1_R2 transect (which has no ortho on disk), and working through the cover question convinced me to scope it out.</span>
+<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a>The published cover numbers are CoralNet point-counts: ten 1×1 m images per transect, 150 points each, every point identified by eye — ~1,500 expert benthic classifications per transect. The obvious QGIS shortcut is to trace polygons and take area fractions, but area-fraction is a different estimator than point-count, so it would diverge from the published number rather than approximate it. And the number's credibility would rest entirely on a first-time identification of staghorn versus dead colony versus CCA versus turf-on-substrate, across 1,500 points. That is coral-ecology craft outside my background and outside this project's thesis. I scoped cover out and moved automated benthic classification to its own effort — a classifier-validation problem that reuses the QC/agreement architecture built here, honestly framable despite the coral-ID gap because the contribution is the validation harness, not the biology.</span>
+<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a>What remained was scripted raster visualization and a results chart, both reproducible in Python, both landing directly in this notebook as regenerable artifacts. Two figures.</span>
+<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a><span class="fu">## The figures</span></span>
+<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a><span class="fu">### Figure 1 — orientation convention</span></span>
+<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a>Same transect, two leveling conventions. The along-axis tilt difference is the cause of the mean-elevation gap.</span>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a><span class="al">![Camera-nadir DSM (left, along-axis tilt ≈ +4.38°) versus Zero-pitch DSM (right, ≈ +0.17°), with along-axis mean-elevation profiles overlaid. The leveling decision the published methods text never names is visible in the profile overlay.](fig1_orientation_convention.png)</span>{#fig-orientation fig-align="center"}</span>
+<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a>The figure deliberately does not claim cross-axis agreement. My reconstruction's 6.39° cross-axis against the published ~1° is unresolved and annotated as an open item — survey-unanchorable from available data. The +27.7% mean-elevation gap reflects both the unresolved cross-axis convention and any residual along-axis offset after zero-pitch. I did not let a clean-looking panel imply agreement that doesn't exist.</span>
+<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a><span class="fu">### Figure 2 — reconciliation</span></span>
+<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a>Canonical values versus published (Toth et al. 2025 ESM Table S2 <span class="co">[</span><span class="ot">@toth2025</span><span class="co">]</span>), per metric, with reproduction status.</span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a><span class="al">![Reconciliation of three structural-complexity metrics against published values. Published values enter only through the pre-firewalled reconciliation report — the P13HMEON CSV is never opened by the figure layer.](fig2_reconciliation.png)</span>{#fig-reconciliation fig-align="center"}</span>
+<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="simple"}</span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a>**On the y-axis.** Both panels use a non-zero y-axis (watermarked "y-axis not from 0"). These are tightly clustered ratios; a zero baseline would flatten every difference to invisibility. The watermark is the honest way to handle a truncated axis.</span>
+<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a><span class="fu">## The reconciliation</span></span>
+<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Metric <span class="pp">|</span> Mine <span class="pp">|</span> Published <span class="pp">|</span> Δ% <span class="pp">|</span> Status <span class="pp">|</span></span>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|---|---|</span></span>
+<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Mean Elevation (standardized, m) <span class="pp">|</span> 0.3090 <span class="pp">|</span> 0.2420 <span class="pp">|</span> +27.7% <span class="pp">|</span> Characterized — survey-unanchorable cross-axis convention <span class="pp">|</span></span>
+<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Rugosity <span class="pp">|</span> 1.3720 <span class="pp">|</span> 1.4150 <span class="pp">|</span> −3.0% <span class="pp">|</span> **Reproduced** — stable across leveling passes <span class="pp">|</span></span>
+<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> VRM (5×5 focal) <span class="pp">|</span> 0.0650 <span class="pp">|</span> 0.0760 <span class="pp">|</span> −14.1% <span class="pp">|</span> Characterized — Python impl bias (+13% vs MultiscaleDTM) <span class="pp">|</span></span>
+<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a>**The headline: rugosity reproduces** (−3.0%, stable across the camera-nadir → zero-pitch passes — frame-robust, as expected). Mean elevation is characterized, not reproduced — the +27.7% gap traces to the unresolved cross-axis orientation convention, not to a code or footprint error. VRM is characterized — the −14.1% versus published is consistent with the known Python-implementation offset, a different comparison than the published delta but the same underlying offset. Both the mean elevation and VRM characterizations are documented decision records in the repository.</span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a>One result anchors everything: **run against the published DSMs directly, the same metric code reproduces the published values to within 0.1%.** The measurement code is correct. Whatever the table shows reflects the reconstructed *surface* and the *frame* it sits in — not the math.</span>
+<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a><span class="fu">## QC record</span></span>
+<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Check <span class="pp">|</span> Published target <span class="pp">|</span> Observed <span class="pp">|</span> Outcome <span class="pp">|</span></span>
+<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|---|</span></span>
+<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Images registered <span class="pp">|</span> ≥ 90% of input <span class="pp">|</span> 131/270 (48.2%) <span class="pp">|</span> FAIL — corpus geometry ceiling (characterized) <span class="pp">|</span></span>
+<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Reprojection error (post error-reduction) <span class="pp">|</span> RMSE 0.27–0.52 px <span class="pp">|</span> 0.1397 px <span class="pp">|</span> PASS <span class="pp">|</span></span>
+<span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Scale-bar error <span class="pp">|</span> sub-millimetre <span class="pp">|</span> ±4.4 mm (±1.76%) <span class="pp">|</span> FAIL — underwater geometry, no GCPs (characterized) <span class="pp">|</span></span>
+<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Markers gate A — parity <span class="pp">|</span> All coded IDs detected <span class="pp">|</span> GUI correction applied <span class="pp">|</span> PASS after correction <span class="pp">|</span></span>
+<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Markers gate B — coherence <span class="pp">|</span> All residuals &lt; 2.0 px <span class="pp">|</span> All &lt; 2.0 px ceiling <span class="pp">|</span> PASS <span class="pp">|</span></span>
+<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Markers gate C — consistency <span class="pp">|</span> Inter-bar ratio &lt; 1.25 <span class="pp">|</span> 1.034 <span class="pp">|</span> PASS <span class="pp">|</span></span>
+<span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Markers gate D — sufficiency <span class="pp">|</span> ≥ 3 validated bars <span class="pp">|</span> 3 bars validated <span class="pp">|</span> PASS <span class="pp">|</span></span>
+<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> AOI coverage <span class="pp">|</span> ≥ 95% <span class="pp">|</span> 93.7% <span class="pp">|</span> BYPASSED — out-and-back trajectory <span class="pp">|</span></span>
+<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Belt geometry (GATE#6) <span class="pp">|</span> Single-pass belt <span class="pp">|</span> Out-and-back <span class="pp">|</span> BYPASSED — documented exception <span class="pp">|</span></span>
+<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Artifact integrity <span class="pp">|</span> All outputs re-hashed <span class="pp">|</span> 25/25 sha256 OK <span class="pp">|</span> PASS <span class="pp">|</span></span>
+<span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a>The two FAIL entries are both characterized and non-disqualifying. Registration at 48.2% reflects the out-and-back corpus geometry: 131 cameras aligned at any quality threshold — the ceiling is in the imagery overlap pattern, not the software settings. Scale-bar residual at ±4.4 mm against a 1 mm published target is consistent with underwater imaging geometry and the absence of ground control points. Neither invalidates the reconstruction; both are in the record.</span>
+<span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a><span class="fu">## What I took away</span></span>
+<span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a>**The provenance gap is real, and it shows up in a specific way.** Three times across these sessions I was confident about something in this domain and wrong: the 7.977° criterion (conflating along-axis and marker-plane tilt), the assumption that Zero-pitch was off by default, the expectation that marker-plane leveling would fix the cross-axis. Each time, a verification check caught it before it became a result. Reading about reproducibility, I understood in the abstract that verification matters. Running the pipeline myself, being wrong three times and getting caught, made it concrete.</span>
+<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a>**The dangerous errors are the ones the tool hides from the eye.** The AlignmentHelper didn't lie — it just wasn't solving roll, and rendered a leveled-looking result anyway. Through the GUI, a 24° mis-level was structurally invisible. On this class of error, no eye has earned the right to overrule the data fit and the gate.</span>
+<span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a>**The most useful result is the finding that didn't match.** Zero-pitch is off by default. The published methods text cites the AlignmentHelper without saying it was switched on. A newcomer following the documentation literally would reproduce neither the leveling decision nor the metric it governs. That's not a criticism of the original work — it's an observation about where the field's documentation norms haven't kept up with its science. An experienced analyst would have known; I recovered it forensically. The difference between "the analyst knew to do it" and "the decision is encoded and auditable" is the whole of data governance, and watching it show up in a coral-reef DSM was the most personally satisfying part of the work.</span>
+<span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a>**The audit catching me was the most useful lesson.** The reconciliation arc taught me this by making me the victim of choices other people never wrote down. The audit arc taught me the same thing from the other side, by catching me about to make one of my own and bury it. That second version was more useful, because the temptation was mine.</span>
+<span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-237"><a href="#cb1-237" aria-hidden="true" tabindex="-1"></a><span class="fu">## What's open</span></span>
+<span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-239"><a href="#cb1-239" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Cross-axis orientation unverified.** The T1_R2 orientation gate (check 7) shows a captured FAILURE. The physical basis for "no product flip" has no recorded verification. This is documented as a blocker in the project's decision records with explicit verification steps.</span>
+<span id="cb1-240"><a href="#cb1-240" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Marker 25–26 label basis pending.** The physical-to-label correspondence for the far-end target pair is unconfirmed. Positions are accurate (projection residuals &lt; 2 px); a label swap between 25 and 26 would not affect the plane fit or scale. Open item.</span>
+<span id="cb1-241"><a href="#cb1-241" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Full-area T1 DEM hang unresolved.** <span class="in">`buildDem`</span> hangs on the 487M-point area-survey cloud in Metashape 2.3.1 — three confirmed runs. The transect DEM (10×1 m) is DEM-sourced per ESM Step 15; the full-area visual ortho was built point-cloud-direct as a documented exception.</span>
+<span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a><span class="fu">## Technical details</span></span>
+<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Item <span class="pp">|</span> Detail <span class="pp">|</span></span>
+<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|</span></span>
+<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Language <span class="pp">|</span> Python 3.12 <span class="pp">|</span></span>
+<span id="cb1-250"><a href="#cb1-250" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Environment <span class="pp">|</span> <span class="in">`uv`</span> <span class="pp">|</span></span>
+<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> SfM software <span class="pp">|</span> Agisoft Metashape Professional 2.3.1 <span class="pp">|</span></span>
+<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Compute <span class="pp">|</span> AWS EC2 g6.4xlarge, NVIDIA L4 <span class="pp">|</span></span>
+<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Key packages <span class="pp">|</span> <span class="in">`rasterio`</span>, <span class="in">`numpy`</span>, <span class="in">`matplotlib`</span>, <span class="in">`pydantic`</span>, <span class="in">`pytest`</span> <span class="pp">|</span></span>
+<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Test suite <span class="pp">|</span> 427 tests passing <span class="pp">|</span></span>
+<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Version control <span class="pp">|</span> Git / GitHub <span class="pp">|</span></span>
+<span id="cb1-256"><a href="#cb1-256" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Portfolio framework <span class="pp">|</span> Quarto <span class="pp">|</span></span>
+<span id="cb1-257"><a href="#cb1-257" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Provenance package <span class="pp">|</span> <span class="in">`reef_sfm_provenance`</span> (typed, CLI entry points) <span class="pp">|</span></span>
+<span id="cb1-258"><a href="#cb1-258" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-259"><a href="#cb1-259" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-260"><a href="#cb1-260" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-261"><a href="#cb1-261" aria-hidden="true" tabindex="-1"></a><span class="fu">## References</span></span>
+<span id="cb1-262"><a href="#cb1-262" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-263"><a href="#cb1-263" aria-hidden="true" tabindex="-1"></a>::: {#refs}</span>
+<span id="cb1-264"><a href="#cb1-264" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-265"><a href="#cb1-265" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-266"><a href="#cb1-266" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-267"><a href="#cb1-267" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-268"><a href="#cb1-268" aria-hidden="true" tabindex="-1"></a><span class="fu">## About this project</span></span>
+<span id="cb1-269"><a href="#cb1-269" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-270"><a href="#cb1-270" aria-hidden="true" tabindex="-1"></a>This project is part of a portfolio in marine environmental data science, built to demonstrate reproducible analysis workflows applied to real-world reef conservation data. The full code, test suite, decision records, and environment specification are available on GitHub.</span>
+<span id="cb1-271"><a href="#cb1-271" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-272"><a href="#cb1-272" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb1-273"><a href="#cb1-273" aria-hidden="true" tabindex="-1"></a><span class="fu">## Reproducibility</span></span>
+<span id="cb1-274"><a href="#cb1-274" aria-hidden="true" tabindex="-1"></a>All figures are static outputs committed to the repository — generated from DSMs and a pre-firewalled reconciliation report, reproducible from a fresh clone of the source repo. The provenance package includes a <span class="in">`capture_audit`</span> module that verifies the completeness of every quality gate's recorded evidence.</span>
+<span id="cb1-275"><a href="#cb1-275" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-276"><a href="#cb1-276" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-277"><a href="#cb1-277" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">View source repo</span><span class="co">](https://github.com/velezf/reef-sfm-mote-keys)</span>{.btn .btn-outline-primary}</span>
+<span id="cb1-278"><a href="#cb1-278" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">USGS imagery release (P1WHKTRD)</span><span class="co">](https://doi.org/10.5066/P1WHKTRD)</span>{.btn .btn-outline-secondary}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2025 Francisco Velez</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/velezf">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
