@@ -1,8 +1,14 @@
 ---
 title: "Benthic Habitat Mapping"
-description: "A planned GIS-based workflow for mapping and classifying benthic habitats using remote sensing and field survey data."
+description: >
+  The complement to the reef-SfM geometry work: automated benthic-cover
+  classification on reef orthomosaics, wrapped in a validation and
+  reconciliation harness that scores agreement against published CoralNet
+  point-count cover. The contribution is the harness — provenance, QC, and
+  agreement metrics reused from `reef_sfm_provenance` — not the coral
+  identification, which requires expert ground truth.
 date: "2025-03-01"
-categories: [GIS, marine science, mapping, remote sensing]
+categories: [GIS, marine science, mapping, remote sensing, Data Provenance, Reproducibility]
 image: ../images/benthic-map.jpg
 ---
 

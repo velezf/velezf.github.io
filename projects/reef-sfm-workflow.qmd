@@ -4,6 +4,7 @@ description: "A planned end-to-end workflow for processing underwater photos int
 date: "2025-02-01"
 categories: [marine science, photogrammetry, workflow, 3D]
 image: ../images/reef-sfm.jpg
+draft: true
 ---
 
 ## Overview

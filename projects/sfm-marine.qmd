@@ -4,6 +4,7 @@ description: "An overview of Structure-from-Motion photogrammetry methods applie
 date: "2025-01-01"
 categories: [marine science, photogrammetry, 3D, GIS]
 image: ../images/sfm-marine.jpg
+draft: true
 ---
 
 ## Overview
