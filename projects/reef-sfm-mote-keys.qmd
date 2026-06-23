@@ -73,6 +73,136 @@ That firewall is enforced in code, not just by convention. It exists because a r
 
 ---
 
+## The provenance layer
+
+The reconstruction is the part of this project a marine lab already knows how to do. The layer wrapped around it is the contribution, and it is the deliverable I would point a reviewer at first. `reef_sfm_provenance` is a typed Python package with a command-line interface and four concerns — intake validation, a processing manifest, QC, and metric reconciliation — plus a capture-audit that turns its own discipline back on the record it produces. The organizing principle is one sentence: a record is defensible only when every value in it is tethered to a captured source, and the package is built to enforce that, including against me.
+
+**The interface.** Everything runs from the command line; none of this is notebook glue.
+
+```
+$ reef-sfm --help
+Usage: reef-sfm [OPTIONS] COMMAND [ARGS]...
+
+  Provenance, QC, and reconciliation for reef SfM runs.
+
+Commands:
+  validate-intake   Validate an imagery intake directory (extension, duplicates, counts, hashes).
+  parse-report      Parse a Metashape processing report into a run manifest.
+  qc                Run structural QC against a run manifest (and the filesystem when run_dir is a folder).
+  reconcile         Reconcile local metrics against published reference values (comparison-only).
+  export-prov       Export W3C PROV-JSON for the run.
+  report            Assemble the human-readable Markdown report from manifest + QC + reconciliation.
+  inspect           Summarize a run manifest.
+  acquire           Download Eastern Dry Rocks imagery from a USGS data release.
+  contact-sheet     Render JPEG contact sheets for visual review.
+```
+
+(`reef-audit` is the same application under a name that reads right for the audit-facing commands; `reef-audit inspect` summarizes a manifest.)
+
+**The data model is typed, and provenance is first-class.** The manifest is a set of Pydantic models, not a loose dict. The block that carries provenance names exactly the things a reproduction three years from now would otherwise have to reconstruct by hand:
+
+```python
+class ProvenanceBlock(BaseModel):
+    input_file_hashes:     dict[str, str] | None
+    output_file_hashes:    dict[str, str] | None
+    ec2_instance_id:       str | None
+    snapshot_ids:          list[str] | None
+    license_fingerprint:   str | None
+    processing_timestamps: dict[str, str] | None
+    software_versions:     dict[str, str] | None
+```
+
+Metrics carry their own lineage — a `source` field that is either `"ours"` or `"published"`, so a reconciled comparison can never silently confuse the two — and every QC threshold is overridable validator configuration rather than a constant buried in code, which is what makes the layer portable to a site with different geometry.
+
+**What it emits.** The manifest is the artifact, and it is meant to be read. Trimmed, the run record for `EDR_T1_R2` looks like this:
+
+```yaml
+transect: EDR_T1_R2
+survey_date: "2023-07-11"
+
+software:
+  metashape_version: "2.3.1 build 22446"
+  platform: "Linux (EC2)"
+  pipeline_entry: "scripts/metashape/run_pipeline.py"
+
+infrastructure:
+  ec2_instance_type: g6.4xlarge
+  ec2_region: us-east-1
+  r2_ebs_snapshot: snap-0b10abc94d12b78e1
+  snapshot_tag: edr_r2_postdense_filter_pre_aoi_dsm
+
+source_imagery:
+  dataset: P1WHKTRD
+  citation: "Johnson et al. 2025, DOI 10.5066/P1WHKTRD"
+  file_count: 272
+  sha256_manifest: /data/edr_work/EDR_T1_R2_image_hashes.json
+
+projects:
+  master_q030:
+    chunk_zip_sha256: 43547ec5…c019c6
+    note: "Source Q030; DO NOT WRITE"
+
+pipeline_stages:
+  align_rms_pre_reduce_px: 0.1734
+  reduce_tiepoints_in: 603314
+  reduce_tiepoints_out: 236860
+  dense_points: 47143867
+  filter_points_retained: 12585711
+
+dsm_products:
+  zeropitch_clipped_10x1:
+    sha256: dcec116b…8f369
+    dims: 1007x100
+    resolution_m: 0.01
+    footprint_m: "10.07x1.00"
+    canonical: true
+    adr_ref: ADR-0036
+
+reconcile_summary:
+  mean_elevation_m: {ours: 0.309, published: 0.242, delta_pct: +27.7}
+  rugosity:         {ours: 1.372, published: 1.415, delta_pct: -3.0}
+  vrm_python:       {ours: 0.065, published_multiscaledtm: 0.076, delta_pct: -14.1}
+```
+
+Every number on this page traces back to a record like that one — the input hashes, the exact Metashape build, the instance and snapshot the run happened on, the canonical DSM's hash, the reconciliation deltas. The `DO NOT WRITE` notes on the source chunks are not decoration; they mark the artifacts the pipeline treats as read-only inputs.
+
+**The firewall, precisely.** The reference values from P13HMEON are comparison-only, and I want to be exact about how that is enforced, because it is not an exception that fires after the fact — it is structural. The one function that can read the published table opens it read-only, returns a plain dict, and never writes anything back; its docstring and a pinned commit are the contract:
+
+```python
+def load_reference_metrics(
+    path: str | Path, site: str, subsite: str, transect_id: str, filter: str
+) -> dict[str, Any]:
+    """Read ONE published row, keyed (site, subsite, transect_id, filter).
+
+    READ-ONLY firewall: opens the table for reading only, returns a plain
+    dict, and never writes anything back. The result is comparison data — it
+    must never flow into `load_dsm` or `compute_metrics`. Raises LookupError
+    if the key matches zero rows or more than one.
+    """
+    path = Path(path)
+    with path.open(newline="") as f:  # read mode only — firewall
+        ...
+```
+
+There is deliberately no path by which a published value reaches the pipeline. The invariant — *never written, never fed back into the DSM path* — lives in the module docstring alongside the commit that established it.
+
+**It audits itself.** The last component is the capture-audit (told as a story in Session 6). Its job is to grade the *record*, not the result, against a severity-ordered taxonomy:
+
+```python
+class Liability(str, Enum):              # severity ascending
+    RETIRED                = "retired"                  # threshold captured + correct
+    UNCAPTURED_MEASUREMENT = "uncaptured_measurement"
+    UNTETHERED_THRESHOLD   = "untethered_threshold"
+    UNSOURCED_THRESHOLD    = "unsourced_threshold"
+    SELF_CONFIRMING        = "self_confirming"
+```
+
+A run is `overall_conformant` only when every gate is `RETIRED`, and conformant means *capture-complete, not all-pass*. That distinction is the point: a gate can fail its threshold and still be conformant, because the record honestly shows that it failed. Keeping "is the record defensible" and "did the check pass" on separate axes is what stops a failing check from earning a green badge it didn't earn.
+
+**Why this generalizes.** None of this is specific to Eastern Dry Rocks. The schemas are generic, the gate thresholds are configuration, and the nine commands describe any documented SfM workflow rather than this one in particular. A restoration program already producing Metashape reports could point the manifest, QC, and reconciliation tools at its own pipeline and its own published targets — which is the reason to build it as a package instead of a script.
+
+---
+
 ## The arc — nine sessions
 
 This project ran as nine focused work sessions over six weeks. The sessions are condensed here; the full lab-notebook record — dead ends, wrong turns, and all — lives in the [project notebook on GitHub](https://github.com/velezf/reef-sfm-mote-keys).
@@ -173,7 +303,7 @@ What remained was scripted raster visualization and a results chart, both reprod
 
 Same transect, two leveling conventions. The along-axis tilt difference is the cause of the mean-elevation gap.
 
-![Camera-nadir DSM (left, along-axis tilt ≈ +4.38°) versus Zero-pitch DSM (right, ≈ +0.17°), with along-axis mean-elevation profiles overlaid. The leveling decision the published methods text never names is visible in the profile overlay.](figures/fig1_orientation_convention.png){#fig-orientation fig-align="center"}
+![Camera-nadir DSM (left, along-axis tilt ≈ +4.38°) versus Zero-pitch DSM (right, ≈ +0.17°), with along-axis mean-elevation profiles overlaid. The leveling decision the published methods text never names is visible in the profile overlay.](fig1_orientation_convention.png){#fig-orientation fig-align="center"}
 
 The figure deliberately does not claim cross-axis agreement. My reconstruction's 6.39° cross-axis against the published ~1° is unresolved and annotated as an open item — survey-unanchorable from available data. The +27.7% mean-elevation gap reflects both the unresolved cross-axis convention and any residual along-axis offset after zero-pitch. I did not let a clean-looking panel imply agreement that doesn't exist.
 
@@ -181,7 +311,7 @@ The figure deliberately does not claim cross-axis agreement. My reconstruction's
 
 Canonical values versus published (Toth et al. 2025 ESM Table S2 [@toth2025]), per metric, with reproduction status.
 
-![Reconciliation of three structural-complexity metrics against published values. Published values enter only through the pre-firewalled reconciliation report — the P13HMEON CSV is never opened by the figure layer.](figures/fig2_reconciliation.png){#fig-reconciliation fig-align="center"}
+![Reconciliation of three structural-complexity metrics against published values. Published values enter only through the pre-firewalled reconciliation report — the P13HMEON CSV is never opened by the figure layer.](fig2_reconciliation.png){#fig-reconciliation fig-align="center"}
 
 ::: {.callout-note appearance="simple"}
 **On the y-axis.** Both panels use a non-zero y-axis (watermarked "y-axis not from 0"). These are tightly clustered ratios; a zero baseline would flatten every difference to invisibility. The watermark is the honest way to handle a truncated axis.
