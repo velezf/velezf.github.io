@@ -10,7 +10,7 @@ categories:
   - Structure-from-Motion
   - Data Provenance
   - Reproducibility
-image: ../images/reef-sfm-mote-keys.jpg
+image: ../images/reef-sfm-mote-keys.png
 toc: true
 toc-depth: 3
 toc-title: "On this page"
@@ -173,7 +173,7 @@ What remained was scripted raster visualization and a results chart, both reprod
 
 Same transect, two leveling conventions. The along-axis tilt difference is the cause of the mean-elevation gap.
 
-![Camera-nadir DSM (left, along-axis tilt ≈ +4.38°) versus Zero-pitch DSM (right, ≈ +0.17°), with along-axis mean-elevation profiles overlaid. The leveling decision the published methods text never names is visible in the profile overlay.](fig1_orientation_convention.png){#fig-orientation fig-align="center"}
+![Camera-nadir DSM (left, along-axis tilt ≈ +4.38°) versus Zero-pitch DSM (right, ≈ +0.17°), with along-axis mean-elevation profiles overlaid. The leveling decision the published methods text never names is visible in the profile overlay.](figures/fig1_orientation_convention.png){#fig-orientation fig-align="center"}
 
 The figure deliberately does not claim cross-axis agreement. My reconstruction's 6.39° cross-axis against the published ~1° is unresolved and annotated as an open item — survey-unanchorable from available data. The +27.7% mean-elevation gap reflects both the unresolved cross-axis convention and any residual along-axis offset after zero-pitch. I did not let a clean-looking panel imply agreement that doesn't exist.
 
@@ -181,7 +181,7 @@ The figure deliberately does not claim cross-axis agreement. My reconstruction's
 
 Canonical values versus published (Toth et al. 2025 ESM Table S2 [@toth2025]), per metric, with reproduction status.
 
-![Reconciliation of three structural-complexity metrics against published values. Published values enter only through the pre-firewalled reconciliation report — the P13HMEON CSV is never opened by the figure layer.](fig2_reconciliation.png){#fig-reconciliation fig-align="center"}
+![Reconciliation of three structural-complexity metrics against published values. Published values enter only through the pre-firewalled reconciliation report — the P13HMEON CSV is never opened by the figure layer.](figures/fig2_reconciliation.png){#fig-reconciliation fig-align="center"}
 
 ::: {.callout-note appearance="simple"}
 **On the y-axis.** Both panels use a non-zero y-axis (watermarked "y-axis not from 0"). These are tightly clustered ratios; a zero baseline would flatten every difference to invisibility. The watermark is the honest way to handle a truncated axis.
