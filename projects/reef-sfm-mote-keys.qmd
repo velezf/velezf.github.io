@@ -20,6 +20,7 @@ code-summary: "Show code"
 fig-cap-location: bottom
 citation:
   url: https://velezf.github.io/projects/reef-sfm-mote-keys
+  doi: 10.5281/zenodo.20835765
 bibliography: references.bib
 execute:
   freeze: true
@@ -406,3 +407,4 @@ All figures are static outputs committed to the repository — generated from DS
 
 [View source repo](https://github.com/velezf/reef-sfm-mote-keys){.btn .btn-outline-primary}
 [USGS imagery release (P1WHKTRD)](https://doi.org/10.5066/P1WHKTRD){.btn .btn-outline-secondary}
+[Archived v1.0 — Zenodo](https://doi.org/10.5281/zenodo.20835765){.btn .btn-outline-secondary}
