@@ -257,7 +257,7 @@ T1 production followed T3 and brought its own surprises: a Z-window built on an 
 
 Session 6 was the largest single arc of the project, and it ended in a place I hadn't anticipated.
 
-**Building the layer.** `reef_sfm_provenance` is a real package — typed, tested (427 tests), usable from the command line. It has four components: an intake validator that catalogs every input image with SHA-256; a processing manifest that captures input/output hashes and every parameter and software version; a QC validator with three-state semantics (pass / fail / **not-evaluable** — never collapsing the third into a pass); and a reconciliation module that computes rugosity, vector ruggedness (VRM), and standardized mean elevation per the formulas in Toth et al. 2025.
+**Building the layer.** `reef_sfm_provenance` is a real package — typed and tested — 427 tests, of which 424 pass on a clean clone and 3 skip because they need a product DSM kept out of version control — usable from the command line. It has four components: an intake validator that catalogs every input image with SHA-256; a processing manifest that captures input/output hashes and every parameter and software version; a QC validator with three-state semantics (pass / fail / **not-evaluable** — never collapsing the third into a pass); and a reconciliation module that computes rugosity, vector ruggedness (VRM), and standardized mean elevation per the formulas in Toth et al. 2025.
 
 Before pointing the metrics at my reconstruction, I ran them on the *published* DSMs and compared to the *published* table values. Rugosity reproduced to under 0.3%. VRM read about +14% high against MultiscaleDTM — a Sappington-vs-MultiscaleDTM implementation offset, characterized and recorded. The instrument was validated before I trusted any reading.
 
@@ -381,7 +381,7 @@ The two FAIL entries are both characterized and non-disqualifying. Registration 
 | SfM software | Agisoft Metashape Professional 2.3.1 |
 | Compute | AWS EC2 g6.4xlarge, NVIDIA L4 |
 | Key packages | `rasterio`, `numpy`, `matplotlib`, `pydantic`, `pytest` |
-| Test suite | 427 tests passing |
+| Test suite | 427 tests (424 pass + 3 skip on a clean clone) |
 | Version control | Git / GitHub |
 | Portfolio framework | Quarto |
 | Provenance package | `reef_sfm_provenance` (typed, CLI entry points) |
