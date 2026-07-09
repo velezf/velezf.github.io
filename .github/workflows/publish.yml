@@ -35,6 +35,7 @@ jobs:
         run: |
           pip install ipykernel
           python -m ipykernel install --user --name el-nino-2026 --display-name "Python (el-nino-2026)"
+          python -m ipykernel install --user --name lora-rocket-telemetry --display-name "Python (lora-rocket-telemetry)"
 
       - name: Render Quarto site
         run: quarto render
