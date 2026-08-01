@@ -1,6 +1,6 @@
 ---
 title: "LoRa RadioRocket — Flight Archive"
-description: "Every logged flight of the Apogee LoRa telemetry system — peak altitude above ground, link quality, and full altitude/RSSI/G-force traces, straight from the ground-station logs."
+description: "Every record the Apogee LoRa ground station logs — link quality, packet loss, and full altitude/RSSI/G-force traces straight from the flight logs. The genesis entry is a bench validation of the whole RF chain, not a launch."
 date: "2026-07-08"
 categories: [telemetry, LoRa, rocketry, data viz]
 image: ../images/lora-flights.jpg
@@ -8,7 +8,7 @@ jupyter: lora-rocket-telemetry
 execute:
   freeze: false
 resources:
-  - lora-flights/*.csv
+  - lora-flights/*
 ---
 
 Companion to the [LoRa RadioRocket](lora-radiorocket.qmd) build. Each flight the ground
@@ -37,28 +37,28 @@ flights = pd.DataFrame(json.load(open("lora-flights/flights.json")))
 flights["date"] = pd.to_datetime(flights["date"])
 ```
 
+## Link quality
+
+```{python}
+# | echo: false
+# | fig-cap: "Packet loss per record — received vs dropped by sequence number. The genesis entry ran 75 packets with a single drop (1.32%) at RSSI −38…−14 dBm: the RF chain, decoder, and logger working end to end."
+fig, ax = plt.subplots(figsize=(9, 3.5))
+sns.barplot(data=flights, x="flight_id", y="loss_pct", color="#dd6b20", ax=ax)
+ax.set_ylabel("Packet loss (%)")
+ax.set_xlabel("")
+plt.tight_layout()
+```
+
 ## Peak AGL over time
 
 ```{python}
 # | echo: false
-# | fig-cap: "Peak altitude above ground, per flight. One entry so far — the genesis shake test."
+# | fig-cap: "Peak altitude above ground, per record. One entry so far, and it is a hand-swing artifact (~10 ft of barometric noise) rather than a climb — the axis will mean something after the first real launch."
 fig, ax = plt.subplots(figsize=(9, 3.5))
 ax.scatter(flights["date"], flights["peak_agl_ft"], s=90, color="#2b6cb0", zorder=3)
 ax.set_ylabel("Peak AGL (ft)")
 ax.set_xlabel("")
 ax.margins(x=0.3)
-plt.tight_layout()
-```
-
-## Link quality
-
-```{python}
-# | echo: false
-# | fig-cap: "Packet loss per flight (received vs dropped by sequence number)."
-fig, ax = plt.subplots(figsize=(9, 3.5))
-sns.barplot(data=flights, x="flight_id", y="loss_pct", color="#dd6b20", ax=ax)
-ax.set_ylabel("Packet loss (%)")
-ax.set_xlabel("")
 plt.tight_layout()
 ```
 
@@ -91,8 +91,8 @@ sel = flightsData.find(d => d.flight_id === selectedFlight)
 ```{ojs}
 //| echo: false
 html`<div style="display:flex;gap:.75rem;flex-wrap:wrap;margin:.5rem 0 1rem">
-  ${vb("Flights", flightsData.length)}
-  ${vb("Highest AGL", (d3.max(flightsData, d => d.peak_agl_ft) ?? "—") + " ft")}
+  ${vb("Records", flightsData.length)}
+  ${vb("Packet loss", sel.loss_pct + "%")}
   ${vb("Best link", d3.max(flightsData, d => d.rssi_max) + " dBm")}
 </div>`
 ```

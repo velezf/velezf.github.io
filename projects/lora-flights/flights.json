@@ -15,9 +15,9 @@
     "loss_pct": 1.32,
     "rssi_min": -38,
     "rssi_max": -14,
-    "label": "shake test",
+    "label": "bench shake test \u2014 first end-to-end RF validation",
     "motor": "none",
-    "field": "~406 ft ASL",
+    "field": "bench (~406 ft ASL)",
     "csv": "lora-flights/2026-07-08-F1.csv"
   }
 ]

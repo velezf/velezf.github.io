@@ -3,3 +3,7 @@
 docs/
 data/raw/
 data/processed/
+
+# Never cache the flights archive — it must re-execute on every data push (freeze: false).
+# A committed freeze entry makes CI serve stale figures on a green build.
+_freeze/projects/lora-flights/
