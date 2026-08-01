@@ -1,0 +1,156 @@
+---
+title: "LoRa RadioRocket — Flight Archive"
+description: "Every record the Apogee LoRa ground station logs — link quality, packet loss, and full altitude/RSSI/G-force traces straight from the flight logs. The genesis entry is a bench validation of the whole RF chain, not a launch."
+date: "2026-07-08"
+categories: [telemetry, LoRa, rocketry, data viz]
+image: ../images/lora-flights.jpg
+jupyter: lora-rocket-telemetry
+execute:
+  freeze: false
+resources:
+  - lora-flights/*
+---
+
+Companion to the [LoRa RadioRocket](lora-radiorocket.qmd) build. Each flight the ground
+station records is derived into a small [flights.json](lora-flights/flights.json) summary
+plus a per-flight CSV of the raw 1 Hz packets; this page reads those directly. **Altitude is
+shown AGL** — height above the launch pad — computed as raw barometric altitude minus a
+stability-gated pad baseline that locks the instant launch is detected. The baseline and the
+window it used are printed with every flight, so any AGL number here can be re-derived.
+
+::: {.callout-note}
+**Genesis entry (2026-07-08-F1) is a bench "shake test," not a launch.** A hand-swung sled
+tripped launch detection (>3 g), so the state machine and the whole pipeline ran end to end —
+but the ~10 ft "peak AGL" is barometric sensor noise, not a climb. It's here honestly, as the
+first real over-the-air record.
+:::
+
+```{python}
+# | echo: false
+import json
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+sns.set_theme(style="whitegrid", context="talk")
+flights = pd.DataFrame(json.load(open("lora-flights/flights.json")))
+flights["date"] = pd.to_datetime(flights["date"])
+```
+
+## Link quality
+
+```{python}
+# | echo: false
+# | fig-cap: "Packet loss per record — received vs dropped by sequence number. The genesis entry ran 75 packets with a single drop (1.32%) at RSSI −38…−14 dBm: the RF chain, decoder, and logger working end to end."
+fig, ax = plt.subplots(figsize=(9, 3.5))
+sns.barplot(data=flights, x="flight_id", y="loss_pct", color="#dd6b20", ax=ax)
+ax.set_ylabel("Packet loss (%)")
+ax.set_xlabel("")
+plt.tight_layout()
+```
+
+## Peak AGL over time
+
+```{python}
+# | echo: false
+# | fig-cap: "Peak altitude above ground, per record. One entry so far, and it is a hand-swing artifact (~10 ft of barometric noise) rather than a climb — the axis will mean something after the first real launch."
+fig, ax = plt.subplots(figsize=(9, 3.5))
+ax.scatter(flights["date"], flights["peak_agl_ft"], s=90, color="#2b6cb0", zorder=3)
+ax.set_ylabel("Peak AGL (ft)")
+ax.set_xlabel("")
+ax.margins(x=0.3)
+plt.tight_layout()
+```
+
+## Flight detail
+
+Interactive — pick a flight (or deep-link one with `?flight=<id>`). Traces are the raw
+1 Hz packets; altitude is AGL against that flight's locked baseline.
+
+```{ojs}
+//| echo: false
+flightsData = FileAttachment("lora-flights/flights.json").json()
+```
+
+```{ojs}
+//| echo: false
+viewof selectedFlight = Inputs.select(
+  flightsData.map(d => d.flight_id),
+  {
+    label: "Flight",
+    value: (new URLSearchParams(location.search)).get("flight") ?? flightsData[0].flight_id
+  }
+)
+```
+
+```{ojs}
+//| echo: false
+sel = flightsData.find(d => d.flight_id === selectedFlight)
+```
+
+```{ojs}
+//| echo: false
+html`<div style="display:flex;gap:.75rem;flex-wrap:wrap;margin:.5rem 0 1rem">
+  ${vb("Records", flightsData.length)}
+  ${vb("Packet loss", sel.loss_pct + "%")}
+  ${vb("Best link", d3.max(flightsData, d => d.rssi_max) + " dBm")}
+</div>`
+```
+
+```{ojs}
+//| echo: false
+html`<p style="line-height:1.6">
+  <b>${sel.flight_id}</b> — "${sel.label}" · <b>Peak AGL ${sel.peak_agl_ft ?? "—"} ft</b>
+  · ${sel.duration_s}s · ${sel.packets_rx} rx / ${sel.packets_lost} lost (${sel.loss_pct}%)
+  · RSSI ${sel.rssi_min}..${sel.rssi_max} dBm · Field ${sel.field}<br>
+  <span style="color:#666">Baseline ${sel.baseline_ft} ft over n=${sel.baseline_n}
+  (stability-gated pre-boost window) · AGL = raw ALT − baseline.</span>
+</p>`
+```
+
+```{ojs}
+//| echo: false
+trace = d3.csv(sel.csv, d3.autoType)
+```
+
+```{ojs}
+//| echo: false
+Plot.plot({
+  height: 220, marginLeft: 55,
+  x: {label: "T+ (s)"}, y: {label: "Altitude AGL (ft)", grid: true},
+  marks: [
+    Plot.ruleY([0]),
+    Plot.line(trace, {x: "MET", y: d => d.ALT - sel.baseline_ft, stroke: "#2b6cb0"})
+  ]
+})
+```
+
+```{ojs}
+//| echo: false
+Plot.plot({
+  height: 200, marginLeft: 55,
+  x: {label: "T+ (s)"}, y: {label: "RSSI (dBm)", grid: true},
+  marks: [Plot.line(trace, {x: "MET", y: "rssi", stroke: "#dd6b20"})]
+})
+```
+
+```{ojs}
+//| echo: false
+Plot.plot({
+  height: 200, marginLeft: 55,
+  x: {label: "T+ (s)"}, y: {label: "Acceleration (g)", grid: true},
+  marks: [
+    Plot.ruleY([3], {stroke: "#c53030", strokeDasharray: "4"}),   // launch threshold
+    Plot.line(trace, {x: "MET", y: "G", stroke: "#2f855a"})
+  ]
+})
+```
+
+```{ojs}
+//| echo: false
+// small value-box helper
+vb = (label, value) => html`<div style="border:1px solid #e2e8f0;border-radius:.5rem;
+  padding:.6rem 1rem;min-width:8rem;background:#f7fafc">
+  <div style="font-size:.75rem;color:#718096;text-transform:uppercase">${label}</div>
+  <div style="font-size:1.4rem;font-weight:600">${value}</div></div>`
+```
