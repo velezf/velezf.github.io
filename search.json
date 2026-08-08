@@ -4,301 +4,7 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "2026 Super El Niño Watch: Live Thermal Stress Monitoring\n\n\n\nMarine Science\n\nRemote Sensing\n\nEnvironmental Data Science\n\nPython\n\nLive Monitoring\n\nEl Niño\n\n\n\nLive thermal stress monitoring across seven reef sites during the 2026 Super El Niño period, using NOAA Coral Reef Watch DHW data. Updated daily via GitHub Actions cron at…\n\n\n\nAug 7, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nLoRa RadioRocket — Flight Archive\n\n\n\ntelemetry\n\nLoRa\n\nrocketry\n\ndata viz\n\n\n\nEvery record the Apogee LoRa ground station logs — link quality, packet loss, and full altitude/RSSI/G-force traces straight from the flight logs. The genesis entry is a…\n\n\n\nJul 8, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nA provenance layer for coral-reef Structure-from-Motion\n\n\n\nMarine Science\n\nPhotogrammetry\n\nStructure-from-Motion\n\nData Provenance\n\nReproducibility\n\n\n\n\n\n\n\nJun 22, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nToward a Multi-Factor Coral Bleaching Risk Score\n\n\n\nMarine Science\n\nEnvironmental Data Science\n\nR\n\nPython\n\nReef Conservation\n\n\n\nA design document for a regression-based, multi-factor coral bleaching risk score — integrating thermal stress, light, turbidity, ocean acidification, and bleaching…\n\n\n\nMay 16, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nExploring Coral Bleaching Risk Using NOAA Coral Reef Watch DHW Data\n\n\n\nMarine Science\n\nRemote Sensing\n\nEnvironmental Data Science\n\nPython\n\nReproducible Research\n\n\n\nA reproducible analysis of satellite-derived thermal stress metrics across five reef systems, using NOAA Coral Reef Watch Degree Heating Weeks (DHW) data.\n\n\n\nMay 12, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\n2016 Subaru Outback Stereo Build\n\n\n\nhardware\n\naudio\n\ncar-audio\n\nSubaru\n\nDIY\n\ndocumentation\n\n\n\nA technical writeup and reference guide for upgrading the factory Harman Kardon audio system in a 2016 Subaru Outback, including head unit replacement, amplifier…\n\n\n\nMay 7, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nLoRa RadioRocket\n\n\n\nIoT\n\ntelemetry\n\nLoRa\n\nhardware\n\namateur radio\n\nArduino\n\n\n\nReal-time LoRa telemetry for mid- and high-power rocketry: 1 Hz altitude, acceleration, and flight state streamed live to a ground station over 434 MHz. NAR Level 1…\n\n\n\nMay 9, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nFreezingSaddles\n\n\n\ncycling\n\nanalytics\n\nvisualization\n\npython\n\n\n\nAnalytics and visualization for a winter cycling challenge tracking mileage, leaderboards, and participation across teams.\n\n\n\nMay 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nBenthic Habitat Mapping\n\n\n\nGIS\n\nmarine science\n\nmapping\n\nremote sensing\n\nData Provenance\n\nReproducibility\n\n\n\nThe complement to the reef-SfM geometry work: automated benthic-cover classification on reef orthomosaics, wrapped in a validation and reconciliation harness that scores…\n\n\n\nMar 1, 2025\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "projects/subaru-audio-tuning.html",
-    "href": "projects/subaru-audio-tuning.html",
-    "title": "2016 Subaru Outback Stereo Build",
-    "section": "",
-    "text": "This project documents the process of upgrading the factory Harman Kardon audio system in a 2016 Subaru Outback into a much more capable, tunable aftermarket system while retaining daily drivability and factory convenience features.\nThe build centers around a Sony XAV-AX4000 head unit, Maestro integration, a Kicker LX 1300.7 multi-channel amplifier, an active Morel front stage, rear fill, and a JL Audio 10W6v3 subwoofer in a sealed enclosure.\nThe goal was not just to make the system louder, but to build a clean, flexible, well-documented setup with proper crossover points, gain structure, signal routing, and enough tuning control to make the car sound genuinely excellent."
-  },
-  {
-    "objectID": "projects/subaru-audio-tuning.html#overview",
-    "href": "projects/subaru-audio-tuning.html#overview",
-    "title": "2016 Subaru Outback Stereo Build",
-    "section": "",
-    "text": "This project documents the process of upgrading the factory Harman Kardon audio system in a 2016 Subaru Outback into a much more capable, tunable aftermarket system while retaining daily drivability and factory convenience features.\nThe build centers around a Sony XAV-AX4000 head unit, Maestro integration, a Kicker LX 1300.7 multi-channel amplifier, an active Morel front stage, rear fill, and a JL Audio 10W6v3 subwoofer in a sealed enclosure.\nThe goal was not just to make the system louder, but to build a clean, flexible, well-documented setup with proper crossover points, gain structure, signal routing, and enough tuning control to make the car sound genuinely excellent."
-  },
-  {
-    "objectID": "projects/subaru-audio-tuning.html#system-components",
-    "href": "projects/subaru-audio-tuning.html#system-components",
-    "title": "2016 Subaru Outback Stereo Build",
-    "section": "System Components",
-    "text": "System Components\n\nSource and Integration\n\nSony XAV-AX4000 head unit\nMaestro integration for steering wheel controls and vehicle feature retention\nFactory Harman Kardon amplifier removed from the audio signal path\nFactory Subaru wiring retained where practical\n\n\n\nAmplification\n\nKicker LX 1300.7 seven-channel amplifier\nActive front-stage configuration\nRear door speakers on independent rear channels\nDedicated subwoofer channel for sealed JL Audio subwoofer\n\n\n\nSpeakers\n\nMorel Tempo Ultra 602 MKII component speakers\nFront tweeters run actively on AMP 1\nFront door woofers run actively on AMP 2\nRear doors run as passive rear fill on AMP 3\n\n\n\nSubwoofer\n\nJL Audio 10W6v3-D4\nSealed custom enclosure\nTuned for clean, musical low-end support rather than maximum boom"
-  },
-  {
-    "objectID": "projects/subaru-audio-tuning.html#wiring-and-signal-routing",
-    "href": "projects/subaru-audio-tuning.html#wiring-and-signal-routing",
-    "title": "2016 Subaru Outback Stereo Build",
-    "section": "Wiring and Signal Routing",
-    "text": "Wiring and Signal Routing\nThis build required working around several Subaru-specific quirks, especially because the vehicle originally had the Harman Kardon factory system.\n\nRCA Signal Routing\nThe final RCA routing uses the Sony head unit outputs to feed the Kicker amp:\n\nFront L/R RCA → AMP 1 input\nRear L/R RCA → AMP 3 input\nSubwoofer RCA → SUB input\n\nThe Kicker amp is configured so that AMP 1 feeds the tweeters and also supplies signal to AMP 2 for the front door woofers. AMP 3 remains independent for rear fill, preserving useful front/rear fader control from the head unit.\n\n\nFactory Wiring\n\nAHH-7881 adapter used to connect amplifier outputs into the factory speaker wiring\nAdapter ordered with tinned ends for easier termination\nFactory Harman Kardon amp bypassed\nSubaru telematics/DCM bypass required to restore the factory tweeter path\nFactory speaker wiring reused where practical to avoid unnecessary rewiring through the doors"
-  },
-  {
-    "objectID": "projects/subaru-audio-tuning.html#current-tuning-notes",
-    "href": "projects/subaru-audio-tuning.html#current-tuning-notes",
-    "title": "2016 Subaru Outback Stereo Build",
-    "section": "Current Tuning Notes",
-    "text": "Current Tuning Notes\n\nFront Tweeters — AMP 1\n\nHigh-pass filter: 3.2 kHz\nSlope: 24 dB/octave\nFilter type: Linkwitz-Riley\n\n\n\nFront Door Woofers — AMP 2\n\nHigh-pass filter: 60 Hz\nSlope: 12 dB/octave\nLow-pass filter: 3.2 kHz\nSlope: 24 dB/octave\nFilter type: Linkwitz-Riley\n\n\n\nRear Doors — AMP 3\n\nHigh-pass filter: approximately 65 Hz\nSlope: 12 dB/octave\nUsed primarily as rear fill\n\n\n\nSubwoofer\n\nLow-pass filter: 80 Hz\nSlope: 24 dB/octave\nFilter type: Linkwitz-Riley\nSubwoofer high-pass filter set as low as possible on the amp, around 10 Hz"
-  },
-  {
-    "objectID": "projects/subaru-audio-tuning.html#lessons-learned",
-    "href": "projects/subaru-audio-tuning.html#lessons-learned",
-    "title": "2016 Subaru Outback Stereo Build",
-    "section": "Lessons Learned",
-    "text": "Lessons Learned\n\nThe factory amp and DSP need to be fully understood before replacing them\nThe telematics/DCM wiring can affect the tweeter path\nHarness adapters save time, but the pinouts still need to be verified\nActive front-stage tuning is worth the effort\nCrossover slopes and gain structure matter as much as hardware selection\nA good sealed 10-inch subwoofer is an excellent match for this wagon"
-  },
-  {
-    "objectID": "projects/subaru-audio-tuning.html#why-document-this",
-    "href": "projects/subaru-audio-tuning.html#why-document-this",
-    "title": "2016 Subaru Outback Stereo Build",
-    "section": "Why Document This?",
-    "text": "Why Document This?\nThere is plenty of Subaru audio information scattered across forums, product manuals, wiring diagrams, and installer notes, but very little of it is presented as a single coherent build path. This writeup captures the practical decisions, mistakes, fixes, and tuning notes from a real build so that future me — or the next person attempting a similar build — does not have to rediscover the same details from scratch."
-  },
-  {
-    "objectID": "projects/subaru-audio-tuning.html#current-status",
-    "href": "projects/subaru-audio-tuning.html#current-status",
-    "title": "2016 Subaru Outback Stereo Build",
-    "section": "Current Status",
-    "text": "Current Status\n✅ Head unit installed\n✅ Maestro integration working\n✅ Factory Harman Kardon amp bypassed\n✅ Kicker LX 1300.7 installed and configured\n✅ Morel front components running active\n✅ Rear fill operational\n✅ JL Audio 10W6v3 sealed subwoofer installed\n✅ Initial gain staging and crossover tuning complete\n✅ System sounding excellent in daily use\n🔧 Next: under-seat amplifier cooling fan triggered by Sony remote turn-on lead."
-  },
-  {
-    "objectID": "projects/freezingsaddles.html",
-    "href": "projects/freezingsaddles.html",
-    "title": "FreezingSaddles",
-    "section": "",
-    "text": "FreezingSaddles is a winter cycling challenge that encourages riders to log miles during the coldest months of the year. This project covers the data pipeline, leaderboard analytics, and visualizations built to support the challenge."
-  },
-  {
-    "objectID": "projects/freezingsaddles.html#overview",
-    "href": "projects/freezingsaddles.html#overview",
-    "title": "FreezingSaddles",
-    "section": "",
-    "text": "FreezingSaddles is a winter cycling challenge that encourages riders to log miles during the coldest months of the year. This project covers the data pipeline, leaderboard analytics, and visualizations built to support the challenge."
-  },
-  {
-    "objectID": "projects/freezingsaddles.html#features",
-    "href": "projects/freezingsaddles.html#features",
-    "title": "FreezingSaddles",
-    "section": "Features",
-    "text": "Features\n\nAutomated mileage ingestion from Strava and manual entries\nTeam and individual leaderboards\nInteractive visualizations of ride data\nHistorical trend analysis across challenge years"
-  },
-  {
-    "objectID": "projects/freezingsaddles.html#technical-stack",
-    "href": "projects/freezingsaddles.html#technical-stack",
-    "title": "FreezingSaddles",
-    "section": "Technical Stack",
-    "text": "Technical Stack\n\nBackend: Python (Flask, pandas)\nData: Strava API, CSV ingestion\nVisualization: Plotly, Matplotlib\nDeployment: Docker, GitHub Actions"
-  },
-  {
-    "objectID": "projects/freezingsaddles.html#highlights",
-    "href": "projects/freezingsaddles.html#highlights",
-    "title": "FreezingSaddles",
-    "section": "Highlights",
-    "text": "Highlights\n\nProcessed thousands of ride entries across multiple seasons\nBuilt interactive leaderboard dashboards\nAutomated data pipeline reducing manual entry overhead"
-  },
-  {
-    "objectID": "projects/freezingsaddles.html#links",
-    "href": "projects/freezingsaddles.html#links",
-    "title": "FreezingSaddles",
-    "section": "Links",
-    "text": "Links\n\nFreezingSaddles — main challenge site\nGitHub Organization — source code and repos"
-  },
-  {
-    "objectID": "projects/freezingsaddles.html#status",
-    "href": "projects/freezingsaddles.html#status",
-    "title": "FreezingSaddles",
-    "section": "Status",
-    "text": "Status\n✅ Active — updated each winter cycling season."
-  },
-  {
-    "objectID": "projects/lora-flights.html",
-    "href": "projects/lora-flights.html",
-    "title": "LoRa RadioRocket — Flight Archive",
-    "section": "",
-    "text": "Companion to the LoRa RadioRocket build. Each flight the ground station records is derived into a small flights.json summary plus a per-flight CSV of the raw 1 Hz packets; this page reads those directly. Altitude is shown AGL — height above the launch pad — computed as raw barometric altitude minus a stability-gated pad baseline that locks the instant launch is detected. The baseline and the window it used are printed with every flight, so any AGL number here can be re-derived."
-  },
-  {
-    "objectID": "projects/lora-flights.html#link-quality",
-    "href": "projects/lora-flights.html#link-quality",
-    "title": "LoRa RadioRocket — Flight Archive",
-    "section": "Link quality",
-    "text": "Link quality\n\n\n\n\n\nPacket loss per record — received vs dropped by sequence number. The genesis entry ran 75 packets with a single drop (1.32%) at RSSI −38…−14 dBm: the RF chain, decoder, and logger working end to end."
-  },
-  {
-    "objectID": "projects/lora-flights.html#peak-agl-over-time",
-    "href": "projects/lora-flights.html#peak-agl-over-time",
-    "title": "LoRa RadioRocket — Flight Archive",
-    "section": "Peak AGL over time",
-    "text": "Peak AGL over time\n\n\n\n\n\nPeak altitude above ground, per record. One entry so far, and it is a hand-swing artifact (~10 ft of barometric noise) rather than a climb — the axis will mean something after the first real launch."
-  },
-  {
-    "objectID": "projects/lora-flights.html#flight-detail",
-    "href": "projects/lora-flights.html#flight-detail",
-    "title": "LoRa RadioRocket — Flight Archive",
-    "section": "Flight detail",
-    "text": "Flight detail\nInteractive — pick a flight (or deep-link one with ?flight=&lt;id&gt;). Traces are the raw 1 Hz packets; altitude is AGL against that flight’s locked baseline.\n\n\nCode\nflightsData = FileAttachment(\"lora-flights/flights.json\").json()\n\n\n\n\n\n\n\n\n\nCode\nviewof selectedFlight = Inputs.select(\n  flightsData.map(d =&gt; d.flight_id),\n  {\n    label: \"Flight\",\n    value: (new URLSearchParams(location.search)).get(\"flight\") ?? flightsData[0].flight_id\n  }\n)\n\n\n\n\n\n\n\n\n\nCode\nsel = flightsData.find(d =&gt; d.flight_id === selectedFlight)\n\n\n\n\n\n\n\n\n\nCode\nhtml`&lt;div style=\"display:flex;gap:.75rem;flex-wrap:wrap;margin:.5rem 0 1rem\"&gt;\n  ${vb(\"Records\", flightsData.length)}\n  ${vb(\"Packet loss\", sel.loss_pct + \"%\")}\n  ${vb(\"Best link\", d3.max(flightsData, d =&gt; d.rssi_max) + \" dBm\")}\n&lt;/div&gt;`\n\n\n\n\n\n\n\n\n\nCode\nhtml`&lt;p style=\"line-height:1.6\"&gt;\n  &lt;b&gt;${sel.flight_id}&lt;/b&gt; — \"${sel.label}\" · &lt;b&gt;Peak AGL ${sel.peak_agl_ft ?? \"—\"} ft&lt;/b&gt;\n  · ${sel.duration_s}s · ${sel.packets_rx} rx / ${sel.packets_lost} lost (${sel.loss_pct}%)\n  · RSSI ${sel.rssi_min}..${sel.rssi_max} dBm · Field ${sel.field}&lt;br&gt;\n  &lt;span style=\"color:#666\"&gt;Baseline ${sel.baseline_ft} ft over n=${sel.baseline_n}\n  (stability-gated pre-boost window) · AGL = raw ALT − baseline.&lt;/span&gt;\n&lt;/p&gt;`\n\n\n\n\n\n\n\n\n\nCode\ntrace = d3.csv(sel.csv, d3.autoType)\n\n\n\n\n\n\n\n\n\nCode\nPlot.plot({\n  height: 220, marginLeft: 55,\n  x: {label: \"T+ (s)\"}, y: {label: \"Altitude AGL (ft)\", grid: true},\n  marks: [\n    Plot.ruleY([0]),\n    Plot.line(trace, {x: \"MET\", y: d =&gt; d.ALT - sel.baseline_ft, stroke: \"#2b6cb0\"})\n  ]\n})\n\n\n\n\n\n\n\n\n\nCode\nPlot.plot({\n  height: 200, marginLeft: 55,\n  x: {label: \"T+ (s)\"}, y: {label: \"RSSI (dBm)\", grid: true},\n  marks: [Plot.line(trace, {x: \"MET\", y: \"rssi\", stroke: \"#dd6b20\"})]\n})\n\n\n\n\n\n\n\n\n\nCode\nPlot.plot({\n  height: 200, marginLeft: 55,\n  x: {label: \"T+ (s)\"}, y: {label: \"Acceleration (g)\", grid: true},\n  marks: [\n    Plot.ruleY([3], {stroke: \"#c53030\", strokeDasharray: \"4\"}),   // launch threshold\n    Plot.line(trace, {x: \"MET\", y: \"G\", stroke: \"#2f855a\"})\n  ]\n})\n\n\n\n\n\n\n\n\n\nCode\n// small value-box helper\nvb = (label, value) =&gt; html`&lt;div style=\"border:1px solid #e2e8f0;border-radius:.5rem;\n  padding:.6rem 1rem;min-width:8rem;background:#f7fafc\"&gt;\n  &lt;div style=\"font-size:.75rem;color:#718096;text-transform:uppercase\"&gt;${label}&lt;/div&gt;\n  &lt;div style=\"font-size:1.4rem;font-weight:600\"&gt;${value}&lt;/div&gt;&lt;/div&gt;`"
-  },
-  {
-    "objectID": "projects/bleaching-risk-notebook.html",
-    "href": "projects/bleaching-risk-notebook.html",
-    "title": "Exploring Coral Bleaching Risk Using NOAA Coral Reef Watch DHW Data",
-    "section": "",
-    "text": "When I started looking for a dataset to anchor this first marine science project, I had a simple question: what data actually gets used by the people trying to protect coral reefs in the real world? That question led me directly to NOAA’s Coral Reef Watch (CRW) program and their Degree Heating Weeks (DHW) product — and then to the paper that describes exactly how it’s built: Skirving et al. (2020), CoralTemp and the Coral Reef Watch Coral Bleaching Heat Stress Product Suite Version 3.1 (Skirving et al. 2020).\nReading that paper changed how I thought about this project.\n\n\n\n\n\n\nData source: NOAA Coral Reef Watch Version 3.1 Daily 5km Satellite Coral Bleaching Heat Stress Product Suite. Updated daily. coralreefwatch.noaa.gov\n\n\n\n\n\nMy first instinct was to pull raw SST data — it’s widely available from multiple sources including NOAA OISST, NASA MODIS, and the Copernicus Marine Service. But raw SST alone doesn’t tell you whether a coral is stressed. A reading of 29°C means something very different on the Great Barrier Reef versus Bonaire. What matters isn’t the absolute temperature — it’s how that temperature compares to what the corals at that location have adapted to over their lifetimes.\nThat realization pushed me toward NOAA CRW’s derived product suite, where that comparison is already built in — and rigorously validated against decades of field bleaching observations worldwide.\n\n\n\nThe entire CRW product suite rests on a climatological baseline: a set of long-term average SST values for every location on Earth, for every month of the year. This is not a trivial thing to build correctly. As Skirving et al. (2020) describe, CRW spent years grappling with a fundamental problem — the satellite SST data used to build the climatology came from different sensors and processing pipelines than the near-real-time data used to calculate the anomalies. That mismatch introduced systematic biases, particularly at the high temperatures most relevant to bleaching.\nThe development of CoralTemp — a single, continuous daily SST record spanning 1985 to the present, built by carefully blending three different satellite products — was specifically designed to solve this problem. For the first time, CRW could compute the climatology and the daily anomalies from the same underlying dataset. The Monthly Mean (MM) climatology was derived from this record across 1985–2012, and the Maximum Monthly Mean (MMM) — the warmest month at each location — became the critical threshold from which the HotSpot and DHW products are derived.\nI want to be transparent about why this matters for this project: I am not independently validating the baseline. I am trusting that NOAA CRW’s 25-year investment in getting this right is sound — which is supported by the peer-reviewed literature and by the fact that these products are the global standard used by reef managers worldwide. But understanding that the baseline exists, how it was constructed, and what its assumptions are is essential context for interpreting everything downstream. The DHW values we analyze are only as meaningful as the MMM they’re derived from.\n\n\n\nOne more thing worth acknowledging upfront: the Virtual Station data used in this analysis represents a single 5×5 km satellite pixel per reef location. Real reef systems are far more heterogeneous than that. Temperatures vary with depth, local current patterns, reef orientation, and bathymetry — a coral colony in a deep channel experiences very different conditions than one on a shallow exposed crest, even within the same reef system.\nThis means the DHW values we analyze are best understood as a reef-wide surface thermal stress index — a strong and validated predictor of bleaching risk at the population level, but not a precise measurement of conditions at any specific location. This is the same limitation the entire global reef monitoring community works with, and it doesn’t undermine the analysis. It just means we should be careful about over-interpreting site-level differences that might reflect local thermal refugia or exposure patterns rather than true differences in bleaching pressure.\nWith those caveats clearly on the table, here is what this project actually does."
-  },
-  {
-    "objectID": "projects/bleaching-risk-notebook.html#overview",
-    "href": "projects/bleaching-risk-notebook.html#overview",
-    "title": "Exploring Coral Bleaching Risk Using NOAA Coral Reef Watch DHW Data",
-    "section": "",
-    "text": "When I started looking for a dataset to anchor this first marine science project, I had a simple question: what data actually gets used by the people trying to protect coral reefs in the real world? That question led me directly to NOAA’s Coral Reef Watch (CRW) program and their Degree Heating Weeks (DHW) product — and then to the paper that describes exactly how it’s built: Skirving et al. (2020), CoralTemp and the Coral Reef Watch Coral Bleaching Heat Stress Product Suite Version 3.1 (Skirving et al. 2020).\nReading that paper changed how I thought about this project.\n\n\n\n\n\n\nData source: NOAA Coral Reef Watch Version 3.1 Daily 5km Satellite Coral Bleaching Heat Stress Product Suite. Updated daily. coralreefwatch.noaa.gov\n\n\n\n\n\nMy first instinct was to pull raw SST data — it’s widely available from multiple sources including NOAA OISST, NASA MODIS, and the Copernicus Marine Service. But raw SST alone doesn’t tell you whether a coral is stressed. A reading of 29°C means something very different on the Great Barrier Reef versus Bonaire. What matters isn’t the absolute temperature — it’s how that temperature compares to what the corals at that location have adapted to over their lifetimes.\nThat realization pushed me toward NOAA CRW’s derived product suite, where that comparison is already built in — and rigorously validated against decades of field bleaching observations worldwide.\n\n\n\nThe entire CRW product suite rests on a climatological baseline: a set of long-term average SST values for every location on Earth, for every month of the year. This is not a trivial thing to build correctly. As Skirving et al. (2020) describe, CRW spent years grappling with a fundamental problem — the satellite SST data used to build the climatology came from different sensors and processing pipelines than the near-real-time data used to calculate the anomalies. That mismatch introduced systematic biases, particularly at the high temperatures most relevant to bleaching.\nThe development of CoralTemp — a single, continuous daily SST record spanning 1985 to the present, built by carefully blending three different satellite products — was specifically designed to solve this problem. For the first time, CRW could compute the climatology and the daily anomalies from the same underlying dataset. The Monthly Mean (MM) climatology was derived from this record across 1985–2012, and the Maximum Monthly Mean (MMM) — the warmest month at each location — became the critical threshold from which the HotSpot and DHW products are derived.\nI want to be transparent about why this matters for this project: I am not independently validating the baseline. I am trusting that NOAA CRW’s 25-year investment in getting this right is sound — which is supported by the peer-reviewed literature and by the fact that these products are the global standard used by reef managers worldwide. But understanding that the baseline exists, how it was constructed, and what its assumptions are is essential context for interpreting everything downstream. The DHW values we analyze are only as meaningful as the MMM they’re derived from.\n\n\n\nOne more thing worth acknowledging upfront: the Virtual Station data used in this analysis represents a single 5×5 km satellite pixel per reef location. Real reef systems are far more heterogeneous than that. Temperatures vary with depth, local current patterns, reef orientation, and bathymetry — a coral colony in a deep channel experiences very different conditions than one on a shallow exposed crest, even within the same reef system.\nThis means the DHW values we analyze are best understood as a reef-wide surface thermal stress index — a strong and validated predictor of bleaching risk at the population level, but not a precise measurement of conditions at any specific location. This is the same limitation the entire global reef monitoring community works with, and it doesn’t undermine the analysis. It just means we should be careful about over-interpreting site-level differences that might reflect local thermal refugia or exposure patterns rather than true differences in bleaching pressure.\nWith those caveats clearly on the table, here is what this project actually does."
-  },
-  {
-    "objectID": "projects/bleaching-risk-notebook.html#why-this-work-matters-to-me",
-    "href": "projects/bleaching-risk-notebook.html#why-this-work-matters-to-me",
-    "title": "Exploring Coral Bleaching Risk Using NOAA Coral Reef Watch DHW Data",
-    "section": "Why This Work Matters to Me",
-    "text": "Why This Work Matters to Me\nThe spikes in the DHW charts are not abstract. Each one represents a mass bleaching event — weeks of accumulated heat stress that caused corals to expel the symbiotic algae that give them both their color and their ability to survive. Some recovered. Many did not.\nThe 2023 spike on the Florida Keys chart stopped me the first time I saw it in person on a dive. That summer, sea surface temperatures off the Keys reached levels never recorded in the satellite era — DHW values pushing well past the Alert Level 2 threshold where mortality becomes likely. I did not feel unsettled. I felt implicated. Like I was watching something irreplaceable disappear and I was not doing my share to stop it.\nWe named this planet wrong. It is not Earth. It is Ocean. The ocean covers 71% of the surface, produces more than half the oxygen we breathe, and absorbs the heat that our atmosphere can no longer contain. Coral reefs are less than 1% of the ocean floor and support roughly 25% of all marine species. They are disproportionately vital and disproportionately vulnerable — and they are bleaching at a pace that the satellite record has never seen before.\nThat feeling of personal responsibility is what brought me here.\nI have spent my career in biomedical and clinical research informatics — building data pipelines, managing research data governance, working with complex health datasets in high-stakes environments. The technical skills transfer. What I am building now is the domain knowledge and the credibility to point those skills at a different set of urgent problems. The ocean is not separate from human health. It is the precondition for it.\nThe monitoring infrastructure that NOAA CRW has built — the same data we are working with in this notebook — exists because early warning matters. A reef manager who knows a bleaching event is coming two weeks in advance can act. That connection between data, prediction, and real-world response is something I understand from clinical informatics. I want to bring it here. I want my work to matter outside the walls of a hospital system.\nThis project is a first step. The code is simple, the dataset is publicly available, and the science belongs to the researchers at NOAA CRW and the marine biologists doing fieldwork on these reefs. But the ability to work with this data rigorously, document it honestly, and communicate it clearly — that is something I can contribute. And I intend to keep going."
-  },
-  {
-    "objectID": "projects/bleaching-risk-notebook.html#study-sites",
-    "href": "projects/bleaching-risk-notebook.html#study-sites",
-    "title": "Exploring Coral Bleaching Risk Using NOAA Coral Reef Watch DHW Data",
-    "section": "Study Sites",
-    "text": "Study Sites\nFive reef systems spanning two ocean basins were selected to compare thermal stress patterns across different geographic and ecological contexts:\n\n\n\n\n\n\n\n\n\nSite\nNOAA CRW Station\nOcean\nNotes\n\n\n\n\nFlorida Keys, USA\nflorida_keys\nCaribbean/Atlantic\nRecord-breaking bleaching 2023\n\n\nCayman Islands\ncayman_islands\nCaribbean\nCovers all three Cayman Islands\n\n\nHonduras (Bay Islands)\nhonduras\nCaribbean\nCovers Bay Islands including Roatán\n\n\nABC Islands (Bonaire)\nabc_islands\nCaribbean\nAruba, Curaçao, and Bonaire\n\n\nGBR Central\ngbr_central\nIndo-Pacific\nCentral sector; 2016 and 2022 mass bleaching\n\n\n\nThese sites were chosen to represent geographic diversity across two ocean basins, a range of documented bleaching histories, and contrasting thermal stress profiles. Station IDs were verified directly against the live NOAA CRW Virtual Station list at coralreefwatch.noaa.gov/product/vs/data.php before any data was fetched.\n\n\n\n\n\n\nA note on the GBR: Unlike the Caribbean sites, the Great Barrier Reef has no single regional station — it is simply too large. NOAA splits it into five sectors: Torres Strait, Far Northern, Northern, Central, and Southern. We selected GBR Central, which covers the Whitsundays and Townsville region. My awareness of the 2016 bleaching event in this sector came initially from watching Jeff Orlowski’s documentary Chasing Coral — and I later found that the same event was the subject of Hughes et al. (2017) in Nature. The documentary and the peer-reviewed literature were pointing at the same place."
-  },
-  {
-    "objectID": "projects/bleaching-risk-notebook.html#science-background",
-    "href": "projects/bleaching-risk-notebook.html#science-background",
-    "title": "Exploring Coral Bleaching Risk Using NOAA Coral Reef Watch DHW Data",
-    "section": "Science Background",
-    "text": "Science Background\n\nSea Surface Temperature Anomaly\nEvery ocean location has a long-term average temperature for each time of year, derived from decades of satellite records. The SST anomaly measures the departure of today’s temperature from that historical average:\n\\[\\text{SST Anomaly} = \\text{SST} - \\text{Daily SST Climatology}\\]\nA positive anomaly means the ocean is warmer than usual for that season. This metric provides broad context for ocean warming but is not on its own a reliable predictor of coral bleaching, because corals in different locations are adapted to different baseline temperatures.\n\n\nCoral Bleaching HotSpot\nThe HotSpot product is calibrated specifically to coral biology. It measures how far the current temperature exceeds the warmest month that corals at that location have historically experienced — a threshold called the Maximum Monthly Mean (MMM):\n\\[\\text{HotSpot} = \\text{SST} - \\text{MMM SST Climatology}, \\quad \\text{HotSpot} \\geq 0\\]\nA HotSpot ≥ 1°C indicates active thermal stress. The MMM baseline varies by location, so this metric captures relative stress rather than absolute temperature — making it comparable across sites with very different ambient ocean temperatures (Skirving et al. 2020).\n\n\nDegree Heating Weeks (DHW)\nA single warm day can stress corals, but corals are resilient to brief exposures. What causes bleaching is sustained thermal stress accumulating over weeks. Degree Heating Weeks integrate the HotSpot values (when ≥ 1°C) over a moving 12-week window:\n\\[\\text{DHW} = \\frac{\\sum_{d=0}^{83} \\max(\\text{HotSpot}_d - 0, 0) \\cdot \\mathbf{1}[\\text{HotSpot}_d \\geq 1]}{7}\\]\nUnits are °C-weeks. Think of DHW as a “heat debt” that builds up as hot conditions persist — analogous to the accumulated dose concept in clinical pharmacology or radiation biology.\nTwo key thresholds, established through satellite monitoring and field validation (Liu et al. 2013):\n\n\n\n\n\n\n\n\nDHW Value\nAlert Level\nBiological Expectation\n\n\n\n\n&lt; 4 °C-weeks\nWatch / Warning\nThermal stress present; monitoring needed\n\n\n≥ 4 °C-weeks\nAlert Level 1\nBleaching likely\n\n\n≥ 8 °C-weeks\nAlert Level 2\nSevere bleaching; significant mortality likely"
-  },
-  {
-    "objectID": "projects/bleaching-risk-notebook.html#data-methods",
-    "href": "projects/bleaching-risk-notebook.html#data-methods",
-    "title": "Exploring Coral Bleaching Risk Using NOAA Coral Reef Watch DHW Data",
-    "section": "Data & Methods",
-    "text": "Data & Methods\n\nData Acquisition\nData were fetched programmatically from the NOAA CRW Virtual Station feed using verified station IDs. The fetch URL pattern is:\nhttps://coralreefwatch.noaa.gov/product/vs/data/{station_id}.txt\nEach file opens with an unstructured metadata header containing station-level information — including the Averaged Maximum Monthly Mean (MMM) temperature, which we extract programmatically and carry through the analysis as the location-specific bleaching threshold baseline.\n\n\n\n\n\n\nA note on the file format: The NOAA CRW Virtual Station files are not simple CSVs. The header uses plain text labels rather than # comment markers, the date is split across three columns (YYYY, MM, DD), and the column names reflect the updated v3.1 product suite. We inspected the raw file before writing the parser rather than assuming a format — a step worth documenting for anyone reproducing this analysis.\n\n\n\nData are cached locally after first retrieval. To force a fresh download, set force_refresh=True in the fetch call.\n\n\nAnalysis Pipeline\n\nFetch — live HTTP request to CRW Virtual Station feed per site\nCache — store raw .txt files in data/raw/\nParse — extract MMM from header, build date column, rename columns\nVisualize — DHW time series, alert level distributions, annual peak heatmap\nInterpret — narrative analysis of key bleaching events"
-  },
-  {
-    "objectID": "projects/bleaching-risk-notebook.html#results",
-    "href": "projects/bleaching-risk-notebook.html#results",
-    "title": "Exploring Coral Bleaching Risk Using NOAA Coral Reef Watch DHW Data",
-    "section": "Results",
-    "text": "Results\n\n\nSetup: imports, directories, thresholds\nimport pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport requests\nimport os\nfrom io import StringIO\n\n# Paths relative to projects/ directory where this .qmd lives\nCACHE_DIR = \"data/raw\"\nFIG_DIR   = \"figures\"\nos.makedirs(CACHE_DIR, exist_ok=True)\nos.makedirs(FIG_DIR,   exist_ok=True)\n\n# Bleaching thresholds (Skirving et al. 2020, Liu et al. 2013)\nDHW_WARNING = 4   # Alert Level 1: Bleaching Likely\nDHW_SEVERE  = 8   # Alert Level 2: Mortality Likely\n\n\n\n\nStudy site definitions and verified NOAA CRW station IDs\nSITES = {\n    \"Florida Keys\": {\n        \"station_id\": \"florida_keys\",\n        \"lat\": 24.55,\n        \"lon\": -81.50,\n        \"ocean\": \"Caribbean/Atlantic\",\n    },\n    \"Cayman Islands\": {\n        \"station_id\": \"cayman_islands\",\n        \"lat\": 19.30,\n        \"lon\": -81.38,\n        \"ocean\": \"Caribbean\",\n    },\n    \"Honduras (Bay Islands)\": {\n        \"station_id\": \"honduras\",\n        \"lat\": 16.32,\n        \"lon\": -86.55,\n        \"ocean\": \"Caribbean\",\n    },\n    \"ABC Islands (Bonaire)\": {\n        \"station_id\": \"abc_islands\",\n        \"lat\": 12.15,\n        \"lon\": -68.28,\n        \"ocean\": \"Caribbean\",\n    },\n    \"GBR Central\": {\n        \"station_id\": \"gbr_central\",\n        \"lat\": -18.00,\n        \"lon\": 147.00,\n        \"ocean\": \"Indo-Pacific\",\n    },\n}\n\nfor name, cfg in SITES.items():\n    print(f\"✓ {name:30} | station: {cfg['station_id']}\")\n\n\n✓ Florida Keys                   | station: florida_keys\n✓ Cayman Islands                 | station: cayman_islands\n✓ Honduras (Bay Islands)         | station: honduras\n✓ ABC Islands (Bonaire)          | station: abc_islands\n✓ GBR Central                    | station: gbr_central\n\n\n\n\nFetch and parse NOAA CRW Virtual Station data\nCRW_BASE_URL = \"https://coralreefwatch.noaa.gov/product/vs/data/{station_id}.txt\"\n\ndef parse_crw_header(lines):\n    \"\"\"Extract metadata from the CRW file header block.\"\"\"\n    meta = {}\n    for i, line in enumerate(lines):\n        line_stripped = line.strip()\n        if line_stripped == \"Averaged Maximum Monthly Mean:\":\n            meta[\"mmm\"] = float(lines[i + 1].strip())\n        if line_stripped == \"Name:\":\n            meta[\"name\"] = lines[i + 1].strip()\n        if line_stripped.startswith(\"YYYY MM DD\"):\n            meta[\"data_start_line\"] = i\n            break\n    return meta\n\ndef fetch_crw_station(site_name, station_id, force_refresh=False):\n    cache_path = os.path.join(CACHE_DIR, f\"{station_id}.txt\")\n\n    if not force_refresh and os.path.exists(cache_path):\n        print(f\"  ✓ Loaded from cache: {site_name}\")\n        with open(cache_path, \"r\") as f:\n            raw_lines = f.readlines()\n    else:\n        url = CRW_BASE_URL.format(station_id=station_id)\n        print(f\"  ↓ Fetching live: {site_name}\")\n        resp = requests.get(url, timeout=30)\n        resp.raise_for_status()\n        raw_lines = resp.text.splitlines(keepends=True)\n        with open(cache_path, \"w\") as f:\n            f.writelines(raw_lines)\n\n    meta = parse_crw_header(raw_lines)\n    data_start = meta[\"data_start_line\"]\n\n    data_text = \"\".join(raw_lines[data_start:])\n    df = pd.read_csv(\n        StringIO(data_text),\n        sep=r\"\\s+\",\n        na_values=[\"-999\", \"-9999\", \"-99.0000\"],\n    )\n\n    df[\"date\"] = pd.to_datetime(\n        df[\"YYYY\"].astype(str) + \"-\" +\n        df[\"MM\"].astype(str).str.zfill(2) + \"-\" +\n        df[\"DD\"].astype(str).str.zfill(2)\n    )\n\n    df.rename(columns={\n        \"SST@90th_HS\":        \"sst\",\n        \"SSTA@90th_HS\":       \"sst_anomaly\",\n        \"90th_HS&gt;0\":          \"hotspot\",\n        \"DHW_from_90th_HS&gt;1\": \"dhw\",\n        \"BAA_7day_max\":       \"alert\",\n    }, inplace=True)\n\n    df[\"site\"] = site_name\n    df[\"mmm\"]  = meta.get(\"mmm\", None)\n\n    keep = [\"date\", \"sst\", \"sst_anomaly\", \"hotspot\", \"dhw\", \"alert\", \"site\", \"mmm\"]\n    df = df[[c for c in keep if c in df.columns]]\n    df.sort_values(\"date\", inplace=True)\n    df.reset_index(drop=True, inplace=True)\n\n    print(f\"    ✓ {len(df):,} rows | \"\n          f\"{df['date'].min().date()} → {df['date'].max().date()} | \"\n          f\"MMM: {meta.get('mmm')}°C\")\n    return df\n\n\nprint(\"Fetching NOAA CRW Virtual Station data...\\n\")\nall_data = {}\nfor site_name, cfg in SITES.items():\n    df = fetch_crw_station(site_name, cfg[\"station_id\"])\n    all_data[site_name] = df\n\nprint(f\"\\n✓ Done. {len(all_data)} sites loaded.\")\n\n\nFetching NOAA CRW Virtual Station data...\n\n  ✓ Loaded from cache: Florida Keys\n    ✓ 15,105 rows | 1985-01-01 → 2026-05-10 | MMM: 29.6264°C\n  ✓ Loaded from cache: Cayman Islands\n    ✓ 15,105 rows | 1985-01-01 → 2026-05-10 | MMM: 29.3925°C\n  ✓ Loaded from cache: Honduras (Bay Islands)\n    ✓ 15,105 rows | 1985-01-01 → 2026-05-10 | MMM: 28.87°C\n  ✓ Loaded from cache: ABC Islands (Bonaire)\n    ✓ 15,105 rows | 1985-01-01 → 2026-05-10 | MMM: 28.0193°C\n  ✓ Loaded from cache: GBR Central\n    ✓ 15,105 rows | 1985-01-01 → 2026-05-10 | MMM: 28.3422°C\n\n✓ Done. 5 sites loaded.\n\n\n\nMMM Baseline Values\nThe MMM values extracted from the file headers reveal the location-specific thermal baselines — before a single chart is plotted:\n\n\nMMM baseline values per site\nmmm_rows = [\n    {\"Site\": name, \"MMM (°C)\": df[\"mmm\"].iloc[0]}\n    for name, df in all_data.items()\n]\nmmm_df = pd.DataFrame(mmm_rows).sort_values(\"MMM (°C)\", ascending=False)\nmmm_df[\"MMM (°C)\"] = mmm_df[\"MMM (°C)\"].map(\"{:.2f}\".format)\nprint(mmm_df.to_string(index=False))\n\n\n                  Site MMM (°C)\n          Florida Keys    29.63\n        Cayman Islands    29.39\nHonduras (Bay Islands)    28.87\n           GBR Central    28.34\n ABC Islands (Bonaire)    28.02\n\n\nThis is the MMM doing exactly what Skirving et al. (2020) described — capturing location-specific thermal tolerance rather than absolute temperature. A raw SST reading of 29°C represents no stress at all in the Florida Keys, but would already be pushing past the bleaching threshold on the GBR.\n\n\nDHW Time Series\nThe figure below shows Degree Heating Week time series for all five reef sites from 2000 to present. Horizontal dashed lines mark the Alert Level 1 (4 °C-weeks) and Alert Level 2 (8 °C-weeks) thresholds. Each panel also shows the site’s MMM baseline temperature.\n\n\nDHW time series — all five sites\nfig, axes = plt.subplots(\n    nrows=len(all_data), ncols=1,\n    figsize=(14, 3.2 * len(all_data)),\n    sharex=False\n)\n\ncolors = [\"#0077b6\", \"#00b4d8\", \"#48cae4\", \"#90e0ef\", \"#e07a5f\"]\n\nfor ax, (site, df), color in zip(axes, all_data.items(), colors):\n    mask = df[\"date\"] &gt;= \"2000-01-01\"\n    plot_df = df[mask].copy()\n\n    ax.fill_between(plot_df[\"date\"], plot_df[\"dhw\"],\n                    alpha=0.25, color=color)\n    ax.plot(plot_df[\"date\"], plot_df[\"dhw\"],\n            color=color, lw=1.0, label=\"DHW\")\n\n    ax.axhline(DHW_WARNING, color=\"#f4a261\", ls=\"--\", lw=1.2,\n               label=f\"Alert L1 ({DHW_WARNING} °C-wks)\")\n    ax.axhline(DHW_SEVERE, color=\"#e63946\", ls=\"--\", lw=1.2,\n               label=f\"Alert L2 ({DHW_SEVERE} °C-wks)\")\n\n    ax.set_title(\n        f\"{site}  |  MMM: {df['mmm'].iloc[0]:.2f}°C\",\n        fontsize=11, fontweight=\"bold\", loc=\"left\"\n    )\n    ax.set_ylabel(\"DHW (°C-weeks)\", fontsize=9)\n    ax.set_ylim(bottom=0)\n    ax.legend(fontsize=7, loc=\"upper left\", framealpha=0.7)\n    ax.grid(axis=\"y\", alpha=0.25)\n    ax.spines[[\"top\", \"right\"]].set_visible(False)\n\naxes[-1].set_xlabel(\"Date\", fontsize=10)\nfig.suptitle(\n    \"NOAA CRW Degree Heating Weeks by Reef Site (2000–present)\\n\"\n    \"Data: NOAA Coral Reef Watch Version 3.1\",\n    fontsize=13, fontweight=\"bold\", y=1.01\n)\nplt.tight_layout()\nplt.savefig(os.path.join(FIG_DIR, \"dhw_timeseries_all_sites.png\"),\n            dpi=150, bbox_inches=\"tight\")\nplt.show()\n\n\n\n\n\n\n\n\nFigure 1: DHW time series for all five reef sites (2000–present). Dashed lines mark bleaching alert thresholds. MMM values shown in panel titles. Data: NOAA CRW Version 3.1.\n\n\n\n\n\nKey observations:\n\nFlorida Keys — the 2023 spike dwarfs everything before it in the satellite record, consistent with the unprecedented marine heat wave that summer.\nGBR Central — the 2016 and 2022 events are clearly visible; the lower MMM baseline means bleaching stress kicks in at a lower absolute temperature.\nABC Islands (Bonaire) — spikes are consistently lower than the other Caribbean sites, consistent with its reputation for relatively robust reef health.\nAll Caribbean sites — show a clear pattern of increasing frequency and magnitude of DHW exceedances from 2015 onward."
-  },
-  {
-    "objectID": "projects/bleaching-risk-notebook.html#interpretation-limitations",
-    "href": "projects/bleaching-risk-notebook.html#interpretation-limitations",
-    "title": "Exploring Coral Bleaching Risk Using NOAA Coral Reef Watch DHW Data",
-    "section": "Interpretation & Limitations",
-    "text": "Interpretation & Limitations\n\nWhat this analysis shows\nThis analysis demonstrates the utility of satellite thermal monitoring for tracking bleaching risk across geographically distributed reef systems. The DHW metric — developed and validated by NOAA CRW scientists over more than 20 years — provides a biologically grounded, globally consistent index of accumulated thermal stress that has been correlated with field observations of bleaching onset and severity.\n\n\nLimitations to note\n\nPoint data: CRW Virtual Station data represent a single 5×5 km pixel per site. Actual reef conditions vary at finer spatial scales due to bathymetry, currents, and local upwelling.\nNo in situ validation: This analysis does not include field bleaching surveys or coral cover data. DHW is a risk indicator, not a direct measurement of bleaching.\nAlert thresholds are global: The 4 and 8 °C-week thresholds are population- level averages. Some coral communities may have higher or lower thermal tolerance.\nGBR representation: The gbr_central station represents one of five GBR sectors. Thermal stress patterns vary considerably across the reef’s 2,300 km length."
-  },
-  {
-    "objectID": "projects/bleaching-risk-notebook.html#future-directions",
-    "href": "projects/bleaching-risk-notebook.html#future-directions",
-    "title": "Exploring Coral Bleaching Risk Using NOAA Coral Reef Watch DHW Data",
-    "section": "Future Directions",
-    "text": "Future Directions\nThis MVP analysis establishes the data pipeline and visualization framework. Planned extensions include:\n\nAll five GBR sectors — compare Torres Strait, Far Northern, Northern, Central, and Southern to examine latitudinal bleaching gradients\nSpatial raster analysis — process global CRW NetCDF files via ERDDAP to produce regional DHW maps\nBleaching observation integration — overlay NOAA CoRIS or Reef Check field survey data to validate satellite signals against in-water observations\nENSO correlation — correlate DHW peaks with Niño 3.4 SST anomaly index\nTrend analysis — fit linear trend models to annual peak DHW to quantify warming trajectories at each site"
-  },
-  {
-    "objectID": "projects/bleaching-risk-notebook.html#technical-details",
-    "href": "projects/bleaching-risk-notebook.html#technical-details",
-    "title": "Exploring Coral Bleaching Risk Using NOAA Coral Reef Watch DHW Data",
-    "section": "Technical Details",
-    "text": "Technical Details\n\n\n\nItem\nDetail\n\n\n\n\nLanguage\nPython 3.11\n\n\nEnvironment\nuv / venv\n\n\nKey packages\npandas, numpy, matplotlib, requests\n\n\nData format\nPlain text (NOAA CRW Virtual Station .txt)\n\n\nExecution\nQuarto (freeze: true)\n\n\nPortfolio framework\nQuarto\n\n\nVersion control\nGit / GitHub"
-  },
-  {
-    "objectID": "projects/bleaching-risk-notebook.html#references",
-    "href": "projects/bleaching-risk-notebook.html#references",
-    "title": "Exploring Coral Bleaching Risk Using NOAA Coral Reef Watch DHW Data",
-    "section": "References",
-    "text": "References\n\n\nLiu, Gang, Jacqueline L. Rauenzahn, Scott F. Heron, et al. 2013. NOAA Coral Reef Watch 50 Km Satellite Sea Surface Temperature-Based Decision Support System for Coral Bleaching Management. NESDIS 143. NOAA/NESDIS.\n\n\nSkirving, William, Benjamin Marsh, Jacqueline De La Cour, et al. 2020. “CoralTemp and the Coral Reef Watch Coral Bleaching Heat Stress Product Suite Version 3.1.” Remote Sensing 12 (23): 3856. https://doi.org/10.3390/rs12233856.\n\n\nData citation:\n\nNOAA Coral Reef Watch (CRW). 2000, updated daily. NOAA Coral Reef Watch Version 3.1 Daily 5km Satellite Coral Bleaching Heat Stress Monitoring Product Suite; CoralTemp and Coral Bleaching Heat Stress. College Park, Maryland, USA: NOAA/NESDIS. Accessed May 2026 at https://coralreefwatch.noaa.gov/"
-  },
-  {
-    "objectID": "projects/bleaching-risk-notebook.html#about-this-project",
-    "href": "projects/bleaching-risk-notebook.html#about-this-project",
-    "title": "Exploring Coral Bleaching Risk Using NOAA Coral Reef Watch DHW Data",
-    "section": "About This Project",
-    "text": "About This Project\nThis project is part of a portfolio in marine environmental data science, developed to demonstrate reproducible analysis workflows applied to real-world reef conservation data. The full code, data pipeline, and environment specification are available on GitHub.\n\n\n\n\n\n\nTipReproducibility\n\n\n\nThis page renders live from embedded Python — data is fetched from NOAA CRW, parsed, and plotted on every render unless frozen. Outputs are frozen and committed to the repository via freeze: true. To re-execute from scratch, delete _freeze/projects/bleaching-risk-notebook/ from the portfolio site repo and re-render. The uv environment is fully specified in the coral-bleaching-dhw repository’s requirements.txt.\n\n\nView source repo NOAA Coral Reef Watch"
-  },
-  {
-    "objectID": "projects/lora-radiorocket.html",
-    "href": "projects/lora-radiorocket.html",
-    "title": "LoRa RadioRocket",
-    "section": "",
-    "text": "A ground-up rewrite of N3VEM’s RadioRocketV2 for the Adafruit Feather M0 + RFM95 platform. Unlike altimeters that store and dump data after recovery, this system streams altitude, G-force, and flight state to the ground in real time at 1 Hz — so you’re watching the numbers the moment the rocket leaves the rail. Designed for both mid- and high-power launches; currently flight-tested on a PiercerMini, with high-power deployment planned for an Apogee Zephyr (nose cone e-bay already built).\n📡 Flight archive → — every logged flight with altitude (AGL), link quality, and full traces."
-  },
-  {
-    "objectID": "projects/lora-radiorocket.html#overview",
-    "href": "projects/lora-radiorocket.html#overview",
-    "title": "LoRa RadioRocket",
-    "section": "",
-    "text": "A ground-up rewrite of N3VEM’s RadioRocketV2 for the Adafruit Feather M0 + RFM95 platform. Unlike altimeters that store and dump data after recovery, this system streams altitude, G-force, and flight state to the ground in real time at 1 Hz — so you’re watching the numbers the moment the rocket leaves the rail. Designed for both mid- and high-power launches; currently flight-tested on a PiercerMini, with high-power deployment planned for an Apogee Zephyr (nose cone e-bay already built).\n📡 Flight archive → — every logged flight with altitude (AGL), link quality, and full traces."
-  },
-  {
-    "objectID": "projects/lora-radiorocket.html#hardware",
-    "href": "projects/lora-radiorocket.html#hardware",
-    "title": "LoRa RadioRocket",
-    "section": "Hardware",
-    "text": "Hardware\n\nTX Sled (rocket)\n\n\n\nComponent\nPurpose\n\n\n\n\nAdafruit Feather M0 + RFM95 (434 MHz)\nMicrocontroller + LoRa radio\n\n\nAdafruit BMP390\nBarometric pressure / altitude\n\n\nAdafruit ADXL375\nHigh-G accelerometer (±200 g)\n\n\nLiPo battery\nPower\n\n\n\n\n\nRX Ground Station (APRS Digipeater + LoRa Receiver)\nThe ground station is a LePotato SBC built into a custom blue acrylic enclosure. It serves double duty: receiving LoRa telemetry from the rocket and acting as a portable APRS digipeater — because most mid-power launch sites are outside range of any APRS I-Gate or digipeater, this station brings the infrastructure to the field.\n\n\n\n\n\n\n\nComponent\nPurpose\n\n\n\n\nLibre Computer LePotato SBC\nRuns Linux, Direwolf TNC, Node-RED dashboard\n\n\nRTL-SDR V4 dongle\nAPRS receive + digipeater (144.39 MHz)\n\n\nAdafruit Feather M0 + RFM95 (434 MHz)\nLoRa telemetry receiver\n\n\n12V → 5V DC-DC converter\nField power from vehicle or battery\n\n\nCustom blue acrylic enclosure\nHouses all hardware\n\n\n\nSoftware stack: Direwolf (software TNC + digipeater), Xastir (APRS mapping), Node-RED (telemetry dashboard), VNC (headless remote access).\nWhen the rocket eventually carries an APRS tracker (planned: QRPLabs LightAPRS 2.0), this station will digipeat its packets to the APRS network from the field."
-  },
-  {
-    "objectID": "projects/lora-radiorocket.html#firmware",
-    "href": "projects/lora-radiorocket.html#firmware",
-    "title": "LoRa RadioRocket",
-    "section": "Firmware",
-    "text": "Firmware\nThree algorithms do the interesting work:\n\n1. Ground pressure calibration\nAt boot, the sled takes 50 pressure readings over ~2.5 seconds and averages them to establish a stable ground-level reference. Everything else — altitude, apogee — is computed relative to this baseline.\n// Calibrate ground pressure\nfloat sum = 0;\nfor (int i = 0; i &lt; 50; i++) {\n  bmp.performReading();\n  sum += bmp.pressure / 100.0;\n  delay(50);\n}\ngroundPressure = sum / 50.0;\nA simple average works well on a calm pad. A future improvement would be a trimmed mean — discarding the top and bottom few samples — to handle sensor noise spikes at power-on.\n\n\n2. Launch detection\nRather than checking a single axis, launch is detected from the vector magnitude across all three accelerometer axes. This makes detection robust regardless of how the sled is oriented in the airframe.\nfloat g = sqrt(event.acceleration.x * event.acceleration.x +\n               event.acceleration.y * event.acceleration.y +\n               event.acceleration.z * event.acceleration.z) / 9.80665;\n\nif (!inFlight && g &gt; launchThresholdG) {\n  inFlight = true;\n  launchTime = now;\n}\n\n\n3. Apogee detection\nApogee is detected purely from barometric altitude — no additional sensors needed. The firmware tracks the running maximum altitude and flags descent the moment altitude stops climbing.\nif (altitudeFt &gt; maxAltitudeFt) {\n  maxAltitudeFt = altitudeFt;\n  descending = false;  // still ascending\n} else {\n  descending = true;   // apogee passed\n}\nif (g &gt; peakG) peakG = g;  // update peak G\nEach 1 Hz telemetry packet bundles all of this into a compact string — current altitude, max altitude, live G, peak G, temperature, battery voltage, and flight state — and waits up to 300 ms for an ACK from the ground station before continuing."
-  },
-  {
-    "objectID": "projects/lora-radiorocket.html#build-photos",
-    "href": "projects/lora-radiorocket.html#build-photos",
-    "title": "LoRa RadioRocket",
-    "section": "Build Photos",
-    "text": "Build Photos\n\n\n\n\n\n\nTX sled — Feather M0 + BMP390 + ADXL375 in 3D-printed bracket\n\n\n\n\n\n\n\nElectronics bay\n\n\n\n\n\n\n\n\n\nPiercerMini — Radio Rocket Edition\n\n\n\n\n\n\n\nGround station interior — Feather M0 + RTL-SDR + DC converter\n\n\n\n\n\n\n\n\n\n\n\nGround station rear panel — ethernet, USB, and power connectors\n\n\n\n\n\n\n\nSCE to AUX — the front panel switch is a replica of the Apollo 12 Emergency Detection System switch. On November 14, 1969, a lightning strike knocked out telemetry 36 seconds after launch. Flight controller John Aaron recognized the signature and called SCE to AUX. Alan Bean found the switch on panel 8 and flipped it, restoring all telemetry and saving the mission. It felt like the right switch for a rocket telemetry ground station.\n\n\n\n\n\n\n\n\n\n\n\nAt the range — ground station connected to laptop, PiercerMini on the table"
-  },
-  {
-    "objectID": "projects/lora-radiorocket.html#status",
-    "href": "projects/lora-radiorocket.html#status",
-    "title": "LoRa RadioRocket",
-    "section": "Status",
-    "text": "Status\n✅ Flight tested — telemetry received successfully on first flight.\n🔧 High-power deployment in progress — Apogee Zephyr nose cone e-bay built, NAR Level 1 certified."
-  },
-  {
-    "objectID": "projects/lora-radiorocket.html#links",
-    "href": "projects/lora-radiorocket.html#links",
-    "title": "LoRa RadioRocket",
-    "section": "Links",
-    "text": "Links\n\nGitHub Repository\nTX Firmware\nRX Firmware"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Francisco Velez",
-    "section": "",
-    "text": "I’m a clinical informaticist working at the intersection of clinical research, data science, and primary data collection. My work focuses on building systems, workflows, and data platforms that support researchers across a wide range of scientific and operational needs. I’m currently expanding my scope into marine science, GIS, remote sensing, full-stack software development, and hardware engineering. Outside of work, I apply the same data and engineering mindset to cycling analytics, high-power rocketry, ham radio, Arduino-based systems, and embedded telemetry projects."
-  },
-  {
-    "objectID": "index.html#welcome",
-    "href": "index.html#welcome",
-    "title": "Francisco Velez",
-    "section": "",
-    "text": "I’m a clinical informaticist working at the intersection of clinical research, data science, and primary data collection. My work focuses on building systems, workflows, and data platforms that support researchers across a wide range of scientific and operational needs. I’m currently expanding my scope into marine science, GIS, remote sensing, full-stack software development, and hardware engineering. Outside of work, I apply the same data and engineering mindset to cycling analytics, high-power rocketry, ham radio, Arduino-based systems, and embedded telemetry projects."
-  },
-  {
-    "objectID": "index.html#research-interests",
-    "href": "index.html#research-interests",
-    "title": "Francisco Velez",
-    "section": "Research Interests",
-    "text": "Research Interests\n\nCoral reef monitoring and benthic habitat mapping\nStructure-from-Motion photogrammetry for marine applications\nGeospatial data visualization and analysis\nIoT and radio telemetry systems"
-  },
-  {
-    "objectID": "index.html#recent-projects",
-    "href": "index.html#recent-projects",
-    "title": "Francisco Velez",
-    "section": "Recent Projects",
-    "text": "Recent Projects\nCheck out my Projects page for a full overview of my work."
+    "text": "2026 Super El Niño Watch: Live Thermal Stress Monitoring\n\n\n\nMarine Science\n\nRemote Sensing\n\nEnvironmental Data Science\n\nPython\n\nLive Monitoring\n\nEl Niño\n\n\n\nLive thermal stress monitoring across seven reef sites during the 2026 Super El Niño period, using NOAA Coral Reef Watch DHW data. Updated daily via GitHub Actions cron at…\n\n\n\nAug 8, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nLoRa RadioRocket — Flight Archive\n\n\n\ntelemetry\n\nLoRa\n\nrocketry\n\ndata viz\n\n\n\nEvery record the Apogee LoRa ground station logs — link quality, packet loss, and full altitude/RSSI/G-force traces straight from the flight logs. The genesis entry is a…\n\n\n\nJul 8, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nA provenance layer for coral-reef Structure-from-Motion\n\n\n\nMarine Science\n\nPhotogrammetry\n\nStructure-from-Motion\n\nData Provenance\n\nReproducibility\n\n\n\n\n\n\n\nJun 22, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nToward a Multi-Factor Coral Bleaching Risk Score\n\n\n\nMarine Science\n\nEnvironmental Data Science\n\nR\n\nPython\n\nReef Conservation\n\n\n\nA design document for a regression-based, multi-factor coral bleaching risk score — integrating thermal stress, light, turbidity, ocean acidification, and bleaching…\n\n\n\nMay 16, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nExploring Coral Bleaching Risk Using NOAA Coral Reef Watch DHW Data\n\n\n\nMarine Science\n\nRemote Sensing\n\nEnvironmental Data Science\n\nPython\n\nReproducible Research\n\n\n\nA reproducible analysis of satellite-derived thermal stress metrics across five reef systems, using NOAA Coral Reef Watch Degree Heating Weeks (DHW) data.\n\n\n\nMay 12, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\n2016 Subaru Outback Stereo Build\n\n\n\nhardware\n\naudio\n\ncar-audio\n\nSubaru\n\nDIY\n\ndocumentation\n\n\n\nA technical writeup and reference guide for upgrading the factory Harman Kardon audio system in a 2016 Subaru Outback, including head unit replacement, amplifier…\n\n\n\nMay 7, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nLoRa RadioRocket\n\n\n\nIoT\n\ntelemetry\n\nLoRa\n\nhardware\n\namateur radio\n\nArduino\n\n\n\nReal-time LoRa telemetry for mid- and high-power rocketry: 1 Hz altitude, acceleration, and flight state streamed live to a ground station over 434 MHz. NAR Level 1…\n\n\n\nMay 9, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nFreezingSaddles\n\n\n\ncycling\n\nanalytics\n\nvisualization\n\npython\n\n\n\nAnalytics and visualization for a winter cycling challenge tracking mileage, leaderboards, and participation across teams.\n\n\n\nMay 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nBenthic Habitat Mapping\n\n\n\nGIS\n\nmarine science\n\nmapping\n\nremote sensing\n\nData Provenance\n\nReproducibility\n\n\n\nThe complement to the reef-SfM geometry work: automated benthic-cover classification on reef orthomosaics, wrapped in a validation and reconciliation harness that scores…\n\n\n\nMar 1, 2025\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/reef-sfm-mote-keys.html",
@@ -406,6 +112,132 @@
     "text": "About this project\nThis project is part of a portfolio in marine environmental data science, built to demonstrate reproducible analysis workflows applied to real-world reef conservation data. The full code, test suite, decision records, and environment specification are available on GitHub.\n\n\n\n\n\n\nTipReproducibility\n\n\n\nAll figures are static outputs committed to the repository — generated from DSMs and a pre-firewalled reconciliation report, reproducible from a fresh clone of the source repo. The provenance package includes a capture_audit module that verifies the completeness of every quality gate’s recorded evidence.\n\n\nView source repo USGS imagery release (P1WHKTRD) Archived v1.0 — Zenodo"
   },
   {
+    "objectID": "projects/bleaching-risk-notebook.html",
+    "href": "projects/bleaching-risk-notebook.html",
+    "title": "Exploring Coral Bleaching Risk Using NOAA Coral Reef Watch DHW Data",
+    "section": "",
+    "text": "When I started looking for a dataset to anchor this first marine science project, I had a simple question: what data actually gets used by the people trying to protect coral reefs in the real world? That question led me directly to NOAA’s Coral Reef Watch (CRW) program and their Degree Heating Weeks (DHW) product — and then to the paper that describes exactly how it’s built: Skirving et al. (2020), CoralTemp and the Coral Reef Watch Coral Bleaching Heat Stress Product Suite Version 3.1 (Skirving et al. 2020).\nReading that paper changed how I thought about this project.\n\n\n\n\n\n\nData source: NOAA Coral Reef Watch Version 3.1 Daily 5km Satellite Coral Bleaching Heat Stress Product Suite. Updated daily. coralreefwatch.noaa.gov\n\n\n\n\n\nMy first instinct was to pull raw SST data — it’s widely available from multiple sources including NOAA OISST, NASA MODIS, and the Copernicus Marine Service. But raw SST alone doesn’t tell you whether a coral is stressed. A reading of 29°C means something very different on the Great Barrier Reef versus Bonaire. What matters isn’t the absolute temperature — it’s how that temperature compares to what the corals at that location have adapted to over their lifetimes.\nThat realization pushed me toward NOAA CRW’s derived product suite, where that comparison is already built in — and rigorously validated against decades of field bleaching observations worldwide.\n\n\n\nThe entire CRW product suite rests on a climatological baseline: a set of long-term average SST values for every location on Earth, for every month of the year. This is not a trivial thing to build correctly. As Skirving et al. (2020) describe, CRW spent years grappling with a fundamental problem — the satellite SST data used to build the climatology came from different sensors and processing pipelines than the near-real-time data used to calculate the anomalies. That mismatch introduced systematic biases, particularly at the high temperatures most relevant to bleaching.\nThe development of CoralTemp — a single, continuous daily SST record spanning 1985 to the present, built by carefully blending three different satellite products — was specifically designed to solve this problem. For the first time, CRW could compute the climatology and the daily anomalies from the same underlying dataset. The Monthly Mean (MM) climatology was derived from this record across 1985–2012, and the Maximum Monthly Mean (MMM) — the warmest month at each location — became the critical threshold from which the HotSpot and DHW products are derived.\nI want to be transparent about why this matters for this project: I am not independently validating the baseline. I am trusting that NOAA CRW’s 25-year investment in getting this right is sound — which is supported by the peer-reviewed literature and by the fact that these products are the global standard used by reef managers worldwide. But understanding that the baseline exists, how it was constructed, and what its assumptions are is essential context for interpreting everything downstream. The DHW values we analyze are only as meaningful as the MMM they’re derived from.\n\n\n\nOne more thing worth acknowledging upfront: the Virtual Station data used in this analysis represents a single 5×5 km satellite pixel per reef location. Real reef systems are far more heterogeneous than that. Temperatures vary with depth, local current patterns, reef orientation, and bathymetry — a coral colony in a deep channel experiences very different conditions than one on a shallow exposed crest, even within the same reef system.\nThis means the DHW values we analyze are best understood as a reef-wide surface thermal stress index — a strong and validated predictor of bleaching risk at the population level, but not a precise measurement of conditions at any specific location. This is the same limitation the entire global reef monitoring community works with, and it doesn’t undermine the analysis. It just means we should be careful about over-interpreting site-level differences that might reflect local thermal refugia or exposure patterns rather than true differences in bleaching pressure.\nWith those caveats clearly on the table, here is what this project actually does."
+  },
+  {
+    "objectID": "projects/bleaching-risk-notebook.html#overview",
+    "href": "projects/bleaching-risk-notebook.html#overview",
+    "title": "Exploring Coral Bleaching Risk Using NOAA Coral Reef Watch DHW Data",
+    "section": "",
+    "text": "When I started looking for a dataset to anchor this first marine science project, I had a simple question: what data actually gets used by the people trying to protect coral reefs in the real world? That question led me directly to NOAA’s Coral Reef Watch (CRW) program and their Degree Heating Weeks (DHW) product — and then to the paper that describes exactly how it’s built: Skirving et al. (2020), CoralTemp and the Coral Reef Watch Coral Bleaching Heat Stress Product Suite Version 3.1 (Skirving et al. 2020).\nReading that paper changed how I thought about this project.\n\n\n\n\n\n\nData source: NOAA Coral Reef Watch Version 3.1 Daily 5km Satellite Coral Bleaching Heat Stress Product Suite. Updated daily. coralreefwatch.noaa.gov\n\n\n\n\n\nMy first instinct was to pull raw SST data — it’s widely available from multiple sources including NOAA OISST, NASA MODIS, and the Copernicus Marine Service. But raw SST alone doesn’t tell you whether a coral is stressed. A reading of 29°C means something very different on the Great Barrier Reef versus Bonaire. What matters isn’t the absolute temperature — it’s how that temperature compares to what the corals at that location have adapted to over their lifetimes.\nThat realization pushed me toward NOAA CRW’s derived product suite, where that comparison is already built in — and rigorously validated against decades of field bleaching observations worldwide.\n\n\n\nThe entire CRW product suite rests on a climatological baseline: a set of long-term average SST values for every location on Earth, for every month of the year. This is not a trivial thing to build correctly. As Skirving et al. (2020) describe, CRW spent years grappling with a fundamental problem — the satellite SST data used to build the climatology came from different sensors and processing pipelines than the near-real-time data used to calculate the anomalies. That mismatch introduced systematic biases, particularly at the high temperatures most relevant to bleaching.\nThe development of CoralTemp — a single, continuous daily SST record spanning 1985 to the present, built by carefully blending three different satellite products — was specifically designed to solve this problem. For the first time, CRW could compute the climatology and the daily anomalies from the same underlying dataset. The Monthly Mean (MM) climatology was derived from this record across 1985–2012, and the Maximum Monthly Mean (MMM) — the warmest month at each location — became the critical threshold from which the HotSpot and DHW products are derived.\nI want to be transparent about why this matters for this project: I am not independently validating the baseline. I am trusting that NOAA CRW’s 25-year investment in getting this right is sound — which is supported by the peer-reviewed literature and by the fact that these products are the global standard used by reef managers worldwide. But understanding that the baseline exists, how it was constructed, and what its assumptions are is essential context for interpreting everything downstream. The DHW values we analyze are only as meaningful as the MMM they’re derived from.\n\n\n\nOne more thing worth acknowledging upfront: the Virtual Station data used in this analysis represents a single 5×5 km satellite pixel per reef location. Real reef systems are far more heterogeneous than that. Temperatures vary with depth, local current patterns, reef orientation, and bathymetry — a coral colony in a deep channel experiences very different conditions than one on a shallow exposed crest, even within the same reef system.\nThis means the DHW values we analyze are best understood as a reef-wide surface thermal stress index — a strong and validated predictor of bleaching risk at the population level, but not a precise measurement of conditions at any specific location. This is the same limitation the entire global reef monitoring community works with, and it doesn’t undermine the analysis. It just means we should be careful about over-interpreting site-level differences that might reflect local thermal refugia or exposure patterns rather than true differences in bleaching pressure.\nWith those caveats clearly on the table, here is what this project actually does."
+  },
+  {
+    "objectID": "projects/bleaching-risk-notebook.html#why-this-work-matters-to-me",
+    "href": "projects/bleaching-risk-notebook.html#why-this-work-matters-to-me",
+    "title": "Exploring Coral Bleaching Risk Using NOAA Coral Reef Watch DHW Data",
+    "section": "Why This Work Matters to Me",
+    "text": "Why This Work Matters to Me\nThe spikes in the DHW charts are not abstract. Each one represents a mass bleaching event — weeks of accumulated heat stress that caused corals to expel the symbiotic algae that give them both their color and their ability to survive. Some recovered. Many did not.\nThe 2023 spike on the Florida Keys chart stopped me the first time I saw it in person on a dive. That summer, sea surface temperatures off the Keys reached levels never recorded in the satellite era — DHW values pushing well past the Alert Level 2 threshold where mortality becomes likely. I did not feel unsettled. I felt implicated. Like I was watching something irreplaceable disappear and I was not doing my share to stop it.\nWe named this planet wrong. It is not Earth. It is Ocean. The ocean covers 71% of the surface, produces more than half the oxygen we breathe, and absorbs the heat that our atmosphere can no longer contain. Coral reefs are less than 1% of the ocean floor and support roughly 25% of all marine species. They are disproportionately vital and disproportionately vulnerable — and they are bleaching at a pace that the satellite record has never seen before.\nThat feeling of personal responsibility is what brought me here.\nI have spent my career in biomedical and clinical research informatics — building data pipelines, managing research data governance, working with complex health datasets in high-stakes environments. The technical skills transfer. What I am building now is the domain knowledge and the credibility to point those skills at a different set of urgent problems. The ocean is not separate from human health. It is the precondition for it.\nThe monitoring infrastructure that NOAA CRW has built — the same data we are working with in this notebook — exists because early warning matters. A reef manager who knows a bleaching event is coming two weeks in advance can act. That connection between data, prediction, and real-world response is something I understand from clinical informatics. I want to bring it here. I want my work to matter outside the walls of a hospital system.\nThis project is a first step. The code is simple, the dataset is publicly available, and the science belongs to the researchers at NOAA CRW and the marine biologists doing fieldwork on these reefs. But the ability to work with this data rigorously, document it honestly, and communicate it clearly — that is something I can contribute. And I intend to keep going."
+  },
+  {
+    "objectID": "projects/bleaching-risk-notebook.html#study-sites",
+    "href": "projects/bleaching-risk-notebook.html#study-sites",
+    "title": "Exploring Coral Bleaching Risk Using NOAA Coral Reef Watch DHW Data",
+    "section": "Study Sites",
+    "text": "Study Sites\nFive reef systems spanning two ocean basins were selected to compare thermal stress patterns across different geographic and ecological contexts:\n\n\n\n\n\n\n\n\n\nSite\nNOAA CRW Station\nOcean\nNotes\n\n\n\n\nFlorida Keys, USA\nflorida_keys\nCaribbean/Atlantic\nRecord-breaking bleaching 2023\n\n\nCayman Islands\ncayman_islands\nCaribbean\nCovers all three Cayman Islands\n\n\nHonduras (Bay Islands)\nhonduras\nCaribbean\nCovers Bay Islands including Roatán\n\n\nABC Islands (Bonaire)\nabc_islands\nCaribbean\nAruba, Curaçao, and Bonaire\n\n\nGBR Central\ngbr_central\nIndo-Pacific\nCentral sector; 2016 and 2022 mass bleaching\n\n\n\nThese sites were chosen to represent geographic diversity across two ocean basins, a range of documented bleaching histories, and contrasting thermal stress profiles. Station IDs were verified directly against the live NOAA CRW Virtual Station list at coralreefwatch.noaa.gov/product/vs/data.php before any data was fetched.\n\n\n\n\n\n\nA note on the GBR: Unlike the Caribbean sites, the Great Barrier Reef has no single regional station — it is simply too large. NOAA splits it into five sectors: Torres Strait, Far Northern, Northern, Central, and Southern. We selected GBR Central, which covers the Whitsundays and Townsville region. My awareness of the 2016 bleaching event in this sector came initially from watching Jeff Orlowski’s documentary Chasing Coral — and I later found that the same event was the subject of Hughes et al. (2017) in Nature. The documentary and the peer-reviewed literature were pointing at the same place."
+  },
+  {
+    "objectID": "projects/bleaching-risk-notebook.html#science-background",
+    "href": "projects/bleaching-risk-notebook.html#science-background",
+    "title": "Exploring Coral Bleaching Risk Using NOAA Coral Reef Watch DHW Data",
+    "section": "Science Background",
+    "text": "Science Background\n\nSea Surface Temperature Anomaly\nEvery ocean location has a long-term average temperature for each time of year, derived from decades of satellite records. The SST anomaly measures the departure of today’s temperature from that historical average:\n\\[\\text{SST Anomaly} = \\text{SST} - \\text{Daily SST Climatology}\\]\nA positive anomaly means the ocean is warmer than usual for that season. This metric provides broad context for ocean warming but is not on its own a reliable predictor of coral bleaching, because corals in different locations are adapted to different baseline temperatures.\n\n\nCoral Bleaching HotSpot\nThe HotSpot product is calibrated specifically to coral biology. It measures how far the current temperature exceeds the warmest month that corals at that location have historically experienced — a threshold called the Maximum Monthly Mean (MMM):\n\\[\\text{HotSpot} = \\text{SST} - \\text{MMM SST Climatology}, \\quad \\text{HotSpot} \\geq 0\\]\nA HotSpot ≥ 1°C indicates active thermal stress. The MMM baseline varies by location, so this metric captures relative stress rather than absolute temperature — making it comparable across sites with very different ambient ocean temperatures (Skirving et al. 2020).\n\n\nDegree Heating Weeks (DHW)\nA single warm day can stress corals, but corals are resilient to brief exposures. What causes bleaching is sustained thermal stress accumulating over weeks. Degree Heating Weeks integrate the HotSpot values (when ≥ 1°C) over a moving 12-week window:\n\\[\\text{DHW} = \\frac{\\sum_{d=0}^{83} \\max(\\text{HotSpot}_d - 0, 0) \\cdot \\mathbf{1}[\\text{HotSpot}_d \\geq 1]}{7}\\]\nUnits are °C-weeks. Think of DHW as a “heat debt” that builds up as hot conditions persist — analogous to the accumulated dose concept in clinical pharmacology or radiation biology.\nTwo key thresholds, established through satellite monitoring and field validation (Liu et al. 2013):\n\n\n\n\n\n\n\n\nDHW Value\nAlert Level\nBiological Expectation\n\n\n\n\n&lt; 4 °C-weeks\nWatch / Warning\nThermal stress present; monitoring needed\n\n\n≥ 4 °C-weeks\nAlert Level 1\nBleaching likely\n\n\n≥ 8 °C-weeks\nAlert Level 2\nSevere bleaching; significant mortality likely"
+  },
+  {
+    "objectID": "projects/bleaching-risk-notebook.html#data-methods",
+    "href": "projects/bleaching-risk-notebook.html#data-methods",
+    "title": "Exploring Coral Bleaching Risk Using NOAA Coral Reef Watch DHW Data",
+    "section": "Data & Methods",
+    "text": "Data & Methods\n\nData Acquisition\nData were fetched programmatically from the NOAA CRW Virtual Station feed using verified station IDs. The fetch URL pattern is:\nhttps://coralreefwatch.noaa.gov/product/vs/data/{station_id}.txt\nEach file opens with an unstructured metadata header containing station-level information — including the Averaged Maximum Monthly Mean (MMM) temperature, which we extract programmatically and carry through the analysis as the location-specific bleaching threshold baseline.\n\n\n\n\n\n\nA note on the file format: The NOAA CRW Virtual Station files are not simple CSVs. The header uses plain text labels rather than # comment markers, the date is split across three columns (YYYY, MM, DD), and the column names reflect the updated v3.1 product suite. We inspected the raw file before writing the parser rather than assuming a format — a step worth documenting for anyone reproducing this analysis.\n\n\n\nData are cached locally after first retrieval. To force a fresh download, set force_refresh=True in the fetch call.\n\n\nAnalysis Pipeline\n\nFetch — live HTTP request to CRW Virtual Station feed per site\nCache — store raw .txt files in data/raw/\nParse — extract MMM from header, build date column, rename columns\nVisualize — DHW time series, alert level distributions, annual peak heatmap\nInterpret — narrative analysis of key bleaching events"
+  },
+  {
+    "objectID": "projects/bleaching-risk-notebook.html#results",
+    "href": "projects/bleaching-risk-notebook.html#results",
+    "title": "Exploring Coral Bleaching Risk Using NOAA Coral Reef Watch DHW Data",
+    "section": "Results",
+    "text": "Results\n\n\nSetup: imports, directories, thresholds\nimport pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport requests\nimport os\nfrom io import StringIO\n\n# Paths relative to projects/ directory where this .qmd lives\nCACHE_DIR = \"data/raw\"\nFIG_DIR   = \"figures\"\nos.makedirs(CACHE_DIR, exist_ok=True)\nos.makedirs(FIG_DIR,   exist_ok=True)\n\n# Bleaching thresholds (Skirving et al. 2020, Liu et al. 2013)\nDHW_WARNING = 4   # Alert Level 1: Bleaching Likely\nDHW_SEVERE  = 8   # Alert Level 2: Mortality Likely\n\n\n\n\nStudy site definitions and verified NOAA CRW station IDs\nSITES = {\n    \"Florida Keys\": {\n        \"station_id\": \"florida_keys\",\n        \"lat\": 24.55,\n        \"lon\": -81.50,\n        \"ocean\": \"Caribbean/Atlantic\",\n    },\n    \"Cayman Islands\": {\n        \"station_id\": \"cayman_islands\",\n        \"lat\": 19.30,\n        \"lon\": -81.38,\n        \"ocean\": \"Caribbean\",\n    },\n    \"Honduras (Bay Islands)\": {\n        \"station_id\": \"honduras\",\n        \"lat\": 16.32,\n        \"lon\": -86.55,\n        \"ocean\": \"Caribbean\",\n    },\n    \"ABC Islands (Bonaire)\": {\n        \"station_id\": \"abc_islands\",\n        \"lat\": 12.15,\n        \"lon\": -68.28,\n        \"ocean\": \"Caribbean\",\n    },\n    \"GBR Central\": {\n        \"station_id\": \"gbr_central\",\n        \"lat\": -18.00,\n        \"lon\": 147.00,\n        \"ocean\": \"Indo-Pacific\",\n    },\n}\n\nfor name, cfg in SITES.items():\n    print(f\"✓ {name:30} | station: {cfg['station_id']}\")\n\n\n✓ Florida Keys                   | station: florida_keys\n✓ Cayman Islands                 | station: cayman_islands\n✓ Honduras (Bay Islands)         | station: honduras\n✓ ABC Islands (Bonaire)          | station: abc_islands\n✓ GBR Central                    | station: gbr_central\n\n\n\n\nFetch and parse NOAA CRW Virtual Station data\nCRW_BASE_URL = \"https://coralreefwatch.noaa.gov/product/vs/data/{station_id}.txt\"\n\ndef parse_crw_header(lines):\n    \"\"\"Extract metadata from the CRW file header block.\"\"\"\n    meta = {}\n    for i, line in enumerate(lines):\n        line_stripped = line.strip()\n        if line_stripped == \"Averaged Maximum Monthly Mean:\":\n            meta[\"mmm\"] = float(lines[i + 1].strip())\n        if line_stripped == \"Name:\":\n            meta[\"name\"] = lines[i + 1].strip()\n        if line_stripped.startswith(\"YYYY MM DD\"):\n            meta[\"data_start_line\"] = i\n            break\n    return meta\n\ndef fetch_crw_station(site_name, station_id, force_refresh=False):\n    cache_path = os.path.join(CACHE_DIR, f\"{station_id}.txt\")\n\n    if not force_refresh and os.path.exists(cache_path):\n        print(f\"  ✓ Loaded from cache: {site_name}\")\n        with open(cache_path, \"r\") as f:\n            raw_lines = f.readlines()\n    else:\n        url = CRW_BASE_URL.format(station_id=station_id)\n        print(f\"  ↓ Fetching live: {site_name}\")\n        resp = requests.get(url, timeout=30)\n        resp.raise_for_status()\n        raw_lines = resp.text.splitlines(keepends=True)\n        with open(cache_path, \"w\") as f:\n            f.writelines(raw_lines)\n\n    meta = parse_crw_header(raw_lines)\n    data_start = meta[\"data_start_line\"]\n\n    data_text = \"\".join(raw_lines[data_start:])\n    df = pd.read_csv(\n        StringIO(data_text),\n        sep=r\"\\s+\",\n        na_values=[\"-999\", \"-9999\", \"-99.0000\"],\n    )\n\n    df[\"date\"] = pd.to_datetime(\n        df[\"YYYY\"].astype(str) + \"-\" +\n        df[\"MM\"].astype(str).str.zfill(2) + \"-\" +\n        df[\"DD\"].astype(str).str.zfill(2)\n    )\n\n    df.rename(columns={\n        \"SST@90th_HS\":        \"sst\",\n        \"SSTA@90th_HS\":       \"sst_anomaly\",\n        \"90th_HS&gt;0\":          \"hotspot\",\n        \"DHW_from_90th_HS&gt;1\": \"dhw\",\n        \"BAA_7day_max\":       \"alert\",\n    }, inplace=True)\n\n    df[\"site\"] = site_name\n    df[\"mmm\"]  = meta.get(\"mmm\", None)\n\n    keep = [\"date\", \"sst\", \"sst_anomaly\", \"hotspot\", \"dhw\", \"alert\", \"site\", \"mmm\"]\n    df = df[[c for c in keep if c in df.columns]]\n    df.sort_values(\"date\", inplace=True)\n    df.reset_index(drop=True, inplace=True)\n\n    print(f\"    ✓ {len(df):,} rows | \"\n          f\"{df['date'].min().date()} → {df['date'].max().date()} | \"\n          f\"MMM: {meta.get('mmm')}°C\")\n    return df\n\n\nprint(\"Fetching NOAA CRW Virtual Station data...\\n\")\nall_data = {}\nfor site_name, cfg in SITES.items():\n    df = fetch_crw_station(site_name, cfg[\"station_id\"])\n    all_data[site_name] = df\n\nprint(f\"\\n✓ Done. {len(all_data)} sites loaded.\")\n\n\nFetching NOAA CRW Virtual Station data...\n\n  ✓ Loaded from cache: Florida Keys\n    ✓ 15,105 rows | 1985-01-01 → 2026-05-10 | MMM: 29.6264°C\n  ✓ Loaded from cache: Cayman Islands\n    ✓ 15,105 rows | 1985-01-01 → 2026-05-10 | MMM: 29.3925°C\n  ✓ Loaded from cache: Honduras (Bay Islands)\n    ✓ 15,105 rows | 1985-01-01 → 2026-05-10 | MMM: 28.87°C\n  ✓ Loaded from cache: ABC Islands (Bonaire)\n    ✓ 15,105 rows | 1985-01-01 → 2026-05-10 | MMM: 28.0193°C\n  ✓ Loaded from cache: GBR Central\n    ✓ 15,105 rows | 1985-01-01 → 2026-05-10 | MMM: 28.3422°C\n\n✓ Done. 5 sites loaded.\n\n\n\nMMM Baseline Values\nThe MMM values extracted from the file headers reveal the location-specific thermal baselines — before a single chart is plotted:\n\n\nMMM baseline values per site\nmmm_rows = [\n    {\"Site\": name, \"MMM (°C)\": df[\"mmm\"].iloc[0]}\n    for name, df in all_data.items()\n]\nmmm_df = pd.DataFrame(mmm_rows).sort_values(\"MMM (°C)\", ascending=False)\nmmm_df[\"MMM (°C)\"] = mmm_df[\"MMM (°C)\"].map(\"{:.2f}\".format)\nprint(mmm_df.to_string(index=False))\n\n\n                  Site MMM (°C)\n          Florida Keys    29.63\n        Cayman Islands    29.39\nHonduras (Bay Islands)    28.87\n           GBR Central    28.34\n ABC Islands (Bonaire)    28.02\n\n\nThis is the MMM doing exactly what Skirving et al. (2020) described — capturing location-specific thermal tolerance rather than absolute temperature. A raw SST reading of 29°C represents no stress at all in the Florida Keys, but would already be pushing past the bleaching threshold on the GBR.\n\n\nDHW Time Series\nThe figure below shows Degree Heating Week time series for all five reef sites from 2000 to present. Horizontal dashed lines mark the Alert Level 1 (4 °C-weeks) and Alert Level 2 (8 °C-weeks) thresholds. Each panel also shows the site’s MMM baseline temperature.\n\n\nDHW time series — all five sites\nfig, axes = plt.subplots(\n    nrows=len(all_data), ncols=1,\n    figsize=(14, 3.2 * len(all_data)),\n    sharex=False\n)\n\ncolors = [\"#0077b6\", \"#00b4d8\", \"#48cae4\", \"#90e0ef\", \"#e07a5f\"]\n\nfor ax, (site, df), color in zip(axes, all_data.items(), colors):\n    mask = df[\"date\"] &gt;= \"2000-01-01\"\n    plot_df = df[mask].copy()\n\n    ax.fill_between(plot_df[\"date\"], plot_df[\"dhw\"],\n                    alpha=0.25, color=color)\n    ax.plot(plot_df[\"date\"], plot_df[\"dhw\"],\n            color=color, lw=1.0, label=\"DHW\")\n\n    ax.axhline(DHW_WARNING, color=\"#f4a261\", ls=\"--\", lw=1.2,\n               label=f\"Alert L1 ({DHW_WARNING} °C-wks)\")\n    ax.axhline(DHW_SEVERE, color=\"#e63946\", ls=\"--\", lw=1.2,\n               label=f\"Alert L2 ({DHW_SEVERE} °C-wks)\")\n\n    ax.set_title(\n        f\"{site}  |  MMM: {df['mmm'].iloc[0]:.2f}°C\",\n        fontsize=11, fontweight=\"bold\", loc=\"left\"\n    )\n    ax.set_ylabel(\"DHW (°C-weeks)\", fontsize=9)\n    ax.set_ylim(bottom=0)\n    ax.legend(fontsize=7, loc=\"upper left\", framealpha=0.7)\n    ax.grid(axis=\"y\", alpha=0.25)\n    ax.spines[[\"top\", \"right\"]].set_visible(False)\n\naxes[-1].set_xlabel(\"Date\", fontsize=10)\nfig.suptitle(\n    \"NOAA CRW Degree Heating Weeks by Reef Site (2000–present)\\n\"\n    \"Data: NOAA Coral Reef Watch Version 3.1\",\n    fontsize=13, fontweight=\"bold\", y=1.01\n)\nplt.tight_layout()\nplt.savefig(os.path.join(FIG_DIR, \"dhw_timeseries_all_sites.png\"),\n            dpi=150, bbox_inches=\"tight\")\nplt.show()\n\n\n\n\n\n\n\n\nFigure 1: DHW time series for all five reef sites (2000–present). Dashed lines mark bleaching alert thresholds. MMM values shown in panel titles. Data: NOAA CRW Version 3.1.\n\n\n\n\n\nKey observations:\n\nFlorida Keys — the 2023 spike dwarfs everything before it in the satellite record, consistent with the unprecedented marine heat wave that summer.\nGBR Central — the 2016 and 2022 events are clearly visible; the lower MMM baseline means bleaching stress kicks in at a lower absolute temperature.\nABC Islands (Bonaire) — spikes are consistently lower than the other Caribbean sites, consistent with its reputation for relatively robust reef health.\nAll Caribbean sites — show a clear pattern of increasing frequency and magnitude of DHW exceedances from 2015 onward."
+  },
+  {
+    "objectID": "projects/bleaching-risk-notebook.html#interpretation-limitations",
+    "href": "projects/bleaching-risk-notebook.html#interpretation-limitations",
+    "title": "Exploring Coral Bleaching Risk Using NOAA Coral Reef Watch DHW Data",
+    "section": "Interpretation & Limitations",
+    "text": "Interpretation & Limitations\n\nWhat this analysis shows\nThis analysis demonstrates the utility of satellite thermal monitoring for tracking bleaching risk across geographically distributed reef systems. The DHW metric — developed and validated by NOAA CRW scientists over more than 20 years — provides a biologically grounded, globally consistent index of accumulated thermal stress that has been correlated with field observations of bleaching onset and severity.\n\n\nLimitations to note\n\nPoint data: CRW Virtual Station data represent a single 5×5 km pixel per site. Actual reef conditions vary at finer spatial scales due to bathymetry, currents, and local upwelling.\nNo in situ validation: This analysis does not include field bleaching surveys or coral cover data. DHW is a risk indicator, not a direct measurement of bleaching.\nAlert thresholds are global: The 4 and 8 °C-week thresholds are population- level averages. Some coral communities may have higher or lower thermal tolerance.\nGBR representation: The gbr_central station represents one of five GBR sectors. Thermal stress patterns vary considerably across the reef’s 2,300 km length."
+  },
+  {
+    "objectID": "projects/bleaching-risk-notebook.html#future-directions",
+    "href": "projects/bleaching-risk-notebook.html#future-directions",
+    "title": "Exploring Coral Bleaching Risk Using NOAA Coral Reef Watch DHW Data",
+    "section": "Future Directions",
+    "text": "Future Directions\nThis MVP analysis establishes the data pipeline and visualization framework. Planned extensions include:\n\nAll five GBR sectors — compare Torres Strait, Far Northern, Northern, Central, and Southern to examine latitudinal bleaching gradients\nSpatial raster analysis — process global CRW NetCDF files via ERDDAP to produce regional DHW maps\nBleaching observation integration — overlay NOAA CoRIS or Reef Check field survey data to validate satellite signals against in-water observations\nENSO correlation — correlate DHW peaks with Niño 3.4 SST anomaly index\nTrend analysis — fit linear trend models to annual peak DHW to quantify warming trajectories at each site"
+  },
+  {
+    "objectID": "projects/bleaching-risk-notebook.html#technical-details",
+    "href": "projects/bleaching-risk-notebook.html#technical-details",
+    "title": "Exploring Coral Bleaching Risk Using NOAA Coral Reef Watch DHW Data",
+    "section": "Technical Details",
+    "text": "Technical Details\n\n\n\nItem\nDetail\n\n\n\n\nLanguage\nPython 3.11\n\n\nEnvironment\nuv / venv\n\n\nKey packages\npandas, numpy, matplotlib, requests\n\n\nData format\nPlain text (NOAA CRW Virtual Station .txt)\n\n\nExecution\nQuarto (freeze: true)\n\n\nPortfolio framework\nQuarto\n\n\nVersion control\nGit / GitHub"
+  },
+  {
+    "objectID": "projects/bleaching-risk-notebook.html#references",
+    "href": "projects/bleaching-risk-notebook.html#references",
+    "title": "Exploring Coral Bleaching Risk Using NOAA Coral Reef Watch DHW Data",
+    "section": "References",
+    "text": "References\n\n\nLiu, Gang, Jacqueline L. Rauenzahn, Scott F. Heron, et al. 2013. NOAA Coral Reef Watch 50 Km Satellite Sea Surface Temperature-Based Decision Support System for Coral Bleaching Management. NESDIS 143. NOAA/NESDIS.\n\n\nSkirving, William, Benjamin Marsh, Jacqueline De La Cour, et al. 2020. “CoralTemp and the Coral Reef Watch Coral Bleaching Heat Stress Product Suite Version 3.1.” Remote Sensing 12 (23): 3856. https://doi.org/10.3390/rs12233856.\n\n\nData citation:\n\nNOAA Coral Reef Watch (CRW). 2000, updated daily. NOAA Coral Reef Watch Version 3.1 Daily 5km Satellite Coral Bleaching Heat Stress Monitoring Product Suite; CoralTemp and Coral Bleaching Heat Stress. College Park, Maryland, USA: NOAA/NESDIS. Accessed May 2026 at https://coralreefwatch.noaa.gov/"
+  },
+  {
+    "objectID": "projects/bleaching-risk-notebook.html#about-this-project",
+    "href": "projects/bleaching-risk-notebook.html#about-this-project",
+    "title": "Exploring Coral Bleaching Risk Using NOAA Coral Reef Watch DHW Data",
+    "section": "About This Project",
+    "text": "About This Project\nThis project is part of a portfolio in marine environmental data science, developed to demonstrate reproducible analysis workflows applied to real-world reef conservation data. The full code, data pipeline, and environment specification are available on GitHub.\n\n\n\n\n\n\nTipReproducibility\n\n\n\nThis page renders live from embedded Python — data is fetched from NOAA CRW, parsed, and plotted on every render unless frozen. Outputs are frozen and committed to the repository via freeze: true. To re-execute from scratch, delete _freeze/projects/bleaching-risk-notebook/ from the portfolio site repo and re-render. The uv environment is fully specified in the coral-bleaching-dhw repository’s requirements.txt.\n\n\nView source repo NOAA Coral Reef Watch"
+  },
+  {
+    "objectID": "projects/benthic-habitat-map.html",
+    "href": "projects/benthic-habitat-map.html",
+    "title": "Benthic Habitat Mapping",
+    "section": "",
+    "text": "Benthic habitat maps are essential tools for coral reef management and conservation. This project outlines the methods I’m studying for producing high-resolution habitat maps by combining field survey data with remote sensing imagery. The workflow below is based on my research into established approaches in the field. I have not yet produced a habitat map from real data — that is the goal I’m working toward.\nStatus: 🚧 In progress — methods research and learning phase. Map production is planned future work."
+  },
+  {
+    "objectID": "projects/benthic-habitat-map.html#overview",
+    "href": "projects/benthic-habitat-map.html#overview",
+    "title": "Benthic Habitat Mapping",
+    "section": "",
+    "text": "Benthic habitat maps are essential tools for coral reef management and conservation. This project outlines the methods I’m studying for producing high-resolution habitat maps by combining field survey data with remote sensing imagery. The workflow below is based on my research into established approaches in the field. I have not yet produced a habitat map from real data — that is the goal I’m working toward.\nStatus: 🚧 In progress — methods research and learning phase. Map production is planned future work."
+  },
+  {
+    "objectID": "projects/benthic-habitat-map.html#why-benthic-mapping",
+    "href": "projects/benthic-habitat-map.html#why-benthic-mapping",
+    "title": "Benthic Habitat Mapping",
+    "section": "Why Benthic Mapping",
+    "text": "Why Benthic Mapping\nUnderstanding what lives on the seafloor — coral, seagrass, sand, rubble — is foundational to reef conservation and management. High-resolution benthic maps enable habitat change tracking over time, identification of bleaching or damage extent, prioritization of restoration and protection efforts, and integration with water quality and thermal stress data. I want to be able to produce and work with these maps as part of applied marine data science work."
+  },
+  {
+    "objectID": "projects/benthic-habitat-map.html#planned-methods",
+    "href": "projects/benthic-habitat-map.html#planned-methods",
+    "title": "Benthic Habitat Mapping",
+    "section": "Planned Methods",
+    "text": "Planned Methods\n\nData Sources\n\nMultispectral satellite imagery (e.g., Planet, Sentinel-2, WorldView)\nUnderwater photo transects for field validation\nSfM-derived orthomosaics as high-resolution local inputs\n\n\n\nClassification Approach\n\nObject-based image analysis (OBIA) for reef-scale segmentation\nSupervised classification using field validation points\nAccuracy assessment with confusion matrices and kappa statistics\n\n\n\nGIS Processing\n\nCoordinate reference system management and reprojection\nRaster and vector integration\nMap layout and cartographic output in QGIS"
+  },
+  {
+    "objectID": "projects/benthic-habitat-map.html#tools-im-learning",
+    "href": "projects/benthic-habitat-map.html#tools-im-learning",
+    "title": "Benthic Habitat Mapping",
+    "section": "Tools I’m Learning",
+    "text": "Tools I’m Learning\n\nQGIS — primary GIS environment\nPython (rasterio, geopandas, scikit-learn) — raster processing and classification\nGoogle Earth Engine — cloud-scale remote sensing analysis (planned)"
+  },
+  {
+    "objectID": "projects/benthic-habitat-map.html#path-forward",
+    "href": "projects/benthic-habitat-map.html#path-forward",
+    "title": "Benthic Habitat Mapping",
+    "section": "Path Forward",
+    "text": "Path Forward\nMy near-term plan is to work through a classification exercise using a publicly available benthic dataset — likely from NOAA’s National Coral Reef Monitoring Program or the Allen Coral Atlas — to produce a documented, reproducible mapping workflow before applying it to original survey data."
+  },
+  {
     "objectID": "projects/multi-factor-bleaching-risk-score.html",
     "href": "projects/multi-factor-bleaching-risk-score.html",
     "title": "Toward a Multi-Factor Coral Bleaching Risk Score",
@@ -490,6 +322,244 @@
     "text": "References\n\n\nBuuren, S. van, and K. Groothuis-Oudshoorn. 2011. “mice: Multivariate Imputation by Chained Equations in R.” Journal of Statistical Software 45 (3): 1–67. https://doi.org/10.18637/jss.v045.i03.\n\n\nCheung, M. W. M. et al. 2025. “Moving Beyond Temperature Metrics in Coral Bleaching Prediction Using Interpretable Machine Learning.” Global Ecology and Biogeography, ahead of print. https://doi.org/10.1111/geb.70105.\n\n\nDonovan, M. K., D. E. Burkepile, C. Kratochwill, et al. 2021. “Local Conditions Magnify Coral Loss After Marine Heatwaves.” Science 372 (6545): 977–80. https://doi.org/10.1126/science.abd9464.\n\n\nFabricius, K. E., C. Langdon, S. Uthicke, et al. 2014. “Losers and Winners in Coral Reefs Acclimatized to Elevated Carbon Dioxide Concentrations.” Nature Climate Change 1: 165–69. https://doi.org/10.1038/nclimate1122.\n\n\nFerrari, S. L. P., and F. Cribari-Neto. 2004. “Beta Regression for Modelling Rates and Proportions.” Journal of Applied Statistics 31 (7): 799–815. https://doi.org/10.1080/0266476042000214501.\n\n\nGrottoli, A. G., M. E. Warner, S. J. Levas, et al. 2014. “The Cumulative Impact of Annual Coral Bleaching Can Turn Some Coral Species Winners into Losers.” Global Change Biology 20 (12): 3823–33. https://doi.org/10.1111/gcb.12658.\n\n\nHeron, S. F., L. Johnston, G. Liu, et al. 2016. “Validation of Reef-Scale Thermal Stress Satellite Products for Coral Bleaching Monitoring.” Remote Sensing 8 (1): 59. https://doi.org/10.3390/rs8010059.\n\n\nHoegh-Guldberg, O., P. J. Mumby, A. J. Hooten, et al. 2007. “Coral Reefs Under Rapid Climate Change and Ocean Acidification.” Science 318 (5857): 1737–42. https://doi.org/10.1126/science.1152509.\n\n\nHughes, Terry P., James T. Kerry, Mariana Álvarez-Noriega, et al. 2017. “Global Warming and Recurrent Mass Bleaching of Corals.” Nature 543: 373–77. https://doi.org/10.1038/nature21707.\n\n\nHughes, Terry P., James T. Kerry, Andrew H. Baird, et al. 2018. “Global Warming Transforms Coral Reef Assemblages.” Nature 556: 492–96. https://doi.org/10.1038/s41586-018-0041-2.\n\n\nJiang, L.-Q., R. A. Feely, B. R. Carter, D. J. Greeley, D. K. Gledhill, and K. M. Arzayus. 2015. “Climatological Distribution of Aragonite Saturation State in the Global Oceans.” Global Biogeochemical Cycles 29 (10): 1656–73. https://doi.org/10.1002/2015GB005198.\n\n\nKiefer, M. C. et al. 2025. “An Explainable Machine Learning Prediction System for Early Warning of Heat Stress on Florida’s Coral Reef.” Environmental Research Communications, ahead of print. https://doi.org/10.1088/2515-7620/ae2570.\n\n\nLachs, L., S. D. Donner, P. J. Mumby, et al. 2023. “Emergent Increase in Coral Thermal Tolerance Reduces Mass Bleaching Under Climate Change.” Nature Communications 14: 4939. https://doi.org/10.1038/s41467-023-40601-6.\n\n\nLiu, Gang, Scott F. Heron, C. Mark Eakin, et al. 2018. “Predicting Heat Stress to Inform Reef Management: NOAA Coral Reef Watch’s 4-Month Coral Bleaching Outlook.” Frontiers in Marine Science 5: 57. https://doi.org/10.3389/fmars.2018.00057.\n\n\nLiu, G., S. F. Heron, C. M. Eakin, et al. 2014. “Reef-Scale Thermal Stress Monitoring of Coral Ecosystems: New 5-Km Global Products from NOAA Coral Reef Watch.” Remote Sensing 6 (11): 11579–606. https://doi.org/10.3390/rs61111579.\n\n\nLoya, Y., K. Sakai, K. Yamazato, Y. Nakano, H. Sambali, and R. van Woesik. 2001. “Coral Bleaching: The Winners and the Losers.” Ecology Letters 4 (2): 122–31. https://doi.org/10.1046/j.1461-0248.2001.00203.x.\n\n\nMellin, C., T. P. Hughes, M. S. Pratchett, S. F. Heron, et al. 2025. “CoralBleachRisk—Global Projections of Coral Bleaching Risk in the 21st Century.” Global Ecology and Biogeography, ahead of print. https://doi.org/10.1111/geb.13955.\n\n\nMuñiz-Castillo, A. I., A. Rivera-Sosa, M. McField, et al. 2024. “Underlying Drivers of Coral Reef Vulnerability to Bleaching in the Mesoamerican Reef.” Communications Biology 7: 1452. https://doi.org/10.1038/s42003-024-07128-y.\n\n\nPalacio-Castro, A. M., T. B. Smith, V. Brandtneris, et al. 2023. “Increased Dominance of Heat-Tolerant Symbionts Creates Resilient Coral Reefs in Near-Term Ocean Warming.” Proceedings of the National Academy of Sciences 120 (7): e2202388120. https://doi.org/10.1073/pnas.2202388120.\n\n\nPalumbi, S. R., D. J. Barshis, N. Traylor-Knowles, and R. A. Bay. 2014. “Mechanisms of Reef Coral Resistance to Future Climate Change.” Science 344 (6186): 895–98. https://doi.org/10.1126/science.1251336.\n\n\nSafaie, A., N. J. Silbiger, T. R. McClanahan, et al. 2018. “High Frequency Temperature Variability Reduces the Risk of Coral Bleaching.” Nature Communications 9: 1671. https://doi.org/10.1038/s41467-018-04074-2.\n\n\nSkirving, W., S. Enríquez, J. D. Hedley, et al. 2018. “Remote Sensing of Coral Bleaching Using Temperature and Light: Progress Towards an Operational Algorithm.” Remote Sensing 10 (1): 18. https://doi.org/10.3390/rs10010018.\n\n\nSkirving, William, Benjamin Marsh, Jacqueline De La Cour, et al. 2020. “CoralTemp and the Coral Reef Watch Coral Bleaching Heat Stress Product Suite Version 3.1.” Remote Sensing 12 (23): 3856. https://doi.org/10.3390/rs12233856.\n\n\nSmithson, M., and J. Verkuilen. 2006. “A Better Lemon Squeezer? Maximum-Likelihood Regression with Beta-Distributed Dependent Variables.” Psychological Methods 11 (1): 54–71. https://doi.org/10.1037/1082-989X.11.1.54.\n\n\nSully, S., D. E. Burkepile, M. K. Donovan, G. Hodgson, and R. van Woesik. 2019. “A Global Analysis of Coral Bleaching over the Past Two Decades.” Nature Communications 10: 1264. https://doi.org/10.1038/s41467-019-09238-2.\n\n\nSully, S., and R. van Woesik. 2020. “Turbid Reefs Moderate Coral Bleaching Under Climate-Related Temperature Stress.” Global Change Biology 26 (3): 1367–73. https://doi.org/10.1111/gcb.14948.\n\n\nWarner, M. E., W. K. Fitt, and G. W. Schmidt. 1999. “Damage to Photosystem II in Symbiotic Dinoflagellates: A Determinant of Coral Bleaching.” Proceedings of the National Academy of Sciences 96 (14): 8007–12. https://doi.org/10.1073/pnas.96.14.8007.\n\n\nWoesik, R. van, and C. Kratochwill. 2022. “A Global Coral-Bleaching Database, 1980–2020.” Scientific Data 9: 20. https://doi.org/10.1038/s41597-022-01121-y.\n\n\n\nData citations:\n\nNOAA Coral Reef Watch (CRW). 2000, updated daily. NOAA Coral Reef Watch Version 3.1 Daily 5km Satellite Coral Bleaching Heat Stress Monitoring Product Suite; CoralTemp and Coral Bleaching Heat Stress. College Park, Maryland, USA: NOAA/NESDIS. Accessed May 2026 at https://coralreefwatch.noaa.gov/\n\n\nvan Woesik, R. and Kratochwill, C. 2022. Global coral-bleaching database, 1980–2020. BCO-DMO. https://doi.org/10.26008/1912/bco-dmo.880797.1\n\n\nThis page is part of a portfolio project at velezf.github.io. It is not an official NOAA product."
   },
   {
+    "objectID": "projects/lora-radiorocket.html",
+    "href": "projects/lora-radiorocket.html",
+    "title": "LoRa RadioRocket",
+    "section": "",
+    "text": "A ground-up rewrite of N3VEM’s RadioRocketV2 for the Adafruit Feather M0 + RFM95 platform. Unlike altimeters that store and dump data after recovery, this system streams altitude, G-force, and flight state to the ground in real time at 1 Hz — so you’re watching the numbers the moment the rocket leaves the rail. Designed for both mid- and high-power launches; currently flight-tested on a PiercerMini, with high-power deployment planned for an Apogee Zephyr (nose cone e-bay already built).\n📡 Flight archive → — every logged flight with altitude (AGL), link quality, and full traces."
+  },
+  {
+    "objectID": "projects/lora-radiorocket.html#overview",
+    "href": "projects/lora-radiorocket.html#overview",
+    "title": "LoRa RadioRocket",
+    "section": "",
+    "text": "A ground-up rewrite of N3VEM’s RadioRocketV2 for the Adafruit Feather M0 + RFM95 platform. Unlike altimeters that store and dump data after recovery, this system streams altitude, G-force, and flight state to the ground in real time at 1 Hz — so you’re watching the numbers the moment the rocket leaves the rail. Designed for both mid- and high-power launches; currently flight-tested on a PiercerMini, with high-power deployment planned for an Apogee Zephyr (nose cone e-bay already built).\n📡 Flight archive → — every logged flight with altitude (AGL), link quality, and full traces."
+  },
+  {
+    "objectID": "projects/lora-radiorocket.html#hardware",
+    "href": "projects/lora-radiorocket.html#hardware",
+    "title": "LoRa RadioRocket",
+    "section": "Hardware",
+    "text": "Hardware\n\nTX Sled (rocket)\n\n\n\nComponent\nPurpose\n\n\n\n\nAdafruit Feather M0 + RFM95 (434 MHz)\nMicrocontroller + LoRa radio\n\n\nAdafruit BMP390\nBarometric pressure / altitude\n\n\nAdafruit ADXL375\nHigh-G accelerometer (±200 g)\n\n\nLiPo battery\nPower\n\n\n\n\n\nRX Ground Station (APRS Digipeater + LoRa Receiver)\nThe ground station is a LePotato SBC built into a custom blue acrylic enclosure. It serves double duty: receiving LoRa telemetry from the rocket and acting as a portable APRS digipeater — because most mid-power launch sites are outside range of any APRS I-Gate or digipeater, this station brings the infrastructure to the field.\n\n\n\n\n\n\n\nComponent\nPurpose\n\n\n\n\nLibre Computer LePotato SBC\nRuns Linux, Direwolf TNC, Node-RED dashboard\n\n\nRTL-SDR V4 dongle\nAPRS receive + digipeater (144.39 MHz)\n\n\nAdafruit Feather M0 + RFM95 (434 MHz)\nLoRa telemetry receiver\n\n\n12V → 5V DC-DC converter\nField power from vehicle or battery\n\n\nCustom blue acrylic enclosure\nHouses all hardware\n\n\n\nSoftware stack: Direwolf (software TNC + digipeater), Xastir (APRS mapping), Node-RED (telemetry dashboard), VNC (headless remote access).\nWhen the rocket eventually carries an APRS tracker (planned: QRPLabs LightAPRS 2.0), this station will digipeat its packets to the APRS network from the field."
+  },
+  {
+    "objectID": "projects/lora-radiorocket.html#firmware",
+    "href": "projects/lora-radiorocket.html#firmware",
+    "title": "LoRa RadioRocket",
+    "section": "Firmware",
+    "text": "Firmware\nThree algorithms do the interesting work:\n\n1. Ground pressure calibration\nAt boot, the sled takes 50 pressure readings over ~2.5 seconds and averages them to establish a stable ground-level reference. Everything else — altitude, apogee — is computed relative to this baseline.\n// Calibrate ground pressure\nfloat sum = 0;\nfor (int i = 0; i &lt; 50; i++) {\n  bmp.performReading();\n  sum += bmp.pressure / 100.0;\n  delay(50);\n}\ngroundPressure = sum / 50.0;\nA simple average works well on a calm pad. A future improvement would be a trimmed mean — discarding the top and bottom few samples — to handle sensor noise spikes at power-on.\n\n\n2. Launch detection\nRather than checking a single axis, launch is detected from the vector magnitude across all three accelerometer axes. This makes detection robust regardless of how the sled is oriented in the airframe.\nfloat g = sqrt(event.acceleration.x * event.acceleration.x +\n               event.acceleration.y * event.acceleration.y +\n               event.acceleration.z * event.acceleration.z) / 9.80665;\n\nif (!inFlight && g &gt; launchThresholdG) {\n  inFlight = true;\n  launchTime = now;\n}\n\n\n3. Apogee detection\nApogee is detected purely from barometric altitude — no additional sensors needed. The firmware tracks the running maximum altitude and flags descent the moment altitude stops climbing.\nif (altitudeFt &gt; maxAltitudeFt) {\n  maxAltitudeFt = altitudeFt;\n  descending = false;  // still ascending\n} else {\n  descending = true;   // apogee passed\n}\nif (g &gt; peakG) peakG = g;  // update peak G\nEach 1 Hz telemetry packet bundles all of this into a compact string — current altitude, max altitude, live G, peak G, temperature, battery voltage, and flight state — and waits up to 300 ms for an ACK from the ground station before continuing."
+  },
+  {
+    "objectID": "projects/lora-radiorocket.html#build-photos",
+    "href": "projects/lora-radiorocket.html#build-photos",
+    "title": "LoRa RadioRocket",
+    "section": "Build Photos",
+    "text": "Build Photos\n\n\n\n\n\n\nTX sled — Feather M0 + BMP390 + ADXL375 in 3D-printed bracket\n\n\n\n\n\n\n\nElectronics bay\n\n\n\n\n\n\n\n\n\nPiercerMini — Radio Rocket Edition\n\n\n\n\n\n\n\nGround station interior — Feather M0 + RTL-SDR + DC converter\n\n\n\n\n\n\n\n\n\n\n\nGround station rear panel — ethernet, USB, and power connectors\n\n\n\n\n\n\n\nSCE to AUX — the front panel switch is a replica of the Apollo 12 Emergency Detection System switch. On November 14, 1969, a lightning strike knocked out telemetry 36 seconds after launch. Flight controller John Aaron recognized the signature and called SCE to AUX. Alan Bean found the switch on panel 8 and flipped it, restoring all telemetry and saving the mission. It felt like the right switch for a rocket telemetry ground station.\n\n\n\n\n\n\n\n\n\n\n\nAt the range — ground station connected to laptop, PiercerMini on the table"
+  },
+  {
+    "objectID": "projects/lora-radiorocket.html#status",
+    "href": "projects/lora-radiorocket.html#status",
+    "title": "LoRa RadioRocket",
+    "section": "Status",
+    "text": "Status\n✅ Flight tested — telemetry received successfully on first flight.\n🔧 High-power deployment in progress — Apogee Zephyr nose cone e-bay built, NAR Level 1 certified."
+  },
+  {
+    "objectID": "projects/lora-radiorocket.html#links",
+    "href": "projects/lora-radiorocket.html#links",
+    "title": "LoRa RadioRocket",
+    "section": "Links",
+    "text": "Links\n\nGitHub Repository\nTX Firmware\nRX Firmware"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
+    "section": "",
+    "text": "I’m a clinical informaticist and data systems professional based in the Washington, D.C. area, currently working at the National Institutes of Health. My work sits at the intersection of clinical research, data science, primary data collection, and research infrastructure.\nI work shoulder to shoulder with principal investigators, research teams, and operational stakeholders to understand scientific needs and translate them into usable systems, workflows, and data platforms. I also work with program and organizational leadership to shape enterprise data capabilities that support governance, interoperability, reproducibility, and long-term scientific value.\nMy professional background includes clinical research informatics, data governance, cloud-based research platforms, REDCap operations, metadata workflows, and support for large-scale scientific data programs.\nI’m currently expanding my scope into marine science, GIS, remote sensing, Structure-from-Motion photogrammetry, full-stack software development, and hardware engineering. Long term, I’m interested in applying informatics, reproducible analysis, and geospatial tools to coral reef research and marine conservation at institutions such as Scripps Institution of Oceanography, Woods Hole Oceanographic Institution, Mote Marine Laboratory, NOAA, or similar research organizations.\nOutside of work, I apply the same data and engineering mindset to cycling analytics, high-power rocketry, ham radio, Arduino-based systems, and embedded radio telemetry projects."
+  },
+  {
+    "objectID": "about.html#background",
+    "href": "about.html#background",
+    "title": "About Me",
+    "section": "",
+    "text": "I’m a clinical informaticist and data systems professional based in the Washington, D.C. area, currently working at the National Institutes of Health. My work sits at the intersection of clinical research, data science, primary data collection, and research infrastructure.\nI work shoulder to shoulder with principal investigators, research teams, and operational stakeholders to understand scientific needs and translate them into usable systems, workflows, and data platforms. I also work with program and organizational leadership to shape enterprise data capabilities that support governance, interoperability, reproducibility, and long-term scientific value.\nMy professional background includes clinical research informatics, data governance, cloud-based research platforms, REDCap operations, metadata workflows, and support for large-scale scientific data programs.\nI’m currently expanding my scope into marine science, GIS, remote sensing, Structure-from-Motion photogrammetry, full-stack software development, and hardware engineering. Long term, I’m interested in applying informatics, reproducible analysis, and geospatial tools to coral reef research and marine conservation at institutions such as Scripps Institution of Oceanography, Woods Hole Oceanographic Institution, Mote Marine Laboratory, NOAA, or similar research organizations.\nOutside of work, I apply the same data and engineering mindset to cycling analytics, high-power rocketry, ham radio, Arduino-based systems, and embedded radio telemetry projects."
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About Me",
+    "section": "Education",
+    "text": "Education\n\nM.Sc. Health Care Administration Informatics, University of Maryland University College, Adelphi, MD — May 2016\nB.Sc. Biology (Minor: Chemistry, Minor: Physics), Wilkes University, Wilkes-Barre, PA — May 2009"
+  },
+  {
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "About Me",
+    "section": "Experience",
+    "text": "Experience\n\nNational Institutes of Health / NHLBI — Biomedical Informatics Project Manager, 05/2021–Present\n\nWork directly with principal investigators, research teams, and scientific stakeholders to understand research needs and translate them into practical informatics solutions.\nPartner with program leadership and enterprise stakeholders to develop data platforms, governance models, and operational workflows that scale beyond individual studies.\nSupport researcher-facing data systems, clinical research informatics workflows, and cloud-based scientific data platforms.\nContribute to data governance, metadata, data release, interoperability, and operational workflows for large-scale biomedical research programs.\nWork across scientific, technical, and operational teams to bridge investigator needs, enterprise priorities, and sustainable platform design."
+  },
+  {
+    "objectID": "about.html#skills",
+    "href": "about.html#skills",
+    "title": "About Me",
+    "section": "Skills",
+    "text": "Skills\n\nProgramming & Analysis: Python, SQL, R, Jupyter notebooks\nData Systems: REDCap, research data platforms, metadata workflows, FAIR data practices, clinical research informatics\nGIS & Remote Sensing: QGIS, geospatial analysis, benthic habitat mapping, remote sensing workflows\nPhotogrammetry: Structure-from-Motion workflows, Agisoft Metashape, large-area imaging concepts\nSoftware & DevOps: Git, GitHub, Quarto, Docker, cloud workspaces, reproducible analysis workflows\nHardware & Telemetry: Arduino, LoRa radio, embedded systems, sensor telemetry, high-power rocketry instrumentation\nDomains: Clinical research, biomedical informatics, marine science, coral reef conservation, geospatial analysis, cycling analytics"
+  },
+  {
+    "objectID": "about.html#currently-learning",
+    "href": "about.html#currently-learning",
+    "title": "About Me",
+    "section": "Currently Learning",
+    "text": "Currently Learning\n\nGIS workflows for marine and coastal datasets\nBenthic habitat classification and coral reef mapping methods\nStructure-from-Motion photogrammetry for reef monitoring\nRemote sensing applications for marine conservation\nFull-stack web development for data-driven hobby and research tools\nEmbedded telemetry systems using microcontrollers, sensors, and LoRa radio"
+  },
+  {
+    "objectID": "about.html#projects-interests",
+    "href": "about.html#projects-interests",
+    "title": "About Me",
+    "section": "Projects & Interests",
+    "text": "Projects & Interests\n\nCoral GIS & Marine Data: Building a portfolio of geospatial and remote sensing projects focused on reef conservation.\nPhotogrammetry: Learning SfM workflows for reconstructing reef sites from overlapping image sets.\nCycling Analytics: Exploring data tools for cycling performance, fantasy cycling, and route analysis.\nRocket Telemetry: Building embedded radio telemetry systems for high-power rocketry using Arduino-compatible boards, barometric sensors, accelerometers, and LoRa radios.\nHam Radio & Field Systems: Experimenting with radio communications, portable systems, and telemetry workflows."
+  },
+  {
+    "objectID": "about.html#contact",
+    "href": "about.html#contact",
+    "title": "About Me",
+    "section": "Contact",
+    "text": "Contact\n\n📧 francisco.velez.v@gmail.com\n🐙 github.com/velezf\n💼 linkedin.com/in/francisco-velez-86028315"
+  },
+  {
+    "objectID": "projects/subaru-audio-tuning.html",
+    "href": "projects/subaru-audio-tuning.html",
+    "title": "2016 Subaru Outback Stereo Build",
+    "section": "",
+    "text": "This project documents the process of upgrading the factory Harman Kardon audio system in a 2016 Subaru Outback into a much more capable, tunable aftermarket system while retaining daily drivability and factory convenience features.\nThe build centers around a Sony XAV-AX4000 head unit, Maestro integration, a Kicker LX 1300.7 multi-channel amplifier, an active Morel front stage, rear fill, and a JL Audio 10W6v3 subwoofer in a sealed enclosure.\nThe goal was not just to make the system louder, but to build a clean, flexible, well-documented setup with proper crossover points, gain structure, signal routing, and enough tuning control to make the car sound genuinely excellent."
+  },
+  {
+    "objectID": "projects/subaru-audio-tuning.html#overview",
+    "href": "projects/subaru-audio-tuning.html#overview",
+    "title": "2016 Subaru Outback Stereo Build",
+    "section": "",
+    "text": "This project documents the process of upgrading the factory Harman Kardon audio system in a 2016 Subaru Outback into a much more capable, tunable aftermarket system while retaining daily drivability and factory convenience features.\nThe build centers around a Sony XAV-AX4000 head unit, Maestro integration, a Kicker LX 1300.7 multi-channel amplifier, an active Morel front stage, rear fill, and a JL Audio 10W6v3 subwoofer in a sealed enclosure.\nThe goal was not just to make the system louder, but to build a clean, flexible, well-documented setup with proper crossover points, gain structure, signal routing, and enough tuning control to make the car sound genuinely excellent."
+  },
+  {
+    "objectID": "projects/subaru-audio-tuning.html#system-components",
+    "href": "projects/subaru-audio-tuning.html#system-components",
+    "title": "2016 Subaru Outback Stereo Build",
+    "section": "System Components",
+    "text": "System Components\n\nSource and Integration\n\nSony XAV-AX4000 head unit\nMaestro integration for steering wheel controls and vehicle feature retention\nFactory Harman Kardon amplifier removed from the audio signal path\nFactory Subaru wiring retained where practical\n\n\n\nAmplification\n\nKicker LX 1300.7 seven-channel amplifier\nActive front-stage configuration\nRear door speakers on independent rear channels\nDedicated subwoofer channel for sealed JL Audio subwoofer\n\n\n\nSpeakers\n\nMorel Tempo Ultra 602 MKII component speakers\nFront tweeters run actively on AMP 1\nFront door woofers run actively on AMP 2\nRear doors run as passive rear fill on AMP 3\n\n\n\nSubwoofer\n\nJL Audio 10W6v3-D4\nSealed custom enclosure\nTuned for clean, musical low-end support rather than maximum boom"
+  },
+  {
+    "objectID": "projects/subaru-audio-tuning.html#wiring-and-signal-routing",
+    "href": "projects/subaru-audio-tuning.html#wiring-and-signal-routing",
+    "title": "2016 Subaru Outback Stereo Build",
+    "section": "Wiring and Signal Routing",
+    "text": "Wiring and Signal Routing\nThis build required working around several Subaru-specific quirks, especially because the vehicle originally had the Harman Kardon factory system.\n\nRCA Signal Routing\nThe final RCA routing uses the Sony head unit outputs to feed the Kicker amp:\n\nFront L/R RCA → AMP 1 input\nRear L/R RCA → AMP 3 input\nSubwoofer RCA → SUB input\n\nThe Kicker amp is configured so that AMP 1 feeds the tweeters and also supplies signal to AMP 2 for the front door woofers. AMP 3 remains independent for rear fill, preserving useful front/rear fader control from the head unit.\n\n\nFactory Wiring\n\nAHH-7881 adapter used to connect amplifier outputs into the factory speaker wiring\nAdapter ordered with tinned ends for easier termination\nFactory Harman Kardon amp bypassed\nSubaru telematics/DCM bypass required to restore the factory tweeter path\nFactory speaker wiring reused where practical to avoid unnecessary rewiring through the doors"
+  },
+  {
+    "objectID": "projects/subaru-audio-tuning.html#current-tuning-notes",
+    "href": "projects/subaru-audio-tuning.html#current-tuning-notes",
+    "title": "2016 Subaru Outback Stereo Build",
+    "section": "Current Tuning Notes",
+    "text": "Current Tuning Notes\n\nFront Tweeters — AMP 1\n\nHigh-pass filter: 3.2 kHz\nSlope: 24 dB/octave\nFilter type: Linkwitz-Riley\n\n\n\nFront Door Woofers — AMP 2\n\nHigh-pass filter: 60 Hz\nSlope: 12 dB/octave\nLow-pass filter: 3.2 kHz\nSlope: 24 dB/octave\nFilter type: Linkwitz-Riley\n\n\n\nRear Doors — AMP 3\n\nHigh-pass filter: approximately 65 Hz\nSlope: 12 dB/octave\nUsed primarily as rear fill\n\n\n\nSubwoofer\n\nLow-pass filter: 80 Hz\nSlope: 24 dB/octave\nFilter type: Linkwitz-Riley\nSubwoofer high-pass filter set as low as possible on the amp, around 10 Hz"
+  },
+  {
+    "objectID": "projects/subaru-audio-tuning.html#lessons-learned",
+    "href": "projects/subaru-audio-tuning.html#lessons-learned",
+    "title": "2016 Subaru Outback Stereo Build",
+    "section": "Lessons Learned",
+    "text": "Lessons Learned\n\nThe factory amp and DSP need to be fully understood before replacing them\nThe telematics/DCM wiring can affect the tweeter path\nHarness adapters save time, but the pinouts still need to be verified\nActive front-stage tuning is worth the effort\nCrossover slopes and gain structure matter as much as hardware selection\nA good sealed 10-inch subwoofer is an excellent match for this wagon"
+  },
+  {
+    "objectID": "projects/subaru-audio-tuning.html#why-document-this",
+    "href": "projects/subaru-audio-tuning.html#why-document-this",
+    "title": "2016 Subaru Outback Stereo Build",
+    "section": "Why Document This?",
+    "text": "Why Document This?\nThere is plenty of Subaru audio information scattered across forums, product manuals, wiring diagrams, and installer notes, but very little of it is presented as a single coherent build path. This writeup captures the practical decisions, mistakes, fixes, and tuning notes from a real build so that future me — or the next person attempting a similar build — does not have to rediscover the same details from scratch."
+  },
+  {
+    "objectID": "projects/subaru-audio-tuning.html#current-status",
+    "href": "projects/subaru-audio-tuning.html#current-status",
+    "title": "2016 Subaru Outback Stereo Build",
+    "section": "Current Status",
+    "text": "Current Status\n✅ Head unit installed\n✅ Maestro integration working\n✅ Factory Harman Kardon amp bypassed\n✅ Kicker LX 1300.7 installed and configured\n✅ Morel front components running active\n✅ Rear fill operational\n✅ JL Audio 10W6v3 sealed subwoofer installed\n✅ Initial gain staging and crossover tuning complete\n✅ System sounding excellent in daily use\n🔧 Next: under-seat amplifier cooling fan triggered by Sony remote turn-on lead."
+  },
+  {
+    "objectID": "projects/lora-flights.html",
+    "href": "projects/lora-flights.html",
+    "title": "LoRa RadioRocket — Flight Archive",
+    "section": "",
+    "text": "Companion to the LoRa RadioRocket build. Each flight the ground station records is derived into a small flights.json summary plus a per-flight CSV of the raw 1 Hz packets; this page reads those directly. Altitude is shown AGL — height above the launch pad — computed as raw barometric altitude minus a stability-gated pad baseline that locks the instant launch is detected. The baseline and the window it used are printed with every flight, so any AGL number here can be re-derived."
+  },
+  {
+    "objectID": "projects/lora-flights.html#link-quality",
+    "href": "projects/lora-flights.html#link-quality",
+    "title": "LoRa RadioRocket — Flight Archive",
+    "section": "Link quality",
+    "text": "Link quality\n\n\n\n\n\nPacket loss per record — received vs dropped by sequence number. The genesis entry ran 75 packets with a single drop (1.32%) at RSSI −38…−14 dBm: the RF chain, decoder, and logger working end to end."
+  },
+  {
+    "objectID": "projects/lora-flights.html#peak-agl-over-time",
+    "href": "projects/lora-flights.html#peak-agl-over-time",
+    "title": "LoRa RadioRocket — Flight Archive",
+    "section": "Peak AGL over time",
+    "text": "Peak AGL over time\n\n\n\n\n\nPeak altitude above ground, per record. One entry so far, and it is a hand-swing artifact (~10 ft of barometric noise) rather than a climb — the axis will mean something after the first real launch."
+  },
+  {
+    "objectID": "projects/lora-flights.html#flight-detail",
+    "href": "projects/lora-flights.html#flight-detail",
+    "title": "LoRa RadioRocket — Flight Archive",
+    "section": "Flight detail",
+    "text": "Flight detail\nInteractive — pick a flight (or deep-link one with ?flight=&lt;id&gt;). Traces are the raw 1 Hz packets; altitude is AGL against that flight’s locked baseline.\n\n\nCode\nflightsData = FileAttachment(\"lora-flights/flights.json\").json()\n\n\n\n\n\n\n\n\n\nCode\nviewof selectedFlight = Inputs.select(\n  flightsData.map(d =&gt; d.flight_id),\n  {\n    label: \"Flight\",\n    value: (new URLSearchParams(location.search)).get(\"flight\") ?? flightsData[0].flight_id\n  }\n)\n\n\n\n\n\n\n\n\n\nCode\nsel = flightsData.find(d =&gt; d.flight_id === selectedFlight)\n\n\n\n\n\n\n\n\n\nCode\nhtml`&lt;div style=\"display:flex;gap:.75rem;flex-wrap:wrap;margin:.5rem 0 1rem\"&gt;\n  ${vb(\"Records\", flightsData.length)}\n  ${vb(\"Packet loss\", sel.loss_pct + \"%\")}\n  ${vb(\"Best link\", d3.max(flightsData, d =&gt; d.rssi_max) + \" dBm\")}\n&lt;/div&gt;`\n\n\n\n\n\n\n\n\n\nCode\nhtml`&lt;p style=\"line-height:1.6\"&gt;\n  &lt;b&gt;${sel.flight_id}&lt;/b&gt; — \"${sel.label}\" · &lt;b&gt;Peak AGL ${sel.peak_agl_ft ?? \"—\"} ft&lt;/b&gt;\n  · ${sel.duration_s}s · ${sel.packets_rx} rx / ${sel.packets_lost} lost (${sel.loss_pct}%)\n  · RSSI ${sel.rssi_min}..${sel.rssi_max} dBm · Field ${sel.field}&lt;br&gt;\n  &lt;span style=\"color:#666\"&gt;Baseline ${sel.baseline_ft} ft over n=${sel.baseline_n}\n  (stability-gated pre-boost window) · AGL = raw ALT − baseline.&lt;/span&gt;\n&lt;/p&gt;`\n\n\n\n\n\n\n\n\n\nCode\ntrace = d3.csv(sel.csv, d3.autoType)\n\n\n\n\n\n\n\n\n\nCode\nPlot.plot({\n  height: 220, marginLeft: 55,\n  x: {label: \"T+ (s)\"}, y: {label: \"Altitude AGL (ft)\", grid: true},\n  marks: [\n    Plot.ruleY([0]),\n    Plot.line(trace, {x: \"MET\", y: d =&gt; d.ALT - sel.baseline_ft, stroke: \"#2b6cb0\"})\n  ]\n})\n\n\n\n\n\n\n\n\n\nCode\nPlot.plot({\n  height: 200, marginLeft: 55,\n  x: {label: \"T+ (s)\"}, y: {label: \"RSSI (dBm)\", grid: true},\n  marks: [Plot.line(trace, {x: \"MET\", y: \"rssi\", stroke: \"#dd6b20\"})]\n})\n\n\n\n\n\n\n\n\n\nCode\nPlot.plot({\n  height: 200, marginLeft: 55,\n  x: {label: \"T+ (s)\"}, y: {label: \"Acceleration (g)\", grid: true},\n  marks: [\n    Plot.ruleY([3], {stroke: \"#c53030\", strokeDasharray: \"4\"}),   // launch threshold\n    Plot.line(trace, {x: \"MET\", y: \"G\", stroke: \"#2f855a\"})\n  ]\n})\n\n\n\n\n\n\n\n\n\nCode\n// small value-box helper\nvb = (label, value) =&gt; html`&lt;div style=\"border:1px solid #e2e8f0;border-radius:.5rem;\n  padding:.6rem 1rem;min-width:8rem;background:#f7fafc\"&gt;\n  &lt;div style=\"font-size:.75rem;color:#718096;text-transform:uppercase\"&gt;${label}&lt;/div&gt;\n  &lt;div style=\"font-size:1.4rem;font-weight:600\"&gt;${value}&lt;/div&gt;&lt;/div&gt;`"
+  },
+  {
+    "objectID": "projects/freezingsaddles.html",
+    "href": "projects/freezingsaddles.html",
+    "title": "FreezingSaddles",
+    "section": "",
+    "text": "FreezingSaddles is a winter cycling challenge that encourages riders to log miles during the coldest months of the year. This project covers the data pipeline, leaderboard analytics, and visualizations built to support the challenge."
+  },
+  {
+    "objectID": "projects/freezingsaddles.html#overview",
+    "href": "projects/freezingsaddles.html#overview",
+    "title": "FreezingSaddles",
+    "section": "",
+    "text": "FreezingSaddles is a winter cycling challenge that encourages riders to log miles during the coldest months of the year. This project covers the data pipeline, leaderboard analytics, and visualizations built to support the challenge."
+  },
+  {
+    "objectID": "projects/freezingsaddles.html#features",
+    "href": "projects/freezingsaddles.html#features",
+    "title": "FreezingSaddles",
+    "section": "Features",
+    "text": "Features\n\nAutomated mileage ingestion from Strava and manual entries\nTeam and individual leaderboards\nInteractive visualizations of ride data\nHistorical trend analysis across challenge years"
+  },
+  {
+    "objectID": "projects/freezingsaddles.html#technical-stack",
+    "href": "projects/freezingsaddles.html#technical-stack",
+    "title": "FreezingSaddles",
+    "section": "Technical Stack",
+    "text": "Technical Stack\n\nBackend: Python (Flask, pandas)\nData: Strava API, CSV ingestion\nVisualization: Plotly, Matplotlib\nDeployment: Docker, GitHub Actions"
+  },
+  {
+    "objectID": "projects/freezingsaddles.html#highlights",
+    "href": "projects/freezingsaddles.html#highlights",
+    "title": "FreezingSaddles",
+    "section": "Highlights",
+    "text": "Highlights\n\nProcessed thousands of ride entries across multiple seasons\nBuilt interactive leaderboard dashboards\nAutomated data pipeline reducing manual entry overhead"
+  },
+  {
+    "objectID": "projects/freezingsaddles.html#links",
+    "href": "projects/freezingsaddles.html#links",
+    "title": "FreezingSaddles",
+    "section": "Links",
+    "text": "Links\n\nFreezingSaddles — main challenge site\nGitHub Organization — source code and repos"
+  },
+  {
+    "objectID": "projects/freezingsaddles.html#status",
+    "href": "projects/freezingsaddles.html#status",
+    "title": "FreezingSaddles",
+    "section": "Status",
+    "text": "Status\n✅ Active — updated each winter cycling season."
+  },
+  {
     "objectID": "projects/el-nino-watch-2026.html",
     "href": "projects/el-nino-watch-2026.html",
     "title": "2026 Super El Niño Watch: Live Thermal Stress Monitoring",
@@ -518,11 +588,11 @@
     "text": "A note on the data pipeline\nThe first project deliberately kept implementation details in the background — the focus there was on the science, and a long digression on file parsing would have broken that flow. But since this project extends the same pipeline to a live monitoring context, it feels like the right moment to pull back the curtain a bit.\nOne of the more satisfying parts of building this project was writing a parser for NOAA CRW’s Virtual Station file format — and I’ll be honest: this was Claude’s contribution more than mine. My background is in structured clinical data — HL7 messages, FHIR resources, JSON pipelines — where the schema is always explicit, the delimiter is never ambiguous, and a malformed record throws a validation error before it ever reaches your code. The CRW format is a different animal entirely.\nThe files are plain-text, with a free-form prose header that looks like this:\nName:\nFlorida Keys\n...\nAveraged Maximum Monthly Mean:\n28.36\n...\nYYYY MM DD SST_MIN SST_MAX SST@90th_HS SSTA@90th_HS 90th_HS&gt;0 DHW_from_90th_HS&gt;1 BAA_7day_max\n2000 12 25  27.01   27.45   27.12        -1.24         0.00      0.00               0\nNo # comment markers. No separator line between header and data. Column names with @, &gt;, and % characters that pandas will misread without explicit handling. The MMM value — the thermal baseline that the entire alert system is built on — is sitting two lines below a plain-text label, with no key-value structure to anchor it.\nparse_crw_header() handles this by scanning the raw lines one at a time, looking for two sentinel strings: \"Averaged Maximum Monthly Mean:\" tells it the next line is the MMM float, and \"YYYY MM DD\" marks the exact line where the data table begins. That line index gets passed to pd.read_csv() via StringIO, so pandas never sees the header at all — it reads only the structured portion of the file.\nThe date column requires one more fix. The data table stores date as three separate integer columns — YYYY, MM, DD — which is common in older scientific datasets. The safest reconstruction is string concatenation with str.zfill(2) to zero-pad single-digit months and days before passing to pd.to_datetime(). Skipping the zero-padding produces silent failures on dates like January 5th (2026-1-5 parses inconsistently across pandas versions; 2026-01-05 does not).\nFinally, fetch_crw_station() renames the v3.1 column names — DHW_from_90th_HS&gt;1, SSTA@90th_HS, BAA_7day_max — to readable aliases (dhw, sst_anom, alert) and carries the MMM value through as a site-level column, so every row in the output DataFrame knows its own thermal baseline. That makes the alert classification logic in dhw_to_alert() self-contained and easy to audit.\nThis parser is carried over directly from the first project with two small changes: the cache now stores the raw .txt file rather than a parsed CSV (preserving the original header and MMM value across sessions), and the sst_anomaly column alias from the bleaching project is shortened to sst_anom here for consistency with the status table and plot code.\nOutput directories are anchored to the project root rather than using bare relative paths, so the cache and figure outputs from this project stay isolated from the bleaching project even if both kernels are running simultaneously.\n\n\n\nShow code\nfetch_stamp = datetime.now(timezone.utc).strftime(\"%Y-%m-%d %H:%M UTC\")"
   },
   {
-    "objectID": "projects/el-nino-watch-2026.html#quick-status-2026-08-07-0725-utc",
-    "href": "projects/el-nino-watch-2026.html#quick-status-2026-08-07-0725-utc",
+    "objectID": "projects/el-nino-watch-2026.html#quick-status-2026-08-08-0702-utc",
+    "href": "projects/el-nino-watch-2026.html#quick-status-2026-08-08-0702-utc",
     "title": "2026 Super El Niño Watch: Live Thermal Stress Monitoring",
-    "section": "Quick status — 2026-08-07 07:25 UTC",
-    "text": "Quick status — 2026-08-07 07:25 UTC\n\n\nShow code\n# =============================================================================\n# Cell 4 -- Fetch 2026 YTD data for all seven sites\n# =============================================================================\n\nsite_data   = {}\nsite_errors = []\n\nfor name, cfg in STATIONS.items():\n    try:\n        df = fetch_2026_ytd(name, cfg[\"station_id\"])\n        if df is not None and len(df) &gt; 0:\n            site_data[name] = df\n        else:\n            site_errors.append(name)\n    except Exception:\n        site_errors.append(name)\n\n\n\n\nShow code\n# =============================================================================\n# Cell 5 -- Current thermal stress status table\n# =============================================================================\nrows = []\nfor name, df in site_data.items():\n    last = df.iloc[-1]\n    alert = dhw_to_alert(last[\"dhw\"], last.get(\"hotspot\"))\n    rows.append({\n        \"Site\":              name,\n        \"Ocean basin\":       STATIONS[name][\"ocean\"],\n        \"Latest date\":       last[\"date\"].strftime(\"%Y-%m-%d\"),\n        \"SST (°C)\":          f\"{last['sst']:.2f}\"       if pd.notna(last[\"sst\"])      else \"—\",\n        \"SST anomaly (°C)\":  f\"{last['sst_anom']:+.2f}\" if pd.notna(last[\"sst_anom\"]) else \"—\",\n        \"DHW (°C-wk)\":       f\"{last['dhw']:.1f}\"       if pd.notna(last[\"dhw\"])      else \"—\",\n        \"Alert level\":       alert,\n    })\n\nfor name in site_errors:\n    rows.append({\n        \"Site\":             name,\n        \"Ocean basin\":      STATIONS[name][\"ocean\"],\n        \"Latest date\":      \"—\",\n        \"SST (°C)\":         \"—\",\n        \"SST anomaly (°C)\": \"—\",\n        \"DHW (°C-wk)\":      \"—\",\n        \"Alert level\":      \"Data unavailable\",\n    })\n\nstatus_df = pd.DataFrame(rows)\n\ndef color_alert(val):\n    color_map = {\n        \"No Stress\":         \"background-color: #BBDEFB; color: #0D47A1\",\n        \"Bleaching Watch\":   \"background-color: #FFF9C4; color: #F57F17\",\n        \"Bleaching Warning\": \"background-color: #FFE0B2; color: #E65100\",\n        \"Alert Level 1\":     \"background-color: #FFCDD2; color: #B71C1C\",\n        \"Alert Level 2\":     \"background-color: #E1BEE7; color: #4A148C\",\n        \"Alert Level 3\":     \"background-color: #880E4F; color: #FFFFFF\",\n        \"Alert Level 4\":     \"background-color: #4A0000; color: #FFFFFF\",\n        \"Alert Level 5\":     \"background-color: #000000; color: #FFFFFF\",\n        \"Data unavailable\":  \"background-color: #EEEEEE; color: #757575\",\n    }\n    return color_map.get(val, \"\")\n\nstyled = (\n    status_df.style\n    .map(color_alert, subset=[\"Alert level\"])\n    .set_properties(**{\"text-align\": \"center\"}, subset=status_df.columns[1:])\n    .set_properties(**{\"font-weight\": \"bold\"}, subset=[\"Site\", \"Alert level\"])\n    .hide(axis=\"index\")\n)\nstyled\n\n\n\n\n\n\n\nSite\nOcean basin\nLatest date\nSST (°C)\nSST anomaly (°C)\nDHW (°C-wk)\nAlert level\n\n\n\n\nFlorida Keys\nCaribbean/Atlantic\n2026-08-05\n31.29\n+1.67\n11.9\nAlert Level 1\n\n\nCayman Islands\nCaribbean\n2026-08-05\n30.59\n+1.40\n1.7\nBleaching Watch\n\n\nHonduras (Bay Islands)\nCaribbean\n2026-08-05\n29.55\n+1.06\n0.5\nBleaching Watch\n\n\nABC Islands (Bonaire)\nCaribbean\n2026-08-05\n28.27\n+0.67\n0.0\nBleaching Watch\n\n\nGreat Barrier Reef (Central)\nIndo-Pacific\n2026-08-05\n23.39\n+0.29\n0.0\nNo Stress\n\n\nPalau\nIndo-Pacific\n2026-08-05\n28.85\n+0.07\n3.6\nNo Stress\n\n\nWest Papua (Raja Ampat)\nIndo-Pacific\n2026-08-05\n30.09\n+1.20\n0.7\nBleaching Watch\n\n\n\n\n\nHow to read this table: DHW (Degree Heating Weeks) accumulates thermal stress over a rolling 84-day window. No Stress means SST is at or below the site’s MMM bleaching baseline (HotSpot ≤ 0); Watch begins once SST exceeds it (HotSpot &gt; 0, DHW &lt; 4). The NOAA CRW 5-level alert system (expanded December 2023): Warning &lt; 8, Alert Level 1 &lt; 12, Alert Level 2 &lt; 16, Alert Level 3 &lt; 20, Alert Level 4 &lt; 24, Alert Level 5 &gt;= 24 °C-weeks. Values above 8 °C-weeks are strongly associated with mass bleaching; values above 16 represent conditions with limited historical precedent at most sites."
+    "section": "Quick status — 2026-08-08 07:02 UTC",
+    "text": "Quick status — 2026-08-08 07:02 UTC\n\n\nShow code\n# =============================================================================\n# Cell 4 -- Fetch 2026 YTD data for all seven sites\n# =============================================================================\n\nsite_data   = {}\nsite_errors = []\n\nfor name, cfg in STATIONS.items():\n    try:\n        df = fetch_2026_ytd(name, cfg[\"station_id\"])\n        if df is not None and len(df) &gt; 0:\n            site_data[name] = df\n        else:\n            site_errors.append(name)\n    except Exception:\n        site_errors.append(name)\n\n\n\n\nShow code\n# =============================================================================\n# Cell 5 -- Current thermal stress status table\n# =============================================================================\nrows = []\nfor name, df in site_data.items():\n    last = df.iloc[-1]\n    alert = dhw_to_alert(last[\"dhw\"], last.get(\"hotspot\"))\n    rows.append({\n        \"Site\":              name,\n        \"Ocean basin\":       STATIONS[name][\"ocean\"],\n        \"Latest date\":       last[\"date\"].strftime(\"%Y-%m-%d\"),\n        \"SST (°C)\":          f\"{last['sst']:.2f}\"       if pd.notna(last[\"sst\"])      else \"—\",\n        \"SST anomaly (°C)\":  f\"{last['sst_anom']:+.2f}\" if pd.notna(last[\"sst_anom\"]) else \"—\",\n        \"DHW (°C-wk)\":       f\"{last['dhw']:.1f}\"       if pd.notna(last[\"dhw\"])      else \"—\",\n        \"Alert level\":       alert,\n    })\n\nfor name in site_errors:\n    rows.append({\n        \"Site\":             name,\n        \"Ocean basin\":      STATIONS[name][\"ocean\"],\n        \"Latest date\":      \"—\",\n        \"SST (°C)\":         \"—\",\n        \"SST anomaly (°C)\": \"—\",\n        \"DHW (°C-wk)\":      \"—\",\n        \"Alert level\":      \"Data unavailable\",\n    })\n\nstatus_df = pd.DataFrame(rows)\n\ndef color_alert(val):\n    color_map = {\n        \"No Stress\":         \"background-color: #BBDEFB; color: #0D47A1\",\n        \"Bleaching Watch\":   \"background-color: #FFF9C4; color: #F57F17\",\n        \"Bleaching Warning\": \"background-color: #FFE0B2; color: #E65100\",\n        \"Alert Level 1\":     \"background-color: #FFCDD2; color: #B71C1C\",\n        \"Alert Level 2\":     \"background-color: #E1BEE7; color: #4A148C\",\n        \"Alert Level 3\":     \"background-color: #880E4F; color: #FFFFFF\",\n        \"Alert Level 4\":     \"background-color: #4A0000; color: #FFFFFF\",\n        \"Alert Level 5\":     \"background-color: #000000; color: #FFFFFF\",\n        \"Data unavailable\":  \"background-color: #EEEEEE; color: #757575\",\n    }\n    return color_map.get(val, \"\")\n\nstyled = (\n    status_df.style\n    .map(color_alert, subset=[\"Alert level\"])\n    .set_properties(**{\"text-align\": \"center\"}, subset=status_df.columns[1:])\n    .set_properties(**{\"font-weight\": \"bold\"}, subset=[\"Site\", \"Alert level\"])\n    .hide(axis=\"index\")\n)\nstyled\n\n\n\n\n\n\n\nSite\nOcean basin\nLatest date\nSST (°C)\nSST anomaly (°C)\nDHW (°C-wk)\nAlert level\n\n\n\n\nFlorida Keys\nCaribbean/Atlantic\n2026-08-06\n31.10\n+1.54\n12.1\nAlert Level 2\n\n\nCayman Islands\nCaribbean\n2026-08-06\n30.51\n+1.36\n1.9\nBleaching Watch\n\n\nHonduras (Bay Islands)\nCaribbean\n2026-08-06\n29.46\n+0.80\n0.5\nBleaching Watch\n\n\nABC Islands (Bonaire)\nCaribbean\n2026-08-06\n28.31\n+0.64\n0.0\nBleaching Watch\n\n\nGreat Barrier Reef (Central)\nIndo-Pacific\n2026-08-06\n23.32\n+0.19\n0.0\nNo Stress\n\n\nPalau\nIndo-Pacific\n2026-08-06\n28.68\n-0.09\n3.5\nNo Stress\n\n\nWest Papua (Raja Ampat)\nIndo-Pacific\n2026-08-06\n30.10\n+1.21\n0.6\nBleaching Watch\n\n\n\n\n\nHow to read this table: DHW (Degree Heating Weeks) accumulates thermal stress over a rolling 84-day window. No Stress means SST is at or below the site’s MMM bleaching baseline (HotSpot ≤ 0); Watch begins once SST exceeds it (HotSpot &gt; 0, DHW &lt; 4). The NOAA CRW 5-level alert system (expanded December 2023): Warning &lt; 8, Alert Level 1 &lt; 12, Alert Level 2 &lt; 16, Alert Level 3 &lt; 20, Alert Level 4 &lt; 24, Alert Level 5 &gt;= 24 °C-weeks. Values above 8 °C-weeks are strongly associated with mass bleaching; values above 16 represent conditions with limited historical precedent at most sites."
   },
   {
     "objectID": "projects/el-nino-watch-2026.html#dhw-time-series",
@@ -592,104 +662,34 @@
     "href": "projects/el-nino-watch-2026.html#references-1",
     "title": "2026 Super El Niño Watch: Live Thermal Stress Monitoring",
     "section": "References",
-    "text": "References\n\n\n\nPage last rendered: 2026-08-07 07:25 UTC. Data fetched live from NOAA CRW — values update with each site deployment. This page is part of a portfolio project at velezf.github.io; it is not an official NOAA product."
+    "text": "References\n\n\n\nPage last rendered: 2026-08-08 07:02 UTC. Data fetched live from NOAA CRW — values update with each site deployment. This page is part of a portfolio project at velezf.github.io; it is not an official NOAA product."
   },
   {
-    "objectID": "projects/benthic-habitat-map.html",
-    "href": "projects/benthic-habitat-map.html",
-    "title": "Benthic Habitat Mapping",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Francisco Velez",
     "section": "",
-    "text": "Benthic habitat maps are essential tools for coral reef management and conservation. This project outlines the methods I’m studying for producing high-resolution habitat maps by combining field survey data with remote sensing imagery. The workflow below is based on my research into established approaches in the field. I have not yet produced a habitat map from real data — that is the goal I’m working toward.\nStatus: 🚧 In progress — methods research and learning phase. Map production is planned future work."
+    "text": "I’m a clinical informaticist working at the intersection of clinical research, data science, and primary data collection. My work focuses on building systems, workflows, and data platforms that support researchers across a wide range of scientific and operational needs. I’m currently expanding my scope into marine science, GIS, remote sensing, full-stack software development, and hardware engineering. Outside of work, I apply the same data and engineering mindset to cycling analytics, high-power rocketry, ham radio, Arduino-based systems, and embedded telemetry projects."
   },
   {
-    "objectID": "projects/benthic-habitat-map.html#overview",
-    "href": "projects/benthic-habitat-map.html#overview",
-    "title": "Benthic Habitat Mapping",
+    "objectID": "index.html#welcome",
+    "href": "index.html#welcome",
+    "title": "Francisco Velez",
     "section": "",
-    "text": "Benthic habitat maps are essential tools for coral reef management and conservation. This project outlines the methods I’m studying for producing high-resolution habitat maps by combining field survey data with remote sensing imagery. The workflow below is based on my research into established approaches in the field. I have not yet produced a habitat map from real data — that is the goal I’m working toward.\nStatus: 🚧 In progress — methods research and learning phase. Map production is planned future work."
+    "text": "I’m a clinical informaticist working at the intersection of clinical research, data science, and primary data collection. My work focuses on building systems, workflows, and data platforms that support researchers across a wide range of scientific and operational needs. I’m currently expanding my scope into marine science, GIS, remote sensing, full-stack software development, and hardware engineering. Outside of work, I apply the same data and engineering mindset to cycling analytics, high-power rocketry, ham radio, Arduino-based systems, and embedded telemetry projects."
   },
   {
-    "objectID": "projects/benthic-habitat-map.html#why-benthic-mapping",
-    "href": "projects/benthic-habitat-map.html#why-benthic-mapping",
-    "title": "Benthic Habitat Mapping",
-    "section": "Why Benthic Mapping",
-    "text": "Why Benthic Mapping\nUnderstanding what lives on the seafloor — coral, seagrass, sand, rubble — is foundational to reef conservation and management. High-resolution benthic maps enable habitat change tracking over time, identification of bleaching or damage extent, prioritization of restoration and protection efforts, and integration with water quality and thermal stress data. I want to be able to produce and work with these maps as part of applied marine data science work."
+    "objectID": "index.html#research-interests",
+    "href": "index.html#research-interests",
+    "title": "Francisco Velez",
+    "section": "Research Interests",
+    "text": "Research Interests\n\nCoral reef monitoring and benthic habitat mapping\nStructure-from-Motion photogrammetry for marine applications\nGeospatial data visualization and analysis\nIoT and radio telemetry systems"
   },
   {
-    "objectID": "projects/benthic-habitat-map.html#planned-methods",
-    "href": "projects/benthic-habitat-map.html#planned-methods",
-    "title": "Benthic Habitat Mapping",
-    "section": "Planned Methods",
-    "text": "Planned Methods\n\nData Sources\n\nMultispectral satellite imagery (e.g., Planet, Sentinel-2, WorldView)\nUnderwater photo transects for field validation\nSfM-derived orthomosaics as high-resolution local inputs\n\n\n\nClassification Approach\n\nObject-based image analysis (OBIA) for reef-scale segmentation\nSupervised classification using field validation points\nAccuracy assessment with confusion matrices and kappa statistics\n\n\n\nGIS Processing\n\nCoordinate reference system management and reprojection\nRaster and vector integration\nMap layout and cartographic output in QGIS"
-  },
-  {
-    "objectID": "projects/benthic-habitat-map.html#tools-im-learning",
-    "href": "projects/benthic-habitat-map.html#tools-im-learning",
-    "title": "Benthic Habitat Mapping",
-    "section": "Tools I’m Learning",
-    "text": "Tools I’m Learning\n\nQGIS — primary GIS environment\nPython (rasterio, geopandas, scikit-learn) — raster processing and classification\nGoogle Earth Engine — cloud-scale remote sensing analysis (planned)"
-  },
-  {
-    "objectID": "projects/benthic-habitat-map.html#path-forward",
-    "href": "projects/benthic-habitat-map.html#path-forward",
-    "title": "Benthic Habitat Mapping",
-    "section": "Path Forward",
-    "text": "Path Forward\nMy near-term plan is to work through a classification exercise using a publicly available benthic dataset — likely from NOAA’s National Coral Reef Monitoring Program or the Allen Coral Atlas — to produce a documented, reproducible mapping workflow before applying it to original survey data."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About Me",
-    "section": "",
-    "text": "I’m a clinical informaticist and data systems professional based in the Washington, D.C. area, currently working at the National Institutes of Health. My work sits at the intersection of clinical research, data science, primary data collection, and research infrastructure.\nI work shoulder to shoulder with principal investigators, research teams, and operational stakeholders to understand scientific needs and translate them into usable systems, workflows, and data platforms. I also work with program and organizational leadership to shape enterprise data capabilities that support governance, interoperability, reproducibility, and long-term scientific value.\nMy professional background includes clinical research informatics, data governance, cloud-based research platforms, REDCap operations, metadata workflows, and support for large-scale scientific data programs.\nI’m currently expanding my scope into marine science, GIS, remote sensing, Structure-from-Motion photogrammetry, full-stack software development, and hardware engineering. Long term, I’m interested in applying informatics, reproducible analysis, and geospatial tools to coral reef research and marine conservation at institutions such as Scripps Institution of Oceanography, Woods Hole Oceanographic Institution, Mote Marine Laboratory, NOAA, or similar research organizations.\nOutside of work, I apply the same data and engineering mindset to cycling analytics, high-power rocketry, ham radio, Arduino-based systems, and embedded radio telemetry projects."
-  },
-  {
-    "objectID": "about.html#background",
-    "href": "about.html#background",
-    "title": "About Me",
-    "section": "",
-    "text": "I’m a clinical informaticist and data systems professional based in the Washington, D.C. area, currently working at the National Institutes of Health. My work sits at the intersection of clinical research, data science, primary data collection, and research infrastructure.\nI work shoulder to shoulder with principal investigators, research teams, and operational stakeholders to understand scientific needs and translate them into usable systems, workflows, and data platforms. I also work with program and organizational leadership to shape enterprise data capabilities that support governance, interoperability, reproducibility, and long-term scientific value.\nMy professional background includes clinical research informatics, data governance, cloud-based research platforms, REDCap operations, metadata workflows, and support for large-scale scientific data programs.\nI’m currently expanding my scope into marine science, GIS, remote sensing, Structure-from-Motion photogrammetry, full-stack software development, and hardware engineering. Long term, I’m interested in applying informatics, reproducible analysis, and geospatial tools to coral reef research and marine conservation at institutions such as Scripps Institution of Oceanography, Woods Hole Oceanographic Institution, Mote Marine Laboratory, NOAA, or similar research organizations.\nOutside of work, I apply the same data and engineering mindset to cycling analytics, high-power rocketry, ham radio, Arduino-based systems, and embedded radio telemetry projects."
-  },
-  {
-    "objectID": "about.html#education",
-    "href": "about.html#education",
-    "title": "About Me",
-    "section": "Education",
-    "text": "Education\n\nM.Sc. Health Care Administration Informatics, University of Maryland University College, Adelphi, MD — May 2016\nB.Sc. Biology (Minor: Chemistry, Minor: Physics), Wilkes University, Wilkes-Barre, PA — May 2009"
-  },
-  {
-    "objectID": "about.html#experience",
-    "href": "about.html#experience",
-    "title": "About Me",
-    "section": "Experience",
-    "text": "Experience\n\nNational Institutes of Health / NHLBI — Biomedical Informatics Project Manager, 05/2021–Present\n\nWork directly with principal investigators, research teams, and scientific stakeholders to understand research needs and translate them into practical informatics solutions.\nPartner with program leadership and enterprise stakeholders to develop data platforms, governance models, and operational workflows that scale beyond individual studies.\nSupport researcher-facing data systems, clinical research informatics workflows, and cloud-based scientific data platforms.\nContribute to data governance, metadata, data release, interoperability, and operational workflows for large-scale biomedical research programs.\nWork across scientific, technical, and operational teams to bridge investigator needs, enterprise priorities, and sustainable platform design."
-  },
-  {
-    "objectID": "about.html#skills",
-    "href": "about.html#skills",
-    "title": "About Me",
-    "section": "Skills",
-    "text": "Skills\n\nProgramming & Analysis: Python, SQL, R, Jupyter notebooks\nData Systems: REDCap, research data platforms, metadata workflows, FAIR data practices, clinical research informatics\nGIS & Remote Sensing: QGIS, geospatial analysis, benthic habitat mapping, remote sensing workflows\nPhotogrammetry: Structure-from-Motion workflows, Agisoft Metashape, large-area imaging concepts\nSoftware & DevOps: Git, GitHub, Quarto, Docker, cloud workspaces, reproducible analysis workflows\nHardware & Telemetry: Arduino, LoRa radio, embedded systems, sensor telemetry, high-power rocketry instrumentation\nDomains: Clinical research, biomedical informatics, marine science, coral reef conservation, geospatial analysis, cycling analytics"
-  },
-  {
-    "objectID": "about.html#currently-learning",
-    "href": "about.html#currently-learning",
-    "title": "About Me",
-    "section": "Currently Learning",
-    "text": "Currently Learning\n\nGIS workflows for marine and coastal datasets\nBenthic habitat classification and coral reef mapping methods\nStructure-from-Motion photogrammetry for reef monitoring\nRemote sensing applications for marine conservation\nFull-stack web development for data-driven hobby and research tools\nEmbedded telemetry systems using microcontrollers, sensors, and LoRa radio"
-  },
-  {
-    "objectID": "about.html#projects-interests",
-    "href": "about.html#projects-interests",
-    "title": "About Me",
-    "section": "Projects & Interests",
-    "text": "Projects & Interests\n\nCoral GIS & Marine Data: Building a portfolio of geospatial and remote sensing projects focused on reef conservation.\nPhotogrammetry: Learning SfM workflows for reconstructing reef sites from overlapping image sets.\nCycling Analytics: Exploring data tools for cycling performance, fantasy cycling, and route analysis.\nRocket Telemetry: Building embedded radio telemetry systems for high-power rocketry using Arduino-compatible boards, barometric sensors, accelerometers, and LoRa radios.\nHam Radio & Field Systems: Experimenting with radio communications, portable systems, and telemetry workflows."
-  },
-  {
-    "objectID": "about.html#contact",
-    "href": "about.html#contact",
-    "title": "About Me",
-    "section": "Contact",
-    "text": "Contact\n\n📧 francisco.velez.v@gmail.com\n🐙 github.com/velezf\n💼 linkedin.com/in/francisco-velez-86028315"
+    "objectID": "index.html#recent-projects",
+    "href": "index.html#recent-projects",
+    "title": "Francisco Velez",
+    "section": "Recent Projects",
+    "text": "Recent Projects\nCheck out my Projects page for a full overview of my work."
   }
 ]
