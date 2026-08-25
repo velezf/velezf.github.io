@@ -115,12 +115,21 @@ trace = d3.csv(sel.csv, d3.autoType)
 
 ```{ojs}
 //| echo: false
+// T+ from received_at, not MET: MET is whole seconds on the wire, so at the
+// 10 Hz flight rate ten packets share a value and an x: "MET" trace renders
+// as vertical stacks. received_at carries milliseconds; t0 is the flight's
+// t_start, so T+ starts at 0 for every flight, old 1 Hz records included.
+tplus = d => (+d.received_at - +new Date(sel.t_start)) / 1000
+```
+
+```{ojs}
+//| echo: false
 Plot.plot({
   height: 220, marginLeft: 55,
   x: {label: "T+ (s)"}, y: {label: "Altitude AGL (ft)", grid: true},
   marks: [
     Plot.ruleY([0]),
-    Plot.line(trace, {x: "MET", y: d => d.ALT - sel.baseline_ft, stroke: "#2b6cb0"})
+    Plot.line(trace, {x: tplus, y: d => d.ALT - sel.baseline_ft, stroke: "#2b6cb0"})
   ]
 })
 ```
@@ -130,7 +139,7 @@ Plot.plot({
 Plot.plot({
   height: 200, marginLeft: 55,
   x: {label: "T+ (s)"}, y: {label: "RSSI (dBm)", grid: true},
-  marks: [Plot.line(trace, {x: "MET", y: "rssi", stroke: "#dd6b20"})]
+  marks: [Plot.line(trace, {x: tplus, y: "rssi", stroke: "#dd6b20"})]
 })
 ```
 
@@ -141,7 +150,7 @@ Plot.plot({
   x: {label: "T+ (s)"}, y: {label: "Acceleration (g)", grid: true},
   marks: [
     Plot.ruleY([3], {stroke: "#c53030", strokeDasharray: "4"}),   // launch threshold
-    Plot.line(trace, {x: "MET", y: "G", stroke: "#2f855a"})
+    Plot.line(trace, {x: tplus, y: "G", stroke: "#2f855a"})
   ]
 })
 ```
