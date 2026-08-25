@@ -29,7 +29,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install Python dependencies
-        run: pip install jupyter nbformat pandas numpy matplotlib seaborn requests
+        run: pip install jupyter nbformat pandas==3.0.3 numpy==2.5.1 matplotlib==3.11.0 seaborn==0.13.2 requests
 
       - name: Register Jupyter kernel
         run: |
