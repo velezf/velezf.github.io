@@ -94,6 +94,9 @@ html`<div style="display:flex;gap:.75rem;flex-wrap:wrap;margin:.5rem 0 1rem">
   ${vb("Records", flightsData.length)}
   ${vb("Packet loss", sel.loss_pct + "%")}
   ${vb("Best link", d3.max(flightsData, d => d.rssi_max) + " dBm")}
+  ${vb("Max velocity", (v => v != null ? v.toFixed(0) + " ft/s" : "—")(d3.max(trace, d => d.Vel)))}
+  ${vb("Max spin", (w => w != null ? w.toFixed(0) + " dps" : "—")(d3.max(trace, d => d.Wmx)))}
+  ${vb("Boost peak", (g => g != null ? g.toFixed(1) + " g" : "—")(d3.max(trace, d => d.Gmx)))}
 </div>`
 ```
 
@@ -124,9 +127,24 @@ tplus = d => (+d.received_at - +new Date(sel.t_start)) / 1000
 
 ```{ojs}
 //| echo: false
+// Focus the x-axis on the FLIGHT: the derived window includes the landed
+// recovery beacon (minutes of flat line after a ~40 s flight), which squeezed
+// the interesting part into the left edge. tEnd = last moment above 25 ft AGL
+// + 15 s of landing context; a record that never clears 25 ft (the bench
+// genesis entry) keeps its full span.
+tEnd = {
+  const ts = trace.map(d => [tplus(d), d.ALT - sel.baseline_ft]);
+  const aloft = ts.filter(([t, h]) => h > 25);
+  const full = d3.max(ts, d => d[0]);
+  return aloft.length ? Math.min(d3.max(aloft, d => d[0]) + 15, full) : full;
+}
+```
+
+```{ojs}
+//| echo: false
 Plot.plot({
   height: 220, marginLeft: 55,
-  x: {label: "T+ (s)"}, y: {label: "Altitude AGL (ft)", grid: true},
+  x: {label: "T+ (s)", domain: [0, tEnd]}, y: {label: "Altitude AGL (ft)", grid: true},
   marks: [
     Plot.ruleY([0]),
     Plot.line(trace, {x: tplus, y: d => d.ALT - sel.baseline_ft, stroke: "#2b6cb0"})
@@ -138,7 +156,7 @@ Plot.plot({
 //| echo: false
 Plot.plot({
   height: 200, marginLeft: 55,
-  x: {label: "T+ (s)"}, y: {label: "RSSI (dBm)", grid: true},
+  x: {label: "T+ (s)", domain: [0, tEnd]}, y: {label: "RSSI (dBm)", grid: true},
   marks: [Plot.line(trace, {x: tplus, y: "rssi", stroke: "#dd6b20"})]
 })
 ```
@@ -147,12 +165,47 @@ Plot.plot({
 //| echo: false
 Plot.plot({
   height: 200, marginLeft: 55,
-  x: {label: "T+ (s)"}, y: {label: "Acceleration (g)", grid: true},
+  x: {label: "T+ (s)", domain: [0, tEnd]}, y: {label: "Acceleration (g)", grid: true},
   marks: [
+    // 20 Hz onboard envelope (Gmx/Gmn) as a band around the instantaneous
+    // sample: the spike a 10 Hz snapshot would miss lives in the band's peak.
+    Plot.areaY(trace.filter(d => d.Gmx != null),
+               {x: tplus, y1: "Gmn", y2: "Gmx", fill: "#2f855a", fillOpacity: 0.18}),
     Plot.ruleY([3], {stroke: "#c53030", strokeDasharray: "4"}),   // launch threshold
     Plot.line(trace, {x: tplus, y: "G", stroke: "#2f855a"})
   ]
 })
+```
+
+```{ojs}
+//| echo: false
+// Onboard vertical velocity (dh/dt computed at 20 Hz on the sled, transmitted
+// as `Vel`) — absent from pre-10 Hz records, so this plot renders only when
+// the trace carries the column.
+trace.some(d => d.Vel != null) ? Plot.plot({
+  height: 200, marginLeft: 55,
+  x: {label: "T+ (s)", domain: [0, tEnd]},
+  y: {label: "Vertical velocity (ft/s)", grid: true},
+  marks: [
+    Plot.ruleY([0]),
+    Plot.line(trace.filter(d => d.Vel != null), {x: tplus, y: "Vel", stroke: "#6b46c1"})
+  ]
+}) : html``
+```
+
+```{ojs}
+//| echo: false
+// Spin envelope (`Wmx` = window max of |gyro| over the 20 Hz onboard samples,
+// alias-free at any TX rate) — flight frames only; pad frames carry the raw
+// 9-DoF calibration channels instead, which live in the CSV.
+trace.some(d => d.Wmx != null) ? Plot.plot({
+  height: 200, marginLeft: 55,
+  x: {label: "T+ (s)", domain: [0, tEnd]},
+  y: {label: "Spin |ω| envelope (dps)", grid: true},
+  marks: [
+    Plot.line(trace.filter(d => d.Wmx != null), {x: tplus, y: "Wmx", stroke: "#b7791f"})
+  ]
+}) : html``
 ```
 
 ```{ojs}
