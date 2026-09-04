@@ -102,36 +102,83 @@ CRW_BASE_URL = "https://coralreefwatch.noaa.gov/product/vs/data/{station_id}.txt
 ONI_URL      = "https://www.cpc.ncep.noaa.gov/data/indices/oni.ascii.txt"
 
 # -- Alert level classifier (NOAA 5-level system, expanded December 2023) -----
+# NOAA CRW Bleaching Alert Area (BAA) definitions, per the CRW methodology page:
+#   No Stress          HotSpot <= 0
+#   Bleaching Watch    0 < HotSpot < 1
+#   Bleaching Warning  HotSpot >= 1 and DHW < 4
+#   Alert Level 1      HotSpot >= 1 and  4 <= DHW <  8
+#   Alert Level 2      HotSpot >= 1 and  8 <= DHW < 12
+#   Alert Level 3      HotSpot >= 1 and 12 <= DHW < 16
+#   Alert Level 4      HotSpot >= 1 and 16 <= DHW < 20
+#   Alert Level 5      HotSpot >= 1 and       DHW >= 20
+#
+# The Virtual Station files ship NOAA's own classification in the BAA_7day_max
+# column. As of 2026 that column still uses the legacy 4-level codes
+# (0 No Stress, 1 Watch, 2 Warning, 3 Alert Level 1, 4 Alert Level 2) and
+# never reports Levels 3-5, even at DHW > 20. The status table therefore
+# takes No Stress through Alert Level 2 from the BAA column, and when the
+# column is at its cap (code 4) extends the level to 3-5 from DHW using the
+# thresholds above. dhw_to_alert() is also the fallback when BAA is missing.
+BAA_LABELS = {
+    0: "No Stress",
+    1: "Bleaching Watch",
+    2: "Bleaching Warning",
+    3: "Alert Level 1",
+    4: "Alert Level 2",
+}
+ALERT_RANK = ["No Stress", "Bleaching Watch", "Bleaching Warning",
+              "Alert Level 1", "Alert Level 2", "Alert Level 3",
+              "Alert Level 4", "Alert Level 5"]
+
 def dhw_to_alert(dhw, hotspot=None):
     """
-    Map DHW and HotSpot values to a NOAA CRW bleaching alert level string.
+    Map DHW and HotSpot values to a NOAA CRW bleaching alert level string,
+    following the CRW BAA definitions above.
 
-    No Stress is determined by HotSpot (SST minus MMM baseline) <= 0, not by
-    DHW being negative — DHW is a clamped accumulator and is never negative in
-    practice. The 5-level DHW thresholds apply once HotSpot is positive.
-
-    The 5-level system was expanded from the legacy 2-level system in December
-    2023 in response to extreme heat stress events that exceeded Level 2 ceilings.
-    Levels 3-5 represent conditions with no historical precedent at most sites.
+    Watch vs. Warning is decided by HotSpot reaching the 1 deg C bleaching
+    threshold, not by DHW. Once HotSpot >= 1, the accumulated DHW sets the
+    level in 4 deg C-week steps. If HotSpot is unavailable, DHW alone is used
+    and the Watch/Warning split cannot be resolved (returns Watch for DHW = 0,
+    Warning for 0 < DHW < 4).
     """
     if pd.isna(dhw):
         return "No Stress"
-    if hotspot is not None and not pd.isna(hotspot) and hotspot <= 0:
-        return "No Stress"
-    if dhw < 4:
+    if hotspot is not None and not pd.isna(hotspot):
+        if hotspot <= 0:
+            return "No Stress"
+        if hotspot < 1:
+            return "Bleaching Watch"
+    elif dhw <= 0:
         return "Bleaching Watch"
-    elif dhw < 8:
+    if dhw < 4:
         return "Bleaching Warning"
-    elif dhw < 12:
+    elif dhw < 8:
         return "Alert Level 1"
-    elif dhw < 16:
+    elif dhw < 12:
         return "Alert Level 2"
-    elif dhw < 20:
+    elif dhw < 16:
         return "Alert Level 3"
-    elif dhw < 24:
+    elif dhw < 20:
         return "Alert Level 4"
     else:
         return "Alert Level 5"
+
+
+def baa_to_alert(baa, dhw=None, hotspot=None):
+    """
+    Return the alert level string for a row, preferring NOAA's own BAA_7day_max
+    code. Because the Virtual Station column caps at legacy Alert Level 2
+    (code 4), a capped row is extended to Levels 3-5 using the DHW-based
+    classifier. Falls back to dhw_to_alert() when the BAA value is missing.
+    """
+    if baa is None or pd.isna(baa) or int(baa) not in BAA_LABELS:
+        return dhw_to_alert(dhw, hotspot)
+    label = BAA_LABELS[int(baa)]
+    if int(baa) == 4:
+        extended = dhw_to_alert(dhw, hotspot)
+        if ALERT_RANK.index(extended) > ALERT_RANK.index(label):
+            label = extended
+    return label
 
 # -- CRW v3.1 parser ----------------------------------------------------------
 def parse_crw_header(lines):
@@ -400,8 +447,12 @@ Finally, `fetch_crw_station()` renames the v3.1 column names —
 `DHW_from_90th_HS>1`, `SSTA@90th_HS`, `BAA_7day_max` — to readable aliases
 (`dhw`, `sst_anom`, `alert`) and carries the MMM value through as a
 site-level column, so every row in the output DataFrame knows its own thermal
-baseline. That makes the alert classification logic in `dhw_to_alert()`
-self-contained and easy to audit.
+baseline. The `alert` column is NOAA's own Bleaching Alert Area classification
+(`BAA_7day_max`). That column still uses the legacy four-level codes (0 through 4,
+No Stress through Alert Level 2) and never reports Levels 3 to 5, so
+`baa_to_alert()` takes the lower levels straight from NOAA and, when the column is
+at its Level 2 cap, extends to Levels 3 to 5 from DHW using the same NOAA thresholds
+implemented in `dhw_to_alert()`.
 
 This parser is carried over directly from the first project with two small
 changes: the cache now stores the raw `.txt` file rather than a parsed CSV
@@ -448,7 +499,7 @@ for name, cfg in STATIONS.items():
 rows = []
 for name, df in site_data.items():
     last = df.iloc[-1]
-    alert = dhw_to_alert(last["dhw"], last.get("hotspot"))
+    alert = baa_to_alert(last.get("alert"), last["dhw"], last.get("hotspot"))
     rows.append({
         "Site":              name,
         "Ocean basin":       STATIONS[name]["ocean"],
@@ -497,13 +548,15 @@ styled
 ```
 
 **How to read this table:** DHW (Degree Heating Weeks) accumulates thermal stress over a
-rolling 84-day window. No Stress means SST is at or below the site's MMM bleaching
-baseline (HotSpot ≤ 0); Watch begins once SST exceeds it (HotSpot > 0, DHW < 4).
-The NOAA CRW 5-level alert system (expanded December 2023):
-Warning < 8, Alert Level 1 < 12, Alert Level 2 < 16, Alert Level 3 < 20,
-Alert Level 4 < 24, Alert Level 5 >= 24 °C-weeks. Values above 8 °C-weeks are strongly
-associated with mass bleaching; values above 16 represent conditions with limited
-historical precedent at most sites.
+rolling 84-day window. The alert level is NOAA CRW's own Bleaching Alert Area
+classification (`BAA_7day_max`, the highest level reached in the past 7 days),
+extended from its legacy Alert Level 2 cap to Levels 3 to 5 using DHW. No Stress means SST is at or below the site's MMM bleaching baseline (HotSpot ≤ 0);
+Watch begins once SST exceeds it (0 < HotSpot < 1); Warning begins once HotSpot
+reaches the 1 °C bleaching threshold. From there the NOAA CRW 5-level system
+(expanded December 2023) is set by accumulated DHW: Alert Level 1 at 4, Level 2 at 8,
+Level 3 at 12, Level 4 at 16, and Level 5 at 20 °C-weeks or more. Values above
+8 °C-weeks are strongly associated with mass bleaching; values above 16 represent
+conditions with limited historical precedent at most sites.
 
 ---
 
@@ -525,13 +578,15 @@ else:
                              sharey=False, constrained_layout=True)
     axes_flat = axes.flat if n > 1 else [axes]
 
+    # NOAA CRW DHW bands (HotSpot >= 1 assumed once DHW is accumulating).
+    # 0-4 is Watch or Warning depending on HotSpot; the split is not visible
+    # on a DHW axis, so it is shaded as one band.
     alert_bands = [
-        (0,  4,  "#FFF9C4", "Watch"),
-        (4,  8,  "#FFE0B2", "Warning"),
-        (8,  12, "#FFCDD2", "Alert 1"),
-        (12, 16, "#E1BEE7", "Alert 2"),
-        (16, 20, "#F8BBD9", "Alert 3"),
-        (20, 24, "#FFCCBC", "Alert 4"),
+        (0,  4,  "#FFF9C4", "Watch/Warning"),
+        (4,  8,  "#FFCDD2", "Alert 1"),
+        (8,  12, "#E1BEE7", "Alert 2"),
+        (12, 16, "#F8BBD9", "Alert 3"),
+        (16, 20, "#FFCCBC", "Alert 4"),
     ]
 
     for ax, name in zip(axes_flat, sites_to_plot):
@@ -541,11 +596,11 @@ else:
         ymax = max(df["dhw"].max() * 1.15, 10)
         for ylo, yhi, color, _ in alert_bands:
             ax.axhspan(ylo, min(yhi, ymax), color=color, alpha=0.45, zorder=0)
-        if df["dhw"].max() >= 24:
-            ax.axhspan(24, ymax, color="#CFD8DC", alpha=0.35, zorder=0)
+        if ymax > 20:
+            ax.axhspan(20, ymax, color="#CFD8DC", alpha=0.35, zorder=0)
 
-        for thresh, label in [(4, "Warn"), (8, "L1"), (12, "L2"),
-                               (16, "L3"), (20, "L4"), (24, "L5")]:
+        for thresh, label in [(4, "L1"), (8, "L2"), (12, "L3"),
+                               (16, "L4"), (20, "L5")]:
             if thresh <= ymax:
                 ax.axhline(thresh, color="gray", linewidth=0.6,
                            linestyle="--", zorder=2)
