@@ -2,6 +2,8 @@
   {
     "listing": "/projects.html",
     "items": [
+      "/projects/apogee-handheld.html",
+      "/projects/lora-radiorocket-v2.html",
       "/projects/el-nino-watch-2026.html",
       "/projects/lora-flights.html",
       "/projects/reef-sfm-mote-keys.html",
